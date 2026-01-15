@@ -83,6 +83,16 @@ def init_db():
         except sqlite3.OperationalError:
             # Columns already exist
             pass
+    
+    migration_004 = os.path.join(migrations_dir, "004_frontier_and_docs.sql")
+    if os.path.exists(migration_004):
+        try:
+            with open(migration_004, 'r') as f:
+                conn.executescript(f.read())
+            conn.commit()
+        except sqlite3.OperationalError:
+            # Tables already exist
+            pass
 
 
 def execute_query(query: str, params: tuple = ()) -> sqlite3.Cursor:

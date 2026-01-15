@@ -124,6 +124,12 @@ def run_job(job_id: str) -> bool:
     finally:
         heartbeat.stop()
         heartbeat.join(timeout=5)
+        
+        # Final update of pages_fetched before finalization
+        # (Heartbeat may not have triggered if job completed quickly)
+        final_pages = _count_pages(job_dir)
+        if final_pages > 0:
+            queries.update_job(job_id, pages_fetched=final_pages)
     
     if success:
         finalize_job(job_id)
@@ -226,8 +232,8 @@ def _run_scrapy(job: dict, job_dir: str, state_dir: str) -> bool:
         '-s', f'JOBDIR={state_dir}',
         '-s', f'LOG_FILE={crawler_log_path}',
         '-s', f'CLOSESPIDER_TIMEOUT={job["timeout_seconds"]}',
-        '-s', 'ITEM_PIPELINES={"crawler.pipelines.TextExtractionPipeline": 100, "crawler.pipelines.MarkdownExtractionPipeline": 150, "crawler.pipelines.BlockingDetectionPipeline": 200, "crawler.pipelines.JSONLWriterPipeline": 300}',
-        '-s', 'DOWNLOADER_MIDDLEWARES={"crawler.middlewares.BlockingSignalMiddleware": 543}',
+        '-s', 'ITEM_PIPELINES={"crawler.pipelines.TextExtractionPipeline": 100, "crawler.pipelines.QualityGatePipeline": 120, "crawler.pipelines.ContentCleanupPipeline": 140, "crawler.pipelines.DocumentIdentityPipeline": 160, "crawler.pipelines.BudgetControlPipeline": 170, "crawler.pipelines.MarkdownExtractionPipeline": 180, "crawler.pipelines.BlockingDetectionPipeline": 200, "crawler.pipelines.CrawlLogPipeline": 250, "crawler.pipelines.JSONLWriterPipeline": 300}',
+        '-s', 'DOWNLOADER_MIDDLEWARES={"crawler.middlewares.AdaptiveThrottleMiddleware": 100, "crawler.middlewares.BlockingSignalMiddleware": 543}',
         '-s', f'USER_AGENT={settings.CRAWLER_USER_AGENT}',
         '-s', 'ROBOTSTXT_OBEY=True',
         '-s', f'CONCURRENT_REQUESTS={settings.CRAWLER_CONCURRENT_REQUESTS}',

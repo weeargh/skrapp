@@ -2,7 +2,109 @@
 from __future__ import annotations
 
 import re
-from urllib.parse import urlparse, urlunparse
+from urllib.parse import urlparse, urlunparse, parse_qs, urlencode
+
+
+# Tracking parameters to strip from URLs
+TRACKING_PARAMS = {
+    # Google Analytics / Ads
+    'utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+    'utm_id', 'utm_source_platform', 'utm_creative_format',
+    'gclid', 'gclsrc', 'dclid',
+    # Facebook
+    'fbclid', 'fb_action_ids', 'fb_action_types', 'fb_source', 'fb_ref',
+    # Other ad platforms
+    'msclkid', 'twclid', 'li_fat_id', 'igshid', 'mc_cid', 'mc_eid',
+    # Generic tracking
+    'ref', 'ref_src', 'ref_url', 'referrer', 'source',
+    '_ga', '_gl', '_hsenc', '_hsmi', 'hsCtaTracking',
+    # Session/click tracking
+    'sessionid', 'clickid', 'affiliate_id', 'partner_id',
+    # Zendesk/helpdesk specific
+    'return_to', 'locale', 'locale_id',
+}
+
+# Global deny list patterns for non-content URLs
+DENY_PATH_PATTERNS = [
+    # Language/locale switchers
+    r'/hc/change_language',
+    r'/locale/',
+    r'/set_locale',
+    
+    # Authentication/account
+    r'/login', r'/signin', r'/sign-in', r'/signup', r'/sign-up',
+    r'/logout', r'/signout', r'/sign-out',
+    r'/auth/', r'/oauth/', r'/sso/',
+    r'/account/', r'/profile/', r'/settings/',
+    r'/password/', r'/forgot-password', r'/reset-password',
+    
+    # Search and filters  
+    r'/search[?/]', r'/filter[?/]', r'/sort[?/]',
+    
+    # Comments/community
+    r'/comments', r'/discussions', r'/community/',
+    r'/forum/', r'/topics/',
+    
+    # Actions/forms
+    r'/subscribe', r'/unsubscribe', r'/newsletter',
+    r'/feedback', r'/contact', r'/submit',
+    r'/vote', r'/rate', r'/flag',
+    r'/print/', r'/pdf/', r'/export/',
+    
+    # Tags/categories (often low-value index pages)
+    r'/tags?/', r'/labels?/',
+    
+    # Pagination with query params handled separately
+]
+
+# External share/social links to never follow
+DENY_EXTERNAL_PATTERNS = [
+    r'facebook\.com/share',
+    r'twitter\.com/(share|intent)',
+    r'linkedin\.com/share',
+    r'pinterest\.com/pin',
+    r'reddit\.com/submit',
+    r'wa\.me/', r'api\.whatsapp\.com',
+    r'telegram\.me/', r't\.me/',
+    r'mailto:',
+    r'tel:',
+    r'docs\.google\.com/forms',
+    r'forms\.gle/',
+    r'calendly\.com/',
+    r'typeform\.com/',
+]
+
+
+def strip_tracking_params(url: str) -> str:
+    """
+    Remove tracking parameters from URL query string.
+    Preserves meaningful query params like page IDs or article slugs.
+    """
+    try:
+        parsed = urlparse(url)
+        if not parsed.query:
+            return url
+        
+        params = parse_qs(parsed.query, keep_blank_values=True)
+        
+        # Filter out tracking params
+        filtered = {
+            k: v for k, v in params.items()
+            if k.lower() not in TRACKING_PARAMS
+        }
+        
+        # Rebuild URL
+        new_query = urlencode(filtered, doseq=True) if filtered else ''
+        return urlunparse((
+            parsed.scheme,
+            parsed.netloc,
+            parsed.path,
+            parsed.params,
+            new_query,
+            ''  # Remove fragment
+        ))
+    except Exception:
+        return url
 
 
 def canonicalize_url(url: str) -> str:
@@ -11,10 +113,13 @@ def canonicalize_url(url: str) -> str:
     
     - Lowercase scheme and host
     - Remove fragment
-    - Remove query string (MVP behavior)
+    - Strip tracking parameters
     - Normalize path (collapse //, remove trailing slash except root)
     """
     try:
+        # First strip tracking params
+        url = strip_tracking_params(url)
+        
         parsed = urlparse(url)
     except Exception:
         return url
@@ -40,7 +145,10 @@ def canonicalize_url(url: str) -> str:
     if not path:
         path = '/'
     
-    canonical = urlunparse((scheme, netloc, path, '', '', ''))
+    # Keep non-tracking query params for canonicalization
+    query = parsed.query if parsed.query else ''
+    
+    canonical = urlunparse((scheme, netloc, path, '', query, ''))
     
     return canonical
 
@@ -105,6 +213,29 @@ def matches_ignore_prefix(url: str, ignore_prefixes: list[str]) -> bool:
     return False
 
 
+def matches_deny_pattern(url: str) -> bool:
+    """
+    Check if URL matches global deny patterns (non-content pages).
+    """
+    try:
+        path = get_path(url).lower()
+        full_url = url.lower()
+        
+        # Check path patterns
+        for pattern in DENY_PATH_PATTERNS:
+            if re.search(pattern, path, re.IGNORECASE):
+                return True
+        
+        # Check external share patterns
+        for pattern in DENY_EXTERNAL_PATTERNS:
+            if re.search(pattern, full_url, re.IGNORECASE):
+                return True
+        
+        return False
+    except Exception:
+        return False
+
+
 def is_url_in_scope(
     url: str,
     allowed_host: str,
@@ -119,6 +250,7 @@ def is_url_in_scope(
     - Its host matches allowed_host
     - Its path doesn't match any ignore prefix
     - It doesn't have an excluded extension
+    - It doesn't match global deny patterns
     """
     if not is_valid_scheme(url):
         return False
@@ -130,6 +262,9 @@ def is_url_in_scope(
         return False
     
     if has_excluded_extension(url, excluded_extensions):
+        return False
+    
+    if matches_deny_pattern(url):
         return False
     
     return True
