@@ -24,18 +24,41 @@ def run_job(job_id: str) -> bool:
     """
     Run a crawl job with automatic fallback strategy.
     
-    Strategy:
-    1. Check if URL matches known JS-heavy domain patterns
-       - If yes, use Playwright directly
-    2. Otherwise, start with Scrapy
-    3. After Scrapy completes, analyze blocking signals
-       - If blocked or 0 pages, retry with Playwright
+    This function implements an intelligent crawler selection strategy:
+    - Scrapy: Fast, efficient, but doesn't execute JavaScript
+    - Playwright: Slower but handles JavaScript-heavy sites
+    
+    Strategy Decision Tree:
+    1. Check if user explicitly requested JS rendering (use_js flag)
+       → If yes: Use Playwright directly
+    
+    2. Check if URL matches known JS-heavy domain patterns (e.g., React, Vue, Angular SPAs)
+       → If yes: Use Playwright preemptively to avoid wasted Scrapy attempts
+       → Log the detection reason (e.g., 'react_docs', 'spa_framework')
+    
+    3. Otherwise: Start with Scrapy (faster for traditional HTML sites)
+       → After Scrapy completes, analyze results for blocking/failure signals:
+          * Zero pages fetched → Likely JS-required or blocked
+          * Excessive 429/403 responses → Rate limited or blocked
+          * High duplicate content hash ratio → Captcha or login wall
+       → If any blocking signals detected: Automatically retry with Playwright
+    
+    Fallback Retry Policy:
+    - Maximum 1 fallback retry per job (prevents infinite loops)
+    - Fallback count tracked in job.fallback_retry_count field
+    - Events logged for monitoring: 'fallback_triggered', 'js_domain_detected'
     
     Args:
         job_id: The job ID to run
     
     Returns:
-        True if the job completed successfully, False otherwise
+        True if the job completed successfully (pages fetched > 0), False otherwise
+    
+    Side Effects:
+        - Updates job state in database (QUEUED → RUNNING → DONE/FAILED)
+        - Creates output files in jobs/<job_id>/ directory
+        - Starts heartbeat thread to update progress
+        - Updates IP concurrent job count
     """
     job = queries.get_job_by_id(job_id)
     if not job:
@@ -57,15 +80,17 @@ def run_job(job_id: str) -> bool:
     
     try:
         # Determine initial crawler strategy
+        # Priority order: user request > auto-detection > default Scrapy
         use_js_flag = job.get('use_js', 0)
         
         if use_js_flag:
-            # User explicitly requested JS rendering
+            # User explicitly requested JS rendering via API parameter
             strategy = 'playwright_user_requested'
             use_playwright = True
             logger.info(f"Job {job_id}: Using Playwright (user requested)")
         elif is_js_heavy_domain(job['start_url']):
-            # Auto-detected JS-heavy domain
+            # Auto-detected JS-heavy domain based on URL patterns
+            # This saves time by skipping the Scrapy attempt for known SPA frameworks
             strategy = 'playwright_preemptive'
             use_playwright = True
             detected_reason = get_detected_reason(job['start_url'])
@@ -74,7 +99,7 @@ def run_job(job_id: str) -> bool:
                 'reason': detected_reason
             })
         else:
-            # Start with Scrapy
+            # Start with Scrapy (faster for traditional server-rendered HTML)
             strategy = 'scrapy'
             use_playwright = False
             logger.info(f"Job {job_id}: Starting with Scrapy")
@@ -86,18 +111,24 @@ def run_job(job_id: str) -> bool:
         if use_playwright:
             success = _run_playwright(job, job_dir)
         else:
+            # Run Scrapy first
             success = _run_scrapy(job, job_dir, state_dir)
             
-            # Post-Scrapy: Analyze blocking and decide on fallback
+            # Post-Scrapy analysis: Check if fallback to Playwright is needed
+            # This happens when Scrapy fails due to:
+            # - Zero pages fetched (likely JS-required content)
+            # - Site blocking detected (429/403 errors, captcha, login walls)
+            # - Throttling detected (high error rate but not complete block)
             should_fallback, fallback_reason = _should_fallback(job_id, job_dir)
             
             if should_fallback:
-                # Check if we can retry
+                # Check retry limit: Only fallback once per job
+                # This prevents infinite loops and excessive resource usage
                 fallback_count = job.get('fallback_retry_count', 0)
                 if fallback_count < 1:
                     logger.info(f"Job {job_id}: Triggering fallback to Playwright ({fallback_reason})")
                     
-                    # Update job for fallback
+                    # Update job metadata for fallback attempt
                     queries.update_job(
                         job_id,
                         fallback_retry_count=1,
@@ -109,21 +140,29 @@ def run_job(job_id: str) -> bool:
                         'to': 'playwright'
                     })
                     
-                    # Retry with Playwright
+                    # Retry with Playwright (this will overwrite Scrapy's output)
                     success = _run_playwright(job, job_dir)
                 else:
                     logger.warning(f"Job {job_id}: Fallback already attempted, not retrying")
         
     except Exception as e:
-        logger.error(f"Error running crawler for job {job_id}: {e}")
+        logger.error(f"Unexpected error running crawler for job {job_id}: {e}", exc_info=True)
         success = False
         queries.update_job(
             job_id,
-            last_error=json.dumps({"reason": ErrorReason.UNKNOWN, "message": str(e)})
+            last_error=json.dumps({
+                "reason": ErrorReason.UNKNOWN,
+                "message": f"Unexpected crawler error: {type(e).__name__}: {str(e)}"
+            })
         )
     finally:
         heartbeat.stop()
         heartbeat.join(timeout=5)
+        
+        # Check if cancellation was requested
+        if heartbeat.cancellation_requested:
+            logger.info(f"Job {job_id} was cancelled by user")
+            success = True  # Treat cancellation as successful for finalization
         
         # Final update of pages_fetched before finalization
         # (Heartbeat may not have triggered if job completed quickly)
@@ -131,15 +170,29 @@ def run_job(job_id: str) -> bool:
         if final_pages > 0:
             queries.update_job(job_id, pages_fetched=final_pages)
     
+    # Check again if cancelled (could be cancelled during finally block)
+    job = queries.get_job_by_id(job_id)
+    if job and job['state'] == JobState.CANCELLED:
+        logger.info(f"Job {job_id} cancelled - finalizing partial results")
+        finalize_job(job_id)
+        return True
+    
     if success:
         finalize_job(job_id)
     else:
-        job = queries.get_job_by_id(job_id)
         if job and job['state'] == JobState.RUNNING:
+            # Determine more specific failure reason if possible
+            error_msg = "Crawler execution failed"
+            if final_pages == 0:
+                error_msg = "Crawler failed: Zero pages fetched. Site may require authentication, be blocking requests, or have technical issues."
+            
             queries.update_job_state(
                 job_id,
                 JobState.FAILED,
-                last_error=json.dumps({"reason": ErrorReason.UNKNOWN, "message": "Crawler failed"})
+                last_error=json.dumps({
+                    "reason": ErrorReason.UNKNOWN,
+                    "message": error_msg
+                })
             )
             queries.decrement_ip_concurrent(job['requester_ip_hash'])
     
@@ -150,12 +203,41 @@ def _should_fallback(job_id: str, job_dir: str) -> tuple[bool, str | None]:
     """
     Determine if we should fallback to Playwright after Scrapy.
     
+    This function analyzes the Scrapy crawl results to detect blocking or failure signals
+    that indicate the site requires JavaScript rendering or is actively blocking the crawler.
+    
+    Blocking Signal Detection:
+    1. Zero Pages Fetched:
+       - Most common reason: site requires JavaScript to render content
+       - Example: React/Vue/Angular SPAs with empty HTML shell
+       - Action: Retry with Playwright
+    
+    2. Site Status = BLOCKED:
+       - Detected via BlockingDetectionPipeline during crawl
+       - Signals include:
+         * excessive_429: >20% of responses are HTTP 429 (rate limited)
+         * excessive_403: >30% of responses are HTTP 403 (forbidden)
+         * captcha_detected: CAPTCHA HTML patterns found in response
+         * duplicate_content_high: >50% of pages have identical content hash
+       - Action: Retry with Playwright (may bypass some blocks)
+    
+    3. Site Status = THROTTLED:
+       - High error rate but not completely blocked
+       - Some pages succeeded, but many failed
+       - Action: Retry with Playwright with slower rate
+    
+    4. Site Status = LOGIN_REQUIRED:
+       - Login wall detected
+       - Action: Do NOT fallback (Playwright won't help without credentials)
+    
     Args:
         job_id: The job ID
-        job_dir: The job output directory
+        job_dir: The job output directory containing blocking_evidence.json
     
     Returns:
-        (should_fallback, reason)
+        (should_fallback, reason): 
+        - should_fallback: True if we should retry with Playwright
+        - reason: Human-readable string explaining why (e.g., 'zero_pages', 'blocked:captcha_detected')
     """
     # Read blocking evidence
     evidence_path = os.path.join(job_dir, 'blocking_evidence.json')
@@ -272,28 +354,47 @@ def _run_scrapy(job: dict, job_dir: str, state_dir: str) -> bool:
             runner_log.flush()
             
             if result.returncode != 0:
-                logger.warning(f"Scrapy exited with code {result.returncode} for job {job_id}")
+                logger.warning(f"Scrapy exited with non-zero code {result.returncode} for job {job_id}")
                 
+                # Check if this is an expected termination (max pages/timeout reached)
                 if 'CloseSpider' in result.stderr or 'max_pages_reached' in result.stderr:
                     logger.info(f"Job {job_id} stopped due to max pages or timeout (expected)")
                     return True
                 
-                return result.returncode == 0 or 'item_scraped_count' in result.stderr
+                # Check if we got any items despite the error
+                # Some Scrapy errors are non-fatal if we fetched pages
+                if 'item_scraped_count' in result.stderr:
+                    logger.info(f"Job {job_id} exited with error but scraped items successfully")
+                    return True
+                
+                # True failure - no pages scraped and unexpected error
+                logger.error(f"Job {job_id} failed with no pages scraped. Exit code: {result.returncode}")
+                return False
             
             return True
             
         except subprocess.TimeoutExpired:
-            logger.error(f"Scrapy timeout for job {job_id}")
-            runner_log.write("ERROR: Crawler timed out\n")
+            logger.error(f"Scrapy process timed out after {job['timeout_seconds'] + 60}s for job {job_id}")
+            runner_log.write(f"ERROR: Crawler process timed out after {job['timeout_seconds'] + 60} seconds\n")
             queries.update_job(
                 job_id,
-                last_error=json.dumps({"reason": ErrorReason.TIMEOUT, "message": "Crawler timed out"})
+                last_error=json.dumps({
+                    "reason": ErrorReason.TIMEOUT,
+                    "message": f"Crawler process exceeded timeout limit of {job['timeout_seconds']}s (+60s grace period)"
+                })
             )
             return False
             
         except Exception as e:
-            logger.error(f"Error running Scrapy for job {job_id}: {e}")
-            runner_log.write(f"ERROR: {e}\n")
+            logger.error(f"Unexpected error running Scrapy for job {job_id}: {type(e).__name__}: {e}", exc_info=True)
+            runner_log.write(f"ERROR: {type(e).__name__}: {e}\n")
+            queries.update_job(
+                job_id,
+                last_error=json.dumps({
+                    "reason": ErrorReason.UNKNOWN,
+                    "message": f"Scrapy subprocess error: {type(e).__name__}: {str(e)}"
+                })
+            )
             return False
 
 
@@ -348,24 +449,30 @@ def _run_playwright(job: dict, job_dir: str) -> bool:
             # Check if we got any pages
             if stats.get('pages_fetched', 0) == 0:
                 logger.warning(f"Playwright crawl returned 0 pages for job {job_id}")
+                error_detail = "No pages fetched"
                 if stats.get('errors'):
-                    queries.update_job(
-                        job_id,
-                        last_error=json.dumps({
-                            "reason": ErrorReason.BLOCKED,
-                            "message": str(stats['errors'][0])
-                        })
-                    )
+                    error_detail = f"Errors encountered: {stats['errors'][0]}"
+                
+                queries.update_job(
+                    job_id,
+                    last_error=json.dumps({
+                        "reason": ErrorReason.BLOCKED,
+                        "message": f"Playwright crawler failed to fetch any pages. {error_detail}"
+                    })
+                )
                 return False
             
             logger.info(f"Playwright crawl complete for job {job_id}: {stats.get('pages_fetched', 0)} pages")
             return True
             
         except Exception as e:
-            logger.error(f"Error running Playwright for job {job_id}: {e}")
-            runner_log.write(f"ERROR: {e}\n")
+            logger.error(f"Unexpected error running Playwright for job {job_id}: {type(e).__name__}: {e}", exc_info=True)
+            runner_log.write(f"ERROR: {type(e).__name__}: {e}\n")
             queries.update_job(
                 job_id,
-                last_error=json.dumps({"reason": ErrorReason.UNKNOWN, "message": str(e)})
+                last_error=json.dumps({
+                    "reason": ErrorReason.UNKNOWN,
+                    "message": f"Playwright execution error: {type(e).__name__}: {str(e)}"
+                })
             )
             return False

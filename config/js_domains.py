@@ -26,25 +26,19 @@ JS_DOMAIN_PATTERNS = [
     '*.mintlify.app',
     '*.docusaurus.io',
     
-    # Generic help center patterns
-    'help-center.*',
-    
     # SPA framework indicators in subdomains
     '*.vercel.app',
     '*.netlify.app',
     '*.pages.dev',
     
-    # Specific known JS-heavy sites
-    'help.talenta.co',
+    # Specific help centers that require JS
     'help-center.talenta.co',
 ]
 
 # URL path patterns that indicate JS-heavy content
 JS_PATH_PATTERNS = [
-    '/hc/',           # Zendesk help center
-    '/articles/',     # Common in JS help centers
-    '/docs/',         # Documentation
-    '/help/',         # Help pages
+    # Removed overly aggressive patterns
+    # Only add specific known problematic paths here
 ]
 
 

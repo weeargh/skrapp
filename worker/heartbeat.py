@@ -20,6 +20,7 @@ class HeartbeatThread(threading.Thread):
         self.job_dir = job_dir
         self.interval = interval or settings.HEARTBEAT_INTERVAL_SECONDS
         self._stop_event = threading.Event()
+        self.cancellation_requested = False
     
     def run(self):
         """Run the heartbeat loop."""
@@ -41,6 +42,13 @@ class HeartbeatThread(threading.Thread):
     
     def _update_heartbeat(self):
         """Update the heartbeat and page count in the database."""
+        # Check if job was cancelled
+        job = queries.get_job_by_id(self.job_id)
+        if job and job['state'] == 'cancelled':
+            logger.info(f"Job {self.job_id} cancellation detected")
+            self.cancellation_requested = True
+            return
+        
         pages_fetched = self._count_pages()
         queries.update_heartbeat(self.job_id, pages_fetched)
         logger.debug(f"Heartbeat updated for job {self.job_id}: {pages_fetched} pages")

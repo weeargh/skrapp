@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
-    let pollInterval = 5000;
+    let pollInterval = 3000;
     let pollTimer = null;
     let previousState = null;
     let lastPagesCount = 0;
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             previousState = data.state;
 
-            if (['done', 'failed', 'expired'].includes(data.state)) {
+            if (['done', 'failed', 'cancelled', 'expired'].includes(data.state)) {
                 stopPolling();
             }
 
@@ -141,6 +141,21 @@ document.addEventListener('DOMContentLoaded', function() {
                 `/v1/jobs/${jobId}/download/summary.json?token=${token}`;
         } else {
             document.getElementById('download-section').classList.add('hidden');
+        }
+        
+        // Show download section for cancelled jobs too
+        if (data.state === 'cancelled' && data.download_url) {
+            document.getElementById('download-section').classList.remove('hidden');
+            document.getElementById('download-pages').href = data.download_url;
+            document.getElementById('download-summary').href = 
+                `/v1/jobs/${jobId}/download/summary.json?token=${token}`;
+        }
+        
+        // Show cancel button only for active jobs
+        if (['queued', 'running', 'finalizing'].includes(data.state)) {
+            document.getElementById('cancel-section').classList.remove('hidden');
+        } else {
+            document.getElementById('cancel-section').classList.add('hidden');
         }
 
         document.getElementById('created-at').textContent = formatDate(data.created_at);
@@ -242,6 +257,40 @@ document.addEventListener('DOMContentLoaded', function() {
             pollTimer = null;
         }
     }
+    
+    // Cancel button handler
+    document.getElementById('cancel-btn').addEventListener('click', async function() {
+        if (!confirm('Are you sure you want to cancel this job? Progress up to this point will be saved.')) {
+            return;
+        }
+        
+        const btn = this;
+        btn.disabled = true;
+        btn.textContent = 'Cancelling...';
+        
+        try {
+            const response = await fetch(`/v1/jobs/${jobId}/cancel?token=${token}`, {
+                method: 'POST'
+            });
+            
+            if (!response.ok) {
+                const data = await response.json();
+                throw new Error(data.message || 'Failed to cancel job');
+            }
+            
+            // Immediately update UI
+            const badge = document.getElementById('state-badge');
+            badge.textContent = 'cancelled';
+            badge.className = 'badge cancelled';
+            
+            // Keep polling to see finalization
+            fetchStatus();
+        } catch (error) {
+            alert('Failed to cancel job: ' + error.message);
+            btn.disabled = false;
+            btn.textContent = 'Cancel Job';
+        }
+    });
 
     startPolling();
 });

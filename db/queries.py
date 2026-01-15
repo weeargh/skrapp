@@ -145,6 +145,15 @@ def get_running_jobs() -> list[dict]:
     return [_row_to_dict(row) for row in rows]
 
 
+def get_jobs_by_state(state: str) -> list[dict]:
+    """Get all jobs in a specific state."""
+    rows = database.fetchall(
+        "SELECT * FROM jobs WHERE state = ?",
+        (state,)
+    )
+    return [_row_to_dict(row) for row in rows]
+
+
 def update_heartbeat(job_id: str, pages_fetched: int | None = None):
     """Update the runner heartbeat timestamp."""
     kwargs = {

@@ -4,11 +4,13 @@ from __future__ import annotations
 import os
 import sqlite3
 import threading
+import logging
 from contextlib import contextmanager
 from typing import Optional, List
 
 from config import settings
 
+logger = logging.getLogger(__name__)
 _local = threading.local()
 
 
@@ -43,8 +45,9 @@ def transaction():
     try:
         yield conn
         conn.commit()
-    except Exception:
+    except Exception as e:
         conn.rollback()
+        logger.error(f"Transaction failed, rolling back: {e}")
         raise
 
 

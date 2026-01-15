@@ -45,8 +45,8 @@ def validate_url(url: str) -> tuple[bool, str | None, str | None]:
     
     try:
         parsed = urlparse(url)
-    except Exception:
-        return False, "Invalid URL format", None
+    except (ValueError, TypeError) as e:
+        return False, f"Invalid URL format: {e}", None
     
     if not parsed.scheme or not parsed.netloc:
         return False, "Invalid URL format", None

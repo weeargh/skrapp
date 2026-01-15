@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Docs Crawler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -16,7 +19,7 @@
         <main>
             <form id="crawl-form">
                 <div class="form-group">
-                    <label for="start_url">URL to crawl</label>
+                    <label for="start_url">Documentation URL</label>
                     <input 
                         type="url" 
                         id="start_url" 
@@ -26,12 +29,40 @@
                     >
                     <small>Enter the starting URL of the documentation site</small>
                 </div>
+                
+                <!-- Warning box for fragment URLs -->
+                <div id="fragment-warning" class="warning-box hidden">
+                    <div class="warning-header">
+                        <span class="warning-icon">⚠️</span>
+                        <strong>Fragment URL Detected</strong>
+                    </div>
+                    <div class="warning-content">
+                        <p><strong>Issue:</strong> This URL contains a fragment identifier (the <code id="detected-fragment"></code> part), which will cause crawling issues.</p>
+                        
+                        <p><strong>Why it matters:</strong></p>
+                        <ul>
+                            <li>Fragments are used for client-side routing in JavaScript SPAs</li>
+                            <li>Web crawlers ignore everything after the <code>#</code> symbol</li>
+                            <li>All fragment variations (<code>#page1</code>, <code>#page2</code>) are seen as the same URL</li>
+                            <li>This typically results in only 1 page being crawled</li>
+                        </ul>
+                        
+                        <p><strong>Recommended solutions:</strong></p>
+                        <ol>
+                            <li><strong>Remove the fragment:</strong> Try <code id="suggested-url"></code></li>
+                            <li><strong>Use a category/section URL:</strong> e.g., <code>/categories</code> or <code>/sections</code></li>
+                            <li><strong>Start from a specific article:</strong> Find direct article URLs like <code>/articles/12345-title</code></li>
+                        </ol>
+                        
+                        <button type="button" id="use-suggested-url" class="btn-secondary btn-small">Use Suggested URL</button>
+                    </div>
+                </div>
 
                 <details class="options">
                     <summary>Advanced Options</summary>
                     
                     <div class="form-group">
-                        <label for="max_pages">Max pages</label>
+                        <label for="max_pages">Maximum Pages</label>
                         <input 
                             type="number" 
                             id="max_pages" 
@@ -44,14 +75,14 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="ignore_prefixes">Ignore path prefixes</label>
+                        <label for="ignore_prefixes">Ignore Path Prefixes</label>
                         <input 
                             type="text" 
                             id="ignore_prefixes" 
                             name="ignore_prefixes" 
                             placeholder="/search, /tag, /login"
                         >
-                        <small>Comma-separated list of path prefixes to ignore</small>
+                        <small>Comma-separated list of path prefixes to skip</small>
                     </div>
                 </details>
 
@@ -63,7 +94,7 @@
         </main>
 
         <footer>
-            <p>Crawls up to 1,000 pages | Respects robots.txt | Results expire after 24 hours</p>
+            <p>Crawls up to 1,000 pages • Respects robots.txt • Results expire after 24 hours</p>
         </footer>
     </div>
 

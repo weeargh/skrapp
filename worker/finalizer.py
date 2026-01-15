@@ -20,6 +20,7 @@ logger = logging.getLogger(__name__)
 def finalize_job(job_id: str) -> bool:
     """
     Finalize a job by deduplicating output and generating summary.
+    Works for both completed and cancelled jobs.
     
     Returns:
         True if finalization succeeded, False otherwise
@@ -31,7 +32,9 @@ def finalize_job(job_id: str) -> bool:
         logger.error(f"Job {job_id} not found")
         return False
     
-    queries.update_job_state(job_id, JobState.FINALIZING)
+    # If already cancelled, keep that state, otherwise mark as finalizing
+    if job['state'] != JobState.CANCELLED:
+        queries.update_job_state(job_id, JobState.FINALIZING)
     
     job_dir = os.path.join(settings.JOBS_OUTPUT_DIR, job_id)
     raw_file = os.path.join(job_dir, 'pages.raw.jsonl')
@@ -84,7 +87,7 @@ def finalize_job(job_id: str) -> bool:
     
     queries.update_job_state(
         job_id,
-        JobState.DONE,
+        JobState.CANCELLED if job['state'] == JobState.CANCELLED else JobState.DONE,
         pages_fetched=stats['total_raw'],
         pages_exported=stats['total_deduped']
     )

@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Status - Docs Crawler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -41,7 +44,7 @@
 
                         <div class="progress-section">
                             <div class="progress-header">
-                                <span>Progress</span>
+                                <span>Crawl Progress</span>
                                 <span id="progress-text">0 / 0 pages</span>
                             </div>
                             <div class="progress-bar">
@@ -85,9 +88,14 @@
                         <div id="download-section" class="hidden">
                             <h3>Download Results</h3>
                             <div class="download-buttons">
-                                <a id="download-pages" href="#" class="btn btn-primary">Download pages.jsonl</a>
-                                <a id="download-summary" href="#" class="btn btn-secondary">Download summary.json</a>
+                                <a id="download-pages" href="#" class="btn btn-primary">Pages Data</a>
+                                <a id="download-summary" href="#" class="btn btn-secondary">Summary</a>
                             </div>
+                        </div>
+                        
+                        <div id="cancel-section" class="hidden">
+                            <button id="cancel-btn" class="btn btn-danger">Cancel Job</button>
+                            <p class="cancel-info">Cancelling will save progress up to this point</p>
                         </div>
 
                         <div class="timestamps">

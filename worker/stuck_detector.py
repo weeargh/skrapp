@@ -1,10 +1,12 @@
 """Stuck job detection - identifies orphaned, stalled, and hard-stalled jobs."""
 import json
 import logging
+import os
 
 from config import settings
 from config.constants import JobState, ErrorReason, EventLevel, EventType
 from db import queries
+from worker.finalizer import finalize_job
 
 
 logger = logging.getLogger(__name__)
@@ -18,9 +20,41 @@ def detect_and_handle_stuck_jobs():
     
     This should be called periodically by the worker main loop.
     """
+    _handle_cancelled_jobs()
     _handle_orphaned_jobs()
     _handle_stalled_jobs()
     _handle_hard_stalled_jobs()
+
+
+def _handle_cancelled_jobs():
+    """
+    Handle cancelled jobs that need finalization.
+    
+    When a user cancels a job, it's marked as CANCELLED but the crawler
+    subprocess keeps running. Once it stops, we need to finalize the results.
+    """
+    # Find cancelled jobs that haven't been exported yet
+    cancelled_jobs = queries.get_jobs_by_state(JobState.CANCELLED)
+    
+    for job in cancelled_jobs:
+        job_id = job['id']
+        pages_fetched = job['pages_fetched']
+        pages_exported = job['pages_exported']
+        
+        # If pages_exported is 0 but we have fetched pages, finalize it
+        if pages_exported == 0 and pages_fetched > 0:
+            logger.info(f"Finalizing cancelled job {job_id} ({pages_fetched} pages)")
+            
+            try:
+                finalize_job(job_id)
+                logger.info(f"Successfully finalized cancelled job {job_id}")
+            except Exception as e:
+                logger.error(f"Error finalizing cancelled job {job_id}: {e}")
+        
+        # If it's been cancelled with 0 pages, just mark as done
+        elif pages_fetched == 0:
+            logger.info(f"Cancelled job {job_id} had 0 pages, marking as complete")
+            queries.decrement_ip_concurrent(job['requester_ip_hash'])
 
 
 def _handle_orphaned_jobs():

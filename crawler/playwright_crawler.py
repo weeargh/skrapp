@@ -189,8 +189,9 @@ class PlaywrightCrawler:
             if page:
                 try:
                     page.close()
-                except:
-                    pass
+                except Exception as e:
+                    # Page already closed or browser crashed, safe to ignore
+                    logger.debug(f"Error closing page: {e}")
     
     def _extract_links(self, page: Page, base_url: str) -> List[str]:
         """Extract all links from the page."""

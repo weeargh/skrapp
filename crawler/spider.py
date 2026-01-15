@@ -117,8 +117,9 @@ class DocsSpider(CrawlSpider):
         if hasattr(response, 'text'):
             try:
                 html = response.text
-            except Exception:
-                pass
+            except (UnicodeDecodeError, AttributeError) as e:
+                logger.warning(f"Failed to decode response text for {url}: {e}")
+                html = ''
         
         outlinks = []
         if html and hasattr(response, 'xpath'):
@@ -127,8 +128,9 @@ class DocsSpider(CrawlSpider):
                     absolute_url = response.urljoin(link)
                     if is_url_in_scope(absolute_url, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS):
                         outlinks.append(absolute_url)
-                except Exception:
-                    pass
+                except (ValueError, TypeError) as e:
+                    # Invalid URL format or type issues when joining/parsing URLs
+                    logger.debug(f"Skipping invalid link '{link}' on {url}: {e}")
         
         depth = response.meta.get('depth', 0)
         

@@ -144,19 +144,51 @@ def get_job_status(job_id: str):
     if job['block_evidence']:
         try:
             response['block_evidence'] = json.loads(job['block_evidence'])
-        except (json.JSONDecodeError, TypeError):
-            pass
+        except (json.JSONDecodeError, TypeError) as e:
+            # Invalid JSON in block_evidence field, skip it
+            response['block_evidence'] = None
     
     if job['last_error']:
         try:
             response['last_error'] = json.loads(job['last_error'])
-        except (json.JSONDecodeError, TypeError):
-            pass
+        except (json.JSONDecodeError, TypeError) as e:
+            # Invalid JSON in last_error field, return as raw string
+            response['last_error'] = {'raw': str(job['last_error'])}
     
-    if job['state'] == JobState.DONE:
+    if job['state'] in (JobState.DONE, JobState.CANCELLED):
         response['download_url'] = f"/v1/jobs/{job_id}/download/pages.jsonl?token={token}"
     
     return jsonify(response)
+
+
+@jobs_bp.route('/v1/jobs/<job_id>/cancel', methods=['POST'])
+def cancel_job(job_id: str):
+    """Cancel a running or queued job."""
+    token = request.args.get('token', '')
+    if not token:
+        return jsonify({"error": "Unauthorized", "message": "Token is required"}), 401
+    
+    token_hashed = hash_token(token)
+    job = queries.get_job_for_auth(job_id, token_hashed)
+    
+    if not job:
+        return jsonify({"error": "Not Found", "message": "Job not found or invalid token"}), 404
+    
+    # Can only cancel active jobs
+    if job['state'] not in (JobState.QUEUED, JobState.RUNNING, JobState.FINALIZING):
+        return jsonify({
+            "error": "Bad Request",
+            "message": f"Cannot cancel job in '{job['state']}' state"
+        }), 400
+    
+    # Mark as cancelled - worker will detect and finalize
+    queries.update_job_state(job_id, JobState.CANCELLED)
+    
+    return jsonify({
+        "job_id": job_id,
+        "state": "cancelled",
+        "message": "Job cancellation requested. Results will be finalized shortly."
+    })
 
 
 @jobs_bp.route('/v1/jobs/<job_id>/download/pages.jsonl', methods=['GET'])
@@ -175,7 +207,7 @@ def download_pages(job_id: str):
     if job['state'] == JobState.EXPIRED:
         return jsonify({"error": "Gone", "message": "Job has expired"}), 410
     
-    if job['state'] != JobState.DONE:
+    if job['state'] not in (JobState.DONE, JobState.CANCELLED):
         return jsonify({
             "error": "Bad Request",
             "message": f"Job is not complete. Current state: {job['state']}"
@@ -210,7 +242,7 @@ def download_summary(job_id: str):
     if job['state'] == JobState.EXPIRED:
         return jsonify({"error": "Gone", "message": "Job has expired"}), 410
     
-    if job['state'] != JobState.DONE:
+    if job['state'] not in (JobState.DONE, JobState.CANCELLED):
         return jsonify({
             "error": "Bad Request",
             "message": f"Job is not complete. Current state: {job['state']}"
@@ -265,10 +297,12 @@ def list_pages(job_id: str):
                             'text_length': len(page.get('text', '')),
                             'outlinks_count': page.get('outlinks_count', 0)
                         })
-                    except json.JSONDecodeError:
+                    except json.JSONDecodeError as e:
+                        # Skip malformed JSON lines
                         continue
-        except Exception:
-            pass
+        except (IOError, OSError) as e:
+            # File access errors - could be permission issues or file being written
+            return jsonify({"error": "Internal Server Error", "message": f"Failed to read pages file: {str(e)}"}), 500
     
     return jsonify({
         "job_id": job_id,

@@ -3,6 +3,39 @@ document.addEventListener('DOMContentLoaded', function() {
     const submitBtn = document.getElementById('submit-btn');
     const errorMessage = document.getElementById('error-message');
     const successMessage = document.getElementById('success-message');
+    const startUrlInput = document.getElementById('start_url');
+    const fragmentWarning = document.getElementById('fragment-warning');
+    const suggestedUrlEl = document.getElementById('suggested-url');
+    const detectedFragmentEl = document.getElementById('detected-fragment');
+    const useSuggestedBtn = document.getElementById('use-suggested-url');
+    
+    // Detect fragment URLs and show warning
+    startUrlInput.addEventListener('input', function() {
+        const url = startUrlInput.value.trim();
+        
+        if (url && url.includes('#')) {
+            // Extract the fragment part
+            const parts = url.split('#');
+            const urlWithoutFragment = parts[0];
+            const fragment = '#' + parts.slice(1).join('#');
+            
+            suggestedUrlEl.textContent = urlWithoutFragment;
+            detectedFragmentEl.textContent = fragment;
+            fragmentWarning.classList.remove('hidden');
+        } else {
+            fragmentWarning.classList.add('hidden');
+        }
+    });
+    
+    // Use suggested URL button
+    useSuggestedBtn.addEventListener('click', function() {
+        const suggestedUrl = suggestedUrlEl.textContent;
+        if (suggestedUrl) {
+            startUrlInput.value = suggestedUrl;
+            fragmentWarning.classList.add('hidden');
+            startUrlInput.focus();
+        }
+    });
 
     form.addEventListener('submit', async function(e) {
         e.preventDefault();
