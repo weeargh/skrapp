@@ -3,13 +3,16 @@ import os
 
 # Base paths
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-DATABASE_PATH = os.path.join(BASE_DIR, "data", "crawler.db")
-JOBS_OUTPUT_DIR = os.path.join(BASE_DIR, "out", "jobs")
+DATA_DIR = os.environ.get("DATA_DIR", os.path.join(BASE_DIR, "data"))
+OUTPUT_DIR = os.environ.get("OUTPUT_DIR", os.path.join(BASE_DIR, "out"))
+
+DATABASE_PATH = os.path.join(DATA_DIR, "crawler.db")
+JOBS_OUTPUT_DIR = os.path.join(OUTPUT_DIR, "jobs")
 WEB_STATIC_DIR = os.path.join(BASE_DIR, "web")
 
 # API settings
 API_HOST = "0.0.0.0"
-API_PORT = 5000
+API_PORT = int(os.environ.get("PORT", 5000))
 
 # Worker settings
 WORKER_POLL_INTERVAL_SECONDS = 5
