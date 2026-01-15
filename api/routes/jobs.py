@@ -227,3 +227,52 @@ def download_summary(job_id: str):
         as_attachment=True,
         download_name=f'{job_id}_summary.json'
     )
+
+
+@jobs_bp.route('/v1/jobs/<job_id>/pages', methods=['GET'])
+def list_pages(job_id: str):
+    """List crawled pages for a job (live progress view)."""
+    token = request.args.get('token', '')
+    if not token:
+        return jsonify({"error": "Unauthorized", "message": "Token is required"}), 401
+    
+    token_hashed = hash_token(token)
+    job = queries.get_job_for_auth(job_id, token_hashed)
+    
+    if not job:
+        return jsonify({"error": "Not Found", "message": "Job not found or invalid token"}), 404
+    
+    if job['state'] == JobState.EXPIRED:
+        return jsonify({"error": "Gone", "message": "Job has expired"}), 410
+    
+    # Read from raw file (available during crawl)
+    raw_file = os.path.join(settings.JOBS_OUTPUT_DIR, job_id, 'pages.raw.jsonl')
+    
+    pages = []
+    if os.path.exists(raw_file):
+        try:
+            with open(raw_file, 'r', encoding='utf-8') as f:
+                for line in f:
+                    try:
+                        page = json.loads(line.strip())
+                        # Return minimal data for table display
+                        pages.append({
+                            'url': page.get('url', ''),
+                            'title': page.get('title', ''),
+                            'status_code': page.get('status_code', 0),
+                            'depth': page.get('depth', 0),
+                            'extraction_mode': page.get('extraction_mode', ''),
+                            'text_length': len(page.get('text', '')),
+                            'outlinks_count': page.get('outlinks_count', 0)
+                        })
+                    except json.JSONDecodeError:
+                        continue
+        except Exception:
+            pass
+    
+    return jsonify({
+        "job_id": job_id,
+        "state": job['state'],
+        "total_pages": len(pages),
+        "pages": pages
+    })

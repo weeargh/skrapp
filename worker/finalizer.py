@@ -44,6 +44,7 @@ def finalize_job(job_id: str) -> bool:
         queries.update_job_state(
             job_id,
             JobState.DONE,
+            pages_fetched=0,
             pages_exported=0
         )
         return True
@@ -84,6 +85,7 @@ def finalize_job(job_id: str) -> bool:
     queries.update_job_state(
         job_id,
         JobState.DONE,
+        pages_fetched=stats['total_raw'],
         pages_exported=stats['total_deduped']
     )
     

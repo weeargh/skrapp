@@ -14,6 +14,49 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let pollInterval = 5000;
     let pollTimer = null;
+    let previousState = null;
+    let lastPagesCount = 0;
+
+    // Gong sound using Web Audio API
+    function playGongSound() {
+        try {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            
+            // Create oscillator for the main tone
+            const oscillator = audioContext.createOscillator();
+            const gainNode = audioContext.createGain();
+            
+            oscillator.connect(gainNode);
+            gainNode.connect(audioContext.destination);
+            
+            // Gong-like frequency
+            oscillator.frequency.setValueAtTime(180, audioContext.currentTime);
+            oscillator.frequency.exponentialRampToValueAtTime(120, audioContext.currentTime + 0.5);
+            oscillator.type = 'sine';
+            
+            // Envelope for gong-like decay
+            gainNode.gain.setValueAtTime(0.8, audioContext.currentTime);
+            gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 2);
+            
+            oscillator.start(audioContext.currentTime);
+            oscillator.stop(audioContext.currentTime + 2);
+            
+            // Add a second harmonic for richer sound
+            const osc2 = audioContext.createOscillator();
+            const gain2 = audioContext.createGain();
+            osc2.connect(gain2);
+            gain2.connect(audioContext.destination);
+            osc2.frequency.setValueAtTime(360, audioContext.currentTime);
+            osc2.frequency.exponentialRampToValueAtTime(240, audioContext.currentTime + 0.3);
+            osc2.type = 'sine';
+            gain2.gain.setValueAtTime(0.3, audioContext.currentTime);
+            gain2.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1);
+            osc2.start(audioContext.currentTime);
+            osc2.stop(audioContext.currentTime + 1);
+        } catch (e) {
+            console.log('Could not play sound:', e);
+        }
+    }
 
     async function fetchStatus() {
         try {
@@ -30,6 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             updateUI(data);
+
+            // Play gong when job completes successfully
+            if (data.state === 'done' && previousState !== 'done') {
+                playGongSound();
+            }
+            previousState = data.state;
 
             if (['done', 'failed', 'expired'].includes(data.state)) {
                 stopPolling();
@@ -125,9 +174,66 @@ document.addEventListener('DOMContentLoaded', function() {
         errorEl.classList.remove('hidden');
     }
 
+    async function fetchPages() {
+        try {
+            const response = await fetch(`/v1/jobs/${jobId}/pages?token=${token}`);
+            if (!response.ok) return;
+            
+            const data = await response.json();
+            
+            if (data.total_pages !== lastPagesCount) {
+                lastPagesCount = data.total_pages;
+                renderPagesTable(data.pages);
+                document.getElementById('pages-count').textContent = `${data.total_pages} pages`;
+            }
+        } catch (e) {
+            console.log('Failed to fetch pages:', e);
+        }
+    }
+
+    function renderPagesTable(pages) {
+        const tbody = document.getElementById('pages-tbody');
+        
+        if (!pages || pages.length === 0) {
+            tbody.innerHTML = '<tr class="empty-row"><td colspan="6">No pages crawled yet</td></tr>';
+            return;
+        }
+        
+        tbody.innerHTML = pages.map(page => {
+            const statusClass = page.status_code >= 200 && page.status_code < 300 ? 'success' 
+                : page.status_code >= 300 && page.status_code < 400 ? 'redirect' 
+                : 'error';
+            
+            const shortUrl = page.url.length > 60 ? page.url.substring(0, 60) + '...' : page.url;
+            const shortTitle = page.title ? (page.title.length > 40 ? page.title.substring(0, 40) + '...' : page.title) : '-';
+            const sizeFormatted = page.text_length > 1000 ? `${(page.text_length / 1000).toFixed(1)}k` : page.text_length;
+            
+            return `
+                <tr>
+                    <td class="col-status">
+                        <span class="status-badge ${statusClass}">${page.status_code}</span>
+                    </td>
+                    <td class="col-url">
+                        <span class="url-cell" title="${page.url}">${shortUrl}</span>
+                    </td>
+                    <td class="col-title">
+                        <span class="title-cell" title="${page.title || ''}">${shortTitle}</span>
+                    </td>
+                    <td class="col-depth">${page.depth}</td>
+                    <td class="col-size">${sizeFormatted}</td>
+                    <td class="col-links">${page.outlinks_count}</td>
+                </tr>
+            `;
+        }).join('');
+    }
+
     function startPolling() {
         fetchStatus();
-        pollTimer = setInterval(fetchStatus, pollInterval);
+        fetchPages();
+        pollTimer = setInterval(() => {
+            fetchStatus();
+            fetchPages();
+        }, pollInterval);
     }
 
     function stopPolling() {

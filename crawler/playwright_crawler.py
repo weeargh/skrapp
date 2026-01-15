@@ -137,11 +137,11 @@ class PlaywrightCrawler:
         try:
             page = context.new_page()
             
-            # Navigate with wait for network idle
+            # Navigate with wait for DOM content loaded (faster than networkidle)
             response = page.goto(
                 url,
-                wait_until='networkidle',
-                timeout=30000
+                wait_until='domcontentloaded',
+                timeout=45000
             )
             
             if response is None:
@@ -151,8 +151,8 @@ class PlaywrightCrawler:
             status_code = response.status
             self.status_codes[status_code] = self.status_codes.get(status_code, 0) + 1
             
-            # Wait a bit more for dynamic content
-            page.wait_for_timeout(1000)
+            # Wait for dynamic content to render
+            page.wait_for_timeout(2000)
             
             # Get rendered HTML
             html = page.content()

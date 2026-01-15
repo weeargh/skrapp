@@ -7,113 +7,143 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container status-page">
         <header>
             <h1><a href="/">Docs Crawler</a></h1>
         </header>
 
-        <main>
-            <div id="job-status" class="status-card">
-                <div class="status-header">
-                    <h2>Job Status</h2>
-                    <span id="state-badge" class="badge">Loading...</span>
+        <main class="status-layout">
+            <div class="status-left">
+                <div id="job-status" class="status-card">
+                    <div class="status-header">
+                        <h2>Job Status</h2>
+                        <span id="state-badge" class="badge">Loading...</span>
+                    </div>
+
+                    <div id="loading" class="loading">
+                        <div class="spinner"></div>
+                        <p>Loading job status...</p>
+                    </div>
+
+                    <div id="job-details" class="hidden">
+                        <div class="detail-row">
+                            <span class="label">Job ID:</span>
+                            <span id="job-id" class="value code"></span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">URL:</span>
+                            <span id="start-url" class="value"></span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="label">Host:</span>
+                            <span id="allowed-host" class="value"></span>
+                        </div>
+
+                        <div class="progress-section">
+                            <div class="progress-header">
+                                <span>Progress</span>
+                                <span id="progress-text">0 / 0 pages</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <div class="stats-grid">
+                            <div class="stat">
+                                <span class="stat-value" id="pages-fetched">0</span>
+                                <span class="stat-label">Pages Fetched</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="pages-exported">0</span>
+                                <span class="stat-label">Pages Exported</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="elapsed-time">0s</span>
+                                <span class="stat-label">Elapsed Time</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value" id="errors-count">0</span>
+                                <span class="stat-label">Errors</span>
+                            </div>
+                        </div>
+
+                        <div id="site-status-section" class="hidden">
+                            <div class="detail-row warning">
+                                <span class="label">Site Status:</span>
+                                <span id="site-status" class="value"></span>
+                            </div>
+                        </div>
+
+                        <div id="error-section" class="hidden">
+                            <div class="detail-row error">
+                                <span class="label">Error:</span>
+                                <span id="last-error" class="value"></span>
+                            </div>
+                        </div>
+
+                        <div id="download-section" class="hidden">
+                            <h3>Download Results</h3>
+                            <div class="download-buttons">
+                                <a id="download-pages" href="#" class="btn btn-primary">Download pages.jsonl</a>
+                                <a id="download-summary" href="#" class="btn btn-secondary">Download summary.json</a>
+                            </div>
+                        </div>
+
+                        <div class="timestamps">
+                            <div class="detail-row">
+                                <span class="label">Created:</span>
+                                <span id="created-at" class="value"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Started:</span>
+                                <span id="started-at" class="value"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Finished:</span>
+                                <span id="finished-at" class="value"></span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="label">Expires:</span>
+                                <span id="expires-at" class="value"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="error-message" class="error hidden"></div>
                 </div>
 
-                <div id="loading" class="loading">
-                    <div class="spinner"></div>
-                    <p>Loading job status...</p>
+                <div class="actions">
+                    <a href="/" class="btn btn-secondary">Start New Crawl</a>
                 </div>
-
-                <div id="job-details" class="hidden">
-                    <div class="detail-row">
-                        <span class="label">Job ID:</span>
-                        <span id="job-id" class="value code"></span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">URL:</span>
-                        <span id="start-url" class="value"></span>
-                    </div>
-                    <div class="detail-row">
-                        <span class="label">Host:</span>
-                        <span id="allowed-host" class="value"></span>
-                    </div>
-
-                    <div class="progress-section">
-                        <div class="progress-header">
-                            <span>Progress</span>
-                            <span id="progress-text">0 / 0 pages</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
-                        </div>
-                    </div>
-
-                    <div class="stats-grid">
-                        <div class="stat">
-                            <span class="stat-value" id="pages-fetched">0</span>
-                            <span class="stat-label">Pages Fetched</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value" id="pages-exported">0</span>
-                            <span class="stat-label">Pages Exported</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value" id="elapsed-time">0s</span>
-                            <span class="stat-label">Elapsed Time</span>
-                        </div>
-                        <div class="stat">
-                            <span class="stat-value" id="errors-count">0</span>
-                            <span class="stat-label">Errors</span>
-                        </div>
-                    </div>
-
-                    <div id="site-status-section" class="hidden">
-                        <div class="detail-row warning">
-                            <span class="label">Site Status:</span>
-                            <span id="site-status" class="value"></span>
-                        </div>
-                    </div>
-
-                    <div id="error-section" class="hidden">
-                        <div class="detail-row error">
-                            <span class="label">Error:</span>
-                            <span id="last-error" class="value"></span>
-                        </div>
-                    </div>
-
-                    <div id="download-section" class="hidden">
-                        <h3>Download Results</h3>
-                        <div class="download-buttons">
-                            <a id="download-pages" href="#" class="btn btn-primary">Download pages.jsonl</a>
-                            <a id="download-summary" href="#" class="btn btn-secondary">Download summary.json</a>
-                        </div>
-                    </div>
-
-                    <div class="timestamps">
-                        <div class="detail-row">
-                            <span class="label">Created:</span>
-                            <span id="created-at" class="value"></span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Started:</span>
-                            <span id="started-at" class="value"></span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Finished:</span>
-                            <span id="finished-at" class="value"></span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Expires:</span>
-                            <span id="expires-at" class="value"></span>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="error-message" class="error hidden"></div>
             </div>
 
-            <div class="actions">
-                <a href="/" class="btn btn-secondary">Start New Crawl</a>
+            <div class="status-right">
+                <div id="pages-table-section" class="pages-table-section">
+                    <div class="section-header">
+                        <h3>Crawled Pages</h3>
+                        <span id="pages-count" class="badge">0 pages</span>
+                    </div>
+                    <div class="table-container">
+                        <table id="pages-table" class="pages-table">
+                            <thead>
+                                <tr>
+                                    <th class="col-status">Status</th>
+                                    <th class="col-url">URL</th>
+                                    <th class="col-title">Title</th>
+                                    <th class="col-depth">Depth</th>
+                                    <th class="col-size">Size</th>
+                                    <th class="col-links">Links</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pages-tbody">
+                                <tr class="empty-row">
+                                    <td colspan="6">No pages crawled yet</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
         </main>
     </div>

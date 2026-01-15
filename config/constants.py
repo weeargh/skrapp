@@ -21,6 +21,7 @@ class ErrorReason:
     STALLED = "stalled"
     HARD_STALLED = "hard_stalled"
     RATE_LIMITED = "rate_limited"
+    BLOCKED = "blocked"
     CAPTCHA_DETECTED = "captcha_detected"
     LOGIN_REQUIRED = "login_required"
     ROBOTS_DENIED = "robots_denied"

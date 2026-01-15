@@ -335,3 +335,180 @@ footer {
     font-size: 1rem;
     margin-bottom: 0.5rem;
 }
+
+/* Pages Table Styles */
+.pages-table-section {
+    margin: 0;
+    padding: 0;
+}
+
+.status-right .pages-table-section {
+    border-top: none;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.section-header h3 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.section-header .badge {
+    font-size: 0.75rem;
+}
+
+.table-container {
+    overflow-x: auto;
+    max-height: 500px;
+    overflow-y: auto;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+}
+
+.pages-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.8rem;
+}
+
+.pages-table th,
+.pages-table td {
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.pages-table th {
+    background: #f9f9f9;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.pages-table tbody tr:hover {
+    background: #f5f8ff;
+}
+
+.pages-table .col-status {
+    width: 60px;
+    text-align: center;
+}
+
+.pages-table .col-url {
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.pages-table .col-title {
+    min-width: 150px;
+    max-width: 200px;
+}
+
+.pages-table .col-depth,
+.pages-table .col-size,
+.pages-table .col-links {
+    width: 60px;
+    text-align: center;
+}
+
+.pages-table .url-cell {
+    word-break: break-all;
+    font-family: monospace;
+    font-size: 0.7rem;
+    color: #0066cc;
+}
+
+.pages-table .title-cell {
+    display: block;
+    max-width: 150px;
+    word-wrap: break-word;
+    white-space: normal;
+    line-height: 1.3;
+}
+
+.pages-table .status-badge {
+    display: inline-block;
+    padding: 0.15rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.pages-table .status-badge.success {
+    background: #d4edda;
+    color: #155724;
+}
+
+.pages-table .status-badge.redirect {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.pages-table .status-badge.error {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.pages-table .empty-row td {
+    text-align: center;
+    color: #999;
+    padding: 2rem;
+}
+
+/* Wider container for status page */
+.container.status-page {
+    max-width: 1200px;
+}
+
+/* Side-by-side layout for status page */
+.status-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.status-left {
+    flex: 0 0 380px;
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.status-right {
+    flex: 1;
+    min-width: 0;
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.status-left .status-card {
+    margin-bottom: 0;
+}
+
+.status-left .actions {
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 900px) {
+    .status-layout {
+        flex-direction: column;
+    }
+    
+    .status-left {
+        flex: none;
+        width: 100%;
+    }
+    
+    .status-right {
+        width: 100%;
+    }
+}
