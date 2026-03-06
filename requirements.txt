@@ -7,6 +7,7 @@ scrapy>=2.11.0
 
 # JS rendering (optional)
 playwright>=1.40.0
+crawl4ai>=0.8.0
 
 # Text extraction
 trafilatura>=1.6.0

@@ -1,8 +1,6 @@
 """Background heartbeat thread for updating job progress."""
 import logging
-import os
 import threading
-import time
 
 from config import settings
 from db import queries
@@ -54,14 +52,8 @@ class HeartbeatThread(threading.Thread):
         logger.debug(f"Heartbeat updated for job {self.job_id}: {pages_fetched} pages")
     
     def _count_pages(self) -> int:
-        """Count the number of pages in the raw JSONL file."""
-        raw_file = os.path.join(self.job_dir, 'pages.raw.jsonl')
-        
-        if not os.path.exists(raw_file):
-            return 0
-        
+        """Count discovered pages directly from the page table."""
         try:
-            with open(raw_file, 'r', encoding='utf-8') as f:
-                return sum(1 for _ in f)
+            return queries.count_pages_for_job(self.job_id)
         except Exception:
             return 0

@@ -240,7 +240,8 @@ def is_url_in_scope(
     url: str,
     allowed_host: str,
     ignore_prefixes: list[str],
-    excluded_extensions: set
+    excluded_extensions: set,
+    allowed_path_prefix: str = None
 ) -> bool:
     """
     Check if a URL is in scope for crawling.
@@ -248,15 +249,36 @@ def is_url_in_scope(
     A URL is in scope if:
     - It has http/https scheme
     - Its host matches allowed_host
+    - If allowed_path_prefix is set, path must start with it
     - Its path doesn't match any ignore prefix
     - It doesn't have an excluded extension
     - It doesn't match global deny patterns
+    
+    Args:
+        url: The URL to check
+        allowed_host: The allowed hostname
+        ignore_prefixes: List of path prefixes to ignore
+        excluded_extensions: Set of file extensions to exclude
+        allowed_path_prefix: If set, only URLs under this path are allowed
     """
     if not is_valid_scheme(url):
         return False
     
     if not is_same_host(url, allowed_host):
         return False
+    
+    # Check if URL is under the allowed path prefix
+    if allowed_path_prefix:
+        url_path = get_path(url)
+        # Normalize: ensure prefix ends with / if it's a directory
+        normalized_prefix = allowed_path_prefix.rstrip('/') + '/'
+        normalized_path = url_path if url_path.endswith('/') else url_path + '/'
+        
+        # Allow exact match or paths starting with the prefix
+        if url_path != allowed_path_prefix and not url_path.startswith(normalized_prefix):
+            # Also check without trailing slash normalization for files
+            if not url_path.startswith(allowed_path_prefix.rstrip('/')):
+                return False
     
     if matches_ignore_prefix(url, ignore_prefixes):
         return False

@@ -1,0 +1,5 @@
+-r requirements.txt
+
+# Optional spike dependency for evaluating Crawl4AI without replacing
+# the main Playwright + Jina implementation yet.
+crawl4ai>=0.8.0

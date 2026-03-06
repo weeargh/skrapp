@@ -14,6 +14,18 @@ logger = logging.getLogger(__name__)
 _local = threading.local()
 
 
+def _is_expected_migration_error(error: sqlite3.OperationalError) -> bool:
+    """Best-effort filter for idempotent migration errors."""
+    message = str(error).lower()
+    expected_fragments = (
+        "duplicate column name",
+        "already exists",
+        "duplicate table name",
+        "index ",
+    )
+    return any(fragment in message for fragment in expected_fragments)
+
+
 def get_connection() -> sqlite3.Connection:
     """Get a thread-local database connection."""
     if not hasattr(_local, 'connection') or _local.connection is None:
@@ -59,43 +71,22 @@ def init_db():
     )
     
     conn = get_connection()
+    migration_files = sorted(
+        filename for filename in os.listdir(migrations_dir)
+        if filename.endswith(".sql")
+    )
     
-    migration_file = os.path.join(migrations_dir, "001_initial.sql")
-    if os.path.exists(migration_file):
-        with open(migration_file, 'r') as f:
-            conn.executescript(f.read())
-        conn.commit()
-    
-    # Run additional migrations
-    migration_002 = os.path.join(migrations_dir, "002_add_use_js.sql")
-    if os.path.exists(migration_002):
+    for filename in migration_files:
+        migration_path = os.path.join(migrations_dir, filename)
         try:
-            with open(migration_002, 'r') as f:
+            with open(migration_path, 'r', encoding='utf-8') as f:
                 conn.executescript(f.read())
             conn.commit()
-        except sqlite3.OperationalError:
-            # Column already exists
-            pass
-    
-    migration_003 = os.path.join(migrations_dir, "003_add_crawler_strategy.sql")
-    if os.path.exists(migration_003):
-        try:
-            with open(migration_003, 'r') as f:
-                conn.executescript(f.read())
-            conn.commit()
-        except sqlite3.OperationalError:
-            # Columns already exist
-            pass
-    
-    migration_004 = os.path.join(migrations_dir, "004_frontier_and_docs.sql")
-    if os.path.exists(migration_004):
-        try:
-            with open(migration_004, 'r') as f:
-                conn.executescript(f.read())
-            conn.commit()
-        except sqlite3.OperationalError:
-            # Tables already exist
-            pass
+        except sqlite3.OperationalError as e:
+            if _is_expected_migration_error(e):
+                logger.debug("Skipping idempotent migration error for %s: %s", filename, e)
+                continue
+            raise
 
 
 def execute_query(query: str, params: tuple = ()) -> sqlite3.Cursor:

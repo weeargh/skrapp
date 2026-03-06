@@ -73,6 +73,7 @@ def _handle_orphaned_jobs():
         
         if restart_count < MAX_RESTARTS:
             queries.increment_restart_count(job_id)
+            queries.reset_inflight_pages(job_id)
             queries.update_job_state(job_id, JobState.QUEUED)
             
             queries.insert_job_event(job_id, EventLevel.WARN, EventType.RESTART, {
@@ -119,6 +120,7 @@ def _handle_stalled_jobs():
         
         if restart_count < MAX_RESTARTS:
             queries.increment_restart_count(job_id)
+            queries.reset_inflight_pages(job_id)
             queries.update_job_state(job_id, JobState.QUEUED)
             
             queries.insert_job_event(job_id, EventLevel.WARN, EventType.RESTART, {

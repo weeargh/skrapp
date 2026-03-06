@@ -1,312 +1,328 @@
-"""Job management routes."""
-import json
+"""MVP job and page routes."""
+from __future__ import annotations
+
 import os
 from datetime import datetime, timezone
 
-from flask import Blueprint, request, jsonify, send_file, abort
+from flask import Blueprint, abort, jsonify, request, send_file
 
-from config import settings
-from config.constants import JobState, ArtifactKind
-from db import queries
 from api.validators import (
-    validate_url,
-    validate_max_pages,
-    validate_timeout,
-    validate_ignore_prefixes,
     generate_job_id,
-    generate_token,
-    hash_token,
-    hash_ip
+    validate_ignore_prefixes,
+    validate_max_depth,
+    validate_max_pages,
+    validate_path_prefix,
+    validate_timeout,
+    validate_url,
 )
-from api.middleware.rate_limit import get_client_ip, rate_limit_required
+from config import settings
+from config.constants import ArtifactKind, JobState
+from crawler.url_utils import get_path
+from db import queries
 
-jobs_bp = Blueprint('jobs', __name__)
+
+jobs_bp = Blueprint("jobs", __name__)
 
 
-@jobs_bp.route('/v1/jobs', methods=['POST'])
-@rate_limit_required
+@jobs_bp.route("/v1/jobs", methods=["POST"])
 def create_job():
     """Create a new crawl job."""
     data = request.get_json() or {}
-    
-    start_url = data.get('start_url', '').strip()
-    is_valid, error, hostname = validate_url(start_url)
-    if not is_valid:
-        return jsonify({"error": "Invalid URL", "message": error}), 400
-    
+
+    start_url = (data.get("start_url") or "").strip()
+    is_valid, error_message, hostname = validate_url(start_url)
+    if not is_valid or not hostname:
+        return jsonify({"error": "Invalid URL", "message": error_message}), 400
+
     max_pages = validate_max_pages(
-        data.get('max_pages'),
+        data.get("max_pages"),
         settings.DEFAULT_MAX_PAGES,
         settings.MIN_PAGES_LIMIT,
-        settings.MAX_PAGES_LIMIT
+        settings.MAX_PAGES_LIMIT,
     )
-    
+    max_depth = validate_max_depth(
+        data.get("max_depth"),
+        settings.DEFAULT_MAX_DEPTH,
+        settings.MIN_DEPTH_LIMIT,
+        settings.MAX_DEPTH_LIMIT,
+    )
     timeout_seconds = validate_timeout(
-        data.get('timeout_seconds'),
+        data.get("timeout_seconds"),
         settings.DEFAULT_TIMEOUT_SECONDS,
         settings.MIN_TIMEOUT_SECONDS,
-        settings.MAX_TIMEOUT_SECONDS
+        settings.MAX_TIMEOUT_SECONDS,
     )
-    
-    ignore_prefixes = validate_ignore_prefixes(data.get('ignore_path_prefixes'))
-    
-    # Use Playwright for JavaScript rendering
-    use_js = bool(data.get('use_js', False))
-    
+    ignore_prefixes = validate_ignore_prefixes(data.get("ignore_path_prefixes"))
+    allowed_path_prefix = validate_path_prefix(data.get("allowed_path_prefix"))
+    if not allowed_path_prefix:
+        allowed_path_prefix = _derive_allowed_path_prefix(start_url)
+
     job_id = generate_job_id()
-    token = generate_token()
-    token_hashed = hash_token(token)
-    
-    client_ip = get_client_ip()
-    ip_hash = hash_ip(client_ip)
-    
-    job_dir = os.path.join(settings.JOBS_OUTPUT_DIR, job_id)
-    os.makedirs(job_dir, exist_ok=True)
-    os.makedirs(os.path.join(job_dir, 'state'), exist_ok=True)
-    
-    job = queries.create_job(
+    os.makedirs(os.path.join(settings.JOBS_OUTPUT_DIR, job_id), exist_ok=True)
+    os.makedirs(os.path.join(settings.JOBS_OUTPUT_DIR, job_id, "state"), exist_ok=True)
+
+    job = queries.create_crawl_job(
         job_id=job_id,
-        token_hash=token_hashed,
         start_url=start_url,
         allowed_host=hostname,
+        allowed_path_prefix=allowed_path_prefix,
+        max_depth=max_depth,
         max_pages=max_pages,
-        timeout_seconds=timeout_seconds,
         ignore_path_prefixes=ignore_prefixes,
-        requester_ip_hash=ip_hash,
-        expiry_hours=settings.JOB_EXPIRY_HOURS,
-        use_js=use_js
+        timeout_seconds=timeout_seconds,
     )
-    
-    queries.increment_ip_concurrent(ip_hash)
-    
-    return jsonify({
-        "job_id": job_id,
-        "token": token,
-        "status_url": f"/v1/jobs/{job_id}?token={token}",
-        "state": job['state'],
-        "max_pages": max_pages,
-        "timeout_seconds": timeout_seconds,
-        "use_js": use_js
-    }), 201
+    return jsonify(_serialize_job(job)), 201
 
 
-@jobs_bp.route('/v1/jobs/<job_id>', methods=['GET'])
-def get_job_status(job_id: str):
-    """Get the status of a job."""
-    token = request.args.get('token', '')
-    if not token:
-        return jsonify({"error": "Unauthorized", "message": "Token is required"}), 401
-    
-    token_hashed = hash_token(token)
-    job = queries.get_job_for_auth(job_id, token_hashed)
-    
+@jobs_bp.route("/v1/jobs", methods=["GET"])
+def list_jobs():
+    """List jobs."""
+    status = request.args.get("status") or None
+    limit = _parse_int(request.args.get("limit"), 50)
+    offset = _parse_int(request.args.get("offset"), 0)
+    jobs = queries.list_crawl_jobs(status=status, limit=limit, offset=offset)
+    return jsonify({"jobs": [_serialize_job_summary(job) for job in jobs]})
+
+
+@jobs_bp.route("/v1/jobs/<job_id>", methods=["GET"])
+def get_job(job_id: str):
+    """Get one job."""
+    job = queries.get_crawl_job(job_id)
     if not job:
-        return jsonify({"error": "Not Found", "message": "Job not found or invalid token"}), 404
-    
-    if job['state'] != JobState.EXPIRED:
-        expires_at = datetime.fromisoformat(job['expires_at'])
-        if datetime.now(timezone.utc) > expires_at:
-            queries.update_job_state(job_id, JobState.EXPIRED)
-            return jsonify({"error": "Gone", "message": "Job has expired"}), 410
-    
-    if job['state'] == JobState.EXPIRED:
-        return jsonify({"error": "Gone", "message": "Job has expired"}), 410
-    
-    elapsed_seconds = None
-    if job['started_at']:
-        started = datetime.fromisoformat(job['started_at'])
-        if job['finished_at']:
-            finished = datetime.fromisoformat(job['finished_at'])
-            elapsed_seconds = int((finished - started).total_seconds())
-        else:
-            elapsed_seconds = int((datetime.now(timezone.utc) - started).total_seconds())
-    
-    response = {
-        "job_id": job_id,
-        "state": job['state'],
-        "start_url": job['start_url'],
-        "allowed_host": job['allowed_host'],
-        "max_pages": job['max_pages'],
-        "pages_fetched": job['pages_fetched'],
-        "pages_exported": job['pages_exported'],
-        "errors_count": job['errors_count'],
-        "elapsed_seconds": elapsed_seconds,
-        "restart_count": job['restart_count'],
-        "created_at": job['created_at'],
-        "started_at": job['started_at'],
-        "finished_at": job['finished_at'],
-        "expires_at": job['expires_at']
-    }
-    
-    if job['site_status']:
-        response['site_status'] = job['site_status']
-    
-    if job['block_evidence']:
-        try:
-            response['block_evidence'] = json.loads(job['block_evidence'])
-        except (json.JSONDecodeError, TypeError) as e:
-            # Invalid JSON in block_evidence field, skip it
-            response['block_evidence'] = None
-    
-    if job['last_error']:
-        try:
-            response['last_error'] = json.loads(job['last_error'])
-        except (json.JSONDecodeError, TypeError) as e:
-            # Invalid JSON in last_error field, return as raw string
-            response['last_error'] = {'raw': str(job['last_error'])}
-    
-    if job['state'] in (JobState.DONE, JobState.CANCELLED):
-        response['download_url'] = f"/v1/jobs/{job_id}/download/pages.jsonl?token={token}"
-    
-    return jsonify(response)
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+    return jsonify(_serialize_job(job))
 
 
-@jobs_bp.route('/v1/jobs/<job_id>/cancel', methods=['POST'])
+@jobs_bp.route("/v1/jobs/<job_id>/cancel", methods=["POST"])
 def cancel_job(job_id: str):
-    """Cancel a running or queued job."""
-    token = request.args.get('token', '')
-    if not token:
-        return jsonify({"error": "Unauthorized", "message": "Token is required"}), 401
-    
-    token_hashed = hash_token(token)
-    job = queries.get_job_for_auth(job_id, token_hashed)
-    
+    """Cancel a queued or running job."""
+    job = queries.get_crawl_job(job_id)
     if not job:
-        return jsonify({"error": "Not Found", "message": "Job not found or invalid token"}), 404
-    
-    # Can only cancel active jobs
-    if job['state'] not in (JobState.QUEUED, JobState.RUNNING, JobState.FINALIZING):
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+
+    if job["status"] not in (JobState.QUEUED, JobState.RUNNING, JobState.FINALIZING):
         return jsonify({
             "error": "Bad Request",
-            "message": f"Cannot cancel job in '{job['state']}' state"
+            "message": f"Cannot cancel job in '{job['status']}' state",
         }), 400
-    
-    # Mark as cancelled - worker will detect and finalize
-    queries.update_job_state(job_id, JobState.CANCELLED)
-    
+
+    updated = queries.update_crawl_job_status(job_id, JobState.CANCELLED)
     return jsonify({
         "job_id": job_id,
-        "state": "cancelled",
-        "message": "Job cancellation requested. Results will be finalized shortly."
+        "status": updated["status"],
+        "message": "Job cancellation requested. Finalization will finish shortly.",
     })
 
 
-@jobs_bp.route('/v1/jobs/<job_id>/download/pages.jsonl', methods=['GET'])
-def download_pages(job_id: str):
-    """Download the pages.jsonl file for a completed job."""
-    token = request.args.get('token', '')
-    if not token:
-        return jsonify({"error": "Unauthorized", "message": "Token is required"}), 401
-    
-    token_hashed = hash_token(token)
-    job = queries.get_job_for_auth(job_id, token_hashed)
-    
+@jobs_bp.route("/v1/jobs/<job_id>/tree", methods=["GET"])
+def get_tree(job_id: str):
+    """Return the page tree for a job."""
+    job = queries.get_crawl_job(job_id)
     if not job:
-        return jsonify({"error": "Not Found", "message": "Job not found or invalid token"}), 404
-    
-    if job['state'] == JobState.EXPIRED:
-        return jsonify({"error": "Gone", "message": "Job has expired"}), 410
-    
-    if job['state'] not in (JobState.DONE, JobState.CANCELLED):
-        return jsonify({
-            "error": "Bad Request",
-            "message": f"Job is not complete. Current state: {job['state']}"
-        }), 400
-    
-    file_path = os.path.join(settings.JOBS_OUTPUT_DIR, job_id, 'pages.jsonl')
-    
-    if not os.path.exists(file_path):
-        return jsonify({"error": "Not Found", "message": "Output file not found"}), 404
-    
-    return send_file(
-        file_path,
-        mimetype='application/x-ndjson',
-        as_attachment=True,
-        download_name=f'{job_id}_pages.jsonl'
-    )
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+    tree = queries.get_job_tree(job_id)
+    tree["start_url"] = job["start_url"]
+    tree["max_depth"] = job["max_depth"]
+    return jsonify(tree)
 
 
-@jobs_bp.route('/v1/jobs/<job_id>/download/summary.json', methods=['GET'])
-def download_summary(job_id: str):
-    """Download the summary.json file for a completed job."""
-    token = request.args.get('token', '')
-    if not token:
-        return jsonify({"error": "Unauthorized", "message": "Token is required"}), 401
-    
-    token_hashed = hash_token(token)
-    job = queries.get_job_for_auth(job_id, token_hashed)
-    
-    if not job:
-        return jsonify({"error": "Not Found", "message": "Job not found or invalid token"}), 404
-    
-    if job['state'] == JobState.EXPIRED:
-        return jsonify({"error": "Gone", "message": "Job has expired"}), 410
-    
-    if job['state'] not in (JobState.DONE, JobState.CANCELLED):
-        return jsonify({
-            "error": "Bad Request",
-            "message": f"Job is not complete. Current state: {job['state']}"
-        }), 400
-    
-    file_path = os.path.join(settings.JOBS_OUTPUT_DIR, job_id, 'summary.json')
-    
-    if not os.path.exists(file_path):
-        return jsonify({"error": "Not Found", "message": "Summary file not found"}), 404
-    
-    return send_file(
-        file_path,
-        mimetype='application/json',
-        as_attachment=True,
-        download_name=f'{job_id}_summary.json'
-    )
-
-
-@jobs_bp.route('/v1/jobs/<job_id>/pages', methods=['GET'])
+@jobs_bp.route("/v1/jobs/<job_id>/pages", methods=["GET"])
 def list_pages(job_id: str):
-    """List crawled pages for a job (live progress view)."""
-    token = request.args.get('token', '')
-    if not token:
-        return jsonify({"error": "Unauthorized", "message": "Token is required"}), 401
-    
-    token_hashed = hash_token(token)
-    job = queries.get_job_for_auth(job_id, token_hashed)
-    
+    """List pages for a job."""
+    job = queries.get_crawl_job(job_id)
     if not job:
-        return jsonify({"error": "Not Found", "message": "Job not found or invalid token"}), 404
-    
-    if job['state'] == JobState.EXPIRED:
-        return jsonify({"error": "Gone", "message": "Job has expired"}), 410
-    
-    # Read from raw file (available during crawl)
-    raw_file = os.path.join(settings.JOBS_OUTPUT_DIR, job_id, 'pages.raw.jsonl')
-    
-    pages = []
-    if os.path.exists(raw_file):
-        try:
-            with open(raw_file, 'r', encoding='utf-8') as f:
-                for line in f:
-                    try:
-                        page = json.loads(line.strip())
-                        # Return minimal data for table display
-                        pages.append({
-                            'url': page.get('url', ''),
-                            'title': page.get('title', ''),
-                            'status_code': page.get('status_code', 0),
-                            'depth': page.get('depth', 0),
-                            'extraction_mode': page.get('extraction_mode', ''),
-                            'text_length': len(page.get('text', '')),
-                            'outlinks_count': page.get('outlinks_count', 0)
-                        })
-                    except json.JSONDecodeError as e:
-                        # Skip malformed JSON lines
-                        continue
-        except (IOError, OSError) as e:
-            # File access errors - could be permission issues or file being written
-            return jsonify({"error": "Internal Server Error", "message": f"Failed to read pages file: {str(e)}"}), 500
-    
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+
+    depth = request.args.get("depth")
+    depth = int(depth) if depth is not None and depth != "" else None
+    parent_page_id = request.args.get("parent_page_id") or None
+    status = request.args.get("status") or None
+    limit = _parse_int(request.args.get("limit"), 100)
+    offset = _parse_int(request.args.get("offset"), 0)
+
+    pages = queries.list_pages_for_job(
+        job_id,
+        depth=depth,
+        parent_page_id=parent_page_id,
+        status=status,
+        limit=limit,
+        offset=offset,
+    )
+    total = queries.count_pages_for_job(
+        job_id,
+        depth=depth,
+        parent_page_id=parent_page_id,
+        status=status,
+    )
     return jsonify({
         "job_id": job_id,
-        "state": job['state'],
-        "total_pages": len(pages),
-        "pages": pages
+        "total": total,
+        "pages": [_serialize_page_summary(page) for page in pages],
     })
+
+
+@jobs_bp.route("/v1/jobs/<job_id>/pages/<page_id>", methods=["GET"])
+def get_page(job_id: str, page_id: str):
+    """Get page detail."""
+    job = queries.get_crawl_job(job_id)
+    if not job:
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+
+    page = queries.get_page_by_id(page_id)
+    if not page or page["job_id"] != job_id:
+        return jsonify({"error": "Not Found", "message": "Page not found"}), 404
+
+    return jsonify(_serialize_page_detail(page))
+
+
+@jobs_bp.route("/v1/jobs/<job_id>/artifacts", methods=["GET"])
+def list_artifacts(job_id: str):
+    """List generated artifacts for a job."""
+    job = queries.get_crawl_job(job_id)
+    if not job:
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+
+    artifacts = queries.get_artifacts_for_job(job_id)
+    items = []
+    for artifact in artifacts:
+        items.append({
+            "kind": artifact["kind"],
+            "download_url": f"/v1/jobs/{job_id}/artifacts/{artifact['kind']}/download",
+            "size_bytes": artifact["byte_size"],
+        })
+    return jsonify({"job_id": job_id, "artifacts": items})
+
+
+@jobs_bp.route("/v1/jobs/<job_id>/artifacts/<kind>/download", methods=["GET"])
+def download_artifact(job_id: str, kind: str):
+    """Download a generated artifact by kind."""
+    mime_types = {
+        ArtifactKind.LLM_READY_JSONL: "application/x-ndjson",
+        ArtifactKind.RAW_MARKDOWN_JSONL: "application/x-ndjson",
+        ArtifactKind.PLAIN_TEXT_JSONL: "application/x-ndjson",
+        ArtifactKind.PAGES_JSONL: "application/x-ndjson",
+        ArtifactKind.TREE_JSON: "application/json",
+        ArtifactKind.MARKDOWN_ZIP: "application/zip",
+    }
+    return _download_artifact(job_id, kind, mime_types.get(kind, "application/octet-stream"))
+
+
+def _download_artifact(job_id: str, kind: str, mimetype: str):
+    """Generic artifact downloader."""
+    job = queries.get_crawl_job(job_id)
+    if not job:
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+    if job["status"] not in (JobState.DONE, JobState.CANCELLED):
+        return jsonify({
+            "error": "Bad Request",
+            "message": f"Job is not complete. Current status: {job['status']}",
+        }), 400
+
+    artifact = queries.get_artifact_by_kind(job_id, kind)
+    if not artifact or not os.path.exists(artifact["path"]):
+        return jsonify({"error": "Not Found", "message": "Artifact not found"}), 404
+
+    return send_file(
+        artifact["path"],
+        mimetype=mimetype,
+        as_attachment=True,
+        download_name=os.path.basename(artifact["path"]),
+    )
+
+
+def _serialize_job(job: dict) -> dict:
+    """Serialize a job for detail responses."""
+    started_at = job.get("started_at")
+    finished_at = job.get("finished_at")
+    elapsed_seconds = None
+    if started_at:
+        start_dt = datetime.fromisoformat(started_at)
+        end_dt = datetime.fromisoformat(finished_at) if finished_at else datetime.now(timezone.utc)
+        elapsed_seconds = int((end_dt - start_dt).total_seconds())
+
+    response = {
+        "job_id": job["id"],
+        "status": job["status"],
+        "start_url": job["start_url"],
+        "allowed_host": job["allowed_host"],
+        "allowed_path_prefix": job.get("allowed_path_prefix"),
+        "max_depth": job.get("max_depth"),
+        "max_pages": job.get("max_pages"),
+        "pages_discovered": job.get("pages_discovered", 0),
+        "pages_processed": job.get("pages_processed", 0),
+        "pages_succeeded": job.get("pages_succeeded", 0),
+        "pages_failed": job.get("pages_failed", 0),
+        "cleanup_status": job.get("cleanup_status"),
+        "error_message": job.get("error_message"),
+        "created_at": job.get("created_at"),
+        "started_at": started_at,
+        "finished_at": finished_at,
+        "elapsed_seconds": elapsed_seconds,
+    }
+
+    if job["status"] in (JobState.DONE, JobState.CANCELLED):
+        response["artifacts_url"] = f"/v1/jobs/{job['id']}/artifacts"
+    return response
+
+
+def _serialize_job_summary(job: dict) -> dict:
+    """Serialize a compact job summary."""
+    return {
+        "job_id": job["id"],
+        "status": job["status"],
+        "start_url": job["start_url"],
+        "pages_discovered": job.get("pages_discovered", 0),
+        "pages_succeeded": job.get("pages_succeeded", 0),
+        "created_at": job.get("created_at"),
+    }
+
+
+def _serialize_page_summary(page: dict) -> dict:
+    """Serialize a compact page response."""
+    text_length = len(page.get("plain_text") or page.get("raw_text") or "")
+    return {
+        "page_id": page["id"],
+        "url": page["url"],
+        "canonical_url": page["canonical_url"],
+        "parent_page_id": page.get("parent_page_id"),
+        "depth": page["depth"],
+        "title": page.get("title"),
+        "page_type": page.get("page_type"),
+        "status": page["status"],
+        "text_length": text_length,
+        "cleanup_score": page.get("cleanup_score"),
+        "cleanup_confidence": page.get("cleanup_confidence"),
+    }
+
+
+def _serialize_page_detail(page: dict) -> dict:
+    """Serialize detailed page content."""
+    response = _serialize_page_summary(page)
+    response.update({
+        "job_id": page["job_id"],
+        "raw_markdown": page.get("raw_markdown"),
+        "clean_markdown": page.get("clean_markdown"),
+        "plain_text": page.get("plain_text"),
+        "removed_blocks": page.get("removed_blocks_json", []),
+        "main_content_selector": page.get("main_content_selector"),
+        "error_message": page.get("error_message"),
+    })
+    return response
+
+
+def _parse_int(value, default: int) -> int:
+    """Best-effort integer parsing."""
+    try:
+        return int(value)
+    except (TypeError, ValueError):
+        return default
+
+
+def _derive_allowed_path_prefix(start_url: str) -> str | None:
+    """Default scope to the provided start URL subtree."""
+    path = get_path(start_url)
+    if not path or path == "/":
+        return None
+    if path.endswith((".html", ".htm", ".php", ".jsp", ".asp")):
+        return path.rsplit("/", 1)[0] or "/"
+    return path.rstrip("/") or "/"

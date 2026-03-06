@@ -1,478 +1,345 @@
-"""Job runner - manages crawler execution with automatic fallback."""
+"""Page-centric job runner helpers for discovery and extraction."""
 from __future__ import annotations
 
-import json
 import logging
 import os
-import subprocess
-import sys
+from urllib.parse import urlparse, urlunparse
 
 from config import settings
-from config.constants import JobState, ErrorReason, SiteStatus
-from config.js_domains import is_js_heavy_domain, get_detected_reason
+from config.constants import JobState, PageState
+from crawler.crawl4ai_session import Crawl4AIPageSession
+from crawler.sitemap import discover_sitemap_urls
+from crawler.url_utils import canonicalize_url, get_path
 from db import queries
-from worker.heartbeat import HeartbeatThread
 from worker.finalizer import finalize_job
-from worker.blocking_detector import analyze_blocking_signals, update_job_blocking_status
-from crawler.playwright_crawler import run_playwright_crawl
 
 
 logger = logging.getLogger(__name__)
 
 
-def run_job(job_id: str) -> bool:
-    """
-    Run a crawl job with automatic fallback strategy.
-    
-    This function implements an intelligent crawler selection strategy:
-    - Scrapy: Fast, efficient, but doesn't execute JavaScript
-    - Playwright: Slower but handles JavaScript-heavy sites
-    
-    Strategy Decision Tree:
-    1. Check if user explicitly requested JS rendering (use_js flag)
-       → If yes: Use Playwright directly
-    
-    2. Check if URL matches known JS-heavy domain patterns (e.g., React, Vue, Angular SPAs)
-       → If yes: Use Playwright preemptively to avoid wasted Scrapy attempts
-       → Log the detection reason (e.g., 'react_docs', 'spa_framework')
-    
-    3. Otherwise: Start with Scrapy (faster for traditional HTML sites)
-       → After Scrapy completes, analyze results for blocking/failure signals:
-          * Zero pages fetched → Likely JS-required or blocked
-          * Excessive 429/403 responses → Rate limited or blocked
-          * High duplicate content hash ratio → Captcha or login wall
-       → If any blocking signals detected: Automatically retry with Playwright
-    
-    Fallback Retry Policy:
-    - Maximum 1 fallback retry per job (prevents infinite loops)
-    - Fallback count tracked in job.fallback_retry_count field
-    - Events logged for monitoring: 'fallback_triggered', 'js_domain_detected'
-    
-    Args:
-        job_id: The job ID to run
-    
-    Returns:
-        True if the job completed successfully (pages fetched > 0), False otherwise
-    
-    Side Effects:
-        - Updates job state in database (QUEUED → RUNNING → DONE/FAILED)
-        - Creates output files in jobs/<job_id>/ directory
-        - Starts heartbeat thread to update progress
-        - Updates IP concurrent job count
-    """
-    job = queries.get_job_by_id(job_id)
+def start_job(job_id: str) -> dict | None:
+    """Prepare a running job so pages are ready to be claimed."""
+    job = queries.get_crawl_job(job_id)
     if not job:
-        logger.error(f"Job {job_id} not found")
+        logger.error("Job %s not found", job_id)
+        return None
+
+    os.makedirs(os.path.join(settings.JOBS_OUTPUT_DIR, job_id), exist_ok=True)
+    job = _prepare_job(job)
+    queries.touch_job_heartbeat(job_id)
+    return queries.get_crawl_job(job_id)
+
+
+def start_next_queued_job() -> dict | None:
+    """Atomically activate the next queued job."""
+    job = queries.claim_next_queued_crawl_job()
+    if not job:
+        return None
+    return start_job(job["id"])
+
+
+def process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4AIPageSession):
+    """Process one leased page."""
+    queries.touch_job_heartbeat(job["id"])
+    queries.renew_page_lease(page["id"], worker_id, settings.PAGE_LEASE_SECONDS)
+    _process_page(job, page, worker_id, crawler_session)
+    queries.touch_job_heartbeat(job["id"])
+
+
+def finalize_ready_job() -> bool:
+    """Claim and finalize one job that has no remaining work."""
+    job = queries.claim_job_ready_for_finalization()
+    if not job:
         return False
-    
-    logger.info(f"Starting job {job_id}: {job['start_url']}")
-    
-    queries.update_job_state(job_id, JobState.RUNNING)
-    
-    job_dir = os.path.join(settings.JOBS_OUTPUT_DIR, job_id)
-    os.makedirs(job_dir, exist_ok=True)
-    
-    state_dir = os.path.join(job_dir, 'state')
-    os.makedirs(state_dir, exist_ok=True)
-    
-    heartbeat = HeartbeatThread(job_id, job_dir)
-    heartbeat.start()
-    
+
     try:
-        # Determine initial crawler strategy
-        # Priority order: user request > auto-detection > default Scrapy
-        use_js_flag = job.get('use_js', 0)
-        
-        if use_js_flag:
-            # User explicitly requested JS rendering via API parameter
-            strategy = 'playwright_user_requested'
-            use_playwright = True
-            logger.info(f"Job {job_id}: Using Playwright (user requested)")
-        elif is_js_heavy_domain(job['start_url']):
-            # Auto-detected JS-heavy domain based on URL patterns
-            # This saves time by skipping the Scrapy attempt for known SPA frameworks
-            strategy = 'playwright_preemptive'
-            use_playwright = True
-            detected_reason = get_detected_reason(job['start_url'])
-            logger.info(f"Job {job_id}: Using Playwright (auto-detected: {detected_reason})")
-            queries.insert_job_event(job_id, 'INFO', 'js_domain_detected', {
-                'reason': detected_reason
-            })
-        else:
-            # Start with Scrapy (faster for traditional server-rendered HTML)
-            strategy = 'scrapy'
-            use_playwright = False
-            logger.info(f"Job {job_id}: Starting with Scrapy")
-        
-        # Update crawler strategy
-        queries.update_job(job_id, crawler_strategy=strategy)
-        
-        # Run initial crawl
-        if use_playwright:
-            success = _run_playwright(job, job_dir)
-        else:
-            # Run Scrapy first
-            success = _run_scrapy(job, job_dir, state_dir)
-            
-            # Post-Scrapy analysis: Check if fallback to Playwright is needed
-            # This happens when Scrapy fails due to:
-            # - Zero pages fetched (likely JS-required content)
-            # - Site blocking detected (429/403 errors, captcha, login walls)
-            # - Throttling detected (high error rate but not complete block)
-            should_fallback, fallback_reason = _should_fallback(job_id, job_dir)
-            
-            if should_fallback:
-                # Check retry limit: Only fallback once per job
-                # This prevents infinite loops and excessive resource usage
-                fallback_count = job.get('fallback_retry_count', 0)
-                if fallback_count < 1:
-                    logger.info(f"Job {job_id}: Triggering fallback to Playwright ({fallback_reason})")
-                    
-                    # Update job metadata for fallback attempt
-                    queries.update_job(
-                        job_id,
-                        fallback_retry_count=1,
-                        crawler_strategy='scrapy_fallback_playwright'
-                    )
-                    queries.insert_job_event(job_id, 'INFO', 'fallback_triggered', {
-                        'reason': fallback_reason,
-                        'from': 'scrapy',
-                        'to': 'playwright'
-                    })
-                    
-                    # Retry with Playwright (this will overwrite Scrapy's output)
-                    success = _run_playwright(job, job_dir)
-                else:
-                    logger.warning(f"Job {job_id}: Fallback already attempted, not retrying")
-        
+        return finalize_job(job["id"])
     except Exception as e:
-        logger.error(f"Unexpected error running crawler for job {job_id}: {e}", exc_info=True)
-        success = False
-        queries.update_job(
-            job_id,
-            last_error=json.dumps({
-                "reason": ErrorReason.UNKNOWN,
-                "message": f"Unexpected crawler error: {type(e).__name__}: {str(e)}"
-            })
+        logger.error("Failed to finalize job %s: %s", job["id"], e, exc_info=True)
+        queries.update_crawl_job(
+            job["id"],
+            cleanup_status="failed",
+            error_message=f"{type(e).__name__}: {e}",
         )
-    finally:
-        heartbeat.stop()
-        heartbeat.join(timeout=5)
-        
-        # Check if cancellation was requested
-        if heartbeat.cancellation_requested:
-            logger.info(f"Job {job_id} was cancelled by user")
-            success = True  # Treat cancellation as successful for finalization
-        
-        # Final update of pages_fetched before finalization
-        # (Heartbeat may not have triggered if job completed quickly)
-        final_pages = _count_pages(job_dir)
-        if final_pages > 0:
-            queries.update_job(job_id, pages_fetched=final_pages)
-    
-    # Check again if cancelled (could be cancelled during finally block)
-    job = queries.get_job_by_id(job_id)
-    if job and job['state'] == JobState.CANCELLED:
-        logger.info(f"Job {job_id} cancelled - finalizing partial results")
-        finalize_job(job_id)
-        return True
-    
-    if success:
-        finalize_job(job_id)
-    else:
-        if job and job['state'] == JobState.RUNNING:
-            # Determine more specific failure reason if possible
-            error_msg = "Crawler execution failed"
-            if final_pages == 0:
-                error_msg = "Crawler failed: Zero pages fetched. Site may require authentication, be blocking requests, or have technical issues."
-            
-            queries.update_job_state(
-                job_id,
-                JobState.FAILED,
-                last_error=json.dumps({
-                    "reason": ErrorReason.UNKNOWN,
-                    "message": error_msg
-                })
-            )
-            queries.decrement_ip_concurrent(job['requester_ip_hash'])
-    
-    return success
+        if job["status"] == JobState.FINALIZING:
+            queries.update_crawl_job_status(job["id"], JobState.FAILED, cleanup_status="failed")
+        return False
 
 
-def _should_fallback(job_id: str, job_dir: str) -> tuple[bool, str | None]:
-    """
-    Determine if we should fallback to Playwright after Scrapy.
-    
-    This function analyzes the Scrapy crawl results to detect blocking or failure signals
-    that indicate the site requires JavaScript rendering or is actively blocking the crawler.
-    
-    Blocking Signal Detection:
-    1. Zero Pages Fetched:
-       - Most common reason: site requires JavaScript to render content
-       - Example: React/Vue/Angular SPAs with empty HTML shell
-       - Action: Retry with Playwright
-    
-    2. Site Status = BLOCKED:
-       - Detected via BlockingDetectionPipeline during crawl
-       - Signals include:
-         * excessive_429: >20% of responses are HTTP 429 (rate limited)
-         * excessive_403: >30% of responses are HTTP 403 (forbidden)
-         * captcha_detected: CAPTCHA HTML patterns found in response
-         * duplicate_content_high: >50% of pages have identical content hash
-       - Action: Retry with Playwright (may bypass some blocks)
-    
-    3. Site Status = THROTTLED:
-       - High error rate but not completely blocked
-       - Some pages succeeded, but many failed
-       - Action: Retry with Playwright with slower rate
-    
-    4. Site Status = LOGIN_REQUIRED:
-       - Login wall detected
-       - Action: Do NOT fallback (Playwright won't help without credentials)
-    
-    Args:
-        job_id: The job ID
-        job_dir: The job output directory containing blocking_evidence.json
-    
-    Returns:
-        (should_fallback, reason): 
-        - should_fallback: True if we should retry with Playwright
-        - reason: Human-readable string explaining why (e.g., 'zero_pages', 'blocked:captcha_detected')
-    """
-    # Read blocking evidence
-    evidence_path = os.path.join(job_dir, 'blocking_evidence.json')
-    tracker_evidence = {}
-    
-    if os.path.exists(evidence_path):
-        try:
-            with open(evidence_path, 'r', encoding='utf-8') as f:
-                tracker_evidence = json.load(f)
-        except Exception as e:
-            logger.warning(f"Failed to read blocking evidence: {e}")
-    
-    # Analyze blocking signals
-    site_status, evidence = analyze_blocking_signals(job_id, tracker_evidence)
-    
-    # Update job with blocking status
-    update_job_blocking_status(job_id, site_status, evidence)
-    
-    # Count pages fetched
-    pages_fetched = _count_pages(job_dir)
-    
-    logger.info(f"Job {job_id}: Post-Scrapy analysis - status={site_status}, pages={pages_fetched}")
-    
-    # Decide on fallback
-    if pages_fetched == 0:
-        return True, 'zero_pages'
-    
-    if site_status == SiteStatus.BLOCKED:
-        return True, f'blocked:{evidence.get("signals_detected", ["unknown"])[0] if evidence.get("signals_detected") else "unknown"}'
-    
-    if site_status == SiteStatus.THROTTLED:
-        return True, 'throttled'
-    
-    # LOGIN_REQUIRED doesn't benefit from Playwright fallback
-    # Normal status means no fallback needed
-    return False, None
+def _prepare_job(job: dict) -> dict:
+    """Ensure the job has a root page and resolved path prefix."""
+    allowed_path_prefix = job.get("allowed_path_prefix") or _derive_allowed_path_prefix(job["start_url"])
+    if allowed_path_prefix != job.get("allowed_path_prefix"):
+        job = queries.update_crawl_job(job["id"], allowed_path_prefix=allowed_path_prefix)
+
+    if queries.count_pages_for_job(job["id"]) == 0:
+        root_url = canonicalize_url(job["start_url"])
+        root_page = queries.create_page(
+            job_id=job["id"],
+            url=job["start_url"],
+            canonical_url=root_url,
+            parent_page_id=None,
+            depth=0,
+            discovery_order=0,
+            status=PageState.QUEUED,
+            title=None,
+            meta_json={"root": True},
+        )
+        queries.insert_job_event(job["id"], "info", "root_page_created", {
+            "url": job["start_url"],
+            "allowed_path_prefix": allowed_path_prefix,
+        })
+        if root_page:
+            _seed_pages_from_sitemap(job, root_page)
+
+    return queries.get_crawl_job(job["id"])
 
 
-def _count_pages(job_dir: str) -> int:
-    """Count the number of pages in the raw output file."""
-    output_path = os.path.join(job_dir, 'pages.raw.jsonl')
-    if not os.path.exists(output_path):
-        return 0
-    
+def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4AIPageSession):
+    """Discover links and extract content for one page."""
+    page_id = page["id"]
+    job_id = job["id"]
+    queries.insert_job_event(job_id, "info", "page_discovering", {
+        "page_id": page_id,
+        "url": page["url"],
+        "depth": page["depth"],
+        "worker_id": worker_id,
+    })
+
     try:
-        with open(output_path, 'r', encoding='utf-8') as f:
-            return sum(1 for _ in f)
-    except Exception:
-        return 0
+        extracted = crawler_session.fetch_page(page["url"])
+        if extracted.status_code and extracted.status_code >= 400:
+            raise RuntimeError(f"Page returned HTTP {extracted.status_code}")
+
+        queries.update_page(
+            page_id,
+            url=extracted.final_url,
+            canonical_url=extracted.canonical_url,
+            title=extracted.title,
+            raw_html=extracted.html,
+            meta_json={
+                "status_code": extracted.status_code,
+                "outlinks_count": len(extracted.outlinks),
+                "extractor": "crawl4ai",
+                "extractor_meta": extracted.meta,
+                "worker_id": worker_id,
+            },
+        )
+
+        _enqueue_child_pages(job, page_id, page["depth"], extracted.outlinks)
+
+        queries.update_page_status(page_id, PageState.EXTRACTING, claimed_by=worker_id)
+        queries.renew_page_lease(page_id, worker_id, settings.PAGE_LEASE_SECONDS)
+        queries.update_page_status(
+            page_id,
+            PageState.DONE,
+            title=extracted.title or page.get("title"),
+            raw_markdown=extracted.raw_markdown,
+            raw_text=extracted.raw_text,
+            meta_json={
+                "status_code": extracted.status_code,
+                "outlinks_count": len(extracted.outlinks),
+                "extractor": "crawl4ai",
+                "extractor_meta": extracted.meta,
+                "cleaned_html_length": len(extracted.cleaned_html or ""),
+                "worker_id": worker_id,
+            },
+            claimed_by=None,
+            claimed_at=None,
+            lease_expires_at=None,
+        )
+        queries.insert_job_event(job_id, "info", "page_done", {
+            "page_id": page_id,
+            "url": extracted.final_url,
+            "depth": page["depth"],
+            "outlinks_count": len(extracted.outlinks),
+            "worker_id": worker_id,
+        })
+    except Exception as e:
+        queries.update_page_status(
+            page_id,
+            PageState.FAILED,
+            error_message=str(e),
+            claimed_by=None,
+            claimed_at=None,
+            lease_expires_at=None,
+        )
+        queries.insert_job_event(job_id, "error", "page_failed", {
+            "page_id": page_id,
+            "url": page["url"],
+            "depth": page["depth"],
+            "message": str(e),
+            "worker_id": worker_id,
+        })
 
 
-def _run_scrapy(job: dict, job_dir: str, state_dir: str) -> bool:
-    """
-    Run the Scrapy crawler subprocess.
-    
-    Returns:
-        True if crawler completed successfully
-    """
-    job_id = job['id']
-    
-    crawler_log_path = os.path.join(job_dir, 'crawler.log')
-    runner_log_path = os.path.join(job_dir, 'runner.log')
-    
-    project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    
-    cmd = [
-        sys.executable, '-m', 'scrapy', 'runspider',
-        os.path.join(project_root, 'crawler', 'spider.py'),
-        '-a', f'job_id={job_id}',
-        '-a', f'start_url={job["start_url"]}',
-        '-a', f'allowed_host={job["allowed_host"]}',
-        '-a', f'max_pages={job["max_pages"]}',
-        '-a', f'ignore_prefixes={job["ignore_path_prefixes"]}',
-        '-s', f'JOBDIR={state_dir}',
-        '-s', f'LOG_FILE={crawler_log_path}',
-        '-s', f'CLOSESPIDER_TIMEOUT={job["timeout_seconds"]}',
-        '-s', 'ITEM_PIPELINES={"crawler.pipelines.TextExtractionPipeline": 100, "crawler.pipelines.QualityGatePipeline": 120, "crawler.pipelines.ContentCleanupPipeline": 140, "crawler.pipelines.DocumentIdentityPipeline": 160, "crawler.pipelines.BudgetControlPipeline": 170, "crawler.pipelines.MarkdownExtractionPipeline": 180, "crawler.pipelines.BlockingDetectionPipeline": 200, "crawler.pipelines.CrawlLogPipeline": 250, "crawler.pipelines.JSONLWriterPipeline": 300}',
-        '-s', 'DOWNLOADER_MIDDLEWARES={"crawler.middlewares.AdaptiveThrottleMiddleware": 100, "crawler.middlewares.BlockingSignalMiddleware": 543}',
-        '-s', f'USER_AGENT={settings.CRAWLER_USER_AGENT}',
-        '-s', 'ROBOTSTXT_OBEY=True',
-        '-s', f'CONCURRENT_REQUESTS={settings.CRAWLER_CONCURRENT_REQUESTS}',
-        '-s', f'DOWNLOAD_DELAY={settings.CRAWLER_DOWNLOAD_DELAY}',
-        '-s', f'DEPTH_LIMIT={settings.CRAWLER_DEPTH_LIMIT}',
-        '-s', 'HTTPERROR_ALLOWED_CODES=[403,404,429,500,502,503,504]',
-    ]
-    
-    env = os.environ.copy()
-    env['PYTHONPATH'] = project_root
-    
-    logger.info(f"Running Scrapy for job {job_id}")
-    logger.debug(f"Command: {' '.join(cmd)}")
-    
-    with open(runner_log_path, 'a', encoding='utf-8') as runner_log:
-        runner_log.write(f"\n--- Starting crawler for job {job_id} ---\n")
-        runner_log.write(f"Command: {' '.join(cmd)}\n")
-        runner_log.flush()
-        
-        try:
-            result = subprocess.run(
-                cmd,
-                cwd=project_root,
-                env=env,
-                capture_output=True,
-                text=True,
-                timeout=job['timeout_seconds'] + 60
-            )
-            
-            if result.stdout:
-                runner_log.write(f"STDOUT:\n{result.stdout}\n")
-            if result.stderr:
-                runner_log.write(f"STDERR:\n{result.stderr}\n")
-            
-            runner_log.write(f"Exit code: {result.returncode}\n")
-            runner_log.flush()
-            
-            if result.returncode != 0:
-                logger.warning(f"Scrapy exited with non-zero code {result.returncode} for job {job_id}")
-                
-                # Check if this is an expected termination (max pages/timeout reached)
-                if 'CloseSpider' in result.stderr or 'max_pages_reached' in result.stderr:
-                    logger.info(f"Job {job_id} stopped due to max pages or timeout (expected)")
-                    return True
-                
-                # Check if we got any items despite the error
-                # Some Scrapy errors are non-fatal if we fetched pages
-                if 'item_scraped_count' in result.stderr:
-                    logger.info(f"Job {job_id} exited with error but scraped items successfully")
-                    return True
-                
-                # True failure - no pages scraped and unexpected error
-                logger.error(f"Job {job_id} failed with no pages scraped. Exit code: {result.returncode}")
-                return False
-            
-            return True
-            
-        except subprocess.TimeoutExpired:
-            logger.error(f"Scrapy process timed out after {job['timeout_seconds'] + 60}s for job {job_id}")
-            runner_log.write(f"ERROR: Crawler process timed out after {job['timeout_seconds'] + 60} seconds\n")
-            queries.update_job(
-                job_id,
-                last_error=json.dumps({
-                    "reason": ErrorReason.TIMEOUT,
-                    "message": f"Crawler process exceeded timeout limit of {job['timeout_seconds']}s (+60s grace period)"
-                })
-            )
-            return False
-            
-        except Exception as e:
-            logger.error(f"Unexpected error running Scrapy for job {job_id}: {type(e).__name__}: {e}", exc_info=True)
-            runner_log.write(f"ERROR: {type(e).__name__}: {e}\n")
-            queries.update_job(
-                job_id,
-                last_error=json.dumps({
-                    "reason": ErrorReason.UNKNOWN,
-                    "message": f"Scrapy subprocess error: {type(e).__name__}: {str(e)}"
-                })
-            )
-            return False
+def _enqueue_child_pages(job: dict, parent_page_id: str, parent_depth: int, outlinks: list[str]):
+    """Insert accepted child pages in BFS order."""
+    if parent_depth >= job["max_depth"]:
+        for link in outlinks:
+            queries.record_page_link(job["id"], parent_page_id, link, canonicalize_url(link), False, "depth_limit")
+        return
+
+    existing_pages = queries.list_pages_for_job(job["id"], limit=100000, offset=0)
+    page_by_canonical = {
+        page["canonical_url"]: page
+        for page in existing_pages
+        if page.get("canonical_url")
+    }
+    root_page = next((page for page in existing_pages if page.get("depth") == 0), None)
+
+    for link in outlinks:
+        canonical = canonicalize_url(link)
+        existing = queries.get_page_by_canonical_url(job["id"], canonical)
+        if existing:
+            queries.record_page_link(job["id"], parent_page_id, link, canonical, False, "duplicate")
+            continue
+
+        resolved_parent_page_id, resolved_depth = _resolve_page_position(
+            link,
+            page_by_canonical,
+            root_page,
+            job.get("allowed_path_prefix"),
+        )
+        if resolved_depth > job["max_depth"]:
+            queries.record_page_link(job["id"], parent_page_id, link, canonical, False, "depth_limit")
+            continue
+
+        child = queries.create_page(
+            job_id=job["id"],
+            url=link,
+            canonical_url=canonical,
+            parent_page_id=resolved_parent_page_id,
+            depth=resolved_depth,
+            discovery_order=None,
+            status=PageState.QUEUED,
+            title=None,
+            max_pages=job["max_pages"],
+        )
+        if child:
+            page_by_canonical[child["canonical_url"]] = child
+            queries.record_page_link(job["id"], parent_page_id, link, canonical, True, None)
+            continue
+
+        existing = queries.get_page_by_canonical_url(job["id"], canonical)
+        reject_reason = "duplicate" if existing else "max_pages"
+        queries.record_page_link(job["id"], parent_page_id, link, canonical, False, reject_reason)
 
 
-def _run_playwright(job: dict, job_dir: str) -> bool:
-    """
-    Run the Playwright crawler.
-    
-    Returns:
-        True if crawler completed successfully
-    """
-    job_id = job['id']
-    
-    runner_log_path = os.path.join(job_dir, 'runner.log')
-    
-    # Parse ignore_path_prefixes if stored as JSON string
-    ignore_prefixes = job.get('ignore_path_prefixes', '[]')
-    if isinstance(ignore_prefixes, str):
-        try:
-            ignore_prefixes = json.loads(ignore_prefixes)
-        except json.JSONDecodeError:
-            ignore_prefixes = []
-    
-    logger.info(f"Running Playwright crawler for job {job_id}")
-    
-    with open(runner_log_path, 'a', encoding='utf-8') as runner_log:
-        runner_log.write(f"\n--- Starting Playwright crawler for job {job_id} ---\n")
-        runner_log.write(f"URL: {job['start_url']}\n")
-        runner_log.write(f"use_js: True\n")
-        runner_log.flush()
-        
-        try:
-            stats = run_playwright_crawl(
-                job_id=job_id,
-                start_url=job['start_url'],
-                allowed_host=job['allowed_host'],
-                max_pages=job['max_pages'],
-                ignore_prefixes=ignore_prefixes,
-                timeout_seconds=job['timeout_seconds'],
-                output_dir=job_dir
-            )
-            
-            runner_log.write(f"Crawl stats: {json.dumps(stats)}\n")
-            runner_log.flush()
-            
-            # Update job progress
-            queries.update_job(
-                job_id,
-                pages_fetched=stats.get('pages_fetched', 0),
-                errors_count=stats.get('errors_count', 0)
-            )
-            
-            # Check if we got any pages
-            if stats.get('pages_fetched', 0) == 0:
-                logger.warning(f"Playwright crawl returned 0 pages for job {job_id}")
-                error_detail = "No pages fetched"
-                if stats.get('errors'):
-                    error_detail = f"Errors encountered: {stats['errors'][0]}"
-                
-                queries.update_job(
-                    job_id,
-                    last_error=json.dumps({
-                        "reason": ErrorReason.BLOCKED,
-                        "message": f"Playwright crawler failed to fetch any pages. {error_detail}"
-                    })
-                )
-                return False
-            
-            logger.info(f"Playwright crawl complete for job {job_id}: {stats.get('pages_fetched', 0)} pages")
-            return True
-            
-        except Exception as e:
-            logger.error(f"Unexpected error running Playwright for job {job_id}: {type(e).__name__}: {e}", exc_info=True)
-            runner_log.write(f"ERROR: {type(e).__name__}: {e}\n")
-            queries.update_job(
-                job_id,
-                last_error=json.dumps({
-                    "reason": ErrorReason.UNKNOWN,
-                    "message": f"Playwright execution error: {type(e).__name__}: {str(e)}"
-                })
-            )
-            return False
+def _derive_allowed_path_prefix(start_url: str) -> str | None:
+    """Default the crawl scope to the root page's path subtree."""
+    path = get_path(start_url)
+    if not path or path == "/":
+        return None
+    if path.endswith((".html", ".htm", ".php", ".jsp", ".asp")):
+        return path.rsplit("/", 1)[0] or "/"
+    return path.rstrip("/") or "/"
+
+
+def _seed_pages_from_sitemap(job: dict, root_page: dict):
+    """Pre-seed pages from the sitemap so hierarchy does not depend on random first discovery."""
+    sitemap_urls = discover_sitemap_urls(
+        job["start_url"],
+        job["allowed_host"],
+        job.get("allowed_path_prefix"),
+        job.get("ignore_path_prefixes"),
+    )
+    if not sitemap_urls:
+        queries.insert_job_event(job["id"], "info", "sitemap_not_found", {
+            "start_url": job["start_url"],
+        })
+        return
+
+    page_by_canonical = {root_page["canonical_url"]: root_page}
+    discovery_order = queries.count_pages_for_job(job["id"])
+    ordered_urls = sorted(
+        {canonicalize_url(url): url for url in sitemap_urls}.values(),
+        key=lambda value: (_path_segment_count(value), canonicalize_url(value)),
+    )
+
+    created_count = 0
+    for url in ordered_urls:
+        if queries.count_pages_for_job(job["id"]) >= job["max_pages"]:
+            break
+        canonical = canonicalize_url(url)
+        if canonical == root_page["canonical_url"]:
+            continue
+        if canonical in page_by_canonical:
+            continue
+
+        parent_page_id, depth = _resolve_page_position(
+            url,
+            page_by_canonical,
+            root_page,
+            job.get("allowed_path_prefix"),
+        )
+        if depth > job["max_depth"]:
+            continue
+        page = queries.create_page(
+            job_id=job["id"],
+            url=url,
+            canonical_url=canonical,
+            parent_page_id=parent_page_id,
+            depth=depth,
+            discovery_order=discovery_order + 1,
+            status=PageState.QUEUED,
+            title=None,
+            meta_json={"seeded_from_sitemap": True},
+            max_pages=job["max_pages"],
+        )
+        discovery_order += 1
+        if page:
+            page_by_canonical[canonical] = page
+            created_count += 1
+
+    queries.insert_job_event(job["id"], "info", "sitemap_seeded", {
+        "pages_seeded": created_count,
+    })
+
+
+def _resolve_page_position(
+    url: str,
+    page_by_canonical: dict[str, dict],
+    root_page: dict | None,
+    allowed_path_prefix: str | None,
+) -> tuple[str | None, int]:
+    """Place a page in the hierarchy using URL path ancestry instead of discoverer order."""
+    if not root_page:
+        return None, 0
+
+    canonical = canonicalize_url(url)
+    if canonical == root_page["canonical_url"]:
+        return None, 0
+
+    parsed = urlparse(canonical)
+    path = parsed.path or "/"
+    base_path = _normalized_path(allowed_path_prefix or get_path(root_page["canonical_url"]))
+    segments = [segment for segment in path.strip("/").split("/") if segment]
+    base_segments = [segment for segment in base_path.strip("/").split("/") if segment]
+
+    for cut in range(len(segments) - 1, len(base_segments) - 1, -1):
+        candidate_path = "/" + "/".join(segments[:cut]) if cut else "/"
+        candidate_url = urlunparse((parsed.scheme, parsed.netloc, candidate_path, "", "", ""))
+        candidate_canonical = canonicalize_url(candidate_url)
+        candidate = page_by_canonical.get(candidate_canonical)
+        if not candidate:
+            candidate = queries.get_page_by_canonical_url(root_page["job_id"], candidate_canonical)
+            if candidate:
+                page_by_canonical[candidate_canonical] = candidate
+        if candidate:
+            return candidate["id"], candidate["depth"] + 1
+
+    return root_page["id"], 1
+
+
+def _path_segment_count(url: str) -> int:
+    """Count path segments for stable sitemap seeding order."""
+    path = get_path(url)
+    return len([segment for segment in path.strip("/").split("/") if segment])
+
+
+def _normalized_path(path: str | None) -> str:
+    """Normalize a path for prefix comparisons."""
+    if not path or path == "/":
+        return "/"
+    return path.rstrip("/")

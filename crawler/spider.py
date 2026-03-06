@@ -51,6 +51,19 @@ class DocsSpider(CrawlSpider):
             self.allowed_host = extract_hostname(start_url) or ''
             self.allowed_domains = [self.allowed_host] if self.allowed_host else []
         
+        # Extract path prefix from start_url to restrict crawling to that path
+        from crawler.url_utils import get_path
+        start_path = get_path(start_url)
+        # Only set path prefix if it's more specific than root
+        if start_path and start_path != '/':
+            # If URL ends with a file extension, use its directory
+            if start_path.endswith(('.html', '.htm', '.php', '.jsp', '.asp')):
+                self.allowed_path_prefix = start_path.rsplit('/', 1)[0]
+            else:
+                self.allowed_path_prefix = start_path.rstrip('/')
+        else:
+            self.allowed_path_prefix = None
+        
         self.max_pages = int(max_pages) if max_pages else settings.DEFAULT_MAX_PAGES
         
         if ignore_prefixes:
@@ -79,6 +92,7 @@ class DocsSpider(CrawlSpider):
         
         logger.info(f"DocsSpider initialized: job_id={self.job_id}, "
                    f"start_url={self.start_url}, allowed_host={self.allowed_host}, "
+                   f"allowed_path_prefix={self.allowed_path_prefix}, "
                    f"max_pages={self.max_pages}, ignore_prefixes={self.ignore_prefixes}")
     
     def start_requests(self):
@@ -104,7 +118,7 @@ class DocsSpider(CrawlSpider):
             logger.debug(f"Skipping duplicate URL: {url}")
             return
         
-        if not is_url_in_scope(url, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS):
+        if not is_url_in_scope(url, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS, self.allowed_path_prefix):
             logger.debug(f"URL out of scope: {url}")
             return
         
@@ -126,7 +140,7 @@ class DocsSpider(CrawlSpider):
             for link in response.xpath('//a/@href').getall():
                 try:
                     absolute_url = response.urljoin(link)
-                    if is_url_in_scope(absolute_url, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS):
+                    if is_url_in_scope(absolute_url, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS, self.allowed_path_prefix):
                         outlinks.append(absolute_url)
                 except (ValueError, TypeError) as e:
                     # Invalid URL format or type issues when joining/parsing URLs

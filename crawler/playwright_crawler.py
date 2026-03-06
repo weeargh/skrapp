@@ -13,7 +13,7 @@ from urllib.parse import urljoin, urlparse
 from playwright.sync_api import sync_playwright, Page, Browser, BrowserContext
 
 from config import settings
-from crawler.url_utils import canonicalize_url, is_url_in_scope, extract_hostname
+from crawler.url_utils import canonicalize_url, is_url_in_scope, extract_hostname, get_path
 from crawler.extractors import trafilatura_ext, readability_ext, plaintext_ext, markdown_ext
 
 
@@ -41,6 +41,18 @@ class PlaywrightCrawler:
         self.timeout_seconds = timeout_seconds
         self.output_dir = output_dir or os.path.join(settings.JOBS_OUTPUT_DIR, job_id)
         
+        # Extract path prefix from start_url to restrict crawling to that path
+        start_path = get_path(start_url)
+        # Only set path prefix if it's more specific than root
+        if start_path and start_path != '/':
+            # If URL ends with a file extension, use its directory
+            if start_path.endswith(('.html', '.htm', '.php', '.jsp', '.asp')):
+                self.allowed_path_prefix = start_path.rsplit('/', 1)[0]
+            else:
+                self.allowed_path_prefix = start_path.rstrip('/')
+        else:
+            self.allowed_path_prefix = None
+        
         self.seen_urls: Set[str] = set()
         self.pages_fetched = 0
         self.start_time = None
@@ -66,7 +78,8 @@ class PlaywrightCrawler:
         self.output_file = open(output_path, 'a', encoding='utf-8')
         
         logger.info(f"Starting Playwright crawl: job_id={self.job_id}, "
-                   f"start_url={self.start_url}, max_pages={self.max_pages}")
+                   f"start_url={self.start_url}, allowed_path_prefix={self.allowed_path_prefix}, "
+                   f"max_pages={self.max_pages}")
         
         try:
             with sync_playwright() as p:
@@ -128,7 +141,7 @@ class PlaywrightCrawler:
             return
         
         # Check scope
-        if not is_url_in_scope(url, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS):
+        if not is_url_in_scope(url, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS, self.allowed_path_prefix):
             return
         
         self.seen_urls.add(canonical)
@@ -208,7 +221,7 @@ class PlaywrightCrawler:
                     href = urljoin(base_url, href)
                 
                 # Check scope
-                if is_url_in_scope(href, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS):
+                if is_url_in_scope(href, self.allowed_host, self.ignore_prefixes, settings.EXCLUDED_EXTENSIONS, self.allowed_path_prefix):
                     canonical = canonicalize_url(href)
                     if canonical not in self.seen_urls:
                         links.append(href)

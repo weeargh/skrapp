@@ -16,6 +16,20 @@ class JobState:
     ACTIVE = {QUEUED, RUNNING, FINALIZING}
 
 
+class PageState:
+    """Page processing state constants."""
+    QUEUED = "queued"
+    DISCOVERING = "discovering"
+    EXTRACTING = "extracting"
+    CLEANING = "cleaning"
+    DONE = "done"
+    FAILED = "failed"
+    SKIPPED = "skipped"
+
+    ALL = {QUEUED, DISCOVERING, EXTRACTING, CLEANING, DONE, FAILED, SKIPPED}
+    TERMINAL = {DONE, FAILED, SKIPPED}
+
+
 class ErrorReason:
     """Error reason constants."""
     ORPHANED = "orphaned"
@@ -63,7 +77,13 @@ class ArtifactKind:
     """Job artifact type constants."""
     PAGES_RAW_JSONL = "pages_raw_jsonl"
     PAGES_JSONL = "pages_jsonl"
+    LLM_READY_JSONL = "llm_ready_jsonl"
+    RAW_MARKDOWN_JSONL = "raw_markdown_jsonl"
+    PLAIN_TEXT_JSONL = "plain_text_jsonl"
     SUMMARY_JSON = "summary_json"
+    HTML_DOCS = "html_docs"
+    TREE_JSON = "tree_json"
+    MARKDOWN_ZIP = "markdown_zip"
     RUNNER_LOG = "runner_log"
     CRAWLER_LOG = "crawler_log"
 

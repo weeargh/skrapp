@@ -3,157 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Status - Docs Crawler</title>
+    <title>Skrapp — Job</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="container status-page">
-        <header>
-            <h1><a href="/">Docs Crawler</a></h1>
-        </header>
 
-        <main class="status-layout">
-            <div class="status-left">
-                <div id="job-status" class="status-card">
-                    <div class="status-header">
-                        <h2>Job Status</h2>
-                        <span id="state-badge" class="badge">Loading...</span>
+    <nav class="px-navbar">
+        <a href="/" class="px-navbar-brand">
+            <div class="px-navbar-icon">S</div>
+            <span class="px-navbar-name">Skrapp</span>
+        </a>
+        <span class="px-navbar-sep"></span>
+        <div class="px-navbar-crumb">
+            <a href="/">Jobs</a>
+            <i class="px-crumb-icon">›</i>
+            <span class="px-crumb-current">Job detail</span>
+        </div>
+        <div class="px-navbar-end">
+            <a href="/" class="btn btn-secondary btn-inline">New crawl</a>
+            <button id="cancel-btn" class="btn btn-danger btn-inline hidden" type="button">Cancel job</button>
+        </div>
+    </nav>
+
+    <div class="px-page px-page-wide">
+
+        <div class="px-page-header">
+            <div>
+                <h1 class="px-page-title">Job detail</h1>
+                <p id="job-url-subtitle" class="px-page-subtitle">Loading crawl job...</p>
+            </div>
+            <div class="px-page-actions">
+                <span id="status-badge" class="chip chip-neutral">Loading</span>
+            </div>
+        </div>
+
+        <div class="job-layout">
+
+            <!-- Job Summary -->
+            <div class="px-card panel-span-2">
+                <div class="px-card-header">
+                    <div class="px-card-header-left">
+                        <p class="px-card-overline">Job Summary</p>
+                        <h2 class="px-card-title">Status and outputs</h2>
                     </div>
-
-                    <div id="loading" class="loading">
-                        <div class="spinner"></div>
-                        <p>Loading job status...</p>
-                    </div>
-
-                    <div id="job-details" class="hidden">
-                        <div class="detail-row">
-                            <span class="label">Job ID:</span>
-                            <span id="job-id" class="value code"></span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">URL:</span>
-                            <span id="start-url" class="value"></span>
-                        </div>
-                        <div class="detail-row">
-                            <span class="label">Host:</span>
-                            <span id="allowed-host" class="value"></span>
-                        </div>
-
-                        <div class="progress-section">
-                            <div class="progress-header">
-                                <span>Crawl Progress</span>
-                                <span id="progress-text">0 / 0 pages</span>
-                            </div>
-                            <div class="progress-bar">
-                                <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
-                            </div>
-                        </div>
-
-                        <div class="stats-grid">
-                            <div class="stat">
-                                <span class="stat-value" id="pages-fetched">0</span>
-                                <span class="stat-label">Pages Fetched</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value" id="pages-exported">0</span>
-                                <span class="stat-label">Pages Exported</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value" id="elapsed-time">0s</span>
-                                <span class="stat-label">Elapsed Time</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-value" id="errors-count">0</span>
-                                <span class="stat-label">Errors</span>
-                            </div>
-                        </div>
-
-                        <div id="site-status-section" class="hidden">
-                            <div class="detail-row warning">
-                                <span class="label">Site Status:</span>
-                                <span id="site-status" class="value"></span>
-                            </div>
-                        </div>
-
-                        <div id="error-section" class="hidden">
-                            <div class="detail-row error">
-                                <span class="label">Error:</span>
-                                <span id="last-error" class="value"></span>
-                            </div>
-                        </div>
-
-                        <div id="download-section" class="hidden">
-                            <h3>Download Results</h3>
-                            <div class="download-buttons">
-                                <a id="download-pages" href="#" class="btn btn-primary">Pages Data</a>
-                                <a id="download-summary" href="#" class="btn btn-secondary">Summary</a>
-                            </div>
-                        </div>
-                        
-                        <div id="cancel-section" class="hidden">
-                            <button id="cancel-btn" class="btn btn-danger">Cancel Job</button>
-                            <p class="cancel-info">Cancelling will save progress up to this point</p>
-                        </div>
-
-                        <div class="timestamps">
-                            <div class="detail-row">
-                                <span class="label">Created:</span>
-                                <span id="created-at" class="value"></span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">Started:</span>
-                                <span id="started-at" class="value"></span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">Finished:</span>
-                                <span id="finished-at" class="value"></span>
-                            </div>
-                            <div class="detail-row">
-                                <span class="label">Expires:</span>
-                                <span id="expires-at" class="value"></span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div id="error-message" class="error hidden"></div>
                 </div>
+                <div class="px-card-body">
 
-                <div class="actions">
-                    <a href="/" class="btn btn-secondary">Start New Crawl</a>
+                    <div id="job-error" class="notice notice-danger hidden"></div>
+
+                    <div class="stat-grid">
+                        <div class="stat-card">
+                            <span class="stat-label">Discovered</span>
+                            <strong id="job-pages-discovered">0</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Processed</span>
+                            <strong id="job-pages-processed">0</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Succeeded</span>
+                            <strong id="job-pages-succeeded">0</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Failed</span>
+                            <strong id="job-pages-failed">0</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Depth</span>
+                            <strong id="job-max-depth">0</strong>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Elapsed</span>
+                            <strong id="job-elapsed">-</strong>
+                        </div>
+                    </div>
+
+                    <div class="progress-card">
+                        <div class="progress-card-header">
+                            <div>
+                                <h3 class="section-title">Overall progress</h3>
+                                <p class="section-copy">Rough ETA is based on current processing rate and your max page limit.</p>
+                            </div>
+                            <div class="progress-meta">
+                                <span id="job-progress-label" class="progress-value">Queued</span>
+                                <span id="job-eta" class="text-muted">ETA -</span>
+                            </div>
+                        </div>
+                        <div class="progress-bar" aria-hidden="true">
+                            <div id="job-progress-fill" class="progress-bar-fill"></div>
+                        </div>
+                        <div class="stage-row">
+                            <div id="stage-queued" class="stage-chip">
+                                <span class="stage-dot" aria-hidden="true"></span>
+                                <span class="stage-label">Queued</span>
+                            </div>
+                            <div id="stage-running" class="stage-chip">
+                                <span class="stage-dot" aria-hidden="true"></span>
+                                <span class="stage-label">Crawl</span>
+                            </div>
+                            <div id="stage-finalizing" class="stage-chip">
+                                <span class="stage-dot" aria-hidden="true"></span>
+                                <span class="stage-label">Finalize</span>
+                            </div>
+                            <div id="stage-ready" class="stage-chip">
+                                <span class="stage-dot" aria-hidden="true"></span>
+                                <span class="stage-label">Ready</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="meta-grid">
+                        <div class="meta-item">
+                            <span class="meta-label">Job ID</span>
+                            <code id="job-id">-</code>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Allowed host</span>
+                            <span id="job-host">-</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Path scope</span>
+                            <span id="job-path-prefix">-</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Cleanup status</span>
+                            <span id="job-cleanup-status">-</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Created</span>
+                            <span id="job-created-at">-</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Finished</span>
+                            <span id="job-finished-at">-</span>
+                        </div>
+                    </div>
+
+                    <div class="section-divider"></div>
+
+                    <div class="download-row">
+                        <div>
+                            <h3 class="section-title">Artifacts</h3>
+                            <p class="section-copy">Whole-job exports. LLM-ready keeps cleaned markdown structure and removes most navigation boilerplate.</p>
+                        </div>
+                        <div id="artifact-actions" class="artifact-actions">
+                            <span class="text-muted">No artifacts yet.</span>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <div class="status-right">
-                <div id="pages-table-section" class="pages-table-section">
-                    <div class="section-header">
-                        <h3>Crawled Pages</h3>
-                        <span id="pages-count" class="badge">0 pages</span>
+            <!-- Pages table -->
+            <div class="px-card">
+                <div class="px-card-header">
+                    <div class="px-card-header-left">
+                        <p class="px-card-overline">Pages</p>
+                        <h2 class="px-card-title">Accepted pages and hierarchy</h2>
                     </div>
-                    <div class="table-container">
-                        <table id="pages-table" class="pages-table">
-                            <thead>
-                                <tr>
-                                    <th class="col-status">Status</th>
-                                    <th class="col-url">URL</th>
-                                    <th class="col-title">Title</th>
-                                    <th class="col-depth">Depth</th>
-                                    <th class="col-size">Size</th>
-                                    <th class="col-links">Links</th>
-                                </tr>
-                            </thead>
-                            <tbody id="pages-tbody">
-                                <tr class="empty-row">
-                                    <td colspan="6">No pages crawled yet</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="px-card-actions">
+                        <button id="download-table-csv-btn" class="btn btn-secondary btn-inline" type="button">Download CSV</button>
+                        <span id="pages-total-badge" class="chip chip-neutral">0 pages</span>
                     </div>
                 </div>
+                <div class="table-wrap">
+                    <table class="data-table data-table-clickable">
+                        <thead>
+                            <tr>
+                                <th>Title</th>
+                                <th>Type</th>
+                                <th>Status</th>
+                                <th>Depth</th>
+                                <th>Text</th>
+                                <th>Cleanup</th>
+                            </tr>
+                        </thead>
+                        <tbody id="pages-tbody">
+                            <tr>
+                                <td colspan="6" class="empty-state-cell">No pages yet.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </main>
+
+            <!-- Page detail -->
+            <aside class="px-card detail-panel">
+                <div class="px-card-header">
+                    <div class="px-card-header-left">
+                        <p class="px-card-overline">Page Detail</p>
+                        <h2 id="page-detail-title" class="px-card-title">Select a page</h2>
+                    </div>
+                </div>
+                <div class="px-card-body">
+
+                    <div id="page-detail-empty" class="empty-copy">
+                        Pick a page from the table to inspect its content.
+                    </div>
+
+                    <div id="page-detail-content" class="hidden">
+                        <div class="meta-grid meta-grid-compact">
+                            <div class="meta-item">
+                                <span class="meta-label">Type</span>
+                                <span id="page-detail-type">-</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Status</span>
+                                <span id="page-detail-status">-</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Depth</span>
+                                <span id="page-detail-depth">-</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Confidence</span>
+                                <span id="page-detail-confidence">-</span>
+                            </div>
+                        </div>
+
+                        <div class="detail-links">
+                            <a id="page-detail-url" class="link" href="#" target="_blank" rel="noreferrer">Open source URL</a>
+                        </div>
+
+                        <p class="format-help">
+                            <strong>LLM-ready</strong> keeps useful markdown structure and removes most UI chrome for chatbot ingestion.
+                        </p>
+
+                        <div class="content-toolbar">
+                            <div class="content-tabs">
+                                <button class="tab-button has-tooltip is-active" type="button" data-tab="clean" data-tooltip="Cleaned markdown with headings and lists preserved for chatbot and RAG ingestion.">LLM-ready</button>
+                                <button class="tab-button has-tooltip" type="button" data-tab="raw" data-tooltip="Original extracted markdown before cleanup. Useful for debugging extraction noise.">Raw markdown</button>
+                                <button class="tab-button has-tooltip" type="button" data-tab="plain" data-tooltip="Flattened text with markdown structure removed. Useful for simple text-only pipelines.">Plain text</button>
+                            </div>
+                            <button id="copy-content-btn" class="btn btn-secondary btn-inline" type="button" disabled>Copy</button>
+                        </div>
+
+                        <div class="tab-panel is-active" data-panel="clean">
+                            <pre id="page-clean-markdown" class="content-view"></pre>
+                        </div>
+                        <div class="tab-panel" data-panel="raw">
+                            <pre id="page-raw-markdown" class="content-view"></pre>
+                        </div>
+                        <div class="tab-panel" data-panel="plain">
+                            <pre id="page-plain-text" class="content-view"></pre>
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+
+        </div>
     </div>
 
     <script src="/js/status.js"></script>

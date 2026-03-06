@@ -3,99 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Docs Crawler</title>
+    <title>Skrapp</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Docs Crawler</h1>
-            <p class="subtitle">Extract text content from documentation sites</p>
-        </header>
 
-        <main>
-            <form id="crawl-form">
-                <div class="form-group">
-                    <label for="start_url">Documentation URL</label>
-                    <input 
-                        type="url" 
-                        id="start_url" 
-                        name="start_url" 
-                        placeholder="https://docs.example.com"
-                        required
-                    >
-                    <small>Enter the starting URL of the documentation site</small>
-                </div>
-                
-                <!-- Warning box for fragment URLs -->
-                <div id="fragment-warning" class="warning-box hidden">
-                    <div class="warning-header">
-                        <span class="warning-icon">⚠️</span>
-                        <strong>Fragment URL Detected</strong>
-                    </div>
-                    <div class="warning-content">
-                        <p><strong>Issue:</strong> This URL contains a fragment identifier (the <code id="detected-fragment"></code> part), which will cause crawling issues.</p>
-                        
-                        <p><strong>Why it matters:</strong></p>
-                        <ul>
-                            <li>Fragments are used for client-side routing in JavaScript SPAs</li>
-                            <li>Web crawlers ignore everything after the <code>#</code> symbol</li>
-                            <li>All fragment variations (<code>#page1</code>, <code>#page2</code>) are seen as the same URL</li>
-                            <li>This typically results in only 1 page being crawled</li>
-                        </ul>
-                        
-                        <p><strong>Recommended solutions:</strong></p>
-                        <ol>
-                            <li><strong>Remove the fragment:</strong> Try <code id="suggested-url"></code></li>
-                            <li><strong>Use a category/section URL:</strong> e.g., <code>/categories</code> or <code>/sections</code></li>
-                            <li><strong>Start from a specific article:</strong> Find direct article URLs like <code>/articles/12345-title</code></li>
-                        </ol>
-                        
-                        <button type="button" id="use-suggested-url" class="btn-secondary btn-small">Use Suggested URL</button>
+    <nav class="px-navbar">
+        <a href="/" class="px-navbar-brand">
+            <div class="px-navbar-icon">S</div>
+            <span class="px-navbar-name">Skrapp</span>
+        </a>
+    </nav>
+
+    <div class="px-page">
+
+        <div class="px-page-header">
+            <div>
+                <h1 class="px-page-title">Crawl and distill page trees</h1>
+                <p class="px-page-subtitle">Start from one URL, limit depth, preserve parent-child structure, and inspect cleaned content page by page.</p>
+            </div>
+        </div>
+
+        <div class="dashboard-grid">
+
+            <!-- Create crawl -->
+            <div class="px-card">
+                <div class="px-card-header">
+                    <div class="px-card-header-left">
+                        <p class="px-card-overline">New Job</p>
+                        <h2 class="px-card-title">Create crawl</h2>
                     </div>
                 </div>
+                <div class="px-card-body">
+                    <form id="crawl-form" class="form-stack">
+                        <div class="field">
+                            <label for="start_url">Start URL</label>
+                            <input id="start_url" name="start_url" type="url" placeholder="https://docs.example.com" required>
+                            <p class="field-hint">The root page Skrapp should start from.</p>
+                        </div>
 
-                <details class="options">
-                    <summary>Advanced Options</summary>
-                    
-                    <div class="form-group">
-                        <label for="max_pages">Maximum Pages</label>
-                        <input 
-                            type="number" 
-                            id="max_pages" 
-                            name="max_pages" 
-                            min="1" 
-                            max="1000" 
-                            value="1000"
-                        >
-                        <small>Maximum number of pages to crawl (1-1000)</small>
+                        <div class="grid-2">
+                            <div class="field">
+                                <label for="max_depth">Max depth</label>
+                                <input id="max_depth" name="max_depth" type="number" min="0" max="10" value="2">
+                                <p class="field-hint">Depth 0 keeps only the root page.</p>
+                            </div>
+                            <div class="field">
+                                <label for="max_pages">Max pages</label>
+                                <input id="max_pages" name="max_pages" type="number" min="1" max="1000" value="100">
+                                <p class="field-hint">Upper bound for accepted pages.</p>
+                            </div>
+                        </div>
+
+                        <details class="accordion">
+                            <summary>Optional settings</summary>
+                            <div class="accordion-body">
+                                <div class="field">
+                                    <label for="allowed_path_prefix">Allowed path prefix</label>
+                                    <input id="allowed_path_prefix" name="allowed_path_prefix" type="text" placeholder="/hc/id">
+                                    <p class="field-hint">Restrict crawling to one subtree. Leave empty to infer from the start URL.</p>
+                                </div>
+                                <div class="field">
+                                    <label for="ignore_prefixes">Ignore path prefixes</label>
+                                    <input id="ignore_prefixes" name="ignore_prefixes" type="text" placeholder="/search, /tag, /login">
+                                    <p class="field-hint">Comma-separated prefixes to skip during discovery.</p>
+                                </div>
+                                <div class="field">
+                                    <label for="timeout_seconds">Timeout (seconds)</label>
+                                    <input id="timeout_seconds" name="timeout_seconds" type="number" min="60" max="1800" value="1800">
+                                </div>
+                            </div>
+                        </details>
+
+                        <div id="form-message" class="notice hidden" role="alert"></div>
+
+                        <div class="form-actions">
+                            <button id="submit-btn" class="btn btn-primary" type="submit">Start crawl</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- How it works -->
+            <div class="px-card">
+                <div class="px-card-header">
+                    <div class="px-card-header-left">
+                        <p class="px-card-overline">Overview</p>
+                        <h2 class="px-card-title">How Skrapp works</h2>
+                    </div>
+                </div>
+                <div class="px-card-body">
+                    <div class="info-list">
+                        <div class="info-item">
+                            <span class="info-step">1</span>
+                            <div>
+                                <h3>Discover pages</h3>
+                                <p>Runs a BFS crawl, keeps accepted pages in scope, and stores the page tree.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-step">2</span>
+                            <div>
+                                <h3>Extract raw content</h3>
+                                <p>Renders each page, captures the main content, and preserves the raw markdown for review.</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-step">3</span>
+                            <div>
+                                <h3>Distill content</h3>
+                                <p>Scores blocks generically by page type, position, density, and repetition across the crawl.</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="form-group">
-                        <label for="ignore_prefixes">Ignore Path Prefixes</label>
-                        <input 
-                            type="text" 
-                            id="ignore_prefixes" 
-                            name="ignore_prefixes" 
-                            placeholder="/search, /tag, /login"
-                        >
-                        <small>Comma-separated list of path prefixes to skip</small>
-                    </div>
-                </details>
+                </div>
+            </div>
 
-                <button type="submit" id="submit-btn">Start Crawl</button>
-            </form>
+        </div>
 
-            <div id="error-message" class="error hidden"></div>
-            <div id="success-message" class="success hidden"></div>
-        </main>
+        <!-- Recent jobs -->
+        <div class="px-card">
+            <div class="px-card-header">
+                <div class="px-card-header-left">
+                    <p class="px-card-overline">Recent Jobs</p>
+                    <h2 class="px-card-title">Latest activity</h2>
+                </div>
+                <button id="refresh-jobs-btn" class="btn btn-secondary btn-inline" type="button">Refresh</button>
+            </div>
+            <div class="table-wrap">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Job</th>
+                            <th>Status</th>
+                            <th>URL</th>
+                            <th>Discovered</th>
+                            <th>Succeeded</th>
+                            <th>Created</th>
+                        </tr>
+                    </thead>
+                    <tbody id="jobs-tbody">
+                        <tr>
+                            <td colspan="6" class="empty-state-cell">No jobs yet.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-        <footer>
-            <p>Crawls up to 1,000 pages • Respects robots.txt • Results expire after 24 hours</p>
-        </footer>
     </div>
 
     <script src="/js/app.js"></script>
