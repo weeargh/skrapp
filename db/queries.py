@@ -243,11 +243,11 @@ def find_orphaned_jobs(threshold_seconds: int) -> list[dict]:
     rows = database.fetchall(
         """
         SELECT * FROM jobs 
-        WHERE state IN (?, ?)
+        WHERE state IN (?, ?, ?)
         AND runner_heartbeat_at IS NOT NULL
         AND runner_heartbeat_at < ?
         """,
-        (JobState.RUNNING, JobState.FINALIZING, threshold_time)
+        (JobState.STARTING, JobState.RUNNING, JobState.FINALIZING, threshold_time)
     )
     return [_row_to_dict(row) for row in rows]
 
@@ -390,7 +390,7 @@ def get_next_queued_crawl_job() -> dict | None:
 
 
 def claim_next_queued_crawl_job() -> dict | None:
-    """Atomically move the oldest queued crawl job into running."""
+    """Atomically claim the oldest queued crawl job for preparation."""
     conn = database.get_connection()
     now = _now_iso()
     conn.execute("BEGIN IMMEDIATE")
@@ -418,7 +418,7 @@ def claim_next_queued_crawl_job() -> dict | None:
             WHERE id = ? AND state = ?
             """,
             (
-                JobState.RUNNING,
+                JobState.STARTING,
                 "pending",
                 now,
                 now,
@@ -438,7 +438,7 @@ def claim_next_queued_crawl_job() -> dict | None:
 
     insert_job_event(row["id"], EventLevel.INFO, EventType.STATE_CHANGE, {
         "from": JobState.QUEUED,
-        "to": JobState.RUNNING,
+        "to": JobState.STARTING,
     })
     return get_crawl_job(row["id"])
 

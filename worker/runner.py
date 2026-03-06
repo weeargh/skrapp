@@ -26,8 +26,15 @@ def start_job(job_id: str) -> dict | None:
 
     os.makedirs(os.path.join(settings.JOBS_OUTPUT_DIR, job_id), exist_ok=True)
     job = _prepare_job(job)
+    if job["status"] != JobState.RUNNING:
+        job = queries.update_crawl_job_status(
+            job_id,
+            JobState.RUNNING,
+            cleanup_status="pending",
+            error_message=None,
+        )
     queries.touch_job_heartbeat(job_id)
-    return queries.get_crawl_job(job_id)
+    return job
 
 
 def start_next_queued_job() -> dict | None:
@@ -35,7 +42,17 @@ def start_next_queued_job() -> dict | None:
     job = queries.claim_next_queued_crawl_job()
     if not job:
         return None
-    return start_job(job["id"])
+    try:
+        return start_job(job["id"])
+    except Exception as e:
+        logger.error("Failed to prepare job %s: %s", job["id"], e, exc_info=True)
+        queries.update_crawl_job_status(
+            job["id"],
+            JobState.FAILED,
+            cleanup_status="failed",
+            error_message=f"{type(e).__name__}: {e}",
+        )
+        return None
 
 
 def process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4AIPageSession):

@@ -4,6 +4,7 @@
 class JobState:
     """Job state constants."""
     QUEUED = "queued"
+    STARTING = "starting"
     RUNNING = "running"
     FINALIZING = "finalizing"
     DONE = "done"
@@ -11,9 +12,9 @@ class JobState:
     CANCELLED = "cancelled"
     EXPIRED = "expired"
 
-    ALL = {QUEUED, RUNNING, FINALIZING, DONE, FAILED, CANCELLED, EXPIRED}
+    ALL = {QUEUED, STARTING, RUNNING, FINALIZING, DONE, FAILED, CANCELLED, EXPIRED}
     TERMINAL = {DONE, FAILED, CANCELLED, EXPIRED}
-    ACTIVE = {QUEUED, RUNNING, FINALIZING}
+    ACTIVE = {QUEUED, STARTING, RUNNING, FINALIZING}
 
 
 class PageState:

@@ -162,7 +162,7 @@ document.addEventListener("DOMContentLoaded", () => {
             errorEl.textContent = "";
         }
 
-        cancelBtn.classList.toggle("hidden", !["queued", "running", "finalizing"].includes(job.status));
+        cancelBtn.classList.toggle("hidden", !["queued", "starting", "running", "finalizing"].includes(job.status));
     }
 
     function renderProgress(job) {
@@ -512,7 +512,13 @@ function computeJobProgress(job) {
         ready: "",
     };
 
-    if (status === "running") {
+    if (status === "starting") {
+        percent = 8;
+        label = "Preparing crawl";
+        etaLabel = "ETA soon";
+        stageState.queued = "done";
+        stageState.running = "current";
+    } else if (status === "running") {
         percent = Math.max(8, Math.min(88, 10 + crawlRatio * 75));
         label = `${Math.round(percent)}% complete`;
         stageState.queued = "done";

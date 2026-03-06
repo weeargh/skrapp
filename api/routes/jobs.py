@@ -100,7 +100,7 @@ def cancel_job(job_id: str):
     if not job:
         return jsonify({"error": "Not Found", "message": "Job not found"}), 404
 
-    if job["status"] not in (JobState.QUEUED, JobState.RUNNING, JobState.FINALIZING):
+    if job["status"] not in (JobState.QUEUED, JobState.STARTING, JobState.RUNNING, JobState.FINALIZING):
         return jsonify({
             "error": "Bad Request",
             "message": f"Cannot cancel job in '{job['status']}' state",
