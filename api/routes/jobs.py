@@ -93,7 +93,7 @@ def get_job(job_id: str):
     return jsonify(_serialize_job(job))
 
 
-@jobs_bp.route("/v1/jobs/<job_id>", methods=["DELETE"])
+@jobs_bp.route("/v1/jobs/<job_id>/delete", methods=["POST"])
 def delete_job(job_id: str):
     """Delete a job and all its data."""
     job = queries.get_crawl_job(job_id)

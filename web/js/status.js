@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
         deleteBtn.disabled = true;
         deleteBtn.textContent = "Deleting...";
         try {
-            await fetchJson(`/v1/jobs/${jobIdValue}`, { method: "DELETE" });
+            await fetchJson(`/v1/jobs/${jobIdValue}/delete`, { method: "POST" });
             window.location.href = "/";
         } catch (error) {
             showFatal(error.message);

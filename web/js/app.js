@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     async function deleteJob(jobId) {
         if (!window.confirm("Delete this job and all its data? This cannot be undone.")) return;
         try {
-            await fetchJson(`/v1/jobs/${jobId}`, { method: "DELETE" });
+            await fetchJson(`/v1/jobs/${jobId}/delete`, { method: "POST" });
             loadJobs();
         } catch (error) {
             setMessage(error.message, "danger");
