@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const retryBtn = `<button class="btn btn-secondary btn-inline job-retry-btn" data-job-id="${escapeHtml(job.job_id)}" type="button">Retry</button>`;
             const deleteBtn = isActive
                 ? ""
-                : `<button class="btn btn-danger btn-inline job-delete-btn" data-job-id="${escapeHtml(job.job_id)}" type="button">Delete</button>`;
+                : `<button class="btn btn-secondary btn-inline job-delete-btn" data-job-id="${escapeHtml(job.job_id)}" type="button">Delete</button>`;
             return `
                 <tr class="row-link" data-href="/status?job_id=${encodeURIComponent(job.job_id)}">
                     <td><code>${escapeHtml(job.job_id)}</code></td>
