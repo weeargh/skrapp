@@ -367,6 +367,14 @@ def get_crawl_job(job_id: str) -> dict | None:
     return _normalize_job_row(get_job_by_id(job_id))
 
 
+def delete_crawl_job(job_id: str) -> None:
+    """Delete a job and all related records."""
+    for table in ("page_links", "pages", "job_events", "job_artifacts"):
+        database.execute_query(f"DELETE FROM {table} WHERE job_id = ?", (job_id,))
+    database.execute_query("DELETE FROM jobs WHERE id = ?", (job_id,))
+    database.commit()
+
+
 def list_crawl_jobs(
     status: str | None = None,
     limit: int = 50,

@@ -93,6 +93,53 @@ def get_job(job_id: str):
     return jsonify(_serialize_job(job))
 
 
+@jobs_bp.route("/v1/jobs/<job_id>", methods=["DELETE"])
+def delete_job(job_id: str):
+    """Delete a job and all its data."""
+    job = queries.get_crawl_job(job_id)
+    if not job:
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+
+    if job["status"] in (JobState.QUEUED, JobState.STARTING, JobState.RUNNING, JobState.FINALIZING):
+        return jsonify({
+            "error": "Bad Request",
+            "message": "Cannot delete an active job. Cancel it first.",
+        }), 400
+
+    # Remove artifact files from disk
+    job_output_dir = os.path.join(settings.JOBS_OUTPUT_DIR, job_id)
+    if os.path.isdir(job_output_dir):
+        import shutil
+        shutil.rmtree(job_output_dir, ignore_errors=True)
+
+    queries.delete_crawl_job(job_id)
+    return jsonify({"job_id": job_id, "deleted": True})
+
+
+@jobs_bp.route("/v1/jobs/<job_id>/retry", methods=["POST"])
+def retry_job(job_id: str):
+    """Create a new job with the same parameters as an existing one."""
+    job = queries.get_crawl_job(job_id)
+    if not job:
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+
+    new_job_id = generate_job_id()
+    os.makedirs(os.path.join(settings.JOBS_OUTPUT_DIR, new_job_id), exist_ok=True)
+    os.makedirs(os.path.join(settings.JOBS_OUTPUT_DIR, new_job_id, "state"), exist_ok=True)
+
+    new_job = queries.create_crawl_job(
+        job_id=new_job_id,
+        start_url=job["start_url"],
+        allowed_host=job["allowed_host"],
+        allowed_path_prefix=job.get("allowed_path_prefix"),
+        max_depth=job.get("max_depth", settings.DEFAULT_MAX_DEPTH),
+        max_pages=job.get("max_pages", settings.DEFAULT_MAX_PAGES),
+        ignore_path_prefixes=job.get("ignore_path_prefixes") or [],
+        timeout_seconds=job.get("timeout_seconds", settings.DEFAULT_TIMEOUT_SECONDS),
+    )
+    return jsonify(_serialize_job(new_job)), 201
+
+
 @jobs_bp.route("/v1/jobs/<job_id>/cancel", methods=["POST"])
 def cancel_job(job_id: str):
     """Cancel a queued or running job."""

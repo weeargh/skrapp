@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const cancelBtn = document.getElementById("cancel-btn");
+    const retryBtn = document.getElementById("retry-btn");
+    const deleteBtn = document.getElementById("delete-btn");
     const pagesTbody = document.getElementById("pages-tbody");
     const artifactActions = document.getElementById("artifact-actions");
     const tabButtons = Array.from(document.querySelectorAll(".tab-button"));
@@ -31,6 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const copyContentBtn = document.getElementById("copy-content-btn");
 
     cancelBtn.addEventListener("click", () => cancelJob(state.jobId));
+    retryBtn.addEventListener("click", () => retryJob(state.jobId));
+    deleteBtn.addEventListener("click", () => deleteJob(state.jobId));
     downloadTableCsvBtn.addEventListener("click", downloadTableCsv);
     copyContentBtn.addEventListener("click", copyCurrentContent);
     tabButtons.forEach((button) => {
@@ -162,7 +166,11 @@ document.addEventListener("DOMContentLoaded", () => {
             errorEl.textContent = "";
         }
 
-        cancelBtn.classList.toggle("hidden", !["queued", "starting", "running", "finalizing"].includes(job.status));
+        const isActive = ["queued", "starting", "running", "finalizing"].includes(job.status);
+        const isTerminal = ["done", "cancelled", "failed"].includes(job.status);
+        cancelBtn.classList.toggle("hidden", !isActive);
+        retryBtn.classList.toggle("hidden", !isTerminal);
+        deleteBtn.classList.toggle("hidden", !isTerminal);
     }
 
     function renderProgress(job) {
@@ -251,6 +259,33 @@ document.addEventListener("DOMContentLoaded", () => {
         } finally {
             cancelBtn.disabled = false;
             cancelBtn.textContent = "Cancel job";
+        }
+    }
+
+    async function retryJob(jobIdValue) {
+        retryBtn.disabled = true;
+        retryBtn.textContent = "Retrying...";
+        try {
+            const data = await fetchJson(`/v1/jobs/${jobIdValue}/retry`, { method: "POST" });
+            window.location.href = `/status?job_id=${encodeURIComponent(data.job_id)}`;
+        } catch (error) {
+            showFatal(error.message);
+            retryBtn.disabled = false;
+            retryBtn.textContent = "Retry";
+        }
+    }
+
+    async function deleteJob(jobIdValue) {
+        if (!window.confirm("Delete this job and all its data? This cannot be undone.")) return;
+        deleteBtn.disabled = true;
+        deleteBtn.textContent = "Deleting...";
+        try {
+            await fetchJson(`/v1/jobs/${jobIdValue}`, { method: "DELETE" });
+            window.location.href = "/";
+        } catch (error) {
+            showFatal(error.message);
+            deleteBtn.disabled = false;
+            deleteBtn.textContent = "Delete";
         }
     }
 

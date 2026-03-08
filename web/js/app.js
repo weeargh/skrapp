@@ -60,11 +60,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderJobs(jobs) {
         if (!jobs.length) {
-            jobsTbody.innerHTML = '<tr><td colspan="6" class="empty-state-cell">No jobs yet.</td></tr>';
+            jobsTbody.innerHTML = '<tr><td colspan="7" class="empty-state-cell">No jobs yet.</td></tr>';
             return;
         }
 
+        const active = new Set(["queued", "starting", "running", "finalizing"]);
+
         jobsTbody.innerHTML = jobs.map((job) => {
+            const isActive = active.has(job.status);
+            const retryBtn = `<button class="btn btn-secondary btn-inline job-retry-btn" data-job-id="${escapeHtml(job.job_id)}" type="button">Retry</button>`;
+            const deleteBtn = isActive
+                ? ""
+                : `<button class="btn btn-danger btn-inline job-delete-btn" data-job-id="${escapeHtml(job.job_id)}" type="button">Delete</button>`;
             return `
                 <tr class="row-link" data-href="/status?job_id=${encodeURIComponent(job.job_id)}">
                     <td><code>${escapeHtml(job.job_id)}</code></td>
@@ -73,15 +80,51 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${job.pages_discovered || 0}</td>
                     <td>${job.pages_succeeded || 0}</td>
                     <td>${formatDate(job.created_at)}</td>
+                    <td class="actions-cell">${retryBtn}${deleteBtn}</td>
                 </tr>
             `;
         }).join("");
 
         jobsTbody.querySelectorAll(".row-link").forEach((row) => {
-            row.addEventListener("click", () => {
+            row.addEventListener("click", (e) => {
+                if (e.target.closest("button")) return;
                 window.location.href = row.dataset.href;
             });
         });
+
+        jobsTbody.querySelectorAll(".job-retry-btn").forEach((btn) => {
+            btn.addEventListener("click", () => retryJob(btn.dataset.jobId));
+        });
+
+        jobsTbody.querySelectorAll(".job-delete-btn").forEach((btn) => {
+            btn.addEventListener("click", () => deleteJob(btn.dataset.jobId));
+        });
+    }
+
+    async function retryJob(jobId) {
+        try {
+            const data = await fetchJson(`/v1/jobs/${jobId}/retry`, { method: "POST" });
+            window.location.href = `/status?job_id=${encodeURIComponent(data.job_id)}`;
+        } catch (error) {
+            setMessage(error.message, "danger");
+        }
+    }
+
+    async function deleteJob(jobId) {
+        if (!window.confirm("Delete this job and all its data? This cannot be undone.")) return;
+        try {
+            await fetchJson(`/v1/jobs/${jobId}`, { method: "DELETE" });
+            loadJobs();
+        } catch (error) {
+            setMessage(error.message, "danger");
+        }
+    }
+
+    async function fetchJson(url, options = {}) {
+        const response = await fetch(url, options);
+        const data = await response.json();
+        if (!response.ok) throw new Error(data.message || data.error || "Request failed");
+        return data;
     }
 
     function setMessage(message, tone) {
