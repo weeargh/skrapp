@@ -92,10 +92,16 @@ def detect_openapi_spec_url(html: str, page_url: str) -> str | None:
     return None
 
 
-def fetch_openapi_spec(spec_url: str) -> dict | None:
+def fetch_openapi_spec(spec_url: str, page_url: str | None = None) -> dict | None:
     """Fetch a JSON or YAML OpenAPI spec from a URL. Returns parsed dict or None."""
+    from urllib.parse import urlparse
+    referer = page_url or f"{urlparse(spec_url).scheme}://{urlparse(spec_url).netloc}/"
     try:
-        resp = requests.get(spec_url, timeout=15, headers={"Accept": "application/json, application/yaml, */*"})
+        resp = requests.get(spec_url, timeout=30, headers={
+            "Accept": "application/json, application/yaml, */*",
+            "User-Agent": "Mozilla/5.0 (compatible; SkrappBot/1.0)",
+            "Referer": referer,
+        })
         resp.raise_for_status()
         content = resp.text.strip()
         # Try JSON first
@@ -273,8 +279,14 @@ def _base_origin(url: str) -> str:
 
 def _is_openapi_url(url: str) -> bool:
     """Return True if the URL returns a valid OpenAPI spec."""
+    from urllib.parse import urlparse as _urlparse
+    origin = f"{_urlparse(url).scheme}://{_urlparse(url).netloc}/"
     try:
-        resp = requests.get(url, timeout=8, headers={"Accept": "application/json, */*"})
+        resp = requests.get(url, timeout=10, headers={
+            "Accept": "application/json, */*",
+            "User-Agent": "Mozilla/5.0 (compatible; SkrappBot/1.0)",
+            "Referer": origin,
+        })
         if resp.status_code != 200:
             return False
         data = resp.json()

@@ -141,7 +141,7 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
                 "page_url": extracted.final_url,
                 "spec_url": spec_url,
             })
-            spec = fetch_openapi_spec(spec_url)
+            spec = fetch_openapi_spec(spec_url, page_url=extracted.final_url)
             if spec:
                 raw_markdown = convert_spec_to_markdown(spec)
                 raw_text = markdown_to_text(raw_markdown)
