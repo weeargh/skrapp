@@ -8,7 +8,9 @@ from urllib.parse import urlparse, urlunparse
 from config import settings
 from config.constants import JobState, PageState
 from crawler.crawl4ai_session import Crawl4AIPageSession
+from crawler.openapi_extractor import convert_spec_to_markdown, detect_openapi_spec_url, fetch_openapi_spec
 from crawler.sitemap import discover_sitemap_urls
+from crawler.text_utils import markdown_to_text
 from crawler.url_utils import canonicalize_url, get_path
 from db import queries
 from worker.finalizer import finalize_job
@@ -128,6 +130,23 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
         if extracted.status_code and extracted.status_code >= 400:
             raise RuntimeError(f"Page returned HTTP {extracted.status_code}")
 
+        # OpenAPI / Swagger detection: replace markdown with spec-derived content
+        extractor_name = "crawl4ai"
+        raw_markdown = extracted.raw_markdown
+        raw_text = extracted.raw_text
+        spec_url = detect_openapi_spec_url(extracted.html, extracted.final_url)
+        if spec_url:
+            queries.insert_job_event(job_id, "info", "openapi_spec_detected", {
+                "page_id": page_id,
+                "page_url": extracted.final_url,
+                "spec_url": spec_url,
+            })
+            spec = fetch_openapi_spec(spec_url)
+            if spec:
+                raw_markdown = convert_spec_to_markdown(spec)
+                raw_text = markdown_to_text(raw_markdown)
+                extractor_name = "openapi"
+
         queries.update_page(
             page_id,
             url=extracted.final_url,
@@ -137,7 +156,7 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
             meta_json={
                 "status_code": extracted.status_code,
                 "outlinks_count": len(extracted.outlinks),
-                "extractor": "crawl4ai",
+                "extractor": extractor_name,
                 "extractor_meta": extracted.meta,
                 "worker_id": worker_id,
             },
@@ -151,15 +170,16 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
             page_id,
             PageState.DONE,
             title=extracted.title or page.get("title"),
-            raw_markdown=extracted.raw_markdown,
-            raw_text=extracted.raw_text,
+            raw_markdown=raw_markdown,
+            raw_text=raw_text,
             meta_json={
                 "status_code": extracted.status_code,
                 "outlinks_count": len(extracted.outlinks),
-                "extractor": "crawl4ai",
+                "extractor": extractor_name,
                 "extractor_meta": extracted.meta,
                 "cleaned_html_length": len(extracted.cleaned_html or ""),
                 "worker_id": worker_id,
+                **({"spec_url": spec_url} if spec_url else {}),
             },
             claimed_by=None,
             claimed_at=None,
