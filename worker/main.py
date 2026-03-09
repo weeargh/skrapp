@@ -5,6 +5,7 @@ import logging
 import signal
 import threading
 import time
+from contextlib import contextmanager
 
 from config import settings
 from config.constants import JobState, PageState
@@ -21,6 +22,8 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 _shutdown_requested = False
+_host_locks: dict[str, threading.Lock] = {}
+_host_locks_guard = threading.Lock()
 
 
 def signal_handler(signum, frame):
@@ -29,6 +32,15 @@ def signal_handler(signum, frame):
     global _shutdown_requested
     logger.info("Received signal %s, shutting down...", signum)
     _shutdown_requested = True
+
+
+@contextmanager
+def _host_processing_lock(hostname: str):
+    """Serialize page fetches per host to avoid flaky concurrent site responses."""
+    with _host_locks_guard:
+        lock = _host_locks.setdefault(hostname, threading.Lock())
+    with lock:
+        yield
 
 
 class PageWorkerThread(threading.Thread):
@@ -65,12 +77,13 @@ class PageWorkerThread(threading.Thread):
                             queries.recalculate_job_counts(job["id"])
                     else:
                         try:
-                            process_page(
-                                job,
-                                page,
-                                self.worker_id,
-                                self._get_session(job),
-                            )
+                            with _host_processing_lock(job["allowed_host"]):
+                                process_page(
+                                    job,
+                                    page,
+                                    self.worker_id,
+                                    self._get_session(job),
+                                )
                         except Exception as e:
                             if _is_browser_crash(e):
                                 logger.warning(
@@ -79,12 +92,13 @@ class PageWorkerThread(threading.Thread):
                                 )
                                 self._close_session()
                                 try:
-                                    process_page(
-                                        job,
-                                        page,
-                                        self.worker_id,
-                                        self._get_session(job),
-                                    )
+                                    with _host_processing_lock(job["allowed_host"]):
+                                        process_page(
+                                            job,
+                                            page,
+                                            self.worker_id,
+                                            self._get_session(job),
+                                        )
                                 except Exception as retry_e:
                                     logger.error(
                                         "Retry failed for page %s: %s",
