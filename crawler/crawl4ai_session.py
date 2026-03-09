@@ -52,6 +52,19 @@ class Crawl4AIPageSession:
         self._crawler: AsyncWebCrawler | None = None
 
     def __enter__(self) -> "Crawl4AIPageSession":
+        self._open()
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        self._close(exc_type, exc, tb)
+
+    def restart(self):
+        """Recreate the underlying browser session after flaky navigations."""
+        self._close(None, None, None)
+        self._open()
+
+    def _open(self):
+        """Start the underlying async crawler session."""
         self._loop = asyncio.new_event_loop()
         asyncio.set_event_loop(self._loop)
         self._crawler = AsyncWebCrawler(
@@ -63,9 +76,9 @@ class Crawl4AIPageSession:
             )
         )
         self._loop.run_until_complete(self._crawler.__aenter__())
-        return self
 
-    def __exit__(self, exc_type, exc, tb):
+    def _close(self, exc_type, exc, tb):
+        """Close the underlying async crawler session if it is active."""
         try:
             if self._crawler and self._loop:
                 self._loop.run_until_complete(self._crawler.__aexit__(exc_type, exc, tb))

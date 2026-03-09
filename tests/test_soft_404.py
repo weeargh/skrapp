@@ -102,5 +102,32 @@ class Soft404Tests(TestCase):
             runner._process_page(job, page, "worker-1", crawler_session)
 
         self.assertEqual(crawler_session.fetch_page.call_count, 2)
+        crawler_session.restart.assert_called_once()
+        status_updates = [call.args[1] for call in queries_mock.update_page_status.call_args_list]
+        self.assertEqual(status_updates[-1], PageState.DONE)
+
+    def test_retries_timeout_with_fresh_session_and_succeeds(self):
+        url = "https://api-docs.expense.mekari.com/authentication/example-nodejs"
+        extracted = _result(
+            url,
+            title="Setup HMAC Authentication in Node.js | Mekari Expense API",
+            heading="Setup HMAC Authentication in Node.js",
+            text="A" * 400,
+        )
+        crawler_session = MagicMock()
+        crawler_session.fetch_page.side_effect = [
+            RuntimeError("Page.goto: net::ERR_TIMED_OUT at https://api-docs.expense.mekari.com/authentication/example-nodejs"),
+            extracted,
+        ]
+        job = {"id": "job_1", "max_depth": 4}
+        page = {"id": "page_1", "url": url, "depth": 1, "title": None}
+
+        with patch.object(runner, "queries") as queries_mock, \
+                patch.object(runner, "_enqueue_child_pages"), \
+                patch.object(runner, "detect_openapi_spec_url", return_value=None):
+            runner._process_page(job, page, "worker-1", crawler_session)
+
+        self.assertEqual(crawler_session.fetch_page.call_count, 2)
+        crawler_session.restart.assert_called_once()
         status_updates = [call.args[1] for call in queries_mock.update_page_status.call_args_list]
         self.assertEqual(status_updates[-1], PageState.DONE)

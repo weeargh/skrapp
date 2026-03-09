@@ -126,17 +126,12 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
     })
 
     try:
-        extracted = crawler_session.fetch_page(page["url"])
-        if extracted.status_code == 404 and not _is_soft_404_success(page["url"], extracted):
-            queries.insert_job_event(job_id, "warn", "page_404_retrying", {
-                "page_id": page_id,
-                "url": page["url"],
-                "final_url": extracted.final_url,
-                "title": extracted.title,
-            })
-            retry_extracted = crawler_session.fetch_page(page["url"])
-            if _is_soft_404_success(page["url"], retry_extracted):
-                extracted = retry_extracted
+        extracted = _fetch_page_with_retries(
+            crawler_session,
+            job_id,
+            page_id,
+            page["url"],
+        )
         if extracted.status_code and extracted.status_code >= 400 and not _is_soft_404_success(page["url"], extracted):
             raise RuntimeError(f"Page returned HTTP {extracted.status_code}")
         if extracted.status_code == 404:
@@ -227,6 +222,51 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
         })
 
 
+def _fetch_page_with_retries(
+    crawler_session: Crawl4AIPageSession,
+    job_id: str,
+    page_id: str,
+    url: str,
+) -> Crawl4AIPageResult:
+    """Retry flaky 404s and navigation errors with a fresh browser session."""
+    last_error: Exception | None = None
+
+    for attempt in range(2):
+        try:
+            extracted = crawler_session.fetch_page(url)
+        except Exception as exc:
+            last_error = exc
+            if attempt == 1 or not _is_retryable_fetch_error(exc):
+                raise
+            queries.insert_job_event(job_id, "warn", "page_fetch_retrying", {
+                "page_id": page_id,
+                "url": url,
+                "attempt": attempt + 1,
+                "reason": str(exc),
+            })
+            crawler_session.restart()
+            continue
+
+        if extracted.status_code == 404 and not _is_soft_404_success(url, extracted):
+            if attempt == 1:
+                return extracted
+            queries.insert_job_event(job_id, "warn", "page_404_retrying", {
+                "page_id": page_id,
+                "url": url,
+                "final_url": extracted.final_url,
+                "title": extracted.title,
+                "attempt": attempt + 1,
+            })
+            crawler_session.restart()
+            continue
+
+        return extracted
+
+    if last_error:
+        raise last_error
+    raise RuntimeError(f"Fetch retries exhausted for {url}")
+
+
 def _is_soft_404_success(requested_url: str, extracted: Crawl4AIPageResult) -> bool:
     """Allow rendered deep-link docs pages that incorrectly return HTTP 404."""
     if extracted.status_code != 404:
@@ -267,6 +307,21 @@ def _is_soft_404_success(requested_url: str, extracted: Crawl4AIPageResult) -> b
         return False
 
     return True
+
+
+def _is_retryable_fetch_error(exc: Exception) -> bool:
+    """Return True for transient navigation failures that often succeed on retry."""
+    message = str(exc).lower()
+    retryable_markers = (
+        "err_timed_out",
+        "timed out",
+        "timeout",
+        "navigation",
+        "connection closed",
+        "browser has been closed",
+        "target page, context or browser has been closed",
+    )
+    return any(marker in message for marker in retryable_markers)
 
 
 def _enqueue_child_pages(job: dict, parent_page_id: str, parent_depth: int, outlinks: list[str]):
