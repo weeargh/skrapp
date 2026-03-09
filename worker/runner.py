@@ -127,6 +127,16 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
 
     try:
         extracted = crawler_session.fetch_page(page["url"])
+        if extracted.status_code == 404 and not _is_soft_404_success(page["url"], extracted):
+            queries.insert_job_event(job_id, "warn", "page_404_retrying", {
+                "page_id": page_id,
+                "url": page["url"],
+                "final_url": extracted.final_url,
+                "title": extracted.title,
+            })
+            retry_extracted = crawler_session.fetch_page(page["url"])
+            if _is_soft_404_success(page["url"], retry_extracted):
+                extracted = retry_extracted
         if extracted.status_code and extracted.status_code >= 400 and not _is_soft_404_success(page["url"], extracted):
             raise RuntimeError(f"Page returned HTTP {extracted.status_code}")
         if extracted.status_code == 404:
