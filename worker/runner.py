@@ -127,8 +127,15 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
 
     try:
         extracted = crawler_session.fetch_page(page["url"])
-        if extracted.status_code and extracted.status_code >= 400:
+        if extracted.status_code and extracted.status_code >= 400 and not _is_soft_404_success(page["url"], extracted):
             raise RuntimeError(f"Page returned HTTP {extracted.status_code}")
+        if extracted.status_code == 404:
+            queries.insert_job_event(job_id, "warn", "page_soft_404_accepted", {
+                "page_id": page_id,
+                "url": page["url"],
+                "final_url": extracted.final_url,
+                "title": extracted.title,
+            })
 
         # OpenAPI / Swagger detection: replace markdown with spec-derived content
         extractor_name = "crawl4ai"
@@ -208,6 +215,48 @@ def _process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4
             "message": str(e),
             "worker_id": worker_id,
         })
+
+
+def _is_soft_404_success(requested_url: str, extracted: Crawl4AIPageResult) -> bool:
+    """Allow rendered deep-link docs pages that incorrectly return HTTP 404."""
+    if extracted.status_code != 404:
+        return False
+
+    requested_path = get_path(requested_url)
+    final_path = get_path(extracted.final_url)
+    if requested_path in ("", "/") or requested_path != final_path:
+        return False
+
+    title = (extracted.title or "").strip()
+    raw_text = (extracted.raw_text or "").strip()
+    raw_markdown = (extracted.raw_markdown or "").strip()
+    if not title or len(raw_text) < settings.MIN_TEXT_LENGTH_SUCCESS or not raw_markdown:
+        return False
+
+    first_heading = ""
+    for line in raw_markdown.splitlines():
+        line = line.strip()
+        if line.startswith("#"):
+            first_heading = line.lstrip("#").strip()
+            break
+
+    error_markers = (
+        "404",
+        "not found",
+        "page not found",
+        "cannot be found",
+    )
+    preview = "\n".join(part for part in (title, first_heading, raw_text[:500]) if part).lower()
+    if any(marker in preview for marker in error_markers):
+        return False
+
+    # Reject the common docs fallback where every missing route renders the overview page.
+    if requested_path != "/" and title.lower().startswith("overview"):
+        return False
+    if requested_path != "/" and first_heading.lower() == "overview":
+        return False
+
+    return True
 
 
 def _enqueue_child_pages(job: dict, parent_page_id: str, parent_depth: int, outlinks: list[str]):
