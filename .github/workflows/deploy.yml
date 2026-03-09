@@ -28,9 +28,14 @@ jobs:
             systemctl daemon-reload
             systemctl enable skrapp-web skrapp-worker
 
-            # Stop bare processes if still running (first-time migration)
-            pkill -f "gunicorn" 2>/dev/null || true
-            pkill -f "run_worker.py" 2>/dev/null || true
+            # Stop managed services if they already exist
+            systemctl stop skrapp-web skrapp-worker 2>/dev/null || true
+
+            # Stop legacy bare processes from the pre-systemd deploy flow.
+            # Avoid pkill -f here because the SSH action runs this script inline,
+            # so matching on command text can terminate the deploy shell itself.
+            ps -eo pid=,args= | awk '$1 != "'"$$"'" && /[g]unicorn/ {print $1}' | xargs -r kill || true
+            ps -eo pid=,args= | awk '$1 != "'"$$"'" && /[r]un_worker\.py/ {print $1}' | xargs -r kill || true
             sleep 1
 
             # Restart via systemd
