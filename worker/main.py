@@ -72,13 +72,32 @@ class PageWorkerThread(threading.Thread):
                                 self._get_session(job),
                             )
                         except Exception as e:
-                            logger.error(
-                                "Unhandled error processing page %s for job %s: %s",
-                                page["id"],
-                                job["id"],
-                                e,
-                                exc_info=True,
-                            )
+                            if _is_browser_crash(e):
+                                logger.warning(
+                                    "%s browser crashed on page %s — resetting session and retrying",
+                                    self.worker_id, page["id"],
+                                )
+                                self._close_session()
+                                try:
+                                    process_page(
+                                        job,
+                                        page,
+                                        self.worker_id,
+                                        self._get_session(job),
+                                    )
+                                except Exception as retry_e:
+                                    logger.error(
+                                        "Retry failed for page %s: %s",
+                                        page["id"], retry_e, exc_info=True,
+                                    )
+                            else:
+                                logger.error(
+                                    "Unhandled error processing page %s for job %s: %s",
+                                    page["id"],
+                                    job["id"],
+                                    e,
+                                    exc_info=True,
+                                )
                         worked = True
 
                 if finalize_ready_job():
@@ -124,6 +143,18 @@ class PageWorkerThread(threading.Thread):
         finally:
             self._session = None
             self._session_key = None
+
+
+def _is_browser_crash(exc: Exception) -> bool:
+    """Return True if the exception indicates a Playwright browser crash."""
+    msg = str(exc).lower()
+    return any(phrase in msg for phrase in (
+        "browser has been closed",
+        "target page, context or browser has been closed",
+        "browser.new_context",
+        "connection closed",
+        "browser closed",
+    ))
 
 
 class SupervisorThread(threading.Thread):
