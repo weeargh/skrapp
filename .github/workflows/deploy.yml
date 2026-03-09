@@ -22,12 +22,19 @@ jobs:
             # Install any new dependencies
             .venv/bin/pip install -r requirements.txt -q
 
-            # Reload gunicorn (no downtime)
-            kill -HUP $(cat /tmp/skrapp-gunicorn.pid)
+            # Install systemd services if not already present
+            cp deploy/skrapp-web.service /etc/systemd/system/skrapp-web.service
+            cp deploy/skrapp-worker.service /etc/systemd/system/skrapp-worker.service
+            systemctl daemon-reload
+            systemctl enable skrapp-web skrapp-worker
 
-            # Restart worker (fully detached from SSH session)
-            kill $(pgrep -f run_worker.py) 2>/dev/null || true
+            # Stop bare processes if still running (first-time migration)
+            pkill -f "gunicorn" 2>/dev/null || true
+            pkill -f "run_worker.py" 2>/dev/null || true
             sleep 1
-            setsid /opt/skrapp/.venv/bin/python /opt/skrapp/run_worker.py < /dev/null > /tmp/skrapp-worker.log 2>&1 &
+
+            # Restart via systemd
+            systemctl restart skrapp-web
+            systemctl restart skrapp-worker
 
             echo "Deploy complete"

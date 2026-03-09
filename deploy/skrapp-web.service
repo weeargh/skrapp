@@ -1,0 +1,13 @@
+[Unit]
+Description=Skrapp Web (Gunicorn)
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/skrapp
+ExecStart=/opt/skrapp/.venv/bin/gunicorn "api.app:create_app()" --bind 127.0.0.1:8080 --workers 2 --threads 4
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

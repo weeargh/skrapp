@@ -1,0 +1,13 @@
+[Unit]
+Description=Skrapp Worker
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/opt/skrapp
+ExecStart=/opt/skrapp/.venv/bin/python run_worker.py
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
