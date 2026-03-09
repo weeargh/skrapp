@@ -28,7 +28,6 @@ jobs:
             # Restart worker (fully detached from SSH session)
             kill $(pgrep -f run_worker.py) 2>/dev/null || true
             sleep 1
-            nohup .venv/bin/python run_worker.py < /dev/null > /tmp/skrapp-worker.log 2>&1 &
-            disown
+            setsid /opt/skrapp/.venv/bin/python /opt/skrapp/run_worker.py < /dev/null > /tmp/skrapp-worker.log 2>&1 &
 
             echo "Deploy complete"
