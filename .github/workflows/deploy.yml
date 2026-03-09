@@ -1,0 +1,33 @@
+name: Deploy to ECS
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          script: |
+            set -e
+            cd /opt/skrapp
+            git pull origin main
+
+            # Install any new dependencies
+            .venv/bin/pip install -r requirements.txt -q
+
+            # Reload gunicorn (no downtime)
+            kill -HUP $(cat /tmp/skrapp-gunicorn.pid)
+
+            # Restart worker
+            kill $(pgrep -f run_worker.py) 2>/dev/null || true
+            sleep 1
+            nohup .venv/bin/python run_worker.py > /tmp/skrapp-worker.log 2>&1 &
+
+            echo "Deploy complete"
