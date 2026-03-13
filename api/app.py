@@ -1,5 +1,5 @@
 """Flask application factory."""
-import os
+from datetime import timedelta
 
 from flask import Flask
 from flask_cors import CORS
@@ -18,22 +18,29 @@ def create_app() -> Flask:
         static_folder=settings.WEB_STATIC_DIR,
         static_url_path=''
     )
-    
+    app.config["SEND_FILE_MAX_AGE_DEFAULT"] = timedelta(days=1)
+
     CORS(app)
-    
+
     database.init_db()
-    
+
     register_error_handlers(app)
-    
+
     app.register_blueprint(jobs_bp)
     app.register_blueprint(health_bp)
-    
+
+    def _no_cache_html(response):
+        response.cache_control.no_store = True
+        response.cache_control.max_age = 0
+        response.expires = 0
+        return response
+
     @app.route('/')
     def index():
-        return app.send_static_file('index.html')
-    
+        return _no_cache_html(app.send_static_file('index.html'))
+
     @app.route('/status')
     def status_page():
-        return app.send_static_file('status.html')
-    
+        return _no_cache_html(app.send_static_file('status.html'))
+
     return app
