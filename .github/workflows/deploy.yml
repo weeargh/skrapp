@@ -39,7 +39,15 @@ jobs:
             sleep 1
 
             # Restart via systemd
-            systemctl restart skrapp-web
-            systemctl restart skrapp-worker
+            systemctl restart skrapp-web || {
+              systemctl status skrapp-web --no-pager || true
+              journalctl -u skrapp-web.service -n 100 --no-pager || true
+              exit 1
+            }
+            systemctl restart skrapp-worker || {
+              systemctl status skrapp-worker --no-pager || true
+              journalctl -u skrapp-worker.service -n 100 --no-pager || true
+              exit 1
+            }
 
             echo "Deploy complete"

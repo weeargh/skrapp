@@ -32,9 +32,10 @@ sudo mkdir -p /etc/skrapp
 sudo mkdir -p /var/lib/skrapp/data
 sudo mkdir -p /var/lib/skrapp/out
 sudo cp deploy/skrapp.env.example /etc/skrapp/skrapp.env
-sudo chown -R www-data:www-data /opt/skrapp /var/lib/skrapp /etc/skrapp
 sudo chmod 640 /etc/skrapp/skrapp.env
 ```
+
+If your host has a dedicated app user, adjust ownership for that user. The shipped systemd units do not hard-code a Unix account, so they also work on hosts that do not have `www-data`.
 
 ## 3. Install systemd units
 

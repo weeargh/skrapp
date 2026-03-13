@@ -5,10 +5,8 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-User=www-data
-Group=www-data
 WorkingDirectory=/opt/skrapp
-EnvironmentFile=/etc/skrapp/skrapp.env
+EnvironmentFile=-/etc/skrapp/skrapp.env
 ExecStart=/opt/skrapp/.venv/bin/python run_worker.py
 Restart=on-failure
 RestartSec=5
