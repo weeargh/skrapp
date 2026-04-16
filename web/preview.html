@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skrapp — Preview</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/preview.css">
+</head>
+<body>
+
+    <nav class="px-navbar">
+        <a href="/" class="px-navbar-brand">
+            <div class="px-navbar-icon">S</div>
+            <span class="px-navbar-name">Skrapp</span>
+        </a>
+        <span class="px-navbar-sep"></span>
+        <div class="px-navbar-crumb">
+            <a href="/">Jobs</a>
+            <i class="px-crumb-icon">›</i>
+            <a id="status-link" href="/status">Job detail</a>
+            <i class="px-crumb-icon">›</i>
+            <span class="px-crumb-current">Preview</span>
+        </div>
+        <div class="px-navbar-end">
+            <a id="open-status-btn" href="/status" class="btn btn-secondary btn-inline">Open job</a>
+            <a href="/" class="btn btn-secondary btn-inline">New crawl</a>
+        </div>
+    </nav>
+
+    <div class="px-page px-page-wide">
+        <div class="px-page-header">
+            <div>
+                <h1 class="px-page-title">Review extracted content</h1>
+                <p id="preview-subtitle" class="px-page-subtitle">Loading job preview…</p>
+            </div>
+            <div class="px-page-actions">
+                <span id="preview-status-badge" class="chip chip-neutral">Loading</span>
+            </div>
+        </div>
+
+        <div class="preview-summary-grid">
+            <div class="stat-card">
+                <span class="stat-label">Pages</span>
+                <strong id="summary-pages-total">0</strong>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Succeeded</span>
+                <strong id="summary-pages-succeeded">0</strong>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Failed</span>
+                <strong id="summary-pages-failed">0</strong>
+            </div>
+            <div class="stat-card">
+                <span class="stat-label">Current sort</span>
+                <strong id="summary-sort-label">Review priority</strong>
+            </div>
+        </div>
+
+        <div class="preview-layout">
+            <aside class="px-card preview-queue-card">
+                <div class="px-card-header">
+                    <div class="px-card-header-left">
+                        <p class="px-card-overline">Review Queue</p>
+                        <h2 class="px-card-title">Start with the most suspicious pages</h2>
+                    </div>
+                </div>
+                <div class="px-card-body">
+                    <div class="preview-toolbar">
+                        <div class="field preview-field">
+                            <label for="review-search">Filter pages</label>
+                            <input id="review-search" type="search" placeholder="Search title or URL">
+                        </div>
+                        <div class="field preview-field">
+                            <label for="sort-mode">Sort by</label>
+                            <select id="sort-mode">
+                                <option value="review">Review priority (Recommended)</option>
+                                <option value="tree">Tree order</option>
+                                <option value="shortest">Shortest text first</option>
+                                <option value="confidence">Lowest cleanup confidence</option>
+                                <option value="title">Title A-Z</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p id="sort-helper" class="preview-helper">
+                        Review priority floats failed pages, wrappers, thin pages, and low-confidence cleanup to the top.
+                    </p>
+
+                    <div class="preview-queue-meta">
+                        <span id="queue-count" class="chip chip-neutral">0 pages</span>
+                        <span id="queue-visible" class="text-muted">Showing 0</span>
+                    </div>
+
+                    <div id="queue-empty" class="empty-copy hidden">No pages match the current filters.</div>
+                    <div id="review-list" class="review-list"></div>
+
+                    <div class="preview-queue-actions">
+                        <button id="load-more-btn" class="btn btn-secondary btn-inline hidden" type="button">Show 20 more</button>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="px-card preview-document-card">
+                <div class="px-card-header">
+                    <div class="px-card-header-left">
+                        <p class="px-card-overline">Page Preview</p>
+                        <h2 id="preview-page-title" class="px-card-title">Select a page</h2>
+                    </div>
+                    <div class="preview-nav-actions">
+                        <button id="prev-page-btn" class="btn btn-secondary btn-inline" type="button">Previous</button>
+                        <button id="next-page-btn" class="btn btn-secondary btn-inline" type="button">Next</button>
+                    </div>
+                </div>
+                <div class="px-card-body">
+                    <div id="preview-empty" class="empty-copy">
+                        Choose a page from the queue to inspect the cleaned result.
+                    </div>
+
+                    <div id="preview-content" class="hidden">
+                        <div class="meta-grid meta-grid-compact">
+                            <div class="meta-item">
+                                <span class="meta-label">URL</span>
+                                <a id="preview-page-url" class="link" href="#" target="_blank" rel="noreferrer">Open source</a>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Depth</span>
+                                <span id="preview-page-depth">-</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Text length</span>
+                                <span id="preview-page-length">-</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Cleanup confidence</span>
+                                <span id="preview-page-confidence">-</span>
+                            </div>
+                        </div>
+
+                        <div class="preview-tabs">
+                            <button class="tab-button is-active" type="button" data-view-mode="document">Document</button>
+                            <button class="tab-button" type="button" data-view-mode="markdown">Markdown</button>
+                            <button class="tab-button" type="button" data-view-mode="plain">Plain text</button>
+                        </div>
+
+                        <div class="preview-doc-frame">
+                            <article id="document-preview" class="document-preview tab-view is-active" data-view-panel="document"></article>
+                            <pre id="markdown-preview" class="source-preview tab-view" data-view-panel="markdown"></pre>
+                            <pre id="plain-preview" class="source-preview tab-view" data-view-panel="plain"></pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script src="/js/preview.js" defer></script>
+</body>
+</html>
