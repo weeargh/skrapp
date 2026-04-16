@@ -6,6 +6,7 @@ from datetime import datetime, timezone
 
 from flask import Blueprint, abort, jsonify, request, send_file
 
+from api.preview_capture import ensure_page_screenshot
 from api.validators import (
     generate_job_id,
     validate_ignore_prefixes,
@@ -220,6 +221,31 @@ def get_page(job_id: str, page_id: str):
         return jsonify({"error": "Not Found", "message": "Page not found"}), 404
 
     return jsonify(_serialize_page_detail(page))
+
+
+@jobs_bp.route("/v1/jobs/<job_id>/pages/<page_id>/screenshot", methods=["GET"])
+def get_page_screenshot(job_id: str, page_id: str):
+    """Return a cached browser screenshot for a preview page."""
+    job = queries.get_crawl_job(job_id)
+    if not job:
+        return jsonify({"error": "Not Found", "message": "Job not found"}), 404
+
+    page = queries.get_page_by_id(page_id)
+    if not page or page["job_id"] != job_id:
+        return jsonify({"error": "Not Found", "message": "Page not found"}), 404
+
+    force_refresh = request.args.get("refresh") in {"1", "true", "yes"}
+    try:
+        screenshot_path, metadata = ensure_page_screenshot(job_id, page, force_refresh=force_refresh)
+    except ValueError as exc:
+        return jsonify({"error": "Bad Request", "message": str(exc)}), 400
+    except Exception as exc:
+        return jsonify({"error": "Capture Failed", "message": str(exc)}), 502
+
+    response = send_file(screenshot_path, mimetype="image/jpeg")
+    response.headers["X-Preview-Final-URL"] = metadata.get("final_url", "")
+    response.headers["X-Preview-Blocked-Signals"] = ",".join(metadata.get("blocked_signals", []))
+    return response
 
 
 @jobs_bp.route("/v1/jobs/<job_id>/artifacts", methods=["GET"])

@@ -267,17 +267,15 @@
   box-shadow: var(--shadow-md);
 }
 
-.web-preview-canvas iframe {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  border: 0;
+.web-preview-canvas img {
+  display: block;
+  width: 100%;
+  height: auto;
   background: var(--c-white);
-  transform-origin: top center;
 }
 
 .web-preview-shell.is-loading .web-preview-canvas::after {
-  content: "Loading webpage preview…";
+  content: "Capturing screenshot…";
   position: absolute;
   inset: 0;
   display: flex;
@@ -288,6 +286,10 @@
   font-size: 13px;
   font-weight: 600;
   z-index: 1;
+}
+
+.preview-screenshot-error {
+  color: var(--c-danger);
 }
 
 .preview-frame-hint {

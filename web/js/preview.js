@@ -1,7 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
-    const frameBaseWidth = 1440;
-    const frameBaseHeight = 2200;
 
     const state = {
         jobId: detectJobId(params),
@@ -44,9 +42,8 @@ document.addEventListener("DOMContentLoaded", () => {
         loadMoreBtn: document.getElementById("load-more-btn"),
         webPreviewEmpty: document.getElementById("web-preview-empty"),
         webPreviewShell: document.getElementById("web-preview-shell"),
-        webPreviewStage: document.getElementById("web-preview-stage"),
-        webPreviewCanvas: document.getElementById("web-preview-canvas"),
-        pageFrame: document.getElementById("page-frame"),
+        webPreviewError: document.getElementById("web-preview-error"),
+        pageScreenshot: document.getElementById("page-screenshot"),
         openSourceBtn: document.getElementById("open-source-btn"),
         previewEmpty: document.getElementById("preview-empty"),
         previewContent: document.getElementById("preview-content"),
@@ -65,8 +62,6 @@ document.addEventListener("DOMContentLoaded", () => {
         viewButtons: Array.from(document.querySelectorAll("[data-view-mode]")),
         viewPanels: Array.from(document.querySelectorAll("[data-view-panel]")),
     };
-
-    const resizePreview = () => fitFrameWidth(elements, frameBaseWidth, frameBaseHeight);
 
     elements.search.addEventListener("input", () => {
         state.searchTerm = elements.search.value.trim().toLowerCase();
@@ -106,14 +101,16 @@ document.addEventListener("DOMContentLoaded", () => {
     elements.prevBtn.addEventListener("click", () => moveSelection(-1));
     elements.nextBtn.addEventListener("click", () => moveSelection(1));
 
-    elements.pageFrame.addEventListener("load", () => {
+    elements.pageScreenshot.addEventListener("load", () => {
         elements.webPreviewShell.classList.remove("is-loading");
         clearTimeout(state.frameLoadTimeout);
+        elements.webPreviewError.classList.add("hidden");
     });
 
-    elements.pageFrame.addEventListener("error", () => {
+    elements.pageScreenshot.addEventListener("error", () => {
         elements.webPreviewShell.classList.remove("is-loading");
         clearTimeout(state.frameLoadTimeout);
+        elements.webPreviewError.classList.remove("hidden");
     });
 
     elements.viewButtons.forEach((button) => {
@@ -122,12 +119,6 @@ document.addEventListener("DOMContentLoaded", () => {
             renderViewMode();
         });
     });
-
-    window.addEventListener("resize", resizePreview);
-    if (window.ResizeObserver && elements.webPreviewStage) {
-        const observer = new ResizeObserver(resizePreview);
-        observer.observe(elements.webPreviewStage);
-    }
 
     initialize();
 
@@ -318,6 +309,7 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.previewContent.classList.remove("hidden");
         elements.webPreviewEmpty.classList.add("hidden");
         elements.webPreviewShell.classList.remove("hidden");
+        elements.webPreviewError.classList.add("hidden");
 
         elements.previewPageTitle.textContent = page.title || displayUrl || page.url || "Untitled page";
         setLinkState(elements.previewPageUrl, displayUrl, displayUrl || "Unavailable");
@@ -346,11 +338,10 @@ document.addEventListener("DOMContentLoaded", () => {
         state.frameLoadTimeout = window.setTimeout(() => {
             elements.webPreviewShell.classList.remove("is-loading");
         }, 4000);
-        elements.pageFrame.src = displayUrl || "about:blank";
+        elements.pageScreenshot.src = screenshotUrlFor(state.jobId, page.page_id);
 
         renderViewMode();
         updatePrevNextState();
-        fitFrameWidth(elements, frameBaseWidth, frameBaseHeight);
     }
 
     function clearPreview() {
@@ -361,7 +352,8 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.webPreviewEmpty.classList.remove("hidden");
         elements.webPreviewShell.classList.add("hidden");
         elements.webPreviewShell.classList.remove("is-loading");
-        elements.pageFrame.removeAttribute("src");
+        elements.webPreviewError.classList.add("hidden");
+        elements.pageScreenshot.removeAttribute("src");
         setLinkState(elements.previewPageUrl, "", "Unavailable");
         setLinkState(elements.openSourceBtn, "", "Open source");
         renderSelectionSummary();
@@ -441,7 +433,6 @@ document.addEventListener("DOMContentLoaded", () => {
         state.activeLayoutMode = "compare";
         syncLayoutMode();
         renderSelectionSummary();
-        fitFrameWidth(elements, frameBaseWidth, frameBaseHeight);
     }
 
     function syncLayoutMode() {
@@ -1021,20 +1012,6 @@ function showFatal(message) {
     subtitle.textContent = message;
 }
 
-function fitFrameWidth(elements, baseWidth, baseHeight) {
-    if (!elements.webPreviewStage || elements.webPreviewShell.classList.contains("hidden")) {
-        return;
-    }
-
-    const availableWidth = Math.max(320, elements.webPreviewStage.clientWidth - 24);
-    const scale = Math.min(1, availableWidth / baseWidth);
-
-    elements.webPreviewCanvas.style.height = `${Math.round(baseHeight * scale)}px`;
-    elements.pageFrame.style.width = `${baseWidth}px`;
-    elements.pageFrame.style.height = `${baseHeight}px`;
-    elements.pageFrame.style.transform = `translateX(-50%) scale(${scale})`;
-}
-
 function setLinkState(link, href, label) {
     link.textContent = label;
     link.title = href || label;
@@ -1078,6 +1055,10 @@ function previewUrlFor(jobId, pageId) {
         return base;
     }
     return `${base}?page_id=${encodeURIComponent(pageId)}`;
+}
+
+function screenshotUrlFor(jobId, pageId) {
+    return `/v1/jobs/${encodeURIComponent(jobId)}/pages/${encodeURIComponent(pageId)}/screenshot`;
 }
 
 function resolveDisplayUrl(page) {

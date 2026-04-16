@@ -113,16 +113,14 @@
                     <div id="web-preview-shell" class="web-preview-shell hidden">
                         <div id="web-preview-stage" class="web-preview-stage">
                             <div id="web-preview-canvas" class="web-preview-canvas">
-                                <iframe
-                                    id="page-frame"
-                                    title="Actual web page preview"
-                                    loading="lazy"
-                                    referrerpolicy="no-referrer"
-                                ></iframe>
+                                <img id="page-screenshot" alt="Browser screenshot preview" loading="lazy">
                             </div>
                         </div>
+                        <div id="web-preview-error" class="empty-copy preview-screenshot-error hidden">
+                            Screenshot capture failed for this page. Open the source page directly.
+                        </div>
                         <p class="preview-frame-hint">
-                            Best-effort embed. If the source site blocks framing, open the source page in a new tab.
+                            Browser-rendered screenshot captured on the server. Use Open source if the snapshot misses interactive content.
                         </p>
                     </div>
                 </div>
