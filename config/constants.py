@@ -78,6 +78,7 @@ class ArtifactKind:
     """Job artifact type constants."""
     PAGES_RAW_JSONL = "pages_raw_jsonl"
     PAGES_JSONL = "pages_jsonl"
+    PAGE_JSON_ZIP = "page_json_zip"
     LLM_READY_JSONL = "llm_ready_jsonl"
     RAW_MARKDOWN_JSONL = "raw_markdown_jsonl"
     PLAIN_TEXT_JSONL = "plain_text_jsonl"

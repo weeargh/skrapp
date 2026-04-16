@@ -20,6 +20,7 @@ from config import settings
 from config.constants import ArtifactKind, JobState
 from crawler.url_utils import get_path
 from db import queries
+from worker.job_artifacts import build_page_json_record, ensure_artifact
 
 
 jobs_bp = Blueprint("jobs", __name__)
@@ -220,7 +221,8 @@ def get_page(job_id: str, page_id: str):
     if not page or page["job_id"] != job_id:
         return jsonify({"error": "Not Found", "message": "Page not found"}), 404
 
-    return jsonify(_serialize_page_detail(page))
+    include_export_json = request.args.get("include_export_json") in {"1", "true", "yes"}
+    return jsonify(_serialize_page_detail(page, include_export_json=include_export_json))
 
 
 @jobs_bp.route("/v1/jobs/<job_id>/pages/<page_id>/screenshot", methods=["GET"])
@@ -270,6 +272,7 @@ def list_artifacts(job_id: str):
 def download_artifact(job_id: str, kind: str):
     """Download a generated artifact by kind."""
     mime_types = {
+        ArtifactKind.PAGE_JSON_ZIP: "application/zip",
         ArtifactKind.LLM_READY_JSONL: "application/x-ndjson",
         ArtifactKind.RAW_MARKDOWN_JSONL: "application/x-ndjson",
         ArtifactKind.PLAIN_TEXT_JSONL: "application/x-ndjson",
@@ -293,7 +296,13 @@ def _download_artifact(job_id: str, kind: str, mimetype: str):
 
     artifact = queries.get_artifact_by_kind(job_id, kind)
     if not artifact or not os.path.exists(artifact["path"]):
-        return jsonify({"error": "Not Found", "message": "Artifact not found"}), 404
+        try:
+            ensure_artifact(job_id, kind)
+        except ValueError:
+            return jsonify({"error": "Not Found", "message": "Artifact not found"}), 404
+        artifact = queries.get_artifact_by_kind(job_id, kind)
+        if not artifact or not os.path.exists(artifact["path"]):
+            return jsonify({"error": "Not Found", "message": "Artifact not found"}), 404
 
     return send_file(
         artifact["path"],
@@ -368,7 +377,7 @@ def _serialize_page_summary(page: dict) -> dict:
     }
 
 
-def _serialize_page_detail(page: dict) -> dict:
+def _serialize_page_detail(page: dict, *, include_export_json: bool = False) -> dict:
     """Serialize detailed page content."""
     response = _serialize_page_summary(page)
     response.update({
@@ -380,6 +389,8 @@ def _serialize_page_detail(page: dict) -> dict:
         "main_content_selector": page.get("main_content_selector"),
         "error_message": page.get("error_message"),
     })
+    if include_export_json:
+        response["export_json"] = build_page_json_record(page)
     return response
 
 

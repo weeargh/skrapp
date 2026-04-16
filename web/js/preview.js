@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             let page = state.pageDetailsById.get(pageId);
             if (!page || options.forceRefresh) {
-                page = await fetchJson(`/v1/jobs/${state.jobId}/pages/${pageId}`);
+                page = await fetchJson(`/v1/jobs/${state.jobId}/pages/${pageId}?include_export_json=1`);
                 state.pageDetailsById.set(page.page_id, page);
             }
 
@@ -328,7 +328,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
         elements.documentPreview.innerHTML = buildDocumentHtml(page);
         elements.plainPreview.textContent = plainText;
-        elements.jsonPreview.textContent = JSON.stringify(buildPageJsonPreview(page, displayUrl), null, 2);
+        elements.jsonPreview.textContent = JSON.stringify(
+            page.export_json || buildPageJsonPreview(page),
+            null,
+            2,
+        );
 
         elements.webPreviewShell.classList.add("is-loading");
         clearTimeout(state.frameLoadTimeout);
@@ -822,7 +826,8 @@ function renderPlainTextDocument(text) {
     return paragraphs.join("");
 }
 
-function buildPageJsonPreview(page, displayUrl) {
+function buildPageJsonPreview(page) {
+    const plainText = page.plain_text || page.raw_text || "";
     return {
         page_id: page.page_id,
         job_id: page.job_id,
@@ -831,18 +836,19 @@ function buildPageJsonPreview(page, displayUrl) {
         page_type: page.page_type,
         url: page.url,
         canonical_url: page.canonical_url,
-        display_url: displayUrl,
         parent_page_id: page.parent_page_id,
         depth: page.depth,
-        text_length: (page.plain_text || "").length,
+        text_length: plainText.length,
         cleanup_score: page.cleanup_score,
         cleanup_confidence: page.cleanup_confidence,
         main_content_selector: page.main_content_selector,
         error_message: page.error_message,
         removed_blocks: page.removed_blocks || [],
-        clean_markdown: page.clean_markdown || "",
-        raw_markdown: page.raw_markdown || "",
-        plain_text: page.plain_text || "",
+        content: {
+            clean_markdown: page.clean_markdown || "",
+            raw_markdown: page.raw_markdown || "",
+            plain_text: plainText,
+        },
     };
 }
 

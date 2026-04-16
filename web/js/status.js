@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         try {
             const payload = await fetchJson(`/v1/jobs/${state.jobId}/artifacts`);
             const knownOrder = [
+                "page_json_zip",
                 "llm_ready_jsonl",
                 "raw_markdown_jsonl",
                 "plain_text_jsonl",
@@ -92,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
             );
             const rendered = knownOrder.map((kind) => {
                 const artifact = artifactsByKind.get(kind);
-                const emphasisClass = kind === "llm_ready_jsonl" ? "btn-primary artifact-link is-primary" : "btn-secondary artifact-link";
+                const emphasisClass = kind === "page_json_zip" ? "btn-primary artifact-link is-primary" : "btn-secondary artifact-link";
                 if (artifact) {
                     return `
                         <a class="btn btn-inline has-tooltip ${emphasisClass}" href="${artifact.download_url}" data-tooltip="${escapeHtml(artifactTooltip(kind))}">
@@ -365,21 +366,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         try {
-            if (kind === "tree_json") {
-                downloadBlob(
-                    new Blob([JSON.stringify(state.tree || {}, null, 2)], { type: "application/json;charset=utf-8" }),
-                    `${slugifyFilename(state.jobId)}-tree.json`
-                );
-                return;
+            const response = await fetch(`/v1/jobs/${state.jobId}/artifacts/${kind}/download`);
+            let errorPayload = null;
+            if (!response.ok) {
+                errorPayload = await response.json().catch(() => null);
+                throw new Error(errorPayload?.message || errorPayload?.error || "Download failed");
             }
 
-            const details = await loadAllPageDetails();
-            const records = details.map((page) => buildExportRecord(page, kind));
-            const jsonl = records.map((record) => JSON.stringify(record)).join("\n");
-            downloadBlob(
-                new Blob([jsonl], { type: "application/x-ndjson;charset=utf-8" }),
-                `${slugifyFilename(state.jobId)}-${exportFilename(kind)}`
-            );
+            const blob = await response.blob();
+            downloadBlob(blob, `${slugifyFilename(state.jobId)}-${exportFilename(kind)}`);
         } catch (error) {
             artifactActions.innerHTML = `<span class="text-muted">${escapeHtml(error.message)}</span>`;
         } finally {
@@ -388,19 +383,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 button.textContent = originalLabel;
             }
         }
-    }
-
-    async function loadAllPageDetails() {
-        const missingPages = state.orderedPages.filter((page) => !state.pageDetailsById.has(page.page_id));
-        if (missingPages.length) {
-            const details = await Promise.all(
-                missingPages.map((page) => fetchJson(`/v1/jobs/${state.jobId}/pages/${page.page_id}`))
-            );
-            details.forEach((page) => {
-                state.pageDetailsById.set(page.page_id, page);
-            });
-        }
-        return state.orderedPages.map((page) => state.pageDetailsById.get(page.page_id)).filter(Boolean);
     }
 
     function startPolling() {
@@ -506,29 +488,6 @@ function contentForActiveTab(page, activeTab) {
     return "";
 }
 
-function buildExportRecord(page, kind) {
-    const baseRecord = {
-        job_id: page.job_id,
-        page_id: page.page_id,
-        url: page.url,
-        canonical_url: page.canonical_url,
-        parent_page_id: page.parent_page_id,
-        depth: page.depth,
-        title: page.title,
-        status: page.status,
-        page_type: page.page_type,
-        cleanup_confidence: page.cleanup_confidence,
-    };
-
-    if (kind === "llm_ready_jsonl") {
-        return { ...baseRecord, content_format: "markdown", content: page.clean_markdown || "" };
-    }
-    if (kind === "raw_markdown_jsonl") {
-        return { ...baseRecord, content_format: "markdown", content: page.raw_markdown || "" };
-    }
-    return { ...baseRecord, content_format: "text", content: page.plain_text || "" };
-}
-
 function computeJobProgress(job) {
     const status = job.status || "queued";
     const maxPages = Math.max(1, Number(job.max_pages) || 1);
@@ -628,6 +587,7 @@ function statusClass(status) {
 }
 
 function labelForArtifact(kind) {
+    if (kind === "page_json_zip") return "JSON ZIP";
     if (kind === "llm_ready_jsonl") return "LLM-ready JSONL";
     if (kind === "raw_markdown_jsonl") return "Raw markdown JSONL";
     if (kind === "plain_text_jsonl") return "Plain text JSONL";
@@ -636,6 +596,9 @@ function labelForArtifact(kind) {
 }
 
 function artifactTooltip(kind) {
+    if (kind === "page_json_zip") {
+        return "One JSON file per page with metadata plus cleaned markdown, raw markdown, and plain text. Best when you want the most complete export.";
+    }
     if (kind === "llm_ready_jsonl") {
         return "Cleaned markdown with headings and lists preserved. Best default for chatbot and RAG ingestion.";
     }
@@ -686,9 +649,11 @@ function slugifyFilename(value) {
 }
 
 function exportFilename(kind) {
+    if (kind === "page_json_zip") return "pages-json.zip";
     if (kind === "llm_ready_jsonl") return "llm-ready.jsonl";
     if (kind === "raw_markdown_jsonl") return "raw-markdown.jsonl";
     if (kind === "plain_text_jsonl") return "plain-text.jsonl";
+    if (kind === "tree_json") return "tree.json";
     return `${kind}.jsonl`;
 }
 
