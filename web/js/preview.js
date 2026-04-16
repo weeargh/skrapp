@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     };
 
     const elements = {
-        subtitle: document.getElementById("preview-subtitle"),
+        jobUrl: document.getElementById("preview-job-url"),
         statusBadge: document.getElementById("preview-status-badge"),
         total: document.getElementById("summary-pages-total"),
         succeeded: document.getElementById("summary-pages-succeeded"),
@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         backToCompareBtn: document.getElementById("back-to-compare-btn"),
         browseView: document.getElementById("browse-view"),
         compareView: document.getElementById("compare-view"),
-        selectedPageStrip: document.getElementById("selected-page-strip"),
+        selectedPageLinkRow: document.getElementById("selected-page-link-row"),
         browseResultSummary: document.getElementById("browse-result-summary"),
         browseEmpty: document.getElementById("browse-empty"),
         browseResults: document.getElementById("browse-results"),
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
         updatePrevNextState();
         try {
             if (!state.jobId) {
-                elements.subtitle.textContent = "Loading latest reviewable job…";
+                setLinkState(elements.jobUrl, "", "Loading latest reviewable job…");
                 state.jobId = await resolveDefaultJobId();
                 if (!state.jobId) {
                     showFatal("No completed job is available for preview yet.");
@@ -210,9 +210,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderJobSummary() {
         const job = state.job;
-        elements.subtitle.textContent = job
-            ? `${job.start_url} • compare the live page against the cleaned extraction`
-            : "Loading job preview…";
+        setLinkState(elements.jobUrl, job?.start_url || "", job?.start_url || "Loading job preview…");
         elements.total.textContent = `${state.orderedPages.length.toLocaleString()} pages`;
         elements.succeeded.textContent = `${(job?.pages_succeeded || 0).toLocaleString()} succeeded`;
         elements.failed.textContent = `${(job?.pages_failed || 0).toLocaleString()} failed`;
@@ -310,7 +308,7 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.webPreviewEmpty.classList.add("hidden");
         elements.webPreviewShell.classList.remove("hidden");
         elements.webPreviewError.classList.add("hidden");
-        elements.selectedPageStrip.classList.remove("hidden");
+        elements.selectedPageLinkRow.classList.remove("hidden");
         elements.previewPageStats.classList.remove("hidden");
 
         elements.previewPageTitle.textContent = page.title || displayUrl || page.url || "Untitled page";
@@ -353,7 +351,7 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.webPreviewShell.classList.remove("is-loading");
         elements.webPreviewError.classList.add("hidden");
         elements.pageScreenshot.removeAttribute("src");
-        elements.selectedPageStrip.classList.add("hidden");
+        elements.selectedPageLinkRow.classList.add("hidden");
         elements.previewPageStats.classList.add("hidden");
         setLinkState(elements.previewPageUrl, "", "Unavailable");
         setLinkState(elements.openSourceBtn, "", "Open source");
@@ -442,7 +440,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const browsing = state.activeLayoutMode === "browse";
         elements.compareView.classList.toggle("hidden", browsing);
         elements.browseView.classList.toggle("hidden", !browsing);
-        elements.selectedPageStrip.classList.toggle("hidden", browsing || !state.currentPage);
+        elements.selectedPageLinkRow.classList.toggle("hidden", browsing || !state.currentPage);
         elements.backToCompareBtn.classList.toggle("hidden", !browsing);
         updateBrowseButtonLabel();
     }
@@ -1022,8 +1020,10 @@ function escapeHtml(value) {
 }
 
 function showFatal(message) {
-    const subtitle = document.getElementById("preview-subtitle");
-    subtitle.textContent = message;
+    const jobUrl = document.getElementById("preview-job-url");
+    if (jobUrl) {
+        setLinkState(jobUrl, "", message);
+    }
 }
 
 function setLinkState(link, href, label) {

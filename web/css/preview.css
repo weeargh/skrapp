@@ -12,8 +12,11 @@
   min-width: 0;
 }
 
-.preview-page-header .px-page-subtitle {
-  max-width: none;
+.preview-job-link {
+  max-width: 560px;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 1.45;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -22,7 +25,7 @@
 .preview-controls-card .px-card-body {
   display: flex;
   flex-direction: column;
-  gap: var(--s4);
+  gap: var(--s3);
 }
 
 .preview-controls-grid {
@@ -73,9 +76,8 @@
   gap: var(--s4);
 }
 
-.preview-selected-page-strip .px-card-body {
-  padding-top: var(--s3);
-  padding-bottom: var(--s3);
+.preview-selected-link-row {
+  min-width: 0;
 }
 
 .preview-selected-page-link {
@@ -86,6 +88,10 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.preview-selected-page-link:hover {
+  text-decoration: underline;
 }
 
 .browse-results {
@@ -225,7 +231,7 @@
 }
 
 .preview-page-origin-line {
-  margin-top: 2px;
+  margin-top: 4px;
   font-size: 12px;
   line-height: 1.55;
 }

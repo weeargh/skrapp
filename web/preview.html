@@ -33,9 +33,9 @@
         <div class="px-page-header preview-page-header">
             <div>
                 <h1 class="px-page-title">Review extracted content</h1>
-                <p id="preview-subtitle" class="px-page-subtitle">Loading job preview…</p>
             </div>
             <div class="px-page-actions">
+                <a id="preview-job-url" class="link preview-job-link is-disabled" aria-disabled="true">Loading job preview…</a>
                 <span id="preview-status-badge" class="chip chip-neutral">Loading</span>
             </div>
         </div>
@@ -78,13 +78,11 @@
                 <p id="sort-helper" class="preview-helper hidden" aria-hidden="true">
                     Recommended starts with successful article-like pages and deprioritizes wrapper URLs.
                 </p>
-            </div>
-        </section>
 
-        <section id="selected-page-strip" class="px-card preview-selected-page-strip hidden">
-            <div class="px-card-body">
-                <a id="preview-page-url" class="link preview-selected-page-link is-disabled" aria-disabled="true">Unavailable</a>
-                <div id="preview-page-origin" class="text-muted preview-page-origin-line hidden"></div>
+                <div id="selected-page-link-row" class="preview-selected-link-row hidden">
+                    <a id="preview-page-url" class="link preview-selected-page-link is-disabled" aria-disabled="true">Unavailable</a>
+                    <div id="preview-page-origin" class="text-muted preview-page-origin-line hidden"></div>
+                </div>
             </div>
         </section>
 
