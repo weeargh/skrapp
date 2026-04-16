@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
+    const frameBaseWidth = 1440;
+    const frameBaseHeight = 2200;
 
     const state = {
         jobId: detectJobId(params),
@@ -12,10 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
         pageDetailsById: new Map(),
         sortMode: "recommended",
         searchTerm: "",
-        visibleCount: 20,
-        visiblePages: [],
+        browseVisibleCount: 24,
         activeViewMode: "document",
+        activeLayoutMode: "compare",
         pollHandle: null,
+        frameLoadTimeout: null,
     };
 
     const elements = {
@@ -25,16 +28,26 @@ document.addEventListener("DOMContentLoaded", () => {
         succeeded: document.getElementById("summary-pages-succeeded"),
         failed: document.getElementById("summary-pages-failed"),
         sortLabel: document.getElementById("summary-sort-label"),
+        selectionSummary: document.getElementById("selection-summary"),
         statusLink: document.getElementById("status-link"),
         openStatusBtn: document.getElementById("open-status-btn"),
         search: document.getElementById("review-search"),
         sort: document.getElementById("sort-mode"),
         sortHelper: document.getElementById("sort-helper"),
-        queueCount: document.getElementById("queue-count"),
-        queueVisible: document.getElementById("queue-visible"),
-        queueEmpty: document.getElementById("queue-empty"),
-        reviewList: document.getElementById("review-list"),
+        browseBtn: document.getElementById("browse-btn"),
+        backToCompareBtn: document.getElementById("back-to-compare-btn"),
+        browseView: document.getElementById("browse-view"),
+        compareView: document.getElementById("compare-view"),
+        browseResultSummary: document.getElementById("browse-result-summary"),
+        browseEmpty: document.getElementById("browse-empty"),
+        browseResults: document.getElementById("browse-results"),
         loadMoreBtn: document.getElementById("load-more-btn"),
+        webPreviewEmpty: document.getElementById("web-preview-empty"),
+        webPreviewShell: document.getElementById("web-preview-shell"),
+        webPreviewStage: document.getElementById("web-preview-stage"),
+        webPreviewCanvas: document.getElementById("web-preview-canvas"),
+        pageFrame: document.getElementById("page-frame"),
+        openSourceBtn: document.getElementById("open-source-btn"),
         previewEmpty: document.getElementById("preview-empty"),
         previewContent: document.getElementById("preview-content"),
         previewPageTitle: document.getElementById("preview-page-title"),
@@ -43,34 +56,65 @@ document.addEventListener("DOMContentLoaded", () => {
         previewPageDepth: document.getElementById("preview-page-depth"),
         previewPageLength: document.getElementById("preview-page-length"),
         previewPageConfidence: document.getElementById("preview-page-confidence"),
+        previewPageStatus: document.getElementById("preview-page-status"),
         prevBtn: document.getElementById("prev-page-btn"),
         nextBtn: document.getElementById("next-page-btn"),
         documentPreview: document.getElementById("document-preview"),
-        markdownPreview: document.getElementById("markdown-preview"),
         plainPreview: document.getElementById("plain-preview"),
+        jsonPreview: document.getElementById("json-preview"),
         viewButtons: Array.from(document.querySelectorAll("[data-view-mode]")),
         viewPanels: Array.from(document.querySelectorAll("[data-view-panel]")),
     };
 
+    const resizePreview = () => fitFrameWidth(elements, frameBaseWidth, frameBaseHeight);
+
     elements.search.addEventListener("input", () => {
         state.searchTerm = elements.search.value.trim().toLowerCase();
-        state.visibleCount = 20;
-        renderQueue();
+        state.browseVisibleCount = 24;
+        updateBrowseButtonLabel();
+        if (state.activeLayoutMode === "browse") {
+            renderBrowseResults();
+        }
+        renderSelectionSummary();
+        updatePrevNextState();
+    });
+
+    elements.search.addEventListener("keydown", (event) => {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            showBrowseMode();
+        }
     });
 
     elements.sort.addEventListener("change", () => {
         state.sortMode = elements.sort.value;
-        state.visibleCount = 20;
-        renderQueue();
+        state.browseVisibleCount = 24;
+        renderJobSummary();
+        renderBrowseResults();
+        renderSelectionSummary();
+        updatePrevNextState();
     });
 
+    elements.browseBtn.addEventListener("click", showBrowseMode);
+    elements.backToCompareBtn.addEventListener("click", showCompareMode);
+
     elements.loadMoreBtn.addEventListener("click", () => {
-        state.visibleCount += 20;
-        renderQueue();
+        state.browseVisibleCount += 24;
+        renderBrowseResults();
     });
 
     elements.prevBtn.addEventListener("click", () => moveSelection(-1));
     elements.nextBtn.addEventListener("click", () => moveSelection(1));
+
+    elements.pageFrame.addEventListener("load", () => {
+        elements.webPreviewShell.classList.remove("is-loading");
+        clearTimeout(state.frameLoadTimeout);
+    });
+
+    elements.pageFrame.addEventListener("error", () => {
+        elements.webPreviewShell.classList.remove("is-loading");
+        clearTimeout(state.frameLoadTimeout);
+    });
 
     elements.viewButtons.forEach((button) => {
         button.addEventListener("click", () => {
@@ -79,9 +123,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
+    window.addEventListener("resize", resizePreview);
+    if (window.ResizeObserver && elements.webPreviewStage) {
+        const observer = new ResizeObserver(resizePreview);
+        observer.observe(elements.webPreviewStage);
+    }
+
     initialize();
 
     async function initialize() {
+        updateBrowseButtonLabel();
+        renderViewMode();
+        syncLayoutMode();
+        updatePrevNextState();
         try {
             if (!state.jobId) {
                 elements.subtitle.textContent = "Loading latest reviewable job…";
@@ -130,12 +184,16 @@ document.addEventListener("DOMContentLoaded", () => {
             }));
 
             renderJobSummary();
-            renderQueue();
+            renderBrowseResults();
 
-            if (state.selectedPageId) {
-                await selectPage(state.selectedPageId, { preserveUrl: true });
-            } else if (state.visiblePages.length > 0) {
-                await selectPage(state.visiblePages[0].page_id, { preserveUrl: true });
+            const pageIdToShow = resolvePageIdToShow();
+            if (!pageIdToShow) {
+                clearPreview();
+            } else if (!state.currentPage || state.currentPage.page_id !== pageIdToShow) {
+                await selectPage(pageIdToShow, { preserveUrl: true, keepMode: true });
+            } else {
+                renderSelectionSummary();
+                updatePrevNextState();
             }
 
             if (["done", "cancelled", "failed"].includes(job.status)) {
@@ -147,70 +205,79 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
+    function resolvePageIdToShow() {
+        if (state.selectedPageId && state.orderedPages.some((page) => page.page_id === state.selectedPageId)) {
+            return state.selectedPageId;
+        }
+
+        const filtered = getFilteredPages();
+        if (filtered.length) {
+            return filtered[0].page_id;
+        }
+        return state.orderedPages[0]?.page_id || null;
+    }
+
     function renderJobSummary() {
         const job = state.job;
         elements.subtitle.textContent = job
-            ? `${job.start_url} • review cleaned content page by page`
+            ? `${job.start_url} • compare the live page against the cleaned extraction`
             : "Loading job preview…";
-        elements.total.textContent = state.orderedPages.length;
-        elements.succeeded.textContent = job?.pages_succeeded || 0;
-        elements.failed.textContent = job?.pages_failed || 0;
+        elements.total.textContent = `${state.orderedPages.length.toLocaleString()} pages`;
+        elements.succeeded.textContent = `${(job?.pages_succeeded || 0).toLocaleString()} succeeded`;
+        elements.failed.textContent = `${(job?.pages_failed || 0).toLocaleString()} failed`;
         elements.sortLabel.textContent = sortLabel(state.sortMode);
+        elements.sortHelper.textContent = sortDescription(state.sortMode);
         elements.statusBadge.className = `chip ${statusClass(job?.status)}`;
         elements.statusBadge.textContent = job?.status || "unknown";
     }
 
-    function renderQueue() {
+    function renderBrowseResults() {
         const filtered = getFilteredPages();
-        state.visiblePages = filtered;
-        const visibleRows = filtered.slice(0, state.visibleCount);
+        const visibleRows = filtered.slice(0, state.browseVisibleCount);
 
-        elements.queueCount.textContent = `${filtered.length} pages`;
-        elements.queueVisible.textContent = `Showing ${visibleRows.length} of ${filtered.length}`;
-        elements.sortHelper.textContent = sortDescription(state.sortMode);
-        elements.queueEmpty.classList.toggle("hidden", filtered.length !== 0);
-        elements.loadMoreBtn.classList.toggle("hidden", filtered.length <= state.visibleCount);
+        elements.browseResultSummary.textContent = filtered.length
+            ? `${visibleRows.length.toLocaleString()} of ${filtered.length.toLocaleString()} results`
+            : "0 results";
+        elements.browseEmpty.classList.toggle("hidden", filtered.length !== 0);
+        elements.loadMoreBtn.classList.toggle("hidden", filtered.length <= state.browseVisibleCount);
 
         if (!visibleRows.length) {
-            elements.reviewList.innerHTML = "";
-            if (state.selectedPageId) {
-                clearPreview();
-            }
+            elements.browseResults.innerHTML = "";
             return;
         }
 
-        elements.reviewList.innerHTML = visibleRows.map((page, index) => {
+        elements.browseResults.innerHTML = visibleRows.map((page, index) => {
             const rank = index + 1;
-            const snippet = pageSnippet(page);
+            const selected = page.page_id === state.selectedPageId;
             return `
-                <button class="review-item ${page.page_id === state.selectedPageId ? "is-selected" : ""}" type="button" data-page-id="${escapeHtml(page.page_id)}">
-                    <div class="review-item-header">
+                <button class="browse-result ${selected ? "is-selected" : ""}" type="button" data-page-id="${escapeHtml(page.page_id)}">
+                    <div class="browse-result-top">
                         <div>
-                            <h3 class="review-item-title">${escapeHtml(page.title || page.url || "Untitled page")}</h3>
-                            <div class="review-item-url">${escapeHtml(page.url || "")}</div>
+                            <p class="browse-result-eyebrow">#${rank} in ${escapeHtml(sortLabel(state.sortMode))}</p>
+                            <h3 class="browse-result-title">${escapeHtml(page.title || page.url || "Untitled page")}</h3>
+                            <div class="browse-result-url">${escapeHtml(page.url || "")}</div>
                         </div>
-                        <span class="review-rank">#${rank}</span>
+                        <div class="browse-result-flags">
+                            ${selected ? '<span class="chip chip-neutral">Current</span>' : ""}
+                            <span class="chip ${statusClass(page.status)}">${escapeHtml(page.status || "-")}</span>
+                        </div>
                     </div>
-                    <div class="review-item-meta">
-                        <span class="chip ${statusClass(page.status)}">${escapeHtml(page.status || "-")}</span>
+                    <div class="browse-result-meta">
                         <span class="chip chip-neutral">Depth ${page.depth ?? "-"}</span>
                         <span class="chip chip-neutral">${formatTextLength(page.text_length)}</span>
                         <span class="chip chip-neutral">${formatConfidence(page.cleanup_confidence, page.cleanup_score)}</span>
                     </div>
-                    <p class="review-item-snippet">${escapeHtml(snippet)}</p>
+                    <p class="browse-result-snippet">${escapeHtml(pageSnippet(page))}</p>
                 </button>
             `;
         }).join("");
 
-        elements.reviewList.querySelectorAll(".review-item").forEach((item) => {
-            item.addEventListener("click", () => {
-                selectPage(item.dataset.pageId);
+        elements.browseResults.querySelectorAll(".browse-result").forEach((item) => {
+            item.addEventListener("click", async () => {
+                await selectPage(item.dataset.pageId);
+                showCompareMode();
             });
         });
-
-        if (!filtered.some((page) => page.page_id === state.selectedPageId)) {
-            selectPage(filtered[0].page_id, { preserveUrl: false });
-        }
     }
 
     async function selectPage(pageId, options = {}) {
@@ -221,7 +288,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         try {
             let page = state.pageDetailsById.get(pageId);
-            if (!page) {
+            if (!page || options.forceRefresh) {
                 page = await fetchJson(`/v1/jobs/${state.jobId}/pages/${pageId}`);
                 state.pageDetailsById.set(page.page_id, page);
             }
@@ -229,30 +296,33 @@ document.addEventListener("DOMContentLoaded", () => {
             state.selectedPageId = page.page_id;
             state.currentPage = page;
             renderSelectedPage(page);
-            renderQueueSelection();
+            renderSelectionSummary();
 
             if (!options.preserveUrl) {
                 window.history.replaceState({}, "", previewUrlFor(state.jobId, page.page_id));
+            }
+
+            if (!options.keepMode) {
+                showCompareMode();
             }
         } catch (error) {
             showFatal(error.message);
         }
     }
 
-    function renderQueueSelection() {
-        elements.reviewList.querySelectorAll(".review-item").forEach((item) => {
-            item.classList.toggle("is-selected", item.dataset.pageId === state.selectedPageId);
-        });
-    }
-
     function renderSelectedPage(page) {
+        const displayUrl = resolveDisplayUrl(page);
+        const plainText = page.plain_text || "";
+
         elements.previewEmpty.classList.add("hidden");
         elements.previewContent.classList.remove("hidden");
+        elements.webPreviewEmpty.classList.add("hidden");
+        elements.webPreviewShell.classList.remove("hidden");
 
-        elements.previewPageTitle.textContent = page.title || page.url || "Untitled page";
-        const displayUrl = resolveDisplayUrl(page);
-        elements.previewPageUrl.href = displayUrl || "#";
-        elements.previewPageUrl.textContent = displayUrl || "Open source";
+        elements.previewPageTitle.textContent = page.title || displayUrl || page.url || "Untitled page";
+        setLinkState(elements.previewPageUrl, displayUrl, displayUrl || "Unavailable");
+        setLinkState(elements.openSourceBtn, displayUrl, "Open source");
+
         if (displayUrl && page.url && displayUrl !== page.url) {
             elements.previewPageOrigin.textContent = `Crawled from wrapper URL: ${page.url}`;
             elements.previewPageOrigin.classList.remove("hidden");
@@ -260,25 +330,41 @@ document.addEventListener("DOMContentLoaded", () => {
             elements.previewPageOrigin.textContent = "";
             elements.previewPageOrigin.classList.add("hidden");
         }
+
+        elements.previewPageStatus.className = `chip ${statusClass(page.status)}`;
+        elements.previewPageStatus.textContent = page.status || "-";
         elements.previewPageDepth.textContent = page.depth ?? "-";
-        elements.previewPageLength.textContent = formatTextLength(
-            (page.plain_text || page.raw_text || "").length
-        );
+        elements.previewPageLength.textContent = formatTextLength(plainText.length);
         elements.previewPageConfidence.textContent = formatConfidence(page.cleanup_confidence, page.cleanup_score);
 
-        const documentHtml = buildDocumentHtml(page);
-        elements.documentPreview.innerHTML = documentHtml;
-        elements.markdownPreview.textContent = page.clean_markdown || page.raw_markdown || "";
-        elements.plainPreview.textContent = page.plain_text || page.raw_text || "";
+        elements.documentPreview.innerHTML = buildDocumentHtml(page);
+        elements.plainPreview.textContent = plainText;
+        elements.jsonPreview.textContent = JSON.stringify(buildPageJsonPreview(page, displayUrl), null, 2);
+
+        elements.webPreviewShell.classList.add("is-loading");
+        clearTimeout(state.frameLoadTimeout);
+        state.frameLoadTimeout = window.setTimeout(() => {
+            elements.webPreviewShell.classList.remove("is-loading");
+        }, 4000);
+        elements.pageFrame.src = displayUrl || "about:blank";
 
         renderViewMode();
         updatePrevNextState();
+        fitFrameWidth(elements, frameBaseWidth, frameBaseHeight);
     }
 
     function clearPreview() {
         state.currentPage = null;
+        state.selectedPageId = null;
         elements.previewEmpty.classList.remove("hidden");
         elements.previewContent.classList.add("hidden");
+        elements.webPreviewEmpty.classList.remove("hidden");
+        elements.webPreviewShell.classList.add("hidden");
+        elements.webPreviewShell.classList.remove("is-loading");
+        elements.pageFrame.removeAttribute("src");
+        setLinkState(elements.previewPageUrl, "", "Unavailable");
+        setLinkState(elements.openSourceBtn, "", "Open source");
+        renderSelectionSummary();
         updatePrevNextState();
     }
 
@@ -292,21 +378,50 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function updatePrevNextState() {
-        const index = state.visiblePages.findIndex((page) => page.page_id === state.selectedPageId);
+        const filtered = getFilteredPages();
+        const index = filtered.findIndex((page) => page.page_id === state.selectedPageId);
         elements.prevBtn.disabled = index <= 0;
-        elements.nextBtn.disabled = index === -1 || index >= state.visiblePages.length - 1;
+        elements.nextBtn.disabled = index === -1 || index >= filtered.length - 1;
     }
 
     function moveSelection(direction) {
-        const index = state.visiblePages.findIndex((page) => page.page_id === state.selectedPageId);
-        if (index === -1) {
+        const filtered = getFilteredPages();
+        if (!filtered.length) {
             return;
         }
-        const nextPage = state.visiblePages[index + direction];
+
+        const index = filtered.findIndex((page) => page.page_id === state.selectedPageId);
+        if (index === -1) {
+            selectPage(filtered[0].page_id);
+            return;
+        }
+
+        const nextPage = filtered[index + direction];
         if (!nextPage) {
             return;
         }
         selectPage(nextPage.page_id);
+    }
+
+    function renderSelectionSummary() {
+        const filtered = getFilteredPages();
+        if (!filtered.length) {
+            elements.selectionSummary.textContent = "No pages available for review yet.";
+            return;
+        }
+
+        if (!state.selectedPageId) {
+            elements.selectionSummary.textContent = `Start with the top page in ${sortLabel(state.sortMode)} order.`;
+            return;
+        }
+
+        const index = filtered.findIndex((page) => page.page_id === state.selectedPageId);
+        if (index === -1) {
+            elements.selectionSummary.textContent = `Current page is outside the active search. Open browse to pick from ${filtered.length.toLocaleString()} filtered results.`;
+            return;
+        }
+
+        elements.selectionSummary.textContent = `Reviewing ${index + 1} of ${filtered.length.toLocaleString()} in ${sortLabel(state.sortMode)} order.`;
     }
 
     function getFilteredPages() {
@@ -314,6 +429,31 @@ document.addEventListener("DOMContentLoaded", () => {
         const filtered = pages.filter((page) => matchesSearch(page, state.searchTerm));
         filtered.sort((left, right) => comparePages(left, right, state.sortMode));
         return filtered;
+    }
+
+    function showBrowseMode() {
+        state.activeLayoutMode = "browse";
+        syncLayoutMode();
+        renderBrowseResults();
+    }
+
+    function showCompareMode() {
+        state.activeLayoutMode = "compare";
+        syncLayoutMode();
+        renderSelectionSummary();
+        fitFrameWidth(elements, frameBaseWidth, frameBaseHeight);
+    }
+
+    function syncLayoutMode() {
+        const browsing = state.activeLayoutMode === "browse";
+        elements.compareView.classList.toggle("hidden", browsing);
+        elements.browseView.classList.toggle("hidden", !browsing);
+        elements.backToCompareBtn.classList.toggle("hidden", !browsing);
+        updateBrowseButtonLabel();
+    }
+
+    function updateBrowseButtonLabel() {
+        elements.browseBtn.textContent = state.searchTerm ? "Search" : "Browse pages";
     }
 
     function syncJobLinks() {
@@ -689,6 +829,30 @@ function renderPlainTextDocument(text) {
     return paragraphs.join("");
 }
 
+function buildPageJsonPreview(page, displayUrl) {
+    return {
+        page_id: page.page_id,
+        job_id: page.job_id,
+        title: page.title,
+        status: page.status,
+        page_type: page.page_type,
+        url: page.url,
+        canonical_url: page.canonical_url,
+        display_url: displayUrl,
+        parent_page_id: page.parent_page_id,
+        depth: page.depth,
+        text_length: (page.plain_text || "").length,
+        cleanup_score: page.cleanup_score,
+        cleanup_confidence: page.cleanup_confidence,
+        main_content_selector: page.main_content_selector,
+        error_message: page.error_message,
+        removed_blocks: page.removed_blocks || [],
+        clean_markdown: page.clean_markdown || "",
+        raw_markdown: page.raw_markdown || "",
+        plain_text: page.plain_text || "",
+    };
+}
+
 function renderInlineMarkdown(text) {
     let value = escapeHtml(text);
     value = value.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, '<span class="document-omission">Image omitted</span>');
@@ -855,6 +1019,37 @@ function escapeHtml(value) {
 function showFatal(message) {
     const subtitle = document.getElementById("preview-subtitle");
     subtitle.textContent = message;
+}
+
+function fitFrameWidth(elements, baseWidth, baseHeight) {
+    if (!elements.webPreviewStage || elements.webPreviewShell.classList.contains("hidden")) {
+        return;
+    }
+
+    const availableWidth = Math.max(320, elements.webPreviewStage.clientWidth - 24);
+    const scale = Math.min(1, availableWidth / baseWidth);
+
+    elements.webPreviewCanvas.style.height = `${Math.round(baseHeight * scale)}px`;
+    elements.pageFrame.style.width = `${baseWidth}px`;
+    elements.pageFrame.style.height = `${baseHeight}px`;
+    elements.pageFrame.style.transform = `translateX(-50%) scale(${scale})`;
+}
+
+function setLinkState(link, href, label) {
+    link.textContent = label;
+    if (href) {
+        link.href = href;
+        link.target = "_blank";
+        link.rel = "noreferrer";
+        link.classList.remove("is-disabled");
+        link.removeAttribute("aria-disabled");
+    } else {
+        link.removeAttribute("href");
+        link.removeAttribute("target");
+        link.removeAttribute("rel");
+        link.classList.add("is-disabled");
+        link.setAttribute("aria-disabled", "true");
+    }
 }
 
 async function resolveDefaultJobId() {

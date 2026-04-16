@@ -29,8 +29,8 @@
         </div>
     </nav>
 
-    <div class="px-page px-page-wide">
-        <div class="px-page-header">
+    <div class="px-page px-page-wide preview-page">
+        <div class="px-page-header preview-page-header">
             <div>
                 <h1 class="px-page-title">Review extracted content</h1>
                 <p id="preview-subtitle" class="px-page-subtitle">Loading job preview…</p>
@@ -40,92 +40,121 @@
             </div>
         </div>
 
-        <div class="preview-summary-grid">
-            <div class="stat-card">
-                <span class="stat-label">Pages</span>
-                <strong id="summary-pages-total">0</strong>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">Succeeded</span>
-                <strong id="summary-pages-succeeded">0</strong>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">Failed</span>
-                <strong id="summary-pages-failed">0</strong>
-            </div>
-            <div class="stat-card">
-                <span class="stat-label">Current sort</span>
-                <strong id="summary-sort-label">Review priority</strong>
-            </div>
-        </div>
+        <section class="px-card preview-controls-card">
+            <div class="px-card-body">
+                <div class="preview-controls-grid">
+                    <div class="field preview-search-field">
+                        <label for="review-search">Find a page</label>
+                        <input id="review-search" type="search" placeholder="Search title or URL">
+                    </div>
+                    <div class="field preview-sort-field">
+                        <label for="sort-mode">Sort review order</label>
+                        <select id="sort-mode">
+                            <option value="recommended">Recommended</option>
+                            <option value="review">Suspicious pages first</option>
+                            <option value="tree">Tree order</option>
+                            <option value="shortest">Shortest text first</option>
+                            <option value="confidence">Lowest cleanup confidence</option>
+                            <option value="title">Title A-Z</option>
+                        </select>
+                    </div>
+                    <div class="preview-toolbar-actions">
+                        <button id="browse-btn" class="btn btn-primary" type="button">Browse pages</button>
+                        <button id="back-to-compare-btn" class="btn btn-secondary hidden" type="button">Back to preview</button>
+                        <a id="open-source-btn" class="btn btn-secondary is-disabled" aria-disabled="true">Open source</a>
+                        <button id="prev-page-btn" class="btn btn-secondary" type="button">Previous</button>
+                        <button id="next-page-btn" class="btn btn-secondary" type="button">Next</button>
+                    </div>
+                </div>
 
-        <div class="preview-layout">
-            <aside class="px-card preview-queue-card">
+                <div class="preview-toolbar-meta">
+                    <span id="summary-pages-total" class="chip chip-neutral">0 pages</span>
+                    <span id="summary-pages-succeeded" class="chip chip-done">0 succeeded</span>
+                    <span id="summary-pages-failed" class="chip chip-failed">0 failed</span>
+                    <span id="summary-sort-label" class="chip chip-neutral">Recommended</span>
+                    <span id="selection-summary" class="text-muted">Auto-selecting the best page to review…</span>
+                </div>
+
+                <p id="sort-helper" class="preview-helper">
+                    Recommended starts with successful article-like pages and deprioritizes wrapper URLs.
+                </p>
+            </div>
+        </section>
+
+        <section id="browse-view" class="px-card preview-browse-view hidden">
+            <div class="px-card-header">
+                <div class="px-card-header-left">
+                    <p class="px-card-overline">Search Results</p>
+                    <h2 class="px-card-title">Choose a page to compare</h2>
+                </div>
+                <div class="px-card-actions">
+                    <span id="browse-result-summary" class="chip chip-neutral">0 results</span>
+                    <button id="load-more-btn" class="btn btn-secondary btn-inline hidden" type="button">Show more</button>
+                </div>
+            </div>
+            <div class="px-card-body">
+                <div id="browse-empty" class="empty-copy hidden">No pages match the current search.</div>
+                <div id="browse-results" class="browse-results"></div>
+            </div>
+        </section>
+
+        <section id="compare-view" class="preview-compare-grid">
+            <article class="px-card preview-pane">
                 <div class="px-card-header">
                     <div class="px-card-header-left">
-                        <p class="px-card-overline">Review Queue</p>
-                        <h2 class="px-card-title">Start with the most suspicious pages</h2>
+                        <p class="px-card-overline">Actual Web Page</p>
+                        <h2 class="px-card-title">Fit-width live preview</h2>
                     </div>
                 </div>
                 <div class="px-card-body">
-                    <div class="preview-toolbar">
-                        <div class="field preview-field">
-                            <label for="review-search">Filter pages</label>
-                            <input id="review-search" type="search" placeholder="Search title or URL">
-                        </div>
-                        <div class="field preview-field">
-                            <label for="sort-mode">Sort by</label>
-                            <select id="sort-mode">
-                                <option value="recommended">Recommended (Readable pages first)</option>
-                                <option value="review">Suspicious pages first</option>
-                                <option value="tree">Tree order</option>
-                                <option value="shortest">Shortest text first</option>
-                                <option value="confidence">Lowest cleanup confidence</option>
-                                <option value="title">Title A-Z</option>
-                            </select>
-                        </div>
+                    <div id="web-preview-empty" class="empty-copy">
+                        Choose a page to load the source website beside the extracted result.
                     </div>
-
-                    <p id="sort-helper" class="preview-helper">
-                        Review priority floats failed pages, wrappers, thin pages, and low-confidence cleanup to the top.
-                    </p>
-
-                    <div class="preview-queue-meta">
-                        <span id="queue-count" class="chip chip-neutral">0 pages</span>
-                        <span id="queue-visible" class="text-muted">Showing 0</span>
-                    </div>
-
-                    <div id="queue-empty" class="empty-copy hidden">No pages match the current filters.</div>
-                    <div id="review-list" class="review-list"></div>
-
-                    <div class="preview-queue-actions">
-                        <button id="load-more-btn" class="btn btn-secondary btn-inline hidden" type="button">Show 20 more</button>
+                    <div id="web-preview-shell" class="web-preview-shell hidden">
+                        <div id="web-preview-stage" class="web-preview-stage">
+                            <div id="web-preview-canvas" class="web-preview-canvas">
+                                <iframe
+                                    id="page-frame"
+                                    title="Actual web page preview"
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer"
+                                ></iframe>
+                            </div>
+                        </div>
+                        <p class="preview-frame-hint">
+                            Best-effort embed. If the source site blocks framing, open the source page in a new tab.
+                        </p>
                     </div>
                 </div>
-            </aside>
+            </article>
 
-            <section class="px-card preview-document-card">
-                <div class="px-card-header">
+            <article class="px-card preview-pane">
+                <div class="px-card-header preview-content-header">
                     <div class="px-card-header-left">
-                        <p class="px-card-overline">Page Preview</p>
+                        <p class="px-card-overline">Scraped Content</p>
                         <h2 id="preview-page-title" class="px-card-title">Select a page</h2>
                     </div>
-                    <div class="preview-nav-actions">
-                        <button id="prev-page-btn" class="btn btn-secondary btn-inline" type="button">Previous</button>
-                        <button id="next-page-btn" class="btn btn-secondary btn-inline" type="button">Next</button>
+                    <div class="preview-format-actions">
+                        <button class="tab-button is-active" type="button" data-view-mode="document">MD</button>
+                        <button class="tab-button" type="button" data-view-mode="plain">Plain text</button>
+                        <button class="tab-button" type="button" data-view-mode="json">JSON</button>
                     </div>
                 </div>
                 <div class="px-card-body">
                     <div id="preview-empty" class="empty-copy">
-                        Choose a page from the queue to inspect the cleaned result.
+                        The extracted document, plaintext, and JSON payload will appear here.
                     </div>
 
                     <div id="preview-content" class="hidden">
-                        <div class="meta-grid meta-grid-compact">
-                            <div class="meta-item">
+                        <div class="meta-grid preview-page-meta">
+                            <div class="meta-item preview-meta-url">
                                 <span class="meta-label">Content URL</span>
-                                <a id="preview-page-url" class="link" href="#" target="_blank" rel="noreferrer">Open source</a>
+                                <a id="preview-page-url" class="link is-disabled" aria-disabled="true">Unavailable</a>
                                 <span id="preview-page-origin" class="text-muted hidden"></span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Status</span>
+                                <span id="preview-page-status" class="chip chip-neutral">-</span>
                             </div>
                             <div class="meta-item">
                                 <span class="meta-label">Depth</span>
@@ -141,21 +170,15 @@
                             </div>
                         </div>
 
-                        <div class="preview-tabs">
-                            <button class="tab-button is-active" type="button" data-view-mode="document">Document</button>
-                            <button class="tab-button" type="button" data-view-mode="markdown">Markdown</button>
-                            <button class="tab-button" type="button" data-view-mode="plain">Plain text</button>
-                        </div>
-
                         <div class="preview-doc-frame">
                             <article id="document-preview" class="document-preview tab-view is-active" data-view-panel="document"></article>
-                            <pre id="markdown-preview" class="source-preview tab-view" data-view-panel="markdown"></pre>
                             <pre id="plain-preview" class="source-preview tab-view" data-view-panel="plain"></pre>
+                            <pre id="json-preview" class="source-preview tab-view" data-view-panel="json"></pre>
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </article>
+        </section>
     </div>
 
     <script src="/js/preview.js?v=__ASSET_VERSION__" defer></script>
