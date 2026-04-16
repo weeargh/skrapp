@@ -8,6 +8,17 @@
   margin-bottom: 0;
 }
 
+.preview-page-header > :first-child {
+  min-width: 0;
+}
+
+.preview-page-header .px-page-subtitle {
+  max-width: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .preview-controls-card .px-card-body {
   display: flex;
   flex-direction: column;
@@ -60,6 +71,21 @@
   display: flex;
   flex-direction: column;
   gap: var(--s4);
+}
+
+.preview-selected-page-strip .px-card-body {
+  padding-top: var(--s3);
+  padding-bottom: var(--s3);
+}
+
+.preview-selected-page-link {
+  display: block;
+  min-width: 0;
+  font-size: 13px;
+  line-height: 1.45;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .browse-results {
@@ -169,65 +195,37 @@
   align-items: flex-start;
 }
 
-.preview-format-actions {
-  display: inline-flex;
-  flex-wrap: wrap;
-  gap: var(--s1);
-  margin-left: auto;
-}
-
-.preview-page-meta-strip {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--s2);
+.preview-content-header .px-card-header-left {
   min-width: 0;
 }
 
-.preview-page-url-link {
-  display: block;
-  flex: 1 1 320px;
-  min-width: 0;
-  max-width: 100%;
-  padding: 7px 10px;
-  border: var(--border);
-  border-radius: var(--r-pill);
-  background: var(--c-gray-50);
-  font-size: 12px;
-  line-height: 1.45;
+.preview-content-header .px-card-title {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.preview-page-url-link:hover {
-  text-decoration: none;
-}
-
-.preview-meta-pill {
+.preview-format-actions {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  min-height: 30px;
-  padding: 0 10px;
-  border: var(--border);
-  border-radius: var(--r-pill);
-  background: var(--c-gray-50);
-  color: var(--c-gray-700);
-  font-size: 12px;
-  white-space: nowrap;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  margin-left: auto;
 }
 
-.preview-meta-pill-label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: var(--c-gray-400);
+.preview-page-inline-stats {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--c-gray-500);
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  margin-right: var(--s1);
 }
 
 .preview-page-origin-line {
-  margin-top: calc(var(--s2) * -1);
+  margin-top: 2px;
   font-size: 12px;
   line-height: 1.55;
 }
@@ -577,10 +575,6 @@
 @media (max-width: 840px) {
   .browse-results {
     grid-template-columns: 1fr;
-  }
-
-  .preview-page-url-link {
-    flex-basis: 100%;
   }
 }
 

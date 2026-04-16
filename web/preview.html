@@ -67,7 +67,7 @@
                     </div>
                 </div>
 
-                <div class="preview-toolbar-meta">
+                <div class="preview-toolbar-meta hidden" aria-hidden="true">
                     <span id="summary-pages-total" class="chip chip-neutral">0 pages</span>
                     <span id="summary-pages-succeeded" class="chip chip-done">0 succeeded</span>
                     <span id="summary-pages-failed" class="chip chip-failed">0 failed</span>
@@ -75,9 +75,16 @@
                     <span id="selection-summary" class="text-muted">Auto-selecting the best page to review…</span>
                 </div>
 
-                <p id="sort-helper" class="preview-helper">
+                <p id="sort-helper" class="preview-helper hidden" aria-hidden="true">
                     Recommended starts with successful article-like pages and deprioritizes wrapper URLs.
                 </p>
+            </div>
+        </section>
+
+        <section id="selected-page-strip" class="px-card preview-selected-page-strip hidden">
+            <div class="px-card-body">
+                <a id="preview-page-url" class="link preview-selected-page-link is-disabled" aria-disabled="true">Unavailable</a>
+                <div id="preview-page-origin" class="text-muted preview-page-origin-line hidden"></div>
             </div>
         </section>
 
@@ -133,6 +140,11 @@
                         <h2 id="preview-page-title" class="px-card-title">Select a page</h2>
                     </div>
                     <div class="preview-format-actions">
+                        <span id="preview-page-stats" class="preview-page-inline-stats hidden">
+                            <span id="preview-page-length">-</span>
+                            <span class="preview-page-inline-divider">•</span>
+                            <span id="preview-page-confidence">-</span>
+                        </span>
                         <button class="tab-button is-active" type="button" data-view-mode="document">MD</button>
                         <button class="tab-button" type="button" data-view-mode="plain">Plain text</button>
                         <button class="tab-button" type="button" data-view-mode="json">JSON</button>
@@ -144,24 +156,6 @@
                     </div>
 
                     <div id="preview-content" class="hidden">
-                        <div class="preview-page-meta-strip">
-                            <a id="preview-page-url" class="link preview-page-url-link is-disabled" aria-disabled="true">Unavailable</a>
-                            <span id="preview-page-status" class="chip chip-neutral">-</span>
-                            <span class="preview-meta-pill">
-                                <span class="preview-meta-pill-label">Depth</span>
-                                <span id="preview-page-depth">-</span>
-                            </span>
-                            <span class="preview-meta-pill">
-                                <span class="preview-meta-pill-label">Length</span>
-                                <span id="preview-page-length">-</span>
-                            </span>
-                            <span class="preview-meta-pill">
-                                <span class="preview-meta-pill-label">Confidence</span>
-                                <span id="preview-page-confidence">-</span>
-                            </span>
-                        </div>
-                        <div id="preview-page-origin" class="text-muted preview-page-origin-line hidden"></div>
-
                         <div class="preview-doc-frame">
                             <article id="document-preview" class="document-preview tab-view is-active" data-view-panel="document"></article>
                             <pre id="plain-preview" class="source-preview tab-view" data-view-panel="plain"></pre>

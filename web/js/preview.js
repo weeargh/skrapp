@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
         backToCompareBtn: document.getElementById("back-to-compare-btn"),
         browseView: document.getElementById("browse-view"),
         compareView: document.getElementById("compare-view"),
+        selectedPageStrip: document.getElementById("selected-page-strip"),
         browseResultSummary: document.getElementById("browse-result-summary"),
         browseEmpty: document.getElementById("browse-empty"),
         browseResults: document.getElementById("browse-results"),
@@ -50,10 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
         previewPageTitle: document.getElementById("preview-page-title"),
         previewPageUrl: document.getElementById("preview-page-url"),
         previewPageOrigin: document.getElementById("preview-page-origin"),
-        previewPageDepth: document.getElementById("preview-page-depth"),
+        previewPageStats: document.getElementById("preview-page-stats"),
         previewPageLength: document.getElementById("preview-page-length"),
         previewPageConfidence: document.getElementById("preview-page-confidence"),
-        previewPageStatus: document.getElementById("preview-page-status"),
         prevBtn: document.getElementById("prev-page-btn"),
         nextBtn: document.getElementById("next-page-btn"),
         documentPreview: document.getElementById("document-preview"),
@@ -310,6 +310,8 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.webPreviewEmpty.classList.add("hidden");
         elements.webPreviewShell.classList.remove("hidden");
         elements.webPreviewError.classList.add("hidden");
+        elements.selectedPageStrip.classList.remove("hidden");
+        elements.previewPageStats.classList.remove("hidden");
 
         elements.previewPageTitle.textContent = page.title || displayUrl || page.url || "Untitled page";
         setLinkState(elements.previewPageUrl, displayUrl, displayUrl || "Unavailable");
@@ -323,11 +325,8 @@ document.addEventListener("DOMContentLoaded", () => {
             elements.previewPageOrigin.classList.add("hidden");
         }
 
-        elements.previewPageStatus.className = `chip ${statusClass(page.status)}`;
-        elements.previewPageStatus.textContent = page.status || "-";
-        elements.previewPageDepth.textContent = page.depth ?? "-";
         elements.previewPageLength.textContent = formatTextLength(plainText.length);
-        elements.previewPageConfidence.textContent = formatConfidence(page.cleanup_confidence, page.cleanup_score);
+        elements.previewPageConfidence.textContent = formatConfidenceCompact(page.cleanup_confidence, page.cleanup_score);
 
         elements.documentPreview.innerHTML = buildDocumentHtml(page);
         elements.plainPreview.textContent = plainText;
@@ -354,8 +353,12 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.webPreviewShell.classList.remove("is-loading");
         elements.webPreviewError.classList.add("hidden");
         elements.pageScreenshot.removeAttribute("src");
+        elements.selectedPageStrip.classList.add("hidden");
+        elements.previewPageStats.classList.add("hidden");
         setLinkState(elements.previewPageUrl, "", "Unavailable");
         setLinkState(elements.openSourceBtn, "", "Open source");
+        elements.previewPageOrigin.textContent = "";
+        elements.previewPageOrigin.classList.add("hidden");
         renderSelectionSummary();
         updatePrevNextState();
     }
@@ -439,6 +442,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const browsing = state.activeLayoutMode === "browse";
         elements.compareView.classList.toggle("hidden", browsing);
         elements.browseView.classList.toggle("hidden", !browsing);
+        elements.selectedPageStrip.classList.toggle("hidden", browsing || !state.currentPage);
         elements.backToCompareBtn.classList.toggle("hidden", !browsing);
         updateBrowseButtonLabel();
     }
@@ -990,6 +994,16 @@ function formatConfidence(confidence, cleanupScore) {
     }
     if (typeof cleanupScore === "number") {
         return `${Math.round(cleanupScore * 100)}% kept`;
+    }
+    return "No score";
+}
+
+function formatConfidenceCompact(confidence, cleanupScore) {
+    if (typeof confidence === "number") {
+        return `${Math.round(confidence * 100)}%`;
+    }
+    if (typeof cleanupScore === "number") {
+        return `${Math.round(cleanupScore * 100)}%`;
     }
     return "No score";
 }
