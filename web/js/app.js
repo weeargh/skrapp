@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         jobsTbody.innerHTML = jobs.map((job) => {
             const isActive = active.has(job.status);
+            const previewLink = `<a class="btn btn-secondary btn-inline" href="/${encodeURIComponent(job.job_id)}/preview">Preview</a>`;
             const retryBtn = `<button class="btn btn-secondary btn-inline job-retry-btn" data-job-id="${escapeHtml(job.job_id)}" type="button">Retry</button>`;
             const deleteBtn = isActive
                 ? ""
@@ -80,14 +81,14 @@ document.addEventListener("DOMContentLoaded", () => {
                     <td>${job.pages_discovered || 0}</td>
                     <td>${job.pages_succeeded || 0}</td>
                     <td>${formatDate(job.created_at)}</td>
-                    <td class="actions-cell">${retryBtn}${deleteBtn}</td>
+                    <td class="actions-cell">${previewLink}${retryBtn}${deleteBtn}</td>
                 </tr>
             `;
         }).join("");
 
         jobsTbody.querySelectorAll(".row-link").forEach((row) => {
             row.addEventListener("click", (e) => {
-                if (e.target.closest("button")) return;
+                if (e.target.closest("button, a")) return;
                 window.location.href = row.dataset.href;
             });
         });
