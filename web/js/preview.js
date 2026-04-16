@@ -1,14 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     const params = new URLSearchParams(window.location.search);
-    const jobId = detectJobId(params);
-
-    if (!jobId) {
-        showFatal("Missing job_id");
-        return;
-    }
 
     const state = {
-        jobId,
+        jobId: detectJobId(params),
         job: null,
         pages: [],
         orderedPages: [],
@@ -16,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
         selectedPageId: params.get("page_id") || null,
         currentPage: null,
         pageDetailsById: new Map(),
-        sortMode: "review",
+        sortMode: "recommended",
         searchTerm: "",
         visibleCount: 20,
         visiblePages: [],
@@ -45,6 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
         previewContent: document.getElementById("preview-content"),
         previewPageTitle: document.getElementById("preview-page-title"),
         previewPageUrl: document.getElementById("preview-page-url"),
+        previewPageOrigin: document.getElementById("preview-page-origin"),
         previewPageDepth: document.getElementById("preview-page-depth"),
         previewPageLength: document.getElementById("preview-page-length"),
         previewPageConfidence: document.getElementById("preview-page-confidence"),
@@ -56,10 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
         viewButtons: Array.from(document.querySelectorAll("[data-view-mode]")),
         viewPanels: Array.from(document.querySelectorAll("[data-view-panel]")),
     };
-
-    const statusHref = `/status?job_id=${encodeURIComponent(jobId)}`;
-    elements.statusLink.href = statusHref;
-    elements.openStatusBtn.href = statusHref;
 
     elements.search.addEventListener("input", () => {
         state.searchTerm = elements.search.value.trim().toLowerCase();
@@ -88,7 +79,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    startPolling();
+    initialize();
+
+    async function initialize() {
+        try {
+            if (!state.jobId) {
+                elements.subtitle.textContent = "Loading latest reviewable job…";
+                state.jobId = await resolveDefaultJobId();
+                if (!state.jobId) {
+                    showFatal("No completed job is available for preview yet.");
+                    return;
+                }
+                window.history.replaceState({}, "", previewUrlFor(state.jobId, state.selectedPageId));
+            }
+
+            syncJobLinks();
+            startPolling();
+        } catch (error) {
+            showFatal(error.message);
+        }
+    }
 
     function startPolling() {
         refresh();
@@ -222,8 +232,7 @@ document.addEventListener("DOMContentLoaded", () => {
             renderQueueSelection();
 
             if (!options.preserveUrl) {
-                const url = `/${encodeURIComponent(state.jobId)}/preview?page_id=${encodeURIComponent(page.page_id)}`;
-                window.history.replaceState({}, "", url);
+                window.history.replaceState({}, "", previewUrlFor(state.jobId, page.page_id));
             }
         } catch (error) {
             showFatal(error.message);
@@ -241,8 +250,16 @@ document.addEventListener("DOMContentLoaded", () => {
         elements.previewContent.classList.remove("hidden");
 
         elements.previewPageTitle.textContent = page.title || page.url || "Untitled page";
-        elements.previewPageUrl.href = page.url || "#";
-        elements.previewPageUrl.textContent = page.url || "Open source";
+        const displayUrl = resolveDisplayUrl(page);
+        elements.previewPageUrl.href = displayUrl || "#";
+        elements.previewPageUrl.textContent = displayUrl || "Open source";
+        if (displayUrl && page.url && displayUrl !== page.url) {
+            elements.previewPageOrigin.textContent = `Crawled from wrapper URL: ${page.url}`;
+            elements.previewPageOrigin.classList.remove("hidden");
+        } else {
+            elements.previewPageOrigin.textContent = "";
+            elements.previewPageOrigin.classList.add("hidden");
+        }
         elements.previewPageDepth.textContent = page.depth ?? "-";
         elements.previewPageLength.textContent = formatTextLength(
             (page.plain_text || page.raw_text || "").length
@@ -297,6 +314,15 @@ document.addEventListener("DOMContentLoaded", () => {
         const filtered = pages.filter((page) => matchesSearch(page, state.searchTerm));
         filtered.sort((left, right) => comparePages(left, right, state.sortMode));
         return filtered;
+    }
+
+    function syncJobLinks() {
+        if (!state.jobId) {
+            return;
+        }
+        const statusHref = `/status?job_id=${encodeURIComponent(state.jobId)}`;
+        elements.statusLink.href = statusHref;
+        elements.openStatusBtn.href = statusHref;
     }
 });
 
@@ -378,6 +404,11 @@ function matchesSearch(page, searchTerm) {
 }
 
 function comparePages(left, right, sortMode) {
+    if (sortMode === "recommended") {
+        return compareNumbers(recommendedPriority(right), recommendedPriority(left))
+            || compareNumbers(left.treeIndex, right.treeIndex)
+            || compareTitle(left, right);
+    }
     if (sortMode === "tree") {
         return compareNumbers(left.treeIndex, right.treeIndex) || compareTitle(left, right);
     }
@@ -395,6 +426,38 @@ function comparePages(left, right, sortMode) {
         || compareNumbers(left.text_length ?? 0, right.text_length ?? 0)
         || compareNumbers(left.treeIndex, right.treeIndex)
         || compareTitle(left, right);
+}
+
+function recommendedPriority(page) {
+    const url = page.url || "";
+    let score = 0;
+
+    if (page.status === "done") {
+        score += 500;
+    } else if (page.status === "failed") {
+        score -= 500;
+    }
+
+    if (url.includes("/hc/id/articles/")) {
+        score += 220;
+    } else if (url.includes("/hc/id/sections/")) {
+        score += 120;
+    }
+
+    if (url.includes("/related/click")) {
+        score -= 260;
+    }
+
+    const textLength = page.text_length ?? 0;
+    score += Math.min(260, Math.round(Math.log10(textLength + 10) * 90));
+
+    const confidence = confidenceValue(page);
+    if (Number.isFinite(confidence)) {
+        score += Math.round(confidence * 120);
+    }
+
+    score -= Math.min(30, (page.depth || 0) * 3);
+    return score;
 }
 
 function reviewPriority(page) {
@@ -725,14 +788,18 @@ function splitTableRow(line) {
 }
 
 function sortLabel(sortMode) {
+    if (sortMode === "recommended") return "Recommended";
     if (sortMode === "tree") return "Tree order";
     if (sortMode === "shortest") return "Shortest text first";
     if (sortMode === "confidence") return "Lowest cleanup confidence";
     if (sortMode === "title") return "Title A-Z";
-    return "Review priority";
+    return "Suspicious pages first";
 }
 
 function sortDescription(sortMode) {
+    if (sortMode === "recommended") {
+        return "Recommended starts with successful article-like pages and deprioritizes wrapper URLs, so you review real content first.";
+    }
     if (sortMode === "tree") {
         return "Use tree order when you want to review the crawl in the same parent-child sequence users navigate.";
     }
@@ -745,7 +812,7 @@ function sortDescription(sortMode) {
     if (sortMode === "title") {
         return "Title sorting helps when you want to review one product area or content family alphabetically.";
     }
-    return "Review priority floats failed pages, wrappers, thin pages, and low-confidence cleanup to the top.";
+    return "Suspicious pages first floats failed pages, wrappers, thin pages, and low-confidence cleanup to the top.";
 }
 
 function compareNumbers(left, right) {
@@ -788,4 +855,89 @@ function escapeHtml(value) {
 function showFatal(message) {
     const subtitle = document.getElementById("preview-subtitle");
     subtitle.textContent = message;
+}
+
+async function resolveDefaultJobId() {
+    const payload = await fetchJson("/v1/jobs?limit=25");
+    const jobs = payload.jobs || [];
+    if (!jobs.length) {
+        return null;
+    }
+
+    const reviewable = jobs.find((job) =>
+        ["done", "cancelled"].includes(job.status)
+        && ((job.pages_succeeded || 0) > 0 || (job.pages_discovered || 0) > 0)
+    );
+    if (reviewable) {
+        return reviewable.job_id;
+    }
+
+    const terminal = jobs.find((job) => ["done", "cancelled", "failed"].includes(job.status));
+    return terminal?.job_id || jobs[0]?.job_id || null;
+}
+
+function previewUrlFor(jobId, pageId) {
+    const base = `/${encodeURIComponent(jobId)}/preview`;
+    if (!pageId) {
+        return base;
+    }
+    return `${base}?page_id=${encodeURIComponent(pageId)}`;
+}
+
+function resolveDisplayUrl(page) {
+    const currentUrl = page.url || "";
+    if (!currentUrl.includes("/related/click")) {
+        return currentUrl;
+    }
+
+    const content = `${page.clean_markdown || ""}\n${page.raw_markdown || ""}`;
+    const candidates = extractUrlsFromText(content);
+    const currentHost = hostForUrl(currentUrl);
+
+    const preferred = candidates.find((candidate) => {
+        return candidate !== currentUrl
+            && !candidate.includes("/related/click")
+            && (!currentHost || hostForUrl(candidate) === currentHost)
+            && /(\/articles\/|\/sections\/|\/categories\/|\/docs\/|\/guide\/|\/help\/)/.test(pathForUrl(candidate));
+    });
+
+    if (preferred) {
+        return preferred;
+    }
+
+    const sameHost = candidates.find((candidate) => {
+        return candidate !== currentUrl
+            && !candidate.includes("/related/click")
+            && (!currentHost || hostForUrl(candidate) === currentHost);
+    });
+
+    return sameHost || currentUrl;
+}
+
+function extractUrlsFromText(value) {
+    const matches = String(value || "").match(/https?:\/\/[^\s)>"']+/g) || [];
+    const seen = new Set();
+    return matches.filter((url) => {
+        if (seen.has(url)) {
+            return false;
+        }
+        seen.add(url);
+        return true;
+    });
+}
+
+function hostForUrl(url) {
+    try {
+        return new URL(url).host;
+    } catch {
+        return "";
+    }
+}
+
+function pathForUrl(url) {
+    try {
+        return new URL(url).pathname;
+    } catch {
+        return "";
+    }
 }

@@ -34,6 +34,10 @@
   font-size: 13px;
 }
 
+.preview-loading-note {
+  color: var(--c-gray-500);
+}
+
 .preview-queue-meta {
   display: flex;
   align-items: center;
@@ -124,6 +128,13 @@
   flex-wrap: wrap;
   gap: var(--s2);
   margin: var(--s5) 0 var(--s4);
+}
+
+#preview-page-origin {
+  display: block;
+  margin-top: var(--s2);
+  font-size: 12px;
+  line-height: 1.5;
 }
 
 .preview-doc-frame {

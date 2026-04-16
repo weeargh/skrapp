@@ -76,7 +76,8 @@
                         <div class="field preview-field">
                             <label for="sort-mode">Sort by</label>
                             <select id="sort-mode">
-                                <option value="review">Review priority (Recommended)</option>
+                                <option value="recommended">Recommended (Readable pages first)</option>
+                                <option value="review">Suspicious pages first</option>
                                 <option value="tree">Tree order</option>
                                 <option value="shortest">Shortest text first</option>
                                 <option value="confidence">Lowest cleanup confidence</option>
@@ -122,8 +123,9 @@
                     <div id="preview-content" class="hidden">
                         <div class="meta-grid meta-grid-compact">
                             <div class="meta-item">
-                                <span class="meta-label">URL</span>
+                                <span class="meta-label">Content URL</span>
                                 <a id="preview-page-url" class="link" href="#" target="_blank" rel="noreferrer">Open source</a>
+                                <span id="preview-page-origin" class="text-muted hidden"></span>
                             </div>
                             <div class="meta-item">
                                 <span class="meta-label">Depth</span>
