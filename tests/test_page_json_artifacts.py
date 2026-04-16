@@ -170,3 +170,59 @@ class PageJsonArtifactTests(TestCase):
         artifact = queries.get_artifact_by_kind(job["id"], ArtifactKind.PAGE_JSON_ZIP)
         self.assertIsNotNone(artifact)
         self.assertTrue(os.path.exists(artifact["path"]))
+
+    def test_download_route_replaces_generic_title_with_heading_and_refreshes_existing_zip(self):
+        job = self._create_job("job_refresh_json_zip")
+        page = self._create_page(
+            job["id"],
+            url="https://help-center.qontak.com/hc/id/articles/12263090746137-Bagaimana-Cara-Mengelola-User-Input-dan-Bot-Response-pada-Chatbot",
+            status=PageState.DONE,
+            title="Online Help Center | Layanan Bantuan - Mekari Qontak",
+        )
+        queries.update_page(
+            page["id"],
+            raw_markdown=(
+                "## Panduan pengguna Mekari Qontak\n"
+                "# Temukan artikel panduan sesuai kebutuhan Anda\n"
+                "# Bagaimana Cara Mengelola User Input dan Bot Response pada Chatbot\n\n"
+                "Isi artikel"
+            ),
+            clean_markdown="Isi artikel yang sudah dibersihkan",
+            plain_text="Isi artikel yang sudah dibersihkan",
+            cleanup_score=0.83,
+            cleanup_confidence=0.93,
+            page_type="article",
+        )
+        queries.recalculate_job_counts(job["id"])
+        queries.update_crawl_job_status(job["id"], JobState.DONE, cleanup_status="done")
+
+        stale_dir = os.path.join(settings.JOBS_OUTPUT_DIR, job["id"])
+        os.makedirs(stale_dir, exist_ok=True)
+        stale_path = os.path.join(stale_dir, "pages-json.zip")
+        with zipfile.ZipFile(stale_path, "w", compression=zipfile.ZIP_DEFLATED) as archive:
+            archive.writestr(
+                "stale.json",
+                json.dumps({"page_id": page["id"], "title": "Online Help Center | Layanan Bantuan - Mekari Qontak"}),
+            )
+        queries.create_artifact(
+            job["id"],
+            ArtifactKind.PAGE_JSON_ZIP,
+            stale_path,
+            os.path.getsize(stale_path),
+            sha256="stale",
+        )
+
+        app = create_app()
+        client = app.test_client()
+
+        response = client.get(f"/v1/jobs/{job['id']}/artifacts/{ArtifactKind.PAGE_JSON_ZIP}/download")
+        self.assertEqual(response.status_code, 200)
+        self.assertEqual(response.cache_control.no_store, True)
+
+        records = self._read_zip_records(response.data)
+        response.close()
+        self.assertEqual(
+            records[page["id"]]["title"],
+            "Bagaimana Cara Mengelola User Input dan Bot Response pada Chatbot",
+        )
+        self.assertNotEqual(records[page["id"]]["title"], "Online Help Center | Layanan Bantuan - Mekari Qontak")

@@ -294,6 +294,9 @@ def _download_artifact(job_id: str, kind: str, mimetype: str):
             "message": f"Job is not complete. Current status: {job['status']}",
         }), 400
 
+    if kind == ArtifactKind.PAGE_JSON_ZIP:
+        ensure_artifact(job_id, kind, force_refresh=True)
+
     artifact = queries.get_artifact_by_kind(job_id, kind)
     if not artifact or not os.path.exists(artifact["path"]):
         try:
@@ -304,12 +307,16 @@ def _download_artifact(job_id: str, kind: str, mimetype: str):
         if not artifact or not os.path.exists(artifact["path"]):
             return jsonify({"error": "Not Found", "message": "Artifact not found"}), 404
 
-    return send_file(
+    response = send_file(
         artifact["path"],
         mimetype=mimetype,
         as_attachment=True,
         download_name=os.path.basename(artifact["path"]),
     )
+    response.cache_control.no_store = True
+    response.cache_control.max_age = 0
+    response.expires = 0
+    return response
 
 
 def _serialize_job(job: dict) -> dict:
