@@ -43,4 +43,13 @@ def create_app() -> Flask:
     def status_page():
         return _no_cache_html(app.send_static_file('status.html'))
 
+    @app.route('/preview')
+    def preview_page():
+        return _no_cache_html(app.send_static_file('preview.html'))
+
+    @app.route('/<job_id>/preview')
+    def preview_page_for_job(job_id: str):
+        del job_id
+        return _no_cache_html(app.send_static_file('preview.html'))
+
     return app

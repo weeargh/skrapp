@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const cancelBtn = document.getElementById("cancel-btn");
     const retryBtn = document.getElementById("retry-btn");
     const deleteBtn = document.getElementById("delete-btn");
+    const previewBtn = document.getElementById("preview-btn");
     const pagesTbody = document.getElementById("pages-tbody");
     const artifactActions = document.getElementById("artifact-actions");
     const tabButtons = Array.from(document.querySelectorAll(".tab-button"));
@@ -37,6 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     deleteBtn.addEventListener("click", () => deleteJob(state.jobId));
     downloadTableCsvBtn.addEventListener("click", downloadTableCsv);
     copyContentBtn.addEventListener("click", copyCurrentContent);
+    previewBtn.href = `/${encodeURIComponent(state.jobId)}/preview`;
     tabButtons.forEach((button) => {
         button.addEventListener("click", () => activateTab(button.dataset.tab));
     });
