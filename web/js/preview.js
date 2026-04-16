@@ -1037,6 +1037,7 @@ function fitFrameWidth(elements, baseWidth, baseHeight) {
 
 function setLinkState(link, href, label) {
     link.textContent = label;
+    link.title = href || label;
     if (href) {
         link.href = href;
         link.target = "_blank";

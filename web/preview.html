@@ -146,29 +146,23 @@
                     </div>
 
                     <div id="preview-content" class="hidden">
-                        <div class="meta-grid preview-page-meta">
-                            <div class="meta-item preview-meta-url">
-                                <span class="meta-label">Content URL</span>
-                                <a id="preview-page-url" class="link is-disabled" aria-disabled="true">Unavailable</a>
-                                <span id="preview-page-origin" class="text-muted hidden"></span>
-                            </div>
-                            <div class="meta-item">
-                                <span class="meta-label">Status</span>
-                                <span id="preview-page-status" class="chip chip-neutral">-</span>
-                            </div>
-                            <div class="meta-item">
-                                <span class="meta-label">Depth</span>
+                        <div class="preview-page-meta-strip">
+                            <a id="preview-page-url" class="link preview-page-url-link is-disabled" aria-disabled="true">Unavailable</a>
+                            <span id="preview-page-status" class="chip chip-neutral">-</span>
+                            <span class="preview-meta-pill">
+                                <span class="preview-meta-pill-label">Depth</span>
                                 <span id="preview-page-depth">-</span>
-                            </div>
-                            <div class="meta-item">
-                                <span class="meta-label">Text length</span>
+                            </span>
+                            <span class="preview-meta-pill">
+                                <span class="preview-meta-pill-label">Length</span>
                                 <span id="preview-page-length">-</span>
-                            </div>
-                            <div class="meta-item">
-                                <span class="meta-label">Cleanup confidence</span>
+                            </span>
+                            <span class="preview-meta-pill">
+                                <span class="preview-meta-pill-label">Confidence</span>
                                 <span id="preview-page-confidence">-</span>
-                            </div>
+                            </span>
                         </div>
+                        <div id="preview-page-origin" class="text-muted preview-page-origin-line hidden"></div>
 
                         <div class="preview-doc-frame">
                             <article id="document-preview" class="document-preview tab-view is-active" data-view-panel="document"></article>
