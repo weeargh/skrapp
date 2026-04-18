@@ -54,6 +54,30 @@ Untuk mengintegrasikan Shopee dengan Qontak Omnichannel, Anda memerlukan:
 
 Langkah-langkah Self Integration memerlukan akses Shopee Developer Console dan dokumentasi lengkap (lihat bagian "Penting" di artikel lengkap untuk prasyarat tambahan).
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529339289
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49067716021529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535875993
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529340953
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529342745
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529345945
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535891737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529347225
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah langkah terakhir selesai, akun Shopee Seller Anda akan menampilkan status **Connected** atau **Terhubung** di menu Channel Integration tab E-commerce. Anda dapat menerima dan mengirimkan pesan kepada pelanggan Shopee melalui Qontak Omnichannel. Anda juga dapat mengklik menu **Actions** untuk melihat **View details** (detail integrasi) atau **Disconnect** (memutuskan integrasi).

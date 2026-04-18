@@ -55,6 +55,12 @@ Sebelum membuat Welcome Message Chatbot, pastikan Anda memiliki:
 
 6. Klik tombol Save untuk menyimpan Welcome Message.
 
+> Screenshot: 111.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51037705692825
+
+> Screenshot: 112.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51037705696665
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Welcome Message berhasil dibuat dan disimpan:

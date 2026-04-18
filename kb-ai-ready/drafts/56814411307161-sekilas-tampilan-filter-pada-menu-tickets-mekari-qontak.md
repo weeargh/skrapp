@@ -29,6 +29,30 @@ faithfulness_threshold: 0.6
 
 Filter pada Menu Tickets Mekari Qontak adalah serangkaian tab yang memungkinkan Anda mengelompokkan dan menampilkan tiket berdasarkan kategori spesifik seperti status penugasan atau pembuat tiket. Fitur ini menyediakan lima tab filter utama: All Tickets (semua tiket), Assigned to my team (tiket untuk tim Anda), Assigned to me (tiket untuk Anda), Unassigned (tiket tanpa penugasan), dan Reported by me (tiket yang Anda buat). Setiap tab menampilkan subset tiket yang relevan, membantu Anda mengelola dan memantau tiket dengan lebih terorganisir sesuai kebutuhan spesifik.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56814411272729
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56814432051097
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56814411293593
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56814411294105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56814411296281
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56814411298073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56814411301529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56814432061337
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Fitur filter membantu tim customer service meningkatkan efisiensi dengan menampilkan tiket yang paling relevan untuk pekerjaan mereka. Tanpa filter, Anda harus menelusuri semua tiket untuk menemukan yang perlu ditangani. Dengan tab filter, Anda dapat fokus pada tanggung jawab spesifik—tiket yang ditugaskan kepada Anda, tiket tim, atau tiket yang belum ditugaskan untuk didistribusikan. Ini mempercepat identifikasi prioritas, mengurangi waktu respons, dan mencegah tiket terlewatkan.

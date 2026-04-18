@@ -55,6 +55,12 @@ Untuk mengelola menu Properties dan Email Service Provider pada Qontak CRM, Anda
 6. Tunggu notifikasi dari sistem.
    → Notifikasi akan mengonfirmasi keberhasilan koneksi email.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49039982381465
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772398786457
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menghubungkan email pada Email Service Provider:

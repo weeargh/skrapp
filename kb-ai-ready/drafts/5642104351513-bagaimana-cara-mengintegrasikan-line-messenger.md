@@ -49,6 +49,30 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 6. Tunggu konfirmasi — jika token valid, popup akan menampilkan pesan success. Jika tidak valid, popup akan menampilkan pesan error.
 7. Klik **Settings** pada nama Line untuk melihat detail informasi Line Messenger Anda.
 
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50771100808473
+
+> Screenshot: line.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775773552409
+
+> Screenshot: line1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775773557273
+
+> Screenshot: line2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775773559321
+
+> Screenshot: line3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775763602457
+
+> Screenshot: line4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775763599001
+
+> Screenshot: line5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775773562521
+
+> Screenshot: line6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775763600665
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil, Anda akan melihat:

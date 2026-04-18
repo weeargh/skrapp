@@ -46,6 +46,27 @@ Untuk membuat dokumen otomatis di Qontak CRM, Anda memerlukan:
 6. Apabila data sudah sesuai, klik tombol Create/Update. Sistem akan generate dokumen otomatis.
 7. Dokumen akan ditampilkan di layar. Klik icon Mata untuk preview dokumen, atau klik tombol PDF untuk mengunduh dokumen dalam format PDF ke perangkat Anda.
 
+> Screenshot: 24.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50801737540505
+
+> Screenshot: 25.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50801765249049
+
+> Screenshot: 27.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50801765250201
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5960580190361
+
+> Screenshot: 28.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50801765254169
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776287610777
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776243615385
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat dokumen otomatis, sistem akan menampilkan halaman dengan dokumen yang telah terbuat. Dokumen tersebut berisi data dari Deal/Tiket sesuai dengan template yang dipilih dan field properties yang telah diisi di CRM.

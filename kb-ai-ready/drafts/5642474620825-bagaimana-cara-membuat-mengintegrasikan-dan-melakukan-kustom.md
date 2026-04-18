@@ -59,6 +59,30 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 8. Di halaman Widget setup, Anda dapat melihat Widget status, Widget ID, Widget name, Domain, dan Embed code. Gunakan tombol **Copy** untuk menyalin Widget ID atau Embed code.
 9. Pada bagian **Widget appearance**, unggah logo dan tentukan warna-warna widget sesuai preferensi Anda.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49062472998425
+
+> Screenshot: Connect_webchat.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772398702233
+
+> Screenshot: Stage.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772398727193
+
+> Screenshot: Widget_setup.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772398732697
+
+> Screenshot: Widget_appearance.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772391182617
+
+> Screenshot: Widget_content.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772391181337
+
+> Screenshot: Widget_preview.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772398731673
+
+> Screenshot: Delete1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772391165849
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menyelesaikan langkah-langkah di atas, Anda akan mendapatkan:

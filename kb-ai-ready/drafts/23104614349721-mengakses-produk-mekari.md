@@ -29,6 +29,12 @@ faithfulness_threshold: 0.6
 
 Fitur Mengakses Produk Mekari adalah tombol navigasi dalam Qontak yang memungkinkan pengguna untuk menjelajahi dan mengakses produk-produk Mekari lainnya serta add-on premium. Fitur ini menyediakan dua jalur akses utama: tombol Produk Mekari yang menampilkan rekomendasi produk Mekari, dan tombol "Lainnya dari Mekari Marketplace" yang mengarahkan ke halaman marketplace Mekari Account untuk melihat fitur add-on dan aplikasi pihak ketiga yang tersedia.
 
+> Screenshot: Screenshot 2023-09-15 at 17.28.15.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203393945
+
+> Screenshot: Screenshot 2023-09-15 at 16.55.07.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194607897
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Fitur ini membantu pengguna Qontak meningkatkan efisiensi, produktivitas, dan performa bisnis dengan mudah mengakses solusi tambahan dari ekosistem Mekari. Pengguna dapat menemukan add-on premium dan integrasi aplikasi pihak ketiga yang relevan dengan kebutuhan bisnis mereka tanpa harus keluar dari platform Qontak, sehingga menghemat waktu dalam eksplorasi dan implementasi fitur baru.

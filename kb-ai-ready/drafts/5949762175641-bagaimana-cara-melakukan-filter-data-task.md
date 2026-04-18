@@ -50,6 +50,18 @@ Tidak ada persyaratan role khusus (Admin atau Owner) untuk menggunakan fitur fil
 
 5. Daftar Task akan diperbarui dan menampilkan hanya Task yang sesuai dengan kriteria filter yang Anda terapkan.
 
+> Screenshot: mceclip1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36777834054809
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39993062448793
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39993062450841
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5950013890841
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menerapkan filter, halaman menu Task akan menampilkan daftar Task yang telah disaring sesuai dengan kriteria filter yang Anda terapkan. Hanya Task yang memenuhi spesifikasi filter akan ditampilkan dalam database Task Anda. Jika Anda memilih **Save as Default**, pengaturan filter tersebut akan tersimpan dan otomatis diterapkan saat Anda membuka menu Task berikutnya.

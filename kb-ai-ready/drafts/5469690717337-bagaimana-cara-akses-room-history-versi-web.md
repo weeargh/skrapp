@@ -43,6 +43,12 @@ Untuk mengakses Room History di Qontak Omnichannel versi web, Anda memerlukan:
 4. Klik tombol **"Conversation history"** di bagian kanan layar — Sistem akan menampilkan Room History berisi riwayat pesan dari room yang dipilih
 5. Klik pesan tertentu dalam Room History untuk melihat detail pesan — Detail pesan ditampilkan dengan informasi lengkap seperti waktu, pengirim, dan konten
 
+> Screenshot: 22.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50772666100889
+
+> Screenshot: 23.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50772643152025
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Anda berhasil mengakses Room History dan dapat melihat:

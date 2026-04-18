@@ -60,6 +60,27 @@ Untuk mengunggah Recipient List pada fitur Campaign (Broadcast), Anda memerlukan
 
 10. Klik tombol **"Import"** untuk mengunggah file. Sistem akan memvalidasi data.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43689995839769
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43689959102745
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43689995843353
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43689959104153
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43689959105049
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50612393370137
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43689959106329
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengunggah file recipient list dengan sukses, pop-up notifikasi konfirmasi akan muncul menunjukkan bahwa data yang Anda submit sudah benar dan tersimpan. Recipient list baru akan ditambahkan ke dalam daftar **"Recipient lists"** dan siap digunakan untuk membuat campaign. Anda dapat melihat nama recipient list, jumlah recipients, dan tanggal pembuatan di halaman daftar recipient lists.

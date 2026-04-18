@@ -55,6 +55,39 @@ Catatan: Mulai 20 Agustus 2025, semua WABA baru otomatis menggunakan MM API.
 
 7. Tunggu hingga status akun berubah menjadi "Marketing Message API" atau "MM API Active".
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816180307481
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816159733913
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816159737625
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816180317081
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816159747097
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816180322969
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816159755161
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816159757337
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816159760281
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816180334873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52816180336921
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah migrasi berhasil:

@@ -55,6 +55,9 @@ Catatan: File yang diunduh akan berformat spreadsheet dengan beberapa sheet yang
 5. Buka file yang telah diunduh menggunakan aplikasi spreadsheet.
    → Sheet laporan akan menampilkan data target dan pencapaian per bulan dan per user.
 
+> Screenshot: by_value.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36774916528025
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuka Laporan Target By Months By Value, spreadsheet akan menampilkan:

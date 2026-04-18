@@ -55,6 +55,24 @@ Untuk mengirimkan pesan Blast WhatsApp, Anda memerlukan:
 
 7. Pilih jadwal pengiriman: "Send now" untuk langsung atau "Send later" untuk dijadwalkan. Klik tombol "Send campaign". Notifikasi pop-up akan muncul untuk konfirmasi pengiriman.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43703581240729
+
+> Screenshot: tes1234.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776243511577
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43703628949273
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43703628955033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43703628958489
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43703581255833
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah campaign berhasil dikirim, notifikasi pop-up konfirmasi akan muncul menampilkan bahwa campaign telah berhasil diproses. Campaign akan muncul di daftar Campaigns dengan status pengiriman (Send now atau terjadwal di waktu yang ditentukan). Anda dapat memantau status pengiriman melalui Campaign Logs di halaman detail campaign. Pesan akan dikirimkan ke semua kontak dalam Recipient list yang telah ditentukan sesuai Template Pacing WhatsApp yang berlaku sejak 12 Oktober 2023.

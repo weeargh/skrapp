@@ -57,6 +57,12 @@ Untuk memahami hasil download laporan Live GPS Attendance Tracking pada Monthly 
 5. Buka file yang telah diunduh menggunakan aplikasi spreadsheet.
    → Sheet Monthly Report akan menampilkan data attendance detail.
 
+> Screenshot: a.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776188650521
+
+> Screenshot: b.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776188653721
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengunduh dan membuka laporan Live GPS Attendance Tracking Monthly Report, Anda akan melihat spreadsheet dengan kolom-kolom berikut:

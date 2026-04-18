@@ -53,6 +53,27 @@ Untuk melihat Bot Performance pada Reports, Anda memerlukan:
 
 8. Lihat grafik **Customer and Bot Interactions** untuk analisis interaksi detail.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48427363329177
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48427388783129
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48427388784409
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/48495938997657
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/48495935249305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48430152491929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48430152499609
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat dashboard Bot Performance yang berisi:

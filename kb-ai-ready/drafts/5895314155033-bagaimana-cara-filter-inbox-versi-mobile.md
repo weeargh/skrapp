@@ -51,6 +51,27 @@ faithfulness_threshold: 0.3
 
 5. Untuk menghapus semua filter, klik tombol **Reset** di bagian bawah panel filter.
 
+> Screenshot: 155.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53768904338457
+
+> Screenshot: 3.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36777834043801
+
+> Screenshot: 4.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36777834048537
+
+> Screenshot: 5.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36777848071577
+
+> Screenshot: 6.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36777848072857
+
+> Screenshot: 7.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36777848073881
+
+> Screenshot: 8.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36777848074905
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Daftar Inbox pada aplikasi Qontak Chat mobile berhasil difilter sesuai kriteria yang Anda pilih (WhatsApp Channel, Tags, Channel, atau Agents). Sistem hanya menampilkan room chat yang sesuai dengan filter yang diterapkan. Anda dapat melihat jumlah room yang sesuai filter dan mulai melayani customer dari daftar yang sudah difilter tersebut.

@@ -50,6 +50,60 @@ Tanpa verifikasi lokasi di Google Business Profile Console, pesan review tidak d
 8. Centang lokasi bisnis yang ingin Anda kelola review-nya, atau klik **"Select all locations"** untuk mengintegrasikan semua lokasi.
 9. Klik **"Save"**. Sistem menampilkan pesan konfirmasi integrasi berhasil.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50407997833881
+
+> Screenshot: 12.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38951713311385
+
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38951704533145
+
+> Screenshot: 14.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38951704538393
+
+> Screenshot: 15.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38951704541081
+
+> Screenshot: 16.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38951713328281
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50407997836825
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50407997838745
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50408031560217
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50407997842329
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50407997845017
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50407997850009
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50408031572377
+
+> Screenshot: 16.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50407997855129
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50407997857433
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50408031579289
+
+> Screenshot: 27.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38951704599193
+
+> Screenshot: 28.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38951704602393
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah klik tombol **"Save"**, sistem menampilkan pesan konfirmasi bahwa akun Google Business Anda telah berhasil terintegrasi dengan Mekari Qontak. Lokasi bisnis yang Anda pilih kini akan menampilkan review dari customer pada Qontak Omnichannel, dan Anda dapat mengelola review tersebut melalui menu Google My Business di Qontak.

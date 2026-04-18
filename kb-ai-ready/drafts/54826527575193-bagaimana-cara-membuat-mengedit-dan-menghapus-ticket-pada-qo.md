@@ -63,6 +63,30 @@ Untuk membuat, mengedit, dan menghapus ticket melalui Qontak Mobile, Anda memerl
 2. Pilih "Delete ticket"
 3. Pop-up konfirmasi akan muncul; tap "Delete" untuk menyelesaikan penghapusan
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54826495371417
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54826495374105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54826495375001
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54826527553561
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54826495376793
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54826495378073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54826495379225
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54826495382681
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah membuat ticket:** Ticket baru akan muncul dalam daftar ticket dengan informasi yang telah Anda masukkan.

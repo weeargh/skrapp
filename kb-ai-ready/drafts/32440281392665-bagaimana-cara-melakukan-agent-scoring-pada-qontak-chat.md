@@ -50,45 +50,7 @@ Proses ini memerlukan dua tahap utama: membuat Scorecard beserta parameter penil
 7. Tambahkan bobot penilaian per parameter (total harus 100%) atau klik Distribute equal weight.
 8. Klik Save untuk menyimpan Scorecard.
 
-Sistem akan menampilkan parameter yang telah dibuat pada halaman Scorecard.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50941930028313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/44411253824665
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529389977
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535941657
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535942681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50941930030233
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50941921107737
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50941930034969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529406873
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529408537
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535948697
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535961881
-
-## Expected Result  <!-- confidence:high ✓ -->
+Sistem akan menampilkan parameter yang telah dibuat pada halaman Scorecard.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan proses pembuatan Scorecard:
 
@@ -97,6 +59,36 @@ Setelah menyelesaikan proses pembuatan Scorecard:
 • Parameter menjadi tersedia untuk digunakan dalam penilaian kinerja agen pada ruang percakapan
 • Supervisor/manager/admin dapat langsung mengakses Scorecard ini untuk melakukan Agent Scoring
 • Data Scorecard dapat dilihat di laporan Service Quality Score Report untuk analisis kinerja agen
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/44411239187993
+
+> Screenshot: 11.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535931033
+
+> Screenshot: 94.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50941930030233
+
+> Screenshot: 95.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50941921107737
+
+> Screenshot: 96.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50941930033177
+
+> Screenshot: 97.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50941930034969
+
+> Screenshot: 15.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529406873
+
+> Screenshot: 16.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529408537
+
+> Screenshot: 17.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535948697
+
+> Screenshot: 18.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535961881
 
 ## Error States  <!-- confidence:medium ~ -->
 

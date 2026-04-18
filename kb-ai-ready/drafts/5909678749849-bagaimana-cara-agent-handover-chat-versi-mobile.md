@@ -40,6 +40,18 @@ Anda perlu memiliki akses ke aplikasi Qontak Chat di smartphone dengan role Agen
 7. Konfirmasi notifikasi sukses ditampilkan di layar Anda.
 8. Di Contact Info, ketuk ikon Silang di sebelah nama Agent lama Anda, lalu pilih Remove untuk menghentikan penugasan Anda.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49415736272921
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49415736275609
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49415738958873
+
+> Screenshot: 5.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36776243591833
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Room percakapan berhasil di-handover ke Agent baru. Notifikasi konfirmasi muncul di layar yang menunjukkan penugasan Agent berhasil dilakukan. Agent baru akan segera tampil dalam Contact Info room percakapan. Status Anda sebagai Agent lama di room tersebut akan dihapus setelah Anda memilih Remove.

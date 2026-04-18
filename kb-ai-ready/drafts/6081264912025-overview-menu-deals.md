@@ -27,29 +27,27 @@ faithfulness_threshold: 0.9
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Deals dalam Qontak CRM adalah fitur manajemen penjualan yang terpusat untuk mengelola seluruh siklus hidup deals, tiket, dan proyek. Menu ini menyimpan semua informasi dan aktivitas yang terkait dengan penjualan, memungkinkan tim penjualan untuk melacak prospek, mengorganisir tahap penjualan, dan mengelola pipeline secara visual. Anda dapat melihat daftar lengkap deals, menyesuaikan pipeline dan stage sesuai kebutuhan bisnis, serta mengakses detail profil setiap deal dengan riwayat aktivitasnya.
+Menu Deals dalam Qontak CRM adalah fitur manajemen penjualan yang terpusat untuk mengelola seluruh siklus hidup deals, tiket, dan proyek. Menu ini menyimpan semua informasi dan aktivitas yang terkait dengan penjualan, memungkinkan tim penjualan untuk melacak prospek, mengorganisir tahap penjualan, dan mengelola pipeline secara visual. Anda dapat melihat daftar lengkap deals, menyesuaikan pipeline dan stage sesuai kebutuhan bisnis, serta mengakses detail profil setiap deal dengan riwayat aktivitasnya.## Why It Matters  <!-- confidence:high ✓ -->
 
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49517214727065
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/21386118251801
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49517242055833
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49517214732953
+Menu Deals membantu tim penjualan Anda meningkatkan efisiensi dengan menyediakan visibilitas lengkap terhadap semua peluang penjualan dalam satu tempat. Dengan fitur ini, Anda dapat melacak progress deals, mengidentifikasi bottleneck dalam pipeline, dan membuat keputusan berbasis data. Kemampuan untuk mengorganisir deals berdasarkan pipeline dan stage yang dapat disesuaikan memastikan proses penjualan Anda selaras dengan workflow bisnis yang unik.
 
 > Screenshot: 8.png
 > Image: https://help-center.qontak.com/hc/article_attachments/49517214719769
 
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49517214727065
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/21386118251801
+
+> Screenshot: 11.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49517242055833
+
 > Screenshot: 12.png
 > Image: https://help-center.qontak.com/hc/article_attachments/49517214731289
 
-## Why It Matters  <!-- confidence:high ✓ -->
-
-Menu Deals membantu tim penjualan Anda meningkatkan efisiensi dengan menyediakan visibilitas lengkap terhadap semua peluang penjualan dalam satu tempat. Dengan fitur ini, Anda dapat melacak progress deals, mengidentifikasi bottleneck dalam pipeline, dan membuat keputusan berbasis data. Kemampuan untuk mengorganisir deals berdasarkan pipeline dan stage yang dapat disesuaikan memastikan proses penjualan Anda selaras dengan workflow bisnis yang unik.
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49517214732953
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

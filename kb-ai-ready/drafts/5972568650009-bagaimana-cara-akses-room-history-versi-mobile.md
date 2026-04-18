@@ -47,6 +47,18 @@ Untuk mengakses Room History di Qontak Omnichannel versi mobile, Anda memerlukan
 
 5. Pilih salah satu room history dari daftar — Percakapan tersebut akan terbuka menampilkan riwayat pesan lengkap dengan customer.
 
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/55505569146009
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/55505569148057
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/55505569149465
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/55505569153305
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda berhasil mengakses Room History versi mobile dengan hasil:

@@ -49,6 +49,15 @@ Catatan: Penambahan laporan ke Dashboard hanya berlaku untuk pengguna individual
 
 5. Untuk menghapus laporan, kembali ke Report Template, klik tab "Ticketing", lalu klik tombol "Remove from Dashboard" pada laporan yang ingin dihapus.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39686735313561
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39686735318425
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39686735326617
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan Ticket Reports ke Dashboard:

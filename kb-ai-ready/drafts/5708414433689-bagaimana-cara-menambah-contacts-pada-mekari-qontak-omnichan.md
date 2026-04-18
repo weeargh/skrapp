@@ -54,6 +54,21 @@ faithfulness_threshold: 0.6
 5. Klik tombol **Choose file** untuk memilih file template yang sudah diisi.
 6. Klik tombol **Submit**. File akan terunggah otomatis dan kontak muncul di menu Contacts.
 
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38432569398041
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38432541402265
+
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38432689602457
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38432677933849
+
+> Screenshot: 11.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38432677935769
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah, kontak berhasil ditambahkan ke menu **Contacts** di Qontak Omnichannel. Kontak baru akan muncul dalam daftar Contacts dan dapat dilihat kapan saja.

@@ -60,6 +60,18 @@ faithfulness_threshold: 0.3
 5. Klik **Delete** untuk mengonfirmasi penghapusan atau **Close** jika berubah pikiran
 6. Sistem akan menghapus kontak dari database
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49586512745753
+
+> Screenshot: Menghapus_Contact_2.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/5552743600665
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49586544582041
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49586512747289
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah membuka kontak:** Halaman detail kontak ditampilkan dengan semua informasi kontak termasuk nama, email, telepon, perusahaan terkait, dan riwayat interaksi.

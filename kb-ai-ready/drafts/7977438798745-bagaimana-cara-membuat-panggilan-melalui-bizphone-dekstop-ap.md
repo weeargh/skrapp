@@ -46,27 +46,19 @@ faithfulness_threshold: 0.6
 
 4. Setelah memasukkan nomor lengkap, klik ikon "Phone Handle" (gagang telepon) untuk memulai panggilan. Sistem akan langsung menghubungkan Anda ke nomor tersebut dan menampilkan status panggilan yang sedang berlangsung.
 
-**Alternatif:** Anda juga dapat melakukan panggilan langsung melalui Qontak CRM dengan membuka profil kontak dan klik ikon "Telepon".
-
-> Screenshot: Click_to_call.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121437465
-
-> Screenshot: Conversation_history.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121442841
-
-> Screenshot: Phone_activity_reports.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774148242969
-
-> Screenshot: Image 20.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774148248089
-
-## Expected Result  <!-- confidence:high ✓ -->
+**Alternatif:** Anda juga dapat melakukan panggilan langsung melalui Qontak CRM dengan membuka profil kontak dan klik ikon "Telepon".## Expected Result  <!-- confidence:high ✓ -->
 
 • Panggilan berhasil terkoneksi ke nomor tujuan
 • Jendela panggilan aktif menampilkan nomor yang sedang dihubungi, durasi panggilan, dan tombol kontrol (hold, transfer, hangup, mute)
 • Status "Connected" atau "In Call" ditampilkan di aplikasi Bizphone
 • Riwayat panggilan secara otomatis tersimpan di Riwayat Percakapan Bizphone
 • Panggilan dapat dicatat dalam Qontak CRM jika dilakukan melalui fitur Click to Call
+
+> Screenshot: Bizphone.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774148237465
+
+> Screenshot: Click_to_call.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774121437465
 
 ## Error States  <!-- confidence:medium ~ -->
 

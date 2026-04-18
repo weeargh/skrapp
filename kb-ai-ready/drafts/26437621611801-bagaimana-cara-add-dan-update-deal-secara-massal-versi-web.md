@@ -59,6 +59,21 @@ Untuk menambah dan meng-update deal secara massal di Qontak CRM versi Web, Anda 
 7. Klik tombol **"Upload"**.
    → Sistem memproses file dan menampilkan hasil upload (berhasil atau gagal).
 
+> Screenshot: 15.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49894160178841
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36766092762009
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36766092764313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36766092748313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36766139563161
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah upload berhasil, semua deal baru dan update deal ditampilkan di menu **Deals** Qontak CRM Anda dengan:

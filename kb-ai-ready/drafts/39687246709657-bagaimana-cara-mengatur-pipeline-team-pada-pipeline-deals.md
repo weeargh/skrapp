@@ -45,6 +45,18 @@ faithfulness_threshold: 0.6
 7. Klik tombol **"Save Pipeline"** untuk menyimpan pengaturan.
 8. Sistem akan menampilkan konfirmasi bahwa pengaturan pipeline team berhasil disimpan.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39687246680601
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39687566391833
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39687566394009
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39687566396057
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Pengaturan Pipeline Team berhasil diterapkan. Tim yang Anda tentukan di kolom **Team** sekarang hanya dapat melihat pipeline tersebut pada indeks **Pipeline Deals**. Pengguna yang tidak termasuk dalam tim yang ditentukan tidak akan melihat pipeline ini di daftar pipeline. Perubahan langsung berlaku untuk semua pengguna, termasuk **Admin** dan **Owner** sesuai dengan role dan tim mereka.

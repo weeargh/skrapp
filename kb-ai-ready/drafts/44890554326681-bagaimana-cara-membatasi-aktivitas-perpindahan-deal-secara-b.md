@@ -49,6 +49,36 @@ faithfulness_threshold: 0.3
 7. Klik tombol **Restrict** pada pop-up untuk mengonfirmasi. Sistem menyimpan pengaturan.
 8. Navigasi ke menu **Deals**. Pada Pipeline yang dibatasi, agent tidak dapat memindahkan Deal ke tahap sebelumnya.
 
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49955575707289
+
+> Screenshot: 27.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49955568259737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44890554311961
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44890563352857
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44890563354905
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44890554315545
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44890563357081
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44890554319513
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44890554321433
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44890563367065
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Pembatasan perpindahan Deal secara backward berhasil diterapkan. Pop-up informasi menampilkan pesan bahwa pembatasan pergerakan tahap pada Deals akan berlaku untuk semua Deal (yang sudah ada dan baru) pada Pipeline yang diaktifkan. Di menu Deals, agent melihat bahwa Deal hanya dapat dipindahkan ke tahap dengan urutan yang lebih tinggi (forward), dan fitur Rotten time kembali berfungsi efektif tanpa dapat direset melalui manipulasi tahap.

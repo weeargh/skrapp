@@ -56,6 +56,12 @@ Tidak ada persyaratan plan tier khusus untuk fitur ini.
 3. Centang **Set as required** (wajib diisi), **Contact creation page** (muncul saat buat kontak), atau **Contact editing page** (muncul saat edit kontak)
 4. Klik **Save changes**
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38135283829145
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38135253376537
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyimpan perubahan dengan klik **Save changes**, sistem akan menampilkan:

@@ -44,26 +44,36 @@ faithfulness_threshold: 0.6
 4. Isi semua kolom: Function name, Description, API_path, API_method, API_headers, dan API_body sesuai kebutuhan API Anda.
 5. Klik **"Add parameter"** untuk menambahkan parameter (gunakan maksimal satu parameter untuk menghindari halusinasi AI pada tahap Beta).
 6. Isi Parameter name, Description, dan Type, lalu centang toggle **"Set as required"**.
-7. Klik **"Add"** untuk menyimpan fungsi. Sistem menampilkan konfirmasi bahwa fungsi berhasil ditambahkan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53149538347033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/39513710420633
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/51038253023641
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/39513694249497
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/39513710438809
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik **"Add"** untuk menyimpan fungsi. Sistem menampilkan konfirmasi bahwa fungsi berhasil ditambahkan.## Expected Result  <!-- confidence:high ✓ -->
 
 Fungsi API berhasil ditambahkan ke API Connection. Halaman detail API Connection menampilkan fungsi baru dalam daftar dengan status aktif. AI Chatbot sekarang dapat mengenali user input yang sesuai dengan deskripsi fungsi dan memanggil API untuk mengambil informasi yang diperlukan, memberikan respons yang lebih manusiawi berdasarkan data dari sistem eksternal.
+
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53149538347033
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39513122309913
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39513062844185
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39513297951001
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39513710420633
+
+> Screenshot: 114.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51038253023641
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39513694247705
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39513694249497
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39513710438809
 
 ## Error States  <!-- confidence:medium ~ -->
 

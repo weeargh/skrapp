@@ -50,6 +50,18 @@ Untuk melakukan pengaturan User Management di Qontak Omnichannel, Anda membutuhk
 
 6. Klik tombol Simpan atau Submit. User baru akan ditambahkan ke sistem.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776188693785
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49491303027225
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38895397536409
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38895437613465
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah berhasil melakukan pengaturan User Management:

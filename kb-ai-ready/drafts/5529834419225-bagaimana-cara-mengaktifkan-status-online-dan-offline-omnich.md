@@ -51,6 +51,12 @@ faithfulness_threshold: 0.6
 
 Catatan: Ketika Anda log out dari aplikasi mobile, status Online tetap aktif. Ubah status menjadi Offline terlebih dahulu sebelum log out jika ingin benar-benar offline.
 
+> Screenshot: mceclip0.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776434823705
+
+> Screenshot: mceclip1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776434826649
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 • Indikator status berubah menjadi Online (hijau) atau Offline (abu-abu) di menu Profile

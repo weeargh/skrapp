@@ -47,6 +47,18 @@ Untuk memahami perubahan harga Meta pada Qontak Chat mulai 1 Juli 2025, Anda mem
 
 5. Verifikasi Free Entry Point Conversations Anda tetap gratis namun dihitung berdasarkan pesan individual, bukan percakapan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48430955482265
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48430946021401
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/54087758458905
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/54087753541273
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah memahami perubahan harga Meta:

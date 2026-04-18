@@ -51,6 +51,9 @@ Catatan: Laporan ini menampilkan data berdasarkan Source yang ada di sistem Qont
 4. Klik tombol Download untuk mengunduh laporan dalam format file.
    → File laporan akan tersimpan di perangkat Anda.
 
+> Screenshot: Laporan_Source_1.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36774121124249
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengunduh dan membuka laporan "New Contacts, Companies, and Deals Created by Source", Anda akan melihat:

@@ -54,6 +54,12 @@ Pastikan Anda sudah login ke akun Qontak Omnichannel sebelum mengakses fitur ini
 
 7. Lanjutkan dengan mengisi detail template sesuai kategori yang dipilih.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43691108065945
+
+> Screenshot: Screenshot
+> Image: https://lh6.googleusercontent.com/Sr0Bj6c12DAZvZ1Z67jm3Cmhw48n2hlaokSgtNreiPoVLVhl0pmxmPDMJxU8KpZlk6qwwcZyuhEZA4aceBQz_AV0kJq0eWlg-NA0T3gXGyeJWUjqR5QEI2lVgSqqoFr3Vx09ubtE39bYO4XF3NLsuVE
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah memilih salah satu kategori pesan (Marketing, Utility, atau Authentication), sistem akan menampilkan form template yang sesuai dengan kategori yang dipilih. Anda akan dapat melihat:

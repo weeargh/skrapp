@@ -65,6 +65,27 @@ Untuk menambahkan Deal secara massal (bulk) di Qontak CRM, Anda membutuhkan:
 9. Periksa progres pengunggahan di menu **Properties** → tab **Upload/Download**.
    → Status proses unggahan akan ditampilkan.
 
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49893760535961
+
+> Screenshot: 11.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49893760541593
+
+> Screenshot: Deals_Bulk_3.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36774121226649
+
+> Screenshot: Deals_Bulk_4.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36774147981209
+
+> Screenshot: 12.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49893760546329
+
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49893760548505
+
+> Screenshot: 14.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49893760550169
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan Deal secara massal, Anda akan melihat:

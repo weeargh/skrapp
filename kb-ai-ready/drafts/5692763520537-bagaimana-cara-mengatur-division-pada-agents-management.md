@@ -51,6 +51,33 @@ Untuk mengatur Division pada Agents Management, Anda memerlukan:
 
 7. Untuk menghapus division, klik tombol Delete pada list Division, lalu konfirmasi dengan klik tombol Delete pada popup notifikasi.
 
+> Screenshot: 85.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50938157911193
+
+> Screenshot: 91.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50938157913625
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774249600537
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774222860953
+
+> Screenshot: division3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774249592217
+
+> Screenshot: 92.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50938151459097
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774222862361
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774249605785
+
+> Screenshot: division7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774222854809
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Division berhasil dibuat:

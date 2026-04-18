@@ -40,6 +40,9 @@ faithfulness_threshold: 0.6
 4. Ketikkan balasan Anda di kolom input pesan sesuai dengan pertanyaan atau keluhan customer.
 5. Klik tombol **Kirim** — pesan balasan Anda terkirim ke customer.
 
+> Screenshot: 170.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53788099058841
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Pesan balasan Anda berhasil dikirim dan muncul di dalam room chat dengan timestamp. Status pesan akan menunjukkan bahwa pesan telah terkirim. Customer akan menerima notifikasi balasan Anda melalui channel yang mereka gunakan (WhatsApp, Instagram, atau channel lainnya yang terintegrasi dengan Qontak Omnichannel).

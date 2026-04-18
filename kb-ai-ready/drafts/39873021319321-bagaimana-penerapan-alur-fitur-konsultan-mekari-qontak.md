@@ -41,6 +41,21 @@ Anda memerlukan akses peran Admin pada akun Mekari Qontak untuk dapat menyetujui
 
 5. Tim support internal Mekari akan dapat mengakses akun Anda selama durasi yang telah ditentukan untuk melakukan konfigurasi User Management dan setup laporan.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39873021310233
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39873037514777
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/39873021312921
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/39873037519897
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/39873037521305
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyetujui pengajuan akses, halaman akun Mekari Qontak akan menampilkan konfirmasi bahwa pengajuan akses telah disetujui. Tim support internal Mekari akan dapat mengakses akun Anda dengan peran Admin yang terbatas pada durasi tertentu. Anda akan menerima email tambahan yang menyatakan persetujuan akses telah dikonfirmasi. Tim kami dapat melakukan konfigurasi sistem dan setup laporan untuk mengoptimalkan alur kerja Anda.

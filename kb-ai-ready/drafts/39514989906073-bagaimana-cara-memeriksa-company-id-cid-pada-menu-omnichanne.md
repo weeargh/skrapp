@@ -43,6 +43,12 @@ faithfulness_threshold: 0.6
 3. Lihat **Company ID** yang ditampilkan di bagian bawah menu setelah tombol Expand diklik.
    Nomor Company ID akan terlihat dengan format unik untuk akun Omnichannel Anda.
 
+> Screenshot: 1.1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39514989895193
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39514993090585
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Company ID Anda berhasil ditampilkan di sisi menu sebelah kiri bagian bawah setelah mengklik tombol Expand. Anda dapat melihat nomor Company ID yang unik dan spesifik untuk akun Omnichannel Anda. Company ID ini dapat disalin dan digunakan untuk keperluan integrasi atau referensi akun.

@@ -51,6 +51,9 @@ Catatan: Laporan ini hanya menampilkan data Task yang sudah dibuat dan memiliki 
 4. (Opsional) Pada sheet Tasks KPI by Status, gunakan filter untuk menyaring data berdasarkan User, Waktu, atau Task Category sesuai kebutuhan Anda.
    → Laporan akan diperbarui sesuai filter yang dipilih.
 
+> Screenshot: Task_KPI_by_Status.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36780919261081
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Pada sheet Tasks KPI by Status, Anda akan melihat:

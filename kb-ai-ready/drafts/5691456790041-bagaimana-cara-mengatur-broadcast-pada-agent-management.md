@@ -57,6 +57,12 @@ Perhatikan bahwa mengaktifkan fitur Agent can broadcast akan secara otomatis men
 6. Klik tombol Save untuk menyimpan perubahan.
    Sistem akan menampilkan konfirmasi penyimpanan.
 
+> Screenshot: 1.1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38953072708249
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38953027384729
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengaktifkan fitur Broadcast dengan status ON:

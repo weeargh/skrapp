@@ -46,6 +46,27 @@ faithfulness_threshold: 0.6
 8. Tunggu hingga proses selesai. Hasil approval akan ditampilkan dengan indikator: tanda centang hijau (berhasil) atau tanda silang merah (gagal).
 9. Baca keterangan jika ada Deal gagal. Klik **"Retry approval"** untuk mengulang atau **"Ok, got it"** untuk menutup pop-up.
 
+> Screenshot: 23.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49955103399321
+
+> Screenshot: 24.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49955164898457
+
+> Screenshot: 25.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49955164901145
+
+> Screenshot: bulkdeals4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36773920069273
+
+> Screenshot: bulkdeals5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36773920074521
+
+> Screenshot: bulkdeals6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36773920070041
+
+> Screenshot: bulkdeals7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36773920076825
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses selesai, Anda melihat status approval untuk setiap Deal:

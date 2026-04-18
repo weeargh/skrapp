@@ -47,6 +47,9 @@ faithfulness_threshold: 0.6
    - Delete: Remove companies (bulk or individual)
 4. Review columns: Company Name, Associated With, Type, Owner/Created, Updated dates, and action buttons (Edit/Delete)
 
+> Screenshot: Image_21.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36780919284761
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 The Companies page displays with a table listing all your companies. You can see:

@@ -48,6 +48,30 @@ Untuk menambahkan artikel dalam jumlah banyak pada Knowledge Base, Anda memerluk
 7. Klik **"Import"** untuk mengunggah file.
 8. Sistem akan menampilkan halaman Import log dengan status artikel menunjukkan **Processing**.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/37011276838553
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/37011263745817
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/37011263750041
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/37011339386265
+
+> Screenshot: 3.1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/37011805147417
+
+> Screenshot: A.png
+> Image: https://help-center.qontak.com/hc/article_attachments/37011805149977
+
+> Screenshot: E.png
+> Image: https://help-center.qontak.com/hc/article_attachments/37011809108505
+
+> Screenshot: F.png
+> Image: https://help-center.qontak.com/hc/article_attachments/37011805164185
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah proses impor selesai:

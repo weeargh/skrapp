@@ -30,6 +30,42 @@ faithfulness_threshold: 0.6
 
 Qontak adalah aplikasi CRM Omnichannel berbasis cloud yang mengintegrasikan manajemen pelanggan, penjualan, dan tim dalam satu platform. Aplikasi ini memungkinkan Anda mengelola data pelanggan melalui menu Contacts dan Companies, mengelola order dan tiket melalui menu Deal, serta mengelola tugas tim melalui menu Task. Qontak tersedia di web dan aplikasi mobile (iOS dan Android), memungkinkan akses real-time ke data dan aktivitas bisnis Anda dari mana saja.
 
+> Screenshot: 42.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53147066505241
+
+> Screenshot: 43.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53147029030169
+
+> Screenshot: 44.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53147029039129
+
+> Screenshot: 3.3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39918650610585
+
+> Screenshot: 45.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53147029041689
+
+> Screenshot: 46.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53147066512025
+
+> Screenshot: 447.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53147066513817
+
+> Screenshot: 6.6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39918455191449
+
+> Screenshot: 7.7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/39918485479961
+
+> Screenshot: 48.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53147066515225
+
+> Screenshot: deals.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/5976646080025
+
+> Screenshot: 49.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53147066528537
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Qontak membantu tim Anda bekerja lebih efisien dengan menyatukan informasi pelanggan, penjualan, dan tugas dalam satu dashboard. Dengan akses real-time ke laporan dan aktivitas tim, Anda dapat membuat keputusan bisnis lebih cepat dan meningkatkan produktivitas. Kemampuan untuk melihat riwayat percakapan pelanggan dan mengelola pipeline penjualan secara terstruktur memastikan tidak ada peluang bisnis yang terlewat.

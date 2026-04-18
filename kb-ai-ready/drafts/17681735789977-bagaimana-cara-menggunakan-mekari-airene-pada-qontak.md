@@ -55,6 +55,48 @@ Mekari Airene tersedia untuk membantu parafrase pesan, menarik rangkuman percaka
 2. Klik "Resolved" — room percakapan ditandai selesai
 3. Klik "Summarize this conversation" — sistem menampilkan rangkuman dari percakapan
 
+> Screenshot: 24.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150143884313
+
+> Screenshot: 14.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150099690905
+
+> Screenshot: 15.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150143886233
+
+> Screenshot: 16.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150099694745
+
+> Screenshot: 17.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150143888025
+
+> Screenshot: 18.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150099698969
+
+> Screenshot: 19.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150143891225
+
+> Screenshot: 20.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150143892249
+
+> Screenshot: 21.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150099706521
+
+> Screenshot: 22.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150143895705
+
+> Screenshot: 23.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150143899033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142738201
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142740121
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142741401
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah melakukan parafrase:**

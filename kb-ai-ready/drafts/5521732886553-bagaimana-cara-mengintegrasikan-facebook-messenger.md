@@ -51,6 +51,30 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 8. Klik **Simpan Perubahan**. Sistem akan menyelesaikan integrasi.
 9. Facebook Messenger sekarang terhubung — mulai berkomunikasi dengan pelanggan di halaman **Inbox**.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/45007020658329
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/45007020659225
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089409177
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089405721
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766086032153
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766086034201
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089419801
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089418137
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil:

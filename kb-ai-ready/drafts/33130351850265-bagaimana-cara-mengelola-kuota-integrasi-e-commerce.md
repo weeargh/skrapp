@@ -30,6 +30,12 @@ faithfulness_threshold: 0.6
 
 Kuota integrasi e-commerce adalah batas jumlah toko e-commerce yang dapat Anda integrasikan dengan Qontak Omnichannel. Setiap akun Qontak secara default mendapatkan 2 kuota integrasi e-commerce. Kuota ini memungkinkan Anda untuk menghubungkan berbagai platform e-commerce (seperti Tokopedia, Shopee, atau toko online lainnya) ke dalam satu dashboard Omnichannel untuk mengelola pesanan dan komunikasi pelanggan secara terpusat.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203489561
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194711577
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Mengelola kuota integrasi e-commerce membantu Anda memaksimalkan jumlah toko yang dapat terhubung dengan Qontak Omnichannel. Dengan memahami penggunaan dan sisa kuota, Anda dapat merencanakan integrasi toko baru dan menghindari gangguan layanan. Jika kuota habis atau masa berlaku berakhir, integrasi akan terputus secara otomatis, sehingga penting untuk memantau status kuota dan melakukan perpanjangan tepat waktu.

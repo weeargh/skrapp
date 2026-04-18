@@ -48,6 +48,21 @@ Pengaturan ini dilakukan oleh Administrator atau user dengan izin mengelola konf
 
 5. Klik tombol **Save** untuk menyimpan perubahan pengaturan Tickets.
 
+> Screenshot: 80.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50936880683161
+
+> Screenshot: 81.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50936880686361
+
+> Screenshot: 76.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50936875353625
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776440891929
+
+> Screenshot: Tiketsss.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50936939791257
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah pengaturan berhasil disimpan:

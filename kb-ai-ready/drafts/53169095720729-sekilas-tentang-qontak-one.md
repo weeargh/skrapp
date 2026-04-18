@@ -29,6 +29,57 @@ faithfulness_threshold: 0.6
 
 Qontak One adalah lapisan platform utama yang menyatukan semua solusi Qontak dalam satu antarmuka terpadu. Platform ini menghubungkan modul Omnichannel, CRM, Ticketing, AI Ecosystem, Workflow Automation, Reporting, Integrations, dan CDP (Customer Data Platform) ke dalam satu tempat kerja. Qontak One dirancang untuk memungkinkan Anda mengelola seluruh aktivitas operasional, layanan pelanggan, dan pengelolaan data tanpa hambatan atau proses berulang.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052604057
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169095659161
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169095660825
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169095662233
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052609689
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052611225
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052612889
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052614681
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052616217
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052617625
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169095691929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169095693209
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052623257
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169095695385
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169095697433
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052641945
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53169052643353
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Qontak One meningkatkan efisiensi dengan mengeliminasi kebutuhan berpindah antarplatform yang berbeda. Anda dapat mengakses berbagai fitur dan mengelola pekerjaan dalam satu tempat, sehingga proses bisnis berjalan lebih lancar dan terintegrasi. Dengan integrasi yang kuat ini, tim Anda dapat bekerja lebih konsisten, cepat, dan fokus pada tugas utama tanpa gangguan dari fragmentasi sistem.

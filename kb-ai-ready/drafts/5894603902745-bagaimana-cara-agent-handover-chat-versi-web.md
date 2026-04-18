@@ -45,6 +45,12 @@ Anda ingin melakukan Handover Chat kepada agent lain melalui versi web Qontak Om
 6. Klik tombol konfirmasi untuk menyelesaikan proses Handover Chat.
 Agent yang ditunjuk akan menerima notifikasi tentang percakapan yang telah di-assign kepada mereka.
 
+> Screenshot: 83.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937458997401
+
+> Screenshot: 84.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937459001369
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah berhasil melakukan Handover Chat:

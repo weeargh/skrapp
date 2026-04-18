@@ -49,15 +49,7 @@ Idle Rule Settings digunakan untuk mengatur mekanisme reassign chat ketika Agent
 
 5. Isi kolom **Idle period** dengan nilai dalam hitungan menit (contoh: 5 menit, 10 menit). Input field akan menampilkan nilai yang Anda masukkan.
 
-6. Klik tombol **Save changes** untuk menyimpan pengaturan. Sistem akan memproses dan menyimpan konfigurasi Idle Rule Anda.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163185305
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163187865
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol **Save changes** untuk menyimpan pengaturan. Sistem akan memproses dan menyimpan konfigurasi Idle Rule Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menyimpan Idle Rule Settings:
 
@@ -66,6 +58,12 @@ Setelah berhasil menyimpan Idle Rule Settings:
 • Sistem akan melakukan pencarian Agent pengganti hingga 3 kali (setiap kali menunggu durasi Idle period yang telah ditetapkan)
 • Jika semua Agent penuh atau tidak tersedia setelah 3 kali pencarian, chat akan ter-hold sampai direspons Agent manapun
 • Pesan konfirmasi atau perubahan status toggle menandakan penyimpanan berhasil
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163185305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163187865
 
 ## Error States  <!-- confidence:medium ~ -->
 

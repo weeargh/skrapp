@@ -30,6 +30,51 @@ faithfulness_threshold: 0.6
 
 Notification Center di Mekari Qontak adalah pusat notifikasi terpusat yang mengumpulkan semua aktivitas penting dari interaksi customer pada Omnichannel dan operasional bisnis pada CRM dalam satu tempat. Fitur ini menampilkan notifikasi berupa mention pada deals, penugasan pada percakapan, penugasan pada tiket, permintaan persetujuan biaya, dan aktivitas penting lainnya yang memerlukan tindakan langsung dari pengguna.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701516931353
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701516931737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701516932249
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701516932761
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701533373081
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701533376153
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701516944793
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701516945433
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701533377689
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701516954137
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701516954905
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701533387289
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701533392921
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701533393433
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53701533393689
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Notification Center membantu pengguna Qontak tetap ter-update atas semua aktivitas penting tanpa perlu berpindah-pindah menu. Sebelumnya, pengguna harus beralih antara menu CRM untuk melihat notifikasi operasional (companies, deals, tiket, task, approvals, automated actions) dan menu Omnichannel untuk notifikasi chat. Dengan fitur ini, efisiensi kerja meningkat karena semua informasi penting tersedia dalam satu lokasi yang mudah diakses.

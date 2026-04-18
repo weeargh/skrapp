@@ -51,6 +51,9 @@ Catatan: Laporan ini hanya menampilkan data penjualan produk yang sudah tercatat
 4. Buka file yang sudah diunduh menggunakan aplikasi spreadsheet.
    → Sheet laporan akan menampilkan kolom-kolom data penjualan produk Anda.
 
+> Screenshot: reports.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36774121296537
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuka Laporan Product Sales Trends, Anda akan melihat spreadsheet dengan struktur sebagai berikut:

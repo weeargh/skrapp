@@ -54,21 +54,7 @@ Untuk menambahkan role pada Qontak One, Anda memerlukan:
 
 8. Atur Feature permission dengan mencentang fitur-fitur yang dapat diakses oleh role ini (contoh: fitur Campaign untuk Admin).
 
-9. Klik tombol Save. Sistem akan menyimpan role baru dan menampilkan halaman daftar role dengan role yang baru dibuat sudah tersedia dalam daftar.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933745945
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933747097
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933760665
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243975453593
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Klik tombol Save. Sistem akan menyimpan role baru dan menampilkan halaman daftar role dengan role yang baru dibuat sudah tersedia dalam daftar.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan role:
 
@@ -78,6 +64,45 @@ Setelah berhasil menambahkan role:
 • Permission yang telah diatur diterapkan dan aktif
 • Role siap diassign ke pengguna baru atau pengguna yang ada
 • Pesan konfirmasi penyimpanan data berhasil ditampilkan
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933745945
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933747097
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933749273
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243975453593
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933751321
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243975455257
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243975456537
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933758105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933759001
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933760665
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243975461401
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933761305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933767065
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -51,6 +51,9 @@ Catatan: Laporan Lost Reasons hanya dapat diakses oleh pengguna dengan akses ke 
 4. Buka sheet Deals List untuk detail lengkap setiap Lost Deal (Deal Name, Lost Reason, Owner, Currency, Amount).
    → Sheet ini memberikan informasi individual untuk setiap deals yang hilang.
 
+> Screenshot: Lost_Reasons_1.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089378585
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah membuka laporan Lost Reasons, Anda akan melihat:

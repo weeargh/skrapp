@@ -29,6 +29,15 @@ faithfulness_threshold: 0.6
 
 Tipe Report Geographic adalah fitur pelaporan dalam Qontak CRM yang menampilkan data lokasi pada peta Google Maps. Fitur ini terdiri dari tiga jenis laporan: GPS Check-In menunjukkan lokasi check-in user pada tasks dalam periode waktu tertentu; Customer Geolocation Map menampilkan lokasi alamat Contacts dan Companies yang berstatus Customer; dan Live GPS Attendance Tracking merekam perjalanan GPS user dari saat check-in hingga check-out beserta informasi baterai perangkat mobile.
 
+> Screenshot: 46.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50807474730777
+
+> Screenshot: 47.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50807469313049
+
+> Screenshot: 48.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50807506644377
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Report Geographic membantu tim sales dan management memantau aktivitas lapangan secara real-time dan historis. Dengan visualisasi peta, manager dapat memverifikasi kehadiran field staff, menganalisis cakupan geografis customer base, dan mengoptimalkan rute perjalanan tim. Fitur ini meningkatkan transparansi operasional dan efisiensi manajemen sumber daya lapangan dalam Qontak CRM.

@@ -29,6 +29,12 @@ faithfulness_threshold: 0.6
 
 Auto Responder adalah fitur dalam Qontak Omnichannel yang memungkinkan Anda mengatur pesan balasan otomatis kepada pelanggan berdasarkan jam operasional bisnis Anda. Fitur ini tersedia di menu Settings > Inbox dan memiliki dua tipe template: template untuk jam kantor dan template untuk luar jam kantor. Setiap template dapat diaktifkan atau dinonaktifkan sesuai kebutuhan bisnis Anda.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49475790897945
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49475826169113
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Auto Responder meningkatkan efisiensi layanan pelanggan dengan memberikan respons instan kepada pelanggan tanpa intervensi manual agent. Fitur ini memastikan pelanggan selalu mendapat konfirmasi bahwa pesan mereka diterima, bahkan di luar jam operasional. Dengan mengotomatisasi respons, tim Anda dapat fokus pada chat yang memerlukan penanganan lebih lanjut, meningkatkan kepuasan pelanggan dan produktivitas tim.

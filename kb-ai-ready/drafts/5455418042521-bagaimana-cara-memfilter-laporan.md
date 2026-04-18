@@ -54,6 +54,9 @@ Catatan: Fitur filter laporan hanya tersedia di versi website Qontak CRM, bukan 
 5. Klik tombol "Submit" setelah semua filter sesuai kebutuhan Anda.
    → Laporan akan diperbarui dan menampilkan data yang sudah difilter.
 
+> Screenshot: 37.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50804828942489
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda klik tombol "Submit", Dashboard akan menampilkan laporan yang sudah disesuaikan dengan filter yang Anda pilih. Data yang ditampilkan akan berkurang dan hanya menunjukkan informasi sesuai dengan Sales Pipeline, Tim, User, dan periode waktu yang Anda tentukan. Laporan menjadi lebih fokus dan mudah dibaca untuk analisis kebutuhan bisnis Anda.

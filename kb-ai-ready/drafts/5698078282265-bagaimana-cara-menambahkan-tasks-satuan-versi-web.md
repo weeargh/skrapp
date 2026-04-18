@@ -47,6 +47,15 @@ Untuk menambahkan task satuan di Mekari Qontak CRM versi Web, Anda memerlukan:
 
 4. Setelah semua data terisi lengkap, klik tombol **"Create Task"** untuk menyimpan task. Jika Anda tidak ingin menyimpan, klik tombol **"Cancel"**.
 
+> Screenshot: 26.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56956767467033
+
+> Screenshot: 27.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56956767467929
+
+> Screenshot: mceclip3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56956756129305
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah klik tombol **"Create Task"**, sistem akan memproses data dan task baru akan disimpan. Anda akan diarahkan kembali ke halaman menu Task, dan task yang baru saja dibuat akan muncul di daftar task dengan status aktif. Jika berhasil, Anda akan melihat notifikasi konfirmasi bahwa task telah berhasil ditambahkan.

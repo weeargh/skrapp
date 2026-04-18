@@ -43,6 +43,15 @@ faithfulness_threshold: 0.6
 5. Ketikkan pesan balasan Anda di kolom input pesan. Anda dapat mengirim teks, file, video, audio, gambar, atau maps.
 6. Klik tombol Kirim. Pesan balasan akan dikirim dengan referensi ke bubble message asli.
 
+> Screenshot: 174.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53788756425753
+
+> Screenshot: image__5_.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36772400130201
+
+> Screenshot: image__6_.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36772392538649
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Pesan balasan Anda berhasil dikirim dan terlihat di chat WhatsApp dengan indikasi visual menunjukkan bahwa pesan tersebut merupakan reply terhadap bubble message spesifik (biasanya ditampilkan dengan garis penghubung atau quote dari pesan asli). Pelanggan akan melihat balasan Anda terhubung langsung ke pesan yang Anda reply, memudahkan konteks percakapan.

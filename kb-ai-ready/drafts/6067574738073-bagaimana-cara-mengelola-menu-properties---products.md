@@ -64,6 +64,24 @@ Untuk mengelola menu Properties - Products di Mekari Qontak, Anda membutuhkan:
 
 Catatan: Default field tidak dapat dihapus dan tidak menampilkan tombol "Destroy".
 
+> Screenshot: 39.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53836354387353
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780919355673
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780961485209
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780961486745
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780919357977
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780919359385
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menambahkan properti baru:

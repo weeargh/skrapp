@@ -47,6 +47,21 @@ faithfulness_threshold: 0.6
 6. Untuk menampilkan hasil lainnya, klik tombol **Load older result**. Sistem akan memuat data tambahan secara bertahap.
 7. Jika data yang Anda cari lebih lama dari 2 tahun, klik **Request older data** untuk mengajukan permohonan ke Qontak Support. Isi form yang muncul dan kirim email ke support@qontak.com dengan detail permintaan Anda.
 
+> Screenshot: 156.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53769405917465
+
+> Screenshot: 157.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53769405930521
+
+> Screenshot: 158.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53769405935257
+
+> Screenshot: 159.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53769405941017
+
+> Screenshot: 160.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53769405947801
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Pencarian berhasil dilakukan dan sistem menampilkan:

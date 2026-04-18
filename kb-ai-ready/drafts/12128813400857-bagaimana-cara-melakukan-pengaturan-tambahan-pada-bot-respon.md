@@ -46,6 +46,39 @@ faithfulness_threshold: 0.3
    - **Assign Conversation**: Tugaskan agen dengan tipe Auto, Division, atau Agent. (Opsional) centang Set user idle time
 5. Klik tombol Save untuk menyimpan pengaturan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203082265
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203086873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203089177
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203083033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194384153
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194381721
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194385817
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203094297
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203092633
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203095833
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194390425
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Pengaturan tambahan Bot Response berhasil disimpan. Sistem menampilkan notifikasi konfirmasi atau kembali ke tampilan Bot Response dengan status pengaturan yang telah diperbarui. Bot Response akan berfungsi sesuai pengaturan Additional Settings yang dipilih (penutupan otomatis percakapan atau penugasan agen).

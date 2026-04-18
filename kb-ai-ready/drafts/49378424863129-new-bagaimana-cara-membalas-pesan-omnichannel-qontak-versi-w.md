@@ -45,6 +45,12 @@ Untuk membalas pesan Omnichannel Qontak versi Web, Anda memerlukan:
 5. Ketik balasan Anda di kolom pesan di bagian bawah. Pastikan balasan sesuai dengan pertanyaan atau kebutuhan pelanggan.
 6. Klik tombol Kirim untuk mengirim pesan balasan.
 
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49383522678681
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49383522685209
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membalas pesan:

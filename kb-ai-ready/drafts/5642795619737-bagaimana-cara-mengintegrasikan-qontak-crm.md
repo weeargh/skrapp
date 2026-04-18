@@ -51,6 +51,18 @@ Untuk mengintegrasikan chat panel Omnichannel dengan Qontak CRM Messenger:
 
 Catatan: Percakapan akan masuk ke CRM sebagai tiket dan tidak akan ditampilkan di inbox Omnichannel.
 
+> Screenshot: 11.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50771314201497
+
+> Screenshot: 12.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50771303044505
+
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50771303046297
+
+> Screenshot: 14.1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50771413989657
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil, Anda akan:

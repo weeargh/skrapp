@@ -31,6 +31,9 @@ faithfulness_threshold: 0.3
 
 Mobile Qontak Chat dan Qontak CRM adalah dua aplikasi mobile terpisah yang dirancang untuk mendukung operasional bisnis Anda. Mobile Qontak Chat berfungsi mengelola komunikasi pelanggan dari berbagai channel (WhatsApp, Instagram, Facebook, Live Chat, dan Commerce Channel) dalam satu inbox terpusat. Mobile Qontak CRM berfungsi mengelola data pelanggan, pipeline penjualan, dan tugas tim secara real-time. Kedua aplikasi tersedia untuk iOS dan Android, memungkinkan tim Anda bekerja dengan lebih cepat dan efisien dari perangkat mobile.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53617557135897
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Memahami perbedaan Mobile Qontak Chat dan Qontak CRM membantu Anda memilih alat yang tepat untuk setiap tugas operasional. Mobile Qontak Chat meningkatkan respons pelanggan dengan mengelola semua pesan dalam satu platform, sementara Mobile Qontak CRM memberikan visibilitas penuh terhadap data pelanggan dan pipeline penjualan. Dengan kedua aplikasi ini, tim Anda dapat memberikan layanan pelanggan yang lebih responsif dan mengelola penjualan lebih efektif dari mana saja.

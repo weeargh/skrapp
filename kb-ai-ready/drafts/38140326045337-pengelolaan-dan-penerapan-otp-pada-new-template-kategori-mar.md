@@ -51,6 +51,51 @@ Anda memerlukan akun Qontak Omnichannel aktif dengan peran Admin. Alamat email y
 2. Klik tombol Add New Template untuk membuat template baru dengan kategori Marketing atau Utility.
 3. Template creation akan meminta kode OTP jika toggle sudah diaktifkan di Security Settings.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43690885861913
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38140325979033
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38140325981721
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38140325987097
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38140325989273
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38140363885977
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38140363888281
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38140363889305
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38140489769241
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38140309112217
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38140326015001
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38140309126169
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38140309129113
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38140326033177
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38140326036761
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengaktifkan toggle di Settings, sistem menampilkan notifikasi sukses yang mengonfirmasi OTP Authentication telah diaktifkan untuk Broadcast Template. Ketika Anda membuat New Template pada menu Campaign → Templates dengan kategori Marketing atau Utility, sistem akan meminta verifikasi OTP sebelum template dapat disimpan. Jika toggle dinonaktifkan, permintaan OTP tidak akan muncul saat pembuatan template.

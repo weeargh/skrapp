@@ -59,6 +59,21 @@ Pastikan timezone perusahaan Anda sudah dikonfigurasi di halaman settings Proper
 6. Klik tombol **'Save'** untuk menyimpan semua pengaturan Live Location Reminder.
    → Notifikasi reminder akan aktif sesuai konfigurasi yang telah ditentukan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190262681
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163387033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163369113
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163371033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163388441
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik tombol **'Save'**, pengaturan notifikasi Live Location Reminder akan berhasil disimpan. Sistem akan menampilkan konfirmasi bahwa pengaturan telah diterapkan.

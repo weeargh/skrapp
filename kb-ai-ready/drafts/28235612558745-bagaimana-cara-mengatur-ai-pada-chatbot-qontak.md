@@ -50,12 +50,16 @@ faithfulness_threshold: 0.6
 2. Klik "Training sources" di bagian AI resources
 3. Klik "Add source" dan pilih File upload
 4. Klik "browse" atau drag file PDF ke kolom yang disediakan
-5. Klik "Save" untuk mengimpor file
+5. Klik "Save" untuk mengimpor file## Expected Result  <!-- confidence:high ✓ -->
 
-> Screenshot: Screenshot
+Setelah menambahkan URL: URL eksternal berhasil ditambahkan sebagai sumber pelatihan AI. Data dari website ditampilkan dalam preview dan siap digunakan oleh AI Chatbot.
+
+Setelah impor file: File knowledge berhasil diimpor ke sistem. Konten file tersimpan sebagai sumber pengetahuan AI dan dapat digunakan untuk melatih chatbot menjawab pertanyaan pelanggan.
+
+> Screenshot: 1.png
 > Image: https://help-center.qontak.com/hc/article_attachments/52950193479833
 
-> Screenshot: Screenshot
+> Screenshot: 56.png
 > Image: https://help-center.qontak.com/hc/article_attachments/53149593468441
 
 > Screenshot: Screenshot
@@ -64,20 +68,41 @@ faithfulness_threshold: 0.6
 > Screenshot: Screenshot
 > Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXepxOn29h-vB9X0jAFERX8CuJLoTQ0FyunAocTMyBSp28Pb9r_T8owWkLyXDBY1NGvBgYhEStfBPm2pfBLMC7D9-InAVsQBpB2HNcgahxzY-qUZAGgVzijvIRVzxNg1-69LodYN1zJJe72hRuHZ-SNJ0OSF?key=a_H2g-u7deYB2NgVxhWKAg
 
-> Screenshot: Screenshot
+> Screenshot: 3.png
 > Image: https://help-center.qontak.com/hc/article_attachments/52950255673881
 
-> Screenshot: Screenshot
+> Screenshot: 4.png
 > Image: https://help-center.qontak.com/hc/article_attachments/52950255681561
 
-> Screenshot: Screenshot
+> Screenshot: 5.png
 > Image: https://help-center.qontak.com/hc/article_attachments/52950193499289
 
-## Expected Result  <!-- confidence:high ✓ -->
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/52950193500057
 
-Setelah menambahkan URL: URL eksternal berhasil ditambahkan sebagai sumber pelatihan AI. Data dari website ditampilkan dalam preview dan siap digunakan oleh AI Chatbot.
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529166489
 
-Setelah impor file: File knowledge berhasil diimpor ke sistem. Konten file tersimpan sebagai sumber pengetahuan AI dan dapat digunakan untuk melatih chatbot menjawab pertanyaan pelanggan.
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/52950255685657
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529173657
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535680793
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529175065
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535697945
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529177753
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529168537
 
 ## Error States  <!-- confidence:medium ~ -->
 

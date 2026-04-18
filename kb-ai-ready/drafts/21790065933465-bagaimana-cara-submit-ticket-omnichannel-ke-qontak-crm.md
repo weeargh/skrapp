@@ -66,6 +66,24 @@ Untuk mensubmit ticket Omnichannel ke Qontak CRM, Anda memerlukan:
 
 8. Notifikasi sukses akan muncul. Klik nomor ticket untuk membuka tiket di Qontak CRM.
 
+> Screenshot: 75.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50911798216729
+
+> Screenshot: 76.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50911841781401
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXeZ-Pza-pQDLuJf66Q7Es5xXOvDehGeauk4tRpGH-exBifL46yIZPuM3aBkxnIVKSNgPuME8f6xv3uXmaYYZT63T7ZGH8dx7TlN0kmY8nUEcb297XCixZ7ky-V8rnq_W4Mz6Y9odHbcO5mY7iS1Zya6nW8?key=Jqkn8dhQ_InX_HZYbdhKWg
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXfl0kQGBVkCqt_sTKFqMm15S-wy61_sXhkmMFwTg-LYHRpb2ejuJnMqDtgUWzQMznaR5RJOTSPAbbTKyA81QMx3LSEm4jk8Q_EIILPVxfJg-r9MEvSFjaPOqr6Z_KCZwxS-ReE7_GYUwu8jOHvODBad0Wg?key=Jqkn8dhQ_InX_HZYbdhKWg
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/35834581904537
+
+> Screenshot: 77.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50912106053913
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mensubmit ticket dengan sukses:

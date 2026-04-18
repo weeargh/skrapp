@@ -50,6 +50,12 @@ Untuk mengubah informasi pribadi pada akun Qontak Omnichannel, Anda membutuhkan:
 5. Masukkan informasi baru Anda dan simpan perubahan.
    → Sistem akan memperbarui data pribadi Anda.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49044258560793
+
+> Screenshot: upq1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776435817369
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah di atas, informasi pribadi Anda pada akun Qontak Omnichannel berhasil diperbarui. Perubahan nama lengkap dan nomor telepon akan tersimpan di halaman Mekari Account dan langsung tercermin di profil pengguna Anda di Qontak Omnichannel.

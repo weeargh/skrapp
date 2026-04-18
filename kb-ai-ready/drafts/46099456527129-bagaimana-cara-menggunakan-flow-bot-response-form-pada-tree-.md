@@ -46,6 +46,27 @@ faithfulness_threshold: 0.6
 8. Klik Save — form akan disimpan dan muncul pada halaman conversation
 9. Klik Preview conversation untuk melihat tampilan form di percakapan
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46099456518937
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46099456508057
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46099495618585
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46099456509977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46099495628313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46099456519961
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46099456521241
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Form Bot Response berhasil dibuat dan tersimpan. Form akan muncul pada halaman Tree Diagram di bagian Greetings. Saat preview conversation, pengguna dapat melihat form dengan Header text, Message content, dan Button text yang telah dikonfigurasi. Bot siap mengirimkan form kepada pengguna sebagai greeting awal conversation.

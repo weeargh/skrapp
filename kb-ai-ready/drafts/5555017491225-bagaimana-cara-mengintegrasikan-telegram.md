@@ -48,6 +48,30 @@ Perhatian: Pesan yang masuk dalam channel Telegram di Omnichannel hanya pesan ya
 6. Jika verifikasi berhasil, pop-up notifikasi "success" akan muncul secara otomatis dan Telegram channel ditambahkan ke daftar integrations.
 7. Untuk melihat detail informasi channel Telegram, klik ikon **Settings** pada nama Telegram yang telah terintegrasi.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50699258760985
+
+> Screenshot: telegram.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774916307737
+
+> Screenshot: telegram2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774892739225
+
+> Screenshot: telegram3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774892739865
+
+> Screenshot: telegram4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774916312985
+
+> Screenshot: telegram5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774916315033
+
+> Screenshot: telegram6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774892745369
+
+> Screenshot: telegram7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774892747545
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil:

@@ -51,6 +51,33 @@ Untuk mengatur Freeze Task pada menu Task Mekari Qontak CRM, Anda memerlukan:
 8. Kembali ke **Frozen task settings**, lalu nonaktifkan toggle **Frozen task**.
 9. Klik **"Disable"** pada popup konfirmasi — pengaturan akan dinonaktifkan dalam 15 menit.
 
+> Screenshot: 29.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150081079833
+
+> Screenshot: 35.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150081082265
+
+> Screenshot: 36.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150081083417
+
+> Screenshot: 37.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150053419929
+
+> Screenshot: 38.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150053421593
+
+> Screenshot: 39.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150081086617
+
+> Screenshot: 40.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53150081087513
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43686029955353
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43686029955993
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 • Pengaturan Freeze Task berhasil disimpan dengan pesan konfirmasi popup

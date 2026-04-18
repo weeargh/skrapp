@@ -30,6 +30,45 @@ faithfulness_threshold: 0.3
 
 Supervisor adalah salah satu tingkat akses pengguna dalam Qontak Omnichannel dan Qontak Chat yang memungkinkan pengguna untuk memantau dan mengelola operasional chat panel. Supervisor dapat mengakses fitur-fitur utama seperti Dashboard, Inbox, Campaign, Contacts, Chatbot, Report, Package Usage, Channel Integration, dan Settings. Akses Supervisor dirancang untuk memberikan kontrol operasional tanpa izin penuh untuk melakukan pengaturan sistem tingkat lanjut yang hanya dapat dilakukan oleh role Admin.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48683232179353
+
+> Screenshot: mceclip2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/11799888781977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667012086937
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667021271577
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667021273753
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667021275801
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667021279385
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667021284889
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667012115097
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667021296793
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667021301529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667021304345
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48667012131993
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Akses Supervisor memastikan bahwa tim operasional dapat memantau status agent secara real-time (online/offline), mengakses riwayat percakapan pelanggan, dan mengelola campaign serta contact tanpa perlu memberikan akses administratif penuh. Hal ini meningkatkan efisiensi operasional sambil mempertahankan kontrol keamanan melalui pemisahan tugas antara Supervisor dan Admin, mencegah perubahan konfigurasi sistem yang tidak sengaja.

@@ -72,6 +72,81 @@ Anda tidak perlu mengaktifkan semua jenis survei sekaligus — dapat memilih ses
 11. Klik **Simpan** atau tombol konfirmasi untuk menyimpan konfigurasi survei
     → Sistem akan menampilkan notifikasi sukses dan survei siap dikirim ke channel yang dipilih
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190077337
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190093209
+
+> Screenshot: 2.1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27670164868377
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190084889
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190091673
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27670174179865
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27670164934809
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163237017
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27670164942361
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27670164948377
+
+> Screenshot: CSAT PREV.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671737768857
+
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190110617
+
+> Screenshot: 12.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671737811865
+
+> Screenshot: 18.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190100633
+
+> Screenshot: 14.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671737819801
+
+> Screenshot: 15.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671745627929
+
+> Screenshot: CES PREV.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671745631129
+
+> Screenshot: 16.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163247513
+
+> Screenshot: 17.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671745714201
+
+> Screenshot: 19.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671737902617
+
+> Screenshot: 20.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671737905561
+
+> Screenshot: NPS PREV.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671745731993
+
+> Screenshot: 21.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671745740953
+
+> Screenshot: 22.png
+> Image: https://help-center.qontak.com/hc/article_attachments/27671745766553
+
+> Screenshot: 23.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163279897
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengatur Customer Survey per Channel, Anda akan melihat:

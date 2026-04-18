@@ -60,6 +60,24 @@ faithfulness_threshold: 0.6
 9. Jendela pop-up akan menampilkan Recovery Key Anda. Klik **"Download"** untuk menyimpannya di tempat aman.
 10. Sistem akan menampilkan pesan konfirmasi bahwa 2FA dengan Authenticator berhasil diaktifkan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52747638213401
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52747622589977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52747622599449
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52747622600089
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52747622602393
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52747622605209
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 - Fitur 2FA berhasil diaktifkan pada akun Anda

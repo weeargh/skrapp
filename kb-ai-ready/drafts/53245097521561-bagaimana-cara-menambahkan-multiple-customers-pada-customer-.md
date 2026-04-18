@@ -60,6 +60,9 @@ Proses ini memungkinkan Anda mengimpor data pelanggan dalam jumlah besar sekalig
 
 10. Tunggu hingga proses selesai. Sistem akan menampilkan notifikasi konfirmasi bahwa data telah berhasil diunggah dan data akan muncul di halaman All customers.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53245072601369
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses unggah selesai, Anda akan melihat:

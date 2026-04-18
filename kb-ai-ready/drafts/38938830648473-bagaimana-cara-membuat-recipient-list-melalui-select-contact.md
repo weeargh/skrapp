@@ -60,6 +60,51 @@ Pastikan Anda telah menyimpan kontak-kontak yang ingin digunakan dalam kampanye 
 
 10. Klik tombol Apply filters untuk menerapkan semua filter yang telah dibuat. Daftar kontak akan diperbarui sesuai kriteria filter.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43690772477209
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43690772477465
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939226353049
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939216303001
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939226355353
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939216306073
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939216307097
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939216308633
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939226361881
+
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939216312217
+
+> Screenshot: 11.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939226364185
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38942783872665
+
+> Screenshot: 12.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939226366105
+
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38939226368281
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38938798073241
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat:

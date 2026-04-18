@@ -72,6 +72,18 @@ Untuk membuat, mengedit, dan menghapus Company di versi mobile Qontak CRM, Anda 
 5. Pilih opsi **Delete**
 6. Konfirmasi penghapusan ketika diminta sistem
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46133275682073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46133268981529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46133275685145
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46133275694233
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah Membuat Company Baru:**

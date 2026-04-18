@@ -47,6 +47,9 @@ Untuk menggunakan fitur Filter Inbox pada Qontak Omnichannel versi web, Anda mem
    - **Tags**: Pilih tag yang sudah ditambahkan pada pesan
 5. Sistem akan menampilkan pesan yang sesuai dengan filter yang Anda terapkan.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49381136455705
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menerapkan filter, daftar pesan di Inbox akan diperbarui menampilkan hanya pesan yang sesuai dengan kriteria filter yang dipilih. Anda dapat melihat:

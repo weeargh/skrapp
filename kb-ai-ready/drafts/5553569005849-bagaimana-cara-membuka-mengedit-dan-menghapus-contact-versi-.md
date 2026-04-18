@@ -51,6 +51,18 @@ faithfulness_threshold: 0.6
 
 5. Jika memilih **Delete contact**: Konfirmasi penghapusan dengan klik **"Delete"** pada pop-up yang muncul. Kontak akan dihapus dari sistem.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462945389209
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462945390745
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462945391897
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462945393689
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan pengeditan, sistem menampilkan notifikasi "Perubahan berhasil disimpan" dan Anda kembali ke daftar kontak menu **Contacts** dengan data yang telah diperbarui.

@@ -45,6 +45,9 @@ faithfulness_threshold: 0.6
 4. Geser toggle ke arah kiri untuk mengaktifkan status **Offline** – Anda tidak akan menerima pesan masuk baru.
 5. Perubahan status akan langsung berlaku di sistem Omnichannel.
 
+> Screenshot: mceclip0.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774222841497
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 • Indikator status berubah menampilkan status Online atau Offline

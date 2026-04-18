@@ -57,6 +57,18 @@ Untuk melakukan update deal secara massal di Qontak CRM versi web, Anda membutuh
 7. Pilih file template dan klik tombol "Upload".
    → Sistem akan memproses dan menyimpan semua perubahan.
 
+> Screenshot: 26.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49955362961433
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163158425
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163166361
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163160601
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah upload berhasil:

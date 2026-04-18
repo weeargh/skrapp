@@ -55,6 +55,21 @@ Untuk menambahkan Tasks secara massal (bulk upload) di Mekari Qontak CRM, Anda m
 
 8. Untuk memantau proses pengunggahan, buka menu **Properties**, kemudian klik tab **Upload/Download**. Anda dapat melihat status upload secara berkala.
 
+> Screenshot: 31.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56956754426777
+
+> Screenshot: bulkontak4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776161701529
+
+> Screenshot: bulkontak6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776188543513
+
+> Screenshot: 34.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56956754427417
+
+> Screenshot: 33.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56956754428185
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah bulk upload tasks berhasil:

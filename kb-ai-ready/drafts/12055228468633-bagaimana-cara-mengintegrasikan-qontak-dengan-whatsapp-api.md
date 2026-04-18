@@ -60,6 +60,27 @@ Jika Anda belum memiliki Meta Business Account dan WhatsApp Business Profile, si
 4. Klik tombol **Hubungkan** atau **Connect**
 5. Sistem akan memproses integrasi dan menampilkan notifikasi "WhatsApp Terhubung"
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53356189359001
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53356160571929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53356189407129
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53356189408793
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53356189367833
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53356160525593
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53356160575769
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil:

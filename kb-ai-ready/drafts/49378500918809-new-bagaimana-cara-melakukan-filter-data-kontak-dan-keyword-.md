@@ -46,7 +46,9 @@ Anda harus memiliki akses ke menu Inbox pada Qontak Omnichannel. Fitur filter pe
 
 4. Ketik kata kunci (Kontak atau Keyword) pada kolom pencarian. Hasil pencarian akan difilter berdasarkan tanggal yang Anda pilih.
 
-5. Klik tombol Load older results untuk menampilkan data tambahan secara otomatis dan melihat keseluruhan hasil pencarian.
+5. Klik tombol Load older results untuk menampilkan data tambahan secara otomatis dan melihat keseluruhan hasil pencarian.## Expected Result  <!-- confidence:high ✓ -->
+
+Setelah menerapkan filter dan melakukan pencarian, Anda akan melihat daftar kontak atau keyword yang sesuai dengan kriteria filter tanggal dan kata kunci yang dimasukkan. Data ditampilkan dalam urutan yang relevan di kolom pencarian Inbox. Jika klik tombol Load older results, data tambahan akan dimuat secara bertahap untuk menampilkan semua hasil pencarian.
 
 > Screenshot: Screenshot
 > Image: https://help-center.qontak.com/hc/article_attachments/49381241172377
@@ -62,10 +64,6 @@ Anda harus memiliki akses ke menu Inbox pada Qontak Omnichannel. Fitur filter pe
 
 > Screenshot: Screenshot
 > Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXfc8kSMJ_3vDVKAI6aGOxNv5JboHl6RJi_nIy4gbIl9mYSk3BJ7Jsz5L7ILq5Lf0YZ-FmAeddYhqcFCMl0zg7kZlTYoHIIYVQ_bjmtarMm_oz8xE7JDxxfMN-NyHaTFqQMGxli96Q?key=dBeBUE6ziVMNa1nUxPbfmw
-
-## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menerapkan filter dan melakukan pencarian, Anda akan melihat daftar kontak atau keyword yang sesuai dengan kriteria filter tanggal dan kata kunci yang dimasukkan. Data ditampilkan dalam urutan yang relevan di kolom pencarian Inbox. Jika klik tombol Load older results, data tambahan akan dimuat secara bertahap untuk menampilkan semua hasil pencarian.
 
 ## Error States  <!-- confidence:high ✓ -->
 

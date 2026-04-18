@@ -55,24 +55,22 @@ Ikuti langkah-langkah berikut sesuai dengan kebutuhan Anda:
 **Opsi C: Single Live Location Tanpa Tracking**
 1. Klik tanda panah di sebelah kanan username → pilih **Profile settings**
 2. Klik **Live location** → nonaktifkan **Live tracking** dan **Multiple live location**
-3. Klik **Save changes**
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49114748823577
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184552985
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49114749254681
-
-## Expected Result  <!-- confidence:high ✓ -->
+3. Klik **Save changes**## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah klik **Save changes**, sistem menampilkan konfirmasi bahwa pengaturan Live Location berhasil disimpan. Pengaturan yang dipilih akan langsung berlaku di akun Qontak CRM Anda:
 
 - Jika memilih Opsi A: Live tracking aktif dengan intensitas sesuai pilihan, dan Multiple live location otomatis aktif (terkunci)
 - Jika memilih Opsi B: Multiple live location aktif untuk merekam beberapa kehadiran tanpa tracking otomatis
 - Jika memilih Opsi C: Hanya satu lokasi yang dapat direkam per sesi absensi
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49114748823577
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184552985
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49114749254681
 
 ## Error States  <!-- confidence:high ✓ -->
 

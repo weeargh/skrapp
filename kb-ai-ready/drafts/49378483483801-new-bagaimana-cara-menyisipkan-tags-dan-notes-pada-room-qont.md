@@ -42,6 +42,12 @@ Anda harus memiliki akses ke menu Inbox Omnichannel Qontak. Fitur Tags dan Notes
 6. Untuk menambahkan tag: klik panah pada kolom Tags, pilih tag yang sudah ada atau ketik nama tag baru sesuai kategori yang diinginkan, lalu tekan Enter.
 7. Tag yang ditambahkan akan muncul di bawah daftar pesan masuk percakapan tersebut.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49383365704473
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49383380472345
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah, catatan akan tersimpan di Room Info dengan status tersimpan ditandai oleh tombol Save yang tidak aktif. Tag yang ditambahkan akan tampil sebagai label berwarna di bawah daftar pesan percakapan. Baik catatan maupun tag dapat digunakan untuk memfilter dan mengorganisir Inbox sesuai kebutuhan customer service Anda.

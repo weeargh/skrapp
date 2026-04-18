@@ -29,6 +29,21 @@ faithfulness_threshold: 0.6
 
 Menu Companies adalah fitur dalam Qontak CRM yang berfungsi sebagai pusat manajemen database perusahaan. Menu ini memungkinkan Anda mengelola seluruh informasi dan aktivitas yang terkait dengan perusahaan atau bisnis pelanggan Anda. Melalui Menu Companies, Anda dapat melihat daftar lengkap perusahaan yang terdaftar, termasuk detail nama, asosiasi perusahaan, tipe perusahaan, tanggal pembuatan dan pembaruan, serta informasi pengguna CRM yang membuat perusahaan tersebut.
 
+> Screenshot: company_1_.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089826073
+
+> Screenshot: download_companies.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089841305
+
+> Screenshot: edited.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766136809753
+
+> Screenshot: search.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766136800409
+
+> Screenshot: name.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766136814489
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Menu Companies membantu Anda mengorganisir dan melacak semua informasi klien bisnis secara terpusat. Dengan fitur ini, Anda dapat dengan mudah mengakses customer journey lengkap setiap perusahaan, mengelola hubungan pelanggan secara efisien, dan membuat keputusan bisnis berdasarkan data yang terstruktur. Fitur manajemen massal seperti penambahan, pengubahan, dan penghapusan perusahaan menghemat waktu dan meningkatkan produktivitas tim CRM Anda.

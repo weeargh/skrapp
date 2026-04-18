@@ -43,6 +43,27 @@ faithfulness_threshold: 0.6
 5. Klik tombol **Resolve** untuk menutup room comments — sistem akan berhenti menerima komentar baru pada postingan tersebut.
 6. (Jika diperlukan) Klik tombol **Reopen** untuk membuka kembali room comments yang sudah di-resolve.
 
+> Screenshot: 28.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173109785
+
+> Screenshot: 30.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173114137
+
+> Screenshot: 40.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149576089
+
+> Screenshot: 34.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173121945
+
+> Screenshot: 35.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149566361
+
+> Screenshot: 41.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149574809
+
+> Screenshot: 42.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173152281
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Tab Comments menampilkan daftar room comments dari Instagram Anda. Setiap room comments menunjukkan: postingan yang mendapat komentar, jumlah komentar, agent yang di-assign, dan status (aktif atau resolved). Setelah klik Resolve, room comments berubah status menjadi tertutup dan tidak akan menerima komentar baru. Setelah klik Reopen, room comments kembali ke status aktif dan siap menerima komentar.

@@ -48,6 +48,9 @@ Untuk melakukan generate API Token pada Qontak Omnichannel, Anda memerlukan:
 
 6. Klik tombol **Copy** untuk menyalin token ke clipboard dan gunakan untuk keperluan integrasi Anda.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49491403552281
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil melakukan generate API Token, Anda akan melihat:

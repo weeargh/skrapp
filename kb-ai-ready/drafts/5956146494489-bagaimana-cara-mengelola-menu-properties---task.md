@@ -59,6 +59,24 @@ Prerequisite ini memastikan Anda memiliki izin yang diperlukan untuk membuat, me
 
 9. Untuk property default yang tidak dapat dihapus, klik **Edit**, kosongkan checkbox **Show**, lalu klik **Save**.
 
+> Screenshot: 28.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56956787734041
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774916425497
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774892865817
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774892867353
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774916435993
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774916438809
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah pengelolaan menu Properties Task:

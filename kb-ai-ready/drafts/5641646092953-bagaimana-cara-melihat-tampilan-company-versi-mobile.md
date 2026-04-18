@@ -46,6 +46,9 @@ Untuk melihat tampilan Company versi mobile, Anda memerlukan:
 
 4. Halaman Company list akan ditampilkan dengan berbagai fitur termasuk search bar, filter, dan daftar perusahaan yang telah terdaftar.
 
+> Screenshot: 24.png
+> Image: https://help-center.qontak.com/hc/article_attachments/46134077629977
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Halaman Company list pada versi mobile berhasil ditampilkan dengan konten berikut:

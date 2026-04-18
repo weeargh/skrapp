@@ -41,6 +41,24 @@ Anda memerlukan akses Admin ke akun Mekari Omnichannel untuk mengelola Campaign 
 6. Verifikasi pratinjau pesan di bagian Message preview.
 7. Klik tombol Send campaign untuk mengirimkan campaign.
 
+> Screenshot: 0.1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42568264189209
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42568256489241
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42568256490265
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42568436798489
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42568422828185
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42568436803097
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik tombol Send campaign, sistem akan memproses pengiriman berdasarkan metode yang dipilih. Untuk Send now, campaign langsung dikirim kepada semua penerima. Untuk Send later, campaign akan dikirim pada tanggal dan waktu yang telah ditentukan. Untuk Send as recurring campaign, pesan akan dikirim berulang sesuai periode yang dipilih (harian, mingguan, atau bulanan) hingga tanggal akhir yang ditentukan. Anda akan melihat status campaign di halaman Campaign list.

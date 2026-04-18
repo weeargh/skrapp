@@ -55,6 +55,21 @@ Sebelum menambahkan company secara bulk, pastikan Anda memenuhi persyaratan beri
 
 8. Tunggu notifikasi sukses. Untuk melihat progress unggahan, buka menu **Properties** → tab **Upload/Download**.
 
+> Screenshot: 01.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781141978393
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49114476804121
+
+> Screenshot: Company_Bulk_3.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36781183692185
+
+> Screenshot: Company_Bulk_4.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36781183691161
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49114530713241
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses selesai, Anda akan melihat:

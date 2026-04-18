@@ -57,6 +57,30 @@ Jika Anda tidak memiliki role Admin, hubungi tim support Qontak di support-qonta
 
 9. Setelah selesai, sistem menyimpan perubahan secara otomatis.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49066685060505
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49066685063961
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49066651597593
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49066651599257
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49066651610393
+
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49066685080089
+
+> Screenshot: 11.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49066651616281
+
+> Screenshot: 12.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49066651617945
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan kustomisasi Webchat header:

@@ -56,6 +56,36 @@ Sebelum melakukan pengaturan chatbot, pastikan Anda memiliki:
 5. Jika memilih Assign conversation, tentukan Customer idle time dan pilih cara penugasan (Auto, Division, atau Agent)
 6. Klik Save
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774150060057
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173750297
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173754393
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173790873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173761305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173797401
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774150069529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774150081561
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173796121
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173802393
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Pengaturan chatbot berhasil disimpan. Sistem akan menampilkan pesan konfirmasi dan kembali ke halaman menu Chatbot. Pengaturan AI Response dan Idle Action akan berlaku untuk semua percakapan chatbot yang menggunakan konfigurasi default, atau untuk percakapan spesifik yang telah disesuaikan. Chatbot siap merespon percakapan customer sesuai dengan aturan yang telah Anda tentukan.

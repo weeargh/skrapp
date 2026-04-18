@@ -30,6 +30,27 @@ faithfulness_threshold: 0.6
 
 Report dengan tipe General adalah laporan ringkas yang menampilkan gambaran total keseluruhan data dalam sistem Qontak CRM. Report ini mengagregasi seluruh informasi yang diinput oleh Sales atau User ke dalam CRM, kemudian menyajikannya dalam bentuk visualisasi data seperti grafik dan tabel. Report General dirancang untuk memberikan overview cepat tentang performa penjualan dan aktivitas deals di organisasi Anda tanpa memerlukan analisis mendalam.
 
+> Screenshot: 42.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50807247824665
+
+> Screenshot: 43.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50807247827225
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5960935421977
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5960950065177
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5960943631001
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5960958029209
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5960950551577
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Report General membantu Anda memantau kesehatan pipeline penjualan secara menyeluruh dengan cepat. Melalui visualisasi Sales Performance, Yearly Sales Comparison, dan Deals Won, Anda dapat mengidentifikasi tren penjualan, membandingkan performa antar tahun, dan melacak progress deals menuju stage Won. Informasi ini penting untuk pengambilan keputusan strategis, evaluasi target penjualan, dan optimalisasi proses sales di organisasi Anda.

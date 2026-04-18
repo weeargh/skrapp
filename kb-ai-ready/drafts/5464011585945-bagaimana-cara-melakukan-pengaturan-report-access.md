@@ -56,6 +56,42 @@ faithfulness_threshold: 0.6
 6. Aktifkan atau nonaktifkan tombol akses unduh report sesuai kebutuhan
 7. Klik "Update User" atau tombol simpan — Pengaturan Report Access berhasil diperbarui
 
+> Screenshot: Screenshot 2023-08-08 at 10.55.18.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089340313
+
+> Screenshot: Screenshot 2023-08-08 at 11.31.53.png
+> Image: https://help-center.qontak.com/hc/article_attachments/21569876972057
+
+> Screenshot: b3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089286297
+
+> Screenshot: b4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766085921433
+
+> Screenshot: b5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766085926425
+
+> Screenshot: b6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5463903993113
+
+> Screenshot: c2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5463876976793
+
+> Screenshot: c3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766085938713
+
+> Screenshot: c4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5463896625433
+
+> Screenshot: c5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5463882906393
+
+> Screenshot: c6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089329945
+
+> Screenshot: c7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5463911520025
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Pengaturan Report Access berhasil tersimpan di sistem. Pengguna yang ditambahkan atau diperbarui akan memiliki akses ke laporan sesuai dengan opsi yang dipilih (Everything, Team Only, atau Owned Only). Penampilan data report pada menu Dashboard akan disesuaikan secara otomatis sesuai dengan pengaturan akses yang ditentukan. Jika akses unduh report diaktifkan, pengguna dapat mengunduh laporan sesuai dengan level akses mereka.

@@ -56,30 +56,7 @@ Untuk mengelola menu Properties pada Tickets, Anda membutuhkan:
 
 9. Ubah detail property sesuai kebutuhan atau klik **"Delete property"** untuk menghapus (hanya property tambahan yang dapat dihapus).
 
-10. Klik **"Save"** untuk menyimpan perubahan. Sistem akan memperbarui daftar property.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50911549787929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184450073
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184452377
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142825625
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142823321
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142824089
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184449177
-
-## Expected Result  <!-- confidence:high ✓ -->
+10. Klik **"Save"** untuk menyimpan perubahan. Sistem akan memperbarui daftar property.## Expected Result  <!-- confidence:high ✓ -->
 
 Property berhasil dibuat, diubah, atau dihapus:
 
@@ -88,6 +65,18 @@ Property berhasil dibuat, diubah, atau dihapus:
 • Default field (dibuat oleh Qontak) tetap ada dan tidak dapat dihapus
 • Jika property diset sebagai "Required", kolom tersebut akan wajib diisi saat membuat atau mengedit Tickets
 • Perubahan atau penghapusan property segera berlaku pada semua Tickets di workspace
+
+> Screenshot: 74.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50911549787929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184449177
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184450073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142824089
 
 ## Error States  <!-- confidence:medium ~ -->
 

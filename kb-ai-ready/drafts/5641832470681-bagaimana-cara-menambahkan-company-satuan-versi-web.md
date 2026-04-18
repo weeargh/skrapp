@@ -56,6 +56,12 @@ Untuk menambahkan Company satuan di Qontak CRM versi web, Anda memerlukan:
 6. Klik tombol **Create Company** untuk menyimpan data.
    → Sistem menyimpan company baru dan menampilkan halaman detail company.
 
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775763547801
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775763546009
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan company satuan, Anda akan melihat:

@@ -50,12 +50,7 @@ Catatan: Jika perusahaan Anda belum berlangganan Mekari Insight, Anda perlu mela
 4. Jika perusahaan belum berlangganan: Klik tombol **Get access via Marketplace** untuk membeli paket Mekari Insight.
    → Anda akan dialihkan ke halaman Marketplace.
 
-5. Jika perusahaan sudah berlangganan namun Anda belum memiliki akses: Hubungi Admin atau Owner perusahaan untuk mengajukan akses, atau klik **Switch account** untuk beralih ke akun yang sudah memiliki izin akses.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43822900289305
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Jika perusahaan sudah berlangganan namun Anda belum memiliki akses: Hubungi Admin atau Owner perusahaan untuk mengajukan akses, atau klik **Switch account** untuk beralih ke akun yang sudah memiliki izin akses.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengajukan akses Mekari Insight:
 
@@ -64,6 +59,18 @@ Setelah mengajukan akses Mekari Insight:
 • Jika perusahaan sudah berlangganan dan Anda memiliki akses: Halaman Mekari Insight menampilkan laporan yang dapat disesuaikan sesuai kebutuhan perusahaan Anda. Anda dapat melihat semua data insight yang relevan dengan peran dan izin akses Anda.
 
 • Jika perusahaan sudah berlangganan namun Anda belum memiliki akses: Halaman menunjukkan pesan bahwa akses belum diberikan, dan Anda dapat meminta izin dari Admin atau beralih akun.
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43822900289305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43822891598745
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43822900290073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43822900290585
 
 ## Error States  <!-- confidence:medium ~ -->
 

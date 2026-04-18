@@ -54,6 +54,27 @@ Catatan: Fitur Conditional format (Format bersyarat) hanya berlaku untuk Deals d
 
 7. Conditional format yang telah dibuat siap digunakan saat pembuatan Deals.
 
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49889924033689
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49889924034713
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190278425
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163410073
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190282137
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49889987003801
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776190286873
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat Conditional format:

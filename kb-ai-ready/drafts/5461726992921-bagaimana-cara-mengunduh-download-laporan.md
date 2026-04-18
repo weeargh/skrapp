@@ -57,6 +57,12 @@ Catatan: Laporan dapat diunduh dalam format PDF atau Excel sesuai kebutuhan Anda
 **Mengunduh Laporan dari Menu Report:**
 Anda juga dapat mengakses menu Report dari navigasi utama untuk menemukan dan mengunduh laporan dengan cara yang sama.
 
+> Screenshot: 41.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50804967376025
+
+> Screenshot: Mengunduh_Laporan_3.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36776287485081
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, laporan yang Anda pilih akan berhasil diunduh ke komputer atau laptop Anda dalam format:

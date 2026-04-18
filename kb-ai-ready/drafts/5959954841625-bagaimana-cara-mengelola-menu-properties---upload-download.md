@@ -41,6 +41,12 @@ faithfulness_threshold: 0.3
 4. Klik tab **Upload / Download**
 5. Sistem akan menampilkan daftar lengkap semua aktivitas upload dan download database perusahaan Anda dengan detail informasi masing-masing transaksi
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49114076834585
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49114062966425
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Tab Upload / Download menampilkan tabel yang berisi kolom: Date, Type, Filename, Email (Sent To), Sent At, Status, Progress, dan Completed At. Setiap baris menunjukkan satu aktivitas upload atau download dengan informasi lengkap tanggal, jenis file, alamat email tujuan, status proses (sedang berlangsung atau selesai), dan jumlah data yang berhasil diproses.

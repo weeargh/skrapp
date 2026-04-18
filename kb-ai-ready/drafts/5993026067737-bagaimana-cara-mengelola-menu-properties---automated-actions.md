@@ -45,6 +45,12 @@ Untuk mengelola Menu Properties - Automated Actions di Mekari Qontak CRM, Anda m
 6. Klik tombol **Save Automated Action**. Sistem akan menampilkan pesan konfirmasi berhasil dan automated action akan aktif sesuai trigger yang ditentukan.
 7. Untuk mengedit, klik icon **Pensil** pada action yang ingin diubah. Untuk menghapus, klik icon **Tempat Sampah**.
 
+> Screenshot: mceclip6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/10416230369305
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776434962329
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Automated action berhasil dibuat dan tersimpan. Sistem akan menampilkan pesan konfirmasi. Ketika trigger terpenuhi (misalnya deal baru dibuat di stage yang ditentukan), sistem secara otomatis akan membuat tugas dengan detail yang telah dikonfigurasi dan memberikan notifikasi kepada pemilik entity. Automated action akan muncul di daftar tab Automated Action dengan status aktif.

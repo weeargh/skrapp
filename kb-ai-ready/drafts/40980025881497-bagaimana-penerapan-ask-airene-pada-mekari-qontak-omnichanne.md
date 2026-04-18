@@ -55,6 +55,42 @@ Sebelum menerapkan Ask Airene pada Mekari Qontak Omnichannel, pastikan Anda meme
 5. Klik tombol **"Save"**.
    - Sistem akan menampilkan notifikasi status "Processing" dan mulai memproses riwayat percakapan (biasanya 1-1,5 jam).
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980025806873
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980025809945
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980025811353
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980025814041
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980025815961
+
+> Screenshot: 3.2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980025819545
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/40980025821849
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980010636441
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980010638873
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980025834009
+
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980010650905
+
+> Screenshot: 11.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40980010678681
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat:

@@ -30,6 +30,18 @@ faithfulness_threshold: 0.6
 
 Limit Workload pada Agents Management adalah fitur pengaturan kapasitas maksimal percakapan (chat) yang dapat ditangani oleh setiap agent secara bersamaan dalam Omnichannel Qontak. Fitur ini memungkinkan Admin untuk menetapkan batas jumlah chat aktif per agent, sehingga ketika agent mencapai limit tersebut, pesan masuk baru akan secara otomatis dialihkan ke agent lain yang masih memiliki kapasitas dan status online.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36778709551641
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36778741338905
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36778741342361
+
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36778709564185
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Pengaturan limit workload memastikan distribusi beban kerja yang seimbang di antara tim customer service Anda. Dengan membatasi jumlah chat per agent, Anda dapat mencegah agent menjadi overload, meningkatkan kualitas layanan pelanggan, mempercepat waktu respons, dan memaksimalkan efisiensi tim. Fitur ini juga mendukung skalabilitas operasional omnichannel Anda dengan manajemen sumber daya yang lebih terukur.

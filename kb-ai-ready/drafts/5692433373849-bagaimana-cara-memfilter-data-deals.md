@@ -52,6 +52,15 @@ Untuk memfilter data Deals di Qontak CRM, Anda memerlukan:
 5. Untuk menghapus filter dan kembali ke tampilan default, klik tombol **Reset**.
    → Daftar Deals akan kembali menampilkan semua data tanpa filter.
 
+> Screenshot: 19.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49954364846617
+
+> Screenshot: Filter_Data_Deals_2.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/5692471984921
+
+> Screenshot: Filter_Data_Deals_3.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36776188603801
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda mengklik tombol **Apply**, daftar Deals pada halaman akan berubah dan hanya menampilkan Deals yang sesuai dengan kriteria filter yang Anda pilih. Anda dapat melihat jumlah Deals yang difilter, mengunduhnya, atau menghapusnya sesuai kebutuhan. Ketika Anda klik **Reset**, daftar Deals akan kembali ke tampilan awal menampilkan semua Deals tanpa filter.

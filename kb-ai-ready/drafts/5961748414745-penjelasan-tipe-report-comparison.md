@@ -29,6 +29,27 @@ faithfulness_threshold: 0.6
 
 Report dengan tipe Comparison dalam Qontak CRM adalah laporan yang menampilkan perbandingan kinerja antar Sales User berdasarkan data yang diinput dalam aplikasi. Laporan ini menggabungkan metrik seperti total nilai Deal, jumlah Deal, aktivitas penjualan, dan distribusi Deal di setiap tahap Pipeline. Report tipe Comparison membantu mengidentifikasi performa relatif setiap anggota tim Sales dalam periode waktu tertentu yang dapat disesuaikan melalui filter di menu Dashboard CRM.
 
+> Screenshot: 49.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50807601164313
+
+> Screenshot: 50.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50807601167129
+
+> Screenshot: kzkzksdbasdkhasd.png
+> Image: https://help-center.qontak.com/hc/article_attachments/10343313738393
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5961812721945
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5961806662297
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5961826966425
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5961806877337
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Report Comparison memungkinkan manager dan leader tim untuk memahami kontribusi individual setiap Sales User terhadap target penjualan. Dengan visualisasi perbandingan yang jelas (leaderboard, stacked bar charts), Anda dapat mengidentifikasi top performer, mendeteksi gap dalam aktivitas Sales, dan membuat keputusan berbasis data untuk optimasi strategi penjualan. Laporan ini juga membantu mengukur efektivitas sales cycle dan sumber prospek baru per user.

@@ -70,6 +70,27 @@ Untuk menambahkan produk secara bulk (unggah file) di Qontak CRM, Anda membutuhk
 9. Pantau progres pengunggahan di menu **Properties** → **Upload/Download**
    → Status pengunggahan ditampilkan secara real-time
 
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5498042250265
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49112216742297
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774222759449
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774249495449
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49112185432473
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774222766873
+
+> Screenshot: 11.2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774222768793
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah unggahan selesai, Anda akan menerima notifikasi bahwa data produk berhasil terunggah. Semua produk dari file Excel akan tersimpan dalam database Products Qontak CRM dan dapat langsung digunakan untuk transaksi atau referensi. Data produk akan muncul dalam daftar Products dengan semua informasi (nama, harga, kategori) tersimpan dan dapat diakses.

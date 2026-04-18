@@ -53,6 +53,18 @@ Proses modifikasi memerlukan waktu tunggu sekitar 15 menit setelah menyimpan per
 8. Di kolom **Size Unit/Label**, masukkan unit/label yang dibutuhkan (contoh: Kg, Ton, Gr, atau angka), klik **Save changes**
 9. Sistem akan menampilkan notifikasi penyimpanan berhasil. Label baru akan muncul di halaman **Deals** setelah 15 menit
 
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49889724776729
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXeHcJvbEGJnI29eXnRi0ZoLniSQZUZ4c3I2mrL4f1mU7RZqeTtAj4JzXfEBG0rznbYolK2CsegNe0wOcIZyvv6t1RUnVxJLWkvSfQg1Yjqb_4HZyOw5c-5dEZsSJ2ktjARJdg0TUIHoqALv78I1m9XZcWuz?key=FhkmOGFP9H_AkEGYxSsmZA
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXfdKBcH0DhZBzE9N5WvlyGl-AflyV_-wDfznLluWdcBKEIFrkifOftLeZ9ZaE9wlr9DXYSaLE_DGWi6tihrPgYp0rbUAW6vdxB4toj2H50OYUlOI6zPjPrwfiiKcuxrt5hzsbDPLvY9zf-uAekCurAw4ogC?key=FhkmOGFP9H_AkEGYxSsmZA
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0cE_TXtPhmkVLc1ZtCY7RAtcdG7BGxj_Fz__wbNLdj70w8FWv6YMkiptrVvPx_j4chWQ_R7_IwcgV7LLbPi0jVj_DH1kA0qMf26qV8BnphcfyB_aL1Jks9RAKI0_YlPzMFJ-uF65nzK8KJShiyzhnLESf?key=FhkmOGFP9H_AkEGYxSsmZA
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan semua langkah, Anda akan melihat:

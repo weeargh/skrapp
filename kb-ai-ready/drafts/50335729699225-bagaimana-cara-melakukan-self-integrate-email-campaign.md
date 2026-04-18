@@ -56,6 +56,78 @@ Anda ingin melakukan self integrate email campaign di Mekari Qontak. Sebelum mem
 
 9. Tunggu hingga status subdomain berubah menjadi **Verified**. Sistem menampilkan subdomain yang telah diverifikasi dan memungkinkan pembuatan email sender.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982346649
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982348953
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931941037593
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982360345
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982364313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982364953
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982365849
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982366873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982367897
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931941044633
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931941046425
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982371865
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931941049113
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931941049881
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931941050521
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982376089
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982397977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982399385
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931941080729
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982401689
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982403097
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982406041
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931941093529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51931982411417
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses self integrate selesai, Anda akan melihat:

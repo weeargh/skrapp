@@ -60,6 +60,12 @@ Untuk menginstall Bizphone Desktop App, Anda memerlukan:
 3. (Opsional) Pindahkan aplikasi Bizphone ke folder Aplikasi.
 4. Buka aplikasi Bizphone dengan klik dua kali file aplikasi.
 
+> Screenshot: DQqR-AORLyJPt2W3_ZobX2syWULcjuvGvOj5Wthj2KJjj1Q3Om8afof49t2L-JuyjO8uQWd4OG7K2csPl0lKAk8RHXnPfiXepI7t.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774249900697
+
+> Screenshot: m-21.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774249908377
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah instalasi berhasil diselesaikan:

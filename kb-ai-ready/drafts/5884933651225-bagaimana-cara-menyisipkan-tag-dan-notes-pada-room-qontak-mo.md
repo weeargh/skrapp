@@ -50,6 +50,12 @@ faithfulness_threshold: 0.6
 
 7. Tekan tombol "Save" untuk mengonfirmasi semua perubahan Tags dan Notes. Sistem akan menampilkan bahwa Contact Info telah terupdate.
 
+> Screenshot: 165.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53772952864025
+
+> Screenshot: 168.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53772976231193
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Notes dan Tags pada Contact Info room percakapan berhasil disimpan dan terupdate. Ketika Anda membuka kembali halaman Contact Info room yang sama, Notes yang Anda tulis akan ditampilkan dalam kolom Notes, dan Tags yang dipilih akan ditandai dengan centang di daftar Tags. Perubahan ini dapat dilihat oleh agent lain yang mengakses room percakapan yang sama.

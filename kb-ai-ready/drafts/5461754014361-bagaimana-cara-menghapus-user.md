@@ -43,6 +43,15 @@ faithfulness_threshold: 0.6
 6. Pada pop-up, pilih akun pengguna lain yang akan menampung database dari user yang dihapus. Sesuaikan dengan kebutuhan Anda.
 7. Klik tombol "Save". Sistem akan memproses pemindahan database dan penghapusan akun.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49060564170521
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49060614508057
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49060718276377
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Akun user berhasil dihapus dari sistem CRM. Database yang terkait dengan user tersebut dipindahkan ke akun pengguna yang Anda pilih. User tidak lagi muncul dalam daftar Users di tab "Users" pada Profile Settings. Proses penghapusan dapat memerlukan beberapa saat tergantung volume data yang diproses.

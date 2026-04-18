@@ -30,6 +30,9 @@ faithfulness_threshold: 0.6
 
 Variabel Template Campaign adalah fitur pada Mekari Qontak yang memungkinkan Anda menampilkan data unik untuk setiap penerima dalam kampanye WhatsApp (WABA) atau Email. Variabel menggunakan format placeholder numerik berurutan seperti {{1}}, {{2}}, {{3}} yang akan diganti dengan data aktual saat kampanye dikirim. Fitur ini membuat konten template lebih personal dan interaktif dengan menampilkan informasi spesifik seperti nama pelanggan, nomor invoice, tanggal jatuh tempo, atau kode voucher untuk setiap penerima.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56554820108313
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Menggunakan variabel dalam template campaign meningkatkan tingkat engagement pelanggan karena pesan terasa lebih personal dan relevan. Dengan menampilkan data spesifik seperti nama, nomor pesanan, atau jadwal pengiriman, Anda dapat membangun kepercayaan dan respons yang lebih baik dari audiens. Variabel juga menghemat waktu pembuatan kampanye karena Anda hanya perlu membuat satu template yang dapat digunakan untuk ribuan penerima dengan data berbeda-beda.

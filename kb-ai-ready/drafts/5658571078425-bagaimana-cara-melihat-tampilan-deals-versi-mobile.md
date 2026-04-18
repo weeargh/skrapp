@@ -46,6 +46,15 @@ Untuk melihat tampilan Deals versi mobile pada Qontak CRM, Anda memerlukan:
 3. Klik salah satu Deal untuk melihat informasi detail.
    → Detail Deal akan ditampilkan sesuai dengan stage alur kerja yang sedang berjalan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46147689686809
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46147704797081
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46147704803737
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda akan melihat:

@@ -53,6 +53,9 @@ Untuk melihat dan mengunduh laporan CES pada Reports di Mekari Qontak Omnichanne
 
 6. Klik ikon **Unduh** untuk mengekspor data dalam format CSV yang kompatibel dengan Microsoft Excel
 
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776287618841
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 • Halaman CES Reports terbuka menampilkan ringkasan metrik Customer Effort Score

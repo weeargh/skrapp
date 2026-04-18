@@ -49,6 +49,24 @@ Untuk mengelola Package Usage Conversation di Qontak Omnichannel, Anda membutuhk
 
 5. Pada bagian Total Balance, lihat saldo dari top up yang telah dilakukan untuk Business Initiated messages.
 
+> Screenshot: Package_usage1.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36776162166297
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49983566764057
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49983573388569
+
+> Screenshot: Package_usage__1_33233.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36776162172185
+
+> Screenshot: Package_33.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36776162173337
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43653067759385
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda akan melihat:

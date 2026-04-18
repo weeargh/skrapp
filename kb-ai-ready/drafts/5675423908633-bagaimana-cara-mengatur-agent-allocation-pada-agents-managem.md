@@ -53,6 +53,30 @@ Untuk mengatur Agent Allocation pada Agents Management, Anda memerlukan:
 
 7. Klik "Save" atau tombol konfirmasi untuk menyimpan perubahan. Sistem akan menampilkan konfirmasi bahwa pengaturan Agent Allocation telah diperbarui.
 
+> Screenshot: 85.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937610235929
+
+> Screenshot: 90.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937912895385
+
+> Screenshot: 86.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937849984281
+
+> Screenshot: 83.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937856794137
+
+> Screenshot: 87.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937849987865
+
+> Screenshot: 84.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937849991705
+
+> Screenshot: 88.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937856798361
+
+> Screenshot: 89.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50937856799257
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengatur Agent Allocation dengan berhasil:

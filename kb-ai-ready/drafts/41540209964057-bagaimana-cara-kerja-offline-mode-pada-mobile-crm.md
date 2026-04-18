@@ -49,6 +49,39 @@ faithfulness_threshold: 0.6
 3. Periksa data pada setiap tab (Deals dan Tasks dapat dikelola saat ini).
 4. Saat koneksi internet tersedia, aplikasi secara otomatis menyinkronkan data yang pending.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540209942553
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540209943833
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540202030361
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540202031385
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540209946137
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540209947289
+
+> Screenshot: notif.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41553892525081
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540301711769
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540301713433
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540301714841
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/41540309847833
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 • Mode offline dikonfigurasi sesuai preferensi pengguna (Automatic, Always online, atau Always offline).

@@ -62,6 +62,12 @@ Untuk memindahkan deals ke stage berbeda di Qontak CRM versi web, Anda memerluka
 4. Klik tombol Save untuk menyimpan perubahan.
    → Deal akan berpindah ke stage yang baru dipilih.
 
+> Screenshot: 16.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774916386713
+
+> Screenshot: 17.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774892830745
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah memindahkan deal ke stage yang dituju, Anda akan melihat:

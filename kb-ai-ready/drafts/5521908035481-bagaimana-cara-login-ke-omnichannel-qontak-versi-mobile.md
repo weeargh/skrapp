@@ -50,6 +50,12 @@ Untuk melakukan login ke Omnichannel Qontak versi mobile, Anda membutuhkan:
 4. Klik tombol Sign In.
    → Sistem akan memproses login Anda dan mengarahkan ke halaman utama Omnichannel jika kredensial benar.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49042373502233
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49042352437529
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah login berhasil, Anda akan diarahkan ke halaman utama Omnichannel Qontak di aplikasi mobile. Halaman ini menampilkan menu utama termasuk Inbox dengan daftar percakapan pelanggan, dan Anda dapat mulai mengelola chat dengan klien atau pelanggan.

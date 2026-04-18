@@ -51,6 +51,12 @@ faithfulness_threshold: 0.3
    - Tab **Company list**: menampilkan daftar perusahaan
    → Anda dapat beralih antar tab sesuai kebutuhan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462616022297
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462616023449
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil masuk, halaman Contacts pada versi mobile akan menampilkan:

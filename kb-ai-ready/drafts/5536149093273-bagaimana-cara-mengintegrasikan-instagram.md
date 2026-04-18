@@ -48,6 +48,24 @@ Jika Anda tidak memiliki role Admin, hubungi tim support Qontak di support-qonta
 5. Login dengan akun Facebook Anda mengisi username dan password, kemudian klik **Log In**.
 6. Sistem akan menampilkan konfirmasi koneksi Instagram berhasil terhubung dengan Qontak Omnichannel.
 
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49068971482521
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49068971485977
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49068971487641
+
+> Screenshot: facebook1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774147808153
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49068983115929
+
+> Screenshot: 22.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774121141529
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil, Instagram Anda akan terhubung dengan Qontak Omnichannel. Direct Message dari Instagram akan muncul di Inbox Chat Panel. Admin, Supervisor, dan Agen dapat mengakses dan merespons pesan Instagram melalui Inbox Qontak Omnichannel.

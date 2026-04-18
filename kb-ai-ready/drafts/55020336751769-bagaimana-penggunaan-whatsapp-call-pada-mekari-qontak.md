@@ -48,6 +48,90 @@ Untuk menggunakan WhatsApp Call pada Mekari Qontak:
 
 Untuk panggilan masuk, pelanggan dapat langsung menelepon nomor WhatsApp bisnis Anda dan Anda dapat menjawab panggilan tersebut dari platform Mekari Qontak.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55020500651545
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55020500652569
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55020500654873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55020500656025
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55020500656793
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55020536488985
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551747609
+
+> Screenshot: rev 16.png
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551749913
+
+> Screenshot: rev 17.png
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551758617
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529150105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529151513
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529152665
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551767833
+
+> Screenshot: rev 21.png
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529155609
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551769625
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551771161
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529160345
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551774873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551776537
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529166361
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529167129
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551779865
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529170457
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529171737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021529173529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551790105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551805465
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55021551806873
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Ketika WhatsApp Call berhasil digunakan:

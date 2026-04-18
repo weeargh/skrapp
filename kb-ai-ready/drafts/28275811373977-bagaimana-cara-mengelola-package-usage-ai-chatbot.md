@@ -51,6 +51,15 @@ Untuk mengelola Package Usage AI Chatbot di Qontak Omnichannel, Anda membutuhkan
 
 6. Klik tombol **Download** untuk mengunduh tabel dalam format CSV (maksimal rentang 90 hari).
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780962579993
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50764839968921
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36780962581401
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah, Anda akan melihat:

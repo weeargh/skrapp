@@ -49,6 +49,12 @@ faithfulness_threshold: 0.3
    - **Unresponded Chat**: Centang untuk menampilkan pesan yang belum dibalas agent
 5. Klik tombol **Apply** atau **Terapkan**. Sistem akan memfilter pesan berdasarkan kriteria yang dipilih dan menampilkan hasilnya di daftar inbox.
 
+> Screenshot: 153.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53768259171609
+
+> Screenshot: 154.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53768302430745
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Daftar pesan di menu Inbox berhasil difilter sesuai kriteria yang Anda tentukan. Hanya pesan yang memenuhi semua filter aktif yang ditampilkan. Anda dapat melihat jumlah pesan yang sesuai filter dan mengklik salah satu untuk membuka detail percakapan. Filter tetap aktif hingga Anda mengubah atau menghapus kriteria filter.

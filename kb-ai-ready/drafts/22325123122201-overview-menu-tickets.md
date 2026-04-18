@@ -29,6 +29,21 @@ faithfulness_threshold: 0.9
 
 Menu Tickets dalam Qontak CRM adalah fitur untuk mengelola tiket dukungan pelanggan melalui berbagai tahapan (*stages*) dan tingkat prioritas. Fitur ini menyediakan interface terpadu untuk melacak, mengorganisir, dan menyelesaikan kendala pelanggan dengan sistem pipeline yang terstruktur, memungkinkan tim customer service untuk mengelola alur pekerjaan secara efisien dari permintaan awal hingga penyelesaian.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56810371935769
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56810353642009
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56810353643801
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56810353644825
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56810353646489
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Menu Tickets membantu tim customer service meningkatkan efisiensi penanganan kendala dengan memberikan visibilitas penuh terhadap status setiap tiket. Dengan fitur prioritas, assignment, dan SLA target, organisasi dapat memastikan respons tepat waktu, menjaga kepuasan pelanggan, dan mencegah tiket terlewatkan. Integrasi dengan Omnichannel memungkinkan konversi percakapan menjadi tiket, sehingga semua interaksi pelanggan tercatat dan terlacak dalam satu sistem.

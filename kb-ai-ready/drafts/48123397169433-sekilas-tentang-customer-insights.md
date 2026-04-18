@@ -30,6 +30,36 @@ faithfulness_threshold: 0.6
 
 Customer Insights adalah fitur dalam Mekari Qontak CRM dan Omnichannel yang mengumpulkan dan menyatukan data pelanggan dari berbagai sumber ke dalam satu tempat penyimpanan terpusat. Fitur ini menggabungkan informasi kontak, riwayat CRM, dan aktivitas chat pelanggan sambil menghilangkan duplikasi data kontak. Dengan Customer Insights, Anda dapat melihat pandangan lengkap tentang setiap pelanggan tanpa perlu mengakses repositori data yang terpisah-pisah.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50607917565465
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54370788052761
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54370788066841
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54370788069145
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54370775773977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54370788079001
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54370775778713
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54370918851353
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48123423757721
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48123397165849
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Customer Insights membantu Anda membuat keputusan bisnis yang lebih baik dengan memberikan visibilitas penuh terhadap pertumbuhan dan aktivitas pelanggan. Fitur ini memungkinkan Anda melacak total pelanggan, mengidentifikasi pelanggan baru, dan menemukan pelanggan yang tidak aktif dalam periode tertentu. Dengan data yang terkonsolidasi dan bersih (tanpa duplikasi), tim Anda dapat memberikan layanan pelanggan yang lebih personal dan meningkatkan strategi retensi pelanggan secara keseluruhan.

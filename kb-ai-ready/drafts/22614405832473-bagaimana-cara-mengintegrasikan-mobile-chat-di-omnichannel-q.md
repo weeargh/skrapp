@@ -53,6 +53,36 @@ Untuk mengintegrasikan Mobile Chat di Omnichannel Qontak, Anda membutuhkan:
 2. Klik **Widget content & appearance**. Sistem akan menampilkan form pengaturan tampilan.
 3. Ubah **Display name**, **Description**, **Greetings**, dan **Appearance** (warna). Klik simpan untuk menerapkan perubahan.
 
+> Screenshot: pasted image 0 \(43\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184476825
+
+> Screenshot: pasted image 0 \(44\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184478873
+
+> Screenshot: pasted image 0 \(45\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184470169
+
+> Screenshot: pasted image 0 \(46\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184477465
+
+> Screenshot: pasted image 0 \(47\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142879257
+
+> Screenshot: pasted image 0 \(48\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184470681
+
+> Screenshot: pasted image 0 \(49\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142881049
+
+> Screenshot: pasted image 0 \(50\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184479513
+
+> Screenshot: pasted image 0 \(51\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184471833
+
+> Screenshot: pasted image 0 \(52\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184474649
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah langkah instalasi selesai:

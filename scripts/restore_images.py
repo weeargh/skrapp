@@ -18,25 +18,29 @@ import re
 import sys
 
 DRAFTS_DIR = "kb-ai-ready/drafts"
-SOURCE_DIR = "for-review 3"
+SOURCE_DIR = "downloads/job_21c31a25087856a4a2616024005d1994_unique_cleaned_md"
 
-IMG_SCREENSHOT_RE = re.compile(
-    r'> Screenshot: ([^\n]*)\n> Image: (https?://[^\s]+)', re.MULTILINE
-)
 IMG_MARKDOWN_RE = re.compile(r'!\[([^\]]*)\]\((https?://[^\)]+)\)')
+
+# Skip tracking pixels / tiny icons / theme assets
+SKIP_URL_RE = re.compile(
+    r'theming_assets|bat\.bing|1x1|pixel|tracking|mekari\.com/system/photos',
+    re.IGNORECASE,
+)
 
 SECTION_RE = re.compile(r'^## (.+?)(?:\s+<!--[^>]*-->)?\s*$', re.MULTILINE)
 
 
 def _build_source_lookup(source_dir: str) -> dict[str, str]:
+    """Map article_id -> filepath from the original downloads directory."""
     lookup: dict[str, str] = {}
-    for sub in os.listdir(source_dir):
-        full = os.path.join(source_dir, sub)
-        if not os.path.isdir(full):
+    id_re = re.compile(r'^\d+_(\d+)[-_]')
+    for fname in os.listdir(source_dir):
+        if not fname.endswith(".md"):
             continue
-        for fname in os.listdir(full):
-            if fname.endswith(".md"):
-                lookup[fname] = os.path.join(full, fname)
+        m = id_re.match(fname)
+        if m:
+            lookup[m.group(1)] = os.path.join(source_dir, fname)
     return lookup
 
 
@@ -44,25 +48,16 @@ def _extract_images(source_path: str) -> list[dict]:
     with open(source_path, encoding="utf-8") as fh:
         content = fh.read()
 
-    # Images live in the original body below the <!-- AI review: --> marker
-    marker = content.find("<!-- AI review:")
-    search_text = content[marker:] if marker != -1 else content
-
     seen_urls: set[str] = set()
     images: list[dict] = []
 
-    for m in IMG_SCREENSHOT_RE.finditer(search_text):
+    for m in IMG_MARKDOWN_RE.finditer(content):
         url = m.group(2).strip()
-        if url not in seen_urls:
-            seen_urls.add(url)
-            images.append({"alt": m.group(1).strip(), "url": url})
-
-    for m in IMG_MARKDOWN_RE.finditer(search_text):
-        url = m.group(2).strip()
-        if url not in seen_urls:
-            seen_urls.add(url)
-            alt = m.group(1).strip() or "Screenshot"
-            images.append({"alt": alt, "url": url})
+        if url in seen_urls or SKIP_URL_RE.search(url):
+            continue
+        seen_urls.add(url)
+        alt = m.group(1).strip() or "Screenshot"
+        images.append({"alt": alt, "url": url})
 
     return images
 
@@ -72,7 +67,14 @@ def _inject_images(draft_path: str, images: list[dict]) -> bool:
     with open(draft_path, encoding="utf-8") as fh:
         content = fh.read()
 
-    # Skip if images already present
+    # Remove any previously injected > Screenshot / > Image blocks
+    content = re.sub(
+        r'\n\n(?:> Screenshot: [^\n]*\n> Image: https?://[^\n]+\n*)+',
+        '',
+        content,
+    )
+
+    # Skip if images already present (from another source)
     if "help-center.qontak.com/hc/article_attachments" in content:
         return False
 
@@ -124,12 +126,13 @@ def main() -> None:
 
     for fname in draft_files:
         draft_path = os.path.join(args.drafts, fname)
+        article_id = fname.split("-")[0]
 
-        if fname not in lookup:
+        if article_id not in lookup:
             no_source += 1
             continue
 
-        images = _extract_images(lookup[fname])
+        images = _extract_images(lookup[article_id])
         if not images:
             no_images += 1
             continue

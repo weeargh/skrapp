@@ -60,6 +60,15 @@ Untuk membuka, mengedit, dan menghapus Deals di Qontak CRM versi web, Anda memer
 8. Klik tombol "Delete" pada dialog konfirmasi untuk menyetujui penghapusan.
    → Deal akan dihapus dari sistem dan daftar Deal akan diperbarui.
 
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766136545945
+
+> Screenshot: 14.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089608857
+
+> Screenshot: 17.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49894261468057
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil:

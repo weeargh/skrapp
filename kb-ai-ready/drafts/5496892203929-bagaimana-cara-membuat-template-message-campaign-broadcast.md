@@ -43,6 +43,21 @@ Anda memerlukan akun Qontak Omnichannel aktif dengan role Admin atau user yang m
 8. Verifikasi preview pesan di panel kanan.
 9. Klik tombol Submit. Sistem akan memproses dan menyimpan template.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43749067796249
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/47383910442777
+
+> Screenshot: CategoryQontak2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780961419289
+
+> Screenshot: CategoryQontak3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780919275033
+
+> Screenshot: 5__2_.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780919273241
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah klik tombol Submit, template message campaign berhasil dibuat. Sistem akan menampilkan pesan konfirmasi dan template baru akan muncul dalam daftar Templates di menu Campaign (Broadcast). Anda dapat langsung menggunakan template ini untuk membuat broadcast campaign ke banyak konsumen sekaligus. Template akan tersimpan dengan nama yang Anda tentukan dan siap digunakan untuk pengiriman pesan siaran.

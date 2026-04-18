@@ -46,6 +46,21 @@ Untuk menambahkan produk satuan pada Qontak versi mobile, Anda membutuhkan:
 6. Isi semua field dalam Form Product sesuai data yang Anda inginkan (geser halaman ke bawah untuk akses semua field). Perhatikan field bertanda bintang (*) karena wajib diisi
 7. Klik tombol Save → Produk akan tersimpan dan tampil dalam daftar produk
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46149980911513
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46149967759897
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46149967760409
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46149967761689
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46149967930905
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Produk satuan berhasil ditambahkan pada Qontak versi mobile. Produk baru muncul dalam daftar produk dengan semua informasi yang Anda masukkan (nama produk, harga, kategori, deskripsi, kode produk, satuan, dan data lainnya) tersimpan. Produk dapat digunakan untuk transaksi berikutnya dan tersinkronisasi dengan Qontak versi Web.

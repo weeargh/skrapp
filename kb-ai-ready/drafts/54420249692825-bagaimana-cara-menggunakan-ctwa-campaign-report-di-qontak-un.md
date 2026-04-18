@@ -55,7 +55,14 @@ Persyaratan sebelum memulai:
    → Data performa kampanye dan percakapan yang berasal dari iklan ditampilkan.
 
 5. Gunakan filter tanggal dan parameter lainnya untuk analisis lebih mendalam.
-   → Laporan dapat disesuaikan untuk periode dan segmen tertentu.
+   → Laporan dapat disesuaikan untuk periode dan segmen tertentu.## Expected Result  <!-- confidence:high ✓ -->
+
+Setelah mengakses CTWA Ad Campaign Report, Anda dapat melihat:
+• Dashboard terpadu menampilkan performa iklan Click-to-WhatsApp dari Meta Ads
+• Metrik detail: jumlah klik, pesan WhatsApp yang masuk, tingkat engagement, dan kualitas lead yang dihasilkan
+• Kemampuan melacak percakapan pelanggan yang berasal langsung dari iklan
+• Data yang dapat digunakan untuk mengoptimalkan strategi iklan dan meningkatkan ROI kampanye
+• Laporan dapat difilter berdasarkan periode waktu dan parameter lainnya untuk analisis mendalam
 
 > Screenshot: rev 3.png
 > Image: https://help-center.qontak.com/hc/article_attachments/54446708024345
@@ -64,40 +71,10 @@ Persyaratan sebelum memulai:
 > Image: https://help-center.qontak.com/hc/article_attachments/54420249675673
 
 > Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420249676697
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420265848217
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420249677977
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420249685913
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420265853721
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420249686681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420265855001
-
-> Screenshot: Screenshot
 > Image: https://help-center.qontak.com/hc/article_attachments/54420265855257
 
 > Screenshot: Screenshot
 > Image: https://help-center.qontak.com/hc/article_attachments/54420265855641
-
-## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengakses CTWA Ad Campaign Report, Anda dapat melihat:
-• Dashboard terpadu menampilkan performa iklan Click-to-WhatsApp dari Meta Ads
-• Metrik detail: jumlah klik, pesan WhatsApp yang masuk, tingkat engagement, dan kualitas lead yang dihasilkan
-• Kemampuan melacak percakapan pelanggan yang berasal langsung dari iklan
-• Data yang dapat digunakan untuk mengoptimalkan strategi iklan dan meningkatkan ROI kampanye
-• Laporan dapat difilter berdasarkan periode waktu dan parameter lainnya untuk analisis mendalam
 
 ## Error States  <!-- confidence:medium ~ -->
 

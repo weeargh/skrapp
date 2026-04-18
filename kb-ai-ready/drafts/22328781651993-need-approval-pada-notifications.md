@@ -46,6 +46,15 @@ Untuk mengakses dan mengelola Need Approval pada Notifications di Qontak CRM, An
 6. Pada halaman rincian, tinjau informasi di bagian About expense dan riwayat approval di bagian Approval log.
 7. Klik tombol Approve untuk menyetujui atau Reject untuk menolak approval request.
 
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50565250339481
+
+> Screenshot: G2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776278922521
+
+> Screenshot: G3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36776278925081
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda mengklik tombol Approve atau Reject, sistem akan memproses keputusan Anda dan notifikasi akan dihapus dari daftar Need Approval. Status approval akan diperbarui pada riwayat Approval log. Notifikasi yang telah ditandai sebagai dibaca akan tidak lagi menampilkan indikator unread pada tab Need Approval.

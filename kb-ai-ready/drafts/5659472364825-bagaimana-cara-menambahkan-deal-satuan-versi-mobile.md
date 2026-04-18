@@ -57,27 +57,7 @@ Untuk menambahkan deal satuan melalui aplikasi mobile Qontak CRM, Anda memerluka
    → Asosiasi akan tersimpan dalam Deal.
 
 7. Verifikasi semua data sudah benar, lalu klik **"Save"**.
-   → Deal baru akan tersimpan dan muncul di daftar Deal.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46148112663577
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNe4XFQzoVWnl_dRjnKL9fuosaxgAuAXjwfgvZJ1pP0GeollrY2E2wuSQtJMZ-gthitoxOTDurggFq1SwAIURBizsqVuuEOwRKmvXYYBTB5AUZiZO2N3NEDDEGrLNG9rQbKY4pMA?key=JYTyBa7b7VGn7J2HMNHF33kc
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46148169678105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46148169679385
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46148097130777
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46148097141401
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Deal baru akan tersimpan dan muncul di daftar Deal.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan Deal satuan melalui aplikasi mobile, Anda akan melihat:
 
@@ -85,6 +65,12 @@ Setelah berhasil menambahkan Deal satuan melalui aplikasi mobile, Anda akan meli
 2. Deal baru muncul di daftar Deal dengan status stage yang Anda pilih
 3. Semua informasi yang diisi (nama Deal, nilai, kontak terkait, produk) tersimpan dengan benar
 4. Deal dapat langsung dilihat dan dikelola melalui aplikasi mobile atau versi web Qontak CRM
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46148169678105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46148169679385
 
 ## Error States  <!-- confidence:medium ~ -->
 

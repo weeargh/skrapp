@@ -52,6 +52,18 @@ Catatan: Jika Anda menggunakan Qontak One, lihat dokumentasi Customer Data Platf
 
 5. Kontak baru akan muncul dalam daftar kontak di aplikasi mobile Qontak CRM.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462789072025
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462803286809
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462789073561
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46462803295129
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyimpan kontak baru:

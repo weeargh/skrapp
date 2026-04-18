@@ -51,6 +51,81 @@ Untuk membuat AI Agent pada Mekari Qontak:
 7. Tentukan **Tone of Voice** untuk gaya komunikasi AI Agent saat berinteraksi dengan pengguna.
 8. Atur **Idle Action** untuk menentukan tindakan AI Agent ketika percakapan idle (tidak ada aktivitas).
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259921177
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230582041
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230583705
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259927065
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230586649
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230587161
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259931929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259933465
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230595737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230596377
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230600857
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259947033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259947929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259982105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259983257
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259984153
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259985561
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230634777
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230639257
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230641177
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482230642073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259994393
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259995929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259977881
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56482259996953
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah menyelesaikan semua langkah konfigurasi:

@@ -51,7 +51,17 @@ Untuk melakukan Self Integration Tokopedia Chat di Qontak Omnichannel, Anda meme
 
 6. Klik tombol Konfirmasi atau Submit untuk menyelesaikan proses Self Integration.
 
-7. Sistem akan menampilkan notifikasi bahwa Tokopedia Chat berhasil terintegrasi.
+7. Sistem akan menampilkan notifikasi bahwa Tokopedia Chat berhasil terintegrasi.## Expected Result  <!-- confidence:medium ~ -->
+
+Setelah Self Integration Tokopedia Chat berhasil, Anda akan melihat:
+
+- Tokopedia Chat muncul di daftar Channel Integration Qontak Omnichannel dengan status "Connected"
+- Pesan pelanggan dari Tokopedia akan mulai masuk ke Chatpanel Qontak Omnichannel
+- Anda dapat mengelola percakapan Tokopedia Chat langsung dari dashboard Qontak Omnichannel
+- Notifikasi konfirmasi sukses ditampilkan di layar
+
+> Screenshot: Screenshot
+> Image: https://lh6.googleusercontent.com/e58PbIV6HTPCJrNRUt_d_t0MQ5vKRLJ29BZBUUcap51hCMYRevCPLTlW-dQs3bIeTFwKf5s6U1___ybRDVcxyl7YKSBrIujTZ-QiQkqf9PCzx2qa77mb6Q01LteObkB9INo5_4suaLwWlMPmnrMYEWk
 
 > Screenshot: Screenshot
 > Image: https://lh6.googleusercontent.com/fFJpkoFqGISGZw4qBfmGrD2233IJMxZkSq7LClmXrshV9wjEX_h-p_JWKM6HujtqmRuSfI_qI745lkut0h1mgRMTmSyttXjJ-YKo6IW9FvW3WwsILqVx8cZLtAUquKpXTKP0VPz4c1OPYPPtZcYW1lk
@@ -68,29 +78,17 @@ Untuk melakukan Self Integration Tokopedia Chat di Qontak Omnichannel, Anda meme
 > Screenshot: Screenshot
 > Image: https://lh3.googleusercontent.com/wBveHg2m_RF2jHt1Y6iPh7fNr4UdxHxWrUFIIz1adYqTc8Tm3Mikj2EDy-EzDScWE6uIjRRrtnq9YXiu2JG80jweFVlFdXPOHUcbtHWBjyJPkNtRDFwEegH_mgWx13xCercQNv39YkhzfbJVb6dswlI
 
-> Screenshot: Screenshot
+> Screenshot: 1.png
 > Image: https://help-center.qontak.com/hc/article_attachments/49067876049945
 
 > Screenshot: Screenshot
-> Image: https://lh6.googleusercontent.com/e58PbIV6HTPCJrNRUt_d_t0MQ5vKRLJ29BZBUUcap51hCMYRevCPLTlW-dQs3bIeTFwKf5s6U1___ybRDVcxyl7YKSBrIujTZ-QiQkqf9PCzx2qa77mb6Q01LteObkB9INo5_4suaLwWlMPmnrMYEWk
+> Image: https://lh6.googleusercontent.com/OLlwpdMD5Mu5qAh4frCJAsZIpusFScPM1JQGcXwoFIP5IAFb1rjlaeavBbKi7iu6YEgwdsZUpmKQIoN4aGN2X9QPB2juKWFXeWOBUfYRfCEb8oomSTtK6H7SZpWd4rCA2b6jRjyBll5T-EWIgSxorLs
 
 > Screenshot: Screenshot
 > Image: https://lh5.googleusercontent.com/JH0yxFG2jeEYJ1IHzDcPaZnmEwRqSMxCnXR785GrvikB98TjYmOkYzOFBkudqUjnawAqu2ySUvgXnqhnaYUqge0sqJ4Aj9l0oGEm2b5yQmOTTUKzYQlgcbhNX73l_d1d5ltTpKhWNPA9lsC7J-auPj8
 
 > Screenshot: Screenshot
 > Image: https://lh3.googleusercontent.com/qISGiR_CC5eM4QExywq-ZJRKnG0_otMD8vRA8mUgR6tJU0T9g6foaikHTmqmJnR43RIBOmlJ79J3yISAzLb7TfJQJtW5jUJLDDwzqMjVY3cjhs__BWPSGp91Tp8KruEUymdYgRblsPopQOgjmgLqHP0
-
-> Screenshot: Screenshot
-> Image: https://lh6.googleusercontent.com/OLlwpdMD5Mu5qAh4frCJAsZIpusFScPM1JQGcXwoFIP5IAFb1rjlaeavBbKi7iu6YEgwdsZUpmKQIoN4aGN2X9QPB2juKWFXeWOBUfYRfCEb8oomSTtK6H7SZpWd4rCA2b6jRjyBll5T-EWIgSxorLs
-
-## Expected Result  <!-- confidence:medium ~ -->
-
-Setelah Self Integration Tokopedia Chat berhasil, Anda akan melihat:
-
-- Tokopedia Chat muncul di daftar Channel Integration Qontak Omnichannel dengan status "Connected"
-- Pesan pelanggan dari Tokopedia akan mulai masuk ke Chatpanel Qontak Omnichannel
-- Anda dapat mengelola percakapan Tokopedia Chat langsung dari dashboard Qontak Omnichannel
-- Notifikasi konfirmasi sukses ditampilkan di layar
 
 ## Error States  <!-- confidence:medium ~ -->
 

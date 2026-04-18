@@ -61,6 +61,51 @@ Anda ingin menerapkan kebijakan SLA pada perusahaan Anda di Mekari Qontak CRM. S
 8. Tentukan **Resolution time** sebagai batas waktu penyelesaian tiket.
    - Sistem menyimpan waktu yang Anda tentukan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145207226649
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145207229849
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190657049
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190658073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190658841
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190660505
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190661913
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42183051025177
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42183051026841
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42183051032729
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145207272985
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190677785
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190681241
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190683033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/42145190689049
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan semua langkah, kebijakan SLA berhasil dibuat dan tersimpan di Mekari Qontak CRM. Kebijakan SLA yang baru Anda buat akan:

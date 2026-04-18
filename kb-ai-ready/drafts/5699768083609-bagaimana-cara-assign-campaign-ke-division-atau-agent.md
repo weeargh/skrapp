@@ -47,6 +47,21 @@ Untuk assign campaign ke Division atau Agent, Anda memerlukan:
 7. Verifikasi semua informasi sudah benar.
 8. Klik tombol **Send campaign**. Sistem akan mengirimkan campaign ke Division yang ditunjuk.
 
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43824013886617
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43824013888025
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43824013888665
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43824013889177
+
+> Screenshot: 6a.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774533912089
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah Anda mengklik tombol Send campaign, sistem akan memproses pengiriman campaign ke Division yang telah dipilih. Campaign akan muncul di dashboard campaign dengan status pengiriman. Hanya Agent dan Supervisor dalam Division terpilih yang dapat melihat, mengelola, dan memantau hasil dari campaign tersebut. Anda akan menerima konfirmasi bahwa campaign telah berhasil di-assign ke Division.

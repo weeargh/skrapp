@@ -60,6 +60,15 @@ Untuk membuka, mengubah, dan menghapus produk di Qontak versi Web, Anda membutuh
 4. Klik **Remove** untuk menghapus produk atau **No** untuk membatalkan penghapusan.
 5. Produk akan dihapus dari daftar Produk.
 
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50103207059353
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50103207064089
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/5500985660441
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah membuka produk:** Halaman detail produk ditampilkan dengan semua informasi produk (nama, harga, kategori, deskripsi, dll) yang dapat diedit.

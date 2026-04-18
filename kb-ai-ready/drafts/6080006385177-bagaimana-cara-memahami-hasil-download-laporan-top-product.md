@@ -51,6 +51,12 @@ Catatan: Fitur ini tersedia untuk organisasi yang menggunakan modul Sales atau P
 4. Buka file hasil download menggunakan aplikasi spreadsheet.
    → Sheet pertama akan menampilkan filter (pipeline, tim, user, waktu laporan) dan kolom data produk.
 
+> Screenshot: tp1.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36774527623705
+
+> Screenshot: tp3.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36774534067737
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah membuka file Laporan Top Product, Anda akan melihat spreadsheet dengan dua sheet utama:

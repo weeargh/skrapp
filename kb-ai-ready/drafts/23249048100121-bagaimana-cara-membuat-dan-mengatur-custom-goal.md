@@ -53,35 +53,27 @@ faithfulness_threshold: 0.6
 6. Klik tombol **"Tambah"** untuk menambahkan kontributor.
 
 7. Klik tombol **"Simpan"** untuk menyimpan Custom Goal.
-   Sistem akan menampilkan konfirmasi dan Custom Goal akan muncul di daftar Custom Goal.
+   Sistem akan menampilkan konfirmasi dan Custom Goal akan muncul di daftar Custom Goal.## Expected Result  <!-- confidence:high ✓ -->
 
-> Screenshot: Screenshot
+Setelah menyimpan, Custom Goal berhasil dibuat dan muncul di menu **Custom Goal** dengan status aktif. Sistem menampilkan detail target yang berisi nama target, periode, tipe, pipeline, total target deal, dan daftar kontributor yang sudah ditambahkan. Semua kontributor yang terdaftar dapat memantau kemajuan mereka masing-masing terhadap target yang telah ditetapkan.
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/25418431791641
+
+> Screenshot: 2.png
 > Image: https://help-center.qontak.com/hc/article_attachments/25417506070681
 
 > Screenshot: 3.1.png
 > Image: https://help-center.qontak.com/hc/article_attachments/25417533123481
 
-> Screenshot: Screenshot
+> Screenshot: 3.png
 > Image: https://help-center.qontak.com/hc/article_attachments/25418365437721
 
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/25418391599001
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/25418391613081
-
-> Screenshot: Screenshot
+> Screenshot: 7.png
 > Image: https://help-center.qontak.com/hc/article_attachments/25418391619481
 
-> Screenshot: Screenshot
+> Screenshot: 8.png
 > Image: https://help-center.qontak.com/hc/article_attachments/23249772028441
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/25418431791641
-
-## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyimpan, Custom Goal berhasil dibuat dan muncul di menu **Custom Goal** dengan status aktif. Sistem menampilkan detail target yang berisi nama target, periode, tipe, pipeline, total target deal, dan daftar kontributor yang sudah ditambahkan. Semua kontributor yang terdaftar dapat memantau kemajuan mereka masing-masing terhadap target yang telah ditetapkan.
 
 ## Error States  <!-- confidence:medium ~ -->
 

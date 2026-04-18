@@ -44,6 +44,12 @@ faithfulness_threshold: 0.6
 7. (Opsional) Aktifkan toggle **Auto Sync** dan tentukan jadwal di kolom **Sync Time** untuk sinkronisasi otomatis berkala
 8. Sistem akan mencatat pengaturan Anda
 
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50120717679641
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50120662386713
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, halaman Ekspor ke Google Sheet akan menampilkan:

@@ -30,6 +30,15 @@ faithfulness_threshold: 0.6
 
 Menu Inbox Omnichannel Qontak adalah pusat layanan pelanggan di mana customer service mengelola semua chat masuk dari berbagai channel (WhatsApp, Instagram, Facebook Messenger, dan lainnya). Fitur ini menyediakan tampilan terpusat dengan tools lengkap untuk mencari percakapan, menyaring chat berdasarkan status, mengurutkan room chat, serta mengakses detail pelanggan dan riwayat interaksi dalam satu interface terpadu.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49378845471129
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49378828893849
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49378828895641
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Menu Inbox memungkinkan customer service mengelola volume chat tinggi secara efisien dengan fitur pencarian, filter, dan sortir yang presisi. Akses cepat ke detail pelanggan, riwayat percakapan, dan informasi SLA Target membantu agent memberikan respons lebih cepat dan personal. Fitur seperti Agent Scorecard dan Knowledge base mendukung peningkatan kualitas layanan serta pembelajaran berkelanjutan tim customer service.

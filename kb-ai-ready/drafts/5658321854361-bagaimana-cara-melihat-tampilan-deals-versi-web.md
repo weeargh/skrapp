@@ -49,6 +49,12 @@ Untuk melihat tampilan Deals versi web di Qontak CRM, Anda memerlukan:
 
 4. (Opsional) Klik nama Deals untuk melihat detail transaksi lebih lengkap dan stage deals yang merupakan spesifikasi alur kerja.
 
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/43681155076377
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36777848056345
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengakses menu Deals, Anda akan melihat:

@@ -49,6 +49,21 @@ Untuk mengedit rincian pengguna (User Details) di Qontak CRM, Anda memerlukan:
 
 6. Klik tombol "Update User" untuk menyimpan semua perubahan yang telah Anda lakukan. Sistem akan menyimpan data pengaturan terbaru.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49061364545049
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49061355305753
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49061355308569
+
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775773483417
+
+> Screenshot: edituserdetail1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775773486489
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik "Update User", sistem berhasil menyimpan semua perubahan rincian pengguna. Anda akan tetap berada di halaman User Details atau kembali ke daftar pengguna dengan data terbaru yang sudah terupdate. Perubahan yang Anda lakukan akan langsung berlaku untuk akun pengguna tersebut.

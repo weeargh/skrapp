@@ -51,6 +51,12 @@ faithfulness_threshold: 0.3
 5. Klik tombol **Apply** atau **Terapkan**. Sistem akan memfilter dan menampilkan pesan sesuai kriteria yang dipilih.
 6. Untuk menghapus filter, klik tombol **Reset** atau **Hapus Filter**. Sistem akan menampilkan kembali semua pesan tanpa filter.
 
+> Screenshot: 153.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53768204364057
+
+> Screenshot: 154.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53768211533721
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Daftar pesan Inbox berhasil difilter sesuai kriteria yang Anda tentukan. Sistem menampilkan hanya room chat atau pesan yang cocok dengan pilihan Sessions, Agents, Channels, Tags, atau status Unresponded Chat dan WhatsApp Campaign. Jumlah pesan yang ditampilkan berkurang dan sesuai dengan filter aktif. Anda dapat mengklik salah satu pesan untuk membaca detail dan merespons.

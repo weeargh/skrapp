@@ -56,6 +56,15 @@ faithfulness_threshold: 0.3
 
 9. Klik tombol **Simpan** untuk menyimpan properti baru atau **Tutup** untuk membatalkan.
 
+> Screenshot: 3up.png
+> Image: https://help-center.qontak.com/hc/article_attachments/19761224455449
+
+> Screenshot: 145.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53404801762841
+
+> Screenshot: 25up.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53404803444633
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah klik Simpan, sistem akan menutup formulir pembuatan properti dan properti baru akan ditambahkan ke daftar properti pada tab Kontak. Field baru ini akan tersedia untuk diisi pada halaman penambahan dan/atau pengubahan kontak sesuai pengaturan yang Anda pilih. Properti dapat langsung digunakan untuk menginput data kontak tambahan.

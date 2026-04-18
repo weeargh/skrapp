@@ -56,6 +56,15 @@ Untuk membuat pipeline deal baru pada Qontak CRM, Anda memerlukan:
 
 6. Klik tombol **"Create Pipeline"** untuk menyimpan. Pipeline baru akan muncul di halaman Deals.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42009600857241
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42009590880537
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/42009590881817
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat pipeline deal baru, Anda akan:

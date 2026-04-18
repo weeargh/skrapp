@@ -46,6 +46,15 @@ faithfulness_threshold: 0.3
 5. Klik tombol **Apply** untuk menerapkan filter. Daftar kontak akan diperbarui sesuai kriteria yang dipilih.
 6. Untuk menghapus semua filter dan kembali ke tampilan default, klik tombol **Reset**.
 
+> Screenshot: 141.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53404021181337
+
+> Screenshot: Filter_Data_Contact_2.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/5641154444441
+
+> Screenshot: Filter_Data_Contact_3.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/5641132197017
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik **Apply**, daftar kontak akan menampilkan hanya kontak yang sesuai dengan kriteria filter yang telah ditentukan. Jumlah kontak yang cocok dengan filter akan ditampilkan. Anda dapat melihat kontak terfilter, mengunduhnya, menghapusnya, atau melakukan tindakan lain. Ketika mengklik **Reset**, daftar kontak kembali menampilkan semua kontak tanpa filter.

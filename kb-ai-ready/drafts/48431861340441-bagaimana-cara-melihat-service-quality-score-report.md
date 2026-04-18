@@ -52,6 +52,24 @@ Untuk melihat Service Quality Score Report di Qontak, Anda memerlukan:
 
 7. Lihat laporan **Service Quality Score per Agent and Parameter** yang menampilkan rincian nama parameter dan persentase room berdasarkan masing-masing parameter.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48431861321241
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48431861324313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48431861327513
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48431861329945
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48431861331609
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/48431861334937
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda akan melihat halaman Service Quality Score Report yang menampilkan:

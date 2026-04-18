@@ -62,6 +62,18 @@ Untuk mengunduh data Deals di Qontak CRM, Anda memerlukan:
 8. Untuk mengecek progress pengunduhan, buka menu **Properties** lalu pilih tab **Upload/Download**.
    → Status dan progress pengunduhan akan ditampilkan.
 
+> Screenshot: 20.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49954902886041
+
+> Screenshot: 21.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49954927454745
+
+> Screenshot: 22.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49954902905497
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36775763610649
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses pengunduhan selesai, file data Deals akan tersimpan di folder download perangkat Anda dalam format spreadsheet (CSV atau Excel). File berisi kolom-kolom field yang Anda pilih sebelumnya. Anda dapat membuka file menggunakan aplikasi spreadsheet seperti Microsoft Excel atau Google Sheets untuk melihat dan menganalisis data Deals Anda.

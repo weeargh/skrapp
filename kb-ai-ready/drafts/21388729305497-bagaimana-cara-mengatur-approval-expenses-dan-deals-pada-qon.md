@@ -58,6 +58,57 @@ Untuk mengatur Approval Expenses dan Deals pada Qontak CRM, Anda memerlukan:
 
 10. Simpan pengaturan dengan mengklik tombol Save.
 
+> Screenshot: 17.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49519867918105
+
+> Screenshot: PENTINGAPPROVALCRM \(2\).png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194582297
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49519892756121
+
+> Screenshot: 18.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49519892756761
+
+> Screenshot: CRMAPPR3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194588953
+
+> Screenshot: CRMAPPR4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203373465
+
+> Screenshot: CRMAPPR5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203366809
+
+> Screenshot: 19.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49519867922713
+
+> Screenshot: 20.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49519892758809
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38310949807769
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38310948003097
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38310949812505
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38310948006681
+
+> Screenshot: 7.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38311557951385
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40983951112345
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40983971925017
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38311572211097
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah pengaturan Approval Expenses dan Deals berhasil:

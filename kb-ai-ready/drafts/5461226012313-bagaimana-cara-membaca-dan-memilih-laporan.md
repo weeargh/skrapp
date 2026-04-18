@@ -48,6 +48,21 @@ Untuk membaca dan memilih laporan di Dashboard Qontak CRM, Anda membutuhkan:
 4. Baca laporan dengan memperhatikan elemen visual: warna chart, nama user, jumlah angka, dan status data yang ditampilkan.
    → Anda dapat menginterpretasikan data sesuai dengan tujuan analisis.
 
+> Screenshot: 36.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50804666009113
+
+> Screenshot: Memilih_Laporan_2.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36781183552025
+
+> Screenshot: Memilih_Laporan_3.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36781183550105
+
+> Screenshot: Memilih_Laporan_4.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36781141786009
+
+> Screenshot: Memilih_Laporan_5.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36781141783321
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah membaca dan memilih laporan di Dashboard Qontak CRM, Anda akan:

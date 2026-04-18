@@ -46,6 +46,15 @@ Untuk melihat informasi room pesan di Qontak Omnichannel versi mobile, Anda meme
 5. Lihat informasi Data Customer (nama, platform asal, email, nomor telepon), About Room (waktu interaksi dan session), Notes, Agents, Tags, dan Room History
 6. Setelah percakapan selesai, ketuk tombol Resolve — Room pesan ditandai sebagai selesai dan menampilkan banner konfirmasi
 
+> Screenshot: 3.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36766136571033
+
+> Screenshot: 5.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36766136579993
+
+> Screenshot: 6.PNG
+> Image: https://help-center.qontak.com/hc/article_attachments/36766136588313
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah, Anda berhasil melihat informasi lengkap room pesan pada mobile:

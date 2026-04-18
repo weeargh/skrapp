@@ -57,6 +57,27 @@ Untuk melakukan pengisian target di Qontak CRM, Anda memerlukan:
 4. Untuk setiap bulan, isi nominal target pada kolom **Value** dan pilih **Currency** sesuai mata uang pembayaran. Opsional: set target berdasarkan jumlah deal di kolom yang tersedia.
 5. Klik tombol **Update User** di bagian bawah halaman → Sistem menyimpan target dan menampilkan pesan konfirmasi.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50341046417689
+
+> Screenshot: 8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50341046425753
+
+> Screenshot: 2.5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/21575456258713
+
+> Screenshot: 2.8.png
+> Image: https://help-center.qontak.com/hc/article_attachments/21575456259993
+
+> Screenshot: 9.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50341046432665
+
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/21575494209305
+
+> Screenshot: 5.png
+> Image: https://help-center.qontak.com/hc/article_attachments/21575494213785
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil melakukan pengisian target:

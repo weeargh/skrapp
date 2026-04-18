@@ -55,60 +55,7 @@ Sebelum mengaktifkan push notification WhatsApp di Qontak CRM, pastikan Anda mem
 3. Klik **"Continue"** → Sistem mengarahkan ke bagian **Template message settings**
 4. Pilih template pesan yang telah disetujui WhatsApp (berisi teks atau media)
 5. Tentukan trigger otomatis (deal date, deal creation, deal moving, idle deal, atau birthday)
-6. Klik **"Save"** → Push notification siap digunakan
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203075609
-
-> Screenshot: Image_026.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194351513
-
-> Screenshot: Image_004.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194340761
-
-> Screenshot: mceclip1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194356633
-
-> Screenshot: image
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203073689
-
-> Screenshot: image
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203074713
-
-> Screenshot: image
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194362393
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/40188290251033
-
-> Screenshot: mceclip2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194358297
-
-> Screenshot: Image_022.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194348697
-
-> Screenshot: Image_023.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203061145
-
-> Screenshot: mceclip3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194359705
-
-> Screenshot: WhatsApp_Image_2022-10-26_at_14.41.16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194354713
-
-> Screenshot: mceclip0.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203069593
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50564561987993
-
-> Screenshot: Image_019.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194346649
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40188290246297
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik **"Save"** → Push notification siap digunakan## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti semua langkah, Anda akan melihat:
 
@@ -117,6 +64,72 @@ Setelah mengikuti semua langkah, Anda akan melihat:
 3. **Konfirmasi Penyimpanan**: Pesan sukses muncul setelah klik "Save"
 4. **Template Terdaftar**: Template pesan tampil dalam daftar push notification yang sedang berjalan
 5. **Notifikasi Terkirim**: Pesan WhatsApp otomatis dikirim ke nomor tujuan sesuai trigger (contoh: saat deal dibuat atau tanggal ulang tahun contact)
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50564561987993
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780203075609
+
+> Screenshot: Image_004.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194340761
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108728697241
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108728699417
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108739156505
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108739156633
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108728706201
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108728707609
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108728707865
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108728709529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108728710681
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108739164313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108739165977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108728713753
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52108739170457
+
+> Screenshot: mceclip1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194356633
+
+> Screenshot: Image_019.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194346649
+
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40188290246297
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/40188290251033
+
+> Screenshot: mceclip2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194358297
+
+> Screenshot: Image_022.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36780194348697
 
 ## Error States  <!-- confidence:medium ~ -->
 

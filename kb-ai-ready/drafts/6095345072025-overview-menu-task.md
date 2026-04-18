@@ -29,6 +29,21 @@ faithfulness_threshold: 0.6
 
 Menu Task dalam Qontak CRM adalah fitur manajemen tugas yang memungkinkan Anda mengelola aktivitas dan penugasan untuk tim atau individu. Fitur ini menampilkan daftar lengkap semua Task yang tersimpan dalam sistem CRM Qontak Anda. Anda dapat melihat Task dalam format daftar atau kalender, memfilter berdasarkan status, serta melakukan operasi pengelolaan seperti menambah, mengubah, menghapus, dan mengunduh Task secara massal.
 
+> Screenshot: task1.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36772391290777
+
+> Screenshot: calendar_view.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36772391297433
+
+> Screenshot: per_status.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36772398851353
+
+> Screenshot: task_edit.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36772391291673
+
+> Screenshot: 25.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56956762496537
+
 ## Why It Matters  <!-- confidence:medium ~ -->
 
 Menu Task membantu tim Anda tetap terorganisir dan produktif dengan memberikan visibilitas penuh terhadap semua penugasan dan aktivitas. Dengan fitur ini, Anda dapat melacak riwayat task lengkap, memastikan tidak ada tugas yang terlewat, dan mengalokasikan pekerjaan secara efisien kepada anggota tim. Manajemen task yang baik meningkatkan akuntabilitas, komunikasi tim, dan keberhasilan penyelesaian proyek CRM Anda.

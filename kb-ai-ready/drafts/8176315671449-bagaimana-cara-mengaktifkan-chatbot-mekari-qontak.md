@@ -49,6 +49,18 @@ Untuk mengaktifkan Chatbot Mekari Qontak:
 
 4. Klik tombol Create Conversation untuk membuat percakapan baru. Formulir konfigurasi conversation akan terbuka.
 
+> Screenshot: 107.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51039725170073
+
+> Screenshot: 115.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51039678657817
+
+> Screenshot: 110.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51039678663833
+
+> Screenshot: 116.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51039725173913
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengaktifkan Chatbot Mekari Qontak, Anda akan melihat:

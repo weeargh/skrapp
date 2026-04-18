@@ -46,6 +46,66 @@ faithfulness_threshold: 0.6
 7. Connect catalog to WhatsApp Business Account in Business Manager
 8. Customers can now view and click products in catalog from WhatsApp Business profile
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476592665
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479591705
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479593113
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479596697
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476596505
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479598489
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479601305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479602713
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479606553
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476602393
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476605849
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479611545
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479617305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965479617817
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476611737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476613401
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476614169
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476627353
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476627737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49965476632729
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Catalog successfully created and connected to WhatsApp Business Account. Customers can:

@@ -54,6 +54,15 @@ Ikuti langkah-langkah berikut untuk melihat dan mengunduh laporan GPS Check In:
 4. Pilih **"Download XLS"** untuk mengunduh data agent terpilih ATAU **"Download all XLS"** untuk mengunduh data semua agent
    → File Excel akan terunduh ke perangkat Anda.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766136765337
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089795225
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089806745
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengunduh laporan GPS Check In, file Excel akan berisi kolom-kolom berikut:

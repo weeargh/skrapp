@@ -57,6 +57,15 @@ Untuk melakukan login ke Qontak CRM versi mobile, Anda memerlukan:
 6. Klik tombol "Login".
    → Sistem akan memproses kredensial Anda dan menampilkan Dashboard CRM.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46151577840793
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46151586232729
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXdWTl66c_0ykJ-QlIrmqwkiX16d7JM8cPrcODVvHKWh6_bE4VXYxnkYo_ss_SNSdw2C_w4WtTXnxQ4d6NXpg-eMBnYF5Fv2krSgMvVdvKB37KGdKRPVxad-kSUWS4tHj0R03974eQ?key=JYTyBa7b7VGn7J2HMNHF33kc
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah login berhasil, aplikasi Qontak CRM Mobile akan menampilkan Dashboard CRM versi aplikasi. Anda akan dapat mengakses berbagai fitur dalam akun CRM Anda, termasuk Inbox, Campaign, Contacts, Chatbot, Report, dan pengaturan lainnya. Dashboard akan menampilkan ringkasan aktivitas dan data akun CRM Anda dalam format yang dioptimalkan untuk tampilan mobile.

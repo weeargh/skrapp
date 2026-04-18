@@ -62,6 +62,99 @@ Untuk melakukan setup permission pada Field Masking di Customer Data Platform, A
 8. Klik **Save** untuk menyimpan setup permission.
    → Konfigurasi Field Masking dengan permission berhasil disimpan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920649881
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931936537
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931937305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920652953
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931938969
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931940761
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931955097
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931956505
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920674713
+
+> Screenshot: 33.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920676505
+
+> Screenshot: 34.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931961753
+
+> Screenshot: 35.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920679065
+
+> Screenshot: 36.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931963033
+
+> Screenshot: 37.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920682905
+
+> Screenshot: 38.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931967513
+
+> Screenshot: 21.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920685849
+
+> Screenshot: eq.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920686233
+
+> Screenshot: 24.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920687129
+
+> Screenshot: 25.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920687641
+
+> Screenshot: 32.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931972889
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920694297
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920695065
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931974681
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920696089
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931978649
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920698393
+
+> Screenshot: 27.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920700313
+
+> Screenshot: 26.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931983513
+
+> Screenshot: 30.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931984153
+
+> Screenshot: 28.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769931986457
+
+> Screenshot: 29.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56769920709017
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil melakukan setup permission pada Field Masking:

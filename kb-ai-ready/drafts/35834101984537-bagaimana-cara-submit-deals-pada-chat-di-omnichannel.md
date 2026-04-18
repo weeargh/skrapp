@@ -49,6 +49,12 @@ Untuk membuat Deals melalui chat di Omnichannel, Anda memerlukan:
 9. Pesan konfirmasi berhasil akan ditampilkan dengan opsi klik **Deals ID** untuk membuka deals di Qontak CRM.
 10. Deals akan tersimpan otomatis di menu Deals CRM Qontak dan dapat dilihat di halaman Deals.
 
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXcAu_tFva49kArfIsQdl3FLPAyuiwmiOroV57RKvPykV7dGkenGkPo4bPYAI4B4XNLH0OhPZlSZ87QZYw20TCzG2Ow9dDQuN1jIKxzOytb-CQ9G72jveQS5Jzd3o71gUpzw2f__vBBUmsEMw2r9zYi82cZe?key=Jqkn8dhQ_InX_HZYbdhKWg
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXcO_uwfQi_e-zRJJYW6l0Lmyb9tYoCst1WRcLnILGiHTiITe0JiHQcPQpqkl9hTSib0SOOEt7zMCfW2XNMQ5csNkS9w2Amaw7g1imfdSbwWG8agUi3Xew_rtW0qVpM2rtNbVf-3kt8rS79rCxMEPSSrw490?key=Jqkn8dhQ_InX_HZYbdhKWg
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat deals:

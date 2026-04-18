@@ -55,6 +55,9 @@ Catatan: Laporan ini menampilkan perbandingan antara target dan pencapaian count
 5. Klik tombol Download untuk mengunduh laporan.
    → File Excel dengan sheet detail akan diunduh ke perangkat Anda.
 
+> Screenshot: count.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36774222910745
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah download selesai, file Excel akan menampilkan satu sheet dengan detail:

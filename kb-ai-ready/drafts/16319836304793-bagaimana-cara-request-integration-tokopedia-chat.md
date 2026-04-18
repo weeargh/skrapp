@@ -50,6 +50,21 @@ Untuk melakukan Request Integration Tokopedia Chat di Qontak Omnichannel, Anda m
 
 6. Isi ketiga kolom tersebut dengan data toko Anda, kemudian submit. Sistem akan memproses request integrasi Anda dan melakukan approval process.
 
+> Screenshot: Screenshot
+> Image: https://lh3.googleusercontent.com/QWq_hKxGbQ1fGkaQrAswg_lNipGO3Tr40nlISyvV6mK_6BwoTiWT9F-B9m-JlEVb6diu41TvONsTQhx-H5H6wuMzinzZaSOp0CFhSy1CtIHNriln3TAKaGsSbpt5rejTGLL-eFlFcmXTna4b47NAmlU
+
+> Screenshot: Screenshot
+> Image: https://lh4.googleusercontent.com/Elq-4x3_4uvqJuIUv3Q9Udoo7dVkaL51JQnlUqzTzRVM2I6VwrMSx8RVPgaoseijNhYEjTNFiGZJDG-pcNOErWDVANu13JJeAeoRoSAcMGnTeABYXI40ZSw1Aq8HuRLsm5pLltnBvlScvjZOIp7fm10
+
+> Screenshot: Screenshot
+> Image: https://lh3.googleusercontent.com/r2kp1QnXePsYRtmFSb9_OizMR1zblSaUEtlLHSWZi_ZLOOerbPJ67RCOIew6frmvVcoQWY7dxMYcKE4YvaQgbQzzgmrOZNJOPS65glKGqA6FTaJQ5GQoeFiUb-3lPbNa4xfrVfsZ0g_wHp8TV41d2NE
+
+> Screenshot: Screenshot
+> Image: https://lh3.googleusercontent.com/sc3308YAF48C63FWy3mtQw6PCzccWRjle-rUV654NaAomKJfEiUq7C2qJ_Nfll2AYGNAKAMoDx5nsVyDhgnuuTqHIjfKa-GFP60QeBmLgn3LzEb-8yS3q_bJmJNBadoiC77bG39QnyXXbIoaiknqCOU
+
+> Screenshot: Screenshot
+> Image: https://lh3.googleusercontent.com/KpZBvjFy7iQaD6SDUebKEuUxurAgeVR3gEavt1sdMGMqLmk1XWh8IVkuhkIyhk33nd3VZ-zycsoyA3PB3380duGEUzkCaNzvhOLKv6k5jeKoo8Xy_uN0V0XesvuLH3ZyIDVDVMspr2HcqeLrJFOFU6Y
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah submit request integration, sistem akan menampilkan konfirmasi bahwa request Anda telah diterima. Tim support Qontak akan menghubungi Anda melalui nomor telepon yang Anda daftarkan untuk melanjutkan proses setup integrasi di Developer Console Tokopedia. Selama proses approval, status request Anda dapat dipantau di halaman Channel Integration. Ketika approval selesai, Tokopedia Chat akan aktif dan terhubung dengan dashboard Qontak Omnichannel Anda.

@@ -42,23 +42,15 @@ Untuk menambahkan produk satuan pada Qontak versi Web, Anda membutuhkan:
 
 2. Isi semua field yang diperlukan pada formulir. Perhatikan tanda bintang (*) berwarna merah yang menandakan field wajib diisi. Field yang dapat Anda isi meliputi: nama produk, harga, deskripsi, dan informasi lainnya. Jika Subcategory sudah diaktifkan, kolom tambahan untuk kategori akan tersedia.
 
-3. Setelah semua data terisi dengan lengkap, klik tombol **Save** untuk menyimpan produk baru. Sistem akan memproses dan menyimpan data produk Anda.
+3. Setelah semua data terisi dengan lengkap, klik tombol **Save** untuk menyimpan produk baru. Sistem akan memproses dan menyimpan data produk Anda.## Expected Result  <!-- confidence:high ✓ -->
 
-> Screenshot: Screenshot
+Produk satuan berhasil ditambahkan dan tersimpan dalam Qontak CRM. Sistem menampilkan pesan konfirmasi penyimpanan dan Anda akan dikembalikan ke daftar produk. Produk baru yang baru saja Anda buat akan muncul di dalam list produk dengan semua informasi yang telah Anda masukkan (nama, harga, kategori, dan detail lainnya) tersimpan dan dapat diakses untuk digunakan dalam aktivitas CRM selanjutnya.
+
+> Screenshot: 1111.png
 > Image: https://help-center.qontak.com/hc/article_attachments/14268885839769
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/5497293606297
 
 > Screenshot: 2.png
 > Image: https://help-center.qontak.com/hc/article_attachments/5497302206489
-
-> Screenshot: 31.png
-> Image: https://help-center.qontak.com/hc/article_attachments/14268775942809
-
-## Expected Result  <!-- confidence:high ✓ -->
-
-Produk satuan berhasil ditambahkan dan tersimpan dalam Qontak CRM. Sistem menampilkan pesan konfirmasi penyimpanan dan Anda akan dikembalikan ke daftar produk. Produk baru yang baru saja Anda buat akan muncul di dalam list produk dengan semua informasi yang telah Anda masukkan (nama, harga, kategori, dan detail lainnya) tersimpan dan dapat diakses untuk digunakan dalam aktivitas CRM selanjutnya.
 
 ## Error States  <!-- confidence:medium ~ -->
 

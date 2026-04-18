@@ -51,6 +51,27 @@ Subdomain harus eksklusif untuk pengiriman campaign melalui Qontak dan tidak bol
 
 5. Login ke Domain Manager Anda dan masukkan DNS Records yang diterima untuk menyelesaikan pendaftaran subdomain.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50344321699481
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50344540069401
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50344540070169
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50344540075289
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50344553181209
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50344553182617
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50344553184281
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan semua langkah, Anda akan menerima email dari tim Qontak yang berisi informasi DNS Records lengkap (record tipe MX, TXT, dan lainnya). Sistem akan menampilkan subdomain dan email pengirim yang berhasil terdaftar di akun Qontak Anda. Subdomain dan email pengirim kemudian siap digunakan untuk membuat Email Campaign melalui fitur Campaign di Qontak Omnichannel.

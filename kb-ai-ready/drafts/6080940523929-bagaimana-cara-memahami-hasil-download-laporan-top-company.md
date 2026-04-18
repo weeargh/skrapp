@@ -54,6 +54,9 @@ Catatan: Laporan Top Company hanya menampilkan data penjualan yang telah tercata
 5. Buka file yang sudah diunduh menggunakan aplikasi spreadsheet.
    → Sheet laporan akan menampilkan 12 kolom data penjualan detail.
 
+> Screenshot: tc.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36780193851033
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 File Laporan Top Company berhasil dibuka dan menampilkan spreadsheet dengan 12 kolom berikut:

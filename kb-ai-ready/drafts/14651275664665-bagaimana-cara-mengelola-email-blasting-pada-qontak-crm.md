@@ -51,6 +51,18 @@ Pastikan Anda memiliki izin untuk mengakses fitur Broadcast Email pada akun Qont
 8. Klik "Save Campaign" untuk menyimpan campaign.
 9. Klik ikon kirim pada campaign untuk mengirimkan email blast ke kontak.
 
+> Screenshot: 4.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535090073
+
+> Screenshot: 10.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535123353
+
+> Screenshot: 13.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774528665113
+
+> Screenshot: 14.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774528666905
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan semua langkah, Anda akan melihat:

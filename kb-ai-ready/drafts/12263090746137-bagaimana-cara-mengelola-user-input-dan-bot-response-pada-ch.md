@@ -44,7 +44,50 @@ Sebelum mengelola User Input dan Bot Response pada Chatbot, pastikan Anda memili
 4. Jika memilih Input Type "Text", tentukan Input handling: Specific user input (bot merespons input sesuai kata/kalimat yang ditentukan) atau Save user input to variable (menyimpan jawaban pengguna ke variabel).
 5. Ulangi langkah 2-4 untuk membuat User Input tambahan sesuai kebutuhan.
 6. Klik tombol "+" kemudian pilih "Bot Response" untuk membuat respons bot.
-7. Konfigurasi Bot Response sesuai kebutuhan percakapan Anda.
+7. Konfigurasi Bot Response sesuai kebutuhan percakapan Anda.## Expected Result  <!-- confidence:high ✓ -->
+
+Setelah menyelesaikan langkah-langkah di atas, User Input dan Bot Response berhasil dikonfigurasi. Chatbot Anda akan:
+
+- Menerima input pengguna sesuai tipe yang ditentukan (teks, gambar, atau semua jenis)
+- Merespons dengan Bot Response yang telah Anda rancang
+- Menyimpan data pengguna ke variabel jika Anda mengaktifkan opsi "Save user input to variable"
+- Menampilkan alur percakapan dalam bentuk Tree Diagram yang siap untuk dipublikasikan
+
+> Screenshot: 120.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51040302976025
+
+> Screenshot: 121.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51040281074201
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149609625
+
+> Screenshot: 122.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51040281077785
+
+> Screenshot: 124.png
+> Image: https://help-center.qontak.com/hc/article_attachments/51132823692313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149638809
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173180313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149640729
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173228057
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173228697
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173181849
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173233817
 
 > Screenshot: Screenshot
 > Image: https://help-center.qontak.com/hc/article_attachments/36774173236633
@@ -53,10 +96,7 @@ Sebelum mengelola User Input dan Bot Response pada Chatbot, pastikan Anda memili
 > Image: https://help-center.qontak.com/hc/article_attachments/36774149645977
 
 > Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173230873
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173237529
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149655961
 
 > Screenshot: Screenshot
 > Image: https://help-center.qontak.com/hc/article_attachments/36774173246745
@@ -65,28 +105,13 @@ Sebelum mengelola User Input dan Bot Response pada Chatbot, pastikan Anda memili
 > Image: https://help-center.qontak.com/hc/article_attachments/36774173240857
 
 > Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149667609
+
+> Screenshot: Screenshot
 > Image: https://help-center.qontak.com/hc/article_attachments/36774149663385
 
 > Screenshot: Screenshot
 > Image: https://help-center.qontak.com/hc/article_attachments/36774173243929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173233817
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149655961
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149667609
-
-## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan langkah-langkah di atas, User Input dan Bot Response berhasil dikonfigurasi. Chatbot Anda akan:
-
-- Menerima input pengguna sesuai tipe yang ditentukan (teks, gambar, atau semua jenis)
-- Merespons dengan Bot Response yang telah Anda rancang
-- Menyimpan data pengguna ke variabel jika Anda mengaktifkan opsi "Save user input to variable"
-- Menampilkan alur percakapan dalam bentuk Tree Diagram yang siap untuk dipublikasikan
 
 ## Error States  <!-- confidence:medium ~ -->
 

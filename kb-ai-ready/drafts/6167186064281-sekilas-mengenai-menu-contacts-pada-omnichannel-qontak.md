@@ -30,6 +30,15 @@ faithfulness_threshold: 0.9
 
 Menu Contacts pada Qontak Omnichannel adalah pusat manajemen data pelanggan Anda. Di menu ini, Anda dapat melihat daftar lengkap semua kontak yang tersimpan dalam sistem, menambahkan kontak baru secara satuan atau massal, serta mengedit data kontak existing. Menu Contacts menyediakan tampilan terorganisir dengan filter berdasarkan channel komunikasi dan waktu, sehingga memudahkan Anda menemukan dan mengelola informasi kontak pelanggan.
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38432219406745
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38432193033369
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/38432193035801
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Menu Contacts memastikan Anda memiliki database pelanggan yang terorganisir dan mudah diakses dalam satu tempat. Dengan fitur filter dan pencarian yang tersedia, Anda dapat dengan cepat menemukan kontak berdasarkan nama atau channel komunikasi. Fitur bulk edit memungkinkan efisiensi waktu saat mengelola banyak kontak sekaligus. Data kontak yang terintegrasi antara Qontak Omnichannel dan Qontak CRM memastikan konsistensi informasi pelanggan di seluruh sistem.

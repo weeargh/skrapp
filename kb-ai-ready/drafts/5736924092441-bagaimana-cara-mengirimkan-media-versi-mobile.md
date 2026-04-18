@@ -52,6 +52,15 @@ Untuk mengirimkan media melalui versi mobile Qontak Omnichannel, Anda memerlukan
 
 5. Pilih file media yang ingin dikirim, lalu konfirmasi untuk mengirimnya ke customer.
 
+> Screenshot: 19.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50772410249753
+
+> Screenshot: 20.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50772410255513
+
+> Screenshot: 21.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50772410260377
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah mengirimkan media, file berhasil diunggah dan terkirim ke customer di percakapan Inbox. Pesan media akan muncul dalam thread percakapan dengan file attachment terlihat. Customer akan menerima media tersebut di aplikasi Qontak mereka dan dapat mengunduhnya jika diperlukan.

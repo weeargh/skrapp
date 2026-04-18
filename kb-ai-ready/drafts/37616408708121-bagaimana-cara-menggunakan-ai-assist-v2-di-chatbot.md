@@ -64,6 +64,24 @@ faithfulness_threshold: 0.6
 6. Klik "Save" untuk menyimpan AI response
 7. Untuk menambah AI response lainnya, klik ikon tambah (+), pilih "AI response", masukkan nama, tambahkan learning source, lalu klik "Save"
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/37616417564569
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/37616417565721
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/37616408667929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/37616408669977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/37616408671769
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/37616417578137
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 AI Assist V2 berhasil diaktifkan dan dikonfigurasi. Anda akan melihat:

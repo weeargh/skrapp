@@ -47,6 +47,15 @@ Untuk melihat informasi room pesan di Qontak Omnichannel versi web, Anda memerlu
 7. Perhatikan 4 status pesan: All, Unassigned, Assigned, dan Resolved
 8. Untuk menyelesaikan obrolan kadaluarsa, klik **Resolve all expired chat room**
 
+> Screenshot: 21.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56527490168601
+
+> Screenshot: 22.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56527571471001
+
+> Screenshot: 23.png
+> Image: https://help-center.qontak.com/hc/article_attachments/56527490175385
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda akan berhasil melihat informasi room pesan dengan hasil berikut:

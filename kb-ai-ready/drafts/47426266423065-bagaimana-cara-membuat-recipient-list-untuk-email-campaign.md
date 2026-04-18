@@ -48,6 +48,45 @@ Anda ingin membuat Recipient list untuk Email Campaign. Sebelum memulai, pastika
 6. Unduh template yang disediakan dan isi dengan data recipient Anda. Pastikan kolom pertama berisi recipient_email_address dan kolom kedua berisi full_name tanpa mengubah nama header.
 7. Unggah file dengan menyeret file ke tampilan atau klik Browse, kemudian klik Import. Sistem akan memproses data.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47426266416025
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47426266416153
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47426266416537
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47426281632153
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47426281632409
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51230879965465
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47426266419737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52284811708697
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52284836572313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52284836572569
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52284836574489
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52284811710745
+
+> Screenshot: 22.png
+> Image: https://help-center.qontak.com/hc/article_attachments/52284811711001
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Recipient list berhasil dibuat dan data recipient terimpor. Sistem akan menampilkan status impor dan jumlah recipient yang berhasil diproses. Recipient list akan muncul di daftar Recipient lists dan siap digunakan saat membuat Email Campaign. Anda dapat memilih recipient list ini dari dropdown menu saat membuat campaign baru.

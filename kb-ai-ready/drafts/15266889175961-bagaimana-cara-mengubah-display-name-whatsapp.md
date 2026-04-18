@@ -51,6 +51,12 @@ Untuk mengubah display name WhatsApp di Qontak, Anda memerlukan:
 
 7. Tunggu persetujuan dari Meta selama maksimal 24 jam.
 
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49068196877977
+
+> Screenshot: download__1_.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36776189714457
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah, display name WhatsApp Anda akan berubah sesuai input yang diberikan. Sistem menampilkan pesan konfirmasi bahwa perubahan telah dikirim ke Meta untuk persetujuan. Dalam waktu maksimal 24 jam, display name baru akan aktif di profil WhatsApp Business Anda dan terlihat oleh kontak yang menghubungi Anda melalui WhatsApp.

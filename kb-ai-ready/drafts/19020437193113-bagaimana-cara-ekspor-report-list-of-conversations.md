@@ -45,6 +45,12 @@ Untuk mengekspor Report List of Conversations, Anda memerlukan:
 8. Pilih **Periode** dan **Channel** sesuai kebutuhan, lalu klik **Export** → Proses ekspor dimulai
 9. Tunggu hingga halaman menampilkan status ekspor dengan informasi **File Name**, **Exporter**, **Export Date**, dan **Status** → Ekspor sedang diproses atau telah selesai
 
+> Screenshot: 62.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50809474876185
+
+> Screenshot: 63.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50809446007449
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah ekspor berhasil:

@@ -43,6 +43,12 @@ faithfulness_threshold: 0.3
 
 4. Sistem akan memproses pengunduhan. Jika muncul notifikasi status, klik **Upload/Download Properties** untuk memantau progress download hingga selesai.
 
+> Screenshot: 142.png
+> Image: https://help-center.qontak.com/hc/article_attachments/53404130345241
+
+> Screenshot: CRMCONTACT2.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089505561
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 File data kontak berhasil diunduh ke perangkat Anda dalam format yang dapat dibuka (CSV/Excel). Notifikasi download selesai muncul atau file langsung tersimpan di folder Downloads perangkat. Data kontak dapat segera dibuka dan digunakan untuk referensi atau proses lanjutan seperti bulk update.

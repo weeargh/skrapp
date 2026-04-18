@@ -46,6 +46,15 @@ Tidak ada persyaratan role khusus untuk melihat tampilan Tasks pada versi mobile
 
 3. Lihat tampilan Tasks yang mencakup kategori, search bar, filter, status task, list task, dan tag task untuk mengelola kegiatan Anda seperti visit, follow-up, dan aktivitas lainnya.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46149464429977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46149464433945
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46149479785753
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda berhasil masuk dan mengklik menu **"Task"**, sistem akan menampilkan halaman Tasks dengan komponen berikut:

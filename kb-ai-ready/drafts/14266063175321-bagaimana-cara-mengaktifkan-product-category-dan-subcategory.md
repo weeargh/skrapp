@@ -59,6 +59,18 @@ Untuk mengaktifkan Product Category dan Subcategory di Mekari Qontak, Anda membu
 7. Pilih Styling (Short Column atau Long Column)
 8. Klik tombol Save untuk menyimpan perubahan
 
+> Screenshot: 1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49352706034329
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772392343833
+
+> Screenshot: 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36772399946265
+
+> Screenshot: 6.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50103312755481
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda mengklik tombol Save, sistem akan menyimpan pengaturan aktivasi Product Category dan/atau Product Subcategory. Fitur-fitur ini kini menjadi aktif dan tersedia untuk digunakan.
