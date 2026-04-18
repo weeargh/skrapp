@@ -58,7 +58,9 @@ tbody tr.active { background: #e7f1ff; }
 td { padding: 8px 12px; vertical-align: middle; }
 .col-title { max-width: 320px; }
 .col-title .title-text { font-weight: 500; white-space: nowrap; overflow: hidden;
-                          text-overflow: ellipsis; max-width: 300px; display: block; }
+                          text-overflow: ellipsis; max-width: 300px; display: block;
+                          color: var(--text); text-decoration: none; }
+.col-title .title-text:hover { color: #0d6efd; text-decoration: underline; }
 .col-title .slug-text { font-size: 11px; color: var(--muted); white-space: nowrap;
                          overflow: hidden; text-overflow: ellipsis; max-width: 300px; display: block; }
 
@@ -299,7 +301,8 @@ function renderTable() {
       : '<span class="compliance-dot dot-no" title="Not sensitive"></span>';
     return `<tr data-slug="${esc(a.slug)}" class="${currentSlug === a.slug ? 'active' : ''}" onclick="openPanel('${esc(a.slug)}')">
       <td class="col-title">
-        <span class="title-text" title="${esc(a.title)}">${esc(a.title)}</span>
+        <a class="title-text" href="/mekarirag/pages/${esc(a.slug)}" title="${esc(a.title)}"
+           onclick="event.stopPropagation()">${esc(a.title)}</a>
         <span class="slug-text">${esc(a.slug)}</span>
       </td>
       <td>${typeBadge}</td>

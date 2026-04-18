@@ -1,8 +1,9 @@
 """
 MekariRAG Review API
-GET  /mekarirag/review                → serve review UI
+GET  /mekarirag/review                → filterable review table
+GET  /mekarirag/pages/<slug>          → individual article page (rendered + edit)
 GET  /mekarirag/api/articles          → list all draft articles as JSON
-GET  /mekarirag/api/article/<slug>    → single article with parsed sections
+GET  /mekarirag/api/article/<slug>    → single article with sections + prev/next
 PUT  /mekarirag/api/article/<slug>    → save edits back to .md file
 """
 from __future__ import annotations
@@ -100,9 +101,22 @@ def _filename(slug: str) -> str:
 
 # ── Routes ─────────────────────────────────────────────────────────────────
 
+def _all_slugs() -> list[str]:
+    """Sorted list of all draft slugs (alphabetical)."""
+    if not os.path.isdir(DRAFTS_DIR):
+        return []
+    return sorted(_slug(f) for f in os.listdir(DRAFTS_DIR) if f.endswith(".md"))
+
+
 @mekarirag_bp.route("/mekarirag/review")
 def review_page():
     html_path = os.path.join(os.path.dirname(__file__), "../../web/mekarirag.html")
+    return send_file(os.path.abspath(html_path))
+
+
+@mekarirag_bp.route("/mekarirag/pages/<path:slug>")
+def article_page(slug: str):
+    html_path = os.path.join(os.path.dirname(__file__), "../../web/mekarirag-page.html")
     return send_file(os.path.abspath(html_path))
 
 
@@ -152,8 +166,18 @@ def get_article(slug: str):
     fm, body = _read(path)
     sections = _parse_sections(body)
 
+    # Prev / next navigation (alphabetical order)
+    slugs = _all_slugs()
+    idx = slugs.index(slug) if slug in slugs else -1
+    prev_slug = slugs[idx - 1] if idx > 0 else None
+    next_slug = slugs[idx + 1] if idx != -1 and idx < len(slugs) - 1 else None
+
     return jsonify({
         "slug":                slug,
+        "position":            idx + 1,
+        "total":               len(slugs),
+        "prev_slug":           prev_slug,
+        "next_slug":           next_slug,
         "title":               fm.get("title", ""),
         "canonical_url":       fm.get("canonical_url", ""),
         "article_type":        fm.get("article_type", ""),

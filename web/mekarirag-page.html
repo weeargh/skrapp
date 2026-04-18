@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MekariRAG Article</title>
+<script src="https://cdn.jsdelivr.net/npm/marked@9/marked.min.js"></script>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #f8f9fa; --surface: #fff; --border: #e2e6ea;
+  --text: #212529; --muted: #6c757d;
+  --task: #0d6efd; --concept: #198754; --trouble: #dc3545;
+  --high: #198754; --medium: #fd7e14; --low: #dc3545;
+  --sidebar-w: 240px;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: var(--bg); color: var(--text); font-size: 14px;
+       height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
+
+/* ── Topbar ── */
+.topbar { background: var(--surface); border-bottom: 1px solid var(--border);
+          padding: 0 16px; height: 48px; display: flex; align-items: center;
+          gap: 12px; flex-shrink: 0; }
+.topbar a.back { color: var(--muted); text-decoration: none; font-size: 13px;
+                 display: flex; align-items: center; gap: 4px; white-space: nowrap; }
+.topbar a.back:hover { color: var(--text); }
+.topbar .sep { color: var(--border); }
+.topbar .article-title { font-size: 13px; font-weight: 500; flex: 1;
+                          white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.topbar .nav-group { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+.topbar .pos { font-size: 12px; color: var(--muted); white-space: nowrap; }
+.btn { padding: 6px 12px; border-radius: 6px; border: 1px solid var(--border);
+       font-size: 13px; font-weight: 500; cursor: pointer; text-decoration: none;
+       background: var(--bg); color: var(--text); transition: background .1s; display: inline-flex;
+       align-items: center; gap: 5px; }
+.btn:hover { background: #e9ecef; }
+.btn-primary { background: #0d6efd; color: #fff; border-color: #0d6efd; }
+.btn-primary:hover { background: #0b5ed7; }
+.btn-success { background: var(--high); color: #fff; border-color: var(--high); }
+.btn-success:hover { background: #157347; }
+.btn-sm { padding: 4px 10px; font-size: 12px; }
+.btn:disabled { opacity: .5; cursor: default; }
+.save-status { font-size: 12px; color: var(--muted); }
+.save-status.ok { color: var(--high); }
+.save-status.err { color: var(--trouble); }
+
+/* ── Layout ── */
+.body-wrap { display: flex; flex: 1; overflow: hidden; }
+
+/* ── Sidebar ── */
+.sidebar { width: var(--sidebar-w); background: var(--surface);
+           border-right: 1px solid var(--border); overflow-y: auto;
+           padding: 16px 14px; display: flex; flex-direction: column; gap: 14px;
+           flex-shrink: 0; }
+.sidebar h3 { font-size: 11px; font-weight: 700; text-transform: uppercase;
+              letter-spacing: .06em; color: var(--muted); margin-bottom: 6px; }
+.meta-block { display: flex; flex-direction: column; gap: 8px; }
+.meta-row { display: flex; flex-direction: column; gap: 3px; }
+.meta-row label { font-size: 10px; font-weight: 600; text-transform: uppercase;
+                  letter-spacing: .05em; color: var(--muted); }
+.meta-row .val { font-size: 13px; }
+.meta-row select, .meta-row input { width: 100%; border: 1px solid var(--border);
+  border-radius: 5px; padding: 4px 8px; font-size: 12px; background: var(--bg);
+  outline: none; font-family: inherit; }
+.meta-row select:focus, .meta-row input:focus { border-color: #86b7fe; background: #fff; }
+
+.badge { display: inline-block; padding: 2px 8px; border-radius: 20px;
+         font-size: 11px; font-weight: 600; white-space: nowrap; }
+.badge-task       { background: #dbeafe; color: var(--task); }
+.badge-concept    { background: #dcfce7; color: var(--concept); }
+.badge-trouble    { background: #fee2e2; color: var(--trouble); }
+.badge-high       { background: #dcfce7; color: var(--high); }
+.badge-medium     { background: #ffedd5; color: var(--medium); }
+.badge-low        { background: #fee2e2; color: var(--low); }
+.badge-unknown    { background: #f1f3f5; color: var(--muted); }
+.tag  { display: inline-block; background: #f1f3f5; border-radius: 4px;
+        padding: 1px 6px; font-size: 11px; color: var(--muted); margin: 1px; }
+.tags-wrap { display: flex; flex-wrap: wrap; gap: 2px; }
+
+hr.divider { border: none; border-top: 1px solid var(--border); }
+.canon-link { font-size: 11px; color: var(--muted); word-break: break-all; }
+.canon-link a { color: inherit; }
+
+/* ── Article content ── */
+.content-wrap { flex: 1; overflow-y: auto; }
+.content-inner { max-width: 780px; margin: 0 auto; padding: 24px 32px 60px; }
+
+/* Read mode: rendered HTML */
+.section-block { margin-bottom: 28px; }
+.section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
+                  padding-bottom: 8px; border-bottom: 2px solid var(--border); }
+.section-header h2 { font-size: 16px; font-weight: 700; flex: 1; }
+.section-body { font-size: 14px; line-height: 1.7; color: #343a40; }
+.section-body p  { margin-bottom: .7em; }
+.section-body ul, .section-body ol { padding-left: 20px; margin-bottom: .7em; }
+.section-body li { margin-bottom: .3em; }
+.section-body strong { font-weight: 600; }
+.section-body code { background: #f1f3f5; padding: 1px 5px; border-radius: 3px;
+                     font-size: 12px; font-family: 'SF Mono', Consolas, monospace; }
+.section-body blockquote { border-left: 3px solid var(--border); padding: 4px 12px;
+                            color: var(--muted); margin: 8px 0; font-size: 13px; }
+.section-body a { color: var(--task); }
+.screenshot-block { background: #f8f9fa; border: 1px dashed var(--border);
+                    border-radius: 6px; padding: 10px 14px; margin: 8px 0;
+                    font-size: 12px; color: var(--muted); }
+.screenshot-block img { max-width: 100%; border-radius: 4px; margin-top: 6px;
+                         display: block; border: 1px solid var(--border); }
+.note-block  { background: #fff8e1; border-left: 3px solid #ffc107; padding: 8px 12px;
+               border-radius: 0 6px 6px 0; margin: 8px 0; font-size: 13px; }
+.warn-block  { background: #fff3cd; border-left: 3px solid #ff9800; padding: 8px 12px;
+               border-radius: 0 6px 6px 0; margin: 8px 0; font-size: 13px; }
+
+/* Edit mode: textareas */
+.section-edit-card { border: 1px solid var(--border); border-radius: 8px;
+                     margin-bottom: 16px; overflow: hidden; }
+.section-edit-header { padding: 8px 12px; background: var(--bg);
+                        display: flex; align-items: center; gap: 8px;
+                        border-bottom: 1px solid var(--border); }
+.section-edit-header span { font-weight: 600; font-size: 13px; flex: 1; }
+.section-edit-header select { font-size: 11px; padding: 2px 6px;
+  border: 1px solid var(--border); border-radius: 4px; background: var(--bg); }
+.section-edit-card textarea { width: 100%; border: none; padding: 10px 12px;
+  font-size: 13px; font-family: 'SF Mono', Consolas, monospace; line-height: 1.55;
+  min-height: 100px; background: #fff; outline: none; resize: vertical; }
+
+.empty-state { padding: 40px; text-align: center; color: var(--muted); font-size: 14px; }
+.loading-state { padding: 40px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="/mekarirag/review" class="back">← Review list</a>
+  <span class="sep">|</span>
+  <span class="article-title" id="topTitle">Loading…</span>
+  <div class="nav-group">
+    <span class="pos" id="posLabel"></span>
+    <a class="btn btn-sm" id="btnPrev" href="#" title="Previous article (←)">←</a>
+    <a class="btn btn-sm" id="btnNext" href="#" title="Next article (→)">→</a>
+    <button class="btn btn-sm btn-primary" id="btnEdit" onclick="toggleEdit()">Edit</button>
+    <button class="btn btn-sm btn-success" id="btnSave" onclick="saveArticle()" style="display:none">Save</button>
+    <button class="btn btn-sm" id="btnCancel" onclick="cancelEdit()" style="display:none">Cancel</button>
+    <span class="save-status" id="saveStatus"></span>
+  </div>
+</div>
+
+<div class="body-wrap">
+  <aside class="sidebar" id="sidebar">
+    <div class="loading-state">Loading…</div>
+  </aside>
+  <div class="content-wrap">
+    <div class="content-inner" id="contentInner">
+      <div class="loading-state">Loading…</div>
+    </div>
+  </div>
+</div>
+
+<script>
+const SECTIONS_BY_TYPE = {
+  task:            ['Prerequisites','Steps','Expected Result','Error States','Escalation'],
+  concept:         ['Definition','Why It Matters','Key Attributes','Related Tasks'],
+  troubleshooting: ['Symptom','Root Cause','Solution','Escalation'],
+};
+const CONF_BADGE = { high: '✓ high', medium: '~ medium', low: '? low' };
+const CONF_SCORE = { high: 0.9, medium: 0.6, low: 0.3 };
+
+let article = null;
+let editMode = false;
+
+// ── Slug from URL ───────────────────────────────────────────────────────────
+function slugFromUrl() {
+  const m = location.pathname.match(/^\/mekarirag\/pages\/(.+)$/);
+  return m ? m[1] : null;
+}
+
+// ── Load ────────────────────────────────────────────────────────────────────
+async function load(slug) {
+  editMode = false;
+  document.getElementById('topTitle').textContent = '…';
+  document.getElementById('sidebar').innerHTML = '<div class="loading-state">Loading…</div>';
+  document.getElementById('contentInner').innerHTML = '<div class="loading-state">Loading…</div>';
+
+  const res = await fetch(`/mekarirag/api/article/${slug}`);
+  if (!res.ok) {
+    document.getElementById('contentInner').innerHTML =
+      '<div class="empty-state">Article not found.</div>';
+    return;
+  }
+  article = await res.json();
+
+  document.title = article.title || slug;
+  document.getElementById('topTitle').textContent = article.title || slug;
+  document.getElementById('posLabel').textContent =
+    article.position && article.total ? `${article.position} / ${article.total}` : '';
+
+  const prev = article.prev_slug;
+  const next = article.next_slug;
+  const btnPrev = document.getElementById('btnPrev');
+  const btnNext = document.getElementById('btnNext');
+  btnPrev.href = prev ? `/mekarirag/pages/${prev}` : '#';
+  btnPrev.style.opacity = prev ? '1' : '0.3';
+  btnPrev.onclick = prev ? null : e => e.preventDefault();
+  btnNext.href = next ? `/mekarirag/pages/${next}` : '#';
+  btnNext.style.opacity = next ? '1' : '0.3';
+  btnNext.onclick = next ? null : e => e.preventDefault();
+
+  renderSidebar(article);
+  renderContent(article);
+  showReadButtons();
+}
+
+// ── Sidebar ─────────────────────────────────────────────────────────────────
+function renderSidebar(d) {
+  const type  = d.article_type || '';
+  const conf  = d.faithfulness_threshold;
+  const confL = conf == null ? 'unknown' : conf >= 0.85 ? 'high' : conf >= 0.55 ? 'medium' : 'low';
+
+  const typeOpts = ['task','concept','troubleshooting'].map(t =>
+    `<option value="${t}"${type===t?' selected':''}>${t}</option>`).join('');
+  const solveOpts = ['content','tool','hybrid'].map(t =>
+    `<option value="${t}"${d.solvability_type===t?' selected':''}>${t}</option>`).join('');
+  const surfOpts = ['web','mobile','api','all'].map(t =>
+    `<option value="${t}"${d.product_surface===t?' selected':''}>${t}</option>`).join('');
+  const confOpts = [['0.9','✓ high'],['0.6','~ medium'],['0.3','? low']].map(([v,l]) =>
+    `<option value="${v}"${conf!=null&&parseFloat(v)===conf?' selected':''}>${l}</option>`).join('');
+
+  document.getElementById('sidebar').innerHTML = `
+    <div>
+      <h3>Metadata</h3>
+      <div class="meta-block">
+        <div class="meta-row">
+          <label>Type</label>
+          <div class="val read-only"><span class="badge badge-${type==='troubleshooting'?'trouble':type}">${esc(type)}</span></div>
+          <select class="edit-only" id="m-type" style="display:none" onchange="onTypeChange()">${typeOpts}</select>
+        </div>
+        <div class="meta-row">
+          <label>Solvability</label>
+          <div class="val read-only">${esc(d.solvability_type||'—')}</div>
+          <select class="edit-only" id="m-solvability" style="display:none">${solveOpts}</select>
+        </div>
+        <div class="meta-row">
+          <label>Surface</label>
+          <div class="val read-only"><span class="tag">${esc(d.product_surface||'—')}</span></div>
+          <select class="edit-only" id="m-surface" style="display:none">${surfOpts}</select>
+        </div>
+        <div class="meta-row">
+          <label>Products</label>
+          <div class="val read-only tags-wrap">${(d.products||[]).map(p=>`<span class="tag">${esc(p)}</span>`).join('')||'—'}</div>
+          <input class="edit-only" id="m-products" style="display:none" value="${esc((d.products||[]).join(', '))}">
+        </div>
+        <div class="meta-row">
+          <label>Confidence</label>
+          <div class="val read-only"><span class="badge badge-${confL}">${confL}${conf!=null?' ('+conf+')':''}</span></div>
+          <select class="edit-only" id="m-conf" style="display:none">${confOpts}</select>
+        </div>
+        <div class="meta-row">
+          <label>Compliance</label>
+          <div class="val read-only">${d.compliance_sensitive ?
+            '<span style="color:var(--trouble)">⚠ Sensitive</span>' :
+            '<span style="color:var(--muted)">Not sensitive</span>'}</div>
+          <select class="edit-only" id="m-compliance" style="display:none">
+            <option value="false"${!d.compliance_sensitive?' selected':''}>Not sensitive</option>
+            <option value="true"${d.compliance_sensitive?' selected':''}>Sensitive</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <hr class="divider">
+    <div>
+      <h3>Intent tags</h3>
+      <div class="tags-wrap read-only">${(d.intent_tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')||'<span style="color:var(--muted)">none</span>'}</div>
+      <input class="edit-only" id="m-tags" style="display:none;margin-top:4px" value="${esc((d.intent_tags||[]).join(', '))}">
+    </div>
+    <hr class="divider">
+    <div>
+      <h3>Query examples</h3>
+      <div class="read-only" style="font-size:12px;color:var(--muted);line-height:1.6">${(d.query_examples||[]).map(q=>`• ${esc(q)}`).join('<br>')||'—'}</div>
+    </div>
+    ${d.canonical_url ? `<hr class="divider">
+    <div class="canon-link"><a href="${esc(d.canonical_url)}" target="_blank">↗ Zendesk source</a></div>` : ''}
+    ${d.verified_by ? `<hr class="divider">
+    <div style="font-size:11px;color:var(--muted)">Verified by: ${esc(d.verified_by)}</div>` : ''}
+  `;
+}
+
+// ── Read mode content ────────────────────────────────────────────────────────
+function renderContent(d) {
+  const sections = d.sections || {};
+  const type = d.article_type || 'concept';
+  const order = SECTIONS_BY_TYPE[type] || Object.keys(sections);
+  const extra = Object.keys(sections).filter(k => !order.includes(k));
+  const allSecs = [...order, ...extra].filter(k => sections[k]);
+
+  if (!allSecs.length) {
+    document.getElementById('contentInner').innerHTML =
+      '<div class="empty-state">No sections found in this article.</div>';
+    return;
+  }
+
+  const html = allSecs.map(name => {
+    const sec = sections[name];
+    const conf = sec.confidence || 'medium';
+    const raw = sec.content || '';
+
+    // Custom pre-processing for Qontak-specific patterns
+    const processed = preprocessMarkdown(raw);
+    const rendered = marked.parse(processed);
+
+    return `<div class="section-block" id="sec-${esc(name.replace(/\s+/g,'-'))}">
+      <div class="section-header">
+        <h2>${esc(name)}</h2>
+        <span class="badge badge-${conf}">${CONF_BADGE[conf]||conf}</span>
+      </div>
+      <div class="section-body">${rendered}</div>
+    </div>`;
+  }).join('');
+
+  document.getElementById('contentInner').innerHTML = html;
+}
+
+function preprocessMarkdown(raw) {
+  // Pair up > Screenshot: ... / > Image: url into a rendered block
+  return raw.replace(
+    /> Screenshot: ([^\n]+)\n> Image: ([^\n]+)/g,
+    (_, alt, url) => `<div class="screenshot-block">📷 <strong>${esc(alt)}</strong><br><img src="${esc(url.trim())}" alt="${esc(alt)}" loading="lazy"></div>`
+  ).replace(
+    /> ⚠️ \*\*Penting\*\*\n> (.+)/g,
+    (_, txt) => `<div class="warn-block">⚠️ <strong>Penting:</strong> ${esc(txt)}</div>`
+  ).replace(
+    /> ℹ️ \*\*Catatan\*\*\n> (.+)/g,
+    (_, txt) => `<div class="note-block">ℹ️ <strong>Catatan:</strong> ${esc(txt)}</div>`
+  );
+}
+
+// ── Edit mode ────────────────────────────────────────────────────────────────
+function toggleEdit() {
+  editMode = true;
+  showEditButtons();
+  // Show edit fields in sidebar
+  document.querySelectorAll('.read-only').forEach(el => el.style.display = 'none');
+  document.querySelectorAll('.edit-only').forEach(el => el.style.display = '');
+
+  // Replace content with textareas
+  const sections = article.sections || {};
+  const type = article.article_type || 'concept';
+  const order = SECTIONS_BY_TYPE[type] || Object.keys(sections);
+  const extra = Object.keys(sections).filter(k => !order.includes(k));
+  const allSecs = [...order, ...extra];
+
+  // Add any missing canonical sections
+  const allRequired = [...(SECTIONS_BY_TYPE[type]||[])];
+  allRequired.filter(s => !allSecs.includes(s)).forEach(s => allSecs.push(s));
+
+  const html = allSecs.map(name => {
+    const sec = sections[name] || {content:'', confidence:'low'};
+    const conf = sec.confidence || 'low';
+    return `<div class="section-edit-card">
+      <div class="section-edit-header">
+        <span>${esc(name)}</span>
+        <select class="section-conf" data-section="${esc(name)}">
+          <option value="high"${conf==='high'?' selected':''}>✓ high</option>
+          <option value="medium"${conf==='medium'?' selected':''}>~ medium</option>
+          <option value="low"${conf==='low'?' selected':''}>? low</option>
+        </select>
+      </div>
+      <textarea data-section="${esc(name)}" rows="6">${esc(sec.content)}</textarea>
+    </div>`;
+  }).join('');
+
+  document.getElementById('contentInner').innerHTML = html;
+}
+
+function cancelEdit() {
+  editMode = false;
+  showReadButtons();
+  document.querySelectorAll('.read-only').forEach(el => el.style.display = '');
+  document.querySelectorAll('.edit-only').forEach(el => el.style.display = 'none');
+  renderContent(article);
+}
+
+function onTypeChange() {
+  // Optionally re-render section order hint — for now just store the value
+}
+
+function showReadButtons() {
+  document.getElementById('btnEdit').style.display = '';
+  document.getElementById('btnSave').style.display = 'none';
+  document.getElementById('btnCancel').style.display = 'none';
+}
+function showEditButtons() {
+  document.getElementById('btnEdit').style.display = 'none';
+  document.getElementById('btnSave').style.display = '';
+  document.getElementById('btnCancel').style.display = '';
+}
+
+// ── Save ─────────────────────────────────────────────────────────────────────
+async function saveArticle() {
+  const status = document.getElementById('saveStatus');
+  status.textContent = 'Saving…'; status.className = 'save-status';
+
+  const sections = {};
+  document.querySelectorAll('[data-section]').forEach(el => {
+    const name = el.dataset.section;
+    if (!sections[name]) sections[name] = {content:'', confidence:'medium'};
+    if (el.tagName === 'TEXTAREA') sections[name].content = el.value;
+    if (el.classList.contains('section-conf')) sections[name].confidence = el.value;
+  });
+
+  const payload = {
+    title:               document.querySelector('#topTitle')?.textContent || article.title,
+    article_type:        document.getElementById('m-type')?.value || article.article_type,
+    solvability_type:    document.getElementById('m-solvability')?.value || article.solvability_type,
+    product_surface:     document.getElementById('m-surface')?.value || article.product_surface,
+    products:            (document.getElementById('m-products')?.value||'').split(',').map(s=>s.trim()).filter(Boolean),
+    intent_tags:         (document.getElementById('m-tags')?.value||'').split(',').map(s=>s.trim()).filter(Boolean),
+    faithfulness_threshold: parseFloat(document.getElementById('m-conf')?.value || 0.6),
+    compliance_sensitive: document.getElementById('m-compliance')?.value === 'true',
+    sections,
+  };
+
+  try {
+    const res = await fetch(`/mekarirag/api/article/${article.slug}`, {
+      method: 'PUT', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload),
+    });
+    if (res.ok) {
+      // Merge edits back into article object
+      Object.assign(article, payload);
+      article.sections = sections;
+      editMode = false;
+      showReadButtons();
+      document.querySelectorAll('.read-only').forEach(el => el.style.display = '');
+      document.querySelectorAll('.edit-only').forEach(el => el.style.display = 'none');
+      renderSidebar(article);
+      renderContent(article);
+      status.textContent = '✓ Saved'; status.className = 'save-status ok';
+      setTimeout(() => { status.textContent = ''; }, 3000);
+    } else {
+      status.textContent = '✗ Error'; status.className = 'save-status err';
+    }
+  } catch(e) {
+    status.textContent = '✗ ' + e.message; status.className = 'save-status err';
+  }
+}
+
+// ── Keyboard shortcuts ───────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (editMode) {
+    if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); saveArticle(); }
+    if (e.key === 'Escape') cancelEdit();
+    return;
+  }
+  if (e.key === 'ArrowLeft'  && article?.prev_slug) location.href = `/mekarirag/pages/${article.prev_slug}`;
+  if (e.key === 'ArrowRight' && article?.next_slug) location.href = `/mekarirag/pages/${article.next_slug}`;
+  if (e.key === 'e') toggleEdit();
+});
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+marked.setOptions({ breaks: true, gfm: true });
+load(slugFromUrl());
+</script>
+</body>
+</html>
