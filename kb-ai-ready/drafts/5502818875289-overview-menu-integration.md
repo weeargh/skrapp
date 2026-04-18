@@ -29,14 +29,11 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Integration adalah fitur dalam Qontak Omnichannel yang memungkinkan pengguna menghubungkan berbagai platform komunikasi eksternal ke dalam satu chat panel terpusat. Fitur ini memungkinkan Anda mengintegrasikan saluran komunikasi seperti WhatsApp, Instagram, Facebook Messenger, Email, Telegram, Google My Business, Web Chat, Mobile Chat, E-commerce, X (Twitter), Line Messenger, Call, dan Qontak CRM. Setelah integrasi, semua pesan dari platform tersebut akan masuk ke chat panel Qontak Omnichannel untuk pengelolaan terpusat.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/54622522001049
-
-## Why It Matters  <!-- confidence:medium ~ -->
+Menu Integration adalah fitur dalam Qontak Omnichannel yang memungkinkan pengguna menghubungkan berbagai platform komunikasi eksternal ke dalam satu chat panel terpusat. Fitur ini memungkinkan Anda mengintegrasikan saluran komunikasi seperti WhatsApp, Instagram, Facebook Messenger, Email, Telegram, Google My Business, Web Chat, Mobile Chat, E-commerce, X (Twitter), Line Messenger, Call, dan Qontak CRM. Setelah integrasi, semua pesan dari platform tersebut akan masuk ke chat panel Qontak Omnichannel untuk pengelolaan terpusat.## Why It Matters  <!-- confidence:medium ~ -->
 
 Mengintegrasikan berbagai platform komunikasi melalui Menu Integration membantu tim Anda mengelola semua percakapan pelanggan dari satu tempat. Ini meningkatkan efisiensi respons, mengurangi waktu yang terbuang untuk beralih antar aplikasi, dan memastikan tidak ada pesan yang terlewatkan. Dengan chat panel terpusat, tim support dapat memberikan layanan pelanggan yang lebih cepat dan konsisten di semua saluran komunikasi.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54622522001049)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

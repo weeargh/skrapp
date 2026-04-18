@@ -27,20 +27,13 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Skema Pembagian Pesan Masuk ke Agen adalah mekanisme dalam Qontak Omnichannel yang mengatur bagaimana pesan dari pelanggan didistribusikan kepada agen customer service. Skema ini memungkinkan pembagian pesan melalui tiga cara: alokasi manual oleh supervisor, alokasi mandiri oleh agen, dan distribusi otomatis berdasarkan menu yang dipilih atau ketersediaan agen. Fitur ini memastikan setiap pesan masuk ditangani oleh agen yang tepat melalui Inbox Omnichannel.
-
-> Screenshot: Screenshot_2023-03-31_at_15.41.49.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776434818201
-
-> Screenshot: 2022-10-21_17_08_03.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36776434813209
-
-> Screenshot: 2022-10-21_17_10_35.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36776434815129
-
-## Why It Matters  <!-- confidence:medium ~ -->
+Skema Pembagian Pesan Masuk ke Agen adalah mekanisme dalam Qontak Omnichannel yang mengatur bagaimana pesan dari pelanggan didistribusikan kepada agen customer service. Skema ini memungkinkan pembagian pesan melalui tiga cara: alokasi manual oleh supervisor, alokasi mandiri oleh agen, dan distribusi otomatis berdasarkan menu yang dipilih atau ketersediaan agen. Fitur ini memastikan setiap pesan masuk ditangani oleh agen yang tepat melalui Inbox Omnichannel.## Why It Matters  <!-- confidence:medium ~ -->
 
 Skema pembagian pesan yang efisien meningkatkan kecepatan respons dan kualitas layanan customer service. Dengan opsi alokasi manual, supervisor dapat mengarahkan pesan ke agen yang paling sesuai dengan keahlian atau ketersediaan mereka. Distribusi otomatis mengurangi waktu tunggu dan mencegah agen kelebihan beban. Sistem ini memastikan tidak ada pesan yang terlewat dan beban kerja terdistribusi merata di antara tim customer service.
+
+![Screenshot_2023-03-31_at_15.41.49.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434818201)
+![2022-10-21_17_08_03.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434813209)
+![2022-10-21_17_10_35.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434815129)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

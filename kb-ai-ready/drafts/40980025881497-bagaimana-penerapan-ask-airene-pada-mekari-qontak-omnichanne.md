@@ -53,45 +53,7 @@ Sebelum menerapkan Ask Airene pada Mekari Qontak Omnichannel, pastikan Anda meme
    - Anda dapat memilih lebih dari satu Agent tanpa validasi.
 
 5. Klik tombol **"Save"**.
-   - Sistem akan menampilkan notifikasi status "Processing" dan mulai memproses riwayat percakapan (biasanya 1-1,5 jam).
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980025806873
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980025809945
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980025811353
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980025814041
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980025815961
-
-> Screenshot: 3.2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980025819545
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/40980025821849
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980010636441
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980010638873
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980025834009
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980010650905
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40980010678681
-
-## Expected Result  <!-- confidence:high ✓ -->
+   - Sistem akan menampilkan notifikasi status "Processing" dan mulai memproses riwayat percakapan (biasanya 1-1,5 jam).## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat:
 
@@ -102,6 +64,19 @@ Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat:
 3. Ask Airene sekarang memiliki pengetahuan dari percakapan Agent yang dipilih dan siap untuk memberikan rekomendasi otomatis ketika Anda merespons klien di menu **Inbox** Omnichannel.
 
 4. Semakin akurat percakapan yang dilakukan oleh Agent, semakin akurat informasi yang dipelajari oleh AI.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025806873)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025809945)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025811353)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025814041)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025815961)
+![3.2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025819545)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025821849)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980010636441)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980010638873)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025834009)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980010650905)
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980010678681)
 
 ## Error States  <!-- confidence:medium ~ -->
 

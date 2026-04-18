@@ -60,29 +60,16 @@ faithfulness_threshold: 0.6
 
 10. Pilih file Excel data kontak Anda. Sistem akan memproses dan menampilkan notifikasi berhasil jika pengunggahan berhasil.
 
-11. Cek progress pengunggahan di menu **Properties**, tab **Upload/Download**.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49586336116121
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49586336117785
-
-> Screenshot: Contact_Bulk__3.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183618073
-
-> Screenshot: Contact_Bulk_4.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781141856665
-
-> Screenshot: Contact_Bulk_5.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781141855513
-
-> Screenshot: 09.png
-> Image: https://help-center.qontak.com/hc/article_attachments/26552575400089
-
-## Expected Result  <!-- confidence:high ✓ -->
+11. Cek progress pengunggahan di menu **Properties**, tab **Upload/Download**.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah pengunggahan berhasil, sistem akan menampilkan notifikasi konfirmasi. Data kontak yang berhasil diunggah akan muncul di menu **Contacts** dan dapat dilihat dalam daftar kontak. Progress pengunggahan dapat dipantau di menu **Properties**, tab **Upload/Download**. Kontak yang diunggah akan terhubung ke owner sesuai username atau email yang Anda tentukan.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586336116121)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586336117785)
+![Contact_Bulk__3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183618073)
+![Contact_Bulk_4.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781141856665)
+![Contact_Bulk_5.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781141855513)
+![09.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F26552575400089)
 
 ## Error States  <!-- confidence:medium ~ -->
 

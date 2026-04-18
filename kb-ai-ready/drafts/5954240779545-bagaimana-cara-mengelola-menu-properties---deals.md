@@ -73,27 +73,7 @@ Untuk mengelola Menu Properties - Deals pada Qontak CRM, Anda memerlukan:
 13. Gunakan ikon **"-"** untuk menghapus content option. Pop-up konfirmasi akan muncul meminta Anda memindahkan data ke opsi lain.
 
 14. Klik tombol **"Save"** untuk menyimpan perubahan.
-    → Properti akan diperbarui dan ditampilkan di daftar Properties Deals.
-
-> Screenshot: Screenshot
-> Image: https://lh5.googleusercontent.com/aeK5HAdbMgc-4MRS8FJdGzK2CltuNfE-Bs5XWFx5fe0GOdUDxzgnaCFcdMenzZ0RNO8AOWEff6LdCd84laJS2XZ1etOxMcgT1hopTNyfQHnIo4FOWlOLXNt8ezsrUoW0055e5PmjfxWQ9xOBiH3Tjds
-
-> Screenshot: Screenshot
-> Image: https://lh5.googleusercontent.com/FsEBZ2BrCEF_-fVxmntjj7jes0NjI6V4HLvYhS7d3-ySHZkORWuds-zUWXivKGTnrTgNw5FvFwZVVA4qELjC1Y9Y_fDnD2PpiYqjLCexVFf-CnYOuciwsp9PaPmD5p0NdCRAULiCqCiftKn56AkCptM
-
-> Screenshot: 29.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49959384554137
-
-> Screenshot: Screenshot
-> Image: https://lh5.googleusercontent.com/H51KjHcluuuVuAQXFWxse-iSc8tKUpMr4QkGMBaHHatXQpfKWmGJTv0d-eXsCuT2ZliKJBSF_veW5emQO6oDP0mQpGrdF9ARCqztX1WV4CYP2O_OIYBMmDFpYKN9S2D7JUT40trQSQXJvawFNt8OZIw
-
-> Screenshot: Screenshot
-> Image: https://lh6.googleusercontent.com/cIDnbM3Cxvp8tduTZXvNGKFllWkz2dK5LTxS-u0Gsnwk8J2Dr5EqvuItBOsoIyKqt1r6ZyoqM38oIgzrKGjvaHsOr6KsQDDoE8yjhxPXqQN6rcSTAUvZs99HFmOOZd7vVQFzeZt24CcFFDb7y3t_JyM
-
-> Screenshot: Screenshot
-> Image: https://lh5.googleusercontent.com/iY_JApoxjWCxzDdpdqnDordONx0blUx9FjPmE49bGLFGeXh0UKe5fuBeGIMPVZRPWzZx0Pn4VlhCI1WX1OclOLzRO0cMFboYN4p_54BJwzrp14J-Rcb53rXU2RdWfRQPnTtm6W2spkJscVXv4AASkwM
-
-## Expected Result  <!-- confidence:high ✓ -->
+    → Properti akan diperbarui dan ditampilkan di daftar Properties Deals.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengelola Menu Properties - Deals, Anda akan melihat:
 
@@ -102,6 +82,13 @@ Setelah berhasil mengelola Menu Properties - Deals, Anda akan melihat:
 3. **Deals list view** akan menampilkan properti yang Anda centang di kolom list view.
 4. **Pipeline yang diatur** akan menentukan properti mana yang wajib atau opsional saat pengisian Deal.
 5. Pesan konfirmasi "Properti berhasil disimpan" atau sejenisnya akan muncul setelah klik Save.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh5.googleusercontent.com%2FaeK5HAdbMgc-4MRS8FJdGzK2CltuNfE-Bs5XWFx5fe0GOdUDxzgnaCFcdMenzZ0RNO8AOWEff6LdCd84laJS2XZ1etOxMcgT1hopTNyfQHnIo4FOWlOLXNt8ezsrUoW0055e5PmjfxWQ9xOBiH3Tjds)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh5.googleusercontent.com%2FFsEBZ2BrCEF_-fVxmntjj7jes0NjI6V4HLvYhS7d3-ySHZkORWuds-zUWXivKGTnrTgNw5FvFwZVVA4qELjC1Y9Y_fDnD2PpiYqjLCexVFf-CnYOuciwsp9PaPmD5p0NdCRAULiCqCiftKn56AkCptM)
+![29.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49959384554137)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh5.googleusercontent.com%2FH51KjHcluuuVuAQXFWxse-iSc8tKUpMr4QkGMBaHHatXQpfKWmGJTv0d-eXsCuT2ZliKJBSF_veW5emQO6oDP0mQpGrdF9ARCqztX1WV4CYP2O_OIYBMmDFpYKN9S2D7JUT40trQSQXJvawFNt8OZIw)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh6.googleusercontent.com%2FcIDnbM3Cxvp8tduTZXvNGKFllWkz2dK5LTxS-u0Gsnwk8J2Dr5EqvuItBOsoIyKqt1r6ZyoqM38oIgzrKGjvaHsOr6KsQDDoE8yjhxPXqQN6rcSTAUvZs99HFmOOZd7vVQFzeZt24CcFFDb7y3t_JyM)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh5.googleusercontent.com%2FiY_JApoxjWCxzDdpdqnDordONx0blUx9FjPmE49bGLFGeXh0UKe5fuBeGIMPVZRPWzZx0Pn4VlhCI1WX1OclOLzRO0cMFboYN4p_54BJwzrp14J-Rcb53rXU2RdWfRQPnTtm6W2spkJscVXv4AASkwM)
 
 ## Error States  <!-- confidence:medium ~ -->
 

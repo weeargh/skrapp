@@ -49,12 +49,7 @@ Catatan: Laporan ini menampilkan data berdasarkan Source yang ada di sistem Qont
    → Data laporan akan disesuaikan dengan periode waktu dan user yang dipilih.
 
 4. Klik tombol Download untuk mengunduh laporan dalam format file.
-   → File laporan akan tersimpan di perangkat Anda.
-
-> Screenshot: Laporan_Source_1.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121124249
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → File laporan akan tersimpan di perangkat Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengunduh dan membuka laporan "New Contacts, Companies, and Deals Created by Source", Anda akan melihat:
 
@@ -64,6 +59,8 @@ Setelah berhasil mengunduh dan membuka laporan "New Contacts, Companies, and Dea
 • Detail breakdown per user menunjukkan kontribusi masing-masing user untuk setiap Source
 
 Laporan ini membantu Anda menganalisis sumber data dan performa penciptaan kontak, perusahaan, dan deal.
+
+![Laporan_Source_1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121124249)
 
 ## Error States  <!-- confidence:low ? -->
 

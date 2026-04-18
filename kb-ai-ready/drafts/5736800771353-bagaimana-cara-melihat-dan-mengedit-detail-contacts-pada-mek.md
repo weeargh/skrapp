@@ -52,23 +52,14 @@ Catatan: Jika Anda menggunakan Qontak One, gunakan panduan Customer Data Platfor
 
 5. Untuk menambahkan nomor atau channel kontak lain, klik tombol **Merge Contact**. Pilih **Channel** yang diinginkan (contoh: WhatsApp), kemudian klik **Select Contact**.
 
-6. Setelah semua perubahan selesai, klik tombol **Update Contact**. Sistem akan menyimpan perubahan dan menampilkan notifikasi konfirmasi.
-
-> Screenshot: 12.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38433073175961
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38464943278489
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38433331262873
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38433331264153
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Setelah semua perubahan selesai, klik tombol **Update Contact**. Sistem akan menyimpan perubahan dan menampilkan notifikasi konfirmasi.## Expected Result  <!-- confidence:high ✓ -->
 
 Anda berhasil melihat detail lengkap contact termasuk informasi personal (nama, divisi, perusahaan, segment) dan riwayat percakapan. Jika melakukan pengeditan, notifikasi konfirmasi akan muncul dan data contact terbaru akan tersimpan di sistem. Jika Anda sudah berlangganan Qontak CRM sejak Q2 2024, perubahan data contact di Omnichannel akan otomatis diperbarui di CRM tanpa perlu input ulang. Jika Anda baru berlangganan Qontak CRM, tambahkan data contact secara manual di CRM.
+
+![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38433073175961)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38464943278489)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38433331262873)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38433331264153)
 
 ## Error States  <!-- confidence:high ✓ -->
 

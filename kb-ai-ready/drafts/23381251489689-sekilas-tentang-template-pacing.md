@@ -28,23 +28,14 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Template Pacing adalah mekanisme evaluasi otomatis dari Meta (WhatsApp) terhadap pesan kampanye Marketing sebelum dikirim ke seluruh audiens. Fitur ini hanya berlaku untuk template broadcast kategori Marketing dan mulai diterapkan sejak 12 Oktober 2023. Template Pacing mengevaluasi kualitas pesan berdasarkan respons penerima dari sampel kecil audiens, kemudian Meta memutuskan apakah pengiriman ke audiens yang lebih besar dapat dilanjutkan. Template kategori Utility dan Authentication tidak menerapkan Template Pacing.
-
-> Screenshot: Untitled \(1\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774918179225
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774918180121
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774945004185
-
-> Screenshot: pasted image 0 - 2023-09-27T133154.862.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774918193689
-
-## Why It Matters  <!-- confidence:high ✓ -->
+Template Pacing adalah mekanisme evaluasi otomatis dari Meta (WhatsApp) terhadap pesan kampanye Marketing sebelum dikirim ke seluruh audiens. Fitur ini hanya berlaku untuk template broadcast kategori Marketing dan mulai diterapkan sejak 12 Oktober 2023. Template Pacing mengevaluasi kualitas pesan berdasarkan respons penerima dari sampel kecil audiens, kemudian Meta memutuskan apakah pengiriman ke audiens yang lebih besar dapat dilanjutkan. Template kategori Utility dan Authentication tidak menerapkan Template Pacing.## Why It Matters  <!-- confidence:high ✓ -->
 
 Template Pacing membantu melindungi nomor WhatsApp Anda dari risiko pemblokiran dengan memastikan kualitas pesan yang dikirim sesuai standar Meta. Fitur ini memberikan kesempatan kepada Anda untuk menerima feedback tentang template Marketing yang dibuat sebelum kampanye berjalan penuh ke semua penerima. Dengan mengevaluasi respons penerima terlebih dahulu, Anda dapat menjaga reputasi nomor WhatsApp dan efektivitas kampanye Marketing Anda di Qontak Omnichannel.
+
+![Untitled \(1\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774918179225)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774918180121)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774945004185)
+![pasted image 0 - 2023-09-27T133154.862.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774918193689)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

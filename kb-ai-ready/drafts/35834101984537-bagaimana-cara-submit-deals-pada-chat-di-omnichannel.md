@@ -47,15 +47,7 @@ Untuk membuat Deals melalui chat di Omnichannel, Anda memerlukan:
 7. Isi formulir deals dengan kolom: Deals name, Deal size, Close date, Owner, Source, Lost reason, Start date, Expire, Priority, Deal status, Information, dan Industry sesuai kebutuhan.
 8. Klik tombol **Create deal**. Sistem akan memproses dan membuat deals baru.
 9. Pesan konfirmasi berhasil akan ditampilkan dengan opsi klik **Deals ID** untuk membuka deals di Qontak CRM.
-10. Deals akan tersimpan otomatis di menu Deals CRM Qontak dan dapat dilihat di halaman Deals.
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXcAu_tFva49kArfIsQdl3FLPAyuiwmiOroV57RKvPykV7dGkenGkPo4bPYAI4B4XNLH0OhPZlSZ87QZYw20TCzG2Ow9dDQuN1jIKxzOytb-CQ9G72jveQS5Jzd3o71gUpzw2f__vBBUmsEMw2r9zYi82cZe?key=Jqkn8dhQ_InX_HZYbdhKWg
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXcO_uwfQi_e-zRJJYW6l0Lmyb9tYoCst1WRcLnILGiHTiITe0JiHQcPQpqkl9hTSib0SOOEt7zMCfW2XNMQ5csNkS9w2Amaw7g1imfdSbwWG8agUi3Xew_rtW0qVpM2rtNbVf-3kt8rS79rCxMEPSSrw490?key=Jqkn8dhQ_InX_HZYbdhKWg
-
-## Expected Result  <!-- confidence:high ✓ -->
+10. Deals akan tersimpan otomatis di menu Deals CRM Qontak dan dapat dilihat di halaman Deals.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat deals:
 
@@ -63,6 +55,9 @@ Setelah berhasil membuat deals:
 2. Halaman detail deals menampilkan semua informasi yang telah Anda isi (nama deals, ukuran, tanggal, owner, sumber, dan lainnya).
 3. Deals terintegrasi dengan chat asalnya, sehingga tim Anda dapat melacak konteks percakapan.
 4. Deals dapat diakses dan diperbarui oleh pengguna lain yang memiliki akses ke Qontak CRM sesuai permission yang telah diatur.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXcAu_tFva49kArfIsQdl3FLPAyuiwmiOroV57RKvPykV7dGkenGkPo4bPYAI4B4XNLH0OhPZlSZ87QZYw20TCzG2Ow9dDQuN1jIKxzOytb-CQ9G72jveQS5Jzd3o71gUpzw2f__vBBUmsEMw2r9zYi82cZe%3Fkey%3DJqkn8dhQ_InX_HZYbdhKWg)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXcO_uwfQi_e-zRJJYW6l0Lmyb9tYoCst1WRcLnILGiHTiITe0JiHQcPQpqkl9hTSib0SOOEt7zMCfW2XNMQ5csNkS9w2Amaw7g1imfdSbwWG8agUi3Xew_rtW0qVpM2rtNbVf-3kt8rS79rCxMEPSSrw490%3Fkey%3DJqkn8dhQ_InX_HZYbdhKWg)
 
 ## Error States  <!-- confidence:low ? -->
 

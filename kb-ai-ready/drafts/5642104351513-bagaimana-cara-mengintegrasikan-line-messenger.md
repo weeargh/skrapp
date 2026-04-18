@@ -47,33 +47,7 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 4. Pada Chat Panel, masukkan **Line Channel Token** Anda.
 5. Klik tombol **Install** untuk mengintegrasikan Line. Jika ada field yang kosong, sistem akan menampilkan pesan error "field is required".
 6. Tunggu konfirmasi — jika token valid, popup akan menampilkan pesan success. Jika tidak valid, popup akan menampilkan pesan error.
-7. Klik **Settings** pada nama Line untuk melihat detail informasi Line Messenger Anda.
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50771100808473
-
-> Screenshot: line.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773552409
-
-> Screenshot: line1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773557273
-
-> Screenshot: line2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773559321
-
-> Screenshot: line3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775763602457
-
-> Screenshot: line4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775763599001
-
-> Screenshot: line5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773562521
-
-> Screenshot: line6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775763600665
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik **Settings** pada nama Line untuk melihat detail informasi Line Messenger Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil, Anda akan melihat:
 
@@ -81,6 +55,15 @@ Setelah integrasi berhasil, Anda akan melihat:
 2. Akun Line Messenger muncul di daftar channel pada menu **Integrations**
 3. Halaman Settings menampilkan detail informasi Line Anda (Channel Name dan Channel Secret dalam kondisi disable/tidak dapat diubah)
 4. **Admin, Supervisor, dan Agen** dapat mulai menggunakan Line Messenger di Inbox untuk menerima dan mengirim pesan dari pelanggan Line Anda
+
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771100808473)
+![line.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773552409)
+![line1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773557273)
+![line2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773559321)
+![line3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763602457)
+![line4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763599001)
+![line5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773562521)
+![line6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763600665)
 
 ## Error States  <!-- confidence:medium ~ -->
 

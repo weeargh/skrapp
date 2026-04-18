@@ -41,32 +41,17 @@ faithfulness_threshold: 0.6
 3. Di sisi kanan, periksa postingan mana yang mendapat komentar dengan klik tombol **See Post** atau nama profil Instagram Anda untuk verifikasi.
 4. (Opsional) Klik tombol **Assign Agent** untuk menambahkan agent ke room comments tersebut.
 5. Klik tombol **Resolve** untuk menutup room comments — sistem akan berhenti menerima komentar baru pada postingan tersebut.
-6. (Jika diperlukan) Klik tombol **Reopen** untuk membuka kembali room comments yang sudah di-resolve.
-
-> Screenshot: 28.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173109785
-
-> Screenshot: 30.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173114137
-
-> Screenshot: 40.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149576089
-
-> Screenshot: 34.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173121945
-
-> Screenshot: 35.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149566361
-
-> Screenshot: 41.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149574809
-
-> Screenshot: 42.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173152281
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. (Jika diperlukan) Klik tombol **Reopen** untuk membuka kembali room comments yang sudah di-resolve.## Expected Result  <!-- confidence:high ✓ -->
 
 Tab Comments menampilkan daftar room comments dari Instagram Anda. Setiap room comments menunjukkan: postingan yang mendapat komentar, jumlah komentar, agent yang di-assign, dan status (aktif atau resolved). Setelah klik Resolve, room comments berubah status menjadi tertutup dan tidak akan menerima komentar baru. Setelah klik Reopen, room comments kembali ke status aktif dan siap menerima komentar.
+
+![28.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173109785)
+![30.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173114137)
+![40.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149576089)
+![34.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173121945)
+![35.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149566361)
+![41.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149574809)
+![42.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173152281)
 
 ## Error States  <!-- confidence:high ✓ -->
 

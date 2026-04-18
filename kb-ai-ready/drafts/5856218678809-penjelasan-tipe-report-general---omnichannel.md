@@ -27,50 +27,23 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Tipe Report General adalah laporan ringkas yang tersedia pada menu Reports di Qontak Omnichannel. Laporan ini menampilkan overview komprehensif tentang status agent, percakapan pelanggan, waktu respons, dan aktivitas pengguna dalam satu dashboard. Laporan General dapat diakses dengan membuka menu Reports kemudian memilih tab General, dan dapat disesuaikan menggunakan filter zona, channel, jangka waktu, serta divisi sesuai kebutuhan analisis Anda.
-
-> Screenshot: 61.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50809206601113
-
-> Screenshot: q2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183744025
-
-> Screenshot: q3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142050329
-
-> Screenshot: q4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142048281
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183721241
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183724185
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142037017
-
-> Screenshot: q5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183740825
-
-> Screenshot: 12.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183733145
-
-> Screenshot: 13.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142043289
-
-> Screenshot: 14.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183735961
-
-> Screenshot: 15.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183737881
-
-> Screenshot: 16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183739033
-
-## Why It Matters  <!-- confidence:medium ~ -->
+Tipe Report General adalah laporan ringkas yang tersedia pada menu Reports di Qontak Omnichannel. Laporan ini menampilkan overview komprehensif tentang status agent, percakapan pelanggan, waktu respons, dan aktivitas pengguna dalam satu dashboard. Laporan General dapat diakses dengan membuka menu Reports kemudian memilih tab General, dan dapat disesuaikan menggunakan filter zona, channel, jangka waktu, serta divisi sesuai kebutuhan analisis Anda.## Why It Matters  <!-- confidence:medium ~ -->
 
 Laporan General membantu tim customer service memantau performa real-time layanan pelanggan melalui metrik penting seperti status agent online/offline, waktu respons pertama, dan waktu penyelesaian percakapan. Dengan data ini, manajer dapat mengidentifikasi bottleneck dalam proses respons, mengoptimalkan alokasi agent, dan mengukur kepuasan pelanggan berdasarkan kecepatan respons. Insight dari laporan General mendukung pengambilan keputusan strategis untuk meningkatkan efisiensi operasional omnichannel.
+
+![61.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50809206601113)
+![q2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183744025)
+![q3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142050329)
+![q4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142048281)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183721241)
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183724185)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142037017)
+![q5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183740825)
+![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183733145)
+![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142043289)
+![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183735961)
+![15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183737881)
+![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183739033)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

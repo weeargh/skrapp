@@ -44,30 +44,7 @@ Untuk membuat dokumen otomatis di Qontak CRM, Anda memerlukan:
 4. Setelah data tersimpan, klik tombol Create Dokumen. Sistem akan mengarahkan Anda ke halaman pemilihan template.
 5. Pilih template dokumen yang diinginkan dari daftar template yang telah diupload. Sistem akan menampilkan preview dan mengecek apakah Variable ID dapat terisi sesuai data CRM.
 6. Apabila data sudah sesuai, klik tombol Create/Update. Sistem akan generate dokumen otomatis.
-7. Dokumen akan ditampilkan di layar. Klik icon Mata untuk preview dokumen, atau klik tombol PDF untuk mengunduh dokumen dalam format PDF ke perangkat Anda.
-
-> Screenshot: 24.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50801737540505
-
-> Screenshot: 25.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50801765249049
-
-> Screenshot: 27.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50801765250201
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5960580190361
-
-> Screenshot: 28.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50801765254169
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776287610777
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776243615385
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Dokumen akan ditampilkan di layar. Klik icon Mata untuk preview dokumen, atau klik tombol PDF untuk mengunduh dokumen dalam format PDF ke perangkat Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat dokumen otomatis, sistem akan menampilkan halaman dengan dokumen yang telah terbuat. Dokumen tersebut berisi data dari Deal/Tiket sesuai dengan template yang dipilih dan field properties yang telah diisi di CRM.
 
@@ -76,6 +53,14 @@ Anda akan melihat dua pilihan aksi:
 • Tombol PDF: untuk mengunduh dokumen dalam format PDF ke perangkat
 
 Dokumen siap digunakan sesuai kebutuhan bisnis Anda.
+
+![24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50801737540505)
+![25.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50801765249049)
+![27.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50801765250201)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5960580190361)
+![28.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50801765254169)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287610777)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776243615385)
 
 ## Error States  <!-- confidence:low ? -->
 

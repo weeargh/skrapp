@@ -52,20 +52,15 @@ faithfulness_threshold: 0.6
 • Jendela panggilan aktif menampilkan nomor yang sedang dihubungi, durasi panggilan, dan tombol kontrol (hold, transfer, hangup, mute)
 • Status "Connected" atau "In Call" ditampilkan di aplikasi Bizphone
 • Riwayat panggilan secara otomatis tersimpan di Riwayat Percakapan Bizphone
-• Panggilan dapat dicatat dalam Qontak CRM jika dilakukan melalui fitur Click to Call
-
-> Screenshot: Bizphone.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774148237465
-
-> Screenshot: Click_to_call.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121437465
-
-## Error States  <!-- confidence:medium ~ -->
+• Panggilan dapat dicatat dalam Qontak CRM jika dilakukan melalui fitur Click to Call## Error States  <!-- confidence:medium ~ -->
 
 • **Tidak dapat memasukkan nomor**: Pastikan ikon "Tombol - Tombol Nomor" benar-benar diklik untuk membuka panel input.
 • **Panggilan tidak terhubung**: Verifikasi bahwa lisensi Bizphone masih aktif dan koneksi internet stabil. Cek kembali nomor telepon yang dimasukkan.
 • **Sign In terputus**: Lakukan Sign In ulang ke akun Bizphone Anda sebelum melakukan panggilan.
 • **Fitur Click to Call tidak muncul di CRM**: Pastikan integrasi Bizphone dengan Qontak CRM sudah diaktifkan di pengaturan organisasi.
+
+![Bizphone.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148237465)
+![Click_to_call.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121437465)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

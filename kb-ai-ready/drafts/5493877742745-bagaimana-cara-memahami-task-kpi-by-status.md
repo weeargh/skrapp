@@ -49,12 +49,7 @@ Catatan: Laporan ini hanya menampilkan data Task yang sudah dibuat dan memiliki 
    → Dua sheet akan ditampilkan: Tasks KPI by Status dan Task Change Log.
 
 4. (Opsional) Pada sheet Tasks KPI by Status, gunakan filter untuk menyaring data berdasarkan User, Waktu, atau Task Category sesuai kebutuhan Anda.
-   → Laporan akan diperbarui sesuai filter yang dipilih.
-
-> Screenshot: Task_KPI_by_Status.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36780919261081
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Laporan akan diperbarui sesuai filter yang dipilih.## Expected Result  <!-- confidence:high ✓ -->
 
 Pada sheet Tasks KPI by Status, Anda akan melihat:
 • Daftar user dengan jumlah Task per Status-nya
@@ -63,6 +58,8 @@ Pada sheet Tasks KPI by Status, Anda akan melihat:
 Pada sheet Task Change Log, Anda akan melihat detail perubahan setiap Task, termasuk: Task Name, Category, Associated Record, Owner, Due Date, Previous Status, Next Status, Plan, Result, Latitude Longitude, GPS Check in Date, Created At, Updated Date, dan Moved Date.
 
 Semua informasi ini membantu Anda melacak performa dan alur perubahan status Task secara detail.
+
+![Task_KPI_by_Status.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919261081)
 
 ## Error States  <!-- confidence:low ? -->
 

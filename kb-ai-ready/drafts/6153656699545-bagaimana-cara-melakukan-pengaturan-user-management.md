@@ -48,21 +48,7 @@ Untuk melakukan pengaturan User Management di Qontak Omnichannel, Anda membutuhk
 
 5. Isi kolom yang dibutuhkan: First name, Last name, Phone number, Email, Organization, dan Role.
 
-6. Klik tombol Simpan atau Submit. User baru akan ditambahkan ke sistem.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776188693785
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49491303027225
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38895397536409
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38895437613465
-
-## Expected Result  <!-- confidence:medium ~ -->
+6. Klik tombol Simpan atau Submit. User baru akan ditambahkan ke sistem.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah berhasil melakukan pengaturan User Management:
 
@@ -70,6 +56,11 @@ Setelah berhasil melakukan pengaturan User Management:
 - User dapat melihat status aktif user yang baru ditambahkan
 - Jika role yang dipilih adalah Agent dengan Broadcast permission, Supervisor, atau Admin, sistem akan secara otomatis mengaktifkan Multi-Factor Authentication (MFA) pada akun user tersebut
 - User akan menerima notifikasi atau email konfirmasi tentang akun yang telah dibuat
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188693785)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49491303027225)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38895397536409)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38895437613465)
 
 ## Error States  <!-- confidence:low ? -->
 

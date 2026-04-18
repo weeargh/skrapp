@@ -57,33 +57,7 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 6. Pada daftar widget, klik **Action** pada widget yang ingin dikelola.
 7. Pilih **Set up widget**.
 8. Di halaman Widget setup, Anda dapat melihat Widget status, Widget ID, Widget name, Domain, dan Embed code. Gunakan tombol **Copy** untuk menyalin Widget ID atau Embed code.
-9. Pada bagian **Widget appearance**, unggah logo dan tentukan warna-warna widget sesuai preferensi Anda.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49062472998425
-
-> Screenshot: Connect_webchat.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772398702233
-
-> Screenshot: Stage.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772398727193
-
-> Screenshot: Widget_setup.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772398732697
-
-> Screenshot: Widget_appearance.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772391182617
-
-> Screenshot: Widget_content.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772391181337
-
-> Screenshot: Widget_preview.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772398731673
-
-> Screenshot: Delete1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772391165849
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Pada bagian **Widget appearance**, unggah logo dan tentukan warna-warna widget sesuai preferensi Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menyelesaikan langkah-langkah di atas, Anda akan mendapatkan:
 
@@ -94,6 +68,15 @@ Setelah berhasil menyelesaikan langkah-langkah di atas, Anda akan mendapatkan:
 - **Kustomisasi aktif**: Logo dan warna widget sudah diterapkan sesuai desain yang Anda tentukan
 
 Widget Web Chat Anda siap dipasang dan digunakan di website.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49062472998425)
+![Connect_webchat.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398702233)
+![Stage.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398727193)
+![Widget_setup.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398732697)
+![Widget_appearance.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391182617)
+![Widget_content.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391181337)
+![Widget_preview.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398731673)
+![Delete1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391165849)
 
 ## Error States  <!-- confidence:high ✓ -->
 

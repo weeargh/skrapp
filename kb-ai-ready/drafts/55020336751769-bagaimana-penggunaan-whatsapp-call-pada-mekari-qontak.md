@@ -46,93 +46,7 @@ Untuk menggunakan WhatsApp Call pada Mekari Qontak:
 4. Setelah persetujuan diterima, lakukan panggilan langsung dari Qontak Omnichannel dengan memilih opsi melakukan panggilan keluar
 5. Panggilan akan terhubung dengan pelanggan melalui WhatsApp
 
-Untuk panggilan masuk, pelanggan dapat langsung menelepon nomor WhatsApp bisnis Anda dan Anda dapat menjawab panggilan tersebut dari platform Mekari Qontak.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55020500651545
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55020500652569
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55020500654873
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55020500656025
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55020500656793
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55020536488985
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551747609
-
-> Screenshot: rev 16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551749913
-
-> Screenshot: rev 17.png
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551758617
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529150105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529151513
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529152665
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551767833
-
-> Screenshot: rev 21.png
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529155609
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551769625
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551771161
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529160345
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551774873
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551776537
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529166361
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529167129
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551779865
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529170457
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529171737
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021529173529
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551790105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551805465
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55021551806873
-
-## Expected Result  <!-- confidence:high ✓ -->
+Untuk panggilan masuk, pelanggan dapat langsung menelepon nomor WhatsApp bisnis Anda dan Anda dapat menjawab panggilan tersebut dari platform Mekari Qontak.## Expected Result  <!-- confidence:high ✓ -->
 
 Ketika WhatsApp Call berhasil digunakan:
 
@@ -140,6 +54,35 @@ Ketika WhatsApp Call berhasil digunakan:
 • Panggilan outbound: Setelah pelanggan menyetujui permintaan izin, Anda dapat melakukan panggilan langsung dari Qontak Omnichannel dan percakapan dengan pelanggan tetap aktif
 • Customer service window: Setelah pelanggan menyetujui permintaan izin, jendela layanan pelanggan akan terbuka sehingga bisnis dapat mengirim pesan bebas selama 24 jam
 • Biaya tercatat: Biaya panggilan outbound akan terekam berdasarkan durasi panggilan per menit
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55020500651545)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55020500652569)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55020500654873)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55020500656025)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55020500656793)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55020536488985)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551747609)
+![rev 16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551749913)
+![rev 17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551758617)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529150105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529151513)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529152665)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551767833)
+![rev 21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529155609)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551769625)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551771161)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529160345)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551774873)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551776537)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529166361)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529167129)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551779865)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529170457)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529171737)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021529173529)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551790105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551805465)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55021551806873)
 
 ## Error States  <!-- confidence:high ✓ -->
 

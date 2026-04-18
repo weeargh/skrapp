@@ -48,26 +48,15 @@ Anda harus memiliki akses ke menu Inbox pada Qontak Omnichannel. Fitur filter pe
 
 5. Klik tombol Load older results untuk menampilkan data tambahan secara otomatis dan melihat keseluruhan hasil pencarian.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah menerapkan filter dan melakukan pencarian, Anda akan melihat daftar kontak atau keyword yang sesuai dengan kriteria filter tanggal dan kata kunci yang dimasukkan. Data ditampilkan dalam urutan yang relevan di kolom pencarian Inbox. Jika klik tombol Load older results, data tambahan akan dimuat secara bertahap untuk menampilkan semua hasil pencarian.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49381241172377
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49381257628185
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49381257631257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49381241181721
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXfc8kSMJ_3vDVKAI6aGOxNv5JboHl6RJi_nIy4gbIl9mYSk3BJ7Jsz5L7ILq5Lf0YZ-FmAeddYhqcFCMl0zg7kZlTYoHIIYVQ_bjmtarMm_oz8xE7JDxxfMN-NyHaTFqQMGxli96Q?key=dBeBUE6ziVMNa1nUxPbfmw
-
-## Error States  <!-- confidence:high ✓ -->
+Setelah menerapkan filter dan melakukan pencarian, Anda akan melihat daftar kontak atau keyword yang sesuai dengan kriteria filter tanggal dan kata kunci yang dimasukkan. Data ditampilkan dalam urutan yang relevan di kolom pencarian Inbox. Jika klik tombol Load older results, data tambahan akan dimuat secara bertahap untuk menampilkan semua hasil pencarian.## Error States  <!-- confidence:high ✓ -->
 
 Jika data kontak yang Anda cari tidak terlihat karena sudah lebih dari 2 tahun ke belakang, Anda tidak dapat melihatnya menggunakan filter tanggal. Solusi: Klik tombol Request older data untuk mengajukan permohonan ke Support Qontak. Isi kolom pengisian data yang muncul dan kirim email ke Qontak Support dengan detail permintaan data Anda. Tim Support akan memproses pengunduhan data historis tersebut.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49381241172377)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49381257628185)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49381257631257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49381241181721)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXfc8kSMJ_3vDVKAI6aGOxNv5JboHl6RJi_nIy4gbIl9mYSk3BJ7Jsz5L7ILq5Lf0YZ-FmAeddYhqcFCMl0zg7kZlTYoHIIYVQ_bjmtarMm_oz8xE7JDxxfMN-NyHaTFqQMGxli96Q%3Fkey%3DdBeBUE6ziVMNa1nUxPbfmw)
 
 ## Escalation  <!-- confidence:high ✓ -->
 

@@ -55,30 +55,7 @@ Untuk melakukan pengisian target di Qontak CRM, Anda memerlukan:
 2. Pada menu User Performance, di kolom **Select Year**, pilih tahun target → Tahun terpilih ditampilkan.
 3. Pada kolom **Select Pipeline**, pilih pipeline → Pipeline terpilih ditampilkan.
 4. Untuk setiap bulan, isi nominal target pada kolom **Value** dan pilih **Currency** sesuai mata uang pembayaran. Opsional: set target berdasarkan jumlah deal di kolom yang tersedia.
-5. Klik tombol **Update User** di bagian bawah halaman → Sistem menyimpan target dan menampilkan pesan konfirmasi.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50341046417689
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50341046425753
-
-> Screenshot: 2.5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/21575456258713
-
-> Screenshot: 2.8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/21575456259993
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50341046432665
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/21575494209305
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/21575494213785
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Klik tombol **Update User** di bagian bawah halaman → Sistem menyimpan target dan menampilkan pesan konfirmasi.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil melakukan pengisian target:
 
@@ -86,6 +63,14 @@ Setelah berhasil melakukan pengisian target:
 2. **Daftar target user** di menu User Performance atau halaman detail user menampilkan target terbaru untuk tahun, pipeline, dan bulan yang telah diatur.
 3. **Supervisor/Manager dapat memantau pencapaian sales** melalui menu User Performance dengan membandingkan target yang telah ditetapkan dengan pencapaian aktual sales.
 4. Target tersimpan dapat diedit kembali kapan saja dengan mengikuti langkah-langkah yang sama.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50341046417689)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50341046425753)
+![2.5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21575456258713)
+![2.8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21575456259993)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50341046432665)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21575494209305)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21575494213785)
 
 ## Error States  <!-- confidence:low ? -->
 

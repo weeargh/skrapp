@@ -56,60 +56,7 @@ Untuk mengatur Approval Expenses dan Deals pada Qontak CRM, Anda memerlukan:
 
 9. Aktifkan Auto ascend jika perlu persetujuan otomatis.
 
-10. Simpan pengaturan dengan mengklik tombol Save.
-
-> Screenshot: 17.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49519867918105
-
-> Screenshot: PENTINGAPPROVALCRM \(2\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194582297
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49519892756121
-
-> Screenshot: 18.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49519892756761
-
-> Screenshot: CRMAPPR3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194588953
-
-> Screenshot: CRMAPPR4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203373465
-
-> Screenshot: CRMAPPR5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203366809
-
-> Screenshot: 19.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49519867922713
-
-> Screenshot: 20.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49519892758809
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38310949807769
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38310948003097
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38310949812505
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38310948006681
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38311557951385
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40983951112345
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40983971925017
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38311572211097
-
-## Expected Result  <!-- confidence:medium ~ -->
+10. Simpan pengaturan dengan mengklik tombol Save.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah pengaturan Approval Expenses dan Deals berhasil:
 
@@ -117,6 +64,24 @@ Setelah pengaturan Approval Expenses dan Deals berhasil:
 2. Setiap kali ada pengeluaran atau deal baru dibuat sesuai kriteria, sistem secara otomatis mengirimkan notifikasi persetujuan ke approver yang ditentukan
 3. Approver melihat item yang memerlukan persetujuan di menu Approval mereka
 4. Pengeluaran atau deal tidak dapat diproses sampai disetujui oleh approver yang ditentukan
+
+![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49519867918105)
+![PENTINGAPPROVALCRM \(2\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194582297)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49519892756121)
+![18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49519892756761)
+![CRMAPPR3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194588953)
+![CRMAPPR4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203373465)
+![CRMAPPR5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203366809)
+![19.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49519867922713)
+![20.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49519892758809)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38310949807769)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38310948003097)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38310949812505)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38310948006681)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38311557951385)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40983951112345)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40983971925017)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38311572211097)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -45,18 +45,7 @@ Untuk melihat informasi room pesan di Qontak Omnichannel versi web, Anda memerlu
 5. Untuk mencari room, klik tombol **Search** dan ketikkan nama atau kata kunci
 6. Untuk melihat pesan sebelumnya, klik tombol **Load older conversations** — Sistem akan memuat riwayat pesan lebih lama
 7. Perhatikan 4 status pesan: All, Unassigned, Assigned, dan Resolved
-8. Untuk menyelesaikan obrolan kadaluarsa, klik **Resolve all expired chat room**
-
-> Screenshot: 21.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56527490168601
-
-> Screenshot: 22.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56527571471001
-
-> Screenshot: 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56527490175385
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Untuk menyelesaikan obrolan kadaluarsa, klik **Resolve all expired chat room**## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda akan berhasil melihat informasi room pesan dengan hasil berikut:
 
@@ -64,6 +53,10 @@ Setelah mengikuti langkah-langkah di atas, Anda akan berhasil melihat informasi 
 - Setiap room menunjukkan nama, foto profil, status aktif terakhir, channel, level status, dan jumlah pesan
 - Fitur Filter, Search, dan Resolve all expired chat room tersedia dan siap digunakan
 - Riwayat pesan lama dapat dimuat dengan klik tombol **Load older conversations**
+
+![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56527490168601)
+![22.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56527571471001)
+![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56527490175385)
 
 ## Error States  <!-- confidence:high ✓ -->
 

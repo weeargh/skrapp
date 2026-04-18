@@ -48,17 +48,12 @@ faithfulness_threshold: 0.3
    - Tags: untuk pesan dengan tag spesifik
    - Channels: untuk satu atau beberapa channel tertentu
    - Agents: untuk pesan yang ditugaskan ke agent tertentu
-6. Klik tombol Apply atau Terapkan. Sistem menampilkan pesan yang sesuai filter pilihan Anda.
-
-> Screenshot: 155.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53769050419993
-
-> Screenshot: WhatsApp_Image_2022-04-07_at_15.01.30.jpeg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892725273
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol Apply atau Terapkan. Sistem menampilkan pesan yang sesuai filter pilihan Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Pesan di menu Inbox berhasil difilter sesuai kriteria yang Anda pilih. Daftar room chat atau pesan akan menampilkan hanya item yang cocok dengan filter Whatsapp Campaign, Tags, Channels, atau Agents yang telah Anda tentukan. Anda dapat melihat jumlah pesan yang tersaring di bagian atas layar dan mulai membalas pesan yang difilter.
+
+![155.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53769050419993)
+![WhatsApp_Image_2022-04-07_at_15.01.30.jpeg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892725273)
 
 ## Error States  <!-- confidence:low ? -->
 

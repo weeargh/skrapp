@@ -49,15 +49,7 @@ Catatan: Fitur ini tersedia untuk organisasi yang menggunakan modul Sales atau P
    → File dalam format spreadsheet akan diunduh ke perangkat Anda.
 
 4. Buka file hasil download menggunakan aplikasi spreadsheet.
-   → Sheet pertama akan menampilkan filter (pipeline, tim, user, waktu laporan) dan kolom data produk.
-
-> Screenshot: tp1.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774527623705
-
-> Screenshot: tp3.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774534067737
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sheet pertama akan menampilkan filter (pipeline, tim, user, waktu laporan) dan kolom data produk.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah membuka file Laporan Top Product, Anda akan melihat spreadsheet dengan dua sheet utama:
 
@@ -66,6 +58,9 @@ Setelah membuka file Laporan Top Product, Anda akan melihat spreadsheet dengan d
 **Sheet Kedua:** Menampilkan 12 kolom tambahan: Unit, Manufacturer, Foto Display (before), Jumlah Rak, Estimasi Order, Promosi Kompetitor, Jumlah Cicilan, Unit Price Sewa, Foto Promo, Domisili, Nominal Donasi, dan Ticketing Point.
 
 Data ini membantu Anda menganalisis produk terlaris, kontribusi penjualan, dan informasi detail transaksi.
+
+![tp1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774527623705)
+![tp3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774534067737)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -51,24 +51,7 @@ Untuk melakukan Sign In ke akun Qontak CRM dan Omnichannel melalui website, Anda
    → Notifikasi akan muncul menandakan proses perpindahan aplikasi sedang berlangsung.
 
 5. Tunggu hingga sistem mengarahkan Anda ke aplikasi yang dipilih.
-   → Notifikasi biru dan merah akan muncul, mengonfirmasi Anda berhasil switch aplikasi.
-
-> Screenshot: Screenshot
-> Image: https://lh4.googleusercontent.com/9xUhDGTBnmiT1yzJEuIwwscMRQ0Wk5c1s8kPXSwpOvNYxnIRs6PsIYThZheqHZ_SSz-VFlwGlNVpPc-_lIOqm3kw3LTv0VnwV0M3NRx1ospKCkQgpa66EpOJTpMv7Yl24gDMnOOYDqNJOLPXRhoMSgk
-
-> Screenshot: 14.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56492348574617
-
-> Screenshot: 15.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56492348575001
-
-> Screenshot: Screenshot
-> Image: https://lh5.googleusercontent.com/yXcepyNoDIdWirBbX49miBCMdphyjthnAUJ_nUl-I8odiRO8DXkkTI3sJpBf5rdAjJuT4qI68XtrRvuSt4bNv2SKSComMUaeZYLTLEc2sNXKGdKadPU61Rl8ppnYE49QSkae5iYopZOFZUSEZL5u-OA
-
-> Screenshot: 16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56492337316249
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Notifikasi biru dan merah akan muncul, mengonfirmasi Anda berhasil switch aplikasi.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil Sign In:
 
@@ -76,6 +59,12 @@ Setelah berhasil Sign In:
 • Ikon "Panah ke bawah" (atau "Segitiga ke bawah") akan tersedia di halaman utama untuk memudahkan perpindahan antar aplikasi.
 • Notifikasi biru dan merah akan menampilkan konfirmasi bahwa Anda berhasil beralih aplikasi.
 • Anda dapat mengakses semua fitur sesuai dengan peran dan izin yang dimiliki dalam aplikasi tersebut.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh4.googleusercontent.com%2F9xUhDGTBnmiT1yzJEuIwwscMRQ0Wk5c1s8kPXSwpOvNYxnIRs6PsIYThZheqHZ_SSz-VFlwGlNVpPc-_lIOqm3kw3LTv0VnwV0M3NRx1ospKCkQgpa66EpOJTpMv7Yl24gDMnOOYDqNJOLPXRhoMSgk)
+![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56492348574617)
+![15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56492348575001)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh5.googleusercontent.com%2FyXcepyNoDIdWirBbX49miBCMdphyjthnAUJ_nUl-I8odiRO8DXkkTI3sJpBf5rdAjJuT4qI68XtrRvuSt4bNv2SKSComMUaeZYLTLEc2sNXKGdKadPU61Rl8ppnYE49QSkae5iYopZOFZUSEZL5u-OA)
+![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56492337316249)
 
 ## Error States  <!-- confidence:low ? -->
 

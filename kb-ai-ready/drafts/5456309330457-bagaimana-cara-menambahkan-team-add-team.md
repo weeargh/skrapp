@@ -57,20 +57,13 @@ Untuk menambahkan team baru di Qontak CRM, Anda memerlukan:
    - **Tambah Team Member** (opsional): Pilih anggota yang terdaftar untuk ditambahkan ke tim
 
 7. Klik tombol **Buat Team**.
-   → Sistem akan menyimpan pengaturan team secara otomatis dan menampilkan konfirmasi pembuatan tim berhasil.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49047524113177
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49047529794585
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49047874301465
-
-## Expected Result  <!-- confidence:medium ~ -->
+   → Sistem akan menyimpan pengaturan team secara otomatis dan menampilkan konfirmasi pembuatan tim berhasil.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah menyelesaikan langkah-langkah di atas, tim baru akan berhasil dibuat dan muncul dalam daftar team di halaman **Team** dalam **Profile settings**. Jika Anda menambahkan Parent Team, struktur hirarki akan terbentuk dengan Parent Team (tim induk) dan Child Team (sub-team) yang dapat dilihat dalam organisasi tim Anda. Tim member yang ditambahkan akan menerima notifikasi tentang penambahan mereka ke dalam team baru.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49047524113177)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49047529794585)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49047874301465)
 
 ## Error States  <!-- confidence:low ? -->
 

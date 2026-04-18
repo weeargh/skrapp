@@ -55,15 +55,7 @@ Untuk memahami hasil download laporan Live GPS Attendance Tracking pada Monthly 
    → File spreadsheet akan terunduh ke perangkat Anda.
 
 5. Buka file yang telah diunduh menggunakan aplikasi spreadsheet.
-   → Sheet Monthly Report akan menampilkan data attendance detail.
-
-> Screenshot: a.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776188650521
-
-> Screenshot: b.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776188653721
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sheet Monthly Report akan menampilkan data attendance detail.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengunduh dan membuka laporan Live GPS Attendance Tracking Monthly Report, Anda akan melihat spreadsheet dengan kolom-kolom berikut:
 
@@ -76,6 +68,9 @@ Setelah berhasil mengunduh dan membuka laporan Live GPS Attendance Tracking Mont
 - Durasi Tardy dalam menit
 
 Setiap baris mewakili satu catatan attendance user dengan filter waktu laporan yang sesuai periode Monthly Report.
+
+![a.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188650521)
+![b.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188653721)
 
 ## Error States  <!-- confidence:medium ~ -->
 

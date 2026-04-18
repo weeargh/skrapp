@@ -43,36 +43,21 @@ Untuk melihat dan mengunduh laporan Broadcast pada Reports, Anda memerlukan:
 4. Pilih tab **Summary** untuk melihat ringkasan laporan broadcast → Laporan Summary dan filter tampil
 5. Gunakan filter (timezone, channel, jangka waktu) untuk menyesuaikan data yang ingin dilihat → Laporan ter-update sesuai filter
 6. Scroll ke bagian **List of sent campaign** untuk melihat daftar semua broadcast yang telah dikirim → Tabel campaign ditampilkan
-7. Klik ikon **"Unduh"** pada laporan yang ingin diunduh → File CSV diunduh ke perangkat Anda
-
-> Screenshot: Untitled \(2\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773597849
-
-> Screenshot: pasted image 0 - 2023-10-04T104720.746.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773599001
-
-> Screenshot: pasted image 0 - 2023-10-04T104729.827.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773594777
-
-> Screenshot: pasted image 0 - 2023-10-04T104906.561.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775763642649
-
-> Screenshot: pasted image 0 - 2023-10-04T104923.615.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773595545
-
-> Screenshot: pasted image 0 - 2023-10-04T105104.343.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775773607193
-
-> Screenshot: pasted image 0 - 2023-10-04T105108.662.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36775763643801
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik ikon **"Unduh"** pada laporan yang ingin diunduh → File CSV diunduh ke perangkat Anda## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda akan:
 • Melihat laporan Summary Broadcast yang berisi Total Broadcast Messages, Total Send, Total Read, Total Pending, Total Reply, Total Delivered, Total Failed, dan Broadcast Logs
 • Melihat grafik statistik Broadcast dengan representasi warna berbeda untuk Sent, Delivered, Pending, Read, dan Failed
 • Melihat daftar lengkap semua campaign broadcast yang telah dikirimkan
 • Berhasil mengunduh laporan dalam format CSV file yang kompatibel dengan Excel
+
+![Untitled \(2\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773597849)
+![pasted image 0 - 2023-10-04T104720.746.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773599001)
+![pasted image 0 - 2023-10-04T104729.827.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773594777)
+![pasted image 0 - 2023-10-04T104906.561.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763642649)
+![pasted image 0 - 2023-10-04T104923.615.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773595545)
+![pasted image 0 - 2023-10-04T105104.343.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773607193)
+![pasted image 0 - 2023-10-04T105108.662.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763643801)
 
 ## Error States  <!-- confidence:low ? -->
 

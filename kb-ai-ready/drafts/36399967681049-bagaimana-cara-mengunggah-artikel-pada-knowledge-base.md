@@ -41,47 +41,22 @@ Anda memerlukan akses peran **Admin** untuk membuat dan mengunggah artikel pada 
 7. Pilih **Category** untuk menentukan kategori penempatan artikel.
 8. Tambahkan **Tags** sebagai kata kunci pencarian artikel.
 9. Jika berlangganan Enterprise/Ultimate, atur **Visibility** (Private atau Publish).
-10. Klik tombol **Publish** — Artikel akan diunggah dan statusnya berubah menjadi "Published".
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766140032665
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766140035097
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766093096473
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38413299885081
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38413299897497
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38413276234777
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38413299915033
-
-> Screenshot: 911844a7-8702-4636-a7fb-736f7a49240d
-> Image: https://help-center.qontak.com/hc/article_attachments/38413276257049
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766093092121
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766093095065
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38413299962393
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766093096217
-
-## Expected Result  <!-- confidence:high ✓ -->
+10. Klik tombol **Publish** — Artikel akan diunggah dan statusnya berubah menjadi "Published".## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda mengklik tombol **Publish**, artikel akan berhasil diunggah ke Knowledge Base. Status artikel akan berubah dari "Draft" menjadi "Published". Artikel akan memiliki URL unik yang dapat diakses oleh pihak internal (jika Private) atau eksternal (jika Public). Artikel akan muncul dalam daftar **Articles** dan dapat ditemukan melalui kategori atau tag yang telah ditetapkan. Informasi penulis (Author) dan waktu publikasi akan tercatat otomatis di sistem.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766140032665)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766140035097)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093096473)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299885081)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299897497)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413276234777)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299915033)
+![911844a7-8702-4636-a7fb-736f7a49240d](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413276257049)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093092121)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093095065)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299962393)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093096217)
 
 ## Error States  <!-- confidence:low ? -->
 

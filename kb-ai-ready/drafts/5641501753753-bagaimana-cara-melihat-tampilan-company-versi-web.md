@@ -45,18 +45,15 @@ faithfulness_threshold: 0.6
    - Download: Export company data
    - Bulk Change: Transfer companies to another owner
    - Delete: Remove companies (bulk or individual)
-4. Review columns: Company Name, Associated With, Type, Owner/Created, Updated dates, and action buttons (Edit/Delete)
-
-> Screenshot: Image_21.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36780919284761
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Review columns: Company Name, Associated With, Type, Owner/Created, Updated dates, and action buttons (Edit/Delete)## Expected Result  <!-- confidence:high ✓ -->
 
 The Companies page displays with a table listing all your companies. You can see:
 • Complete company database with names, types, owners, and dates
 • All action buttons and filters available for company management
 • Pagination controls showing total pages of companies
 • Search and filter options ready to use
+
+![Image_21.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919284761)
 
 ## Error States  <!-- confidence:high ✓ -->
 

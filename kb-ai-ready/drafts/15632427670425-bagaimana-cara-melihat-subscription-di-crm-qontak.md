@@ -49,15 +49,7 @@ Untuk melihat subscription di CRM Qontak, Anda membutuhkan:
 
 4. Periksa tanggal masa berlaku subscription Anda. Jika akan habis, lakukan renewal sebelum masa tenggang 7 hari berakhir.
 
-5. Jika masa tenggang sudah berakhir dan Anda belum melakukan renewal, Anda akan diarahkan ke halaman notifikasi renewal saat login.
-
-> Screenshot: mceclip0.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173433625
-
-> Screenshot: mceclip1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173434649
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Jika masa tenggang sudah berakhir dan Anda belum melakukan renewal, Anda akan diarahkan ke halaman notifikasi renewal saat login.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengakses menu Subscription, Anda akan melihat:
 
@@ -66,6 +58,9 @@ Setelah mengakses menu Subscription, Anda akan melihat:
 - Tanggal berakhir masa berlaku subscription
 - Status subscription (aktif, akan berakhir, atau dalam masa tenggang)
 - Jika subscription akan berakhir, notifikasi untuk melakukan renewal sebelum periode tenggang 7 hari berakhir
+
+![mceclip0.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173433625)
+![mceclip1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173434649)
 
 ## Error States  <!-- confidence:medium ~ -->
 

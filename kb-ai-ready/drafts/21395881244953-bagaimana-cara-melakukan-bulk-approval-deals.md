@@ -44,36 +44,21 @@ faithfulness_threshold: 0.6
 6. Pilih **"Approve"** (untuk menerima) atau **"Reject"** (untuk menolak). Pop-up konfirmasi akan muncul menampilkan daftar Deals yang dipilih.
 7. Verifikasi Deals di pop-up konfirmasi sudah sesuai, kemudian klik **"Approve"**. Sistem akan memproses approval.
 8. Tunggu hingga proses selesai. Hasil approval akan ditampilkan dengan indikator: tanda centang hijau (berhasil) atau tanda silang merah (gagal).
-9. Baca keterangan jika ada Deal gagal. Klik **"Retry approval"** untuk mengulang atau **"Ok, got it"** untuk menutup pop-up.
-
-> Screenshot: 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49955103399321
-
-> Screenshot: 24.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49955164898457
-
-> Screenshot: 25.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49955164901145
-
-> Screenshot: bulkdeals4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773920069273
-
-> Screenshot: bulkdeals5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773920074521
-
-> Screenshot: bulkdeals6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773920070041
-
-> Screenshot: bulkdeals7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773920076825
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Baca keterangan jika ada Deal gagal. Klik **"Retry approval"** untuk mengulang atau **"Ok, got it"** untuk menutup pop-up.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses selesai, Anda melihat status approval untuk setiap Deal:
 - **Tanda centang hijau**: Deal berhasil diapprove dan statusnya berubah menjadi "Approved"
 - **Tanda silang merah**: Deal gagal diapprove dengan keterangan alasan kegagalan
 
 Deal yang berhasil diapprove akan hilang dari daftar "Need my approval" dan muncul di daftar Deals dengan status diperbarui.
+
+![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955103399321)
+![24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955164898457)
+![25.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955164901145)
+![bulkdeals4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773920069273)
+![bulkdeals5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773920074521)
+![bulkdeals6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773920070041)
+![bulkdeals7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773920076825)
 
 ## Error States  <!-- confidence:medium ~ -->
 

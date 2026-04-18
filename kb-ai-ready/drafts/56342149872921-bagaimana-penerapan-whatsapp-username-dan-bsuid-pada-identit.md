@@ -44,63 +44,7 @@ Penerapan BSUID pada identitas pelanggan bersifat otomatis dan tidak memerlukan 
 
 1. Sistem Qontak akan menggunakan BSUID sebagai identitas utama pelanggan menggantikan nomor telepon untuk pengguna yang mengaktifkan username WhatsApp.
 2. Halaman Inbox, Contact, Report, dan WhatsApp Notification pada CRM akan disesuaikan untuk menampilkan BSUID.
-3. Riwayat percakapan, atribusi lead, service message, dan respons iklan WhatsApp akan tetap tersimpan dan berfungsi normal.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180208665
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180209433
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180210073
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342149845657
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342149849113
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342149849881
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180219161
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342149852441
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180221849
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180224665
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180225817
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180226329
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342149858969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180229785
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342149859353
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342149860377
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342149862041
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56342180233241
-
-## Expected Result  <!-- confidence:high ✓ -->
+3. Riwayat percakapan, atribusi lead, service message, dan respons iklan WhatsApp akan tetap tersimpan dan berfungsi normal.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah penerapan BSUID pada 1 Juni 2026, Anda akan melihat:
 
@@ -109,6 +53,25 @@ Setelah penerapan BSUID pada 1 Juni 2026, Anda akan melihat:
 • Halaman Report menampilkan data berdasarkan BSUID untuk akurasi atribusi lead
 • WhatsApp Notification pada CRM tetap berfungsi tanpa gangguan
 • Riwayat percakapan pelanggan tetap tersimpan meskipun nomor telepon tidak dibagikan
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180208665)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180209433)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180210073)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342149845657)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342149849113)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342149849881)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180219161)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342149852441)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180221849)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180224665)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180225817)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180226329)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342149858969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180229785)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342149859353)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342149860377)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342149862041)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56342180233241)
 
 ## Error States  <!-- confidence:low ? -->
 

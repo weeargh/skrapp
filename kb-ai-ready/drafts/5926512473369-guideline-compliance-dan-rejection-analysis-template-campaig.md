@@ -30,23 +30,14 @@ faithfulness_threshold: 0.3
 
 ## Definition  <!-- confidence:medium ~ -->
 
-Guideline Compliance dan Rejection Analysis adalah dua mekanisme evaluasi yang diterapkan WhatsApp terhadap template pesan pada fitur Campaign (Broadcast) di Qontak Omnichannel. Guideline Compliance memastikan template Anda mematuhi standar dan kebijakan WhatsApp sebelum disetujui. Rejection Analysis adalah analisis terhadap alasan penolakan template jika template Anda tidak lolos review WhatsApp. Kedua mekanisme ini bertujuan menjaga kualitas pesan campaign dan melindungi reputasi nomor WhatsApp Anda.
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43691203742233
-
-> Screenshot: 13.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776434904857
-
-> Screenshot: 14.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776440969753
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776434903833
-
-## Why It Matters  <!-- confidence:medium ~ -->
+Guideline Compliance dan Rejection Analysis adalah dua mekanisme evaluasi yang diterapkan WhatsApp terhadap template pesan pada fitur Campaign (Broadcast) di Qontak Omnichannel. Guideline Compliance memastikan template Anda mematuhi standar dan kebijakan WhatsApp sebelum disetujui. Rejection Analysis adalah analisis terhadap alasan penolakan template jika template Anda tidak lolos review WhatsApp. Kedua mekanisme ini bertujuan menjaga kualitas pesan campaign dan melindungi reputasi nomor WhatsApp Anda.## Why It Matters  <!-- confidence:medium ~ -->
 
 Memahami Guideline Compliance dan Rejection Analysis penting untuk memastikan template campaign Anda disetujui WhatsApp tanpa penolakan. Jika template ditolak, Anda dapat menganalisis alasan penolakan dan melakukan perbaikan dengan cepat. Hal ini menghemat waktu proses review dan memastikan kampanye broadcast Anda dapat berjalan sesuai jadwal. Dengan mematuhi guidelines sejak awal, Anda menghindari risiko pemblokiran nomor dan menjaga kredibilitas dalam berkomunikasi dengan pelanggan.
+
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43691203742233)
+![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434904857)
+![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776440969753)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434903833)
 
 ## Key Attributes  <!-- confidence:medium ~ -->
 

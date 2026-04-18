@@ -68,32 +68,17 @@ Untuk menambahkan produk secara bulk (unggah file) di Qontak CRM, Anda membutuhk
    → Sistem memproses file dan menampilkan notifikasi sukses
 
 9. Pantau progres pengunggahan di menu **Properties** → **Upload/Download**
-   → Status pengunggahan ditampilkan secara real-time
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5498042250265
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49112216742297
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774222759449
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774249495449
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49112185432473
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774222766873
-
-> Screenshot: 11.2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774222768793
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Status pengunggahan ditampilkan secara real-time## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah unggahan selesai, Anda akan menerima notifikasi bahwa data produk berhasil terunggah. Semua produk dari file Excel akan tersimpan dalam database Products Qontak CRM dan dapat langsung digunakan untuk transaksi atau referensi. Data produk akan muncul dalam daftar Products dengan semua informasi (nama, harga, kategori) tersimpan dan dapat diakses.
+
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5498042250265)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112216742297)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222759449)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249495449)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112185432473)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222766873)
+![11.2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222768793)
 
 ## Error States  <!-- confidence:high ✓ -->
 

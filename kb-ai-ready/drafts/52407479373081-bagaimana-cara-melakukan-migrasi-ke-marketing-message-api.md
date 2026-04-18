@@ -53,42 +53,7 @@ Catatan: Mulai 20 Agustus 2025, semua WABA baru otomatis menggunakan MM API.
 
 6. Klik tombol **Confirm Migration** untuk menyelesaikan proses migrasi.
 
-7. Tunggu hingga status akun berubah menjadi "Marketing Message API" atau "MM API Active".
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816180307481
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816159733913
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816159737625
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816180317081
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816159747097
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816180322969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816159755161
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816159757337
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816159760281
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816180334873
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52816180336921
-
-## Expected Result  <!-- confidence:medium ~ -->
+7. Tunggu hingga status akun berubah menjadi "Marketing Message API" atau "MM API Active".## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah migrasi berhasil:
 
@@ -97,6 +62,18 @@ Setelah migrasi berhasil:
 - Anda dapat mengakses fitur Benchmarking Template Pesan di dashboard kampanye marketing
 - Laporan pengiriman akan menampilkan data optimasi otomatis dan tingkat keterlibatan pesan
 - Batas pengiriman pesan akan menyesuaikan dinamis berdasarkan performa template
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816180307481)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816159733913)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816159737625)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816180317081)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816159747097)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816180322969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816159755161)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816159757337)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816159760281)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816180334873)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52816180336921)
 
 ## Error States  <!-- confidence:low ? -->
 

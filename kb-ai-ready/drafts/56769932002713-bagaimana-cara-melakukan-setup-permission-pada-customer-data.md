@@ -60,102 +60,7 @@ Untuk melakukan setup permission pada Field Masking di Customer Data Platform, A
    → Permission berhasil dikonfigurasi.
 
 8. Klik **Save** untuk menyimpan setup permission.
-   → Konfigurasi Field Masking dengan permission berhasil disimpan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920649881
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931936537
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931937305
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920652953
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931938969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931940761
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931955097
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931956505
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920674713
-
-> Screenshot: 33.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920676505
-
-> Screenshot: 34.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931961753
-
-> Screenshot: 35.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920679065
-
-> Screenshot: 36.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931963033
-
-> Screenshot: 37.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920682905
-
-> Screenshot: 38.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931967513
-
-> Screenshot: 21.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920685849
-
-> Screenshot: eq.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920686233
-
-> Screenshot: 24.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920687129
-
-> Screenshot: 25.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920687641
-
-> Screenshot: 32.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931972889
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920694297
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920695065
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931974681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920696089
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931978649
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920698393
-
-> Screenshot: 27.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920700313
-
-> Screenshot: 26.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931983513
-
-> Screenshot: 30.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931984153
-
-> Screenshot: 28.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769931986457
-
-> Screenshot: 29.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56769920709017
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Konfigurasi Field Masking dengan permission berhasil disimpan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil melakukan setup permission pada Field Masking:
 
@@ -163,6 +68,38 @@ Setelah berhasil melakukan setup permission pada Field Masking:
 • Pengguna yang dipilih dapat melihat field sesuai dengan permission yang ditetapkan (teks disembunyikan atau ditampilkan lengkap tergantung role mereka)
 • Informasi sensitif seperti nomor telepon, nomor identitas, atau data keuangan hanya terlihat bagi pengguna dengan permission akses penuh
 • Sistem menampilkan konfirmasi bahwa setup permission telah tersimpan dengan status aktif
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920649881)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931936537)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931937305)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920652953)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931938969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931940761)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931955097)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931956505)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920674713)
+![33.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920676505)
+![34.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931961753)
+![35.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920679065)
+![36.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931963033)
+![37.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920682905)
+![38.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931967513)
+![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920685849)
+![eq.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920686233)
+![24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920687129)
+![25.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920687641)
+![32.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931972889)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920694297)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920695065)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931974681)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920696089)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931978649)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920698393)
+![27.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920700313)
+![26.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931983513)
+![30.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931984153)
+![28.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769931986457)
+![29.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56769920709017)
 
 ## Error States  <!-- confidence:low ? -->
 

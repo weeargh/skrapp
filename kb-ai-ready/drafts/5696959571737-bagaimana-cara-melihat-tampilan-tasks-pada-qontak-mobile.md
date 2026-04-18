@@ -44,18 +44,7 @@ Tidak ada persyaratan role khusus untuk melihat tampilan Tasks pada versi mobile
 
 2. Klik menu **"Task"** yang terletak di menu utama aplikasi. Sistem akan menampilkan halaman Task dengan berbagai fitur dan opsi penyaringan.
 
-3. Lihat tampilan Tasks yang mencakup kategori, search bar, filter, status task, list task, dan tag task untuk mengelola kegiatan Anda seperti visit, follow-up, dan aktivitas lainnya.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46149464429977
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46149464433945
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46149479785753
-
-## Expected Result  <!-- confidence:high ✓ -->
+3. Lihat tampilan Tasks yang mencakup kategori, search bar, filter, status task, list task, dan tag task untuk mengelola kegiatan Anda seperti visit, follow-up, dan aktivitas lainnya.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda berhasil masuk dan mengklik menu **"Task"**, sistem akan menampilkan halaman Tasks dengan komponen berikut:
 
@@ -66,6 +55,10 @@ Setelah Anda berhasil masuk dan mengklik menu **"Task"**, sistem akan menampilka
 • Daftar Task yang perlu diselesaikan
 • Tag Task untuk mengakses list perusahaan dan asosiasi
 • Tombol **"Add Task"** untuk menambah task baru atau upload file
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149464429977)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149464433945)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149479785753)
 
 ## Error States  <!-- confidence:high ✓ -->
 

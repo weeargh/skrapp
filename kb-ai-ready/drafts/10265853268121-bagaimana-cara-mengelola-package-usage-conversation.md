@@ -47,27 +47,7 @@ Untuk mengelola Package Usage Conversation di Qontak Omnichannel, Anda membutuhk
 
 4. Pada bagian Balance, lihat sisa saldo kuota WhatsApp Conversation dan Monthly Unique Visitor yang tersisa untuk bulan berjalan. Sistem menampilkan informasi real-time penggunaan Anda.
 
-5. Pada bagian Total Balance, lihat saldo dari top up yang telah dilakukan untuk Business Initiated messages.
-
-> Screenshot: Package_usage1.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36776162166297
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49983566764057
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49983573388569
-
-> Screenshot: Package_usage__1_33233.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36776162172185
-
-> Screenshot: Package_33.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36776162173337
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43653067759385
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Pada bagian Total Balance, lihat saldo dari top up yang telah dilakukan untuk Business Initiated messages.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda akan melihat:
 
@@ -76,6 +56,13 @@ Setelah mengikuti langkah-langkah di atas, Anda akan melihat:
 - Bagian Total Balance menampilkan saldo untuk Business Initiated messages
 - Informasi reset kuota WhatsApp dan Unique Visitor setiap awal bulan
 - Akses ke tombol Learn More, See purchase history, dan Top up balance untuk tindakan lanjutan sesuai kebutuhan Anda
+
+![Package_usage1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776162166297)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49983566764057)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49983573388569)
+![Package_usage__1_33233.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776162172185)
+![Package_33.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776162173337)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43653067759385)
 
 ## Error States  <!-- confidence:low ? -->
 

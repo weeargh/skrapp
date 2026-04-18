@@ -47,15 +47,7 @@ Untuk melihat tampilan Deals versi web di Qontak CRM, Anda memerlukan:
    - Klik Board view untuk melihat Deals dikelompokkan berdasarkan tahapan
    - Klik List view untuk melihat Deals dalam format daftar yang dapat digulir vertikal
 
-4. (Opsional) Klik nama Deals untuk melihat detail transaksi lebih lengkap dan stage deals yang merupakan spesifikasi alur kerja.
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43681155076377
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36777848056345
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. (Opsional) Klik nama Deals untuk melihat detail transaksi lebih lengkap dan stage deals yang merupakan spesifikasi alur kerja.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengakses menu Deals, Anda akan melihat:
 
@@ -64,6 +56,9 @@ Setelah berhasil mengakses menu Deals, Anda akan melihat:
 3. Opsi tampilan Board view atau List view sesuai pilihan Anda
 4. Filter, Search, Dropdown pipeline, dan Show untuk memudahkan navigasi
 5. Daftar deals dengan informasi stage dan detail transaksi yang dapat diklik untuk melihat detail lengkap
+
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43681155076377)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777848056345)
 
 ## Error States  <!-- confidence:low ? -->
 

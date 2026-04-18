@@ -53,12 +53,7 @@ Catatan: Laporan ini menampilkan perbandingan antara target dan pencapaian count
    → Sistem akan menyesuaikan data berdasarkan filter pilihan Anda.
 
 5. Klik tombol Download untuk mengunduh laporan.
-   → File Excel dengan sheet detail akan diunduh ke perangkat Anda.
-
-> Screenshot: count.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774222910745
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → File Excel dengan sheet detail akan diunduh ke perangkat Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah download selesai, file Excel akan menampilkan satu sheet dengan detail:
 
@@ -71,6 +66,8 @@ Setelah download selesai, file Excel akan menampilkan satu sheet dengan detail:
 • Remaining Count & %: Sisa target jumlah deals yang belum tercapai
 
 Data tersegmentasi per user pembuat deals untuk periode bulanan yang dipilih.
+
+![count.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222910745)
 
 ## Error States  <!-- confidence:low ? -->
 

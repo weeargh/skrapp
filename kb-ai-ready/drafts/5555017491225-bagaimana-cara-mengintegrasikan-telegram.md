@@ -46,33 +46,7 @@ Perhatian: Pesan yang masuk dalam channel Telegram di Omnichannel hanya pesan ya
 4. Pada formulir integrasi Telegram yang muncul, masukkan **token Telegram** Anda di kolom yang tersedia.
 5. Klik tombol **Install**. Sistem akan memverifikasi token Anda.
 6. Jika verifikasi berhasil, pop-up notifikasi "success" akan muncul secara otomatis dan Telegram channel ditambahkan ke daftar integrations.
-7. Untuk melihat detail informasi channel Telegram, klik ikon **Settings** pada nama Telegram yang telah terintegrasi.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50699258760985
-
-> Screenshot: telegram.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916307737
-
-> Screenshot: telegram2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892739225
-
-> Screenshot: telegram3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892739865
-
-> Screenshot: telegram4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916312985
-
-> Screenshot: telegram5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916315033
-
-> Screenshot: telegram6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892745369
-
-> Screenshot: telegram7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892747545
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Untuk melihat detail informasi channel Telegram, klik ikon **Settings** pada nama Telegram yang telah terintegrasi.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil:
 
@@ -80,6 +54,15 @@ Setelah integrasi berhasil:
 - **Admin, Supervisor, dan Agen** dapat menggunakan channel Telegram di menu **Inbox** untuk menerima dan mengirim pesan
 - Halaman **Settings** menampilkan informasi detail channel Telegram Anda (semua field dalam kondisi non-editable)
 - Pesan masuk dari Telegram link akan mulai tampil di chat panel Omnichannel
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50699258760985)
+![telegram.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916307737)
+![telegram2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892739225)
+![telegram3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892739865)
+![telegram4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916312985)
+![telegram5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916315033)
+![telegram6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892745369)
+![telegram7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892747545)
 
 ## Error States  <!-- confidence:medium ~ -->
 

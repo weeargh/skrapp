@@ -46,33 +46,7 @@ Untuk menambahkan artikel dalam jumlah banyak pada Knowledge Base, Anda memerluk
 5. Buka template yang telah terunduh dan isi kolom-kolom sesuai format artikel menggunakan Markdown (heading dengan #, bold dengan **, italic dengan *, daftar berurutan dengan angka diikuti titik).
 6. Setelah semua kolom terisi, klik **"Choose from computer"** untuk memilih file atau tarik dokumen ke kotak upload.
 7. Klik **"Import"** untuk mengunggah file.
-8. Sistem akan menampilkan halaman Import log dengan status artikel menunjukkan **Processing**.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/37011276838553
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/37011263745817
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/37011263750041
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/37011339386265
-
-> Screenshot: 3.1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/37011805147417
-
-> Screenshot: A.png
-> Image: https://help-center.qontak.com/hc/article_attachments/37011805149977
-
-> Screenshot: E.png
-> Image: https://help-center.qontak.com/hc/article_attachments/37011809108505
-
-> Screenshot: F.png
-> Image: https://help-center.qontak.com/hc/article_attachments/37011805164185
-
-## Expected Result  <!-- confidence:medium ~ -->
+8. Sistem akan menampilkan halaman Import log dengan status artikel menunjukkan **Processing**.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah proses impor selesai:
 
@@ -80,6 +54,15 @@ Setelah proses impor selesai:
 • Artikel dapat diakses melalui tab **Import** pada halaman Logs
 • Status artikel berubah dari **Processing** menjadi **Published** setelah validasi selesai
 • Artikel tersedia di Knowledge Base dengan URL publik sesuai pengaturan visibilitas yang dipilih
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011276838553)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011263745817)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011263750041)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011339386265)
+![3.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805147417)
+![A.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805149977)
+![E.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011809108505)
+![F.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805164185)
 
 ## Error States  <!-- confidence:low ? -->
 

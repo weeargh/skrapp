@@ -43,23 +43,14 @@ faithfulness_threshold: 0.6
 5. Gulir halaman ke bawah hingga menemukan kolom **Team**.
 6. Pada kolom **Team**, isikan nama tim yang akan memiliki akses ke pipeline ini. Anda dapat menambahkan satu atau lebih tim.
 7. Klik tombol **"Save Pipeline"** untuk menyimpan pengaturan.
-8. Sistem akan menampilkan konfirmasi bahwa pengaturan pipeline team berhasil disimpan.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39687246680601
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39687566391833
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39687566394009
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39687566396057
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Sistem akan menampilkan konfirmasi bahwa pengaturan pipeline team berhasil disimpan.## Expected Result  <!-- confidence:high ✓ -->
 
 Pengaturan Pipeline Team berhasil diterapkan. Tim yang Anda tentukan di kolom **Team** sekarang hanya dapat melihat pipeline tersebut pada indeks **Pipeline Deals**. Pengguna yang tidak termasuk dalam tim yang ditentukan tidak akan melihat pipeline ini di daftar pipeline. Perubahan langsung berlaku untuk semua pengguna, termasuk **Admin** dan **Owner** sesuai dengan role dan tim mereka.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39687246680601)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39687566391833)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39687566394009)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39687566396057)
 
 ## Error States  <!-- confidence:medium ~ -->
 

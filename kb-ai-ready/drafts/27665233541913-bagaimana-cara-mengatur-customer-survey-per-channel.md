@@ -70,84 +70,7 @@ Anda tidak perlu mengaktifkan semua jenis survei sekaligus — dapat memilih ses
     → Pratinjau akan menunjukkan bagaimana customer akan melihat survei
 
 11. Klik **Simpan** atau tombol konfirmasi untuk menyimpan konfigurasi survei
-    → Sistem akan menampilkan notifikasi sukses dan survei siap dikirim ke channel yang dipilih
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190077337
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190093209
-
-> Screenshot: 2.1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27670164868377
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190084889
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190091673
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27670174179865
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27670164934809
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163237017
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27670164942361
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27670164948377
-
-> Screenshot: CSAT PREV.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671737768857
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190110617
-
-> Screenshot: 12.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671737811865
-
-> Screenshot: 18.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190100633
-
-> Screenshot: 14.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671737819801
-
-> Screenshot: 15.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671745627929
-
-> Screenshot: CES PREV.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671745631129
-
-> Screenshot: 16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163247513
-
-> Screenshot: 17.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671745714201
-
-> Screenshot: 19.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671737902617
-
-> Screenshot: 20.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671737905561
-
-> Screenshot: NPS PREV.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671745731993
-
-> Screenshot: 21.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671745740953
-
-> Screenshot: 22.png
-> Image: https://help-center.qontak.com/hc/article_attachments/27671745766553
-
-> Screenshot: 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163279897
-
-## Expected Result  <!-- confidence:high ✓ -->
+    → Sistem akan menampilkan notifikasi sukses dan survei siap dikirim ke channel yang dipilih## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengatur Customer Survey per Channel, Anda akan melihat:
 
@@ -157,6 +80,32 @@ Setelah berhasil mengatur Customer Survey per Channel, Anda akan melihat:
 • Pratinjau menunjukkan tampilan akhir survei yang akan diterima customer
 • Survei siap didistribusikan ke pelanggan melalui channel yang telah dikonfigurasi
 • Data respons dapat dilihat nanti di menu Reports (CSAT, CES, atau NPS sesuai jenis survei)
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190077337)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190093209)
+![2.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164868377)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190084889)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190091673)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670174179865)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164934809)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163237017)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164942361)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164948377)
+![CSAT PREV.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737768857)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190110617)
+![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737811865)
+![18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190100633)
+![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737819801)
+![15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745627929)
+![CES PREV.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745631129)
+![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163247513)
+![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745714201)
+![19.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737902617)
+![20.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737905561)
+![NPS PREV.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745731993)
+![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745740953)
+![22.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745766553)
+![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163279897)
 
 ## Error States  <!-- confidence:medium ~ -->
 

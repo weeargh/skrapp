@@ -58,30 +58,7 @@ Jika Anda belum memiliki Meta Business Account dan WhatsApp Business Profile, si
 2. Klik tombol **Tambah WhatsApp**
 3. Pilih **WhatsApp Business Account (WABA)** yang sudah terverifikasi dari dropdown
 4. Klik tombol **Hubungkan** atau **Connect**
-5. Sistem akan memproses integrasi dan menampilkan notifikasi "WhatsApp Terhubung"
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53356189359001
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53356160571929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53356189407129
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53356189408793
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53356189367833
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53356160525593
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53356160575769
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Sistem akan memproses integrasi dan menampilkan notifikasi "WhatsApp Terhubung"## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil:
 
@@ -89,6 +66,14 @@ Setelah integrasi berhasil:
 2. **Akun Muncul di Channel Integration**: WhatsApp Business Account Anda muncul dalam daftar channel yang terintegrasi
 3. **Siap Menerima Pesan**: Akun Qontak Omnichannel Anda siap menerima dan mengirim pesan WhatsApp
 4. **Mulai 20 Agustus 2025**: WABA baru akan otomatis terintegrasi dengan Marketing Messages API (MM API) untuk pengiriman campaign marketing
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53356189359001)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53356160571929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53356189407129)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53356189408793)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53356189367833)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53356160525593)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53356160575769)
 
 ## Error States  <!-- confidence:low ? -->
 

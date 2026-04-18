@@ -70,21 +70,7 @@ Untuk membuat, mengedit, dan menghapus Company di versi mobile Qontak CRM, Anda 
 3. Pilih Company yang ingin dihapus
 4. Ketuk ikon tiga titik (⋯) pada Company tersebut
 5. Pilih opsi **Delete**
-6. Konfirmasi penghapusan ketika diminta sistem
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46133275682073
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46133268981529
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46133275685145
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46133275694233
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Konfirmasi penghapusan ketika diminta sistem## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah Membuat Company Baru:**
 Data Company yang telah dibuat akan tersimpan dan muncul di daftar **Company list** dengan informasi lengkap yang telah Anda isi.
@@ -94,6 +80,11 @@ Perubahan pada informasi Company akan disimpan dan ditampilkan segera di halaman
 
 **Setelah Menghapus Company:**
 Company akan dihapus dari database dan tidak lagi muncul di daftar **Company list**. Penghapusan bersifat permanen dan tidak dapat dibatalkan.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46133275682073)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46133268981529)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46133275685145)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46133275694233)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -56,39 +56,7 @@ Anda ingin membuat template dokumen otomatis di Qontak CRM menggunakan fitur Doc
 
 9. Pilih file template Excel yang telah disiapkan. Klik tombol **Create Template** untuk mengunggah file tersebut ke sistem CRM.
 
-10. Sistem akan memproses file dan menampilkan notifikasi bahwa template berhasil terupload. Template Anda sekarang tersedia di menu Document dan siap digunakan untuk membuat dokumen otomatis.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772398808985
-
-> Screenshot: 29.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50802006513177
-
-> Screenshot: 30.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50801979073177
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772391258265
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772391262745
-
-> Screenshot: 31.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50803410084761
-
-> Screenshot: 32.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50803410090777
-
-> Screenshot: mceclip5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772391270169
-
-> Screenshot: 33.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50803388337049
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772391264665
-
-## Expected Result  <!-- confidence:high ✓ -->
+10. Sistem akan memproses file dan menampilkan notifikasi bahwa template berhasil terupload. Template Anda sekarang tersedia di menu Document dan siap digunakan untuk membuat dokumen otomatis.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah template berhasil diupload, Anda akan melihat:
 
@@ -96,6 +64,17 @@ Setelah template berhasil diupload, Anda akan melihat:
 • Template muncul dalam daftar template yang tersedia di menu **Document**
 • Template dapat dipilih saat membuat dokumen otomatis di menu **Deals** atau **Tiket**
 • Sistem siap mengisi Variable ID pada template dengan data dari CRM sesuai dengan informasi yang ada di Deal atau Tiket
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398808985)
+![29.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50802006513177)
+![30.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50801979073177)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391258265)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391262745)
+![31.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50803410084761)
+![32.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50803410090777)
+![mceclip5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391270169)
+![33.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50803388337049)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391264665)
 
 ## Error States  <!-- confidence:medium ~ -->
 

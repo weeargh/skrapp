@@ -27,44 +27,21 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Settings adalah fitur pusat pengaturan dalam Qontak Omnichannel yang memungkinkan pengguna dengan akses administratif untuk mengontrol dan mengkonfigurasi seluruh aspek operasional Omnichannel. Melalui Settings, Anda dapat mengelola User Management, Agent Management, SLA management, Inbox, Contact Info, Customer Survey, Ticket, Mekari Airene, Agent Scorecard, dan API Token dalam satu tempat terpusat.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121281177
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121264921
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121267225
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121283865
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774148030617
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121269145
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121275929
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121263641
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121270425
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774148033433
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121271577
-
-## Why It Matters  <!-- confidence:medium ~ -->
+Menu Settings adalah fitur pusat pengaturan dalam Qontak Omnichannel yang memungkinkan pengguna dengan akses administratif untuk mengontrol dan mengkonfigurasi seluruh aspek operasional Omnichannel. Melalui Settings, Anda dapat mengelola User Management, Agent Management, SLA management, Inbox, Contact Info, Customer Survey, Ticket, Mekari Airene, Agent Scorecard, dan API Token dalam satu tempat terpusat.## Why It Matters  <!-- confidence:medium ~ -->
 
 Menu Settings memastikan administrator dapat mengelola akses pengguna, mendistribusikan beban kerja agent secara efisien, menetapkan standar layanan melalui SLA, dan mengoptimalkan pengalaman pelanggan. Dengan mengatur semua komponen ini secara terstruktur, bisnis Anda dapat meningkatkan produktivitas tim, menjaga kualitas layanan, dan mengelola privasi pelanggan dengan lebih baik.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121281177)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121264921)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121267225)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121283865)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148030617)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121269145)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121275929)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121263641)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121270425)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148033433)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121271577)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

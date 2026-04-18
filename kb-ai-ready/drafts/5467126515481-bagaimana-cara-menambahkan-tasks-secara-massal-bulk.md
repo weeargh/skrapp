@@ -53,24 +53,7 @@ Untuk menambahkan Tasks secara massal (bulk upload) di Mekari Qontak CRM, Anda m
 
 7. Tunggu notifikasi konfirmasi bahwa data tasks telah berhasil terunggah. Sistem akan menampilkan pesan sukses di dashboard.
 
-8. Untuk memantau proses pengunggahan, buka menu **Properties**, kemudian klik tab **Upload/Download**. Anda dapat melihat status upload secara berkala.
-
-> Screenshot: 31.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56956754426777
-
-> Screenshot: bulkontak4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776161701529
-
-> Screenshot: bulkontak6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776188543513
-
-> Screenshot: 34.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56956754427417
-
-> Screenshot: 33.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56956754428185
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Untuk memantau proses pengunggahan, buka menu **Properties**, kemudian klik tab **Upload/Download**. Anda dapat melihat status upload secara berkala.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah bulk upload tasks berhasil:
 
@@ -79,6 +62,12 @@ Setelah bulk upload tasks berhasil:
 • Status upload dapat dilihat di menu **Properties**, tab **Upload/Download**
 • Activity log menampilkan catatan upload tasks massal
 • Setiap task dapat diedit atau dihapus melalui menu Tasks seperti task individual
+
+![31.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956754426777)
+![bulkontak4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776161701529)
+![bulkontak6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188543513)
+![34.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956754427417)
+![33.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956754428185)
 
 ## Error States  <!-- confidence:high ✓ -->
 

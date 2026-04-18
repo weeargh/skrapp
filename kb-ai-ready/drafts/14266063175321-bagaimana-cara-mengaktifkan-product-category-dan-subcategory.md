@@ -57,25 +57,16 @@ Untuk mengaktifkan Product Category dan Subcategory di Mekari Qontak, Anda membu
 5. (Opsional) Centang checkbox Required untuk mewajibkan field ini
 6. (Opsional) Centang checkbox Show In List untuk menampilkan di list
 7. Pilih Styling (Short Column atau Long Column)
-8. Klik tombol Save untuk menyimpan perubahan
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49352706034329
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772392343833
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772399946265
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50103312755481
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Klik tombol Save untuk menyimpan perubahan## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda mengklik tombol Save, sistem akan menyimpan pengaturan aktivasi Product Category dan/atau Product Subcategory. Fitur-fitur ini kini menjadi aktif dan tersedia untuk digunakan.
 
 Anda dapat langsung membuat Product Category dan Subcategory baru melalui menu Properties → Products → Kategori. Field Product Category dan Product Subcategory akan muncul di form pembuatan produk dan dapat digunakan untuk mengelola item produk secara terstruktur dalam hingga 3 layer kelompok.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49352706034329)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772392343833)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772399946265)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50103312755481)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -63,30 +63,7 @@ Untuk menambahkan Deal secara massal (bulk) di Qontak CRM, Anda membutuhkan:
    → Pesan konfirmasi akan muncul bahwa data Deal berhasil terunggah.
 
 9. Periksa progres pengunggahan di menu **Properties** → tab **Upload/Download**.
-   → Status proses unggahan akan ditampilkan.
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49893760535961
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49893760541593
-
-> Screenshot: Deals_Bulk_3.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121226649
-
-> Screenshot: Deals_Bulk_4.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774147981209
-
-> Screenshot: 12.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49893760546329
-
-> Screenshot: 13.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49893760548505
-
-> Screenshot: 14.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49893760550169
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Status proses unggahan akan ditampilkan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan Deal secara massal, Anda akan melihat:
 
@@ -94,6 +71,14 @@ Setelah berhasil menambahkan Deal secara massal, Anda akan melihat:
 2. Daftar Deal baru akan tersedia di menu **Deals** dengan status sesuai data yang diinput
 3. Progress pengunggahan dapat dipantau di menu **Properties** → tab **Upload/Download**
 4. Semua Deal yang diinput dapat dilihat, diedit, dan dikelola melalui menu **Deals** seperti Deal yang ditambahkan secara manual
+
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760535961)
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760541593)
+![Deals_Bulk_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121226649)
+![Deals_Bulk_4.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774147981209)
+![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760546329)
+![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760548505)
+![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760550169)
 
 ## Error States  <!-- confidence:high ✓ -->
 

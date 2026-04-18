@@ -48,14 +48,11 @@ Untuk mengirimkan media versi web di Qontak Omnichannel, Anda membutuhkan:
    - **Audio**: Klik untuk mengunggah file audio
    - **Take a photo**: Klik untuk mengambil foto langsung melalui kamera
 6. Pilih file yang ingin dikirim dan konfirmasi.
-7. Sistem akan mengirimkan media ke customer.
-
-> Screenshot: 18.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50772035942425
-
-## Expected Result  <!-- confidence:medium ~ -->
+7. Sistem akan mengirimkan media ke customer.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah mengirimkan media, file berhasil terupload dan tampil dalam percakapan dengan customer. Media akan terlihat dalam thread chat dengan preview sesuai jenisnya (thumbnail foto/video, ikon dokumen, atau pemutar audio). Customer akan menerima notifikasi bahwa Anda telah mengirimkan media.
+
+![18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50772035942425)
 
 ## Error States  <!-- confidence:low ? -->
 

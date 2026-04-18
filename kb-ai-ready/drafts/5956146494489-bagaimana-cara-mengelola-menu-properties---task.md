@@ -57,27 +57,7 @@ Prerequisite ini memastikan Anda memiliki izin yang diperlukan untuk membuat, me
 
 8. Untuk menghapus property, klik tombol **Destroy**. Pop-up konfirmasi akan muncul.
 
-9. Untuk property default yang tidak dapat dihapus, klik **Edit**, kosongkan checkbox **Show**, lalu klik **Save**.
-
-> Screenshot: 28.png
-> Image: https://help-center.qontak.com/hc/article_attachments/56956787734041
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916425497
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892865817
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892867353
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916435993
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916438809
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Untuk property default yang tidak dapat dihapus, klik **Edit**, kosongkan checkbox **Show**, lalu klik **Save**.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah pengelolaan menu Properties Task:
 
@@ -87,6 +67,13 @@ Setelah menyelesaikan langkah-langkah pengelolaan menu Properties Task:
 • Konfirmasi simpan ditampilkan setelah klik tombol **Save**
 • Field yang ditandai **Required** akan wajib diisi saat user mengisi Task
 • Field yang ditandai **Show** akan tampil di detail Task
+
+![28.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956787734041)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916425497)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892865817)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892867353)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916435993)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916438809)
 
 ## Error States  <!-- confidence:low ? -->
 

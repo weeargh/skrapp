@@ -48,17 +48,12 @@ Anda perlu mengatur Follow-up Templates pada Qontak Omnichannel untuk membuat te
 5. Format teks jika diperlukan menggunakan Bold, Italics, atau Strikethrough.
 6. Klik tombol **"Next"** untuk melanjutkan.
 7. Verifikasi semua data sudah benar.
-8. Klik tombol **"Submit"** untuk menyimpan template.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43749571660697
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/47383909565593
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Klik tombol **"Submit"** untuk menyimpan template.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda klik tombol **"Submit"**, sistem akan menampilkan pop-up notifikasi yang mengonfirmasi bahwa Follow-up template berhasil dibuat. Template kemudian akan tersimpan dan siap digunakan dalam campaign broadcast Anda. Template akan muncul di daftar **Templates** di menu Campaign (Broadcast) untuk digunakan kembali di kampanye berikutnya.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43749571660697)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47383909565593)
 
 ## Error States  <!-- confidence:high ✓ -->
 

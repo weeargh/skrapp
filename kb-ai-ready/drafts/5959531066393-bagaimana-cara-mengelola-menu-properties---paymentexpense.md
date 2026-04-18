@@ -40,17 +40,12 @@ Untuk mengelola menu Properties - Payment/Expense di Mekari Qontak CRM, Anda mem
 2. Pilih tab **Payment/Expense**. Sistem menampilkan daftar metode pembayaran dan kategori expense yang tersedia.
 3. Klik tombol **Edit** pada metode pembayaran atau jenis kategori yang ingin Anda ubah. Form edit akan terbuka.
 4. Lakukan perubahan yang diperlukan: tambahkan metode pembayaran baru, hapus kategori, atau ubah nama kategori.
-5. Klik tombol **Save** untuk menyimpan semua perubahan. Sistem akan menampilkan konfirmasi penyimpanan berhasil.
-
-> Screenshot: 54.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53149449864217
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892877721
-
-## Expected Result  <!-- confidence:medium ~ -->
+5. Klik tombol **Save** untuk menyimpan semua perubahan. Sistem akan menampilkan konfirmasi penyimpanan berhasil.## Expected Result  <!-- confidence:medium ~ -->
 
 Perubahan pada metode pembayaran dan kategori expense berhasil disimpan. Halaman Payment/Expense menampilkan daftar terbaru yang mencerminkan penambahan, penghapusan, atau perubahan yang Anda lakukan. Konfigurasi baru akan berlaku untuk semua expense dan payment yang dibuat ke depannya.
+
+![54.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149449864217)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892877721)
 
 ## Error States  <!-- confidence:medium ~ -->
 

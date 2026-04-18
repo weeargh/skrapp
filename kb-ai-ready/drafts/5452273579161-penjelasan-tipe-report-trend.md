@@ -27,26 +27,15 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Report Trend adalah tipe laporan dalam Qontak CRM yang menampilkan data penjualan dan performa bisnis dalam bentuk visualisasi grafik dan tabel. Report Trend membantu Anda menganalisis tren penjualan berdasarkan berbagai dimensi seperti waktu, produk, perusahaan, dan stage deal. Untuk mengakses Report Trend, masuk ke menu Report dan pilih opsi Trends di dashboard Qontak CRM Anda.
-
-> Screenshot: 51.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50807763100441
-
-> Screenshot: 52.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50807763101593
-
-> Screenshot: 55.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50807750521881
-
-> Screenshot: 54.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50807750523417
-
-> Screenshot: 53.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50807791785497
-
-## Why It Matters  <!-- confidence:high ✓ -->
+Report Trend adalah tipe laporan dalam Qontak CRM yang menampilkan data penjualan dan performa bisnis dalam bentuk visualisasi grafik dan tabel. Report Trend membantu Anda menganalisis tren penjualan berdasarkan berbagai dimensi seperti waktu, produk, perusahaan, dan stage deal. Untuk mengakses Report Trend, masuk ke menu Report dan pilih opsi Trends di dashboard Qontak CRM Anda.## Why It Matters  <!-- confidence:high ✓ -->
 
 Report Trend memberikan wawasan mendalam tentang performa penjualan tim Anda. Dengan memvisualisasikan data dalam bentuk histogram dan tabel, Anda dapat mengidentifikasi pola penjualan bulanan, produk terlaris, perusahaan klien terbaik, dan pergerakan deal antar stage. Informasi ini membantu Anda membuat keputusan bisnis yang lebih baik dan merencanakan strategi penjualan yang lebih efektif.
+
+![51.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807763100441)
+![52.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807763101593)
+![55.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807750521881)
+![54.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807750523417)
+![53.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807791785497)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

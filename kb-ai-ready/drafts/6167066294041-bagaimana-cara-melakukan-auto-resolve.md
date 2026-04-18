@@ -54,26 +54,15 @@ Untuk mengatur Auto Resolve pada chat di Qontak Omnichannel, Anda membutuhkan:
 
 8. (Opsional) Tambahkan atau cari tag untuk diterapkan ke semua auto-resolved rooms.
 
-9. Klik **Save changes** untuk menyimpan pengaturan Auto Resolve. Sistem akan menyimpan konfigurasi dan menampilkan notifikasi konfirmasi.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/26947322330521
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36777848118169
-
-> Screenshot: NEW.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36777834109209
-
-> Screenshot: NEW.png
-> Image: https://help-center.qontak.com/hc/article_attachments/26947313528985
-
-> Screenshot: G.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36777834112153
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Klik **Save changes** untuk menyimpan pengaturan Auto Resolve. Sistem akan menyimpan konfigurasi dan menampilkan notifikasi konfirmasi.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menyimpan pengaturan Auto Resolve, fitur akan aktif dan berfungsi sesuai konfigurasi yang telah ditentukan. Chat dari customer akan secara otomatis ter-resolve setelah periode inaktivitas yang telah Anda atur tercapai. Jika Anda menambahkan tag pada Auto Resolve, tag tersebut akan diterapkan ke semua room yang ter-resolve otomatis. Pengaturan akan berlaku untuk channel yang dipilih dan dapat diedit atau dihapus kapan saja melalui menu **Auto Resolve**.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F26947322330521)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777848118169)
+![NEW.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777834109209)
+![NEW.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F26947313528985)
+![G.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777834112153)
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -49,21 +49,7 @@ Pastikan Anda memiliki izin untuk mengakses fitur Broadcast Email pada akun Qont
 6. Buat campaign di menu Outbound Campaigns dengan klik "Create Campaign".
 7. Lengkapi informasi campaign: nama, template email, dan daftar kontak.
 8. Klik "Save Campaign" untuk menyimpan campaign.
-9. Klik ikon kirim pada campaign untuk mengirimkan email blast ke kontak.
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535090073
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535123353
-
-> Screenshot: 13.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774528665113
-
-> Screenshot: 14.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774528666905
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Klik ikon kirim pada campaign untuk mengirimkan email blast ke kontak.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan semua langkah, Anda akan melihat:
 
@@ -72,6 +58,11 @@ Setelah menyelesaikan semua langkah, Anda akan melihat:
 • Campaign email blast tersimpan di menu Outbound Campaigns dengan ikon kirim dan pensil
 • Email blast akan dikirimkan ke semua kontak yang ada di daftar kontak yang dipilih
 • Email testing dapat dikirim ke email Anda sendiri melalui ikon kirim sebelum mengirim ke semua kontak
+
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535090073)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535123353)
+![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774528665113)
+![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774528666905)
 
 ## Error States  <!-- confidence:low ? -->
 

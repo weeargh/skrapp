@@ -42,15 +42,7 @@ faithfulness_threshold: 0.6
 5. Sistem akan menampilkan halaman Ekspor ke Google Sheet dengan opsi sinkronisasi
 6. (Opsional) Klik tombol **Sinkronkan** untuk langsung sinkronisasi data ke Google Sheet sekarang
 7. (Opsional) Aktifkan toggle **Auto Sync** dan tentukan jadwal di kolom **Sync Time** untuk sinkronisasi otomatis berkala
-8. Sistem akan mencatat pengaturan Anda
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50120717679641
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50120662386713
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Sistem akan mencatat pengaturan Anda## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, halaman Ekspor ke Google Sheet akan menampilkan:
 • URL Google Sheet tempat data Anda akan disimpan di kolom Google Sheet URL
@@ -59,6 +51,9 @@ Setelah mengikuti langkah-langkah di atas, halaman Ekspor ke Google Sheet akan m
 • Kolom Sync Time untuk menentukan waktu sinkronisasi
 
 Data dari Qontak CRM (Kontak, Task, Perusahaan, Deal, Produk) akan tersinkronisasi ke Google Sheet sesuai pengaturan yang dipilih.
+
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50120717679641)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50120662386713)
 
 ## Error States  <!-- confidence:medium ~ -->
 

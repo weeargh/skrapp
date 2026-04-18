@@ -27,74 +27,31 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Program Referral Mekari Qontak adalah sistem yang memungkinkan Anda untuk berbagi akses produk Mekari Qontak kepada calon pelanggan melalui link referral unik Anda. Setelah calon pelanggan berhasil berlangganan selama minimal 3 bulan, Anda akan menerima komisi atau diskon berlangganan sebagai bentuk apresiasi dari Mekari Qontak. Program ini dirancang untuk saling menguntungkan antara Anda sebagai Referral Agent dan kolega atau mitra bisnis Anda yang menjadi pelanggan baru.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682595225
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682599961
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722742553
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722743705
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682605337
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722747161
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722747929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682609561
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682610201
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722750617
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722751897
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682614041
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722754201
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682615961
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682616985
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682618393
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722756889
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722758169
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682619801
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030722759705
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52030682621081
-
-## Why It Matters  <!-- confidence:medium ~ -->
+Program Referral Mekari Qontak adalah sistem yang memungkinkan Anda untuk berbagi akses produk Mekari Qontak kepada calon pelanggan melalui link referral unik Anda. Setelah calon pelanggan berhasil berlangganan selama minimal 3 bulan, Anda akan menerima komisi atau diskon berlangganan sebagai bentuk apresiasi dari Mekari Qontak. Program ini dirancang untuk saling menguntungkan antara Anda sebagai Referral Agent dan kolega atau mitra bisnis Anda yang menjadi pelanggan baru.## Why It Matters  <!-- confidence:medium ~ -->
 
 Program Referral memberikan peluang penghasilan tambahan dengan cara yang mudah — Anda hanya perlu membagikan link referral kepada jaringan Anda. Bagi mitra bisnis Anda, mereka mendapat rekomendasi produk terpercaya dari sumber yang dipercaya. Mekari Qontak mendapat pelanggan baru yang terverifikasi. Sistem ini menciptakan ekosistem pertumbuhan bersama di mana setiap pihak memperoleh manfaat dari kolaborasi, tanpa memerlukan investasi awal atau komitmen besar.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682595225)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682599961)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722742553)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722743705)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682605337)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722747161)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722747929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682609561)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682610201)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722750617)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722751897)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682614041)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722754201)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682615961)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682616985)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682618393)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722756889)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722758169)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682619801)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030722759705)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52030682621081)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

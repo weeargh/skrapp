@@ -48,26 +48,15 @@ Untuk menggunakan fitur Live Location pada Mekari Qontak CRM Mobile, Anda memerl
 6. Baca notifikasi pemberitahuan yang muncul dan ketuk **'OK'** untuk mengonfirmasi
 7. Ketuk tombol **'Start live location'** sekali lagi untuk memulai pelacakan aktif
 8. Opsional: Tambahkan foto dan catatan (Note) selama Live Location aktif
-9. Ketuk **'See all'** pada halaman detail Live Location untuk melihat riwayat kehadiran Anda
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41559033784985
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41559023874713
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41559023876633
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41559033794585
-
-> Screenshot: 8.1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41559033800729
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Ketuk **'See all'** pada halaman detail Live Location untuk melihat riwayat kehadiran Anda## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Live Location Anda akan aktif dan sistem Qontak CRM akan mulai melacak posisi geografis Anda secara berkala. Manager atau Supervisor tim Anda dapat melihat lokasi real-time melalui fitur **Live GPS Report**. Pelacakan akan terus berjalan selama aplikasi Qontak CRM Mobile aktif di background perangkat Anda. Notifikasi sistem akan muncul mengonfirmasi bahwa Live Location telah dimulai dan koneksi internet Anda stabil.
+
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41559033784985)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41559023874713)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41559023876633)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41559033794585)
+![8.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41559033800729)
 
 ## Error States  <!-- confidence:medium ~ -->
 

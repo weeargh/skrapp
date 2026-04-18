@@ -27,17 +27,12 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Office Hours adalah fitur dalam Qontak Omnichannel yang memungkinkan Anda mengatur jam operasional layanan pelanggan dan menentukan zona waktu negara sesuai lokasi bisnis Anda. Fitur ini membedakan antara jam kerja (Office Hour) dan jam di luar kerja (Non Office Hour), sehingga sistem dapat menerapkan pengaturan berbeda seperti Auto Responder berdasarkan status operasional Anda.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49483227936793
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49483227942297
-
-## Why It Matters  <!-- confidence:medium ~ -->
+Office Hours adalah fitur dalam Qontak Omnichannel yang memungkinkan Anda mengatur jam operasional layanan pelanggan dan menentukan zona waktu negara sesuai lokasi bisnis Anda. Fitur ini membedakan antara jam kerja (Office Hour) dan jam di luar kerja (Non Office Hour), sehingga sistem dapat menerapkan pengaturan berbeda seperti Auto Responder berdasarkan status operasional Anda.## Why It Matters  <!-- confidence:medium ~ -->
 
 Office Hours memastikan tim Anda dapat mengelola ekspektasi pelanggan dengan jelas — pelanggan tahu kapan mereka akan menerima respons langsung versus respons otomatis. Dengan mengatur jam operasional yang tepat, Anda meningkatkan efisiensi layanan, mengurangi beban tim di luar jam kerja, dan memberikan pengalaman pelanggan yang konsisten dan terukur.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49483227936793)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49483227942297)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

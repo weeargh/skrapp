@@ -60,48 +60,7 @@ Setelah template berhasil dibuat dan disetujui oleh META, Anda akan melihat:
 • Konfirmasi persetujuan dikirimkan melalui email dan notifikasi Qontak
 • Template dapat langsung digunakan untuk mengirim pesan kampanye ke pelanggan
 
-Jika template belum disetujui, status akan menampilkan **Pending** atau **Rejected** dengan alasan penolakan dari META.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944451871513
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944451872409
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944432667033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944432672281
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944432674841
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944432680601
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944451887513
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944451889049
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944432686745
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944432697753
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944432699417
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944451909273
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54944451913881
-
-## Error States  <!-- confidence:high ✓ -->
+Jika template belum disetujui, status akan menampilkan **Pending** atau **Rejected** dengan alasan penolakan dari META.## Error States  <!-- confidence:high ✓ -->
 
 **Template Ditolak (Rejected):**
 - Penyebab: Konten melanggar kebijakan META, mengandung pesan promosi di kategori Utilitas, atau format tidak sesuai standar.
@@ -114,6 +73,20 @@ Jika template belum disetujui, status akan menampilkan **Pending** atau **Reject
 **Kategori Berubah Otomatis (Sejak 9 April 2025):**
 - Penyebab: META mendeteksi konten promosi di kategori Utilitas.
 - Solusi: Periksa kategori template yang berubah dan konfirmasi di Qontak sebelum mengirim campaign.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944451871513)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944451872409)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944432667033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944432672281)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944432674841)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944432680601)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944451887513)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944451889049)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944432686745)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944432697753)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944432699417)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944451909273)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54944451913881)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

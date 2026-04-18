@@ -44,44 +44,21 @@ faithfulness_threshold: 0.3
    - **Default**: Gunakan pengaturan default dari Settings Menu Chatbot
    - **Resolve Conversation**: Bot menutup percakapan otomatis. Isi Closing Message dan (opsional) centang Set user idle time untuk menentukan waktu tunggu
    - **Assign Conversation**: Tugaskan agen dengan tipe Auto, Division, atau Agent. (Opsional) centang Set user idle time
-5. Klik tombol Save untuk menyimpan pengaturan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203082265
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203086873
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203089177
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203083033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194384153
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194381721
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194385817
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203094297
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203092633
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203095833
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194390425
-
-## Expected Result  <!-- confidence:medium ~ -->
+5. Klik tombol Save untuk menyimpan pengaturan.## Expected Result  <!-- confidence:medium ~ -->
 
 Pengaturan tambahan Bot Response berhasil disimpan. Sistem menampilkan notifikasi konfirmasi atau kembali ke tampilan Bot Response dengan status pengaturan yang telah diperbarui. Bot Response akan berfungsi sesuai pengaturan Additional Settings yang dipilih (penutupan otomatis percakapan atau penugasan agen).
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203082265)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203086873)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203089177)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203083033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194384153)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194381721)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194385817)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203094297)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203092633)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203095833)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194390425)
 
 ## Error States  <!-- confidence:low ? -->
 

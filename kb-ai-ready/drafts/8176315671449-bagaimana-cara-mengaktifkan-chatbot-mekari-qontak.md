@@ -47,21 +47,7 @@ Untuk mengaktifkan Chatbot Mekari Qontak:
 
 3. Klik tab Conversation untuk membuka daftar percakapan chatbot. Sistem menampilkan daftar conversation yang tersedia (mungkin kosong jika belum ada).
 
-4. Klik tombol Create Conversation untuk membuat percakapan baru. Formulir konfigurasi conversation akan terbuka.
-
-> Screenshot: 107.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51039725170073
-
-> Screenshot: 115.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51039678657817
-
-> Screenshot: 110.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51039678663833
-
-> Screenshot: 116.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51039725173913
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Klik tombol Create Conversation untuk membuat percakapan baru. Formulir konfigurasi conversation akan terbuka.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengaktifkan Chatbot Mekari Qontak, Anda akan melihat:
 
@@ -69,6 +55,11 @@ Setelah mengaktifkan Chatbot Mekari Qontak, Anda akan melihat:
 2. Halaman Conversation menampilkan daftar percakapan yang telah dibuat (atau kosong jika baru pertama kali)
 3. Tombol Create Conversation siap digunakan untuk membuat percakapan chatbot baru
 4. Anda dapat melanjutkan ke langkah pembuatan conversation dengan mengisi informasi yang diperlukan (Conversation Name, Multiple Channels, Bot Response Accuracy, Trigger Text, dan Conversation Operational Hours)
+
+![107.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51039725170073)
+![115.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51039678657817)
+![110.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51039678663833)
+![116.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51039725173913)
 
 ## Error States  <!-- confidence:medium ~ -->
 

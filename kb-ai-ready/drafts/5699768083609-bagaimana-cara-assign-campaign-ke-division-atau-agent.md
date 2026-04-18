@@ -45,26 +45,15 @@ Untuk assign campaign ke Division atau Agent, Anda memerlukan:
 5. Pada bagian Campaign assignment, pilih opsi **Division** dari dropdown menu.
 6. Pilih Division tujuan dari daftar yang tersedia. Hanya Agent di Division terpilih yang dapat mengelola campaign ini.
 7. Verifikasi semua informasi sudah benar.
-8. Klik tombol **Send campaign**. Sistem akan mengirimkan campaign ke Division yang ditunjuk.
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43824013886617
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43824013888025
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43824013888665
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43824013889177
-
-> Screenshot: 6a.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774533912089
-
-## Expected Result  <!-- confidence:medium ~ -->
+8. Klik tombol **Send campaign**. Sistem akan mengirimkan campaign ke Division yang ditunjuk.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah Anda mengklik tombol Send campaign, sistem akan memproses pengiriman campaign ke Division yang telah dipilih. Campaign akan muncul di dashboard campaign dengan status pengiriman. Hanya Agent dan Supervisor dalam Division terpilih yang dapat melihat, mengelola, dan memantau hasil dari campaign tersebut. Anda akan menerima konfirmasi bahwa campaign telah berhasil di-assign ke Division.
+
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013886617)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013888025)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013888665)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013889177)
+![6a.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774533912089)
 
 ## Error States  <!-- confidence:medium ~ -->
 

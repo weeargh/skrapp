@@ -53,18 +53,7 @@ Catatan: Fitur WhatsApp Call masih dalam tahap Beta dan hanya akan muncul untuk 
    - Additional Balance (saldo tambahan)
    - Total Balance (akumulasi kedua saldo)
 
-5. Catat sisa Voice Balance Anda sebelum melakukan panggilan keluar, karena setiap menit panggilan akan mengurangi saldo tersebut.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49718550832537
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49718550834969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49718529960217
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Catat sisa Voice Balance Anda sebelum melakukan panggilan keluar, karena setiap menit panggilan akan mengurangi saldo tersebut.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah di atas, Anda berhasil melihat dan memahami pengelolaan Package Usage Voice Call Billing. Anda akan:
 
@@ -74,6 +63,10 @@ Setelah menyelesaikan langkah-langkah di atas, Anda berhasil melihat dan memaham
 - Mengetahui batas minimum saldo yang diperlukan untuk melakukan panggilan keluar (panggilan masuk dapat dilakukan tanpa saldo)
 
 Informasi ini membantu Anda mengelola penggunaan panggilan suara dengan lebih efektif.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49718550832537)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49718550834969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49718529960217)
 
 ## Error States  <!-- confidence:high ✓ -->
 

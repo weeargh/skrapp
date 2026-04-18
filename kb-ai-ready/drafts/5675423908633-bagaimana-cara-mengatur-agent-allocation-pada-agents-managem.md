@@ -51,33 +51,7 @@ Untuk mengatur Agent Allocation pada Agents Management, Anda memerlukan:
    - "Auto agent allocation (AAA)": Chat baru dialokasikan otomatis ke Agent online tanpa intervensi Supervisor
    - "Custom agent allocation (CAA)": Agent menerima permintaan custom dari klien
 
-7. Klik "Save" atau tombol konfirmasi untuk menyimpan perubahan. Sistem akan menampilkan konfirmasi bahwa pengaturan Agent Allocation telah diperbarui.
-
-> Screenshot: 85.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937610235929
-
-> Screenshot: 90.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937912895385
-
-> Screenshot: 86.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937849984281
-
-> Screenshot: 83.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937856794137
-
-> Screenshot: 87.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937849987865
-
-> Screenshot: 84.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937849991705
-
-> Screenshot: 88.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937856798361
-
-> Screenshot: 89.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937856799257
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik "Save" atau tombol konfirmasi untuk menyimpan perubahan. Sistem akan menampilkan konfirmasi bahwa pengaturan Agent Allocation telah diperbarui.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengatur Agent Allocation dengan berhasil:
 
@@ -87,6 +61,15 @@ Setelah mengatur Agent Allocation dengan berhasil:
 • Jika "Agent can assign room to another agent" diaktifkan: Tombol Assign tersedia di room
 • Jika dinonaktifkan: Tombol Assign disable
 • Mode AAA atau CAA yang dipilih menentukan bagaimana chat baru didistribusikan ke Agent online
+
+![85.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937610235929)
+![90.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937912895385)
+![86.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937849984281)
+![83.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937856794137)
+![87.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937849987865)
+![84.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937849991705)
+![88.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937856798361)
+![89.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937856799257)
 
 ## Error States  <!-- confidence:low ? -->
 

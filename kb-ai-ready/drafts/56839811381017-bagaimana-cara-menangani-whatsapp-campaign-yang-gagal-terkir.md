@@ -28,20 +28,13 @@ faithfulness_threshold: 0.6
 
 ## Symptom  <!-- confidence:high ✓ -->
 
-Pesan WhatsApp Campaign Anda tidak berhasil terkirim kepada penerima. Anda dapat melihat status pengiriman yang gagal pada halaman detail Campaign di bagian Campaign Logs. Pesan mungkin menampilkan status error tertentu atau tidak masuk ke dalam daftar pesan yang berhasil dikirim, meskipun campaign sudah dijalankan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56839811374233
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56839827316633
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56839827318553
-
-## Root Cause  <!-- confidence:high ✓ -->
+Pesan WhatsApp Campaign Anda tidak berhasil terkirim kepada penerima. Anda dapat melihat status pengiriman yang gagal pada halaman detail Campaign di bagian Campaign Logs. Pesan mungkin menampilkan status error tertentu atau tidak masuk ke dalam daftar pesan yang berhasil dikirim, meskipun campaign sudah dijalankan.## Root Cause  <!-- confidence:high ✓ -->
 
 Pengiriman WhatsApp Campaign gagal dapat disebabkan oleh beberapa faktor: (1) Messaging Limit pada Business Portfolio Anda sudah mencapai batas harian; (2) Pesan kategori Marketing memiliki aturan pengiriman lebih ketat, termasuk pembatasan per penerima berdasarkan engagement level, kebutuhan opt-in, atau penerima terdaftar dalam eksperimen Meta tanpa Customer Service Window aktif; (3) Error khusus dari Meta seperti template issue, nomor penerima invalid, atau quality rating template rendah.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56839811374233)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56839827316633)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56839827318553)
 
 ## Solution  <!-- confidence:medium ~ -->
 

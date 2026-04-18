@@ -54,18 +54,7 @@ Untuk membuat pipeline deal baru pada Qontak CRM, Anda memerlukan:
 
 5. Klik **"Add Deal Stage"** untuk menambah stage tambahan jika diperlukan.
 
-6. Klik tombol **"Create Pipeline"** untuk menyimpan. Pipeline baru akan muncul di halaman Deals.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42009600857241
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42009590880537
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42009590881817
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol **"Create Pipeline"** untuk menyimpan. Pipeline baru akan muncul di halaman Deals.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat pipeline deal baru, Anda akan:
 
@@ -73,6 +62,10 @@ Setelah berhasil membuat pipeline deal baru, Anda akan:
 2. Melihat pipeline yang baru dibuat muncul dalam daftar pipeline yang tersedia
 3. Pipeline siap digunakan untuk mengkategorikan dan mengelola deals sesuai stage yang telah dikonfigurasi
 4. Sistem akan mulai memberikan pengingat otomatis untuk deals yang tidak tersentuh sesuai pengaturan rotting day/time yang dipilih
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42009600857241)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42009590880537)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42009590881817)
 
 ## Error States  <!-- confidence:low ? -->
 

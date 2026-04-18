@@ -43,20 +43,13 @@ Anda ingin menambahkan pengguna baru ke dalam Qontak CRM. Untuk melakukan ini, A
 4. Isi kolom yang diperlukan (ditandai bintang *): First name, Last name, Email address, Staff level, dan Role. Kolom lainnya bersifat opsional.
 5. Pilih level karyawan pada kolom "Staff level" dengan mengklik kolom tersebut.
 6. Pilih Role (Admin atau Member) sesuai kebutuhan.
-7. Klik tombol "Create User" atau "Add user" untuk menyimpan pengguna baru. Sistem akan memproses data dan membuat akun pengguna.
-
-> Screenshot: a3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121087897
-
-> Screenshot: a4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121090841
-
-> Screenshot: a5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774147715097
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik tombol "Create User" atau "Add user" untuk menyimpan pengguna baru. Sistem akan memproses data dan membuat akun pengguna.## Expected Result  <!-- confidence:high ✓ -->
 
 Pengguna baru berhasil ditambahkan ke dalam Qontak CRM Anda. Sistem akan menampilkan pesan konfirmasi dan pengguna baru akan muncul dalam daftar pengguna terdaftar. Pengguna baru dapat langsung melakukan login ke Qontak CRM menggunakan alamat email dan password yang telah ditetapkan. Jika pengguna memiliki role yang mengaktifkan Multi-Factor Authentication (MFA), mereka akan diminta memasukkan OTP yang dikirim ke email saat login pertama kali.
+
+![a3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121087897)
+![a4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121090841)
+![a5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774147715097)
 
 ## Error States  <!-- confidence:high ✓ -->
 

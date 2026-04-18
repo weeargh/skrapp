@@ -44,35 +44,18 @@ Prasyarat untuk melakukan tugas ini:
 3. Klik "User Permission" di halaman Profile Settings. Daftar pengguna dan pengaturan permission akan ditampilkan.
 4. Pada kolom "Search Users", centang kotak di sebelah kiri nama pengguna yang ingin diubah akses datanya.
 5. Di bagian Contacts Access, atur opsi Add, View, dan Edit sesuai kebutuhan (Owned Only, Team Only, atau Everything).
-6. Klik tombol Save atau Confirm untuk menyimpan perubahan permission.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49619549906841
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49619519287321
-
-> Screenshot: 1.1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780961395225
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780961396121
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39900853026073
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/26936289701913
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780919255321
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39901361091609
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol Save atau Confirm untuk menyimpan perubahan permission.## Expected Result  <!-- confidence:high ✓ -->
 
 Sistem akan menyimpan perubahan Contact Access dan Companies Access untuk pengguna yang dipilih. Pengaturan akses baru akan langsung berlaku pada akun pengguna tersebut. Pengguna akan dapat menambah, melihat, atau mengubah data kontak sesuai dengan permission yang telah ditetapkan oleh Admin. Jika toggle Add diaktifkan, pengguna dapat membuat kontak baru. Opsi View dan Edit menentukan jangkauan data yang dapat diakses (milik sendiri, tim, atau semua orang).
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49619549906841)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49619519287321)
+![1.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961395225)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961396121)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39900853026073)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F26936289701913)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919255321)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39901361091609)
 
 ## Error States  <!-- confidence:medium ~ -->
 

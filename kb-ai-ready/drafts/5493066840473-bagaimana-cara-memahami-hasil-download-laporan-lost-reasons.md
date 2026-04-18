@@ -49,12 +49,7 @@ Catatan: Laporan Lost Reasons hanya dapat diakses oleh pengguna dengan akses ke 
    → Metrik ini membantu menganalisis distribusi alasan kehilangan deals.
 
 4. Buka sheet Deals List untuk detail lengkap setiap Lost Deal (Deal Name, Lost Reason, Owner, Currency, Amount).
-   → Sheet ini memberikan informasi individual untuk setiap deals yang hilang.
-
-> Screenshot: Lost_Reasons_1.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089378585
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sheet ini memberikan informasi individual untuk setiap deals yang hilang.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah membuka laporan Lost Reasons, Anda akan melihat:
 
@@ -63,6 +58,8 @@ Setelah membuka laporan Lost Reasons, Anda akan melihat:
 • Sheet Deals List: Tabel detail berisi kolom Deal Name, Lost Reason, Owner, Currency, dan Amount untuk setiap Lost Deal.
 
 • Data tersaring sesuai filter Pipeline, User, dan periode waktu yang dipilih saat mengunduh laporan.
+
+![Lost_Reasons_1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089378585)
 
 ## Error States  <!-- confidence:low ? -->
 

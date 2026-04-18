@@ -57,28 +57,17 @@ Pastikan timezone perusahaan Anda sudah dikonfigurasi di halaman settings Proper
    → Sistem akan menampilkan opsi pemilihan hari.
 
 6. Klik tombol **'Save'** untuk menyimpan semua pengaturan Live Location Reminder.
-   → Notifikasi reminder akan aktif sesuai konfigurasi yang telah ditentukan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190262681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163387033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163369113
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163371033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163388441
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Notifikasi reminder akan aktif sesuai konfigurasi yang telah ditentukan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik tombol **'Save'**, pengaturan notifikasi Live Location Reminder akan berhasil disimpan. Sistem akan menampilkan konfirmasi bahwa pengaturan telah diterapkan.
 
 Karyawan akan menerima notifikasi pengingat pada waktu yang telah ditentukan untuk Check-in dan Check-out pada hari-hari yang dipilih. Notifikasi ini membantu karyawan terhindar dari lupa melakukan check-in atau check-out, sehingga data absensi kehadiran menjadi akurat dan tercatat dengan baik.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190262681)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163387033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163369113)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163371033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163388441)
 
 ## Error States  <!-- confidence:low ? -->
 

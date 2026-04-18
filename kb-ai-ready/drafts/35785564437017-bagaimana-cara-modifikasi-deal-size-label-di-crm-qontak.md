@@ -51,21 +51,7 @@ Proses modifikasi memerlukan waktu tunggu sekitar 15 menit setelah menyimpan per
 
 7. Buka menu **Properties** dan klik tab **Deal locale**
 8. Di kolom **Size Unit/Label**, masukkan unit/label yang dibutuhkan (contoh: Kg, Ton, Gr, atau angka), klik **Save changes**
-9. Sistem akan menampilkan notifikasi penyimpanan berhasil. Label baru akan muncul di halaman **Deals** setelah 15 menit
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49889724776729
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXeHcJvbEGJnI29eXnRi0ZoLniSQZUZ4c3I2mrL4f1mU7RZqeTtAj4JzXfEBG0rznbYolK2CsegNe0wOcIZyvv6t1RUnVxJLWkvSfQg1Yjqb_4HZyOw5c-5dEZsSJ2ktjARJdg0TUIHoqALv78I1m9XZcWuz?key=FhkmOGFP9H_AkEGYxSsmZA
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXfdKBcH0DhZBzE9N5WvlyGl-AflyV_-wDfznLluWdcBKEIFrkifOftLeZ9ZaE9wlr9DXYSaLE_DGWi6tihrPgYp0rbUAW6vdxB4toj2H50OYUlOI6zPjPrwfiiKcuxrt5hzsbDPLvY9zf-uAekCurAw4ogC?key=FhkmOGFP9H_AkEGYxSsmZA
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXf0cE_TXtPhmkVLc1ZtCY7RAtcdG7BGxj_Fz__wbNLdj70w8FWv6YMkiptrVvPx_j4chWQ_R7_IwcgV7LLbPi0jVj_DH1kA0qMf26qV8BnphcfyB_aL1Jks9RAKI0_YlPzMFJ-uF65nzK8KJShiyzhnLESf?key=FhkmOGFP9H_AkEGYxSsmZA
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Sistem akan menampilkan notifikasi penyimpanan berhasil. Label baru akan muncul di halaman **Deals** setelah 15 menit## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan semua langkah, Anda akan melihat:
 
@@ -75,6 +61,11 @@ Setelah menyelesaikan semua langkah, Anda akan melihat:
 4. Deal index dan default report (sales performance & deals by stage report) menampilkan unit/label yang sudah dimodifikasi
 
 Perubahan sepenuhnya aktif setelah 15 menit sejak penyimpanan terakhir.
+
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49889724776729)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXeHcJvbEGJnI29eXnRi0ZoLniSQZUZ4c3I2mrL4f1mU7RZqeTtAj4JzXfEBG0rznbYolK2CsegNe0wOcIZyvv6t1RUnVxJLWkvSfQg1Yjqb_4HZyOw5c-5dEZsSJ2ktjARJdg0TUIHoqALv78I1m9XZcWuz%3Fkey%3DFhkmOGFP9H_AkEGYxSsmZA)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXfdKBcH0DhZBzE9N5WvlyGl-AflyV_-wDfznLluWdcBKEIFrkifOftLeZ9ZaE9wlr9DXYSaLE_DGWi6tihrPgYp0rbUAW6vdxB4toj2H50OYUlOI6zPjPrwfiiKcuxrt5hzsbDPLvY9zf-uAekCurAw4ogC%3Fkey%3DFhkmOGFP9H_AkEGYxSsmZA)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXf0cE_TXtPhmkVLc1ZtCY7RAtcdG7BGxj_Fz__wbNLdj70w8FWv6YMkiptrVvPx_j4chWQ_R7_IwcgV7LLbPi0jVj_DH1kA0qMf26qV8BnphcfyB_aL1Jks9RAKI0_YlPzMFJ-uF65nzK8KJShiyzhnLESf%3Fkey%3DFhkmOGFP9H_AkEGYxSsmZA)
 
 ## Error States  <!-- confidence:medium ~ -->
 

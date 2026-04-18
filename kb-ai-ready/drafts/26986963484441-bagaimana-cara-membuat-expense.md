@@ -47,17 +47,12 @@ Untuk membuat expense di Mekari Qontak CRM, Anda memerlukan:
    - **Category**: Pilih kategori expense yang sesuai
    - **Description**: (Opsional) Tambahkan deskripsi expense
    - **Upload photos/images**: (Opsional) Unggah bukti pembayaran
-4. Klik tombol **Submit**. Data expense akan tersimpan dan sistem akan menampilkan konfirmasi penyimpanan.
-
-> Screenshot: 52.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53149356184985
-
-> Screenshot: 53.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53149356187545
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Klik tombol **Submit**. Data expense akan tersimpan dan sistem akan menampilkan konfirmasi penyimpanan.## Expected Result  <!-- confidence:high ✓ -->
 
 Expense berhasil dibuat dan tersimpan. Sistem menampilkan pesan konfirmasi sukses. Data expense kini muncul di daftar menu Expense dengan informasi lengkap (tanggal, jumlah, kategori, kontak/deal terkait jika ada). Expense dapat dievaluasi dan dilacak oleh perusahaan sesuai kebutuhan bisnis.
+
+![52.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149356184985)
+![53.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149356187545)
 
 ## Error States  <!-- confidence:medium ~ -->
 

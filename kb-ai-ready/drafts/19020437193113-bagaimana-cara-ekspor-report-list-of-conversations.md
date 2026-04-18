@@ -43,21 +43,16 @@ Untuk mengekspor Report List of Conversations, Anda memerlukan:
 6. Klik tombol **Export** → Kartu List of Conversation ditampilkan
 7. Pada kartu **List of Conversation**, klik tombol **Export** → Halaman filter ekspor muncul
 8. Pilih **Periode** dan **Channel** sesuai kebutuhan, lalu klik **Export** → Proses ekspor dimulai
-9. Tunggu hingga halaman menampilkan status ekspor dengan informasi **File Name**, **Exporter**, **Export Date**, dan **Status** → Ekspor sedang diproses atau telah selesai
-
-> Screenshot: 62.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50809474876185
-
-> Screenshot: 63.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50809446007449
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Tunggu hingga halaman menampilkan status ekspor dengan informasi **File Name**, **Exporter**, **Export Date**, dan **Status** → Ekspor sedang diproses atau telah selesai## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah ekspor berhasil:
 • Halaman menampilkan status **Completed** dengan detail file (nama file, pengekspor, tanggal ekspor)
 • Email notifikasi dikirim ke alamat email terdaftar akun Anda berisi link download file laporan
 • File laporan dapat diunduh dan dibuka dalam format CSV untuk analisis lebih lanjut
 • Data List of Conversations mencakup semua percakapan sesuai periode dan channel yang dipilih
+
+![62.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50809474876185)
+![63.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50809446007449)
 
 ## Error States  <!-- confidence:medium ~ -->
 

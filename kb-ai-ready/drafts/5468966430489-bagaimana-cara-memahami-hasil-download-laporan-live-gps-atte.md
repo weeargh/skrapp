@@ -64,18 +64,7 @@ Setelah berhasil mengunduh laporan **Daily Check-in Report**, Anda akan melihat 
 - Informasi perangkat yang digunakan saat check-in dan check-out
 - Total pengguna yang ter-track
 
-Laporan siap dianalisis untuk monitoring kehadiran dan kepatuhan protokol lokasi.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/6054188701337
-
-> Screenshot: Laporan_GPS_1.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089356953
-
-> Screenshot: Laporan_GPS_2.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089366809
-
-## Error States  <!-- confidence:medium ~ -->
+Laporan siap dianalisis untuk monitoring kehadiran dan kepatuhan protokol lokasi.## Error States  <!-- confidence:medium ~ -->
 
 Kemungkinan masalah yang dapat terjadi:
 
@@ -90,6 +79,10 @@ Kemungkinan masalah yang dapat terjadi:
 
 4. **Data laporan kosong atau tidak menampilkan check-in records**
    → Solusi: Verifikasi bahwa tim Anda telah melakukan check-in dan data sudah tersimpan di sistem.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F6054188701337)
+![Laporan_GPS_1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089356953)
+![Laporan_GPS_2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089366809)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

@@ -29,50 +29,23 @@ faithfulness_threshold: 0.6
 
 ## Symptom  <!-- confidence:high ✓ -->
 
-Chatbot AI Anda tidak dapat menjawab pertanyaan tertentu dari pengguna. Pertanyaan tersebut muncul di halaman Unanswered questions dengan status Unreviewed, menunjukkan bahwa AI belum memiliki pengetahuan yang cukup untuk merespons. Pengguna mungkin menerima respons fallback (pesan default, dialihkan ke agent) alih-alih jawaban yang relevan dan informatif.
-
-> Screenshot: 175.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53791281592473
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100787751705
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100787752601
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100802675737
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100787757593
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100802683289
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100802684185
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100802686745
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100787762969
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100802715801
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/41100787763865
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100802720409
-
-> Screenshot: 12.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41100787767449
-
-## Root Cause  <!-- confidence:high ✓ -->
+Chatbot AI Anda tidak dapat menjawab pertanyaan tertentu dari pengguna. Pertanyaan tersebut muncul di halaman Unanswered questions dengan status Unreviewed, menunjukkan bahwa AI belum memiliki pengetahuan yang cukup untuk merespons. Pengguna mungkin menerima respons fallback (pesan default, dialihkan ke agent) alih-alih jawaban yang relevan dan informatif.## Root Cause  <!-- confidence:high ✓ -->
 
 Chatbot AI tidak dapat menjawab karena keterbatasan basis pengetahuan (knowledge base). Pertanyaan yang baru atau tidak relevan dengan perusahaan belum ditambahkan sebagai sumber pembelajaran AI. AI mempelajari hanya dari sumber jawaban yang telah Anda tambahkan di Training sources. Tanpa sumber ini, sistem tidak dapat mencocokkan pertanyaan pengguna dengan jawaban yang sesuai.
+
+![175.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53791281592473)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100787751705)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100787752601)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100802675737)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100787757593)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100802683289)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100802684185)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100802686745)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100787762969)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100802715801)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100787763865)
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100802720409)
+![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41100787767449)
 
 ## Solution  <!-- confidence:high ✓ -->
 

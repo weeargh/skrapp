@@ -30,29 +30,16 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Tampilan Menu Inbox pada akun Admin, Supervisor, dan Agent adalah antarmuka pengelolaan percakapan pelanggan di Qontak Omnichannel yang disesuaikan berdasarkan peran pengguna. Admin dan Supervisor memiliki tampilan yang sama dengan akses ke semua obrolan, filter lengkap, dan kemampuan bulk action. Agent memiliki tampilan terbatas yang fokus pada obrolan yang ditugaskan kepada mereka. Perbedaan ini mencakup sidebar, opsi filter (All chats, My chats, Unassigned, Assigned), dan fitur manajemen percakapan yang tersedia untuk setiap peran.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49380099145241
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49380099150233
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49380083054489
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49380099152537
-
-> Screenshot: 16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49380099153305
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49380238141849
-
-## Why It Matters  <!-- confidence:high ✓ -->
+Tampilan Menu Inbox pada akun Admin, Supervisor, dan Agent adalah antarmuka pengelolaan percakapan pelanggan di Qontak Omnichannel yang disesuaikan berdasarkan peran pengguna. Admin dan Supervisor memiliki tampilan yang sama dengan akses ke semua obrolan, filter lengkap, dan kemampuan bulk action. Agent memiliki tampilan terbatas yang fokus pada obrolan yang ditugaskan kepada mereka. Perbedaan ini mencakup sidebar, opsi filter (All chats, My chats, Unassigned, Assigned), dan fitur manajemen percakapan yang tersedia untuk setiap peran.## Why It Matters  <!-- confidence:high ✓ -->
 
 Perbedaan tampilan Menu Inbox berdasarkan peran memastikan setiap pengguna melihat informasi relevan sesuai tanggung jawab mereka. Admin dan Supervisor dapat memantau semua aktivitas dan melakukan bulk action untuk manajemen tim yang lebih efisien. Agent fokus pada obrolan yang ditugaskan, mengurangi gangguan dan meningkatkan produktivitas. Struktur ini membantu mengoptimalkan alur kerja customer service dan memastikan tidak ada pertanyaan pelanggan yang terlewat.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49380099145241)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49380099150233)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49380083054489)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49380099152537)
+![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49380099153305)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49380238141849)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

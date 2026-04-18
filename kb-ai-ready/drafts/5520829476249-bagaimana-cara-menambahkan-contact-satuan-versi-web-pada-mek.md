@@ -51,26 +51,15 @@ faithfulness_threshold: 0.6
 
 6. (Opsional) Pada panel kanan, gunakan kolom **Notes**, **Task**, **Panggilan**, **Email**, **Dokumen**, dan **Rapat** untuk menambah catatan atau informasi lainnya.
 
-7. Klik **Buat Kontak** untuk menyimpan. Atau klik **Buat dan lanjutkan menambahkan** untuk menyimpan dan menambah kontak lainnya sekaligus.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49586043440025
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/23735374085657
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39653244319257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/23735105423129
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/23735375580569
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik **Buat Kontak** untuk menyimpan. Atau klik **Buat dan lanjutkan menambahkan** untuk menyimpan dan menambah kontak lainnya sekaligus.## Expected Result  <!-- confidence:high ✓ -->
 
 Kontak satuan berhasil dibuat dan tersimpan. Sistem akan menampilkan pesan konfirmasi, dan kontak baru muncul dalam daftar kontak di menu **Contacts** dengan semua informasi yang dimasukkan (nama, email, nomor telepon, perusahaan, tiket, dan catatan) terlihat dan dapat dicari. Jika pengguna berlangganan Qontak Omnichannel, kontak juga secara otomatis tersinkronisasi ke Omnichannel tanpa perlu membuat ulang.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586043440025)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23735374085657)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39653244319257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23735105423129)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23735375580569)
 
 ## Error States  <!-- confidence:medium ~ -->
 

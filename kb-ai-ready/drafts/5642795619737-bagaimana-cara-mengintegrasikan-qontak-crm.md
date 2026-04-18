@@ -49,21 +49,7 @@ Untuk mengintegrasikan chat panel Omnichannel dengan Qontak CRM Messenger:
 4. Klik tombol **Authorize** untuk memberikan otorisasi Omnichannel ke CRM. Sistem akan memeriksa subscription CRM Anda.
 5. Jika subscription aktif, proses integrasi berhasil. Sistem menampilkan halaman integrasi CRM dengan status terhubung.
 
-Catatan: Percakapan akan masuk ke CRM sebagai tiket dan tidak akan ditampilkan di inbox Omnichannel.
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50771314201497
-
-> Screenshot: 12.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50771303044505
-
-> Screenshot: 13.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50771303046297
-
-> Screenshot: 14.1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50771413989657
-
-## Expected Result  <!-- confidence:high ✓ -->
+Catatan: Percakapan akan masuk ke CRM sebagai tiket dan tidak akan ditampilkan di inbox Omnichannel.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil, Anda akan:
 
@@ -72,6 +58,11 @@ Setelah integrasi berhasil, Anda akan:
 - Melihat tombol **Disconnect** tersedia jika ingin memutuskan integrasi di masa mendatang
 
 Integrasi memungkinkan alur kerja terpadu antara Omnichannel dan CRM tanpa duplikasi pesan di inbox.
+
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771314201497)
+![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771303044505)
+![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771303046297)
+![14.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771413989657)
 
 ## Error States  <!-- confidence:medium ~ -->
 

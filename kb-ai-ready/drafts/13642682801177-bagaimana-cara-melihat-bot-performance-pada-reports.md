@@ -51,30 +51,7 @@ Untuk melihat Bot Performance pada Reports, Anda memerlukan:
 
 7. Periksa **Fallback rate details** untuk melihat jumlah fallback yang di-trigger dan Confusion Rate.
 
-8. Lihat grafik **Customer and Bot Interactions** untuk analisis interaksi detail.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48427363329177
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48427388783129
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48427388784409
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/48495938997657
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/48495935249305
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48430152491929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48430152499609
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Lihat grafik **Customer and Bot Interactions** untuk analisis interaksi detail.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat dashboard Bot Performance yang berisi:
 
@@ -85,6 +62,14 @@ Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat dashboard Bot P
 - Visualisasi interaksi pelanggan dan respons bot
 
 Semua data dapat difilter berdasarkan rentang tanggal yang dipilih.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48427363329177)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48427388783129)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48427388784409)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48495938997657)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48495935249305)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48430152491929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48430152499609)
 
 ## Error States  <!-- confidence:low ? -->
 

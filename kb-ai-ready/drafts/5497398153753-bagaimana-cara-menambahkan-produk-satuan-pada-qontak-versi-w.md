@@ -44,21 +44,16 @@ Untuk menambahkan produk satuan pada Qontak versi Web, Anda membutuhkan:
 
 3. Setelah semua data terisi dengan lengkap, klik tombol **Save** untuk menyimpan produk baru. Sistem akan memproses dan menyimpan data produk Anda.## Expected Result  <!-- confidence:high ✓ -->
 
-Produk satuan berhasil ditambahkan dan tersimpan dalam Qontak CRM. Sistem menampilkan pesan konfirmasi penyimpanan dan Anda akan dikembalikan ke daftar produk. Produk baru yang baru saja Anda buat akan muncul di dalam list produk dengan semua informasi yang telah Anda masukkan (nama, harga, kategori, dan detail lainnya) tersimpan dan dapat diakses untuk digunakan dalam aktivitas CRM selanjutnya.
-
-> Screenshot: 1111.png
-> Image: https://help-center.qontak.com/hc/article_attachments/14268885839769
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5497302206489
-
-## Error States  <!-- confidence:medium ~ -->
+Produk satuan berhasil ditambahkan dan tersimpan dalam Qontak CRM. Sistem menampilkan pesan konfirmasi penyimpanan dan Anda akan dikembalikan ke daftar produk. Produk baru yang baru saja Anda buat akan muncul di dalam list produk dengan semua informasi yang telah Anda masukkan (nama, harga, kategori, dan detail lainnya) tersimpan dan dapat diakses untuk digunakan dalam aktivitas CRM selanjutnya.## Error States  <!-- confidence:medium ~ -->
 
 Jika Anda mengalami kesulitan saat menambahkan produk:
 
 - **Field wajib diisi kosong**: Periksa semua field bertanda bintang (*) berwarna merah. Sistem tidak akan menyimpan data jika ada field wajib yang belum diisi. Isi semua field tersebut sebelum mengklik tombol Save.
 
 - **Subcategory tidak muncul**: Jika kolom Subcategory tidak tersedia, fitur ini belum diaktifkan di menu Properties. Aktifkan Product Category dan Product Subcategory terlebih dahulu sesuai panduan di artikel terkait.
+
+![1111.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F14268885839769)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5497302206489)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

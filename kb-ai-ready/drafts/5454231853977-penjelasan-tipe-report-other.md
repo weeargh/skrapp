@@ -27,23 +27,14 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Report Other adalah salah satu tipe report yang tersedia di Qontak CRM yang memungkinkan Anda menambahkan berbagai jenis laporan analitik ke dalam dashboard. Tipe report ini mencakup tiga laporan utama: Achievement by User by Time (menampilkan perbandingan deal yang dimenangkan dengan target per bulan), Task Completed by Project (menampilkan jumlah task yang diselesaikan per proyek), dan Activities by User by Time (menampilkan aktivitas seperti catatan, panggilan, email, dan pertemuan berdasarkan periode waktu). Setiap report dirancang untuk memberikan insights berbeda tentang kinerja tim dan progress bisnis Anda di Qontak CRM.
-
-> Screenshot: 56.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50807994570265
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5454172502297
-
-> Screenshot: 3a.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5454158328217
-
-> Screenshot: 57.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50807994571673
-
-## Why It Matters  <!-- confidence:medium ~ -->
+Report Other adalah salah satu tipe report yang tersedia di Qontak CRM yang memungkinkan Anda menambahkan berbagai jenis laporan analitik ke dalam dashboard. Tipe report ini mencakup tiga laporan utama: Achievement by User by Time (menampilkan perbandingan deal yang dimenangkan dengan target per bulan), Task Completed by Project (menampilkan jumlah task yang diselesaikan per proyek), dan Activities by User by Time (menampilkan aktivitas seperti catatan, panggilan, email, dan pertemuan berdasarkan periode waktu). Setiap report dirancang untuk memberikan insights berbeda tentang kinerja tim dan progress bisnis Anda di Qontak CRM.## Why It Matters  <!-- confidence:medium ~ -->
 
 Report Other membantu Anda memantau kinerja tim secara komprehensif melalui beberapa dimensi penting. Dengan Achievement by User by Time, Anda dapat membandingkan pencapaian deal aktual dengan target yang telah ditetapkan. Task Completed by Project memudahkan tracking penyelesaian proyek dan produktivitas tim. Activities by User by Time memberikan visibilitas tentang engagement pelanggan melalui berbagai saluran komunikasi. Dengan menambahkan report-report ini ke dashboard, Anda memperoleh overview real-time yang membantu pengambilan keputusan strategis dan manajemen performa tim.
+
+![56.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807994570265)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5454172502297)
+![3a.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5454158328217)
+![57.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807994571673)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

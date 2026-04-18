@@ -54,30 +54,7 @@ Untuk melakukan Self Top Up Unique Visitor dan WhatsApp Conversation di Qontak O
 
 6. Verifikasi detail pesanan pada halaman konfirmasi, lakukan perubahan jika diperlukan.
 
-7. Klik tombol **Confirm** untuk menyelesaikan pemesanan. Sistem akan memproses pembayaran sesuai nominal sales order.
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/22230057431961
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780961804441
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42383462434841
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42383462438553
-
-> Screenshot: 1 \(2\).jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36780961822617
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780961814937
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42383501353497
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik tombol **Confirm** untuk menyelesaikan pemesanan. Sistem akan memproses pembayaran sesuai nominal sales order.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Self Top Up berhasil dilakukan, Anda akan melihat:
 
@@ -86,6 +63,14 @@ Setelah Self Top Up berhasil dilakukan, Anda akan melihat:
 - Saldo Unique Visitor dan/atau WhatsApp Conversation Anda bertambah sesuai jumlah yang di-top up
 - Jika ada saldo terhutang sebelumnya, sistem otomatis melunasi terlebih dahulu, kemudian sisa diisi sebagai saldo tambahan
 - Notifikasi atau email konfirmasi transaksi dikirim ke akun terdaftar Anda
+
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F22230057431961)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961804441)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42383462434841)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42383462438553)
+![1 \(2\).jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961822617)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961814937)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42383501353497)
 
 ## Error States  <!-- confidence:high ✓ -->
 

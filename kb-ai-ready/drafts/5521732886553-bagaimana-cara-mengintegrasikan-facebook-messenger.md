@@ -49,33 +49,7 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 6. Ikuti instruksi popup Facebook dan pastikan Anda adalah admin pada Halaman Facebook yang akan diintegrasikan.
 7. Pilih **Halaman Facebook** yang ingin diintegrasikan.
 8. Klik **Simpan Perubahan**. Sistem akan menyelesaikan integrasi.
-9. Facebook Messenger sekarang terhubung — mulai berkomunikasi dengan pelanggan di halaman **Inbox**.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/45007020658329
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/45007020659225
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089409177
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089405721
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766086032153
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766086034201
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089419801
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089418137
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Facebook Messenger sekarang terhubung — mulai berkomunikasi dengan pelanggan di halaman **Inbox**.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah integrasi berhasil:
 
@@ -84,6 +58,15 @@ Setelah integrasi berhasil:
 3. **Admin, Supervisor, dan Agen** dapat melihat dan merespons pesan Facebook Messenger di Inbox
 4. Anda dapat mengirim dan menerima pesan langsung dari Facebook Messenger tanpa meninggalkan Qontak Omnichannel
 5. Status channel akan menunjukkan **Connected**
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45007020658329)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45007020659225)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089409177)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089405721)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766086032153)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766086034201)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089419801)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089418137)
 
 ## Error States  <!-- confidence:medium ~ -->
 

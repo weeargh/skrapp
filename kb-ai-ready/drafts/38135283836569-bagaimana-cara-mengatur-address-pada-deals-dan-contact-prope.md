@@ -54,15 +54,7 @@ Tidak ada persyaratan plan tier khusus untuk fitur ini.
 1. Buka menu **Properties**
 2. Pilih tab **Contact** (atau Tasks/Companies) dan klik **Edit** pada Address field
 3. Centang **Set as required** (wajib diisi), **Contact creation page** (muncul saat buat kontak), atau **Contact editing page** (muncul saat edit kontak)
-4. Klik **Save changes**
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/38135283829145
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/38135253376537
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Klik **Save changes**## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyimpan perubahan dengan klik **Save changes**, sistem akan menampilkan:
 
@@ -70,6 +62,9 @@ Setelah menyimpan perubahan dengan klik **Save changes**, sistem akan menampilka
 2. Address field dengan opsi yang telah diatur akan muncul di form Deals atau Contact sesuai konfigurasi (creation page, editing page, atau detail view)
 3. Field Address akan menampilkan sub-fields: provinsi, kota, kelurahan, dan kode pos
 4. Jika ditandai Required, field Address akan menampilkan tanda bintang (*) sebagai indikator wajib diisi
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38135283829145)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38135253376537)
 
 ## Error States  <!-- confidence:low ? -->
 

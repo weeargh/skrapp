@@ -44,14 +44,11 @@ faithfulness_threshold: 0.3
 
 4. Centang opsi **Save as Default** jika Anda ingin menyimpan filter ini sebagai pengaturan default untuk kunjungan berikutnya.
 
-5. Klik tombol **Apply** untuk menerapkan filter. Sistem akan menampilkan hanya perusahaan yang sesuai dengan kriteria filter yang Anda tentukan. Atau klik **Reset** untuk mengembalikan tampilan ke keadaan semula tanpa filter.
-
-> Screenshot: 17.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916361625
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Klik tombol **Apply** untuk menerapkan filter. Sistem akan menampilkan hanya perusahaan yang sesuai dengan kriteria filter yang Anda tentukan. Atau klik **Reset** untuk mengembalikan tampilan ke keadaan semula tanpa filter.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik **Apply**, halaman Companies menampilkan hasil filter dengan daftar perusahaan yang memenuhi kriteria penyaringan Anda. Jika Anda mengaktifkan **Save as Default**, filter ini akan tetap berlaku saat Anda kembali ke halaman Companies di sesi berikutnya. Jika mengklik **Reset**, semua perusahaan akan ditampilkan kembali tanpa filter aktif.
+
+![17.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916361625)
 
 ## Error States  <!-- confidence:low ? -->
 

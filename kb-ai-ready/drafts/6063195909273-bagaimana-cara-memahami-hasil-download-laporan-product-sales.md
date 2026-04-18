@@ -49,12 +49,7 @@ Catatan: Laporan ini hanya menampilkan data penjualan produk yang sudah tercatat
    → File laporan dalam format spreadsheet akan terunduh ke perangkat Anda.
 
 4. Buka file yang sudah diunduh menggunakan aplikasi spreadsheet.
-   → Sheet laporan akan menampilkan kolom-kolom data penjualan produk Anda.
-
-> Screenshot: reports.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774121296537
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sheet laporan akan menampilkan kolom-kolom data penjualan produk Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuka Laporan Product Sales Trends, Anda akan melihat spreadsheet dengan struktur sebagai berikut:
 
@@ -63,6 +58,8 @@ Setelah berhasil membuka Laporan Product Sales Trends, Anda akan melihat spreads
 • **Quantity**: Menampilkan besaran/jumlah produk yang terjual untuk setiap periode
 
 Data disajikan dalam format tabel yang memudahkan Anda menganalisis tren penjualan produk bulan ke bulan.
+
+![reports.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121296537)
 
 ## Error States  <!-- confidence:low ? -->
 

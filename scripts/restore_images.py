@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """
-Restore image blocks from for-review 3/ into kb-ai-ready/drafts/.
+Restore images from the original crawled Zendesk articles into kb-ai-ready/drafts/.
 
-For each draft, finds the matching source file (which still has the original
-body below the <!-- AI review: --> marker), extracts all image URLs, and
-appends them to the Steps section (or the first available section) as
-> Screenshot / > Image blocks.
+Images are injected as standard markdown  ![alt](url)  inline at the end of the
+Steps section (or first section if no Steps). marked.js renders them as <img>
+tags; postprocessHtml() then routes the src through /mekarirag/proxy/image.
 
 Usage:
     python scripts/restore_images.py [--drafts DIR] [--source DIR] [--dry-run]
@@ -15,7 +14,7 @@ from __future__ import annotations
 import argparse
 import os
 import re
-import sys
+import urllib.parse
 
 DRAFTS_DIR = "kb-ai-ready/drafts"
 SOURCE_DIR = "downloads/job_21c31a25087856a4a2616024005d1994_unique_cleaned_md"
@@ -30,6 +29,15 @@ SKIP_URL_RE = re.compile(
 
 SECTION_RE = re.compile(r'^## (.+?)(?:\s+<!--[^>]*-->)?\s*$', re.MULTILINE)
 
+# Previously injected formats to strip before re-injecting
+OLD_BLOCK_RE = re.compile(
+    r'\n\n(?:> Screenshot: [^\n]*\n> Image: https?://[^\n]+\n*)+',
+    re.MULTILINE,
+)
+OLD_IMG_RE = re.compile(
+    r'\n!\[[^\]]*\]\(https?://help-center\.qontak\.com/hc/article_attachments/[^\)]+\)',
+)
+
 
 def _build_source_lookup(source_dir: str) -> dict[str, str]:
     """Map article_id -> filepath from the original downloads directory."""
@@ -42,6 +50,10 @@ def _build_source_lookup(source_dir: str) -> dict[str, str]:
         if m:
             lookup[m.group(1)] = os.path.join(source_dir, fname)
     return lookup
+
+
+def _proxy_url(url: str) -> str:
+    return f"/mekarirag/proxy/image?url={urllib.parse.quote(url, safe='')}"
 
 
 def _extract_images(source_path: str) -> list[dict]:
@@ -63,29 +75,25 @@ def _extract_images(source_path: str) -> list[dict]:
 
 
 def _inject_images(draft_path: str, images: list[dict]) -> bool:
-    """Append image blocks to the Steps section (or first section). Returns True if modified."""
+    """Inject images inline at end of Steps section. Returns True if modified."""
     with open(draft_path, encoding="utf-8") as fh:
         content = fh.read()
 
-    # Remove any previously injected > Screenshot / > Image blocks
-    content = re.sub(
-        r'\n\n(?:> Screenshot: [^\n]*\n> Image: https?://[^\n]+\n*)+',
-        '',
-        content,
-    )
+    # Strip any previously injected image blocks
+    content = OLD_BLOCK_RE.sub('', content)
+    content = OLD_IMG_RE.sub('', content)
 
-    # Skip if images already present (from another source)
+    # Skip if images already present
     if "help-center.qontak.com/hc/article_attachments" in content:
         return False
 
-    # Build the image block text
-    img_lines = []
-    for img in images:
-        alt = img["alt"] if img["alt"] and img["alt"] != "Describe what this screenshot shows and what action to take" else "Screenshot"
-        img_lines.append(f"> Screenshot: {alt}\n> Image: {img['url']}")
-    img_block = "\n\n".join(img_lines)
+    # Build inline image markdown (standard ![alt](proxy_url))
+    img_lines = "\n".join(
+        f"![{img['alt']}]({_proxy_url(img['url'])})"
+        for img in images
+    )
 
-    # Find the Steps section to append to; fall back to first section
+    # Find Steps section; fall back to first section
     matches = list(SECTION_RE.finditer(content))
     target_idx = None
     for i, m in enumerate(matches):
@@ -97,15 +105,15 @@ def _inject_images(draft_path: str, images: list[dict]) -> bool:
         target_idx = 0
 
     if target_idx is None:
-        # No sections found — just append at end
-        new_content = content.rstrip() + "\n\n" + img_block + "\n"
+        new_content = content.rstrip() + "\n\n" + img_lines + "\n"
     else:
-        # Find end of this section (start of next, or EOF)
-        sec_start = matches[target_idx].start()
-        sec_end = matches[target_idx + 1].start() if target_idx + 1 < len(matches) else len(content)
-        section_text = content[sec_start:sec_end].rstrip()
-        new_section = section_text + "\n\n" + img_block
-        new_content = content[:sec_start] + new_section + "\n\n" + content[sec_end:].lstrip("\n")
+        sec_end = (
+            matches[target_idx + 1].start()
+            if target_idx + 1 < len(matches)
+            else len(content)
+        )
+        section_text = content[:sec_end].rstrip()
+        new_content = section_text + "\n\n" + img_lines + "\n\n" + content[sec_end:].lstrip("\n")
 
     with open(draft_path, "w", encoding="utf-8") as fh:
         fh.write(new_content)

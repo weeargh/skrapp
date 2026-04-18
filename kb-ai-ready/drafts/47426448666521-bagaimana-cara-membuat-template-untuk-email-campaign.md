@@ -52,42 +52,7 @@ Pastikan Anda sudah memiliki akses ke menu Campaign sebelum memulai membuat temp
 
 7. Klik **ikon Style** untuk mengatur desain: warna latar belakang, warna body, lebar body, dan jarak spacing.
 
-8. Klik tombol **Create**. Template akan tersimpan dan muncul di daftar template email.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/47426448659225
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/47426448660377
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/47426448660505
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/47426401213465
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52297143254041
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52297127580569
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52285382444953
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52285390934297
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52285382447001
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52285390935449
-
-> Screenshot: 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/52285516655001
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Klik tombol **Create**. Template akan tersimpan dan muncul di daftar template email.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat template email campaign:
 
@@ -96,6 +61,18 @@ Setelah berhasil membuat template email campaign:
 3. Anda dapat melihat template dalam daftar dan melakukan tindakan seperti edit atau hapus melalui menu **Actions**
 
 Template yang telah dibuat dapat langsung digunakan ketika Anda membuat email campaign baru melalui menu Campaign > Email.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448659225)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448660377)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448660505)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426401213465)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52297143254041)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52297127580569)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285382444953)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285390934297)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285382447001)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285390935449)
+![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285516655001)
 
 ## Error States  <!-- confidence:medium ~ -->
 

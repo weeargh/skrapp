@@ -38,47 +38,22 @@ Anda memerlukan akses Admin untuk mengelola Data Layout pada Customer Data Platf
 4. Isikan nama layout yang Anda inginkan di kolom yang tersedia.
 5. Sistem akan menampilkan rincian tampilan layout dengan daftar field yang dapat ditambahkan atau dihapus.
 6. Atur susunan field dan tentukan visibilitas berdasarkan peran pengguna sesuai kebutuhan tim Anda.
-7. Pastikan seluruh data telah benar, lalu klik tombol Save changes. Sistem akan menyimpan konfigurasi layout.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824917401
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824917785
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824918553
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022854346521
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824920729
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824921625
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824922009
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824925593
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824926873
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022854354969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022824928409
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55022854356761
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Pastikan seluruh data telah benar, lalu klik tombol Save changes. Sistem akan menyimpan konfigurasi layout.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah klik tombol Save changes, Data Layout berhasil dibuat dan tersimpan. Layout baru akan tersedia untuk digunakan pada halaman Add Single Customer Page, Customer Details Page, Edit Customer Page, Customer Profile pada navigasi samping Inbox, dan Edit Customer Profile pada navigasi samping Inbox—baik di Website maupun aplikasi Mobile (CRM Mobile dan Chat Mobile). Setiap pengguna berdasarkan peran mereka akan melihat field dan data yang telah Anda atur dalam layout tersebut.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824917401)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824917785)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824918553)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022854346521)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824920729)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824921625)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824922009)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824925593)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824926873)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022854354969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022824928409)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55022854356761)
 
 ## Error States  <!-- confidence:low ? -->
 

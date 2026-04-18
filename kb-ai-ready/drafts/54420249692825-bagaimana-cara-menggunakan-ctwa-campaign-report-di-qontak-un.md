@@ -62,21 +62,7 @@ Setelah mengakses CTWA Ad Campaign Report, Anda dapat melihat:
 • Metrik detail: jumlah klik, pesan WhatsApp yang masuk, tingkat engagement, dan kualitas lead yang dihasilkan
 • Kemampuan melacak percakapan pelanggan yang berasal langsung dari iklan
 • Data yang dapat digunakan untuk mengoptimalkan strategi iklan dan meningkatkan ROI kampanye
-• Laporan dapat difilter berdasarkan periode waktu dan parameter lainnya untuk analisis mendalam
-
-> Screenshot: rev 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/54446708024345
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420249675673
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420265855257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54420265855641
-
-## Error States  <!-- confidence:medium ~ -->
+• Laporan dapat difilter berdasarkan periode waktu dan parameter lainnya untuk analisis mendalam## Error States  <!-- confidence:medium ~ -->
 
 Kemungkinan masalah yang dapat terjadi:
 
@@ -87,6 +73,11 @@ Kemungkinan masalah yang dapat terjadi:
 • **Metrik tidak tersedia untuk region tertentu**: Beberapa metrik tidak tersedia untuk iklan yang ditujukan ke atau berasal dari Eropa, Jepang, dan Korea Selatan.
 
 • **Akses ditolak ke menu Campaign**: Verifikasi role akun Qontak Anda memiliki izin untuk mengakses fitur Campaign.
+
+![rev 3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54446708024345)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54420249675673)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54420265855257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54420265855641)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

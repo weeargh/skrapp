@@ -49,18 +49,7 @@ Untuk mengelola Package Usage AI Chatbot di Qontak Omnichannel, Anda membutuhkan
 
 5. Klik **Periode Filter** untuk menyaring rentang waktu yang ditampilkan pada tabel.
 
-6. Klik tombol **Download** untuk mengunduh tabel dalam format CSV (maksimal rentang 90 hari).
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780962579993
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50764839968921
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780962581401
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol **Download** untuk mengunduh tabel dalam format CSV (maksimal rentang 90 hari).## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah, Anda akan melihat:
 
@@ -71,6 +60,10 @@ Setelah mengikuti langkah-langkah, Anda akan melihat:
 - File CSV siap diunduh berisi riwayat pemakaian kuota hingga 90 hari terakhir
 
 Data ini membantu Anda memantau penggunaan dan merencanakan top up kuota jika diperlukan.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780962579993)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50764839968921)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780962581401)
 
 ## Error States  <!-- confidence:high ✓ -->
 

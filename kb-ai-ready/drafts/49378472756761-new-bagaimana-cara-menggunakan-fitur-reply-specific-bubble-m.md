@@ -49,20 +49,13 @@ Untuk menggunakan fitur Reply Specific Bubble Message di WhatsApp melalui Omnich
 
 4. Ketik pesan balasan Anda di kolom input. Anda dapat mengirim balasan dalam bentuk teks, file, video, audio, gambar, atau maps.
 
-5. Klik tombol kirim. Pesan balasan akan terkirim dan ditampilkan sebagai reply langsung ke pesan asli pelanggan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49383621596825
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49383621597721
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49383621601433
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Klik tombol kirim. Pesan balasan akan terkirim dan ditampilkan sebagai reply langsung ke pesan asli pelanggan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda mengirim balasan, pesan balasan akan muncul di percakapan dengan indikasi visual bahwa pesan tersebut merupakan reply ke bubble message spesifik. Pelanggan akan melihat bahwa pesan Anda adalah balasan langsung ke pesan mereka yang sebelumnya, bukan pesan umum. Sistem akan menampilkan struktur percakapan yang lebih terorganisir dengan penanda reply yang jelas, membantu pelanggan memahami konteks balasan Anda dengan lebih baik.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383621596825)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383621597721)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383621601433)
 
 ## Error States  <!-- confidence:low ? -->
 

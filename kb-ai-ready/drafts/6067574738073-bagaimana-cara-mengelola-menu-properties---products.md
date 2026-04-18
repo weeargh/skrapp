@@ -62,27 +62,7 @@ Untuk mengelola menu Properties - Products di Mekari Qontak, Anda membutuhkan:
 1. Di menu Properties → Product, cari properti yang ingin dihapus.
 2. Klik tombol "Destroy". Properti akan dihapus dari sistem.
 
-Catatan: Default field tidak dapat dihapus dan tidak menampilkan tombol "Destroy".
-
-> Screenshot: 39.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53836354387353
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780919355673
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780961485209
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780961486745
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780919357977
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780919359385
-
-## Expected Result  <!-- confidence:high ✓ -->
+Catatan: Default field tidak dapat dihapus dan tidak menampilkan tombol "Destroy".## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menambahkan properti baru:
 - Properti muncul di daftar menu Properties → Product
@@ -92,6 +72,13 @@ Setelah menambahkan properti baru:
 - Jika checkbox Required diaktifkan, produk tidak dapat disimpan tanpa mengisi properti tersebut
 
 Setelah mengedit atau menghapus properti, perubahan langsung berlaku untuk semua produk yang menggunakan properti tersebut.
+
+![39.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53836354387353)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919355673)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961485209)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961486745)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919357977)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919359385)
 
 ## Error States  <!-- confidence:medium ~ -->
 

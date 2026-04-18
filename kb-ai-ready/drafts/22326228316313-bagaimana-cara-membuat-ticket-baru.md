@@ -56,26 +56,15 @@ Untuk membuat tiket baru di Qontak CRM, pastikan Anda memenuhi persyaratan berik
    - Products: pilih produk terkait (opsional)
    - Task: pilih task terkait (opsional)
 
-4. Klik tombol "Create" untuk menyimpan tiket baru. Sistem akan memproses dan menampilkan konfirmasi bahwa tiket berhasil dibuat.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56811066453529
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56811070518681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56811070519577
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56811066466969
-
-> Screenshot: 72.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50827719487257
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Klik tombol "Create" untuk menyimpan tiket baru. Sistem akan memproses dan menampilkan konfirmasi bahwa tiket berhasil dibuat.## Expected Result  <!-- confidence:high ✓ -->
 
 Tiket baru berhasil dibuat dan Anda akan melihat pesan konfirmasi. Tiket akan muncul dalam daftar Tickets dengan status sesuai Ticket Stage yang dipilih. Tiket dapat langsung diakses untuk ditambahkan aktivitas, catatan, atau perubahan detail lainnya. Data tiket yang Anda isi akan tersimpan dan dapat dilihat oleh assignee atau pengguna lain yang memiliki akses.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811066453529)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811070518681)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811070519577)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811066466969)
+![72.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50827719487257)
 
 ## Error States  <!-- confidence:medium ~ -->
 

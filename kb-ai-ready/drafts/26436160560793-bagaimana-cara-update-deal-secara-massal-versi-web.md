@@ -55,21 +55,7 @@ Untuk melakukan update deal secara massal di Qontak CRM versi web, Anda membutuh
    → Dialog pemilihan file akan muncul.
 
 7. Pilih file template dan klik tombol "Upload".
-   → Sistem akan memproses dan menyimpan semua perubahan.
-
-> Screenshot: 26.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49955362961433
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163158425
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163166361
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163160601
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sistem akan memproses dan menyimpan semua perubahan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah upload berhasil:
 
@@ -77,6 +63,11 @@ Setelah upload berhasil:
 2. Sistem akan menampilkan notifikasi konfirmasi bahwa update massal berhasil disimpan.
 3. Data di spreadsheet yang Anda upload akan tersinkronisasi dengan sistem Qontak CRM.
 4. Deal-deal yang diupdate dapat langsung dilihat pada menu Deals dengan perubahan yang sesuai dengan template yang diunggah.
+
+![26.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955362961433)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163158425)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163166361)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163160601)
 
 ## Error States  <!-- confidence:medium ~ -->
 

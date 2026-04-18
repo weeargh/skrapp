@@ -58,33 +58,20 @@ faithfulness_threshold: 0.6
 7. Sistem akan menampilkan QR code. Buka aplikasi Authenticator Anda dan pindai QR code tersebut.
 8. Aplikasi Authenticator akan menghasilkan kode 6 digit. Masukkan kode ini ke kolom verifikasi di Qontak Call Center dan klik **"Verify"**.
 9. Jendela pop-up akan menampilkan Recovery Key Anda. Klik **"Download"** untuk menyimpannya di tempat aman.
-10. Sistem akan menampilkan pesan konfirmasi bahwa 2FA dengan Authenticator berhasil diaktifkan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52747638213401
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52747622589977
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52747622599449
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52747622600089
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52747622602393
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52747622605209
-
-## Expected Result  <!-- confidence:high ✓ -->
+10. Sistem akan menampilkan pesan konfirmasi bahwa 2FA dengan Authenticator berhasil diaktifkan.## Expected Result  <!-- confidence:high ✓ -->
 
 - Fitur 2FA berhasil diaktifkan pada akun Anda
 - Pesan konfirmasi "Two-Factor Authentication has been enabled" ditampilkan di layar
 - Recovery Key berhasil diunduh dan tersimpan
 - Pada login berikutnya, Anda akan diminta memasukkan kode 2FA yang dikirim ke email atau dihasilkan oleh aplikasi Authenticator
 - Akun Anda sekarang terlindungi dengan lapisan keamanan tambahan
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52747638213401)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52747622589977)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52747622599449)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52747622600089)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52747622602393)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52747622605209)
 
 ## Error States  <!-- confidence:medium ~ -->
 

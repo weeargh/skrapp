@@ -50,21 +50,7 @@ Catatan: Jika Anda menggunakan Qontak One, lihat dokumentasi Customer Data Platf
 
 4. Setelah mengisi semua data kontak, klik tombol **Save changes** untuk menyimpan kontak baru. Sistem akan memproses penyimpanan dan menampilkan pesan konfirmasi.
 
-5. Kontak baru akan muncul dalam daftar kontak di aplikasi mobile Qontak CRM.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462789072025
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462803286809
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462789073561
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462803295129
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Kontak baru akan muncul dalam daftar kontak di aplikasi mobile Qontak CRM.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyimpan kontak baru:
 
@@ -74,6 +60,11 @@ Setelah menyimpan kontak baru:
 - Kontak dapat langsung digunakan untuk komunikasi dan manajemen hubungan pelanggan
 
 Catatan khusus: Jika Anda sudah berlangganan Qontak CRM dan Qontak Omnichannel secara bersamaan (sejak Q2 2024), kontak yang dibuat pada CRM akan otomatis tersinkronisasi ke Omnichannel.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462789072025)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462803286809)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462789073561)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462803295129)
 
 ## Error States  <!-- confidence:medium ~ -->
 

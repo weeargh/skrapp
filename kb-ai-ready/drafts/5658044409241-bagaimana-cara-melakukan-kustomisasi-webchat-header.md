@@ -55,33 +55,7 @@ Jika Anda tidak memiliki role Admin, hubungi tim support Qontak di support-qonta
 
 8. Untuk kondisi **Pre Chat Form**: Isikan title dan subtitle yang akan ditampilkan saat halaman webchat pertama kali dibuka.
 
-9. Setelah selesai, sistem menyimpan perubahan secara otomatis.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49066685060505
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49066685063961
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49066651597593
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49066651599257
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49066651610393
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49066685080089
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49066651616281
-
-> Screenshot: 12.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49066651617945
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Setelah selesai, sistem menyimpan perubahan secara otomatis.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan kustomisasi Webchat header:
 
@@ -89,6 +63,15 @@ Setelah menyelesaikan kustomisasi Webchat header:
 - Pesan untuk setiap kondisi (Online, Offline, Pre Chat Form, Greeting) tersimpan dan akan ditampilkan kepada pengunjung sesuai status agen
 - Widget Webchat menampilkan header dengan informasi dan warna yang telah dikustomisasi
 - Pengunjung website melihat pesan yang relevan dengan kondisi ketersediaan agen saat ini
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066685060505)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066685063961)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651597593)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651599257)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651610393)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066685080089)
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651616281)
+![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651617945)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -27,29 +27,16 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Kuota Harian Email Campaign adalah batasan jumlah email yang dapat Anda kirimkan setiap hari melalui fitur Email Campaign di Mekari Qontak Omnichannel. Batasan ini mulai berlaku efektif pada tanggal 15 September 2025. Kuota harian dirancang untuk memastikan subdomain dan email pengirim baru membangun reputasi pengiriman yang baik sebelum mengirimkan volume email dalam jumlah besar kepada penerima.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50608378976921
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50608378978585
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50608378980121
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50608393304089
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50608393305241
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50608393307801
-
-## Why It Matters  <!-- confidence:high ✓ -->
+Kuota Harian Email Campaign adalah batasan jumlah email yang dapat Anda kirimkan setiap hari melalui fitur Email Campaign di Mekari Qontak Omnichannel. Batasan ini mulai berlaku efektif pada tanggal 15 September 2025. Kuota harian dirancang untuk memastikan subdomain dan email pengirim baru membangun reputasi pengiriman yang baik sebelum mengirimkan volume email dalam jumlah besar kepada penerima.## Why It Matters  <!-- confidence:high ✓ -->
 
 Kuota harian penting untuk menjaga kualitas pengiriman email Anda. Penyedia layanan email seperti Gmail, Yahoo, dan Outlook menggunakan sistem penyaringan spam ketat. Jika subdomain baru mengirimkan volume tinggi tanpa reputasi, email berisiko ditandai spam, ditolak, atau subdomain masuk blacklist. Dengan meningkatkan volume secara bertahap, Anda membangun kepercayaan penyedia layanan, meminimalkan bounce rate, dan memastikan pengiriman berhasil mencapai inbox penerima.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50608378976921)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50608378978585)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50608378980121)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50608393304089)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50608393305241)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50608393307801)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

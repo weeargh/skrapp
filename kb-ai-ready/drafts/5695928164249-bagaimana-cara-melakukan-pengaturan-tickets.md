@@ -46,24 +46,7 @@ Pengaturan ini dilakukan oleh Administrator atau user dengan izin mengelola konf
 
 4. Lengkapi semua kolom yang tersedia di halaman pengaturan.
 
-5. Klik tombol **Save** untuk menyimpan perubahan pengaturan Tickets.
-
-> Screenshot: 80.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50936880683161
-
-> Screenshot: 81.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50936880686361
-
-> Screenshot: 76.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50936875353625
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776440891929
-
-> Screenshot: Tiketsss.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50936939791257
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Klik tombol **Save** untuk menyimpan perubahan pengaturan Tickets.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah pengaturan berhasil disimpan:
 
@@ -72,6 +55,12 @@ Setelah pengaturan berhasil disimpan:
 • Jika toggle Submit ticket dalam status OFF: Agent tidak akan melihat tombol Submit ticket atau field tiket di inbox.
 
 Perubahan pengaturan akan langsung berlaku untuk semua agent yang mengakses Omnichannel.
+
+![80.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936880683161)
+![81.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936880686361)
+![76.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936875353625)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776440891929)
+![Tiketsss.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936939791257)
 
 ## Error States  <!-- confidence:high ✓ -->
 

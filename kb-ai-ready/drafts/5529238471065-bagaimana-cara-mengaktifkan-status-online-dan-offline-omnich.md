@@ -43,18 +43,15 @@ faithfulness_threshold: 0.6
 2. Cari elemen toggle status yang terletak di bagian kanan atas layar Omnichannel.
 3. Geser toggle ke arah kanan untuk mengaktifkan status **Online** – Inbox Anda siap menerima pesan masuk dari pelanggan.
 4. Geser toggle ke arah kiri untuk mengaktifkan status **Offline** – Anda tidak akan menerima pesan masuk baru.
-5. Perubahan status akan langsung berlaku di sistem Omnichannel.
-
-> Screenshot: mceclip0.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774222841497
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Perubahan status akan langsung berlaku di sistem Omnichannel.## Expected Result  <!-- confidence:high ✓ -->
 
 • Indikator status berubah menampilkan status Online atau Offline
 • Ketika Online: Akun Anda siap menerima pesan pelanggan yang masuk ke Inbox
 • Ketika Offline: Pesan masuk baru tidak akan diterima
 • Perubahan status langsung terlihat di seluruh sistem Omnichannel
 • Toggle tetap dalam posisi yang dipilih hingga Anda mengubahnya kembali
+
+![mceclip0.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222841497)
 
 ## Error States  <!-- confidence:high ✓ -->
 

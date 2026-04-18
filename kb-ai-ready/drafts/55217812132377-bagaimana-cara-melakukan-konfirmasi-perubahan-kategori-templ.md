@@ -53,74 +53,31 @@ Untuk melakukan konfirmasi perubahan kategori template WhatsApp, Anda memerlukan
 
 4. Klik nama template atau klik **Action** → **View detail**. Halaman detail template akan terbuka.
 
-5. Pada halaman detail template, klik tombol **Confirm update** untuk mengkonfirmasi perubahan kategori template. Sistem akan memproses konfirmasi Anda.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308861081
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341677081
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308871833
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308872345
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341691673
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341691929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341692185
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308876057
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308877081
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341696025
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308883865
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308884889
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308892825
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341700889
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341702297
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308901913
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308902553
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341712793
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308908313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917341715225
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55917308909721
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Pada halaman detail template, klik tombol **Confirm update** untuk mengkonfirmasi perubahan kategori template. Sistem akan memproses konfirmasi Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda mengklik tombol **Confirm update**, sistem akan memproses dan mengkonfirmasi perubahan kategori template dari Utilitas menjadi Marketing. Template yang telah dikonfirmasi akan dihapus dari daftar template yang membutuhkan konfirmasi dan ikon peringatan akan hilang. Anda kemudian dapat mengirimkan "Campaign" dan "Follow up Message" menggunakan template tersebut melalui Qontak tanpa hambatan.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308861081)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341677081)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308871833)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308872345)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341691673)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341691929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341692185)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308876057)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308877081)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341696025)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308883865)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308884889)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308892825)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341700889)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341702297)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308901913)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308902553)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341712793)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308908313)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917341715225)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55917308909721)
 
 ## Error States  <!-- confidence:low ? -->
 

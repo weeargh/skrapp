@@ -38,23 +38,14 @@ faithfulness_threshold: null
 
 ## Steps
 
-<!-- Numbered action steps. Each step: action → expected UI response -->
-
-> Screenshot: 176.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53798269246361
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43645231478297
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43645216336665
-
-> Screenshot: pasted image 0 - 2023-10-06T111416.442.png
-> Image: https://help-center.qontak.com/hc/article_attachments/23723609265561
-
-## Expected Result
+<!-- Numbered action steps. Each step: action → expected UI response -->## Expected Result
 
 <!-- What the user should see / confirmation message after completion -->
+
+![176.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53798269246361)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43645231478297)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43645216336665)
+![pasted image 0 - 2023-10-06T111416.442.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23723609265561)
 
 ## Error States
 

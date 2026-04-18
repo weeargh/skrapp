@@ -45,23 +45,14 @@ Untuk mengintegrasikan email dengan Qontak Omnichannel, Anda memerlukan:
 4. Pada bagian **Select provider**, pilih provider email yang ingin diintegrasikan (Outlook, Gmail, atau lainnya).
 5. Pada bagian **Email authentication**, masukkan alamat email dan password provider email Anda.
 6. Isi semua field pada bagian **Email configuration** sesuai dengan provider email yang dipilih.
-7. Klik tombol "Submit" untuk menyelesaikan integrasi email.
-
-> Screenshot: Screenshot_2023-03-31_at_15.21.09.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780202487065
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50771056144409
-
-> Screenshot: email.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780193787929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780202490393
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik tombol "Submit" untuk menyelesaikan integrasi email.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah klik tombol "Submit", email berhasil diintegrasikan dengan Qontak Omnichannel. Sistem akan menampilkan detail integrasi email termasuk **Penerus Email** (email forwarder). Salin Penerus Email ini, kemudian masuk ke pengaturan email provider Anda dan atur email forwarding otomatis ke alamat Penerus Email yang disediakan. Setelah setup selesai, Admin, Supervisor, dan Agen dapat mengakses email di **Inbox** dalam chat panel Qontak.
+
+![Screenshot_2023-03-31_at_15.21.09.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780202487065)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771056144409)
+![email.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780193787929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780202490393)
 
 ## Error States  <!-- confidence:medium ~ -->
 

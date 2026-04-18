@@ -52,12 +52,7 @@ Catatan: Laporan Top Company hanya menampilkan data penjualan yang telah tercata
    → File spreadsheet akan terunduh ke perangkat Anda.
 
 5. Buka file yang sudah diunduh menggunakan aplikasi spreadsheet.
-   → Sheet laporan akan menampilkan 12 kolom data penjualan detail.
-
-> Screenshot: tc.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36780193851033
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sheet laporan akan menampilkan 12 kolom data penjualan detail.## Expected Result  <!-- confidence:high ✓ -->
 
 File Laporan Top Company berhasil dibuka dan menampilkan spreadsheet dengan 12 kolom berikut:
 
@@ -75,6 +70,8 @@ File Laporan Top Company berhasil dibuka dan menampilkan spreadsheet dengan 12 k
 12. % of Sales – Persentase kontribusi terhadap total penjualan
 
 Anda dapat menganalisis perusahaan mana yang paling besar penjualannya dan kontribusinya terhadap total revenue.
+
+![tc.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780193851033)
 
 ## Error States  <!-- confidence:low ? -->
 

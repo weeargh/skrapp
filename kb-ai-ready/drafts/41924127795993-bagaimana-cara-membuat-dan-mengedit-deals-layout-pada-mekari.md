@@ -45,99 +45,7 @@ Untuk membuat dan mengedit Deals Layout pada Mekari Qontak CRM, Anda memerlukan:
 3. Pada bagian **Default view**, klik **Actions** lalu pilih **Edit**. Halaman edit Layout akan terbuka.
 4. Di step **Fill details**, isi kolom **Layout name**, **Pipeline**, dan **Team**. Klik **Continue**. Sistem mengarahkan ke halaman pengelolaan field.
 5. Pada halaman pengelolaan Layout, atur setiap field yang ingin ditampilkan pada halaman pembuatan Deals dengan menyesuaikan **Available fields** dan pengaturan required/optional untuk field About Deals.
-6. Simpan Layout dengan mengklik tombol **Save**. Sistem akan menyimpan konfigurasi Layout.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859415449
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859416345
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859417113
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859418521
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42000355339033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859422745
-
-> Screenshot: 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859423897
-
-> Screenshot: Autofilled.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42000355352089
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106871432857
-
-> Screenshot: 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859429145
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42000381254681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859429273
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106871441561
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859436313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106871443225
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859439257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859442969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/41924127760153
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106871447833
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106871449369
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859445529
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/41924165738649
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/41924127773337
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106859446553
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106871454233
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106871455641
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50106893773081
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/41924127781273
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/41924127781913
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/41924165747865
-
-## Expected Result  <!-- confidence:medium ~ -->
+6. Simpan Layout dengan mengklik tombol **Save**. Sistem akan menyimpan konfigurasi Layout.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah berhasil membuat dan menyimpan Deals Layout:
 
@@ -146,6 +54,37 @@ Setelah berhasil membuat dan menyimpan Deals Layout:
 3. Field yang diatur sebagai required akan wajib diisi pengguna saat membuat Deal.
 4. Field yang diatur sebagai optional dapat dikosongkan sesuai kebutuhan.
 5. Pesan konfirmasi atau notifikasi kesuksesan akan ditampilkan oleh sistem.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859415449)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859416345)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859417113)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859418521)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42000355339033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859422745)
+![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859423897)
+![Autofilled.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42000355352089)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106871432857)
+![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859429145)
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42000381254681)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859429273)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106871441561)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859436313)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106871443225)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859439257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859442969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41924127760153)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106871447833)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106871449369)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859445529)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41924165738649)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41924127773337)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106859446553)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106871454233)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106871455641)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50106893773081)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41924127781273)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41924127781913)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41924165747865)
 
 ## Error States  <!-- confidence:low ? -->
 

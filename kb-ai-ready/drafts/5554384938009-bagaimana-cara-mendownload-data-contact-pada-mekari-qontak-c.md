@@ -41,17 +41,12 @@ faithfulness_threshold: 0.3
 
 3. Klik tombol **Download selected** (untuk kontak terpilih), **Download selected with details** (kontak terpilih + rincian lengkap), **Download All** (semua kontak), atau **Download all with details** (semua kontak + rincian lengkap).
 
-4. Sistem akan memproses pengunduhan. Jika muncul notifikasi status, klik **Upload/Download Properties** untuk memantau progress download hingga selesai.
-
-> Screenshot: 142.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53404130345241
-
-> Screenshot: CRMCONTACT2.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089505561
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Sistem akan memproses pengunduhan. Jika muncul notifikasi status, klik **Upload/Download Properties** untuk memantau progress download hingga selesai.## Expected Result  <!-- confidence:high ✓ -->
 
 File data kontak berhasil diunduh ke perangkat Anda dalam format yang dapat dibuka (CSV/Excel). Notifikasi download selesai muncul atau file langsung tersimpan di folder Downloads perangkat. Data kontak dapat segera dibuka dan digunakan untuk referensi atau proses lanjutan seperti bulk update.
+
+![142.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53404130345241)
+![CRMCONTACT2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089505561)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -64,27 +64,7 @@ Untuk mensubmit ticket Omnichannel ke Qontak CRM, Anda memerlukan:
 
 7. Klik tombol **"Submit"**. Sistem akan memproses dan membuat ticket di Qontak CRM.
 
-8. Notifikasi sukses akan muncul. Klik nomor ticket untuk membuka tiket di Qontak CRM.
-
-> Screenshot: 75.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50911798216729
-
-> Screenshot: 76.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50911841781401
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXeZ-Pza-pQDLuJf66Q7Es5xXOvDehGeauk4tRpGH-exBifL46yIZPuM3aBkxnIVKSNgPuME8f6xv3uXmaYYZT63T7ZGH8dx7TlN0kmY8nUEcb297XCixZ7ky-V8rnq_W4Mz6Y9odHbcO5mY7iS1Zya6nW8?key=Jqkn8dhQ_InX_HZYbdhKWg
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXfl0kQGBVkCqt_sTKFqMm15S-wy61_sXhkmMFwTg-LYHRpb2ejuJnMqDtgUWzQMznaR5RJOTSPAbbTKyA81QMx3LSEm4jk8Q_EIILPVxfJg-r9MEvSFjaPOqr6Z_KCZwxS-ReE7_GYUwu8jOHvODBad0Wg?key=Jqkn8dhQ_InX_HZYbdhKWg
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/35834581904537
-
-> Screenshot: 77.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50912106053913
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Notifikasi sukses akan muncul. Klik nomor ticket untuk membuka tiket di Qontak CRM.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mensubmit ticket dengan sukses:
 
@@ -94,6 +74,13 @@ Setelah mensubmit ticket dengan sukses:
 • Semua informasi yang diisi (nama, deskripsi, assignee, priority, kategori, due date, catatan, dan asosiasi kontak/perusahaan/produk/task) tersimpan di Qontak CRM
 • User dapat membuka dan mengelola ticket di Qontak CRM melalui link yang disediakan
 • Ticket dapat diakses oleh assignee untuk penanganan lebih lanjut
+
+![75.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50911798216729)
+![76.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50911841781401)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXeZ-Pza-pQDLuJf66Q7Es5xXOvDehGeauk4tRpGH-exBifL46yIZPuM3aBkxnIVKSNgPuME8f6xv3uXmaYYZT63T7ZGH8dx7TlN0kmY8nUEcb297XCixZ7ky-V8rnq_W4Mz6Y9odHbcO5mY7iS1Zya6nW8%3Fkey%3DJqkn8dhQ_InX_HZYbdhKWg)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXfl0kQGBVkCqt_sTKFqMm15S-wy61_sXhkmMFwTg-LYHRpb2ejuJnMqDtgUWzQMznaR5RJOTSPAbbTKyA81QMx3LSEm4jk8Q_EIILPVxfJg-r9MEvSFjaPOqr6Z_KCZwxS-ReE7_GYUwu8jOHvODBad0Wg%3Fkey%3DJqkn8dhQ_InX_HZYbdhKWg)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F35834581904537)
+![77.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50912106053913)
 
 ## Error States  <!-- confidence:medium ~ -->
 

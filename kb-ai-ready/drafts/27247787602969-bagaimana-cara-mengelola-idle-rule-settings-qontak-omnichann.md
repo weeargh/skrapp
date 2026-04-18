@@ -57,21 +57,16 @@ Setelah berhasil menyimpan Idle Rule Settings:
 • Chat yang tidak direspons Agent dalam periode waktu yang ditentukan akan secara otomatis di-reassign ke Agent lain
 • Sistem akan melakukan pencarian Agent pengganti hingga 3 kali (setiap kali menunggu durasi Idle period yang telah ditetapkan)
 • Jika semua Agent penuh atau tidak tersedia setelah 3 kali pencarian, chat akan ter-hold sampai direspons Agent manapun
-• Pesan konfirmasi atau perubahan status toggle menandakan penyimpanan berhasil
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163185305
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163187865
-
-## Error States  <!-- confidence:medium ~ -->
+• Pesan konfirmasi atau perubahan status toggle menandakan penyimpanan berhasil## Error States  <!-- confidence:medium ~ -->
 
 • **Chat tetap di-hold setelah pencarian 3 kali**: Terjadi ketika kapasitas beban kerja semua Agent sudah penuh. Solusi: Tambahkan Agent baru atau kurangi beban kerja Agent yang ada melalui menu Agent Management.
 
 • **Idle Rule tidak aktif meski sudah disimpan**: Pastikan checkbox **Enable idle rule** benar-benar tercentang sebelum klik tombol Save changes.
 
 • **Idle period tidak tersimpan**: Pastikan nilai yang diisi adalah angka valid (dalam menit). Hindari karakter atau nilai negatif.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163185305)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163187865)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

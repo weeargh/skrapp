@@ -52,20 +52,13 @@ faithfulness_threshold: 0.6
 
 7. Pilih **Download CSV** untuk mengunduh laporan dalam format CSV. File akan mulai diunduh ke perangkat Anda dalam format yang kompatibel dengan Microsoft Excel.## Expected Result  <!-- confidence:high ✓ -->
 
-Laporan Contact berhasil ditampilkan dengan data Total Contacts, Daily Trend, Weekly Trend, Monthly Trend, Quarterly Trend, grafik New Contact Overtime, dan metrics aktif customers sesuai filter yang dipilih. File CSV berhasil diunduh ke perangkat dengan nama file laporan Contact dan dapat dibuka di Microsoft Excel atau aplikasi spreadsheet lainnya untuk analisis lebih lanjut.
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50121670117657
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50121670120217
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50121699354009
-
-## Error States  <!-- confidence:medium ~ -->
+Laporan Contact berhasil ditampilkan dengan data Total Contacts, Daily Trend, Weekly Trend, Monthly Trend, Quarterly Trend, grafik New Contact Overtime, dan metrics aktif customers sesuai filter yang dipilih. File CSV berhasil diunduh ke perangkat dengan nama file laporan Contact dan dapat dibuka di Microsoft Excel atau aplikasi spreadsheet lainnya untuk analisis lebih lanjut.## Error States  <!-- confidence:medium ~ -->
 
 No common errors documented.
+
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50121670117657)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50121670120217)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50121699354009)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

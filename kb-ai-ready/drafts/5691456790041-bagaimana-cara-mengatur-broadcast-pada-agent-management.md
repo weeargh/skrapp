@@ -55,15 +55,7 @@ Perhatikan bahwa mengaktifkan fitur Agent can broadcast akan secara otomatis men
    Status toggle akan berubah.
 
 6. Klik tombol Save untuk menyimpan perubahan.
-   Sistem akan menampilkan konfirmasi penyimpanan.
-
-> Screenshot: 1.1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38953072708249
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38953027384729
-
-## Expected Result  <!-- confidence:high ✓ -->
+   Sistem akan menampilkan konfirmasi penyimpanan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengaktifkan fitur Broadcast dengan status ON:
 
@@ -76,6 +68,9 @@ Jika status Broadcast dalam kondisi OFF:
 
 • Menu Broadcast tidak akan muncul pada halaman Agent.
 • Agen tidak dapat melakukan broadcast.
+
+![1.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38953072708249)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38953027384729)
 
 ## Error States  <!-- confidence:low ? -->
 

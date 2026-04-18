@@ -52,126 +52,7 @@ Jika Anda tidak memiliki peran Admin, minta administrator akun Anda untuk member
 
 7. Tambahkan Help text (opsional) dengan mencentang toggle dan mengisi kolom yang tersedia — teks bantuan ini memudahkan pengguna saat pengisian field.
 
-8. Klik tombol "Save" — Custom Properties berhasil dibuat dan tersedia untuk digunakan pada saat menambahkan data customer.
-
-> Screenshot: rev 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53213044218521
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896717977
-
-> Screenshot: rev 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53213019914777
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867601305
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896723353
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867602969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867605529
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896731033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867619865
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867620761
-
-> Screenshot: rev 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53213044223769
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896756505
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867629849
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896758553
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867636377
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896759961
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896762777
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867641241
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896766617
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896767641
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896772505
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896777497
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896779929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896781593
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867661209
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896789017
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867666585
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867670681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867674649
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896798105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867682969
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867684633
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896802585
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867688857
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896811801
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210896812569
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867691033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867692057
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53210867693209
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Klik tombol "Save" — Custom Properties berhasil dibuat dan tersedia untuk digunakan pada saat menambahkan data customer.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Anda mengklik tombol "Save", Custom Properties berhasil disimpan. Field baru yang telah Anda buat akan muncul pada:
 
@@ -180,6 +61,46 @@ Setelah Anda mengklik tombol "Save", Custom Properties berhasil disimpan. Field 
 • Formulir pengisian data customer di Customer Data Platform
 
 Field ini dapat langsung digunakan oleh semua pengguna yang memiliki akses ke menu Customers, sesuai dengan tipe field (Single-line text, Multi-line text, atau jenis lainnya) yang Anda tetapkan.
+
+![rev 7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53213044218521)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896717977)
+![rev 8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53213019914777)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867601305)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896723353)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867602969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867605529)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896731033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867619865)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867620761)
+![rev 9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53213044223769)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896756505)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867629849)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896758553)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867636377)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896759961)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896762777)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867641241)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896766617)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896767641)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896772505)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896777497)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896779929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896781593)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867661209)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896789017)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867666585)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867670681)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867674649)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896798105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867682969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867684633)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896802585)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867688857)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896811801)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210896812569)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867691033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867692057)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53210867693209)
 
 ## Error States  <!-- confidence:low ? -->
 

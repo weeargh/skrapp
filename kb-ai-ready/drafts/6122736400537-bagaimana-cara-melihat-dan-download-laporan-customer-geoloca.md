@@ -63,20 +63,13 @@ Setelah mengunduh laporan Customer Geolocation Map, file Excel akan berisi data 
 • Jumlah min deal size, Jumlah max deal size, Jumlah rata-rata deal size
 • Owner, Created at
 
-File dapat langsung dibuka dan dianalisis menggunakan aplikasi spreadsheet seperti Microsoft Excel atau Google Sheets.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774148101657
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774148100121
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774148106009
-
-## Error States  <!-- confidence:medium ~ -->
+File dapat langsung dibuka dan dianalisis menggunakan aplikasi spreadsheet seperti Microsoft Excel atau Google Sheets.## Error States  <!-- confidence:medium ~ -->
 
 No common errors documented.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148101657)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148100121)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148106009)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

@@ -49,21 +49,16 @@ faithfulness_threshold: 0.6
    Geser toggle switch ke posisi ON untuk mengaktifkan status Online, atau OFF untuk mengaktifkan status Offline.
    Sistem akan langsung mengubah status dan menampilkan perubahan di antarmuka.
 
-Catatan: Ketika Anda log out dari aplikasi mobile, status Online tetap aktif. Ubah status menjadi Offline terlebih dahulu sebelum log out jika ingin benar-benar offline.
-
-> Screenshot: mceclip0.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776434823705
-
-> Screenshot: mceclip1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776434826649
-
-## Expected Result  <!-- confidence:high ✓ -->
+Catatan: Ketika Anda log out dari aplikasi mobile, status Online tetap aktif. Ubah status menjadi Offline terlebih dahulu sebelum log out jika ingin benar-benar offline.## Expected Result  <!-- confidence:high ✓ -->
 
 • Indikator status berubah menjadi Online (hijau) atau Offline (abu-abu) di menu Profile
 • Ketika status Online: Anda dapat menerima pesan chat masuk ke dalam Inbox
 • Ketika status Offline: Anda tidak akan menerima pesan chat baru
 • Perubahan status diterapkan secara langsung tanpa perlu reload aplikasi
 • Pesan konfirmasi status ditampilkan di layar
+
+![mceclip0.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434823705)
+![mceclip1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434826649)
 
 ## Error States  <!-- confidence:high ✓ -->
 

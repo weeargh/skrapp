@@ -53,24 +53,7 @@ Sebelum menambahkan company secara bulk, pastikan Anda memenuhi persyaratan beri
 
 7. Klik **Browse a file** dan pilih file Excel yang sudah terisi. Sistem akan memproses data.
 
-8. Tunggu notifikasi sukses. Untuk melihat progress unggahan, buka menu **Properties** → tab **Upload/Download**.
-
-> Screenshot: 01.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781141978393
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49114476804121
-
-> Screenshot: Company_Bulk_3.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183692185
-
-> Screenshot: Company_Bulk_4.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183691161
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49114530713241
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Tunggu notifikasi sukses. Untuk melihat progress unggahan, buka menu **Properties** → tab **Upload/Download**.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses selesai, Anda akan melihat:
 
@@ -79,6 +62,12 @@ Setelah proses selesai, Anda akan melihat:
 • Semua company yang diunggah dapat dilihat, diubah, atau dihubungkan dengan contact, deal, dan record CRM lainnya
 • Progress pengunggahan dapat dipantau di menu **Properties**, tab **Upload/Download**
 • Company database Anda telah bertambah sesuai jumlah data yang diunggah
+
+![01.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781141978393)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114476804121)
+![Company_Bulk_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183692185)
+![Company_Bulk_4.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183691161)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114530713241)
 
 ## Error States  <!-- confidence:medium ~ -->
 

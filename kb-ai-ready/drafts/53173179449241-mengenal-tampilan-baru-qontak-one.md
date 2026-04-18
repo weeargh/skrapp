@@ -27,20 +27,13 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Tampilan Baru Qontak One adalah antarmuka yang diperbarui untuk menyatukan navigasi di seluruh modul Qontak CRM dan Qontak Omnichannel. Tampilan ini menyajikan struktur menu yang terorganisir, konsisten secara visual, dan disesuaikan berdasarkan peran pengguna serta paket langganan. Perubahan ini berlaku hanya pada versi Web dan dirancang untuk mengeliminasi perbedaan tampilan antar modul sehingga pengguna merasakan platform sebagai satu kesatuan utuh.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53173179432473
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53173179438745
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53173214383897
-
-## Why It Matters  <!-- confidence:high ✓ -->
+Tampilan Baru Qontak One adalah antarmuka yang diperbarui untuk menyatukan navigasi di seluruh modul Qontak CRM dan Qontak Omnichannel. Tampilan ini menyajikan struktur menu yang terorganisir, konsisten secara visual, dan disesuaikan berdasarkan peran pengguna serta paket langganan. Perubahan ini berlaku hanya pada versi Web dan dirancang untuk mengeliminasi perbedaan tampilan antar modul sehingga pengguna merasakan platform sebagai satu kesatuan utuh.## Why It Matters  <!-- confidence:high ✓ -->
 
 Tampilan Baru Qontak One meningkatkan produktivitas dengan mengurangi pergantian konteks ketika pengguna berpindah antara Omnichannel dan CRM. Menu yang seragam memungkinkan akses fitur dengan lebih cepat melalui struktur berbasis fungsi, bukan aplikasi terpisah. Hasilnya, tim dapat menyelesaikan tugas sehari-hari—komunikasi pelanggan, manajemen penjualan, dan pemantauan laporan—tanpa perlu beradaptasi dengan tampilan berbeda, sehingga mengurangi kesalahan operasional dan meningkatkan kecepatan eksekusi.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53173179432473)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53173179438745)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53173214383897)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

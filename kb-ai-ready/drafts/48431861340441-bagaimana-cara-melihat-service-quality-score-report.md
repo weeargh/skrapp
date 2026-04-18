@@ -50,27 +50,7 @@ Untuk melihat Service Quality Score Report di Qontak, Anda memerlukan:
 
 6. Lihat laporan **Service Quality Score per Agent** dalam bentuk grafik yang menampilkan nilai performa setiap agent.
 
-7. Lihat laporan **Service Quality Score per Agent and Parameter** yang menampilkan rincian nama parameter dan persentase room berdasarkan masing-masing parameter.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48431861321241
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48431861324313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48431861327513
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48431861329945
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48431861331609
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48431861334937
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Lihat laporan **Service Quality Score per Agent and Parameter** yang menampilkan rincian nama parameter dan persentase room berdasarkan masing-masing parameter.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda akan melihat halaman Service Quality Score Report yang menampilkan:
 
@@ -79,6 +59,13 @@ Setelah mengikuti langkah-langkah di atas, Anda akan melihat halaman Service Qua
 • Rincian detail Parameter Name dan persentase room yang pass dan tidak pass
 
 Semua data dapat dilihat dalam satu halaman untuk analisis keseluruhan kualitas layanan tim Agent perusahaan Anda.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861321241)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861324313)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861327513)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861329945)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861331609)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861334937)
 
 ## Error States  <!-- confidence:low ? -->
 

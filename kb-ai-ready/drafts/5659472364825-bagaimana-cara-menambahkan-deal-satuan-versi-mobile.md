@@ -64,15 +64,7 @@ Setelah berhasil menambahkan Deal satuan melalui aplikasi mobile, Anda akan meli
 1. Pesan konfirmasi atau notifikasi sukses di layar aplikasi
 2. Deal baru muncul di daftar Deal dengan status stage yang Anda pilih
 3. Semua informasi yang diisi (nama Deal, nilai, kontak terkait, produk) tersimpan dengan benar
-4. Deal dapat langsung dilihat dan dikelola melalui aplikasi mobile atau versi web Qontak CRM
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46148169678105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46148169679385
-
-## Error States  <!-- confidence:medium ~ -->
+4. Deal dapat langsung dilihat dan dikelola melalui aplikasi mobile atau versi web Qontak CRM## Error States  <!-- confidence:medium ~ -->
 
 Kesalahan umum saat menambahkan Deal satuan di mobile:
 
@@ -81,6 +73,9 @@ Kesalahan umum saat menambahkan Deal satuan di mobile:
 2. **Pipeline tidak terpilih**: Deal tidak dapat dibuat tanpa memilih Pipeline terlebih dahulu. Solusi: Pastikan memilih Pipeline melalui ikon dropdown sebelum klik ikon "+".
 
 3. **Koneksi internet terputus**: Data tidak tersimpan jika koneksi hilang saat proses penyimpanan. Solusi: Periksa koneksi internet dan coba simpan kembali.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46148169678105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46148169679385)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

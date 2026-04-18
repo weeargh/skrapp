@@ -64,27 +64,18 @@ Property berhasil dibuat, diubah, atau dihapus:
 • Property tambahan yang dibuat ditandai dan dapat diedit kapan saja
 • Default field (dibuat oleh Qontak) tetap ada dan tidak dapat dihapus
 • Jika property diset sebagai "Required", kolom tersebut akan wajib diisi saat membuat atau mengedit Tickets
-• Perubahan atau penghapusan property segera berlaku pada semua Tickets di workspace
-
-> Screenshot: 74.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50911549787929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184449177
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184450073
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142824089
-
-## Error States  <!-- confidence:medium ~ -->
+• Perubahan atau penghapusan property segera berlaku pada semua Tickets di workspace## Error States  <!-- confidence:medium ~ -->
 
 • **Tidak dapat menghapus default field**: Jika mencoba menghapus property yang dibuat oleh Qontak (bukan property tambahan), sistem akan menolak aksi tersebut. Solusi: Hanya property yang Anda buat sendiri yang dapat dihapus; default field tidak dapat dihapus untuk menjaga integritas data Tickets.
 
 • **Field name kosong**: Jika tombol "Save" tidak responsif, pastikan kolom **Field name** telah diisi dengan nama property yang valid.
 
 • **Perubahan tidak tersimpan**: Jika perubahan tidak muncul setelah klik "Save", refresh halaman atau periksa koneksi internet Anda.
+
+![74.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50911549787929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184449177)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184450073)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142824089)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

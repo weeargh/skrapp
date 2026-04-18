@@ -46,12 +46,7 @@ Catatan: Laporan ini hanya menampilkan data berdasarkan filter Pipeline, User, d
    → Data akan terorganisir berdasarkan User dan Stage dalam Pipeline.
 
 3. Untuk detail perubahan Deals, buka sheet Deals Change Log.
-   → Sheet ini menampilkan informasi lengkap seperti Deals, Owner, Created At, Closed Date, Previous Stage, Next Stage, Moved At, dan Moved By.
-
-> Screenshot: Deals_by_Stage.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774533808921
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sheet ini menampilkan informasi lengkap seperti Deals, Owner, Created At, Closed Date, Previous Stage, Next Stage, Moved At, dan Moved By.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah membuka hasil download laporan Deals by Stage, Anda akan melihat:
 
@@ -63,6 +58,8 @@ Setelah membuka hasil download laporan Deals by Stage, Anda akan melihat:
 - Tabel detail dengan semua informasi perubahan status Deals, termasuk tanggal perpindahan stage, user yang memindahkan, serta nilai dan sumber Deals
 
 Bedua sheet dapat dianalisis sesuai kebutuhan bisnis Anda untuk evaluasi performa pipeline.
+
+![Deals_by_Stage.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774533808921)
 
 ## Error States  <!-- confidence:low ? -->
 

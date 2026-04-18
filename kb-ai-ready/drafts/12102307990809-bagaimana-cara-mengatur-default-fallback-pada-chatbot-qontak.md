@@ -48,29 +48,16 @@ faithfulness_threshold: 0.6
    - Assign to agent: Pilih Auto (acak), Division (berdasarkan divisi), atau Agent (agen spesifik)
 
 4. Klik tombol Save conversation untuk menyimpan pengaturan.
-   Sistem akan menampilkan konfirmasi bahwa pengaturan telah disimpan.
-
-> Screenshot: 127.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51514898536601
-
-> Screenshot: 128.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51514898538265
-
-> Screenshot: 129.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51514928377753
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780920175385
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780920176793
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36780920179865
-
-## Expected Result  <!-- confidence:high ✓ -->
+   Sistem akan menampilkan konfirmasi bahwa pengaturan telah disimpan.## Expected Result  <!-- confidence:high ✓ -->
 
 Default Fallback berhasil dikonfigurasi. Ketika penanya memberikan input yang tidak dikenali chatbot, sistem akan merespons sesuai pengaturan yang Anda tetapkan: mengirim respons AI, menampilkan pesan fallback custom, atau mengarahkan ke agen. Status conversation menunjukkan bahwa fallback telah diatur pada setiap Bot Response.
+
+![127.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51514898536601)
+![128.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51514898538265)
+![129.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51514928377753)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780920175385)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780920176793)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780920179865)
 
 ## Error States  <!-- confidence:high ✓ -->
 

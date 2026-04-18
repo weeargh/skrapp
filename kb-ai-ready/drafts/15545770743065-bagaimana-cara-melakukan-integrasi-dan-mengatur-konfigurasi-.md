@@ -54,42 +54,7 @@ Untuk melakukan integrasi dan mengatur konfigurasi channel pada Qontak CRM, Anda
 
 5. Setelah integrasi berhasil, klik tombol **Atur konfigurasi**. Sistem akan menampilkan dua pilihan integrasi.
 6. Pilih salah satu opsi: **Integrasikan semua channel ke satu pipeline** atau **Integrasikan setiap channel ke pipeline berbeda**. Sistem akan menampilkan form konfigurasi sesuai pilihan Anda.
-7. Tentukan modul tujuan (**Deals**, **Tiket**, atau keduanya) dan konfigurasi pipeline yang sesuai, lalu simpan. Sistem akan menampilkan konfirmasi konfigurasi berhasil disimpan.
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773919924761
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773912573337
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773919928985
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773912573977
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773912577561
-
-> Screenshot: 16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773912586137
-
-> Screenshot: 17.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773919946137
-
-> Screenshot: ID Integration.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773912595481
-
-> Screenshot: 19.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773912602521
-
-> Screenshot: 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773919979417
-
-> Screenshot: 15.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36773912635417
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Tentukan modul tujuan (**Deals**, **Tiket**, atau keduanya) dan konfigurasi pipeline yang sesuai, lalu simpan. Sistem akan menampilkan konfirmasi konfigurasi berhasil disimpan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan semua langkah, hasil yang diharapkan adalah:
 
@@ -98,6 +63,18 @@ Setelah menyelesaikan semua langkah, hasil yang diharapkan adalah:
 - Isi percakapan chat akan tersimpan pada timeline **Deal** atau **Tiket** di modul yang Anda pilih.
 - Data pelanggan yang mengirimkan chat akan otomatis tersimpan di menu **Kontak** pada CRM Anda.
 - Integrasi siap digunakan untuk mengelola komunikasi omnichannel dari dashboard CRM.
+
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773919924761)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773912573337)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773919928985)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773912573977)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773912577561)
+![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773912586137)
+![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773919946137)
+![ID Integration.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773912595481)
+![19.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773912602521)
+![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773919979417)
+![15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773912635417)
 
 ## Error States  <!-- confidence:medium ~ -->
 

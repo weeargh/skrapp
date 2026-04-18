@@ -58,12 +58,7 @@ Proses ini memungkinkan Anda mengimpor data pelanggan dalam jumlah besar sekalig
 
 9. Setelah file berhasil dipilih, klik tombol "Upload". Sistem akan menampilkan notifikasi proses unggah.
 
-10. Tunggu hingga proses selesai. Sistem akan menampilkan notifikasi konfirmasi bahwa data telah berhasil diunggah dan data akan muncul di halaman All customers.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53245072601369
-
-## Expected Result  <!-- confidence:high ✓ -->
+10. Tunggu hingga proses selesai. Sistem akan menampilkan notifikasi konfirmasi bahwa data telah berhasil diunggah dan data akan muncul di halaman All customers.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses unggah selesai, Anda akan melihat:
 
@@ -71,6 +66,8 @@ Setelah proses unggah selesai, Anda akan melihat:
 • Daftar pelanggan baru muncul pada halaman All customers di Customer Data Platform
 • Semua data yang diunggah dapat diakses dan dikelola melalui Customers menu
 • Field wajib (Full Name, Owner, Assignee, Username, Phone Number, Email) terisi sesuai data yang diunggah
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53245072601369)
 
 ## Error States  <!-- confidence:high ✓ -->
 

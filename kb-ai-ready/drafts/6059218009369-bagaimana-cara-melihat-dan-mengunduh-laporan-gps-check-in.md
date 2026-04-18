@@ -52,18 +52,7 @@ Ikuti langkah-langkah berikut untuk melihat dan mengunduh laporan GPS Check In:
    → Menu dropdown akan muncul dengan opsi download.
 
 4. Pilih **"Download XLS"** untuk mengunduh data agent terpilih ATAU **"Download all XLS"** untuk mengunduh data semua agent
-   → File Excel akan terunduh ke perangkat Anda.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766136765337
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089795225
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089806745
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → File Excel akan terunduh ke perangkat Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengunduh laporan GPS Check In, file Excel akan berisi kolom-kolom berikut:
 
@@ -75,6 +64,10 @@ Setelah mengunduh laporan GPS Check In, file Excel akan berisi kolom-kolom berik
 • Longitude (Garis bujur)
 
 File dapat dibuka di aplikasi spreadsheet seperti Microsoft Excel atau Google Sheets untuk analisis lebih lanjut. Data mencakup semua pipeline check-in untuk agent yang dipilih atau semua agent (jika memilih Download all XLS).
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136765337)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089795225)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089806745)
 
 ## Error States  <!-- confidence:low ? -->
 

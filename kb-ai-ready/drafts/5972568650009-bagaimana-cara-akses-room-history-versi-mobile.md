@@ -45,21 +45,7 @@ Untuk mengakses Room History di Qontak Omnichannel versi mobile, Anda memerlukan
 
 4. Klik tombol "View all" pada bagian Room History — Sistem akan menampilkan daftar lengkap semua room history percakapan dengan customer tersebut.
 
-5. Pilih salah satu room history dari daftar — Percakapan tersebut akan terbuka menampilkan riwayat pesan lengkap dengan customer.
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/55505569146009
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/55505569148057
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/55505569149465
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/55505569153305
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Pilih salah satu room history dari daftar — Percakapan tersebut akan terbuka menampilkan riwayat pesan lengkap dengan customer.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, Anda berhasil mengakses Room History versi mobile dengan hasil:
 
@@ -67,6 +53,11 @@ Setelah mengikuti langkah-langkah di atas, Anda berhasil mengakses Room History 
 - Setiap room history dapat dibuka untuk melihat detail lengkap pesan-pesan sebelumnya
 - Informasi lengkap customer terlihat di halaman Contact Info
 - Anda dapat melihat kronologi percakapan lengkap dengan timestamp setiap pesan
+
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55505569146009)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55505569148057)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55505569149465)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55505569153305)
 
 ## Error States  <!-- confidence:low ? -->
 

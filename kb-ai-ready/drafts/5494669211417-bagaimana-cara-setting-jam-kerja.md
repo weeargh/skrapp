@@ -48,20 +48,13 @@ Pengaturan jam kerja digunakan untuk tracking kehadiran karyawan melalui fitur T
 
 5. Pada kolom **Check-In & Check-Out**, pilih jam masuk dan jam selesai kerja kantor.
 
-6. Klik tombol **Simpan/Save** untuk menyimpan pengaturan jam kerja.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49475087168921
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49475124752025
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5494555079577
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol **Simpan/Save** untuk menyimpan pengaturan jam kerja.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik tombol Simpan/Save, sistem akan memproses pengaturan jam kerja. Pengaturan jam kerja untuk user yang dipilih akan tersimpan dan aktif. Fitur Tracking Time akan mulai mencatat kehadiran karyawan berdasarkan zona waktu dan jam kerja yang telah ditetapkan. Tim HRD dapat melihat laporan kehadiran tepat waktu dan tidak tepat waktu melalui dashboard Tracking Time.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475087168921)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475124752025)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5494555079577)
 
 ## Error States  <!-- confidence:low ? -->
 

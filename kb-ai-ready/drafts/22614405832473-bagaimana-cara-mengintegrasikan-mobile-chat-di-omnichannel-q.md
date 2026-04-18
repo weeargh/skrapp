@@ -51,39 +51,7 @@ Untuk mengintegrasikan Mobile Chat di Omnichannel Qontak, Anda membutuhkan:
 
 1. Pada daftar app yang telah dibuat, klik **Action** → **Edit**.
 2. Klik **Widget content & appearance**. Sistem akan menampilkan form pengaturan tampilan.
-3. Ubah **Display name**, **Description**, **Greetings**, dan **Appearance** (warna). Klik simpan untuk menerapkan perubahan.
-
-> Screenshot: pasted image 0 \(43\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184476825
-
-> Screenshot: pasted image 0 \(44\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184478873
-
-> Screenshot: pasted image 0 \(45\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184470169
-
-> Screenshot: pasted image 0 \(46\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184477465
-
-> Screenshot: pasted image 0 \(47\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142879257
-
-> Screenshot: pasted image 0 \(48\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184470681
-
-> Screenshot: pasted image 0 \(49\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142881049
-
-> Screenshot: pasted image 0 \(50\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184479513
-
-> Screenshot: pasted image 0 \(51\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184471833
-
-> Screenshot: pasted image 0 \(52\).png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184474649
-
-## Expected Result  <!-- confidence:high ✓ -->
+3. Ubah **Display name**, **Description**, **Greetings**, dan **Appearance** (warna). Klik simpan untuk menerapkan perubahan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah langkah instalasi selesai:
 
@@ -92,6 +60,17 @@ Setelah langkah instalasi selesai:
 - Setelah tim developer mengintegrasikan detail tersebut ke kode aplikasi, fitur Mobile Chat akan tersedia di aplikasi mobile Anda
 - Pelanggan dapat membuka chat dari aplikasi tanpa membuka WhatsApp terpisah
 - Tampilan chat akan sesuai dengan konfigurasi Display name, warna, dan greeting yang telah Anda atur
+
+![pasted image 0 \(43\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184476825)
+![pasted image 0 \(44\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184478873)
+![pasted image 0 \(45\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184470169)
+![pasted image 0 \(46\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184477465)
+![pasted image 0 \(47\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142879257)
+![pasted image 0 \(48\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184470681)
+![pasted image 0 \(49\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142881049)
+![pasted image 0 \(50\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184479513)
+![pasted image 0 \(51\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184471833)
+![pasted image 0 \(52\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184474649)
 
 ## Error States  <!-- confidence:low ? -->
 

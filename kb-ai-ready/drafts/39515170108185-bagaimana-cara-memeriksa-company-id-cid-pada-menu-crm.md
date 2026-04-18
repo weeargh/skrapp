@@ -39,14 +39,11 @@ faithfulness_threshold: 0.6
 2. Lihat bagian bawah sisi menu sebelah kiri.
    Company ID akan ditampilkan secara otomatis di lokasi ini sebagai identitas unik akun CRM Anda.## Expected Result  <!-- confidence:high ✓ -->
 
-Company ID Anda berhasil ditampilkan di bagian bawah menu sebelah kiri layar CRM. Company ID adalah string alphanumerik unik yang mengidentifikasi perusahaan Anda dalam sistem Mekari Qontak CRM dan siap untuk digunakan atau dicatat sesuai kebutuhan.
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39515170094105
-
-## Error States  <!-- confidence:high ✓ -->
+Company ID Anda berhasil ditampilkan di bagian bawah menu sebelah kiri layar CRM. Company ID adalah string alphanumerik unik yang mengidentifikasi perusahaan Anda dalam sistem Mekari Qontak CRM dan siap untuk digunakan atau dicatat sesuai kebutuhan.## Error States  <!-- confidence:high ✓ -->
 
 No common errors documented.
+
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39515170094105)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

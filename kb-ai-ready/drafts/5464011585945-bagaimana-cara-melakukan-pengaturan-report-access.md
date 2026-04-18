@@ -54,47 +54,22 @@ faithfulness_threshold: 0.6
 4. Pilih tab "Report Access" — Opsi pengaturan Report Access akan muncul
 5. Pilih salah satu dari 3 opsi akses: Everything, Team Only, atau Owned Only
 6. Aktifkan atau nonaktifkan tombol akses unduh report sesuai kebutuhan
-7. Klik "Update User" atau tombol simpan — Pengaturan Report Access berhasil diperbarui
-
-> Screenshot: Screenshot 2023-08-08 at 10.55.18.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089340313
-
-> Screenshot: Screenshot 2023-08-08 at 11.31.53.png
-> Image: https://help-center.qontak.com/hc/article_attachments/21569876972057
-
-> Screenshot: b3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089286297
-
-> Screenshot: b4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766085921433
-
-> Screenshot: b5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766085926425
-
-> Screenshot: b6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5463903993113
-
-> Screenshot: c2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5463876976793
-
-> Screenshot: c3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766085938713
-
-> Screenshot: c4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5463896625433
-
-> Screenshot: c5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5463882906393
-
-> Screenshot: c6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089329945
-
-> Screenshot: c7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5463911520025
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik "Update User" atau tombol simpan — Pengaturan Report Access berhasil diperbarui## Expected Result  <!-- confidence:high ✓ -->
 
 Pengaturan Report Access berhasil tersimpan di sistem. Pengguna yang ditambahkan atau diperbarui akan memiliki akses ke laporan sesuai dengan opsi yang dipilih (Everything, Team Only, atau Owned Only). Penampilan data report pada menu Dashboard akan disesuaikan secara otomatis sesuai dengan pengaturan akses yang ditentukan. Jika akses unduh report diaktifkan, pengguna dapat mengunduh laporan sesuai dengan level akses mereka.
+
+![Screenshot 2023-08-08 at 10.55.18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089340313)
+![Screenshot 2023-08-08 at 11.31.53.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21569876972057)
+![b3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089286297)
+![b4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766085921433)
+![b5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766085926425)
+![b6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463903993113)
+![c2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463876976793)
+![c3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766085938713)
+![c4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463896625433)
+![c5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463882906393)
+![c6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089329945)
+![c7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463911520025)
 
 ## Error States  <!-- confidence:medium ~ -->
 

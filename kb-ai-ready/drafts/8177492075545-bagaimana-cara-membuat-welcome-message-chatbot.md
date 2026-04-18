@@ -53,15 +53,7 @@ Sebelum membuat Welcome Message Chatbot, pastikan Anda memiliki:
 
 5. Opsional: Lampirkan file di bagian Attachment (maksimal 10 file, ukuran max 64 MB per file).
 
-6. Klik tombol Save untuk menyimpan Welcome Message.
-
-> Screenshot: 111.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51037705692825
-
-> Screenshot: 112.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51037705696665
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol Save untuk menyimpan Welcome Message.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Welcome Message berhasil dibuat dan disimpan:
 
@@ -69,6 +61,9 @@ Setelah Welcome Message berhasil dibuat dan disimpan:
 2. Bot Response Name muncul di daftar Bot Response pada conversation tersebut
 3. Welcome Message siap digunakan dalam alur chatbot yang telah dikonfigurasi
 4. Conversation dapat dilanjutkan dengan menambahkan User Input dan Bot Response tambahan, kemudian dipublish
+
+![111.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51037705692825)
+![112.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51037705696665)
 
 ## Error States  <!-- confidence:low ? -->
 

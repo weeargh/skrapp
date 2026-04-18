@@ -43,15 +43,7 @@ Untuk membalas pesan Omnichannel Qontak versi Web, Anda memerlukan:
 3. Pilih tab "Unassigned" untuk melihat pesan yang belum ditugaskan, atau tab "Assigned" untuk pesan yang sudah ditugaskan. Sistem akan menampilkan daftar percakapan.
 4. Klik salah satu pesan dari daftar untuk membuka detail chat. Sistem akan menampilkan riwayat percakapan lengkap.
 5. Ketik balasan Anda di kolom pesan di bagian bawah. Pastikan balasan sesuai dengan pertanyaan atau kebutuhan pelanggan.
-6. Klik tombol Kirim untuk mengirim pesan balasan.
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49383522678681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49383522685209
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol Kirim untuk mengirim pesan balasan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membalas pesan:
 
@@ -59,6 +51,9 @@ Setelah berhasil membalas pesan:
 • Pesan pelanggan dan balasan Anda tercatat dalam riwayat percakapan (conversation history).
 • Chat status dapat berubah menjadi "Assigned" jika sebelumnya "Unassigned".
 • Pelanggan akan menerima notifikasi pesan balasan melalui channel komunikasi yang mereka gunakan (WhatsApp, Instagram, Facebook, atau channel lainnya).
+
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383522678681)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383522685209)
 
 ## Error States  <!-- confidence:medium ~ -->
 

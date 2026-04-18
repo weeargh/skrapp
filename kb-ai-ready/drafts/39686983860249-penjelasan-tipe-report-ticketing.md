@@ -27,23 +27,14 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Tipe Report Ticketing adalah serangkaian laporan dalam Qontak CRM yang menampilkan data operasional layanan pelanggan berdasarkan fitur tiket. Report Ticketing terdiri dari empat jenis laporan utama: New Ticket Daily (volume tiket harian), Tickets by Stage (distribusi tiket per tahapan alur), Tickets by Priority (klasifikasi tiket berdasarkan prioritas), dan Tickets by Source (klasifikasi tiket berdasarkan sumber). Setiap laporan dirancang untuk membantu tim customer support menganalisis efektivitas operasional dan mengidentifikasi area yang memerlukan perbaikan.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39686983843737
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39686983851033
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39686978064537
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39686978066073
-
-## Why It Matters  <!-- confidence:high ✓ -->
+Tipe Report Ticketing adalah serangkaian laporan dalam Qontak CRM yang menampilkan data operasional layanan pelanggan berdasarkan fitur tiket. Report Ticketing terdiri dari empat jenis laporan utama: New Ticket Daily (volume tiket harian), Tickets by Stage (distribusi tiket per tahapan alur), Tickets by Priority (klasifikasi tiket berdasarkan prioritas), dan Tickets by Source (klasifikasi tiket berdasarkan sumber). Setiap laporan dirancang untuk membantu tim customer support menganalisis efektivitas operasional dan mengidentifikasi area yang memerlukan perbaikan.## Why It Matters  <!-- confidence:high ✓ -->
 
 Report Ticketing membantu manajer dan supervisor customer support membuat keputusan berbasis data untuk mengelola beban kerja tim secara efektif. Dengan memantau volume tiket harian, tahapan penyelesaian, prioritas masalah, dan sumber tiket, organisasi dapat mengidentifikasi tren masalah pelanggan, menemukan hambatan operasional, mengalokasikan sumber daya dengan tepat, dan meningkatkan waktu respons serta tingkat kepuasan pelanggan.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686983843737)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686983851033)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686978064537)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686978066073)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

@@ -50,23 +50,14 @@ Tanpa Message Control diaktifkan, komentar dari Instagram tidak akan masuk ke ch
 6. Pilih pengaturan impor komentar yang Anda inginkan:
    - **Import all comments**: untuk mengimpor semua komentar pada akun Instagram
    - **Only import comments that are mentioned this instagram account**: untuk mengimpor hanya komentar yang me-mention akun Instagram Anda
-7. Klik tombol **Connect** — sistem akan menampilkan notifikasi "Instagram connected" jika berhasil.
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49069092940697
-
-> Screenshot: 36b.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772392279449
-
-> Screenshot: 36d.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772392281497
-
-> Screenshot: 37.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36772399890329
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Klik tombol **Connect** — sistem akan menampilkan notifikasi "Instagram connected" jika berhasil.## Expected Result  <!-- confidence:high ✓ -->
 
 Integrasi berhasil ketika Anda menerima notifikasi "Instagram connected" di layar Qontak Omnichannel. Setelah itu, komentar dari Instagram akan mulai masuk ke menu **Inbox** Qontak dan dapat dikelola oleh Admin, Supervisor, dan Agent. Anda dapat melihat akun Instagram yang terintegrasi di tab **Comments** dalam menu **Channel Integration**.
+
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49069092940697)
+![36b.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772392279449)
+![36d.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772392281497)
+![37.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772399890329)
 
 ## Error States  <!-- confidence:medium ~ -->
 

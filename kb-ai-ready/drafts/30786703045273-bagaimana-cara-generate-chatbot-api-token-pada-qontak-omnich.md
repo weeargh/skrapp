@@ -46,15 +46,7 @@ Untuk generate Chatbot API Token pada Qontak Omnichannel, Anda membutuhkan:
 
 4. Klik ikon **Copy** untuk menyalin token API tersebut ke clipboard Anda.
 
-5. Kirimkan token yang sudah dicopy kepada tim activation Qontak melalui saluran komunikasi yang telah ditentukan untuk proses aktivasi chatbot.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49513832679705
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36777849492761
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Kirimkan token yang sudah dicopy kepada tim activation Qontak melalui saluran komunikasi yang telah ditentukan untuk proses aktivasi chatbot.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil generate Chatbot API Token:
 
@@ -62,6 +54,9 @@ Setelah berhasil generate Chatbot API Token:
 - Token berhasil dicopy ke clipboard (sistem biasanya menampilkan notifikasi konfirmasi)
 - Tim activation Qontak menerima token dan memproses aktivasi chatbot Anda
 - Chatbot siap digunakan setelah proses aktivasi selesai oleh tim kami
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49513832679705)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777849492761)
 
 ## Error States  <!-- confidence:medium ~ -->
 

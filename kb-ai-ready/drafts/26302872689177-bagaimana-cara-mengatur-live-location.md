@@ -61,20 +61,13 @@ Setelah klik **Save changes**, sistem menampilkan konfirmasi bahwa pengaturan Li
 
 - Jika memilih Opsi A: Live tracking aktif dengan intensitas sesuai pilihan, dan Multiple live location otomatis aktif (terkunci)
 - Jika memilih Opsi B: Multiple live location aktif untuk merekam beberapa kehadiran tanpa tracking otomatis
-- Jika memilih Opsi C: Hanya satu lokasi yang dapat direkam per sesi absensi
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49114748823577
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781184552985
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49114749254681
-
-## Error States  <!-- confidence:high ✓ -->
+- Jika memilih Opsi C: Hanya satu lokasi yang dapat direkam per sesi absensi## Error States  <!-- confidence:high ✓ -->
 
 No common errors documented.
+
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114748823577)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184552985)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114749254681)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

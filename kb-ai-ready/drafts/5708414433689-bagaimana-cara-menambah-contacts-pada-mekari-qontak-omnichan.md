@@ -52,24 +52,7 @@ faithfulness_threshold: 0.6
 3. Unduh template file CSV atau XLSX yang disediakan. Panduan pengisian tersedia di sebelah kiri halaman.
 4. Isi daftar kontak ke dalam template sesuai format yang ditentukan.
 5. Klik tombol **Choose file** untuk memilih file template yang sudah diisi.
-6. Klik tombol **Submit**. File akan terunggah otomatis dan kontak muncul di menu Contacts.
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38432569398041
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38432541402265
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38432689602457
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38432677933849
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/38432677935769
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol **Submit**. File akan terunggah otomatis dan kontak muncul di menu Contacts.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah, kontak berhasil ditambahkan ke menu **Contacts** di Qontak Omnichannel. Kontak baru akan muncul dalam daftar Contacts dan dapat dilihat kapan saja.
 
@@ -77,6 +60,12 @@ Jika Anda menggunakan Qontak CRM:
 - Kontak yang dibuat di Omnichannel akan otomatis tersedia di CRM tanpa perlu dibuat ulang
 - Sinkronisasi berlaku untuk Single Contact maupun Multiple Contact
 - Kontak tersedia di kedua platform dengan data yang konsisten
+
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432569398041)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432541402265)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432689602457)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432677933849)
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432677935769)
 
 ## Error States  <!-- confidence:medium ~ -->
 

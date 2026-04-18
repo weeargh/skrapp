@@ -53,60 +53,7 @@ Untuk melakukan pengaturan User Management pada Qontak One, Anda memerlukan:
 
 1. Pada halaman Users, temukan user yang ingin diubah
 2. Klik tombol Actions pada user tersebut
-3. Pilih opsi yang diinginkan (Edit, Delete, atau Resend Invitation)
-
-> Screenshot: rev 22.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241000344729
-
-> Screenshot: rev 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241015119385
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53217620606105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53217650114201
-
-> Screenshot: rev 24.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241000352921
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53217620612505
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53217650121753
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53217620622873
-
-> Screenshot: rev 25.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241000361113
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241015128857
-
-> Screenshot: rev 29.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241015132569
-
-> Screenshot: rev 30.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241015138713
-
-> Screenshot: rev 31.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241015143449
-
-> Screenshot: rev 32.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241000378393
-
-> Screenshot: rev 33.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241015157657
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53217650164633
-
-> Screenshot: 17.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53241015161753
-
-## Expected Result  <!-- confidence:high ✓ -->
+3. Pilih opsi yang diinginkan (Edit, Delete, atau Resend Invitation)## Expected Result  <!-- confidence:high ✓ -->
 
 Ketika pengaturan User Management berhasil dilakukan, Anda akan melihat:
 
@@ -115,6 +62,24 @@ Ketika pengaturan User Management berhasil dilakukan, Anda akan melihat:
 • Working status user yang baru ditambahkan menunjukkan '-' karena belum ada riwayat sign-in
 • User dapat diakses pada halaman Users dengan opsi Actions (Edit, Delete, Resend Invitation) tersedia
 • Perubahan data user langsung terupdate pada sistem
+
+![rev 22.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241000344729)
+![rev 23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241015119385)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53217620606105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53217650114201)
+![rev 24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241000352921)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53217620612505)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53217650121753)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53217620622873)
+![rev 25.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241000361113)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241015128857)
+![rev 29.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241015132569)
+![rev 30.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241015138713)
+![rev 31.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241015143449)
+![rev 32.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241000378393)
+![rev 33.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241015157657)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53217650164633)
+![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53241015161753)
 
 ## Error States  <!-- confidence:medium ~ -->
 

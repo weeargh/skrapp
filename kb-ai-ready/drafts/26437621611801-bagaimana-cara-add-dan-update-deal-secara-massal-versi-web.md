@@ -57,24 +57,7 @@ Untuk menambah dan meng-update deal secara massal di Qontak CRM versi Web, Anda 
    → Nama file template ditampilkan di kolom upload.
 
 7. Klik tombol **"Upload"**.
-   → Sistem memproses file dan menampilkan hasil upload (berhasil atau gagal).
-
-> Screenshot: 15.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49894160178841
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36766092762009
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36766092764313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36766092748313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36766139563161
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sistem memproses file dan menampilkan hasil upload (berhasil atau gagal).## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah upload berhasil, semua deal baru dan update deal ditampilkan di menu **Deals** Qontak CRM Anda dengan:
 
@@ -84,6 +67,12 @@ Setelah upload berhasil, semua deal baru dan update deal ditampilkan di menu **D
 - Maksimal 3000 baris berhasil diproses dalam satu kali upload
 
 Untuk verifikasi, Anda dapat membuka menu Deals dan melihat daftar deals terbaru Anda.
+
+![15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49894160178841)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766092762009)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766092764313)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766092748313)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766139563161)
 
 ## Error States  <!-- confidence:medium ~ -->
 

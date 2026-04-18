@@ -38,17 +38,12 @@ faithfulness_threshold: 0.3
 1. Masuk ke akun Qontak Omnichannel Anda. Dashboard utama akan ditampilkan.
 2. Navigasikan ke menu **Inbox**. Sistem menampilkan daftar room chat yang tersedia.
 3. Lihat profile customer pada setiap room chat — ikon Clock akan muncul di samping nama customer yang menunjukkan durasi session.
-4. Perhatikan warna ikon Clock untuk mengetahui status session: Biru (0-16 jam), Kuning (16-24 jam), atau Merah (lebih dari 24 jam).
-
-> Screenshot: Screenshot_2023-03-31_at_15.41.49.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774892732313
-
-> Screenshot: 2022-10-21_16_51_11.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916298265
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Perhatikan warna ikon Clock untuk mengetahui status session: Biru (0-16 jam), Kuning (16-24 jam), atau Merah (lebih dari 24 jam).## Expected Result  <!-- confidence:high ✓ -->
 
 Anda berhasil melihat jam open chat session untuk setiap customer di menu Inbox. Ikon Clock berwarna menampilkan status durasi session: Biru untuk session kurang dari 16 jam, Kuning untuk session 16-24 jam, dan Merah untuk session lebih dari 24 jam.
+
+![Screenshot_2023-03-31_at_15.41.49.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892732313)
+![2022-10-21_16_51_11.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916298265)
 
 ## Error States  <!-- confidence:low ? -->
 

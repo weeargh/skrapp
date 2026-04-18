@@ -29,27 +29,7 @@ faithfulness_threshold: 0.9
 
 Prompt dan instruksi Chatbot AI adalah panduan terstruktur yang diberikan kepada AI untuk mengontrol perilaku, gaya komunikasi, dan cara merespons pelanggan. Dalam Qontak Chat, prompt terdiri dari tiga elemen utama: Knowledge Base (informasi faktual), Custom Prompt (gaya dan cara berinteraksi), dan Human Handover Conditions (aturan untuk meneruskan ke Agent manusia). Prompt yang efektif memastikan chatbot memberikan jawaban konsisten dan sesuai dengan identitas brand Anda.## Why It Matters  <!-- confidence:high ✓ -->
 
-Menyusun prompt yang efektif memastikan chatbot AI Anda beroperasi sesuai standar operasional yang sama dengan karyawan baru menerima SOP. Dengan instruksi yang jelas, chatbot dapat menangani pertanyaan pelanggan secara konsisten, menerapkan brand voice yang tepat, dan mengetahui kapan harus mengalihkan percakapan ke Agent manusia. Hal ini meningkatkan kualitas layanan pelanggan, mengurangi kesalahan respons, dan memaksimalkan efisiensi tim Omnichannel Anda.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55092284943001
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55092256916889
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55092256917017
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55092284943513
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55092284943897
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55092284944281
-
-## Key Attributes  <!-- confidence:high ✓ -->
+Menyusun prompt yang efektif memastikan chatbot AI Anda beroperasi sesuai standar operasional yang sama dengan karyawan baru menerima SOP. Dengan instruksi yang jelas, chatbot dapat menangani pertanyaan pelanggan secara konsisten, menerapkan brand voice yang tepat, dan mengetahui kapan harus mengalihkan percakapan ke Agent manusia. Hal ini meningkatkan kualitas layanan pelanggan, mengurangi kesalahan respons, dan memaksimalkan efisiensi tim Omnichannel Anda.## Key Attributes  <!-- confidence:high ✓ -->
 
 • Identity: Nama chatbot, peran/fungsi, dan cara menyapa pelanggan
 • Tone of Voice: Pilihan gaya bahasa (santai, profesional, empatik, atau playful) yang sesuai brand
@@ -57,6 +37,13 @@ Menyusun prompt yang efektif memastikan chatbot AI Anda beroperasi sesuai standa
 • Knowledge Base: Dokumen berisi FAQ, daftar produk, dan informasi faktual
 • Human Handover Conditions: Aturan kapan percakapan dialihkan ke Agent manusia
 • Pengaturan Default Fallback: Opsi respons AI, pesan khusus, atau penugasan ke agent
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55092284943001)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55092256916889)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55092256917017)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55092284943513)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55092284943897)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55092284944281)
 
 ## Related Tasks  <!-- confidence:high ✓ -->
 

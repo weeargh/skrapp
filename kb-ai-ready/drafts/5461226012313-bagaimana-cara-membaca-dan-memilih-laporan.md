@@ -46,24 +46,7 @@ Untuk membaca dan memilih laporan di Dashboard Qontak CRM, Anda membutuhkan:
    → Data laporan akan diperbarui sesuai filter yang dipilih.
 
 4. Baca laporan dengan memperhatikan elemen visual: warna chart, nama user, jumlah angka, dan status data yang ditampilkan.
-   → Anda dapat menginterpretasikan data sesuai dengan tujuan analisis.
-
-> Screenshot: 36.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50804666009113
-
-> Screenshot: Memilih_Laporan_2.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183552025
-
-> Screenshot: Memilih_Laporan_3.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183550105
-
-> Screenshot: Memilih_Laporan_4.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781141786009
-
-> Screenshot: Memilih_Laporan_5.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36781141783321
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Anda dapat menginterpretasikan data sesuai dengan tujuan analisis.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah membaca dan memilih laporan di Dashboard Qontak CRM, Anda akan:
 
@@ -71,6 +54,12 @@ Setelah membaca dan memilih laporan di Dashboard Qontak CRM, Anda akan:
 • Memahami visualisasi grafik dengan indikator warna (biru = target tercapai/pendapatan; kuning = sisa target/produk terjual)
 • Melihat daftar user dan metrik kinerja mereka (Task, attendance, atau penjualan) sesuai laporan yang dipilih
 • Dapat mengekspor atau menganalisis data lebih lanjut untuk pengambilan keputusan bisnis
+
+![36.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50804666009113)
+![Memilih_Laporan_2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183552025)
+![Memilih_Laporan_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183550105)
+![Memilih_Laporan_4.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781141786009)
+![Memilih_Laporan_5.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781141783321)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -54,62 +54,29 @@ faithfulness_threshold: 0.6
 
 Setelah menambahkan URL: URL eksternal berhasil ditambahkan sebagai sumber pelatihan AI. Data dari website ditampilkan dalam preview dan siap digunakan oleh AI Chatbot.
 
-Setelah impor file: File knowledge berhasil diimpor ke sistem. Konten file tersimpan sebagai sumber pengetahuan AI dan dapat digunakan untuk melatih chatbot menjawab pertanyaan pelanggan.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/52950193479833
-
-> Screenshot: 56.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53149593468441
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXffSXpRjRdUD53RiStGgJzFDR2NBEmYK5jBwV1bWfO3USw7PfLDXVpZfWJ_FA4GF6dezTNdepeNMlTtI47FAmoHPxbaKYbOKtfr7cFXH_qnNRsLvmlmN5SMlLiVsftFNN8lLAz6OrxALMhbSPbJjq6n_XQl?key=a_H2g-u7deYB2NgVxhWKAg
-
-> Screenshot: Screenshot
-> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXepxOn29h-vB9X0jAFERX8CuJLoTQ0FyunAocTMyBSp28Pb9r_T8owWkLyXDBY1NGvBgYhEStfBPm2pfBLMC7D9-InAVsQBpB2HNcgahxzY-qUZAGgVzijvIRVzxNg1-69LodYN1zJJe72hRuHZ-SNJ0OSF?key=a_H2g-u7deYB2NgVxhWKAg
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/52950255673881
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/52950255681561
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/52950193499289
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/52950193500057
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529166489
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/52950255685657
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529173657
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535680793
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529175065
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535697945
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529177753
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529168537
-
-## Error States  <!-- confidence:medium ~ -->
+Setelah impor file: File knowledge berhasil diimpor ke sistem. Konten file tersimpan sebagai sumber pengetahuan AI dan dapat digunakan untuk melatih chatbot menjawab pertanyaan pelanggan.## Error States  <!-- confidence:medium ~ -->
 
 1. **URL tidak dapat diakses**: Pastikan URL valid, website dapat diakses publik, dan tidak memerlukan login atau autentikasi khusus.
 2. **File terlalu besar atau format tidak didukung**: Gunakan file PDF sesuai contoh format. Download "PDF example" untuk referensi format yang benar.
 3. **Preview menampilkan data tidak lengkap**: Edit preview untuk menghapus konten tidak relevan sebelum klik "Save and train".
 4. **Resync gagal**: Periksa apakah website masih tersedia dan tidak ada perubahan struktur halaman.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52950193479833)
+![56.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149593468441)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXffSXpRjRdUD53RiStGgJzFDR2NBEmYK5jBwV1bWfO3USw7PfLDXVpZfWJ_FA4GF6dezTNdepeNMlTtI47FAmoHPxbaKYbOKtfr7cFXH_qnNRsLvmlmN5SMlLiVsftFNN8lLAz6OrxALMhbSPbJjq6n_XQl%3Fkey%3Da_H2g-u7deYB2NgVxhWKAg)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXepxOn29h-vB9X0jAFERX8CuJLoTQ0FyunAocTMyBSp28Pb9r_T8owWkLyXDBY1NGvBgYhEStfBPm2pfBLMC7D9-InAVsQBpB2HNcgahxzY-qUZAGgVzijvIRVzxNg1-69LodYN1zJJe72hRuHZ-SNJ0OSF%3Fkey%3Da_H2g-u7deYB2NgVxhWKAg)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52950255673881)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52950255681561)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52950193499289)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52950193500057)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529166489)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52950255685657)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529173657)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535680793)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529175065)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535697945)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529177753)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529168537)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

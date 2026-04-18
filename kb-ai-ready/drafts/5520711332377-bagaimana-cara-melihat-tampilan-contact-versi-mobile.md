@@ -49,21 +49,16 @@ faithfulness_threshold: 0.3
 4. Halaman Contacts akan menampilkan dua tab utama:
    - Tab **Contact list**: menampilkan daftar kontak individual
    - Tab **Company list**: menampilkan daftar perusahaan
-   → Anda dapat beralih antar tab sesuai kebutuhan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462616022297
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462616023449
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Anda dapat beralih antar tab sesuai kebutuhan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil masuk, halaman Contacts pada versi mobile akan menampilkan:
 - Daftar kontak yang sudah tersimpan di akun Qontak CRM Anda
 - Dua tab navigasi: Contact list dan Company list
 - Interface yang responsif dan dioptimalkan untuk ukuran layar mobile
 - Akses penuh ke fitur pengelolaan kontak pada perangkat iOS atau Android
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462616022297)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462616023449)
 
 ## Error States  <!-- confidence:low ? -->
 

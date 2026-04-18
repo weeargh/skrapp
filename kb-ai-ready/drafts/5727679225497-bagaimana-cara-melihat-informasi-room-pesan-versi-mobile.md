@@ -44,24 +44,17 @@ Untuk melihat informasi room pesan di Qontak Omnichannel versi mobile, Anda meme
 3. Pilih salah satu pesan masuk dari daftar pesan — Room pesan terbuka dengan daftar percakapan
 4. Ketuk bagian atas room yang menampilkan nama pengirim pesan — Panel informasi room terbuka menampilkan detail customer dan fitur-fitur room
 5. Lihat informasi Data Customer (nama, platform asal, email, nomor telepon), About Room (waktu interaksi dan session), Notes, Agents, Tags, dan Room History
-6. Setelah percakapan selesai, ketuk tombol Resolve — Room pesan ditandai sebagai selesai dan menampilkan banner konfirmasi
-
-> Screenshot: 3.PNG
-> Image: https://help-center.qontak.com/hc/article_attachments/36766136571033
-
-> Screenshot: 5.PNG
-> Image: https://help-center.qontak.com/hc/article_attachments/36766136579993
-
-> Screenshot: 6.PNG
-> Image: https://help-center.qontak.com/hc/article_attachments/36766136588313
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Setelah percakapan selesai, ketuk tombol Resolve — Room pesan ditandai sebagai selesai dan menampilkan banner konfirmasi## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah, Anda berhasil melihat informasi lengkap room pesan pada mobile:
 
 - Panel informasi room menampilkan semua detail customer dan riwayat interaksi
 - Data Customer, About Room, Notes, Agents, Tags, dan Room History dapat diakses
 - Untuk room yang sudah di-Resolve, banner konfirmasi ditampilkan dan room tidak dapat dibuka kembali sampai customer mengirimkan pesan baru atau Anda mengirimkan broadcast terlebih dahulu
+
+![3.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136571033)
+![5.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136579993)
+![6.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136588313)
 
 ## Error States  <!-- confidence:low ? -->
 

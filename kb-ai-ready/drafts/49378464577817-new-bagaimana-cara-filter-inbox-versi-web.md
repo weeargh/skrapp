@@ -45,12 +45,7 @@ Untuk menggunakan fitur Filter Inbox pada Qontak Omnichannel versi web, Anda mem
    - **Channel**: Pilih satu atau lebih channel yang terhubung
    - **Agents**: Pilih Agen tertentu dari dropdown
    - **Tags**: Pilih tag yang sudah ditambahkan pada pesan
-5. Sistem akan menampilkan pesan yang sesuai dengan filter yang Anda terapkan.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49381136455705
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Sistem akan menampilkan pesan yang sesuai dengan filter yang Anda terapkan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menerapkan filter, daftar pesan di Inbox akan diperbarui menampilkan hanya pesan yang sesuai dengan kriteria filter yang dipilih. Anda dapat melihat:
 • Pesan dari Session yang dipilih (Open, Expiring, atau Expired)
@@ -59,6 +54,8 @@ Setelah menerapkan filter, daftar pesan di Inbox akan diperbarui menampilkan han
 • Pesan dengan Tags tertentu
 • Chat yang belum dibalas (jika filter Unresponded Chat diaktifkan)
 Panel filter tetap terbuka sehingga Anda dapat menyesuaikan filter kapan saja.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49381136455705)
 
 ## Error States  <!-- confidence:medium ~ -->
 

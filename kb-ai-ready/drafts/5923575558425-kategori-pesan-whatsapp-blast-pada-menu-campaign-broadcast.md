@@ -52,15 +52,7 @@ Pastikan Anda sudah login ke akun Qontak Omnichannel sebelum mengakses fitur ini
 
 6. Pilih salah satu dari tiga kategori pesan: Marketing (untuk promosi dan pengumuman produk), Utility (untuk informasi penting seperti pengiriman dan pesanan), atau Authentication (untuk kode verifikasi akun). Kategori yang dipilih akan diterapkan pada template Anda.
 
-7. Lanjutkan dengan mengisi detail template sesuai kategori yang dipilih.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43691108065945
-
-> Screenshot: Screenshot
-> Image: https://lh6.googleusercontent.com/Sr0Bj6c12DAZvZ1Z67jm3Cmhw48n2hlaokSgtNreiPoVLVhl0pmxmPDMJxU8KpZlk6qwwcZyuhEZA4aceBQz_AV0kJq0eWlg-NA0T3gXGyeJWUjqR5QEI2lVgSqqoFr3Vx09ubtE39bYO4XF3NLsuVE
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Lanjutkan dengan mengisi detail template sesuai kategori yang dipilih.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah memilih salah satu kategori pesan (Marketing, Utility, atau Authentication), sistem akan menampilkan form template yang sesuai dengan kategori yang dipilih. Anda akan dapat melihat:
 
@@ -69,6 +61,9 @@ Setelah memilih salah satu kategori pesan (Marketing, Utility, atau Authenticati
 • Opsi untuk melanjutkan ke tahap pembuatan template berikutnya
 
 Template dengan kategori yang tepat akan memastikan pesan Blast Anda sesuai dengan kebijakan WhatsApp Business dan meningkatkan delivery rate.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43691108065945)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh6.googleusercontent.com%2FSr0Bj6c12DAZvZ1Z67jm3Cmhw48n2hlaokSgtNreiPoVLVhl0pmxmPDMJxU8KpZlk6qwwcZyuhEZA4aceBQz_AV0kJq0eWlg-NA0T3gXGyeJWUjqR5QEI2lVgSqqoFr3Vx09ubtE39bYO4XF3NLsuVE)
 
 ## Error States  <!-- confidence:high ✓ -->
 

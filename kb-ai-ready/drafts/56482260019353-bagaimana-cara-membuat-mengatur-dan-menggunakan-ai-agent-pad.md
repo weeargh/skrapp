@@ -49,84 +49,7 @@ Untuk membuat AI Agent pada Mekari Qontak:
 5. Tunggu hingga proses selesai. Halaman konfigurasi AI Agent akan muncul dengan bagian Identity, AI Resources, dan Actions.
 6. Isi kolom **AI Prompt** dengan tujuan dan perilaku AI Agent. Deskripsi sebelumnya akan terotomatis ter-generate tetapi dapat diedit.
 7. Tentukan **Tone of Voice** untuk gaya komunikasi AI Agent saat berinteraksi dengan pengguna.
-8. Atur **Idle Action** untuk menentukan tindakan AI Agent ketika percakapan idle (tidak ada aktivitas).
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259921177
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230582041
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230583705
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259927065
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230586649
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230587161
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259931929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259933465
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230595737
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230596377
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230600857
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259947033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259947929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259982105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259983257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259984153
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259985561
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230634777
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230639257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230641177
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482230642073
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259994393
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259995929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259977881
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56482259996953
-
-## Expected Result  <!-- confidence:medium ~ -->
+8. Atur **Idle Action** untuk menentukan tindakan AI Agent ketika percakapan idle (tidak ada aktivitas).## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah menyelesaikan semua langkah konfigurasi:
 
@@ -135,6 +58,32 @@ Setelah menyelesaikan semua langkah konfigurasi:
 3. AI Agent siap digunakan dalam conversation untuk menjalankan otomatisasi bisnis
 4. Sistem menampilkan pesan konfirmasi bahwa AI Agent telah berhasil dikonfigurasi
 5. AI Agent dapat diintegrasikan ke dalam Tree Diagram conversation untuk memproses percakapan pelanggan secara otomatis
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259921177)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230582041)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230583705)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259927065)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230586649)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230587161)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259931929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259933465)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230595737)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230596377)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230600857)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259947033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259947929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259982105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259983257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259984153)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259985561)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230634777)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230639257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230641177)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482230642073)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259994393)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259995929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259977881)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56482259996953)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -48,17 +48,12 @@ faithfulness_threshold: 0.6
 
 6. Untuk menambahkan Tags: centang tag pilihan dari daftar tags yang tersedia. Gunakan kolom "Search tags" untuk mencari tag dengan cepat. Sistem akan memperbarui pilihan tag secara real-time.
 
-7. Tekan tombol "Save" untuk mengonfirmasi semua perubahan Tags dan Notes. Sistem akan menampilkan bahwa Contact Info telah terupdate.
-
-> Screenshot: 165.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53772952864025
-
-> Screenshot: 168.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53772976231193
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Tekan tombol "Save" untuk mengonfirmasi semua perubahan Tags dan Notes. Sistem akan menampilkan bahwa Contact Info telah terupdate.## Expected Result  <!-- confidence:high ✓ -->
 
 Notes dan Tags pada Contact Info room percakapan berhasil disimpan dan terupdate. Ketika Anda membuka kembali halaman Contact Info room yang sama, Notes yang Anda tulis akan ditampilkan dalam kolom Notes, dan Tags yang dipilih akan ditandai dengan centang di daftar Tags. Perubahan ini dapat dilihat oleh agent lain yang mengakses room percakapan yang sama.
+
+![165.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53772952864025)
+![168.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53772976231193)
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -49,20 +49,13 @@ faithfulness_threshold: 0.6
    - **Download/Unduh**: Aktifkan atau nonaktifkan toggle untuk izin mengunduh
 7. Klik tombol "Save/Simpan" di bagian bawah halaman. Sistem akan menyimpan pengaturan Deal Access untuk user tersebut.## Expected Result  <!-- confidence:high ✓ -->
 
-Pengaturan Deal Access untuk user berhasil disimpan. Sistem akan menampilkan konfirmasi bahwa perubahan telah tersimpan. User yang telah diatur akan memiliki akses sesuai dengan konfigurasi yang Anda tentukan (View, Edit, Search Association, Delete, Upload, Download). Perubahan berlaku segera untuk semua aktivitas user di Qontak CRM.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49880016386457
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/21576364828697
-
-> Screenshot: 10.png
-> Image: https://help-center.qontak.com/hc/article_attachments/21576390742425
-
-## Error States  <!-- confidence:medium ~ -->
+Pengaturan Deal Access untuk user berhasil disimpan. Sistem akan menampilkan konfirmasi bahwa perubahan telah tersimpan. User yang telah diatur akan memiliki akses sesuai dengan konfigurasi yang Anda tentukan (View, Edit, Search Association, Delete, Upload, Download). Perubahan berlaku segera untuk semua aktivitas user di Qontak CRM.## Error States  <!-- confidence:medium ~ -->
 
 No common errors documented.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49880016386457)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21576364828697)
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21576390742425)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

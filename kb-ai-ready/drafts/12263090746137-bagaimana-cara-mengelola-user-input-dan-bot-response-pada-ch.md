@@ -51,69 +51,7 @@ Setelah menyelesaikan langkah-langkah di atas, User Input dan Bot Response berha
 - Menerima input pengguna sesuai tipe yang ditentukan (teks, gambar, atau semua jenis)
 - Merespons dengan Bot Response yang telah Anda rancang
 - Menyimpan data pengguna ke variabel jika Anda mengaktifkan opsi "Save user input to variable"
-- Menampilkan alur percakapan dalam bentuk Tree Diagram yang siap untuk dipublikasikan
-
-> Screenshot: 120.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51040302976025
-
-> Screenshot: 121.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51040281074201
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149609625
-
-> Screenshot: 122.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51040281077785
-
-> Screenshot: 124.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51132823692313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149638809
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173180313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149640729
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173228057
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173228697
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173181849
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173233817
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173236633
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149645977
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149655961
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173246745
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173240857
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149667609
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774149663385
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36774173243929
-
-## Error States  <!-- confidence:medium ~ -->
+- Menampilkan alur percakapan dalam bentuk Tree Diagram yang siap untuk dipublikasikan## Error States  <!-- confidence:medium ~ -->
 
 Masalah umum yang mungkin Anda hadapi:
 
@@ -121,6 +59,27 @@ Masalah umum yang mungkin Anda hadapi:
 - **Input tidak tersimpan di variabel**: Pastikan opsi "Save user input to variable" sudah diaktifkan pada User Input.
 - **Specific user input tidak berfungsi**: Verifikasi bahwa kata/kalimat trigger yang ditentukan di kolom User input cocok dengan input pengguna (perhatian terhadap huruf besar/kecil dan spasi).
 - **Conversation tidak bisa disimpan**: Pastikan minimal satu User Input dan Bot Response sudah dikonfigurasi untuk setiap node percakapan.
+
+![120.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51040302976025)
+![121.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51040281074201)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149609625)
+![122.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51040281077785)
+![124.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51132823692313)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149638809)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173180313)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149640729)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173228057)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173228697)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173181849)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173233817)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173236633)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149645977)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149655961)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173246745)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173240857)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149667609)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149663385)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173243929)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

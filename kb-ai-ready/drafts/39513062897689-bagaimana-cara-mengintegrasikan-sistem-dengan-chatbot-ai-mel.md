@@ -46,40 +46,21 @@ faithfulness_threshold: 0.6
 6. Isi Parameter name, Description, dan Type, lalu centang toggle **"Set as required"**.
 7. Klik **"Add"** untuk menyimpan fungsi. Sistem menampilkan konfirmasi bahwa fungsi berhasil ditambahkan.## Expected Result  <!-- confidence:high ✓ -->
 
-Fungsi API berhasil ditambahkan ke API Connection. Halaman detail API Connection menampilkan fungsi baru dalam daftar dengan status aktif. AI Chatbot sekarang dapat mengenali user input yang sesuai dengan deskripsi fungsi dan memanggil API untuk mengambil informasi yang diperlukan, memberikan respons yang lebih manusiawi berdasarkan data dari sistem eksternal.
-
-> Screenshot: 13.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53149538347033
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39513122309913
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39513062844185
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39513297951001
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39513710420633
-
-> Screenshot: 114.png
-> Image: https://help-center.qontak.com/hc/article_attachments/51038253023641
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39513694247705
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39513694249497
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39513710438809
-
-## Error States  <!-- confidence:medium ~ -->
+Fungsi API berhasil ditambahkan ke API Connection. Halaman detail API Connection menampilkan fungsi baru dalam daftar dengan status aktif. AI Chatbot sekarang dapat mengenali user input yang sesuai dengan deskripsi fungsi dan memanggil API untuk mengambil informasi yang diperlukan, memberikan respons yang lebih manusiawi berdasarkan data dari sistem eksternal.## Error States  <!-- confidence:medium ~ -->
 
 • Halusinasi AI (kesalahan AI dalam memahami Function): Terjadi karena penggunaan parameter lebih dari satu. Solusi: Gunakan hanya satu parameter terlebih dahulu.
 • Fungsi tidak dipanggil oleh AI: Kemungkinan deskripsi Function atau Parameter tidak jelas. Solusi: Pastikan Description di Function dan Parameter ditulis secara detail dan spesifik agar AI memahami tujuannya.
 • API error response: Periksa kembali API_path, API_method, API_headers, dan API_body sudah benar sesuai dokumentasi API eksternal.
+
+![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149538347033)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513122309913)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513062844185)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513297951001)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513710420633)
+![114.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51038253023641)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513694247705)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513694249497)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513710438809)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

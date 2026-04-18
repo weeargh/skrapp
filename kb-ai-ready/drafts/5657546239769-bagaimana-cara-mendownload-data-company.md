@@ -50,18 +50,7 @@ Untuk mengunduh data perusahaan dari Qontak CRM, Anda memerlukan:
 
 5. Klik menu **Properties**, lalu pilih tab **Upload/Download** untuk melihat status dan progress download Anda.
 
-6. Tunggu hingga proses selesai. File Excel berisi data perusahaan akan dikirim ke email terdaftar Anda.
-
-> Screenshot: 12.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776188586393
-
-> Screenshot: Data_Company_3.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36776188584857
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49114632381081
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Tunggu hingga proses selesai. File Excel berisi data perusahaan akan dikirim ke email terdaftar Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses download selesai:
 
@@ -69,6 +58,10 @@ Setelah proses download selesai:
 • File Excel dengan nama yang sesuai (berisi data perusahaan: nama, email, telepon, alamat, dan informasi lainnya) dikirim ke email yang terdaftar
 • Anda dapat mengunduh file tersebut dari email dan membukanya dengan aplikasi spreadsheet (Excel, Google Sheets, atau sejenisnya)
 • Data perusahaan siap untuk digunakan, dianalisis, atau dipindahkan ke sistem lain
+
+![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188586393)
+![Data_Company_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188584857)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114632381081)
 
 ## Error States  <!-- confidence:medium ~ -->
 

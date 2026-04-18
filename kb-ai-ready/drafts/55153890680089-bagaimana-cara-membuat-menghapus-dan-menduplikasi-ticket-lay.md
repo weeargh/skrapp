@@ -57,75 +57,34 @@ Pada halaman **Layouts**, temukan layout yang ingin diduplikasi, klik menu opsi 
 
 **Menghapus Layout:**
 
-Pada halaman **Layouts**, temukan layout yang ingin dihapus, klik menu opsi (tiga titik), lalu pilih **Delete**. Konfirmasi penghapusan pada dialog yang muncul.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153890649753
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907379097
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907379609
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907382041
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907382297
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153890659097
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907383833
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907384217
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907384985
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907387289
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907388185
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153890668825
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907390489
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907391257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907391513
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153890670489
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153890671129
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907397657
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153890671769
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/55153907400089
-
-## Expected Result  <!-- confidence:medium ~ -->
+Pada halaman **Layouts**, temukan layout yang ingin dihapus, klik menu opsi (tiga titik), lalu pilih **Delete**. Konfirmasi penghapusan pada dialog yang muncul.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah membuat layout baru, sistem akan menampilkan layout tersebut pada daftar halaman **Layouts** dengan status aktif. Layout dapat langsung diterapkan pada tim yang dipilih dan akan menampilkan hanya field yang telah dikonfigurasi.
 
 Setelah menduplikasi layout, sistem akan membuat salinan dengan nama baru (contoh: "Layout Name - Copy") yang dapat diedit sesuai kebutuhan.
 
 Setelah menghapus layout, sistem akan menghapus layout dari daftar dan tidak lagi tersedia untuk diterapkan pada tim. Jika layout sedang digunakan oleh tim, Anda harus memilih layout pengganti sebelum menghapus.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153890649753)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907379097)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907379609)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907382041)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907382297)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153890659097)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907383833)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907384217)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907384985)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907387289)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907388185)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153890668825)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907390489)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907391257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907391513)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153890670489)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153890671129)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907397657)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153890671769)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F55153907400089)
 
 ## Error States  <!-- confidence:low ? -->
 

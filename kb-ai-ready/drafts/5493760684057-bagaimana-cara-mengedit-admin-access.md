@@ -40,17 +40,12 @@ faithfulness_threshold: 0.6
 3. Klik "User Permissions" di menu pengaturan profil. Sistem akan menampilkan daftar user dan kolom "Pilih User".
 4. Di kolom "Pilih User", centang kotak di sebelah kiri nama user yang ingin Anda atur aksesnya. User yang dipilih akan ditandai dengan centang.
 5. Atur setiap jenis akses Admin dengan mengaktifkan/menonaktifkan toggle di sebelah kanan: Add & Edit User, Add & Edit Teams, Add & Edit Properties, dan Freeze Deal Stage.
-6. Klik tombol "Simpan" di bagian bawah halaman. Sistem akan menyimpan pengaturan akses Admin yang telah Anda ubah.
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5493671413401
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/5493633850521
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik tombol "Simpan" di bagian bawah halaman. Sistem akan menyimpan pengaturan akses Admin yang telah Anda ubah.## Expected Result  <!-- confidence:high ✓ -->
 
 Pengaturan akses Admin untuk user yang dipilih berhasil disimpan. Perubahan permisi langsung aktif di sistem. User akan memiliki kemampuan sesuai toggle yang Anda aktifkan: menambah/mengedit user, mengelola tim, mengubah properties, atau membuat freeze stage pada Deal. Pengaturan terlihat tersimpan tanpa pesan error di halaman User Permissions.
+
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5493671413401)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5493633850521)
 
 ## Error States  <!-- confidence:medium ~ -->
 

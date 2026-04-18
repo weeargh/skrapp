@@ -47,18 +47,7 @@ Catatan: Penambahan laporan ke Dashboard hanya berlaku untuk pengguna individual
 
 4. Klik tombol "Add to Dashboard" pada laporan yang ingin Anda tambahkan. Sistem akan secara otomatis menambahkan laporan tersebut ke halaman Dashboard Anda.
 
-5. Untuk menghapus laporan, kembali ke Report Template, klik tab "Ticketing", lalu klik tombol "Remove from Dashboard" pada laporan yang ingin dihapus.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39686735313561
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39686735318425
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/39686735326617
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Untuk menghapus laporan, kembali ke Report Template, klik tab "Ticketing", lalu klik tombol "Remove from Dashboard" pada laporan yang ingin dihapus.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan Ticket Reports ke Dashboard:
 
@@ -67,6 +56,10 @@ Setelah berhasil menambahkan Ticket Reports ke Dashboard:
 • Laporan hanya terlihat di Dashboard pengguna yang menambahkannya (bukan untuk seluruh organisasi)
 • Anda dapat melihat metrik seperti volume tiket harian, distribusi tahap, prioritas, dan sumber
 • Laporan siap dianalisis untuk memantau efektivitas operasi layanan pelanggan
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686735313561)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686735318425)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686735326617)
 
 ## Error States  <!-- confidence:medium ~ -->
 

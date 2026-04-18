@@ -54,20 +54,13 @@ faithfulness_threshold: 0.3
 
 8. Centang **Halaman pengubahan kontak** agar field muncul saat mengubah data kontak.
 
-9. Klik tombol **Simpan** untuk menyimpan properti baru atau **Tutup** untuk membatalkan.
-
-> Screenshot: 3up.png
-> Image: https://help-center.qontak.com/hc/article_attachments/19761224455449
-
-> Screenshot: 145.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53404801762841
-
-> Screenshot: 25up.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53404803444633
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Klik tombol **Simpan** untuk menyimpan properti baru atau **Tutup** untuk membatalkan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah klik Simpan, sistem akan menutup formulir pembuatan properti dan properti baru akan ditambahkan ke daftar properti pada tab Kontak. Field baru ini akan tersedia untuk diisi pada halaman penambahan dan/atau pengubahan kontak sesuai pengaturan yang Anda pilih. Properti dapat langsung digunakan untuk menginput data kontak tambahan.
+
+![3up.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F19761224455449)
+![145.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53404801762841)
+![25up.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53404803444633)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -58,18 +58,7 @@ Setelah mengklik Save:
 - Product Category berhasil dibuat dan tersimpan di Properties
 - Subcategory (jika ditambahkan) muncul sebagai bagian dari kategori induk
 - Kategori baru langsung tersedia untuk digunakan saat membuat atau mengedit produk
-- Daftar kategori dan subcategory muncul di menu Kategori pada Properties
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49112625578521
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49112578560025
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49112578561561
-
-## Error States  <!-- confidence:medium ~ -->
+- Daftar kategori dan subcategory muncul di menu Kategori pada Properties## Error States  <!-- confidence:medium ~ -->
 
 Kesalahan umum yang mungkin terjadi:
 
@@ -77,6 +66,10 @@ Kesalahan umum yang mungkin terjadi:
 - **Field wajib kosong:** Pastikan ID Kategori dan Nama kategori sudah diisi sebelum Save
 - **Product Category tidak muncul:** Verifikasi bahwa Product Category sudah diaktifkan di Properties terlebih dahulu
 - **Subcategory tidak bisa ditambahkan:** Pastikan form Category sudah lengkap sebelum menambah subkategori
+
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112625578521)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112578560025)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112578561561)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

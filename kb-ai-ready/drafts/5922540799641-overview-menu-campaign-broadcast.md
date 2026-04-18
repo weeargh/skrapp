@@ -28,29 +28,16 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Campaign (sebelumnya disebut Broadcast) adalah fitur pada Chat Panel Qontak Omnichannel yang memungkinkan pengguna mengirimkan pesan ke banyak penerima secara bersamaan. Fitur ini terdiri dari tiga komponen utama: WhatsApp untuk mengatur campaign berulang dan melihat log pengiriman, Recipient Lists untuk mengunggah daftar penerima pesan, dan Templates untuk membuat dan mengedit template pesan campaign. Campaign tersedia dalam dua jenis: One time campaign (pengiriman sekali) dan Recurring campaign (pengiriman berkala).
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780919313945
-
-> Screenshot: 1.2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42569092826649
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/42569092830745
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42569063336345
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/42569092842905
-
-> Screenshot: 2025-02-21 19 20 48.png
-> Image: https://help-center.qontak.com/hc/article_attachments/43749154298905
-
-## Why It Matters  <!-- confidence:high ✓ -->
+Menu Campaign (sebelumnya disebut Broadcast) adalah fitur pada Chat Panel Qontak Omnichannel yang memungkinkan pengguna mengirimkan pesan ke banyak penerima secara bersamaan. Fitur ini terdiri dari tiga komponen utama: WhatsApp untuk mengatur campaign berulang dan melihat log pengiriman, Recipient Lists untuk mengunggah daftar penerima pesan, dan Templates untuk membuat dan mengedit template pesan campaign. Campaign tersedia dalam dua jenis: One time campaign (pengiriman sekali) dan Recurring campaign (pengiriman berkala).## Why It Matters  <!-- confidence:high ✓ -->
 
 Menu Campaign membantu bisnis menyampaikan informasi ke banyak kontak secara efisien tanpa mengurangi sentuhan personal. Fitur ini menghemat waktu yang dibutuhkan untuk mengirim pesan individual, sehingga tim Anda dapat fokus pada interaksi pelanggan yang lebih penting. Dengan kemampuan penjadwalan dan template yang dapat disetujui, Campaign memastikan pesan yang konsisten dan berkualitas sesuai standar WhatsApp API.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919313945)
+![1.2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42569092826649)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42569092830745)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42569063336345)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42569092842905)
+![2025-02-21 19 20 48.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43749154298905)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

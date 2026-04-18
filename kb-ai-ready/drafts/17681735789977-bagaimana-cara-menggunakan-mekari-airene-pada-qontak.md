@@ -53,57 +53,28 @@ Mekari Airene tersedia untuk membantu parafrase pesan, menarik rangkuman percaka
 
 1. Selesaikan percakapan dengan pelanggan dan klik tombol "Resolve"
 2. Klik "Resolved" — room percakapan ditandai selesai
-3. Klik "Summarize this conversation" — sistem menampilkan rangkuman dari percakapan
-
-> Screenshot: 24.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150143884313
-
-> Screenshot: 14.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150099690905
-
-> Screenshot: 15.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150143886233
-
-> Screenshot: 16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150099694745
-
-> Screenshot: 17.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150143888025
-
-> Screenshot: 18.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150099698969
-
-> Screenshot: 19.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150143891225
-
-> Screenshot: 20.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150143892249
-
-> Screenshot: 21.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150099706521
-
-> Screenshot: 22.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150143895705
-
-> Screenshot: 23.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150143899033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142738201
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142740121
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142741401
-
-## Expected Result  <!-- confidence:high ✓ -->
+3. Klik "Summarize this conversation" — sistem menampilkan rangkuman dari percakapan## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah melakukan parafrase:**
 Pesan ditampilkan di kolom input chat dengan rekomendasi dari Mekari Airene. Anda dapat mengirim pesan dengan menekan tombol Enter atau mengubahnya terlebih dahulu sebelum dikirim.
 
 **Setelah menarik rangkuman:**
 Rangkuman percakapan ditampilkan dalam format teks yang merangkum poin-poin penting dari obrolan dengan pelanggan. Anda dapat memberikan rating dan feedback terhadap kualitas rangkuman yang dihasilkan.
+
+![24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150143884313)
+![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150099690905)
+![15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150143886233)
+![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150099694745)
+![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150143888025)
+![18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150099698969)
+![19.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150143891225)
+![20.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150143892249)
+![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150099706521)
+![22.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150143895705)
+![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150143899033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142738201)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142740121)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142741401)
 
 ## Error States  <!-- confidence:high ✓ -->
 

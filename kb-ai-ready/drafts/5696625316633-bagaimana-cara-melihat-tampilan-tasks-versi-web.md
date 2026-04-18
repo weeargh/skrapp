@@ -48,14 +48,11 @@ Untuk melihat tampilan Tasks versi web di Mekari Qontak CRM, Anda memerlukan:
 3. Gunakan fitur tambahan sesuai kebutuhan:
    - **Filter** untuk melihat task dengan pengaturan tertentu
    - **Search** untuk mencari task berdasarkan nama
-   - **Show** untuk mengatur jumlah task yang ditampilkan per halaman
-
-> Screenshot: mceclip0.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780961451545
-
-## Expected Result  <!-- confidence:high ✓ -->
+   - **Show** untuk mengatur jumlah task yang ditampilkan per halaman## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengakses menu Task, Anda akan melihat halaman Tasks dengan tampilan default (List View) yang menampilkan daftar tasks dengan kolom informasi. Anda dapat beralih ke Calendar View atau Board View sesuai preferensi. Semua fitur seperti Add Task, Download, Bulk Change, Delete, Filter, Search, dan Show tersedia dan siap digunakan untuk mengelola tasks.
+
+![mceclip0.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961451545)
 
 ## Error States  <!-- confidence:high ✓ -->
 

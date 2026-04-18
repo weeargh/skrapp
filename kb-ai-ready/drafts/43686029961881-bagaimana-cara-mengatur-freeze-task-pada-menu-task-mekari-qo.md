@@ -49,36 +49,7 @@ Untuk mengatur Freeze Task pada menu Task Mekari Qontak CRM, Anda memerlukan:
 
 **Untuk menonaktifkan:**
 8. Kembali ke **Frozen task settings**, lalu nonaktifkan toggle **Frozen task**.
-9. Klik **"Disable"** pada popup konfirmasi — pengaturan akan dinonaktifkan dalam 15 menit.
-
-> Screenshot: 29.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150081079833
-
-> Screenshot: 35.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150081082265
-
-> Screenshot: 36.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150081083417
-
-> Screenshot: 37.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150053419929
-
-> Screenshot: 38.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150053421593
-
-> Screenshot: 39.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150081086617
-
-> Screenshot: 40.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53150081087513
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43686029955353
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43686029955993
-
-## Expected Result  <!-- confidence:high ✓ -->
+9. Klik **"Disable"** pada popup konfirmasi — pengaturan akan dinonaktifkan dalam 15 menit.## Expected Result  <!-- confidence:high ✓ -->
 
 • Pengaturan Freeze Task berhasil disimpan dengan pesan konfirmasi popup
 • Toggle **Frozen task** menampilkan status aktif atau nonaktif sesuai pilihan Anda
@@ -86,6 +57,16 @@ Untuk mengatur Freeze Task pada menu Task Mekari Qontak CRM, Anda memerlukan:
 • Ketika aktif, task updates akan dibatasi sampai Task di-unfreeze
 • Ketika nonaktif, task updates akan diizinkan kembali
 • Admin/Owner dapat kembali ke **Frozen task settings** kapan saja untuk melakukan edit ulang
+
+![29.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081079833)
+![35.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081082265)
+![36.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081083417)
+![37.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150053419929)
+![38.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150053421593)
+![39.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081086617)
+![40.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081087513)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43686029955353)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43686029955993)
 
 ## Error States  <!-- confidence:high ✓ -->
 

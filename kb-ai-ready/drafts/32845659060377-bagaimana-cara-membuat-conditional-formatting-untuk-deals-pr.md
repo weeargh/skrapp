@@ -52,30 +52,7 @@ Catatan: Fitur Conditional format (Format bersyarat) hanya berlaku untuk Deals d
 
 6. Klik **Save**. Conditional format akan disimpan dan ditampilkan di bagian Conditional properties.
 
-7. Conditional format yang telah dibuat siap digunakan saat pembuatan Deals.
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49889924033689
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49889924034713
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190278425
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776163410073
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190282137
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49889987003801
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776190286873
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Conditional format yang telah dibuat siap digunakan saat pembuatan Deals.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuat Conditional format:
 
@@ -84,6 +61,14 @@ Setelah berhasil membuat Conditional format:
 2. Format bersyarat ini akan tersedia untuk diterapkan saat Anda membuat Deal baru di menu Deals.
 
 3. Sistem akan memastikan bahwa setiap kategori yang ditetapkan sebagai properti induk atau cabang tidak dapat digunakan kembali untuk role yang sama dalam conditional formatting yang sama.
+
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49889924033689)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49889924034713)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190278425)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163410073)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190282137)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49889987003801)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190286873)
 
 ## Error States  <!-- confidence:high ✓ -->
 

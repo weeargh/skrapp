@@ -53,18 +53,15 @@ Catatan: File yang diunduh akan berformat spreadsheet dengan beberapa sheet yang
    → File spreadsheet akan diunduh ke perangkat Anda.
 
 5. Buka file yang telah diunduh menggunakan aplikasi spreadsheet.
-   → Sheet laporan akan menampilkan data target dan pencapaian per bulan dan per user.
-
-> Screenshot: by_value.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/36774916528025
-
-## Expected Result  <!-- confidence:high ✓ -->
+   → Sheet laporan akan menampilkan data target dan pencapaian per bulan dan per user.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil membuka Laporan Target By Months By Value, spreadsheet akan menampilkan:
 
 • Sheet dengan filter target per bulan, filter waktu laporan, dan filter by user
 • Kolom detail untuk setiap user berisi: Target Value, Achieved Value, Achieved Value %, Remaining Value, Remaining Value %, Target Count, Achieved Count, Achieved Count %, Remaining Count, dan Remaining Count %
 • Data terorganisir memudahkan Anda memonitor dan membagikan pencapaian target per user kepada tim.
+
+![by_value.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916528025)
 
 ## Error States  <!-- confidence:low ? -->
 

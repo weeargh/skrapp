@@ -58,39 +58,7 @@ Setelah menyelesaikan proses pembuatan Scorecard:
 • Setiap parameter menampilkan bobot penilaian yang telah ditentukan
 • Parameter menjadi tersedia untuk digunakan dalam penilaian kinerja agen pada ruang percakapan
 • Supervisor/manager/admin dapat langsung mengakses Scorecard ini untuk melakukan Agent Scoring
-• Data Scorecard dapat dilihat di laporan Service Quality Score Report untuk analisis kinerja agen
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/44411239187993
-
-> Screenshot: 11.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535931033
-
-> Screenshot: 94.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50941930030233
-
-> Screenshot: 95.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50941921107737
-
-> Screenshot: 96.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50941930033177
-
-> Screenshot: 97.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50941930034969
-
-> Screenshot: 15.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529406873
-
-> Screenshot: 16.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774529408537
-
-> Screenshot: 17.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535948697
-
-> Screenshot: 18.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774535961881
-
-## Error States  <!-- confidence:medium ~ -->
+• Data Scorecard dapat dilihat di laporan Service Quality Score Report untuk analisis kinerja agen## Error States  <!-- confidence:medium ~ -->
 
 Kemungkinan masalah yang dapat terjadi:
 
@@ -100,6 +68,17 @@ Kemungkinan masalah yang dapat terjadi:
 • **Alasan 'bad rating' tidak tersimpan**: Pastikan toggle untuk alasan sudah diaktifkan sebelum mengisi kolom alasan.
 
 Jika masalah persisten, refresh halaman Settings dan coba kembali.
+
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44411239187993)
+![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535931033)
+![94.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50941930030233)
+![95.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50941921107737)
+![96.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50941930033177)
+![97.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50941930034969)
+![15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529406873)
+![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529408537)
+![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535948697)
+![18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535961881)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

@@ -43,15 +43,7 @@ Anda ingin melakukan Handover Chat kepada agent lain melalui versi web Qontak Om
 4. Pada pesan atau room percakapan tersebut, klik tombol "Assign".
 5. Pilih nama Agent dari daftar yang tersedia untuk menerima handover chat.
 6. Klik tombol konfirmasi untuk menyelesaikan proses Handover Chat.
-Agent yang ditunjuk akan menerima notifikasi tentang percakapan yang telah di-assign kepada mereka.
-
-> Screenshot: 83.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937458997401
-
-> Screenshot: 84.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50937459001369
-
-## Expected Result  <!-- confidence:medium ~ -->
+Agent yang ditunjuk akan menerima notifikasi tentang percakapan yang telah di-assign kepada mereka.## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah berhasil melakukan Handover Chat:
 
@@ -60,6 +52,9 @@ Setelah berhasil melakukan Handover Chat:
 • Agent penerima akan melihat percakapan muncul di daftar chat mereka di menu Inbox
 • Riwayat handover akan tercatat dalam history percakapan untuk audit trail
 • Pelanggan tidak melihat perubahan ini namun percakapan akan dilanjutkan oleh Agent baru
+
+![83.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937458997401)
+![84.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937459001369)
 
 ## Error States  <!-- confidence:medium ~ -->
 

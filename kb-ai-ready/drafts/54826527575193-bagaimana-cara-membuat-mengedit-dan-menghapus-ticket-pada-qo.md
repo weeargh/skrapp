@@ -61,33 +61,7 @@ Untuk membuat, mengedit, dan menghapus ticket melalui Qontak Mobile, Anda memerl
 **Menghapus Ticket:**
 1. Tap ikon '⋯' (titik tiga) pada ticket yang ingin dihapus
 2. Pilih "Delete ticket"
-3. Pop-up konfirmasi akan muncul; tap "Delete" untuk menyelesaikan penghapusan
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54826495371417
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54826495374105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54826495375001
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54826527553561
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54826495376793
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54826495378073
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54826495379225
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/54826495382681
-
-## Expected Result  <!-- confidence:high ✓ -->
+3. Pop-up konfirmasi akan muncul; tap "Delete" untuk menyelesaikan penghapusan## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah membuat ticket:** Ticket baru akan muncul dalam daftar ticket dengan informasi yang telah Anda masukkan.
 
@@ -96,6 +70,15 @@ Untuk membuat, mengedit, dan menghapus ticket melalui Qontak Mobile, Anda memerl
 **Setelah menduplikasi ticket:** Ticket duplikat akan muncul dalam daftar dengan penambahan label 'copy' di samping nama ticket asli.
 
 **Setelah menghapus ticket:** Ticket akan dihapus dari daftar dan tidak lagi terlihat di aplikasi Qontak Mobile.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495371417)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495374105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495375001)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826527553561)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495376793)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495378073)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495379225)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495382681)
 
 ## Error States  <!-- confidence:low ? -->
 

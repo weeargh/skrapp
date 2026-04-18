@@ -56,30 +56,7 @@ Untuk membuat Email Campaign di Mekari Qontak, Anda harus memenuhi persyaratan b
 5. Klik tombol Continue.
    Sistem melanjutkan ke tahap berikutnya untuk memilih template dan mengatur pengiriman.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengklik tombol Continue, sistem akan menampilkan halaman berikutnya dalam proses pembuatan Email Campaign. Anda akan dapat memilih template email yang telah dibuat sebelumnya dan mengatur detail pengiriman campaign. Data yang Anda masukkan (Email subject, Sender name, dan Recipient list) tersimpan dan siap untuk tahap konfigurasi template dan jadwal pengiriman.
-
-> Screenshot: rev.png
-> Image: https://help-center.qontak.com/hc/article_attachments/47426113314073
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52283953214361
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52283953215257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52283982578841
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/47425969958553
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/47425950955929
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52283982579609
-
-## Error States  <!-- confidence:medium ~ -->
+Setelah mengklik tombol Continue, sistem akan menampilkan halaman berikutnya dalam proses pembuatan Email Campaign. Anda akan dapat memilih template email yang telah dibuat sebelumnya dan mengatur detail pengiriman campaign. Data yang Anda masukkan (Email subject, Sender name, dan Recipient list) tersimpan dan siap untuk tahap konfigurasi template dan jadwal pengiriman.## Error States  <!-- confidence:medium ~ -->
 
 Kesalahan umum yang mungkin terjadi:
 
@@ -90,6 +67,14 @@ Kesalahan umum yang mungkin terjadi:
 3. **Kuota tidak cukup**: Jika muncul pesan kuota tidak mencukupi, periksa kuota Email Campaign harian dan bulanan Anda sebelum melanjutkan.
 
 4. **Template belum dibuat**: Pastikan Anda telah membuat minimal satu template email di menu Campaign > Templates > Email.
+
+![rev.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426113314073)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52283953214361)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52283953215257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52283982578841)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47425969958553)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47425950955929)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52283982579609)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

@@ -58,21 +58,7 @@ Setelah mengajukan akses Mekari Insight:
 
 • Jika perusahaan sudah berlangganan dan Anda memiliki akses: Halaman Mekari Insight menampilkan laporan yang dapat disesuaikan sesuai kebutuhan perusahaan Anda. Anda dapat melihat semua data insight yang relevan dengan peran dan izin akses Anda.
 
-• Jika perusahaan sudah berlangganan namun Anda belum memiliki akses: Halaman menunjukkan pesan bahwa akses belum diberikan, dan Anda dapat meminta izin dari Admin atau beralih akun.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43822900289305
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43822891598745
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43822900290073
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/43822900290585
-
-## Error States  <!-- confidence:medium ~ -->
+• Jika perusahaan sudah berlangganan namun Anda belum memiliki akses: Halaman menunjukkan pesan bahwa akses belum diberikan, dan Anda dapat meminta izin dari Admin atau beralih akun.## Error States  <!-- confidence:medium ~ -->
 
 Skenario umum yang bukan error:
 
@@ -81,6 +67,11 @@ Skenario umum yang bukan error:
 • **Melihat pesan akses ditolak**: Perusahaan sudah berlangganan tetapi Admin belum memberikan izin kepada Anda. Solusi: Hubungi Admin atau Owner perusahaan untuk meminta akses, atau gunakan tombol **Switch account** jika Anda memiliki akun lain dengan akses yang sudah disetujui.
 
 Tidak ada error teknis yang didokumentasikan untuk proses ini.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43822900289305)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43822891598745)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43822900290073)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43822900290585)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

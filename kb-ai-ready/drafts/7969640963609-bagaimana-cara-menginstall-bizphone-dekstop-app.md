@@ -58,15 +58,7 @@ Untuk menginstall Bizphone Desktop App, Anda memerlukan:
 1. Unduh file Bizphone Desktop App untuk Mac OS.
 2. Ekstrak file .zip—aplikasi Bizphone siap digunakan.
 3. (Opsional) Pindahkan aplikasi Bizphone ke folder Aplikasi.
-4. Buka aplikasi Bizphone dengan klik dua kali file aplikasi.
-
-> Screenshot: DQqR-AORLyJPt2W3_ZobX2syWULcjuvGvOj5Wthj2KJjj1Q3Om8afof49t2L-JuyjO8uQWd4OG7K2csPl0lKAk8RHXnPfiXepI7t.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774249900697
-
-> Screenshot: m-21.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774249908377
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Buka aplikasi Bizphone dengan klik dua kali file aplikasi.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah instalasi berhasil diselesaikan:
 
@@ -79,6 +71,9 @@ Setelah instalasi berhasil diselesaikan:
 - File Bizphone Desktop App telah diekstrak dan tersedia di folder Downloads (atau lokasi penyimpanan Anda)
 - Aplikasi siap dibuka dan digunakan untuk melakukan dan menerima panggilan
 - Aplikasi dapat dipindahkan ke folder Aplikasi untuk akses yang lebih mudah
+
+![DQqR-AORLyJPt2W3_ZobX2syWULcjuvGvOj5Wthj2KJjj1Q3Om8afof49t2L-JuyjO8uQWd4OG7K2csPl0lKAk8RHXnPfiXepI7t.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249900697)
+![m-21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249908377)
 
 ## Error States  <!-- confidence:medium ~ -->
 

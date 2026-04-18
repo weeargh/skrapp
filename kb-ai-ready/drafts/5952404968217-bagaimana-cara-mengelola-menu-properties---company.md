@@ -57,27 +57,7 @@ faithfulness_threshold: 0.6
 
 10. Untuk menghapus properti: Klik tombol **Destroy** pada properti yang ingin dihapus.## Expected Result  <!-- confidence:high ✓ -->
 
-Properti baru berhasil dibuat dan muncul dalam daftar Properties tab **Companies**. Properti dapat digunakan untuk mengisi informasi Company tambahan sesuai dengan Field Type yang dipilih. Jika opsi **Show** diaktifkan, properti akan muncul di halaman detail setiap Company. Perubahan atau penghapusan properti langsung diterapkan ke semua Company yang menggunakan properti tersebut.
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49114929664921
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49114985901337
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781142064025
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183758873
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183763225
-
-> Screenshot: 6.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781183763865
-
-## Error States  <!-- confidence:medium ~ -->
+Properti baru berhasil dibuat dan muncul dalam daftar Properties tab **Companies**. Properti dapat digunakan untuk mengisi informasi Company tambahan sesuai dengan Field Type yang dipilih. Jika opsi **Show** diaktifkan, properti akan muncul di halaman detail setiap Company. Perubahan atau penghapusan properti langsung diterapkan ke semua Company yang menggunakan properti tersebut.## Error States  <!-- confidence:medium ~ -->
 
 • **Kolom Name kosong**: Sistem akan menampilkan pesan bahwa Name wajib diisi. Isi kolom Name sebelum menyimpan.
 
@@ -86,6 +66,13 @@ Properti baru berhasil dibuat dan muncul dalam daftar Properties tab **Companies
 • **Properti dengan nama yang sama sudah ada**: Sistem mungkin menolak duplikat nama. Gunakan nama properti yang berbeda atau edit properti yang sudah ada.
 
 • **Tombol Save tidak responsif**: Pastikan semua bidang wajib (Name dan Field Type) sudah terisi dengan benar.
+
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114929664921)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114985901337)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142064025)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183758873)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183763225)
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183763865)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

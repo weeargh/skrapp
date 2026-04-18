@@ -49,27 +49,18 @@ faithfulness_threshold: 0.6
 
 4. Jika memilih **Edit contact**: Klik field yang ingin diubah, lakukan perubahan data, kemudian klik tombol **"Save changes"** untuk menyimpan perubahan. Sistem akan menampilkan notifikasi penyimpanan berhasil.
 
-5. Jika memilih **Delete contact**: Konfirmasi penghapusan dengan klik **"Delete"** pada pop-up yang muncul. Kontak akan dihapus dari sistem.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462945389209
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462945390745
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462945391897
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/46462945393689
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Jika memilih **Delete contact**: Konfirmasi penghapusan dengan klik **"Delete"** pada pop-up yang muncul. Kontak akan dihapus dari sistem.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan pengeditan, sistem menampilkan notifikasi "Perubahan berhasil disimpan" dan Anda kembali ke daftar kontak menu **Contacts** dengan data yang telah diperbarui.
 
 Jika menghapus kontak, sistem menampilkan pop-up konfirmasi. Setelah klik **"Delete"**, kontak hilang dari daftar dan sistem menampilkan pesan "Kontak berhasil dihapus".
 
 Catatan: Jika Anda berlangganan kedua produk (Qontak CRM dan Qontak Omnichannel), penghapusan kontak di CRM otomatis menghapus kontak dan riwayat percakapan di Omnichannel.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462945389209)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462945390745)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462945391897)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462945393689)
 
 ## Error States  <!-- confidence:high ✓ -->
 

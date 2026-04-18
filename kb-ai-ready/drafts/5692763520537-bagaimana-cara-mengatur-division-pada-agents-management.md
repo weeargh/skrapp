@@ -49,36 +49,7 @@ Untuk mengatur Division pada Agents Management, Anda memerlukan:
 
 6. Untuk mengubah division yang sudah ada, klik tombol Edit pada list Division, lakukan perubahan pada form yang terbuka, kemudian klik tombol Save.
 
-7. Untuk menghapus division, klik tombol Delete pada list Division, lalu konfirmasi dengan klik tombol Delete pada popup notifikasi.
-
-> Screenshot: 85.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50938157911193
-
-> Screenshot: 91.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50938157913625
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774249600537
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774222860953
-
-> Screenshot: division3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774249592217
-
-> Screenshot: 92.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50938151459097
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774222862361
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774249605785
-
-> Screenshot: division7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36774222854809
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Untuk menghapus division, klik tombol Delete pada list Division, lalu konfirmasi dengan klik tombol Delete pada popup notifikasi.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah Division berhasil dibuat:
 
@@ -87,6 +58,16 @@ Setelah Division berhasil dibuat:
 • Division dapat dicari menggunakan fitur Search pada list Division
 • Division dapat diedit atau dihapus kapan saja melalui tombol Edit dan Delete
 • Jika division diassign ke channel spesifik, hanya channel tersebut yang akan menerima alokasi agen dari division ini
+
+![85.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50938157911193)
+![91.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50938157913625)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249600537)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222860953)
+![division3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249592217)
+![92.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50938151459097)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222862361)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249605785)
+![division7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222854809)
 
 ## Error States  <!-- confidence:medium ~ -->
 

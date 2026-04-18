@@ -45,21 +45,7 @@ Untuk memahami perubahan harga Meta pada Qontak Chat mulai 1 Juli 2025, Anda mem
 
 4. Catat bahwa mulai 1 November 2025, kategori Service akan gratis sepenuhnya tanpa Monthly Conversation Credit (MCC).
 
-5. Verifikasi Free Entry Point Conversations Anda tetap gratis namun dihitung berdasarkan pesan individual, bukan percakapan.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48430955482265
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/48430946021401
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/54087758458905
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/54087753541273
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Verifikasi Free Entry Point Conversations Anda tetap gratis namun dihitung berdasarkan pesan individual, bukan percakapan.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah memahami perubahan harga Meta:
 
@@ -68,6 +54,11 @@ Setelah memahami perubahan harga Meta:
 - Anda memahami bahwa Service akan gratis total mulai 1 November 2025
 - Anda siap menyesuaikan strategi messaging dengan model pricing per-pesan
 - Biaya Qontak Chat Anda akan mencerminkan perubahan sesuai zona waktu WhatsApp Business Anda
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48430955482265)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48430946021401)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54087758458905)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54087753541273)
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -44,12 +44,7 @@ Untuk melihat tampilan Company versi mobile, Anda memerlukan:
 
 3. Sistem akan menampilkan halaman Customers. Ketuk tab **"Company list"** untuk mengakses daftar perusahaan.
 
-4. Halaman Company list akan ditampilkan dengan berbagai fitur termasuk search bar, filter, dan daftar perusahaan yang telah terdaftar.
-
-> Screenshot: 24.png
-> Image: https://help-center.qontak.com/hc/article_attachments/46134077629977
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Halaman Company list akan ditampilkan dengan berbagai fitur termasuk search bar, filter, dan daftar perusahaan yang telah terdaftar.## Expected Result  <!-- confidence:high ✓ -->
 
 Halaman Company list pada versi mobile berhasil ditampilkan dengan konten berikut:
 
@@ -59,6 +54,8 @@ Halaman Company list pada versi mobile berhasil ditampilkan dengan konten beriku
 • **Daftar perusahaan** yang telah terdaftar dengan tag deals dan customers
 • **Ikon titik tiga** pada setiap perusahaan untuk opsi edit/hapus
 • **Ikon tambah (+)** di sudut kanan bawah untuk menambah perusahaan baru
+
+![24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46134077629977)
 
 ## Error States  <!-- confidence:low ? -->
 

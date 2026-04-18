@@ -53,63 +53,7 @@ Untuk melakukan assign ticket ke tim pada Mekari Qontak, Anda membutuhkan:
 1. Buka menu Tickets dan klik tab "All Tickets".
 2. Klik tombol "All Filters".
 3. Klik dropdown pada kolom Assignee untuk memilih tim atau member tertentu.
-4. Sistem akan menampilkan daftar tiket yang sesuai dengan filter pilihan Anda.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553051492889
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553051493657
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009589785
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009597977
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009598105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009598873
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009599513
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009599769
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553051511833
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553051512217
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553051512473
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009607961
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009608473
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009609497
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009610265
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553051519129
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553051525401
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/56553009620633
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Sistem akan menampilkan daftar tiket yang sesuai dengan filter pilihan Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil assign ticket ke tim:
 
@@ -117,6 +61,25 @@ Setelah berhasil assign ticket ke tim:
 • Tiket dapat difilter melalui kolom Assignee untuk memudahkan pencarian
 • Semua anggota tim dapat melihat tiket yang di-assign ke tim mereka (dengan opsi include team members pada filter)
 • Beban kerja terdistribusi merata di antara anggota tim, meningkatkan efisiensi penanganan tiket
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553051492889)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553051493657)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009589785)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009597977)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009598105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009598873)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009599513)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009599769)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553051511833)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553051512217)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553051512473)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009607961)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009608473)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009609497)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009610265)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553051519129)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553051525401)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56553009620633)
 
 ## Error States  <!-- confidence:medium ~ -->
 

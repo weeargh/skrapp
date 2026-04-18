@@ -47,48 +47,25 @@ faithfulness_threshold: 0.6
 1. Buka aplikasi Mobile CRM.
 2. Ketuk menu "Other" lalu pilih tab "Unsynchronized Data".
 3. Periksa data pada setiap tab (Deals dan Tasks dapat dikelola saat ini).
-4. Saat koneksi internet tersedia, aplikasi secara otomatis menyinkronkan data yang pending.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540209942553
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540209943833
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540202030361
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540202031385
-
-> Screenshot: 5.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540209946137
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540209947289
-
-> Screenshot: notif.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41553892525081
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540301711769
-
-> Screenshot: 9.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540301713433
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540301714841
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/41540309847833
-
-## Expected Result  <!-- confidence:high ✓ -->
+4. Saat koneksi internet tersedia, aplikasi secara otomatis menyinkronkan data yang pending.## Expected Result  <!-- confidence:high ✓ -->
 
 • Mode offline dikonfigurasi sesuai preferensi pengguna (Automatic, Always online, atau Always offline).
 • Halaman "Unsynchronized Data" menampilkan semua data yang dibuat atau diperbarui saat offline.
 • Data yang tidak tersinkronisasi tersimpan aman di aplikasi hingga koneksi internet dipulihkan.
 • Saat koneksi internet tersedia, data pada tab Deals dan Tasks menyinkronisasi secara otomatis ke server.
 • Notifikasi muncul untuk memberi tahu status sinkronisasi data.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540209942553)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540209943833)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540202030361)
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540202031385)
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540209946137)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540209947289)
+![notif.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41553892525081)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540301711769)
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540301713433)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540301714841)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F41540309847833)
 
 ## Error States  <!-- confidence:medium ~ -->
 

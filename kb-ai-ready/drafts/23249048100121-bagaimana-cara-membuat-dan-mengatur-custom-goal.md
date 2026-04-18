@@ -55,33 +55,20 @@ faithfulness_threshold: 0.6
 7. Klik tombol **"Simpan"** untuk menyimpan Custom Goal.
    Sistem akan menampilkan konfirmasi dan Custom Goal akan muncul di daftar Custom Goal.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah menyimpan, Custom Goal berhasil dibuat dan muncul di menu **Custom Goal** dengan status aktif. Sistem menampilkan detail target yang berisi nama target, periode, tipe, pipeline, total target deal, dan daftar kontributor yang sudah ditambahkan. Semua kontributor yang terdaftar dapat memantau kemajuan mereka masing-masing terhadap target yang telah ditetapkan.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/25418431791641
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/25417506070681
-
-> Screenshot: 3.1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/25417533123481
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/25418365437721
-
-> Screenshot: 7.png
-> Image: https://help-center.qontak.com/hc/article_attachments/25418391619481
-
-> Screenshot: 8.png
-> Image: https://help-center.qontak.com/hc/article_attachments/23249772028441
-
-## Error States  <!-- confidence:medium ~ -->
+Setelah menyimpan, Custom Goal berhasil dibuat dan muncul di menu **Custom Goal** dengan status aktif. Sistem menampilkan detail target yang berisi nama target, periode, tipe, pipeline, total target deal, dan daftar kontributor yang sudah ditambahkan. Semua kontributor yang terdaftar dapat memantau kemajuan mereka masing-masing terhadap target yang telah ditetapkan.## Error States  <!-- confidence:medium ~ -->
 
 1. **Tidak dapat menambahkan kontributor**: Peran akun Anda bukan Admin. Hubungi Admin akun untuk menambahkan kontributor.
 
 2. **Kontributor dari tim lain tidak muncul**: Hierarki Parent Team dan Child Team belum dikonfigurasi. Minta Admin untuk mengatur hubungan tim terlebih dahulu.
 
 3. **Pengguna tertentu tidak dapat dipilih**: Pengguna tidak terdaftar di tim utama atau akses View Deals mereka tidak memungkinkan. Periksa konfigurasi View Deals dan registrasi tim pengguna.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25418431791641)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25417506070681)
+![3.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25417533123481)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25418365437721)
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25418391619481)
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23249772028441)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

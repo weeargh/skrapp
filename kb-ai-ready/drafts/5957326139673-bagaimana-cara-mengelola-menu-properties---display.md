@@ -42,20 +42,13 @@ faithfulness_threshold: 0.6
 5. Sistem akan menampilkan pengaturan Display dengan opsi unggah logo dan pilihan warna tema
 6. (Opsional) Klik tombol **Choose File** untuk mengunggah logo perusahaan atau foto profil Anda
 7. (Opsional) Pilih warna tema dashboard dengan mengklik warna yang Anda inginkan, lalu beri centang pada checkbox warna tema tersebut
-8. Klik tombol **Save Changes** untuk menyimpan semua kustomisasi tampilan
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49113859603353
-
-> Screenshot: mceclip2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766136746521
-
-> Screenshot: mceclip3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36766089782297
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Klik tombol **Save Changes** untuk menyimpan semua kustomisasi tampilan## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengikuti langkah-langkah di atas, halaman Display akan menampilkan konfirmasi bahwa perubahan telah disimpan. Tampilan dashboard CRM Anda akan diperbarui sesuai logo dan warna tema yang Anda pilih. Perubahan hanya berlaku untuk akun Anda sendiri dan tidak memengaruhi tampilan pengguna lain.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49113859603353)
+![mceclip2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136746521)
+![mceclip3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089782297)
 
 ## Error States  <!-- confidence:medium ~ -->
 

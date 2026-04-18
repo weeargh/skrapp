@@ -51,17 +51,14 @@ Untuk melihat dan mengunduh laporan CES pada Reports di Mekari Qontak Omnichanne
 
 5. Lihat tabel **CES Responses** yang menampilkan nama responden, tanggal, channel, agent yang ditugaskan, komentar, dan skor
 
-6. Klik ikon **Unduh** untuk mengekspor data dalam format CSV yang kompatibel dengan Microsoft Excel
-
-> Screenshot: 4.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776287618841
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Klik ikon **Unduh** untuk mengekspor data dalam format CSV yang kompatibel dengan Microsoft Excel## Expected Result  <!-- confidence:high ✓ -->
 
 • Halaman CES Reports terbuka menampilkan ringkasan metrik Customer Effort Score
 • Grafik CES Breakdown menunjukkan distribusi responden dalam kategori Easy (Mudah), Neutral (Netral), dan Difficult (Sulit) dengan persentase dan skor rata-rata
 • Tabel CES Responses menampilkan daftar lengkap responden beserta detail percakapan mereka
 • File CSV berhasil diunduh ke komputer Anda dan dapat dibuka di Microsoft Excel untuk analisis lebih lanjut
+
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287618841)
 
 ## Error States  <!-- confidence:low ? -->
 

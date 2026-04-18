@@ -28,14 +28,11 @@ faithfulness_threshold: 0.9
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Inbox Omnichannel Qontak adalah pusat pengelolaan semua pesan pelanggan yang masuk melalui berbagai saluran komunikasi (WhatsApp, Instagram, Facebook Messenger, dan lainnya). Fitur ini memungkinkan tim customer service untuk melihat, merespons, dan menyelesaikan percakapan pelanggan dalam satu dashboard terpusat. Setiap pesan ditampilkan dalam room chat yang dapat diassign kepada agent, SPV, atau Admin untuk ditangani secara terorganisir.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36781141904281
-
-## Why It Matters  <!-- confidence:high ✓ -->
+Menu Inbox Omnichannel Qontak adalah pusat pengelolaan semua pesan pelanggan yang masuk melalui berbagai saluran komunikasi (WhatsApp, Instagram, Facebook Messenger, dan lainnya). Fitur ini memungkinkan tim customer service untuk melihat, merespons, dan menyelesaikan percakapan pelanggan dalam satu dashboard terpusat. Setiap pesan ditampilkan dalam room chat yang dapat diassign kepada agent, SPV, atau Admin untuk ditangani secara terorganisir.## Why It Matters  <!-- confidence:high ✓ -->
 
 Menu Inbox memastikan tidak ada pesan pelanggan yang terlewat dengan menampilkan counter badge untuk chat yang belum direspons. Fitur ini meningkatkan efisiensi tim dengan menyediakan tools seperti Filter, Search, dan status tracking (Unassigned, Assigned, Resolved) sehingga customer service dapat memprioritaskan pelanggan dengan cepat. Dengan fitur Resolve all expired chat room, tim dapat mengelola percakapan lama secara otomatis, meningkatkan respons time dan kepuasan pelanggan secara keseluruhan.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781141904281)
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

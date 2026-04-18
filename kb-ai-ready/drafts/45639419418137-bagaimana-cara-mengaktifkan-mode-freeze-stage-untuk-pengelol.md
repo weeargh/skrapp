@@ -44,32 +44,17 @@ faithfulness_threshold: 0.3
 5. Centang checkbox **Freeze Stage** di dalam form. Opsi Freeze Stage menjadi aktif.
 6. Klik tombol **Save pipeline**. Sistem menyimpan pengaturan dan kembali ke daftar Pipelines.
 7. Buka menu utama **Deals** dan pilih Pipeline yang telah diaktifkan Freeze Stage. Deals dalam Pipeline ditampilkan dengan status Freeze Stage.
-8. Klik salah satu Deal untuk lihat detailnya. Deal yang dalam status Freeze Stage tidak dapat diedit atau dipindahkan ke stage lain.
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49955802316313
-
-> Screenshot: 27.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49955802331033
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/45639407498649
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/45639419402265
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/45639419403417
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/45639407518233
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/45639419413657
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Klik salah satu Deal untuk lihat detailnya. Deal yang dalam status Freeze Stage tidak dapat diedit atau dipindahkan ke stage lain.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengaktifkan Freeze Stage pada Pipeline, Deals yang berada di stage yang dikonfigurasi dengan Freeze Stage akan terkunci dan tidak dapat diedit atau dimodifikasi. Sistem menampilkan status Freeze Stage pada setiap Deal yang terdampak. Hanya Admin yang dapat mengubah pengaturan Freeze Stage kembali. Data integritas Deal terjaga karena tidak ada modifikasi yang tidak diinginkan setelah Deal mencapai stage final (misalnya Done/Won).
+
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955802316313)
+![27.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955802331033)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639407498649)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639419402265)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639419403417)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639407518233)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639419413657)
 
 ## Error States  <!-- confidence:low ? -->
 

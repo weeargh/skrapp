@@ -49,32 +49,17 @@ Subdomain harus eksklusif untuk pengiriman campaign melalui Qontak dan tidak bol
 
 4. Tunggu email dari tim Qontak berisi informasi DNS Records (dikirim dalam 1x24 jam, hari kerja).
 
-5. Login ke Domain Manager Anda dan masukkan DNS Records yang diterima untuk menyelesaikan pendaftaran subdomain.
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50344321699481
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50344540069401
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50344540070169
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50344540075289
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50344553181209
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50344553182617
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/50344553184281
-
-## Expected Result  <!-- confidence:high ✓ -->
+5. Login ke Domain Manager Anda dan masukkan DNS Records yang diterima untuk menyelesaikan pendaftaran subdomain.## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan semua langkah, Anda akan menerima email dari tim Qontak yang berisi informasi DNS Records lengkap (record tipe MX, TXT, dan lainnya). Sistem akan menampilkan subdomain dan email pengirim yang berhasil terdaftar di akun Qontak Anda. Subdomain dan email pengirim kemudian siap digunakan untuk membuat Email Campaign melalui fitur Campaign di Qontak Omnichannel.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344321699481)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344540069401)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344540070169)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344540075289)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344553181209)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344553182617)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344553184281)
 
 ## Error States  <!-- confidence:medium ~ -->
 

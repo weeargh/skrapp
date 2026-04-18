@@ -63,54 +63,27 @@ Setelah berhasil menambahkan role:
 • Deskripsi peran terlihat di kolom Description
 • Permission yang telah diatur diterapkan dan aktif
 • Role siap diassign ke pengguna baru atau pengguna yang ada
-• Pesan konfirmasi penyimpanan data berhasil ditampilkan
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933745945
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933747097
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933749273
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243975453593
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933751321
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243975455257
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243975456537
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933758105
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933759001
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933760665
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243975461401
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933761305
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/53243933767065
-
-## Error States  <!-- confidence:medium ~ -->
+• Pesan konfirmasi penyimpanan data berhasil ditampilkan## Error States  <!-- confidence:medium ~ -->
 
 • Nama role sudah digunakan: Sistem tidak akan menyimpan role jika nama peran yang sama sudah ada. Gunakan nama role yang unik dan berbeda dari role yang sudah dibuat sebelumnya.
 
 • Form tidak lengkap: Pastikan semua kolom wajib (Role name, Description, Access level) telah diisi sebelum klik tombol Save.
 
 • Tidak ada perubahan setelah klik Save: Refresh halaman Roles untuk melihat role baru yang telah ditambahkan.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933745945)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933747097)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933749273)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243975453593)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933751321)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243975455257)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243975456537)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933758105)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933759001)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933760665)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243975461401)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933761305)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53243933767065)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

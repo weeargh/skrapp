@@ -40,19 +40,14 @@ faithfulness_threshold: 0.6
 4. Di kolom Notes, klik tombol Add Notes. Kolom input catatan muncul.
 5. Ketikkan catatan yang ingin disisipkan (minimal 16 karakter). Klik tombol Save. Catatan tersimpan dan ditampilkan di Room Info.
 6. Di kolom Tags, klik tanda panah. Dropdown menu tags muncul.
-7. Pilih salah satu tag yang tersedia atau ketik untuk membuat tag baru sesuai kategori. Tag tersimpan dan ditampilkan di bawah daftar pesan masuk percakapan.
-
-> Screenshot: 162.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53771437450265
-
-> Screenshot: 163.png
-> Image: https://help-center.qontak.com/hc/article_attachments/53772419343385
-
-## Expected Result  <!-- confidence:high ✓ -->
+7. Pilih salah satu tag yang tersedia atau ketik untuk membuat tag baru sesuai kategori. Tag tersimpan dan ditampilkan di bawah daftar pesan masuk percakapan.## Expected Result  <!-- confidence:high ✓ -->
 
 - Catatan berhasil ditambahkan: teks catatan muncul di kolom Notes pada Room Info.
 - Tag berhasil ditambahkan: tag terbaru muncul di bawah daftar pesan masuk percakapan dengan label yang sesuai kategori yang Anda tentukan.
 - Fitur Tag memudahkan filter Inbox berdasarkan kategori atau jenis penanda yang Anda berikan pada room tersebut.
+
+![162.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53771437450265)
+![163.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53772419343385)
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -58,27 +58,18 @@ faithfulness_threshold: 0.3
 3. Klik tombol **Hapus Kontak**
 4. Pop-up konfirmasi akan muncul
 5. Klik **Delete** untuk mengonfirmasi penghapusan atau **Close** jika berubah pikiran
-6. Sistem akan menghapus kontak dari database
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49586512745753
-
-> Screenshot: Menghapus_Contact_2.jpg
-> Image: https://help-center.qontak.com/hc/article_attachments/5552743600665
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49586544582041
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/49586512747289
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Sistem akan menghapus kontak dari database## Expected Result  <!-- confidence:high ✓ -->
 
 **Setelah membuka kontak:** Halaman detail kontak ditampilkan dengan semua informasi kontak termasuk nama, email, telepon, perusahaan terkait, dan riwayat interaksi.
 
 **Setelah mengedit kontak:** Pesan konfirmasi muncul dan pengguna kembali ke menu Contacts. Data kontak yang diperbarui terlihat di daftar kontak.
 
 **Setelah menghapus kontak:** Kontak hilang dari daftar Contacts. Jika Qontak Omnichannel juga aktif, kontak dan riwayat percakapan otomatis terhapus dari sistem tersebut.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586512745753)
+![Menghapus_Contact_2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5552743600665)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586544582041)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586512747289)
 
 ## Error States  <!-- confidence:low ? -->
 

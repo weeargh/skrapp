@@ -38,23 +38,14 @@ Anda perlu memiliki akses ke aplikasi Qontak Chat di smartphone dengan role Agen
 5. Pilih satu Agent dari daftar (gunakan kolom Search untuk mencari jika diperlukan).
 6. Klik tombol Assign pada pop-up konfirmasi yang muncul.
 7. Konfirmasi notifikasi sukses ditampilkan di layar Anda.
-8. Di Contact Info, ketuk ikon Silang di sebelah nama Agent lama Anda, lalu pilih Remove untuk menghentikan penugasan Anda.
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49415736272921
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49415736275609
-
-> Screenshot: 3.png
-> Image: https://help-center.qontak.com/hc/article_attachments/49415738958873
-
-> Screenshot: 5.PNG
-> Image: https://help-center.qontak.com/hc/article_attachments/36776243591833
-
-## Expected Result  <!-- confidence:high ✓ -->
+8. Di Contact Info, ketuk ikon Silang di sebelah nama Agent lama Anda, lalu pilih Remove untuk menghentikan penugasan Anda.## Expected Result  <!-- confidence:high ✓ -->
 
 Room percakapan berhasil di-handover ke Agent baru. Notifikasi konfirmasi muncul di layar yang menunjukkan penugasan Agent berhasil dilakukan. Agent baru akan segera tampil dalam Contact Info room percakapan. Status Anda sebagai Agent lama di room tersebut akan dihapus setelah Anda memilih Remove.
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49415736272921)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49415736275609)
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49415738958873)
+![5.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776243591833)
 
 ## Error States  <!-- confidence:medium ~ -->
 

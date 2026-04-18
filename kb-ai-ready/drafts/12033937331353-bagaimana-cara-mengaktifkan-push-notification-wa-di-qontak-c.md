@@ -63,75 +63,7 @@ Setelah mengikuti semua langkah, Anda akan melihat:
 2. **Push Notification Aktif**: Sistem mulai mengirimkan notifikasi WhatsApp otomatis berdasarkan trigger yang dipilih
 3. **Konfirmasi Penyimpanan**: Pesan sukses muncul setelah klik "Save"
 4. **Template Terdaftar**: Template pesan tampil dalam daftar push notification yang sedang berjalan
-5. **Notifikasi Terkirim**: Pesan WhatsApp otomatis dikirim ke nomor tujuan sesuai trigger (contoh: saat deal dibuat atau tanggal ulang tahun contact)
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/50564561987993
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780203075609
-
-> Screenshot: Image_004.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194340761
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108728697241
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108728699417
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108739156505
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108739156633
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108728706201
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108728707609
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108728707865
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108728709529
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108728710681
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108739164313
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108739165977
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108728713753
-
-> Screenshot: Screenshot
-> Image: https://help-center.qontak.com/hc/article_attachments/52108739170457
-
-> Screenshot: mceclip1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194356633
-
-> Screenshot: Image_019.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194346649
-
-> Screenshot: 1.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40188290246297
-
-> Screenshot: 2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/40188290251033
-
-> Screenshot: mceclip2.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194358297
-
-> Screenshot: Image_022.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36780194348697
-
-## Error States  <!-- confidence:medium ~ -->
+5. **Notifikasi Terkirim**: Pesan WhatsApp otomatis dikirim ke nomor tujuan sesuai trigger (contoh: saat deal dibuat atau tanggal ulang tahun contact)## Error States  <!-- confidence:medium ~ -->
 
 **Masalah Umum dan Solusi:**
 
@@ -141,6 +73,29 @@ Setelah mengikuti semua langkah, Anda akan melihat:
 4. **"Template pesan ditolak WhatsApp"** → Pastikan template mengikuti panduan WhatsApp (tidak ada link mencurigakan, format sesuai)
 5. **"Nomor tujuan tidak valid"** → Gunakan format lengkap dengan kode negara (contoh: +62812xxxx, bukan 0812xxxx)
 6. **Status tetap "Disconnected"** → Refresh halaman atau coba generate API Token baru di Chat Panel
+
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50564561987993)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203075609)
+![Image_004.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194340761)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108728697241)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108728699417)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108739156505)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108739156633)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108728706201)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108728707609)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108728707865)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108728709529)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108728710681)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108739164313)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108739165977)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108728713753)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52108739170457)
+![mceclip1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194356633)
+![Image_019.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194346649)
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40188290246297)
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40188290251033)
+![mceclip2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194358297)
+![Image_022.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194348697)
 
 ## Escalation  <!-- confidence:medium ~ -->
 

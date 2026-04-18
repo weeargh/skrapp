@@ -41,20 +41,13 @@ faithfulness_threshold: 0.6
 3. Klik tombol **Set to online** untuk mengaktifkan status Anda menjadi Online. Status Anda akan berubah menjadi Online dan siap menerima pesan.
 4. Buka salah satu pesan dari daftar Inbox. Sistem akan menampilkan detail percakapan.
 5. Ketikkan balasan pesan Anda pada kolom input pesan sesuai dengan pertanyaan customer, kemudian klik tombol Kirim. Pesan Anda akan terkirim ke customer.
-6. Jika percakapan sudah selesai, klik tombol **Resolve**. Percakapan akan ditandai sebagai terselesaikan dan ditutup dari Inbox aktif.
-
-> Screenshot: WhatsApp_Image_2022-04-07_at_14.30.16__1_.jpeg
-> Image: https://help-center.qontak.com/hc/article_attachments/36776287525145
-
-> Screenshot: WhatsApp_Image_2022-04-08_at_10.24.57.jpeg
-> Image: https://help-center.qontak.com/hc/article_attachments/36776287521177
-
-> Screenshot: WhatsApp_Image_2022-04-08_at_10.24.50.png
-> Image: https://help-center.qontak.com/hc/article_attachments/36776243531033
-
-## Expected Result  <!-- confidence:high ✓ -->
+6. Jika percakapan sudah selesai, klik tombol **Resolve**. Percakapan akan ditandai sebagai terselesaikan dan ditutup dari Inbox aktif.## Expected Result  <!-- confidence:high ✓ -->
 
 Pesan balasan Anda berhasil dikirim kepada customer dan muncul di dalam thread percakapan. Jika Anda mengklik tombol **Resolve**, percakapan akan ditutup dan tidak lagi muncul di daftar Inbox sebagai chat yang aktif. Status percakapan berubah menjadi Resolved.
+
+![WhatsApp_Image_2022-04-07_at_14.30.16__1_.jpeg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287525145)
+![WhatsApp_Image_2022-04-08_at_10.24.57.jpeg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287521177)
+![WhatsApp_Image_2022-04-08_at_10.24.50.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776243531033)
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -344,22 +344,27 @@ function renderContent(d) {
 }
 
 function postprocessHtml(html) {
-  // Screenshot + Image blockquotes → rendered image block
-  // marked renders consecutive `> ` lines as one blockquote paragraph with <br> between lines
+  // Proxy all direct Zendesk attachment img src → server-side proxy
   html = html.replace(
-    /<blockquote>\s*<p>Screenshot:\s*([\s\S]*?)<br[^>]*>\s*Image:\s*(https?:\/\/[^\s<"]+)[\s\S]*?<\/p>\s*<\/blockquote>/gi,
+    /<img([^>]*)\ssrc="(https:\/\/help-center\.qontak\.com\/hc\/article_attachments\/[^"]+)"([^>]*)>/gi,
+    (_, pre, url, post) => `<img${pre} src="/mekarirag/proxy/image?url=${encodeURIComponent(url)}"${post}>`
+  );
+  // Screenshot + Image blockquotes → rendered image block
+  // Handle both <br> and raw newline (marked.js behaviour varies)
+  html = html.replace(
+    /<blockquote>\s*<p>Screenshot:\s*([\s\S]*?)(?:<br[^>]*>|\n)\s*Image:\s*(https?:\/\/[^\s<"]+)[\s\S]*?<\/p>\s*<\/blockquote>/gi,
     (_, alt, url) => {
       const cleanAlt = alt.trim().replace(/<[^>]+>/g, '');
-      return `<div class="screenshot-block">📷 <strong>${esc(cleanAlt)}</strong><img src="/mekarirag/proxy/image?url=${encodeURIComponent(url.trim())}" alt="${esc(cleanAlt)}" loading="lazy"></div>`;
+      return `<div class="screenshot-block"><img src="/mekarirag/proxy/image?url=${encodeURIComponent(url.trim())}" alt="${esc(cleanAlt)}" loading="lazy">${cleanAlt ? `<span>${esc(cleanAlt)}</span>` : ''}</div>`;
     }
   );
   // Warn callouts: ⚠️ **Penting** / ℹ️ **Catatan**
   html = html.replace(
-    /<blockquote>\s*<p>⚠️\s*<strong>Penting<\/strong><br[^>]*>([\s\S]*?)<\/p>\s*<\/blockquote>/gi,
+    /<blockquote>\s*<p>⚠️\s*<strong>Penting<\/strong>(?:<br[^>]*>|\n)([\s\S]*?)<\/p>\s*<\/blockquote>/gi,
     (_, txt) => `<div class="warn-block">⚠️ <strong>Penting:</strong> ${txt.trim()}</div>`
   );
   html = html.replace(
-    /<blockquote>\s*<p>ℹ️\s*<strong>Catatan<\/strong><br[^>]*>([\s\S]*?)<\/p>\s*<\/blockquote>/gi,
+    /<blockquote>\s*<p>ℹ️\s*<strong>Catatan<\/strong>(?:<br[^>]*>|\n)([\s\S]*?)<\/p>\s*<\/blockquote>/gi,
     (_, txt) => `<div class="note-block">ℹ️ <strong>Catatan:</strong> ${txt.trim()}</div>`
   );
   return html;
