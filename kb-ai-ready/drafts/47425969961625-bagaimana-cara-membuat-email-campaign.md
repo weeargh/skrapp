@@ -56,6 +56,42 @@ Untuk membuat Email Campaign di Mekari Qontak, Anda harus memenuhi persyaratan b
 5. Klik tombol Continue.
    Sistem melanjutkan ke tahap berikutnya untuk memilih template dan mengatur pengiriman.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47425950948889
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50612259910041
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47425969954457
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47425969956633
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47425950953625
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52283953214361
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52283953215257
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52283982579609
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47425969951385
+
+> Screenshot: rev.png
+> Image: https://help-center.qontak.com/hc/article_attachments/47426113314073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47425969955353
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/47425969955865
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik tombol Continue, sistem akan menampilkan halaman berikutnya dalam proses pembuatan Email Campaign. Anda akan dapat memilih template email yang telah dibuat sebelumnya dan mengatur detail pengiriman campaign. Data yang Anda masukkan (Email subject, Sender name, dan Recipient list) tersimpan dan siap untuk tahap konfigurasi template dan jadwal pengiriman.

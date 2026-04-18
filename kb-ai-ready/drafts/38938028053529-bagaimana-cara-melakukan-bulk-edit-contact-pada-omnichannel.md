@@ -52,6 +52,12 @@ faithfulness_threshold: 0.6
 7. Klik tombol **"Upload"**. Sistem akan memproses file dan menampilkan notifikasi konfirmasi.
 8. Data Contact akan tersimpan otomatis di halaman utama menu **Contacts** dengan informasi terupdate di Custom field.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38938028036633
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/38938028040601
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 - Notifikasi sukses muncul mengkonfirmasi file telah terunggah.

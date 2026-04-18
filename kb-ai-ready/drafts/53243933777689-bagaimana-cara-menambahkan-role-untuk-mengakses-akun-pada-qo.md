@@ -56,6 +56,18 @@ Untuk menambahkan role pada Qontak One, Anda memerlukan:
 
 9. Klik tombol Save. Sistem akan menyimpan role baru dan menampilkan halaman daftar role dengan role yang baru dibuat sudah tersedia dalam daftar.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933745945
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933747097
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243933760665
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53243975453593
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan role:

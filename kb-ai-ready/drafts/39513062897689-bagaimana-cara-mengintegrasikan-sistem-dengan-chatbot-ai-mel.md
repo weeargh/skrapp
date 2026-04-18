@@ -46,6 +46,21 @@ faithfulness_threshold: 0.6
 6. Isi Parameter name, Description, dan Type, lalu centang toggle **"Set as required"**.
 7. Klik **"Add"** untuk menyimpan fungsi. Sistem menampilkan konfirmasi bahwa fungsi berhasil ditambahkan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53149538347033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/39513710420633
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51038253023641
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/39513694249497
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/39513710438809
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Fungsi API berhasil ditambahkan ke API Connection. Halaman detail API Connection menampilkan fungsi baru dalam daftar dengan status aktif. AI Chatbot sekarang dapat mengenali user input yang sesuai dengan deskripsi fungsi dan memanggil API untuk mengambil informasi yang diperlukan, memberikan respons yang lebih manusiawi berdasarkan data dari sistem eksternal.

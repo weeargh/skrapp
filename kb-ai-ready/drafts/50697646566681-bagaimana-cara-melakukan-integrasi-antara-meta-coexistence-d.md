@@ -47,6 +47,69 @@ faithfulness_threshold: 0.6
 6. Masuk ke Qontak Omnichannel → Integrations → WhatsApp
 7. Ikuti proses integrasi hingga selesai
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698634890393
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698634896409
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698634900889
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698634901913
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698597099929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698597101081
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698597109017
+
+> Screenshot: A.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50699557856665
+
+> Screenshot: B.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50699557871257
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698764519833
+
+> Screenshot: C.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50699503177625
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698793684121
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698764524313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698793686425
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698764527257
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698793698969
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698793699865
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698634888729
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698597073689
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698634892697
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50698634897945
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 META Coexistence berhasil diintegrasikan. Anda dapat:

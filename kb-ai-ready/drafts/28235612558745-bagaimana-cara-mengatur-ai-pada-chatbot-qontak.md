@@ -52,6 +52,27 @@ faithfulness_threshold: 0.6
 4. Klik "browse" atau drag file PDF ke kolom yang disediakan
 5. Klik "Save" untuk mengimpor file
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52950193479833
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/53149593468441
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXffSXpRjRdUD53RiStGgJzFDR2NBEmYK5jBwV1bWfO3USw7PfLDXVpZfWJ_FA4GF6dezTNdepeNMlTtI47FAmoHPxbaKYbOKtfr7cFXH_qnNRsLvmlmN5SMlLiVsftFNN8lLAz6OrxALMhbSPbJjq6n_XQl?key=a_H2g-u7deYB2NgVxhWKAg
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXepxOn29h-vB9X0jAFERX8CuJLoTQ0FyunAocTMyBSp28Pb9r_T8owWkLyXDBY1NGvBgYhEStfBPm2pfBLMC7D9-InAVsQBpB2HNcgahxzY-qUZAGgVzijvIRVzxNg1-69LodYN1zJJe72hRuHZ-SNJ0OSF?key=a_H2g-u7deYB2NgVxhWKAg
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52950255673881
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52950255681561
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/52950193499289
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menambahkan URL: URL eksternal berhasil ditambahkan sebagai sumber pelatihan AI. Data dari website ditampilkan dalam preview dan siap digunakan oleh AI Chatbot.

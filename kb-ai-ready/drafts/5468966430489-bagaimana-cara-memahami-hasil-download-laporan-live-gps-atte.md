@@ -54,6 +54,15 @@ Untuk memahami hasil download laporan Live GPS Attendance Tracking pada Daily Re
 4. File laporan akan otomatis terunduh ke perangkat Anda.
    → Buka file untuk melihat detail lengkap data attendance.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/6054188701337
+
+> Screenshot: Laporan_GPS_1.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089356953
+
+> Screenshot: Laporan_GPS_2.jpg
+> Image: https://help-center.qontak.com/hc/article_attachments/36766089366809
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mengunduh laporan **Daily Check-in Report**, Anda akan melihat sheet Excel yang berisi:

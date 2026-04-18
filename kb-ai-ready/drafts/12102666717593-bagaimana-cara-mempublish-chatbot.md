@@ -48,6 +48,12 @@ Untuk mempublish chatbot Qontak:
 4. Klik opsi **"Publish"** dari menu dropdown. Sistem akan memproses permintaan publish.
 5. Tunggu hingga proses selesai. Status conversation akan berubah dari "Unpublished" menjadi "Published".
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51515336067353
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/51515356538393
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil mempublish chatbot, Anda akan melihat:

@@ -55,6 +55,15 @@ Catatan: Penambahan report ke Dashboard hanya berlaku untuk pengguna individual 
 5. Pilih "Download XLS" dari menu dropdown.
    → File Excel akan diunduh ke perangkat Anda.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774148101657
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774148100121
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774148106009
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengunduh laporan Customer Geolocation Map, file Excel akan berisi data semua customer di semua pipeline dengan kolom berikut:

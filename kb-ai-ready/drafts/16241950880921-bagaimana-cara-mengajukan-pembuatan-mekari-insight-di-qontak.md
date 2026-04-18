@@ -52,6 +52,9 @@ Catatan: Jika perusahaan Anda belum berlangganan Mekari Insight, Anda perlu mela
 
 5. Jika perusahaan sudah berlangganan namun Anda belum memiliki akses: Hubungi Admin atau Owner perusahaan untuk mengajukan akses, atau klik **Switch account** untuk beralih ke akun yang sudah memiliki izin akses.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/43822900289305
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengajukan akses Mekari Insight:

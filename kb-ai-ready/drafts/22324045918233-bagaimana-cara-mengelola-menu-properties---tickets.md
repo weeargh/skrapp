@@ -58,6 +58,27 @@ Untuk mengelola menu Properties pada Tickets, Anda membutuhkan:
 
 10. Klik **"Save"** untuk menyimpan perubahan. Sistem akan memperbarui daftar property.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50911549787929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184450073
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184452377
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142825625
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142823321
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142824089
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781184449177
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Property berhasil dibuat, diubah, atau dihapus:

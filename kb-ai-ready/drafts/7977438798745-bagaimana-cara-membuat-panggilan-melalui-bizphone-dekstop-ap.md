@@ -48,6 +48,18 @@ faithfulness_threshold: 0.6
 
 **Alternatif:** Anda juga dapat melakukan panggilan langsung melalui Qontak CRM dengan membuka profil kontak dan klik ikon "Telepon".
 
+> Screenshot: Click_to_call.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774121437465
+
+> Screenshot: Conversation_history.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774121442841
+
+> Screenshot: Phone_activity_reports.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774148242969
+
+> Screenshot: Image 20.png
+> Image: https://help-center.qontak.com/hc/article_attachments/36774148248089
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 • Panggilan berhasil terkoneksi ke nomor tujuan

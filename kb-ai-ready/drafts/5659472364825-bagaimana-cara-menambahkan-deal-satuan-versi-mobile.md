@@ -59,6 +59,24 @@ Untuk menambahkan deal satuan melalui aplikasi mobile Qontak CRM, Anda memerluka
 7. Verifikasi semua data sudah benar, lalu klik **"Save"**.
    → Deal baru akan tersimpan dan muncul di daftar Deal.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46148112663577
+
+> Screenshot: Screenshot
+> Image: https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNe4XFQzoVWnl_dRjnKL9fuosaxgAuAXjwfgvZJ1pP0GeollrY2E2wuSQtJMZ-gthitoxOTDurggFq1SwAIURBizsqVuuEOwRKmvXYYBTB5AUZiZO2N3NEDDEGrLNG9rQbKY4pMA?key=JYTyBa7b7VGn7J2HMNHF33kc
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46148169678105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46148169679385
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46148097130777
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/46148097141401
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menambahkan Deal satuan melalui aplikasi mobile, Anda akan melihat:

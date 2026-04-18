@@ -50,6 +50,45 @@ Untuk mengarahkan Bot Response Branch sebagai Greetings dengan API response, And
 10. Atur kondisi **Else** untuk fallback jika kondisi tidak terpenuhi.
 11. Klik **Save** untuk menyimpan konfigurasi Branch.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801510789401
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801519187865
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801510794265
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801519193625
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801519194393
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801510804889
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801510806297
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801519203097
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801519205017
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801510822681
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801519208985
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801519199001
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44801510809881
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah semua langkah selesai, Bot Response Branch berhasil dibuat dengan API response. Sistem akan menampilkan Branch baru pada Diagram Pohon dengan koneksi ke API yang dikonfigurasi. Kondisi yang Anda atur akan dicocokkan dengan respons API yang diterima, dan Bot akan memberikan response sesuai kondisi yang terpenuhi atau fallback condition (Else) jika tidak ada kondisi yang cocok.

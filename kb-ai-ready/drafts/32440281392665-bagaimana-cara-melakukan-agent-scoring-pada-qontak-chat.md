@@ -52,6 +52,42 @@ Proses ini memerlukan dua tahap utama: membuat Scorecard beserta parameter penil
 
 Sistem akan menampilkan parameter yang telah dibuat pada halaman Scorecard.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50941930028313
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/44411253824665
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529389977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535941657
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535942681
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50941930030233
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50941921107737
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50941930034969
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529406873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774529408537
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535948697
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774535961881
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan proses pembuatan Scorecard:

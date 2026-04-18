@@ -57,6 +57,18 @@ faithfulness_threshold: 0.6
 
 10. Untuk menghapus properti: Klik tombol **Destroy** pada properti yang ingin dihapus.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781142064025
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781183758873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781183763225
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36781183763865
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Properti baru berhasil dibuat dan muncul dalam daftar Properties tab **Companies**. Properti dapat digunakan untuk mengisi informasi Company tambahan sesuai dengan Field Type yang dipilih. Jika opsi **Show** diaktifkan, properti akan muncul di halaman detail setiap Company. Perubahan atau penghapusan properti langsung diterapkan ke semua Company yang menggunakan properti tersebut.

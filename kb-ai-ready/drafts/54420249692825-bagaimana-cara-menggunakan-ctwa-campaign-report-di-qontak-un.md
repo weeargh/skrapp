@@ -57,6 +57,39 @@ Persyaratan sebelum memulai:
 5. Gunakan filter tanggal dan parameter lainnya untuk analisis lebih mendalam.
    → Laporan dapat disesuaikan untuk periode dan segmen tertentu.
 
+> Screenshot: rev 3.png
+> Image: https://help-center.qontak.com/hc/article_attachments/54446708024345
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420249675673
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420249676697
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420265848217
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420249677977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420249685913
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420265853721
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420249686681
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420265855001
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420265855257
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54420265855641
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengakses CTWA Ad Campaign Report, Anda dapat melihat:

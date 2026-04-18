@@ -53,6 +53,9 @@ Untuk membuat template campaign WhatsApp, Anda memerlukan:
 10. Klik tombol **Submit** untuk mengirimkan template ke META untuk persetujuan.
 11. Tunggu notifikasi persetujuan dari META (biasanya 24 jam).
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/54944451887513
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah template berhasil dibuat dan disetujui oleh META, Anda akan melihat:

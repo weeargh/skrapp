@@ -51,6 +51,12 @@ Idle Rule Settings digunakan untuk mengatur mekanisme reassign chat ketika Agent
 
 6. Klik tombol **Save changes** untuk menyimpan pengaturan. Sistem akan memproses dan menyimpan konfigurasi Idle Rule Anda.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163185305
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36776163187865
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah berhasil menyimpan Idle Rule Settings:

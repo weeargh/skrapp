@@ -53,6 +53,12 @@ Untuk membuat Product Category dan Subcategory di Qontak CRM, Anda membutuhkan:
 3. Isi ID Subkategori, Nama subkategori, dan (opsional) Deskripsi
 4. Klik Save untuk menyimpan semua pengaturan
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49112578560025
+
+> Screenshot: 2.png
+> Image: https://help-center.qontak.com/hc/article_attachments/49112625578521
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah mengklik Save:

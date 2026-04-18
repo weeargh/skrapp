@@ -44,6 +44,9 @@ Untuk menggunakan fitur Natural Language Processing (NLP) pada chatbot Qontak, A
 4. Kembali ke halaman chatbot dan klik "Preview Conversation" untuk memverifikasi bot response yang telah ditetapkan.
 5. Konfigurasi jenis respons bot seperti Button, List, Text (with attachment), atau AI Response sesuai kebutuhan.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/37617138739481
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Fitur Natural Language Processing (NLP) berhasil dikonfigurasi. Bot akan merespons user input berdasarkan Trigger texts yang telah Anda tetapkan. Saat user mengirim pesan yang cocok dengan salah satu trigger keyword, chatbot secara otomatis menampilkan Bot Response yang telah Anda atur. Semakin banyak Trigger texts yang ditambahkan, semakin tinggi tingkat akurasi respons chatbot.

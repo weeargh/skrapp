@@ -52,6 +52,9 @@ faithfulness_threshold: 0.6
 
 7. Pilih **Download CSV** untuk mengunduh laporan dalam format CSV. File akan mulai diunduh ke perangkat Anda dalam format yang kompatibel dengan Microsoft Excel.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50121670117657
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Laporan Contact berhasil ditampilkan dengan data Total Contacts, Daily Trend, Weekly Trend, Monthly Trend, Quarterly Trend, grafik New Contact Overtime, dan metrics aktif customers sesuai filter yang dipilih. File CSV berhasil diunduh ke perangkat dengan nama file laporan Contact dan dapat dibuka di Microsoft Excel atau aplikasi spreadsheet lainnya untuk analisis lebih lanjut.

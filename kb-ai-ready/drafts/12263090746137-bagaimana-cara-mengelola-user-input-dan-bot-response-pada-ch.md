@@ -46,6 +46,39 @@ Sebelum mengelola User Input dan Bot Response pada Chatbot, pastikan Anda memili
 6. Klik tombol "+" kemudian pilih "Bot Response" untuk membuat respons bot.
 7. Konfigurasi Bot Response sesuai kebutuhan percakapan Anda.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173236633
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149645977
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173230873
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173237529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173246745
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173240857
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149663385
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173243929
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774173233817
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149655961
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/36774149667609
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah menyelesaikan langkah-langkah di atas, User Input dan Bot Response berhasil dikonfigurasi. Chatbot Anda akan:

@@ -49,6 +49,33 @@ Untuk mengekspor chat history di Qontak Omnichannel, Anda memerlukan:
 10. Tunggu notifikasi email dengan lampiran file yang sudah diekspor
 11. Klik lampiran pada email untuk mengunduh file data chat history
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50327593851033
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50327593854105
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50327593858841
+
+> Screenshot: 4.1.png
+> Image: https://help-center.qontak.com/hc/article_attachments/50327593861529
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50327593863449
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50327593867161
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50327610378393
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/50327593871897
+
+> Screenshot: pasted
+> Image: https://help-center.qontak.com/hc/article_attachments/36776289441177
+
 ## Expected Result  <!-- confidence:high ✓ -->
 
 Setelah proses ekspor berhasil, Anda akan menerima email notifikasi ke alamat email akun Qontak. Email berisi lampiran file data chat history yang dapat diunduh. File berisi semua pesan masuk sesuai filter yang dipilih (periode, channel, dan agent). Anda dapat membuka dan menganalisis data tersebut menggunakan aplikasi spreadsheet atau text editor.

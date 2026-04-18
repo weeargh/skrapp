@@ -29,6 +29,18 @@ faithfulness_threshold: 0.9
 
 Prompt dan instruksi Chatbot AI adalah panduan terstruktur yang diberikan kepada AI untuk mengontrol perilaku, gaya komunikasi, dan cara merespons pelanggan. Dalam Qontak Chat, prompt terdiri dari tiga elemen utama: Knowledge Base (informasi faktual), Custom Prompt (gaya dan cara berinteraksi), dan Human Handover Conditions (aturan untuk meneruskan ke Agent manusia). Prompt yang efektif memastikan chatbot memberikan jawaban konsisten dan sesuai dengan identitas brand Anda.
 
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55092256917017
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55092284943513
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55092284943897
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/55092284944281
+
 ## Why It Matters  <!-- confidence:high ✓ -->
 
 Menyusun prompt yang efektif memastikan chatbot AI Anda beroperasi sesuai standar operasional yang sama dengan karyawan baru menerima SOP. Dengan instruksi yang jelas, chatbot dapat menangani pertanyaan pelanggan secara konsisten, menerapkan brand voice yang tepat, dan mengetahui kapan harus mengalihkan percakapan ke Agent manusia. Hal ini meningkatkan kualitas layanan pelanggan, mengurangi kesalahan respons, dan memaksimalkan efisiensi tim Omnichannel Anda.

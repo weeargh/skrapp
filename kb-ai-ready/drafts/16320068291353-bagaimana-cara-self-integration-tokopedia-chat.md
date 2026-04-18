@@ -53,6 +53,36 @@ Untuk melakukan Self Integration Tokopedia Chat di Qontak Omnichannel, Anda meme
 
 7. Sistem akan menampilkan notifikasi bahwa Tokopedia Chat berhasil terintegrasi.
 
+> Screenshot: Screenshot
+> Image: https://lh6.googleusercontent.com/fFJpkoFqGISGZw4qBfmGrD2233IJMxZkSq7LClmXrshV9wjEX_h-p_JWKM6HujtqmRuSfI_qI745lkut0h1mgRMTmSyttXjJ-YKo6IW9FvW3WwsILqVx8cZLtAUquKpXTKP0VPz4c1OPYPPtZcYW1lk
+
+> Screenshot: Screenshot
+> Image: https://lh3.googleusercontent.com/ESi5-2skNl9Pj5fu5Z_mXHAssv8X9bAUS74VeylqN_2T0Meb2KxS0UMW8xPPsGx8KgPBVqgWqTDEDpjC3RxM5X6skDCDvy6dM24asfwnc4T5dVRMJY1QDb3vDwchR7LeFNqw8vFmVsLwkBepRW50WTo
+
+> Screenshot: Screenshot
+> Image: https://lh4.googleusercontent.com/Z56tzrEZOaVVQ7xS9Ez1jg4vh1y7yanMtrefHP8VMpNEE8gn8_EikJH-6w9qwlSJRXqYEhW2PuzXslnuAlSLsaopmVI0aO7NaRz26607SD3sUDrILTryEYxO_CH1qHYplcNTNcwzmuyU35H4d3KTUOo
+
+> Screenshot: Screenshot
+> Image: https://lh3.googleusercontent.com/kHQxGLl6YPdr4Gujoo8yaSWlGRde6WO3SGNhXu6c3Bglo-W-HHXIR4vz5nRyuPGmvKhSvMgxj7Q2sTLZJbJMswqBObHYpscCpe1h4q7tv08ShqL85t3cRmpWsVvYwhXpqOOxuGezdFvTa4XMH4IprLE
+
+> Screenshot: Screenshot
+> Image: https://lh3.googleusercontent.com/wBveHg2m_RF2jHt1Y6iPh7fNr4UdxHxWrUFIIz1adYqTc8Tm3Mikj2EDy-EzDScWE6uIjRRrtnq9YXiu2JG80jweFVlFdXPOHUcbtHWBjyJPkNtRDFwEegH_mgWx13xCercQNv39YkhzfbJVb6dswlI
+
+> Screenshot: Screenshot
+> Image: https://help-center.qontak.com/hc/article_attachments/49067876049945
+
+> Screenshot: Screenshot
+> Image: https://lh6.googleusercontent.com/e58PbIV6HTPCJrNRUt_d_t0MQ5vKRLJ29BZBUUcap51hCMYRevCPLTlW-dQs3bIeTFwKf5s6U1___ybRDVcxyl7YKSBrIujTZ-QiQkqf9PCzx2qa77mb6Q01LteObkB9INo5_4suaLwWlMPmnrMYEWk
+
+> Screenshot: Screenshot
+> Image: https://lh5.googleusercontent.com/JH0yxFG2jeEYJ1IHzDcPaZnmEwRqSMxCnXR785GrvikB98TjYmOkYzOFBkudqUjnawAqu2ySUvgXnqhnaYUqge0sqJ4Aj9l0oGEm2b5yQmOTTUKzYQlgcbhNX73l_d1d5ltTpKhWNPA9lsC7J-auPj8
+
+> Screenshot: Screenshot
+> Image: https://lh3.googleusercontent.com/qISGiR_CC5eM4QExywq-ZJRKnG0_otMD8vRA8mUgR6tJU0T9g6foaikHTmqmJnR43RIBOmlJ79J3yISAzLb7TfJQJtW5jUJLDDwzqMjVY3cjhs__BWPSGp91Tp8KruEUymdYgRblsPopQOgjmgLqHP0
+
+> Screenshot: Screenshot
+> Image: https://lh6.googleusercontent.com/OLlwpdMD5Mu5qAh4frCJAsZIpusFScPM1JQGcXwoFIP5IAFb1rjlaeavBbKi7iu6YEgwdsZUpmKQIoN4aGN2X9QPB2juKWFXeWOBUfYRfCEb8oomSTtK6H7SZpWd4rCA2b6jRjyBll5T-EWIgSxorLs
+
 ## Expected Result  <!-- confidence:medium ~ -->
 
 Setelah Self Integration Tokopedia Chat berhasil, Anda akan melihat:
