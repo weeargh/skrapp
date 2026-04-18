@@ -37,25 +37,31 @@ Untuk melihat tampilan Deals versi mobile pada Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda melalui aplikasi mobile.
-   → Dashboard mobile Qontak CRM akan ditampilkan.
 
-2. Klik menu Deals pada bagian bawah navigasi menu.
-   → Sistem akan menampilkan daftar Deals dalam tampilan mobile. Anda akan melihat Deal yang dikelompokkan berdasarkan stage alur kerja tertentu.
-
-3. Klik salah satu Deal untuk melihat informasi detail.
-   → Detail Deal akan ditampilkan sesuai dengan stage alur kerja yang sedang berjalan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengikuti langkah-langkah di atas, Anda akan melihat:
-
-1. Halaman menu Deals versi mobile dengan daftar semua Deal
-2. Deal dikelompokkan berdasarkan stage alur kerja tertentu
-3. Informasi detail Deal dapat diakses dengan mengklik salah satu Deal
-4. Anda dapat mengelola dan memperbarui Deal langsung dari tampilan mobile ini
-
+Qontak CRM tersedia dalam 2 versi yaitu versi _website_ dan _mobile_. Sehingga apabila Anda ingin mengelola transaksi Deals Anda, Anda dapat langsung melakukannya pada pada Deals versi Mobile. Berikut tampilan dari Deals versi mobile:
+  1. Login ke akun Qontak CRM Anda. 
+  2. Klik Menu **Deals** , pada bagian bawah menu dan akan ditampilkan tampilan dari Menu Deals versi mobile sebagai berikut.   
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46147689686809)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46147704797081)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46147704803737)
+Hanya Deal pada stage alur kerja tertentulah yang dapat Anda lihat informasinya lebih detail.
+
+**Keterangan:**
+**No** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | Pipeline | Untuk memudahkan Anda dalam mengelompokkan data deal berdasarkan jenis alur yang harus diselesaikan  
+2 | Search bar | Untuk dapat mencari deal yang diinginkan, dengan cara menuliskan nama dari deals atau detail deals lainnya.  
+3 | Filter |  Untuk melakukan filter deal berdasarkan Owner, Team, Asosiasi perusahaan dan Deals, Created date, Modified date, dan seluruh property yang ada pada menu deal.
+
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46147704797081)  
+4 | Total deal  | Jumlah keseluruhan Deal.  
+5 | List Deal | Deretan Deal yang telah dibuat.  
+6 | Tap Tag Deal | Klik tag-tag tersebut untuk dapat mengakses list **customer** , **perusahaan** , dan jenis produk.  
+7 | Ikon tambah Deal | Klik ikon tersebut untuk menambahkan Deal.  
+8 | Ikon titik tiga |  Klik ikon tersebut untuk dapat melakukan edit, menduplikasi, memindahkan stage, atau menghapus Deal.
+
+Apabila Anda tidak dapat melakukan edit pada Deal seperti pada tampilan berikut, maka berarti kondisi Deal Anda sedang terjadi **“Frozen stage”**. Silahkan hubungi **Admin/Super Admin** Anda untuk dapat menonaktifkan fitur**“Freeze stage”**. Anda juga dapat pelajari [di sini](https://help-center.qontak.com/hc/id/articles/45639419418137-Bagaimana-Cara-Mengaktifkan-Mode-Freeze-Stage-untuk-Pengelolaan-Deals) lebih lanjut terkait fitur tersebut.   
+9 | Ikon titik tiga bagian atas |  Klik ikon tersebut untuk melakukan **Sort deals** atau **Adjust card**.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46147704803737)  
+10 | Stage Deal | Tahapan pada Deal. Dalam contoh tampilan berikut, tahapan Deal berada pada **‘Qualified’**.
 
 ## Error States  <!-- confidence:low ? -->
 

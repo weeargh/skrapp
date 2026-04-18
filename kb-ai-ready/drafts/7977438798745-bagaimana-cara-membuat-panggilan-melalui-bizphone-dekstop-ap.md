@@ -38,28 +38,15 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Bizphone Desktop App dan pastikan Anda sudah Sign In ke akun Bizphone Anda.
 
-2. Klik ikon "Tombol - Tombol Nomor" (numeric keypad) untuk membuka panel input nomor telepon.
-
-3. Masukkan nomor telepon tujuan yang ingin Anda hubungi menggunakan tombol-tombol angka yang tersedia.
-
-4. Setelah memasukkan nomor lengkap, klik ikon "Phone Handle" (gagang telepon) untuk memulai panggilan. Sistem akan langsung menghubungkan Anda ke nomor tersebut dan menampilkan status panggilan yang sedang berlangsung.
-
-**Alternatif:** Anda juga dapat melakukan panggilan langsung melalui Qontak CRM dengan membuka profil kontak dan klik ikon "Telepon".## Expected Result  <!-- confidence:high ✓ -->
-
-• Panggilan berhasil terkoneksi ke nomor tujuan
-• Jendela panggilan aktif menampilkan nomor yang sedang dihubungi, durasi panggilan, dan tombol kontrol (hold, transfer, hangup, mute)
-• Status "Connected" atau "In Call" ditampilkan di aplikasi Bizphone
-• Riwayat panggilan secara otomatis tersimpan di Riwayat Percakapan Bizphone
-• Panggilan dapat dicatat dalam Qontak CRM jika dilakukan melalui fitur Click to Call## Error States  <!-- confidence:medium ~ -->
-
-• **Tidak dapat memasukkan nomor**: Pastikan ikon "Tombol - Tombol Nomor" benar-benar diklik untuk membuka panel input.
-• **Panggilan tidak terhubung**: Verifikasi bahwa lisensi Bizphone masih aktif dan koneksi internet stabil. Cek kembali nomor telepon yang dimasukkan.
-• **Sign In terputus**: Lakukan Sign In ulang ke akun Bizphone Anda sebelum melakukan panggilan.
-• **Fitur Click to Call tidak muncul di CRM**: Pastikan integrasi Bizphone dengan Qontak CRM sudah diaktifkan di pengaturan organisasi.
-
+###  1. Sign In Bizphone untuk Melakukan Panggilan[](https://help-center.qontak.com/hc/id/articles/7977438798745-Bagaimana-Cara-Membuat-Panggilan-Melalui-Bizphone-Dekstop-App#h_01KP5S558J68TDTVSEBV9T977M)
+Pada Aplikasi Bizphone App, Anda dapat melakukan dan menerima panggilan telepon melalui komputer Anda. Sebelumnya, Anda perlu[ Sign In ](https://help-center.qontak.com/hc/id/articles/7971888738585-Cara-Sign-In-Bizphone-Dekstop-App)ke dalam akun Bizphone Anda.
+Berikut adalah cara membuat panggilan melalui Bizphone Dekstop App:
+  1. Klik ikon **“Tombol - Tombol Nomor”** dan masukkan nomor telepon tujuan Anda. Kemudian, tekan ikon **"Phone Handle".**  
 ![Bizphone.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148237465)
+
+###  2. Click to Call[](https://help-center.qontak.com/hc/id/articles/7977438798745-Bagaimana-Cara-Membuat-Panggilan-Melalui-Bizphone-Dekstop-App#h_01KP5S558J4701G1K7EY4W710Z)
+Dapat dengan mudah terintegrasi dan diklik dari CRM.  
 ![Click_to_call.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121437465)
 
 ## Escalation  <!-- confidence:medium ~ -->

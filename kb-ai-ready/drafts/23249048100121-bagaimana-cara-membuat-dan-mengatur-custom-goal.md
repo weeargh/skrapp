@@ -37,37 +37,32 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:medium ~ -->
 
-1. Buka menu **Custom Goal** di Qontak CRM.
-   Sistem akan menampilkan daftar Custom Goal yang sudah dibuat.
 
-2. Klik tombol **"Buat target"** di sudut kanan atas halaman.
-   Sistem akan membuka halaman formulir pembuatan target.
-
-3. Isi formulir data target dengan kolom: **Nama target**, **Periode target**, **Tipe target**, **Pipeline**, dan **Total target deal**.
-
-4. Klik tombol **"Tambah kontributor"** untuk menentukan kontributor target.
-
-5. Pilih kontributor dengan memilih kategori **Karyawan tim utama** atau **Karyawan dari tim lainnya**.
-   (Opsional) Klik **"Filter"** untuk menemukan kontributor berdasarkan Tim dan Level staf, lalu klik **"Terapkan filter"**.
-
-6. Klik tombol **"Tambah"** untuk menambahkan kontributor.
-
-7. Klik tombol **"Simpan"** untuk menyimpan Custom Goal.
-   Sistem akan menampilkan konfirmasi dan Custom Goal akan muncul di daftar Custom Goal.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyimpan, Custom Goal berhasil dibuat dan muncul di menu **Custom Goal** dengan status aktif. Sistem menampilkan detail target yang berisi nama target, periode, tipe, pipeline, total target deal, dan daftar kontributor yang sudah ditambahkan. Semua kontributor yang terdaftar dapat memantau kemajuan mereka masing-masing terhadap target yang telah ditetapkan.## Error States  <!-- confidence:medium ~ -->
-
-1. **Tidak dapat menambahkan kontributor**: Peran akun Anda bukan Admin. Hubungi Admin akun untuk menambahkan kontributor.
-
-2. **Kontributor dari tim lain tidak muncul**: Hierarki Parent Team dan Child Team belum dikonfigurasi. Minta Admin untuk mengatur hubungan tim terlebih dahulu.
-
-3. **Pengguna tertentu tidak dapat dipilih**: Pengguna tidak terdaftar di tim utama atau akses View Deals mereka tidak memungkinkan. Periksa konfigurasi View Deals dan registrasi tim pengguna.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25418431791641)
+Dengan Custom Goal, Anda dapat secara mudah membuat dan mengatur target untuk Anda atau karyawan, memantau kemajuan, dan melacak pencapaian berdasarkan data penjualan serta penjualan produk di perusahaan Anda. Berikut langkah-langkahnya.
+**Penting**  
+Penambahan kontributor pada saat membuat custom target hanya dapat dijalankan oleh akun dengan peran Admin. Jika Anda bukan Admin, harap segera menghubungi Admin Anda. Berikut merupakan hal-hal yang harus Anda perhatikan pada saat membuat Custom Target.  
+1. Untuk menambahkan pengguna saat menambahkan kontributor pada Custom Target, pastikan [akun Anda dan akun tim terdaftar di tim utama](https://help-center.qontak.com/hc/id/articles/5456771764761-Bagaimana-Cara-Mengedit-User-Details).  
+2. Jika Anda perlu menambahkan kontributor dari tim lain yang masih dalam pengawasan Anda, pastikan [konfigurasi hierarki tim Induk dan tim Anak](https://help-center.qontak.com/hc/id/articles/5496565707161-Bagaimana-Cara-Mengatur-Parent-Team) yang tersusun dalam organisasi Anda diatur dengan benar.  
+3. Penambahan kontributor akan bergantung pada akses [View Deals](https://help-center.qontak.com/hc/id/articles/5486351799065-Bagaimana-Cara-Mengedit-Deal-Access) yang diberikan kepada pengguna. Lihat kondisi berikut:  
+- **View Deals** = **Everything** → pengguna dapat menambahkan semua pengguna pada susunan organisasi sebagai kontributor dalam Custom Target.  
+- **View Deals** = **Team Only** → pengguna dapat menambahkan semua pengguna di tim mereka dan pengguna lain dari tim berbeda berada di bawah hierarki mereka yang terlibat sebagai kontributor dalam Custom Target.  
+- **View Deals** =**Owned Only** → pengguna hanya dapat menambahkan dirinya sendiri sebagai kontributor pada suatu target.
+###  A. Cara Membuat Custom Goal[](https://help-center.qontak.com/hc/id/articles/23249048100121-Bagaimana-Cara-Membuat-dan-Mengatur-Custom-Goal#h_01HAXGAQ40ED3CM4Q28DZ820DY)
+  1. Masuk ke menu **Custom Goal**.
+  2. Pada atas kanan halaman Qontak Anda, klik **"Buat target".  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25418431791641)  
+**
+  3. Lalu, pada halaman Buat target, isikan form data Anda yang terdiri dari **Nama target** , **Periode target** ,**Tipe target** , **Pipeline** , serta **Total target deal**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25417506070681)
+  4. Tentukan kontributor target dengan klik **“Tambah kontributor”**.  
 ![3.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25417533123481)
+  5. Kemudian, sesuaikan target Anda dengan mengisi kolom berikut. Anda dapat memilih kontributor dengan posisi **Karyawan tim utama** untuk karyawan dari tim utama atau **Karyawan dari tim lainnya** untuk posisi karyawan dari tim lain. Kemudian, klik **“Tambah”**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25418365437721)
+
+###  B. Cara Mengatur Custom Goal[](https://help-center.qontak.com/hc/id/articles/23249048100121-Bagaimana-Cara-Membuat-dan-Mengatur-Custom-Goal#h_01HBA69JD3MJ2PCVM33Z5G3TTF)
+  1. Setelah membuat Goals, Anda dapat melihat, mengedit, menggandakan, dan menghapusnya dengan klik ikon **panah ke bawah**. Anda juga dapat memantau perkembangan pada Goals melalui kolom **Total pencapaian**. Selain itu, untuk melihat pencapaian per kontributor, klik **“Lihat details”**.  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F25418391619481)
+  2. Apabila Anda klik menu “**Lihat detail”** akan terdapat **Detail target** yang tertera .  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23249772028441)
 
 ## Escalation  <!-- confidence:medium ~ -->

@@ -39,27 +39,17 @@ Catatan: Penambahan laporan ke Dashboard hanya berlaku untuk pengguna individual
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda. Sistem akan menampilkan halaman Dashboard utama.
 
-2. Buka menu "Report Template" dari navigasi utama. Sistem akan menampilkan daftar template laporan yang tersedia.
-
-3. Klik tab "Ticketing" untuk melihat laporan khusus ticketing. Tab akan menampilkan berbagai tipe Ticket Reports yang dapat ditambahkan.
-
-4. Klik tombol "Add to Dashboard" pada laporan yang ingin Anda tambahkan. Sistem akan secara otomatis menambahkan laporan tersebut ke halaman Dashboard Anda.
-
-5. Untuk menghapus laporan, kembali ke Report Template, klik tab "Ticketing", lalu klik tombol "Remove from Dashboard" pada laporan yang ingin dihapus.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil menambahkan Ticket Reports ke Dashboard:
-
-• Laporan muncul di halaman Dashboard Qontak CRM Anda
-• Laporan menampilkan data tiket yang dapat dimonitor secara real-time
-• Laporan hanya terlihat di Dashboard pengguna yang menambahkannya (bukan untuk seluruh organisasi)
-• Anda dapat melihat metrik seperti volume tiket harian, distribusi tahap, prioritas, dan sumber
-• Laporan siap dianalisis untuk memantau efektivitas operasi layanan pelanggan
-
+Kini, Anda sebagai role **Agents** dan **Supervisor** dapat dengan mudah memantau dan menganalisis efektivitas operasi layanan pelanggan ketika menggunakan fitur tiket. Anda dapat secara otomatis mengelola Ticket Reports melalui halaman **Report Template** yang nantinya dapat Anda tambahkan pada halaman Dashboard pada Mekari Qontak CRM. Berikut langkah-langkahnya:
+  1. Masuk ke akun CRM Anda, lalu pilih menu **“Report Template”**.
+  2. Kemudian klik tab **“Ticketing”**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686735313561)
+  3. Lalu klik **“Add to Dashboard”**. Selanjutnya laporan akan ditambahkan secara otomatis ke halaman Dashboard Anda (penambahan ini tidak berlaku untuk semua pengguna di **Organization**).   
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686735318425)
+  4. Apabila Anda ingin menghapusnya, klik **“Remove from Dashboard”** seperti yang terlihat pada tampilan berikut.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39686735326617)
+
+Demikian cara menambahkan Tickets Report ke menu Dashboard. Selanjutnya Anda dapat mempelajari terkait tipe-tipe Tickets Report [di sini](https://help-center.qontak.com/hc/id/articles/39686983860249-Penjelasan-Tipe-Report-Ticketing).
 
 ## Error States  <!-- confidence:medium ~ -->
 

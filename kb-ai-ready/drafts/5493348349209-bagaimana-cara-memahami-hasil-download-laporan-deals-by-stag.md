@@ -39,27 +39,24 @@ Catatan: Laporan ini hanya menampilkan data berdasarkan filter Pipeline, User, d
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka file Excel hasil download laporan Deals by Stage yang sudah Anda peroleh.
-   → File akan menampilkan dua sheet: Deals by Stage dan Deals Change Log.
 
-2. Pada sheet Deals by Stage, identifikasi kolom-kolom utama: Count (jumlah Deals), Amount (Deal Size), Percentage (persentase dari total Deals pipeline), dan Average Deal Amount (rata-rata Deal Size per stage).
-   → Data akan terorganisir berdasarkan User dan Stage dalam Pipeline.
-
-3. Untuk detail perubahan Deals, buka sheet Deals Change Log.
-   → Sheet ini menampilkan informasi lengkap seperti Deals, Owner, Created At, Closed Date, Previous Stage, Next Stage, Moved At, dan Moved By.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah membuka hasil download laporan Deals by Stage, Anda akan melihat:
-
-**Sheet Deals by Stage:**
-- Tabel berisi daftar user dengan jumlah Deals pada setiap stage
-- Untuk setiap stage: jumlah Deals (Count), nilai total (Amount), persentase dari total pipeline (Percentage), dan nilai rata-rata per Deals (Average Deal Amount)
-
-**Sheet Deals Change Log:**
-- Tabel detail dengan semua informasi perubahan status Deals, termasuk tanggal perpindahan stage, user yang memindahkan, serta nilai dan sumber Deals
-
-Bedua sheet dapat dianalisis sesuai kebutuhan bisnis Anda untuk evaluasi performa pipeline.
-
+Laporan Deals by Stage memiliki dua sheets, yaitu **Deals by Stage** dan **Deals Change Log**.  
 ![Deals_by_Stage.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774533808921)
+Pada sheet **Deals by Stage** , laporan Deals by Stage dapat difilter berdasarkan dengan Pipeline, User, dan Waktu yang diinginkan. Laporan ini akan menampilkan list setiap user dengan jumlah masing-masing Deals pada setiap Stage dalam Pipeline tersebut. Setiap Stage akan ditampilkan berdasarkan Count (jumlah Deals), Amount (Deal Size), Percentage (jumlah persentase deals pada stage tersebut, dari total keseluruhan Deals pada pipeline), dan Average Deal Amount (rata-rata jumlah Amount atau Deal Size dari total Deal Count pada stage tersebut).
+Pada sheet **Deals Change Log** , menampilkan detail dari laporan yang ada pada sheet Deals by Stage.
+  * Deals = Nama Deals.
+  * Owner = Kepemilikan Deals.
+  * Created At = Tanggal terbuatnya Deals.
+  * Closed Date = Tanggal closed date Deals.
+  * Currency = Mata uang Deals.
+  * Amount = Jumlah Deal Size.
+  * Source = Sumber / Source Deals.
+  * Previous Stage = Stage keberadaan Deals tersebut sebelumnya.
+  * Next Stage = Stage keberadaan Deals tersebut terakhir kali.
+  * Pipeline = Pipeline Deals.
+  * Updated Date = Tanggal terakhir kali Deals tersebut diupdate/diubah.
+  * Moved At = Tanggal Deals tersebut dipindahkan dari Previous Stage ke Next Stage.
+  * Moved By = Username user yang memindahkan Deals.
 
 ## Error States  <!-- confidence:low ? -->
 

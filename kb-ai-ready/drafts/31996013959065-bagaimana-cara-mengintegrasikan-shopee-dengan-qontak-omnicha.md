@@ -39,31 +39,27 @@ Untuk mengintegrasikan Shopee dengan Qontak Omnichannel, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-### A. Request Integration
 
-1. Buka profil toko Shopee Seller Anda dan klik tombol **Lihat Toko Saya**
-2. Salin Shopee Seller ID dari URL browser
-3. Masuk ke Qontak Omnichannel, buka menu **Channel Integration**, pilih tab **E-commerce**
-4. Klik tombol **Add seller**, pilih **Request Integration**, lalu klik **Continue**
-5. Masukkan Shopee ID yang telah disalin dan pilih **Seller type** toko Anda
-6. Centang persetujuan **"I have read..."** dan klik **Submit**
-7. Login kembali ke akun Shopee Seller Anda
-8. Klik **Confirm Authorization** untuk menyelesaikan integrasi
-
-### B. Self Integration
-
-Langkah-langkah Self Integration memerlukan akses Shopee Developer Console dan dokumentasi lengkap (lihat bagian "Penting" di artikel lengkap untuk prasyarat tambahan).## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah langkah terakhir selesai, akun Shopee Seller Anda akan menampilkan status **Connected** atau **Terhubung** di menu Channel Integration tab E-commerce. Anda dapat menerima dan mengirimkan pesan kepada pelanggan Shopee melalui Qontak Omnichannel. Anda juga dapat mengklik menu **Actions** untuk melihat **View details** (detail integrasi) atau **Disconnect** (memutuskan integrasi).
-
+### B. Cara Melakukan Self Integration[](https://help-center.qontak.com/hc/id/articles/31996013959065-Bagaimana-Cara-Mengintegrasikan-Shopee-dengan-Qontak-Omnichannel#h_01HWYKEZ8PCKQC27511YTGPHM6)
+**Penting**  
+Untuk melakukan Self Integration, Anda wajib memiliki 
+  1. Masuk ke Shopee Developer Console lalu copy **Live Partner id** dan **Live Partner Key** yang terdapat pada Shopee Developer Console serta **Shop ID** Anda.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529339289)
+  2. Pada halaman Shopee Integration di Qontak, Anda dapat klik **“Self Integration”**.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49067716021529)
+  3. Pada halaman **Add seller - Self integration** , klik **“Continue”** untuk melanjutkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535875993)
+  4. Masukkan **Shop ID** , **Live Partner id** dan **Live Partner Key** , didapatkan dari Shopee Developer Console Anda.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529340953)
+  5. Lalu pilih **Seller type** dari Shopee Anda.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529342745)
+  6. Dan klik **“Connect”** untuk mulai menghubungkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529345945)
+  7. Kemudian, klik **“Authorize in Shopee”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774535891737)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529347225)
+  8. Kemudian, pada Anda akan masuk ke halaman berikut dan klik tombol **“Confirm Authorization”**.**  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774529347225)
+  9. Maka akun Shopee Seller dan Qontak Omnichannel Anda sudah terdaftar.
 
 ## Error States  <!-- confidence:medium ~ -->
 

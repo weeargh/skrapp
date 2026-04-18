@@ -39,34 +39,18 @@ Idle Rule Settings digunakan untuk mengatur mekanisme reassign chat ketika Agent
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke dashboard Qontak Omnichannel dan klik menu **Settings**. Sistem akan menampilkan halaman pengaturan akun.
 
-2. Pilih **Agent Management** dari menu Settings. Halaman Agent Management akan terbuka dengan beberapa tab pilihan.
-
-3. Klik tab **Idle rule**. Anda akan melihat opsi untuk mengaktifkan fitur Idle Rule.
-
-4. Centang checkbox **Enable idle rule** untuk mengaktifkan fitur. Checkbox akan menunjukkan status tercentang (✓).
-
-5. Isi kolom **Idle period** dengan nilai dalam hitungan menit (contoh: 5 menit, 10 menit). Input field akan menampilkan nilai yang Anda masukkan.
-
-6. Klik tombol **Save changes** untuk menyimpan pengaturan. Sistem akan memproses dan menyimpan konfigurasi Idle Rule Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil menyimpan Idle Rule Settings:
-
-• Idle Rule aktif dan diterapkan ke seluruh akun Omnichannel
-• Chat yang tidak direspons Agent dalam periode waktu yang ditentukan akan secara otomatis di-reassign ke Agent lain
-• Sistem akan melakukan pencarian Agent pengganti hingga 3 kali (setiap kali menunggu durasi Idle period yang telah ditetapkan)
-• Jika semua Agent penuh atau tidak tersedia setelah 3 kali pencarian, chat akan ter-hold sampai direspons Agent manapun
-• Pesan konfirmasi atau perubahan status toggle menandakan penyimpanan berhasil## Error States  <!-- confidence:medium ~ -->
-
-• **Chat tetap di-hold setelah pencarian 3 kali**: Terjadi ketika kapasitas beban kerja semua Agent sudah penuh. Solusi: Tambahkan Agent baru atau kurangi beban kerja Agent yang ada melalui menu Agent Management.
-
-• **Idle Rule tidak aktif meski sudah disimpan**: Pastikan checkbox **Enable idle rule** benar-benar tercentang sebelum klik tombol Save changes.
-
-• **Idle period tidak tersimpan**: Pastikan nilai yang diisi adalah angka valid (dalam menit). Hindari karakter atau nilai negatif.
-
+Melalui Mekari Qontak Omnichannel, Anda dapat mengatur _default settings_ untuk keseluruhan akun. Tindakan ini dapat Anda lakukan dengan mengakses menu **Settings**. Salah satunya, adalah**Idle Rule Settings**. Dengan mekanisme ini, _chat room_ yang belum dapat dilayani karena tingginya _traffic_ percakapan dapat dikelola. Apabila Agent tidak merespon _chat room_ pada waktu tertentu (ditentukan pada pengaturan ini), maka _chat room_ tersebut akan di _assign_ ke _Agent_ lainnya.
+Berikut adalah langkah-langkahnya.
+  1. Masuk ke menu**Settings** , lalu klik **Agent Management.**  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163185305)
+  2. Pada tab **Idle rule** , Anda dapat mencentang **Enable idle rule** untuk mengaktifkannya. Lalu, isikan**Idle period** Anda dalam hitungan menit.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163187865)
+  3. Klik **“Save changes”** untuk menetapkan aturan _default_ ini.
+
+**Penting  
+** Jika Agent tidak merespon pada waktu yang telah ditentukan, maka sistem percakapan akan dibebankan ke Agent lain (penerapan beban kerja). Jika kapasitas beban kerja semua Agent penuh, maka sistem akan mencoba mencari agen lain sebanyak 3 kali (Idle period yang telah ditentukan akan berlaku untuk setiap proses pencarian agent). Setelah tiga kali sistem tidak menemukan agen, maka _room chat_ tidak akan bergerak (ter-_hold_ sampai chat direspon oleh Agent).
+Demikian cara mengatur Idle rule settings Qontak Omnichannel.
 
 ## Escalation  <!-- confidence:medium ~ -->
 

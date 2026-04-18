@@ -37,41 +37,40 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda dan klik menu **Properties** dari navigasi utama. Sistem akan menampilkan halaman Properties.
 
-2. Klik tab **Companies**. Anda akan melihat daftar properti yang sudah ada pada menu Company.
-
-3. Klik tombol **Create New Property** untuk menambahkan properti baru. Formulir input properti akan muncul.
-
-4. Isi bidang **Name** (wajib): Masukkan nama properti yang ingin dibuat, misalnya "Industri" atau "Tahun Berdiri".
-
-5. Pilih **Field Type** (wajib): Klik dropdown dan pilih tipe field sesuai kebutuhan (Single Line Text, Dropdown Select, Number, Date, Upload, Multiple Select, Percentage, Text Area, Photo, URL, Signature, atau GPS).
-
-6. (Opsional) Centang **Required** jika properti wajib diisi oleh pengguna.
-
-7. (Opsional) Centang **Show** agar properti tampil di detail Company.
-
-8. Klik tombol **Save**. Sistem akan menyimpan properti baru dan menampilkannya dalam daftar Properties tab Companies.
-
-9. Untuk mengedit properti yang sudah ada: Klik tombol **Edit** pada properti tersebut. Ubah label, nama, field type, atau opsi lainnya, kemudian klik **Save**.
-
-10. Untuk menghapus properti: Klik tombol **Destroy** pada properti yang ingin dihapus.## Expected Result  <!-- confidence:high ✓ -->
-
-Properti baru berhasil dibuat dan muncul dalam daftar Properties tab **Companies**. Properti dapat digunakan untuk mengisi informasi Company tambahan sesuai dengan Field Type yang dipilih. Jika opsi **Show** diaktifkan, properti akan muncul di halaman detail setiap Company. Perubahan atau penghapusan properti langsung diterapkan ke semua Company yang menggunakan properti tersebut.## Error States  <!-- confidence:medium ~ -->
-
-• **Kolom Name kosong**: Sistem akan menampilkan pesan bahwa Name wajib diisi. Isi kolom Name sebelum menyimpan.
-
-• **Kolom Field Type tidak dipilih**: Sistem akan menampilkan pesan bahwa Field Type wajib dipilih. Pilih salah satu tipe field dari dropdown sebelum menyimpan.
-
-• **Properti dengan nama yang sama sudah ada**: Sistem mungkin menolak duplikat nama. Gunakan nama properti yang berbeda atau edit properti yang sudah ada.
-
-• **Tombol Save tidak responsif**: Pastikan semua bidang wajib (Name dan Field Type) sudah terisi dengan benar.
-
+Menu **Properties** digunakan untuk mengedit dan menambahkan _field_ /properti yang ada pada Menu tertentu. Untuk mengedit dan menambahkan _field_ /properti pada Menu **Company** maka Anda perlu melakukan beberapa langkah sebagai berikut:
+  1. Pilih Menu **Properties.  
+**
+  2. Pilih tab **Companies**. Klik **“Create New Property”** untuk menambahkan _field_ /properti pada menu Company.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114929664921)
+  3. Kemudian, akan muncul tampilan seperti berikut. Selanjutnya Anda dapat mengisi keterangan dari properti tersebut. Lalu klik “**Save** ” untuk menyimpan properti baru.   
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114985901337)
+Berikut adalah keterangan field yang dapat Anda isi.  
+**1. Name (wajib diisi)** : Name merupakan nama dari properti baru yang ingin kita buat pada menu **Company  
+****2.** **Field Type (wajib diisi)** : Field type berisi pilihan dari tipe pengisian properti yang Anda inginkan. Apabila Anda mengklik field type, maka akan muncul beberapa pilihan tipe properti yang dapat Anda pilih, antara lain:  
+- **Single Line Text:** Pengisian field dengan teks singkat.  
+- **Dropdown Select:** Memungkinkan user untuk memilih satu dari beberapa opsi yang muncul sebagai isi field tersebut.  
+- **Number:** Field hanya dapat diisi dengan angka.  
+- **Date:** Field hanya dapat diisi dengan tanggal dan user langsung dapat mengisi secara manual dengan format dd/mm/yyyy atau mengklik dari kalendar yang muncul pada saat pengisian.  
+- **Upload:** Pengisian field dilakukan dengan mengunggah file.  
+- **Multiple Select:** Memungkinkan user untuk memilih lebih dari satu opsi yang muncul sebagai isi field tersebut.  
+- **Percentage:** Isi field akan otomatis terkonversi menjadi persentase.  
+- **Text Area:** Pengisian field dengan teks yang panjang.  
+- **Photo:** CRM akan secara otomatis akan membuka kamera untuk pengambilan gambar secara live. User tidak dapat mengunggah gambar dari galeri  
+- **URL:** Pengisian field dengan link.  
+- **Siganture:** Field diisi dengan tanda tangan secara langsung.  
+- **GPS:** CRM akan mendeteksi lokasi GPS pada pengisian field dengan tipe GPS dilakukan.  
+**3. Required:** Apabila checkbox required diklik hingga menunjukkan tanda centang, maka properti/field tersebut nantinya wajib diisi oleh user, sehingga kontak tidak dapat disimpan bila properti/field tersebut tidak diisi.  
+**4. Show:** Apabila checkbox show diklik hingga menunjukkan tanda centang, maka keterangan properti/field tersebut akan muncul detail kontak pada Menu **Company.**
+  4. Untuk mengedit field/properti, Anda bisa klik “**Edit** ”.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142064025)
+  5. Melalui fitur edit, Anda dapat mengubah label, nama, field type, required, show, show info, hingga menambahkan opsi pada field type dropdown maupun multiple select. Apabila perubahan sudah selesai diatur, Anda dapat klik “**Save** ”.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183758873)
+  6. Untuk menghapus properti/field yang sudah dibuat Anda klik “**Destroy** ”.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183763225)
+
+Terdapat beberapa default field yang tidak dapat dihapus dan tidak memberikan opsi “**Destroy** ”, maka apabila Anda ingin menghilangkan properti/field tersebut dari detail kontak, Anda harus mengedit properti/field tersebut dan mengosongkan checkbox show. Kemudian mengklik tombol “**Save** ”.
+  7. Kemudian, akan muncul _pop up_ “**Are you sure to removed field** ”, lalu pilih **Remove** untuk menghapus field yang diinginkan.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183763865)
 
 ## Escalation  <!-- confidence:medium ~ -->

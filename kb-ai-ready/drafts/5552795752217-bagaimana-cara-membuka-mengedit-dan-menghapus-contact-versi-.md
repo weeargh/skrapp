@@ -40,35 +40,20 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Membuka Kontak:**
-1. Buka menu **Contacts** di navigasi utama
-2. Klik nama kontak yang ingin dibuka atau klik tombol edit pada baris kontak tersebut
-3. Sistem akan menampilkan halaman detail kontak dengan informasi lengkap
 
-**Mengedit Kontak:**
-1. Dari halaman detail kontak, klik field yang ingin diubah
-2. Ubah informasi sesuai kebutuhan
-3. Klik tombol **Simpan** untuk menyimpan perubahan
-4. Klik tombol **Update Kontak** untuk kembali ke menu utama Contacts
-5. Sistem akan menampilkan daftar kontak dengan perubahan tersimpan
-
-**Menghapus Kontak:**
-1. Buka menu **Contacts**
-2. Pilih kontak yang akan dihapus
-3. Klik tombol **Hapus Kontak**
-4. Pop-up konfirmasi akan muncul
-5. Klik **Delete** untuk mengonfirmasi penghapusan atau **Close** jika berubah pikiran
-6. Sistem akan menghapus kontak dari database## Expected Result  <!-- confidence:high ✓ -->
-
-**Setelah membuka kontak:** Halaman detail kontak ditampilkan dengan semua informasi kontak termasuk nama, email, telepon, perusahaan terkait, dan riwayat interaksi.
-
-**Setelah mengedit kontak:** Pesan konfirmasi muncul dan pengguna kembali ke menu Contacts. Data kontak yang diperbarui terlihat di daftar kontak.
-
-**Setelah menghapus kontak:** Kontak hilang dari daftar Contacts. Jika Qontak Omnichannel juga aktif, kontak dan riwayat percakapan otomatis terhapus dari sistem tersebut.
-
+Dalam menu **Kontak,** anda dapat membuka, mengedit dan menghapus kontak yang telah dibuat.
+Sudah menggunakan [Qontak One](https://help-center.qontak.com/hc/id/articles/53169095720729-Sekilas-tentang-Qontak-One)? Jelajahi pengalaman[ Customer yang baru](https://help-center.qontak.com/hc/id/articles/53183780046105-Sekilas-tentang-Customer-Data-Platform) di Qontak One untuk langkah-langkah dan panduan antarmuka yang telah diperbarui.
+**Penting!**  
+- Apabila pada **Q2 2024** , Anda **sudah berlangganan** **Qontak CRM** , namun **belum berlangganan Qontak Omnichannel** , maka saat Anda mulai berlangganan **Qontak CRM** , **Anda tidak perlu** menghapus data kontak di **Omnichannel**.  
+- Apabila pada **Q2 2024** Anda **sudah berlangganan Qontak Omnichannel** dan **Qontak CRM** , maka setiap penghapusan data kontak yang dilakukan di **CRM** akan otomatis terhapus di **Omnichannel**. Dalam hal ini, seluruh seluruh riwayat percakapan, Anda akan terhapus. 
+  1. Untuk membuka kontak atau melihat detail kontak anda dapat mengklik menu**Kontak.** Kemudian, klik nama pada kontak tersebut atau dengan klik tombol edit seperti pada gambar dibawah ini.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586512745753)
+Saat nama Perusahaan di klik anda akan dialihkan ke halaman perusahaan dengan _detail_ yang lebih lengkap.
+  2. Untuk melakukan pengeditan terhadap suatu kontak, anda dapat melakukan _step_ di atas, kemudian mengklik _field_ yang ingin anda ganti/edit. Saat sudah melakukan pengeditan dalam suatu kontak, jangan lupa untuk mengklik **Simpan** untuk menyimpan data yang sudah diubah dan **Update Kontak** untuk kembali ke menu utama menu **Kontak.**  
 ![Menghapus_Contact_2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5552743600665)
+  3. Jika Anda ingin menghapus kontak yang anda miliki, anda bisa menghapus melalui menu utama menu kontak dan memilih kontak yang akan dihapus, kemudian klik hapus kontak seperti gambar di bawah ini.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586544582041)
+  4. Apabila muncul _pop up_ , pilih **Delete** jika Anda menyetujui untuk menghapus data kontak dan pilih "**Close"** jika Anda berubah pikiran atau tidak ingin menghapus data kontak.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586512747289)
 
 ## Error States  <!-- confidence:low ? -->

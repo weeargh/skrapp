@@ -42,47 +42,27 @@ Untuk memahami hasil download laporan Live GPS Attendance Tracking pada Daily Re
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka dashboard Qontak CRM dan pastikan widget **Live GPS Attendance Tracking** sudah ditampilkan.
-   → Widget akan menampilkan data tracking lokasi real-time.
 
-2. Klik ikon garis tiga (menu) pada widget **Live GPS Attendance Tracking**.
-   → Menu dropdown akan muncul dengan pilihan laporan.
-
-3. Pilih **"Daily Check-in Report"** dari menu dropdown.
-   → Sistem akan memproses dan membuka file laporan dalam format sheet Excel.
-
-4. File laporan akan otomatis terunduh ke perangkat Anda.
-   → Buka file untuk melihat detail lengkap data attendance.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil mengunduh laporan **Daily Check-in Report**, Anda akan melihat sheet Excel yang berisi:
-
-- Nama user, First Name, dan Last Name
-- Detail team dan tags setiap user
-- Waktu check-in dan check-out dengan lokasi geografis
-- Status check-in/check-out (berhasil atau gagal)
-- Indikator Mock Location (fake location) untuk check-in dan check-out
-- Informasi perangkat yang digunakan saat check-in dan check-out
-- Total pengguna yang ter-track
-
-Laporan siap dianalisis untuk monitoring kehadiran dan kepatuhan protokol lokasi.## Error States  <!-- confidence:medium ~ -->
-
-Kemungkinan masalah yang dapat terjadi:
-
-1. **Widget Live GPS Attendance Tracking tidak muncul di dashboard**
-   → Solusi: Tambahkan widget terlebih dahulu melalui pengaturan dashboard sebelum mengunduh laporan.
-
-2. **Tombol menu garis tiga tidak ditemukan**
-   → Solusi: Pastikan Anda menggunakan versi Qontak CRM terbaru dan widget sudah ter-load sempurna.
-
-3. **File laporan tidak terunduh**
-   → Solusi: Periksa koneksi internet dan izin unduhan di browser Anda.
-
-4. **Data laporan kosong atau tidak menampilkan check-in records**
-   → Solusi: Verifikasi bahwa tim Anda telah melakukan check-in dan data sudah tersimpan di sistem.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F6054188701337)
-![Laporan_GPS_1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089356953)
-![Laporan_GPS_2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089366809)
+Pada CRM Qontak, Anda bisa mengunduh _report_ harian GPS Live Location. Untuk melihatnya, pastikan Anda sudah menambahkan report **Live GPS Attendance Tracking** pada dashboard. Kemudian, klik garis tiga, dan pilih **"Daily Check-in Report"**.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F6054188701337)  
+Dan saat data sudah ter-_download_ , Anda akan melihat tampilan **sheet** seperti berikut.  
+![Laporan_GPS_1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089356953)![Laporan_GPS_2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089366809)Pada sheet **Daily Check-in Report** , ditampilkan secara detail.
+**Filter waktu laporan  
+** 1. Nama-nama setiap user  
+2. First Name serta Last Name setiap user  
+3. Detail team  
+4. Tags  
+5. Waktu check-in  
+6. Waktu check-out  
+7. Lokasi pada saat melakukan check-in  
+8. Lokasi pada saat melakukan check-out  
+9. Status check-in atau check-out  
+10. Check-in Mock Location  
+11. Check-out Mock Location  
+12. Check-in Device  
+13. Check-out Device  
+14. Total User
+Anda bisa melacak apakah user Anda check-in atau check-out menggunakan fake lokasi atau tidak dengan membaca _table_ **Check-in Mock Location** dan **Check-out Mock Location**.
 
 ## Escalation  <!-- confidence:medium ~ -->
 

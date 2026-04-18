@@ -36,18 +36,18 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak Chat dari smartphone Anda. Sistem akan menampilkan halaman login.
-2. Masukkan Email dan Password akun Qontak Anda, kemudian klik tombol **Login**. Sistem akan menampilkan dashboard Inbox.
-3. Klik tombol **Set to online** untuk mengaktifkan status Anda menjadi Online. Status Anda akan berubah menjadi Online dan siap menerima pesan.
-4. Buka salah satu pesan dari daftar Inbox. Sistem akan menampilkan detail percakapan.
-5. Ketikkan balasan pesan Anda pada kolom input pesan sesuai dengan pertanyaan customer, kemudian klik tombol Kirim. Pesan Anda akan terkirim ke customer.
-6. Jika percakapan sudah selesai, klik tombol **Resolve**. Percakapan akan ditandai sebagai terselesaikan dan ditutup dari Inbox aktif.## Expected Result  <!-- confidence:high ✓ -->
 
-Pesan balasan Anda berhasil dikirim kepada customer dan muncul di dalam thread percakapan. Jika Anda mengklik tombol **Resolve**, percakapan akan ditutup dan tidak lagi muncul di daftar Inbox sebagai chat yang aktif. Status percakapan berubah menjadi Resolved.
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para customer service akan melayani semua keluhan user berupa chat yang masuk ke dalam Inbox.
+Untuk membalas pesan terhadap _chat_ yang masuk, maka lakukan langkah-langkah berikut.
+  1. Buka aplikasi Qontak Chat dari smartphone Anda.
+  2. Masukkan **Email** dan **Password** anda. Klik tombol **“Login”** untuk memulai.
+  3. Aktifkan status Anda menjadi **Online****"Set to online"**.  
 ![WhatsApp_Image_2022-04-07_at_14.30.16__1_.jpeg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287525145)
+  4. Buka salah satu pesan, kemudian balas sesuai dengan apa yang ditanyakan.  
 ![WhatsApp_Image_2022-04-08_at_10.24.57.jpeg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287521177)
+  5. Jika percakapan sudah selesai, klik **"Resolve"**.  
 ![WhatsApp_Image_2022-04-08_at_10.24.50.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776243531033)
+Pesan yang bisa dibalas hanya yang memiliki status **Unassigned** dan **Assigned** dan belum berstatus **expired**(di bawah 24 jam).
 
 ## Error States  <!-- confidence:medium ~ -->
 

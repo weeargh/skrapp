@@ -35,19 +35,19 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka dashboard Qontak CRM Anda
-2. Klik menu **Properties** di sidebar kiri
-3. Sistem akan menampilkan halaman Properties dengan beberapa pilihan menu
-4. Klik tab **Display**
-5. Sistem akan menampilkan pengaturan Display dengan opsi unggah logo dan pilihan warna tema
-6. (Opsional) Klik tombol **Choose File** untuk mengunggah logo perusahaan atau foto profil Anda
-7. (Opsional) Pilih warna tema dashboard dengan mengklik warna yang Anda inginkan, lalu beri centang pada checkbox warna tema tersebut
-8. Klik tombol **Save Changes** untuk menyimpan semua kustomisasi tampilan## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengikuti langkah-langkah di atas, halaman Display akan menampilkan konfirmasi bahwa perubahan telah disimpan. Tampilan dashboard CRM Anda akan diperbarui sesuai logo dan warna tema yang Anda pilih. Perubahan hanya berlaku untuk akun Anda sendiri dan tidak memengaruhi tampilan pengguna lain.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49113859603353)
-![mceclip2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136746521)
+Menu **Display** pada CRM Qontak dapat digunakan untuk mengkustomisasi tema/tampilan dashboard CRM sesuai dengan tema yang Anda inginkan. Akun dengan akses **member** atau **admin** dapat mengubah display akun masing - masing.
+Perubahan yang dilakukan hanya akan mengubah tampilan akun tersebut. Untuk mengubah tampilan tema pada dashboard CRM, Anda dapat mengikuti langkah – langkah berikut ini:
+  1. Klik Menu **“Properties”.  
+**
+  2. Pilih tab **“Display”.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49113859603353)  
+**
+  3. Klik **“Choose File”** , untuk mengunggah logo perusahaan Anda atau photo profil yang Anda inginkan. **  
+![mceclip2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136746521)  
+**
+Pastikan bahwa photo yang Anda unggah memiliki background yang transparan.
+  4. Anda juga dapat mengkustomisasi warna tema pada dashboard CRM Anda dengan memilih warna tampilan dan beri centang pada checkbox di warna tema yang Anda inginkan. Klik “**Save Changes** ” untuk menyimpan kustomisasi tampilan.  
 ![mceclip3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089782297)
 
 ## Error States  <!-- confidence:medium ~ -->

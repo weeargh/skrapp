@@ -36,17 +36,14 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Log in ke akun Qontak Omnichannel Anda. Sistem akan menampilkan dashboard utama.
-2. Navigasi ke menu Inbox. Sistem menampilkan daftar room chat yang tersedia.
-3. Klik salah satu room chat WhatsApp yang ingin Anda balas pesannya. Room chat terbuka dengan riwayat pesan.
-4. Klik bubble message spesifik yang ingin Anda balas. Bubble message tersebut akan tertandai.
-5. Ketikkan pesan balasan Anda di kolom input pesan. Anda dapat mengirim teks, file, video, audio, gambar, atau maps.
-6. Klik tombol Kirim. Pesan balasan akan dikirim dengan referensi ke bubble message asli.## Expected Result  <!-- confidence:high ✓ -->
 
-Pesan balasan Anda berhasil dikirim dan terlihat di chat WhatsApp dengan indikasi visual menunjukkan bahwa pesan tersebut merupakan reply terhadap bubble message spesifik (biasanya ditampilkan dengan garis penghubung atau quote dari pesan asli). Pelanggan akan melihat balasan Anda terhubung langsung ke pesan yang Anda reply, memudahkan konteks percakapan.
-
+WhatsApp memiliki fitur khusus yang berguna untuk semua pengguna yaitu “Reply Specific Bubble Message”. Anda dapat membalas pesan secara spesifik dan berguna untuk mengurangi pesan terlewat saat membalas pesan dari pelanggan. Berikut langkah-langkah menggunakan fitur reply spesifik bubble message di WhatsApp melalui Omnichannel Qontak.
+  1. Log In ke akun Omnichannel Qontak Anda. Setelah itu, masuk ke menu**“Inbox”**.
+  2. Pilih salah satu room chat WhatsApp yang ingin Anda balas pesannya.  
 ![174.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53788756425753)
+  3. Kemudian, klik _bubble message_ yang ingin Anda balas dan tuliskan pesan balasan Anda.  
 ![image__5_.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772400130201)
+  4. Maka, pesan balasan yang Anda kirimkan akan terlihat seperti ini.  
 ![image__6_.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772392538649)
 
 ## Error States  <!-- confidence:medium ~ -->

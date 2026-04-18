@@ -37,34 +37,18 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-### Single Contact
-1. Buka menu **Contacts** di Qontak Omnichannel.
-2. Klik tombol **Create contact**, lalu pilih **Single Contact**.
-3. Masukkan nama lengkap kontak pada kolom **Full name**.
-4. Pilih **Channel** yang ingin dihubungkan dengan kontak.
-5. Pilih akun yang terintegrasi dengan Channel yang dipilih.
-6. Masukkan alamat email kontak pada kolom email.
-7. Klik tombol **Save**. Sistem akan menampilkan notifikasi kontak berhasil ditambahkan dan kontak muncul di daftar Contacts.
 
-### Multiple Contact
-1. Buka menu **Contacts** di Qontak Omnichannel.
-2. Klik tombol **Create contacts**, lalu pilih **Multiple Contact**.
-3. Unduh template file CSV atau XLSX yang disediakan. Panduan pengisian tersedia di sebelah kiri halaman.
-4. Isi daftar kontak ke dalam template sesuai format yang ditentukan.
-5. Klik tombol **Choose file** untuk memilih file template yang sudah diisi.
-6. Klik tombol **Submit**. File akan terunggah otomatis dan kontak muncul di menu Contacts.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan langkah-langkah, kontak berhasil ditambahkan ke menu **Contacts** di Qontak Omnichannel. Kontak baru akan muncul dalam daftar Contacts dan dapat dilihat kapan saja.
-
-Jika Anda menggunakan Qontak CRM:
-- Kontak yang dibuat di Omnichannel akan otomatis tersedia di CRM tanpa perlu dibuat ulang
-- Sinkronisasi berlaku untuk Single Contact maupun Multiple Contact
-- Kontak tersedia di kedua platform dengan data yang konsisten
-
+### Cara 2: Multiple Contact[](https://help-center.qontak.com/hc/id/articles/5708414433689-Bagaimana-Cara-Menambah-Contacts-pada-Mekari-Qontak-Omnichannel#h_01HHY1BXPSKWV6F3BEFB243J3E)
+Anda juga bisa menambahkan kontak dengan mengunggah daftar kontak yang Anda miliki. Caranya yaitu:
+  1. Pada menu **Contacts** klik **"Create contacts",** lalu pilih **"Multiple Contact"**.  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432569398041)
+  2. Anda bisa mengunduh template yang **Contacts** sediakan dalam bentuk file **CSV** atau XLSX.  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432541402265)
+Anda dapat melihat tata cara pengisian _template_ di sebelah kiri halaman seperti berikut.  
 ![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432689602457)
+  3. Masukkan daftar nama kontak lalu klik **"Choose file"** untuk menambahkan _file_ Anda.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432677933849)
+  4. Jika sudah, klik **"Submit"**. Maka _file_ Anda otomatis akan terunggah di dalam **Contacs**.  
 ![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432677935769)
 
 ## Error States  <!-- confidence:medium ~ -->

@@ -36,19 +36,12 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak CRM Anda dan navigasikan ke menu **Companies**. Sistem akan menampilkan daftar semua perusahaan Anda.
 
-2. Klik ikon **Filter** di bagian atas halaman Companies. Sebuah panel filter akan muncul menampilkan opsi-opsi penyaringan yang tersedia.
-
-3. Masukkan kriteria filter yang Anda inginkan (misalnya: owner, tim, tipe perusahaan, atau tanggal). Anda dapat mengisi satu atau lebih kriteria sesuai kebutuhan.
-
-4. Centang opsi **Save as Default** jika Anda ingin menyimpan filter ini sebagai pengaturan default untuk kunjungan berikutnya.
-
-5. Klik tombol **Apply** untuk menerapkan filter. Sistem akan menampilkan hanya perusahaan yang sesuai dengan kriteria filter yang Anda tentukan. Atau klik **Reset** untuk mengembalikan tampilan ke keadaan semula tanpa filter.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengklik **Apply**, halaman Companies menampilkan hasil filter dengan daftar perusahaan yang memenuhi kriteria penyaringan Anda. Jika Anda mengaktifkan **Save as Default**, filter ini akan tetap berlaku saat Anda kembali ke halaman Companies di sesi berikutnya. Jika mengklik **Reset**, semua perusahaan akan ditampilkan kembali tanpa filter aktif.
-
+Anda dapat centang **Save as Default** untuk menyaring company secara sementara atau tidak. Ketika Anda klik**“Apply”** maka perusahaan yang sesuai dengan kriteria filter yang akan muncul secara otomatis.
+  5. Maka tampilan yang akan ditampilkan adalah tampilan dari hasil filter yang telah Anda terapkan, berikut tampilannya.  
 ![17.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916361625)
+
+Demikian penjelasan cara memfilter data perusahaan. Selanjutnya pelajari terkait cara mengunduh data perusahaan [di sini](https://help-center.qontak.com/hc/id/articles/5657546239769).
 
 ## Error States  <!-- confidence:low ? -->
 

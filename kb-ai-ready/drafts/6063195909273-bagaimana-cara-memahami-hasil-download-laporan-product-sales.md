@@ -39,27 +39,14 @@ Catatan: Laporan ini hanya menampilkan data penjualan produk yang sudah tercatat
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman Dashboard Qontak CRM akan terbuka.
 
-2. Buka menu **Report** dari navigasi utama.
-   → Daftar laporan yang tersedia akan ditampilkan.
-
-3. Cari dan klik **Laporan Product Sales Trends** untuk mengunduhnya.
-   → File laporan dalam format spreadsheet akan terunduh ke perangkat Anda.
-
-4. Buka file yang sudah diunduh menggunakan aplikasi spreadsheet.
-   → Sheet laporan akan menampilkan kolom-kolom data penjualan produk Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil membuka Laporan Product Sales Trends, Anda akan melihat spreadsheet dengan struktur sebagai berikut:
-
-• **Category**: Menampilkan waktu penjualan setiap bulannya (periode laporan)
-• **Sales**: Menampilkan total pendapatan penjualan untuk setiap periode
-• **Quantity**: Menampilkan besaran/jumlah produk yang terjual untuk setiap periode
-
-Data disajikan dalam format tabel yang memudahkan Anda menganalisis tren penjualan produk bulan ke bulan.
-
+Untuk melihat tren penjualan produk Anda setiap bulan nya, Anda dapat melihat laporannya dengan men-_download_ Laporan Product Sales Trends.
+Hasil _download_ **Laporan Product Sales Trends** ketika sudah di-_download_ akan menampilkan _sheet_ seperti pada gambar di bawah ini:  
 ![reports.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121296537)
+Pada sheet ini, ditampilkan secara detail mengenai:  
+1. **Category** , waktu penjualan setiap bulannya.  
+2. **Sales** , yaitu pendapatan penjualan.  
+3. **Quantity** , yaitu besaran produk yang terjual.
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -36,20 +36,14 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke menu **Contacts** di navigasi utama Qontak CRM.
-2. Klik tombol **Filter** yang terletak di bagian kiri atas, di samping menu pencarian. Panel filter akan terbuka.
-3. Pilih kriteria filter yang diinginkan:
-   - Pemilik/pembuat kontak
-   - Asosiasi dengan company atau deal
-   - Field kontak (nama, tanggal dibuat, alamat, dll)
-4. Atur nilai untuk setiap field filter yang dipilih.
-5. Klik tombol **Apply** untuk menerapkan filter. Daftar kontak akan diperbarui sesuai kriteria yang dipilih.
-6. Untuk menghapus semua filter dan kembali ke tampilan default, klik tombol **Reset**.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengklik **Apply**, daftar kontak akan menampilkan hanya kontak yang sesuai dengan kriteria filter yang telah ditentukan. Jumlah kontak yang cocok dengan filter akan ditampilkan. Anda dapat melihat kontak terfilter, mengunduhnya, menghapusnya, atau melakukan tindakan lain. Ketika mengklik **Reset**, daftar kontak kembali menampilkan semua kontak tanpa filter.
-
+Ketika ingin memilih beberapa kontak untuk anda unduh, hapus atau sekedar melihat jumlah kontak yang ada, anda dapat menggunakan fitur **filter** dalam suatu kontak. Berikut beberapa tahap untuk memfilter data kontak.
+Sudah menggunakan [Qontak One](https://help-center.qontak.com/hc/id/articles/53169095720729-Sekilas-tentang-Qontak-One)? Jelajahi pengalaman[ Customer yang baru](https://help-center.qontak.com/hc/id/articles/53183780046105-Sekilas-tentang-Customer-Data-Platform) di Qontak One untuk langkah-langkah dan panduan antarmuka yang telah diperbarui.
+  1. Klik filter pada bagian kiri atas di samping menu pencarian.  
 ![141.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53404021181337)
+  2. Anda dapat memfilter kontak berdasarkan pemilik/pembuat data kontak, asosiasi dengan company atau deal yang lain dan filter berdasarkan field-field kontak sendiri seperti nama kontak, tanggal dibuat, alamat, dll.  
 ![Filter_Data_Contact_2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5641154444441)
+  3. Ketika anda sudah memilih field filter yang anda ingin sortir, jangan lupa untuk klik “**Apply** ” untuk memulai proses filter. Setelah anda mengklik “**Apply** ”, tampilan kontak anda akan menyesuaikan dengan filter tersebut. Apabila anda sudah selesai memfilter, jangan lupa untuk klik “**Reset** ” untuk mengembalikan tampilan kontak pada default sebelumnya.  
 ![Filter_Data_Contact_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5641132197017)
 
 ## Error States  <!-- confidence:low ? -->

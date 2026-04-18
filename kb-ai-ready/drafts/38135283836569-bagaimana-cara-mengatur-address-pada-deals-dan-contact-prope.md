@@ -39,31 +39,12 @@ Tidak ada persyaratan plan tier khusus untuk fitur ini.
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Untuk Deals:**
 
-1. Buka Qontak CRM dan klik menu **Properties**
-2. Pilih tab **Deals** dan klik tab **Properties**
-3. Klik **Edit** pada Address properties yang ingin diatur
-4. Centang opsi sesuai kebutuhan: **Add help text** (untuk informasi tambahan), **Deal details popup** (tampil di popup detail), **Deal list view** (tampil di halaman deals)
-5. Di bagian **Pipeline**, pilih pipeline yang memerlukan address atau klik ikon **strip** jika tidak diperlukan
-6. Centang **Required** jika address wajib diisi saat membuat Deals
-7. Klik **Save changes**
-
-**Untuk Contact, Tasks, dan Companies:**
-
-1. Buka menu **Properties**
-2. Pilih tab **Contact** (atau Tasks/Companies) dan klik **Edit** pada Address field
-3. Centang **Set as required** (wajib diisi), **Contact creation page** (muncul saat buat kontak), atau **Contact editing page** (muncul saat edit kontak)
-4. Klik **Save changes**## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyimpan perubahan dengan klik **Save changes**, sistem akan menampilkan:
-
-1. Konfirmasi pengaturan berhasil disimpan di halaman Properties
-2. Address field dengan opsi yang telah diatur akan muncul di form Deals atau Contact sesuai konfigurasi (creation page, editing page, atau detail view)
-3. Field Address akan menampilkan sub-fields: provinsi, kota, kelurahan, dan kode pos
-4. Jika ditandai Required, field Address akan menampilkan tanda bintang (*) sebagai indikator wajib diisi
-
+### B. Mengatur Alamat pada Menu Contact, Tasks dan Companies[](https://help-center.qontak.com/hc/id/articles/38135283836569-Bagaimana-Cara-Mengatur-Address-pada-Deals-dan-Contact-Properties#h_01J8M3RN5HDB883MYJ6TDCTGQS)
+  1. Masuk ke menu **Properties.**
+  2. Pilih tab **Contact** dan klik **“Edit”** pada _field_ Address yang Anda inginkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38135283829145)
+  3. Pada _pop up_ yang muncul, Anda dapat centang**“Set as required”** jika _field_ tersebut harus diisi. Centang**“Contact creation page”** jika ingin _field_ muncul saat membuat kontak. Centang**“Contact editing page”** jika ingin _field_ muncul pada halaman edit contact.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38135253376537)
 
 ## Error States  <!-- confidence:low ? -->

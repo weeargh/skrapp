@@ -40,28 +40,51 @@ Anda ingin membuat Recipient list untuk Email Campaign. Sebelum memulai, pastika
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Anda dan pilih menu Campaign.
-2. Klik tab Recipient lists. Sistem akan menampilkan daftar recipient list yang sudah ada.
-3. Klik tombol Create recipient list dan pilih opsi Upload file.
-4. Isikan nama Recipient list pada kolom yang tersedia. Gunakan nama unik agar mudah ditemukan saat mengirim campaign.
-5. Pilih tipe data Email template dan tentukan format file (CSV, XLS, atau XLSX).
-6. Unduh template yang disediakan dan isi dengan data recipient Anda. Pastikan kolom pertama berisi recipient_email_address dan kolom kedua berisi full_name tanpa mengubah nama header.
-7. Unggah file dengan menyeret file ke tampilan atau klik Browse, kemudian klik Import. Sistem akan memproses data.## Expected Result  <!-- confidence:high ✓ -->
 
-Recipient list berhasil dibuat dan data recipient terimpor. Sistem akan menampilkan status impor dan jumlah recipient yang berhasil diproses. Recipient list akan muncul di daftar Recipient lists dan siap digunakan saat membuat Email Campaign. Anda dapat memilih recipient list ini dari dropdown menu saat membuat campaign baru.
-
+Untuk dapat membuat [Email campaign](https://help-center.qontak.com/hc/id/articles/47425969961625-Bagaimana-Cara-Membuat-Email-Campaign), Anda perlu membuat Recipient list atau daftar penerima Email Campaign yang akan Anda kirimkan. Pelajari langkah-langkahnya berikut ini.
+**Penting**  
+Email Campaign hanya akan muncul pada pengguna yang berlangganan paket terbaru dari Mekari Qontak, yaitu: **Broadcast, Service Suite, Sales Suite,** atau **Qontak 360**. Lihat rincian paket tersebut [di sini](https://qontak.com/harga/).
+  1. Masuk ke akun **Omnichannel** Anda, lalu pilih menu **“Campaign”**.
+  2. Klik tab **“Recipient lists”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426266416025)
+  3. Kemudian klik **“Create recipient list”** dan pilih **“Upload file”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426266416153)
+- Opsi **“Select contacts”** saat ini hanya tersedia untuk **WhatsApp Campaign.**  
+- Anda tidak dapat mengimpor **Recipient lists** baru jika proses impor yang sebelumnya belum selesai.
+  4. Isikan nama **Recipient list** pada kolom berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426266416537)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426281632153)
+Gunakan nama yang unik pada daftar _recipient_ agar Anda lebih mudah menemukannya saat mengirim _campaign_.
+  5. Kemudian pilih tipe data template. Dalam hal ini, pilih **"Email template"** dan tentukan format file yang akan diunggah.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426281632153)**
+  6. Lalu pada _template_ yang telah disediakan, ganti contoh pengisian dengan data _recipient_ yang Anda inginkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426281632409)
+**Penting**  
+1. Pastikan kolom pertama **(recipient_email_address)** dan kolom kedua **(full_name)** tidak diubah nama _header_ -nya. Sistem akan mendeteksi _template_ sebagai **Recipient lists “Email”** melalui penamaan _header_ tersebut.  
+2. Kolom ketiga **(customer_name)** dan kolom keempat **(company)** merupakan contoh _custom field_. Jika Anda tidak membutuhkan kedua informasi tersebut, Anda dapat menghapusnya. Anda dapat menambahkan informasi lain untuk digunakan sebagai data **variabel** ketika mengirimkan _campaign_ dengan mengisi dari **kolom C** dan seterusnya.  
+3. Pastikan semua data atas kolom yang Anda tambahkan diisi dengan lengkap. Data _recipient_ akan gagal diimpor jika ada _value_ yang kosong.  
+4. Jika daftar Recipient list Anda mengandung **email yang sama** , sistem akan otomatis mengambil data email pertama sebagai data _recipient_ yang _valid_ , dan data yang duplikat tidak akan diimpor.
+  7. Kemudian unggah kembali template yang telah terisi tersebut dengan tarik file tersebut ke tampilan berikut, atau klik **“Browse”** , kemudian unggah file secara manual. Lalu klik **"Import"**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51230879965465)
+- Unggah file dengan ukuran maksimal **5 MB**.  
+- Untuk **WhatsApp campaign** , Anda dapat mengimpor daftar recipient maksimal **50.000 recipients** dalam 1 file upload.  
+- Untuk **Email campaign** , Anda dapat mengimpor daftar recipient dengan jumlah maksimal sesuai dengan [**kuota dasar harian email**](https://help-center.qontak.com/hc/id/articles/50305970510745)Anda. Jika pada saat upload data, **kuota dasar** Anda sebanyak **4.000, maka Anda hanya dapat mengimpor maksimal 4.000 recipients dalam 1 file upload.**  
+Limitasi baru pada email campaign berlaku sejak **15 September 2025 sesuai dengan mulai berlakunya penerapan limit harian pengiriman email**.
+  8. Maka akan muncul notifikasi berikut yang menyatakan bahwa Recipient list sedang dalam proses pengunggahan. Recipient list yang berhasil terunggah akan muncul pada halaman berikut dengan kategori Channel **‘Email’** sesuai dengan data template yang sebelumnya telah dipilih.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426266419737)
+
+### Menghapus Recipient List[](https://help-center.qontak.com/hc/id/articles/47426266423065-Bagaimana-Cara-Membuat-Recipient-List-untuk-Email-Campaign#h_01K9MJ83SDE9ZP9ZXNH6J0ENZ2)
+Anda dapat **menghapus** data **Recipient lists** jika data yang diunggah tidak sesuai, atau jika data tersebut tidak relevan lagi untuk digunakan. Berikut langkahnya.
+  1. Klik **“Actions”** lalu pilih **“Delete list”** pada salah satu **Recipient lists** yang ingin Anda hapus.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52284811708697)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52284836572313)
+  2. Klik **“Delete”** untuk mengkonfirmasi penghapusan Recipient lists.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52284836572313)**
+  3. Anda juga dapat melakukan penghapusan data melalui halaman _detail_ Recipient list. Klik **“Actions”** pada daftar recipient yang ingin dihapus, lalu pilih **“View details”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52284836572569)
+  4. Lalu Klik **“Delete list”** pada halaman berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52284836574489)
+  5. Klik **“Delete”** untuk mengkonfirmasi penghapusan Recipient lists.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52284811710745)
+  6. Maka daftar recipient berhasil dihapus.  
 ![22.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52284811711001)
 
 ## Error States  <!-- confidence:high ✓ -->

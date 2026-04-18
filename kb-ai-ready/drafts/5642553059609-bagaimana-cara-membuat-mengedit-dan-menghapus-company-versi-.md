@@ -40,50 +40,15 @@ Untuk membuat, mengedit, dan menghapus Company di versi mobile Qontak CRM, Anda 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Membuat Company Baru:**
 
-1. Buka aplikasi Qontak di ponsel Anda dan login
-2. Ketuk menu **Customers** di navigasi bawah
-3. Pilih tab **"Company list"** dan ketuk ikon tambah untuk membuat Company baru
-4. Isi nama perusahaan, website, nomor telepon, dan jenis industri
-5. Tentukan pemilik, tipe perusahaan, sumber, lokasi, alamat, negara, provinsi, kota, dan kode pos
-6. Di kolom **Association**, tentukan **Parent company** dan **Associated customers**
-7. Pilih **"From existing customer"** atau **"Create new customer"** sesuai kebutuhan
-8. Klik **"Select deals"** untuk menambahkan associated deals
-9. Centang deals yang diinginkan dan klik **"Save"**
-10. Setelah semua data terisi, klik **"Save"** untuk menyimpan Company baru
-
-**Mengedit Company:**
-
-1. Buka aplikasi Qontak dan masuk ke menu **Customers**
-2. Pilih tab **"Company list"**
-3. Pilih Company yang ingin diedit
-4. Ketuk ikon tiga titik (⋯) pada Company tersebut
-5. Pilih opsi **Edit**
-6. Ubah informasi yang diperlukan
-7. Klik **"Save"** untuk menyimpan perubahan
-
-**Menghapus Company:**
-
-1. Buka aplikasi Qontak dan masuk ke menu **Customers**
-2. Pilih tab **"Company list"**
-3. Pilih Company yang ingin dihapus
-4. Ketuk ikon tiga titik (⋯) pada Company tersebut
-5. Pilih opsi **Delete**
-6. Konfirmasi penghapusan ketika diminta sistem## Expected Result  <!-- confidence:high ✓ -->
-
-**Setelah Membuat Company Baru:**
-Data Company yang telah dibuat akan tersimpan dan muncul di daftar **Company list** dengan informasi lengkap yang telah Anda isi.
-
-**Setelah Mengedit Company:**
-Perubahan pada informasi Company akan disimpan dan ditampilkan segera di halaman detail Company. Data yang diperbarui akan terlihat di seluruh aplikasi Qontak yang terkait.
-
-**Setelah Menghapus Company:**
-Company akan dihapus dari database dan tidak lagi muncul di daftar **Company list**. Penghapusan bersifat permanen dan tidak dapat dibatalkan.
-
+### B. Mengedit Company[](https://help-center.qontak.com/hc/id/articles/5642553059609-Bagaimana-Cara-Membuat-Mengedit-dan-Menghapus-Company-Versi-Mobile#h_01JSK06BXMH22PJN4P2D6R21D0)
+  1. Untuk dapat mengedit Anda dapat kembali ke halaman **Company list** , lalu klik **ikon titik tiga**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46133275682073)
+  2. Selanjutnya pilih **“Edit company”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46133268981529)
+  3. Kemudian edit bagian yang ingin Anda ubah. Apabila keseluruhan data telah benar, klik **“Save changes”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46133275685145)
+  4. Maka akan muncul notifikasi berikut yang menyatakan bahwa perubahan yang Anda lakukan telah tersimpan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46133275694233)
 
 ## Error States  <!-- confidence:low ? -->

@@ -27,12 +27,12 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Fitur Mengakses Produk Mekari adalah tombol navigasi dalam Qontak yang memungkinkan pengguna untuk menjelajahi dan mengakses produk-produk Mekari lainnya serta add-on premium. Fitur ini menyediakan dua jalur akses utama: tombol Produk Mekari yang menampilkan rekomendasi produk Mekari, dan tombol "Lainnya dari Mekari Marketplace" yang mengarahkan ke halaman marketplace Mekari Account untuk melihat fitur add-on dan aplikasi pihak ketiga yang tersedia.## Why It Matters  <!-- confidence:high ✓ -->
 
-Fitur ini membantu pengguna Qontak meningkatkan efisiensi, produktivitas, dan performa bisnis dengan mudah mengakses solusi tambahan dari ekosistem Mekari. Pengguna dapat menemukan add-on premium dan integrasi aplikasi pihak ketiga yang relevan dengan kebutuhan bisnis mereka tanpa harus keluar dari platform Qontak, sehingga menghemat waktu dalam eksplorasi dan implementasi fitur baru.
-
-![Screenshot 2023-09-15 at 17.28.15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203393945)
+Tombol **Produk Mekari** ditujukan untuk memperkenalkan produk-produk Mekari lainnya yang dapat membantu untuk meningkatkan efisiensi, produktivitas, serta performa bisnis Anda.  
+![Screenshot 2023-09-15 at 17.28.15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203393945)  
+Selain itu, terdapat juga tombol **“Lainnya dari Mekari Marketplace”** yang akan mengarahkan Anda ke halaman **marketplace Mekari Account** , dimana Anda dapat melihat berbagai fitur **add-on (****_premium features & 3rd party application_****)** yang tersedia di **Mekari**.  
 ![Screenshot 2023-09-15 at 16.55.07.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194607897)
+Demikian cara mengakses produk Mekari pada Qontak. Temukan **add-ons** dan produk rekomendasi untukmu, .
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

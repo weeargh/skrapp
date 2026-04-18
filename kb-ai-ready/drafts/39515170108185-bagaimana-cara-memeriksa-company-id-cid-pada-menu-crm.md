@@ -33,17 +33,13 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun CRM Anda menggunakan kredensial login Qontak CRM.
-   Sistem akan menampilkan dashboard CRM dengan menu navigasi di sebelah kiri.
 
-2. Lihat bagian bawah sisi menu sebelah kiri.
-   Company ID akan ditampilkan secara otomatis di lokasi ini sebagai identitas unik akun CRM Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Company ID Anda berhasil ditampilkan di bagian bawah menu sebelah kiri layar CRM. Company ID adalah string alphanumerik unik yang mengidentifikasi perusahaan Anda dalam sistem Mekari Qontak CRM dan siap untuk digunakan atau dicatat sesuai kebutuhan.## Error States  <!-- confidence:high ✓ -->
-
-No common errors documented.
-
+Saat ini, Anda dapat memeriksa CID atau Company ID dengan mudah melalui sisi menu sebelah kiri pada Mekari Qontak CRM. Pelajari selengkapnya pada langkah-langkah di bawah ini.
+  1. Masuk ke akun CRM Anda. 
+  2. Lalu Anda dapat secara otomatis melihat Company ID pada sisi menu sebelah kiri di bagian bawah seperti pada tampilan berikut.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39515170094105)
+
+Demikian cara melihat **Company ID** pada menu Mekari CRM.
 
 ## Escalation  <!-- confidence:medium ~ -->
 

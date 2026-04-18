@@ -38,43 +38,34 @@ Anda ingin membuat template dokumen otomatis di Qontak CRM menggunakan fitur Doc
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Siapkan template Excel dengan data yang perlu diisi otomatis (contoh: Quotation Number, Company, Name, Email, Address, Quotation Item, Unit Price, Quantity, Months, Total). Sistem akan menggunakan template ini sebagai dasar pembuatan dokumen.
 
-2. Buka menu **Properties** dan pastikan semua field properties yang sesuai dengan template sudah dibuat di tab yang tepat (Deals/Companies/Contacts/Tasks). Sistem akan menampilkan Default Variable ID untuk setiap field yang dibuat.
-
-3. Catat semua Variable ID dari field properties yang telah dibuat. Anda akan membutuhkan ID-ID ini untuk mengisi template Excel.
-
-4. Buka template Excel dan isi cell-cell dengan Variable ID yang sesuai dengan field properties di CRM. Pastikan penempatan Variable ID sesuai dengan data yang ingin ditampilkan di dokumen akhir.
-
-5. Simpan file template Excel setelah selesai menambahkan semua Variable ID.
-
-6. Buka menu **Document** di Qontak CRM. Sistem akan menampilkan halaman manajemen template dokumen.
-
-7. Klik tombol **Upload Template**. Sistem akan membuka dialog unggah file.
-
-8. Ketik nama template pada bagian **File Name**. Klik tombol **Browse a file** untuk memilih file template Excel dari perangkat Anda. Sistem akan menampilkan daftar file yang tersedia.
-
-9. Pilih file template Excel yang telah disiapkan. Klik tombol **Create Template** untuk mengunggah file tersebut ke sistem CRM.
-
-10. Sistem akan memproses file dan menampilkan notifikasi bahwa template berhasil terupload. Template Anda sekarang tersedia di menu Document dan siap digunakan untuk membuat dokumen otomatis.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah template berhasil diupload, Anda akan melihat:
-
-• Pesan konfirmasi bahwa template telah berhasil diupload ke sistem CRM
-• Template muncul dalam daftar template yang tersedia di menu **Document**
-• Template dapat dipilih saat membuat dokumen otomatis di menu **Deals** atau **Tiket**
-• Sistem siap mengisi Variable ID pada template dengan data dari CRM sesuai dengan informasi yang ada di Deal atau Tiket
-
+Pada umumnya fitur document generator pada Aplikasi CRM Qontak dimanfaatkan untuk memudahkan User CRM dalam membuat suatu dokumen secara otomatis, contoh dokumen yang umumnya dibuat dengan fitur ini adalah dokumen penawaran harga ataupun invoice. Hanya User CRM dengan Role **Admin** yang dapat membuat template ini.
+Sebelumnya Anda dapat mempelajari tentang:  
+[**[Fitur] Aplikasi CRM Mekari Qontak untuk Tingkatkan Performa Bisnis 75%**](https://qontak.com/fitur/aplikasi-crm/?utm_source=ecosystem&utm_medium=qontak+%28help+center%29)
+Jika Anda telah memiliki format penawaran harga tersendiri dan ingin memanfaatkan fitur ini, maka dapat mengupload template penawaran harga dengan langkah-langkah sebagai berikut:
+  1. **Template** yang akan diupload untuk menggunakan document generator harus **dibuat dalam bentuk Excel** agar sistem nantinya dapat mengisi data pada template yang ada sesuai dengan data yang di input dalam CRM. Langkah pertama yang perlu dilakukan adalah mempersiapkan template dari penawaran harga tersebut beserta pengaturan layout pada Excel tersebut.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398808985)
+  2. Sebagai contoh pada template tersebut terdapat data yang perlu diisi secara otomatis dari sistem CRM seperti Quotation Number, Company, Name, Email, Address, Quotation Item, Unit Price, Quantity, Months, dan Total. Oleh karena itu, sebelumnya harus dipastikan kita sudah membuat **field properties** pada semua Menu sesuai dengan template yang telah disiapkan. Pastikan properties tersebut dibuat di Menu **Properties,** lalu pilih ingin membuat/mengedit properties di tab apa (Deals/Companies/Contacts/Tasks) seperti gambar berikut.  
 ![29.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50802006513177)
+  3. Selanjutnya, mengisi _cell-cell_ pada _template_ Excel sesuai dengan **Default Variable ID List** yang ada pada field properties CRM yang telah ada dan kita tambahkan agar nantinya sistem dapat mengisi data secara otomatis pada _template_ tersebut sesuai dengan data yang di input dalam CRM.  
 ![30.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50801979073177)
+  4. Kemudian lakukan copy-paste **Variable ID** tersebut ke dalam cell pada template Excel yang telah disiapkan sebelumnya.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391258265)
+  5. Setelah selesai melakukan copy-paste **Variable ID** ke template Excel yang telah disiapkan sesuai dengan field properties yang ada di CRM, kurang lebih akan berbentuk sebagai berikut.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391262745)
+  6. Lalu, pilih Menu **Document** untuk mengunggah _template_ yang telah kita buat dalam format Excel ke sistem CRM, sehingga nantinya sistem dapat membuat dokumen secara otomatis.   
 ![31.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50803410084761)
-![32.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50803410090777)
-![mceclip5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391270169)
+  7. Pilih **Template** dan klik **"Upload Template".  
+![32.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50803410090777)  
+**
+  8. Lalu ketik nama template tersebut pada bagian **File Name**. Klik **"****Browse a file"** untuk memilih _template_ yang telah kita buat dari penyimpanan perangkat. Setelah memilih _template_ dari penyimpanan perangkat, klik "**Create Template"** untuk mengunggah _file_ tersebut.**  
+![mceclip5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391270169)  
+**
+  9. Berikut adalah tampilan apabila file template yang kita pilih berhasil terupload ke sistem CRM.  
 ![33.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50803388337049)
+  10. Untuk melakukan pengecekan format pada _template_ tersebut dapat meng-klik tombol **Preview** yang nantinya akan diarahkan secara otomatis ke tab baru pada _browser_ dan terbuka halaman **Google Sheet**.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391264665)
+Perubahan template di menu Templates oleh satu User akan berpengaruh ke semua User CRM dalam organisasi tersebut.
 
 ## Error States  <!-- confidence:medium ~ -->
 

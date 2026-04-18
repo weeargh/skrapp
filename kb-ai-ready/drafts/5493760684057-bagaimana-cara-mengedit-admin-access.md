@@ -35,17 +35,18 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Klik panah di sebelah kanan nama username Anda di bagian kanan atas dashboard CRM. Sistem akan menampilkan menu dropdown.
-2. Pilih "Profile Settings" dari menu dropdown. Halaman Profile Settings akan terbuka.
-3. Klik "User Permissions" di menu pengaturan profil. Sistem akan menampilkan daftar user dan kolom "Pilih User".
-4. Di kolom "Pilih User", centang kotak di sebelah kiri nama user yang ingin Anda atur aksesnya. User yang dipilih akan ditandai dengan centang.
-5. Atur setiap jenis akses Admin dengan mengaktifkan/menonaktifkan toggle di sebelah kanan: Add & Edit User, Add & Edit Teams, Add & Edit Properties, dan Freeze Deal Stage.
-6. Klik tombol "Simpan" di bagian bawah halaman. Sistem akan menyimpan pengaturan akses Admin yang telah Anda ubah.## Expected Result  <!-- confidence:high ✓ -->
 
-Pengaturan akses Admin untuk user yang dipilih berhasil disimpan. Perubahan permisi langsung aktif di sistem. User akan memiliki kemampuan sesuai toggle yang Anda aktifkan: menambah/mengedit user, mengelola tim, mengubah properties, atau membuat freeze stage pada Deal. Pengaturan terlihat tersimpan tanpa pesan error di halaman User Permissions.
-
+3. Pada kolom **“Pilih User”** , Anda dapat memilih user yang ingin Anda atur kemampuan aksesnya dengan mencentang kotak di sebelah kiri nama user.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5493671413401)
-![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5493633850521)
+  4. Pada pengaturan akses admin, Anda dapat melakukan pengaturan akses dengan dengan mengaktifkan/me-non-aktifkan toggle di sebelah kanan. Ada beberapa jenis aktivitas Admin yang dapat diatur.  
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5493633850521)  
+**Keterangan:**  
+**- Add & Edit User**: Di _field_ ini Anda dapat mengatur apakah Admin dapat menambah/mengubah user-user yang ada dalam CRM.  
+**- Add & Edit Teams:** Di _field_ ini Anda dapat mengatur apakah Admin dapat menambah/mengubah tim dan anggota tim dalam CRM.  
+**- Add & Edit Properties:** Di _field_ ini Anda dapat mengatur apakah Admin dapat menambah/mengubah isi Properties dalam CRM.  
+**- Freeze Deal Stage:** Di _field_ ini Anda dapat mengatur apakah Admin dapat membuat freeze stage pada menu **Deal** dalam CRM.
+
+6. Jika Anda sudah selesai mengatur akses Admin, simpan pengaturan Anda dengan mengklik tombol **“Simpan"** di bagian bawah.
 
 ## Error States  <!-- confidence:medium ~ -->
 

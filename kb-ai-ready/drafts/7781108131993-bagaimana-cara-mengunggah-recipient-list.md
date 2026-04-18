@@ -40,34 +40,28 @@ Untuk mengunggah Recipient List pada fitur Campaign (Broadcast), Anda memerlukan
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel Anda. Halaman dashboard akan ditampilkan.
 
-2. Buka menu **Campaign** dan pilih **"Recipient lists"**. Daftar recipient yang ada akan ditampilkan.
-
-3. Klik tombol **"Create recipient list"**, kemudian pilih **"Upload file"**. Form pembuatan recipient list akan terbuka.
-
-4. Isi kolom nama **Recipient list** dengan nama yang deskriptif.
-
-5. Unduh template yang telah disediakan sistem dengan mengklik tombol download template.
-
-6. Buka file template dan isi data sesuai dengan ketentuan dan format yang tercantum dalam template.
-
-7. Simpan file template yang telah diisi.
-
-8. Kembali ke form upload, klik tombol **"Browse"** untuk memilih file template yang telah diisi.
-
-9. Pilih file template dari perangkat Anda.
-
-10. Klik tombol **"Import"** untuk mengunggah file. Sistem akan memvalidasi data.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengunggah file recipient list dengan sukses, pop-up notifikasi konfirmasi akan muncul menunjukkan bahwa data yang Anda submit sudah benar dan tersimpan. Recipient list baru akan ditambahkan ke dalam daftar **"Recipient lists"** dan siap digunakan untuk membuat campaign. Anda dapat melihat nama recipient list, jumlah recipients, dan tanggal pembuatan di halaman daftar recipient lists.
-
+Menu **Campaign (Broadcast)** adalah salah satu fitur pada**Chat Panel** yang memungkinkan penggunanya untuk bisa mengirimkan pesan ke banyak orang sekaligus. Fitur tersebut juga biasa dikenal dengan pesan siaran. Melalui Campaign, kita tidak perlu membuka kolom _chat_ tiap-tiap orang di kontak untuk mengirimkan mereka pesan yang sama. Tidak hanya itu, waktu yang dibutuhkan untuk mengirim pesan ke banyak kontak menjadi lebih singkat dan lebih mudah. Pada penjelasan berikut ini, Anda akan mempelajari cara mengunggah 
+Sebelumnya Anda dapat mempelajari tentang:  
+[**[Blog] Cara Mudah Membuat Pesan Siaran di WhatsApp**](https://qontak.com/blog/cara-membuat-siaran-whatsapp/?utm_source=ecosystem&utm_medium=qontak+%28help+center%29)
+Berikut merupakan cara membuat list pesan untuk mengirim Campaign.
+  1. Masuk ke akun Qontak Omnichannel Anda.
+  2. Pilih menu**Campaign** dan klik **"Recipient lists"**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43689995839769)
+  3. Untuk membuat list klik **"Create recipient list"** kemudian pilih **"Upload file"**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43689959102745)
+  4. Isi nama **Recipient list**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43689995843353)
+  5. Kemudian pilih dan unduh _template_ yang sudah disediakan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43689959104153)
+  6. Isikan _template_ tersebut sesuai dengan ketentuan di bawah ini.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43689959105049)
+  7. Unggah kembali _template_ yang telah diisi dengan klik **“Browse”** dan klik **"Import"**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50612393370137)
+- Untuk **WhatsApp campaign** , Anda dapat mengimpor daftar recipient maksimal **50.000 recipients** dalam 1 file upload.  
+- Untuk **Email campaign** , Anda dapat mengimpor daftar recipient dengan jumlah maksimal sesuai dengan [**kuota dasar harian email**](https://help-center.qontak.com/hc/id/articles/50305970510745)Anda. Jika pada saat upload data, **kuota dasar** Anda sebanyak **4.000, maka Anda hanya dapat mengimpor maksimal 4.000 recipients dalam 1 file upload.**  
+Limitasi baru pada email campaign berlaku sejak **15 September 2025 sesuai dengan mulai berlakunya penerapan limit harian pengiriman email**.
+  8. _PopUp_ notifikasi akan muncul jika data yang Anda _submit_ sudah benar.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43689959106329)
 
 ## Error States  <!-- confidence:medium ~ -->

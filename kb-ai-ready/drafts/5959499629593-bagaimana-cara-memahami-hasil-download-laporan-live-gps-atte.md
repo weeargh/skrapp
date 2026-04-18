@@ -42,35 +42,27 @@ Untuk memahami hasil download laporan Live GPS Attendance Tracking pada Monthly 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka dashboard Qontak CRM dan pastikan widget Live GPS Attendance Tracking sudah ditambahkan.
-   → Widget akan ditampilkan pada dashboard utama.
 
-2. Klik ikon garis tiga (menu) pada widget Live GPS Attendance Tracking.
-   → Menu dropdown akan muncul dengan pilihan laporan.
-
-3. Pilih opsi "Daily Check-in Report".
-   → Sistem akan menampilkan halaman laporan dengan data GPS attendance.
-
-4. Klik tombol Download untuk mengunduh laporan dalam format Monthly Report.
-   → File spreadsheet akan terunduh ke perangkat Anda.
-
-5. Buka file yang telah diunduh menggunakan aplikasi spreadsheet.
-   → Sheet Monthly Report akan menampilkan data attendance detail.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil mengunduh dan membuka laporan Live GPS Attendance Tracking Monthly Report, Anda akan melihat spreadsheet dengan kolom-kolom berikut:
-
-- Nama setiap user
-- Tanggal check-in dan check-out
-- Waktu check-in dan check-out
-- Lokasi check-in dan check-out
-- Status Present, Absent, Arrived Late, Left Early
-- Data Mock Locations (First Check-in dan Last Check-Out)
-- Durasi Tardy dalam menit
-
-Setiap baris mewakili satu catatan attendance user dengan filter waktu laporan yang sesuai periode Monthly Report.
-
+Anda bisa men-_download_ Monthly Report dari GPS Live Location. Untuk melihatnya, pastikan Anda sudah menambahkan _report_ **Live GPS Attendance Tracking** pada dashboard. Kemudian, klik garis tiga, dan pilih **"Daily Check-in Report"**.  
 ![a.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188650521)
+Hasil _download_ laporan GPS Live Location - **Monthly Report** ketika sudah di-_download_ akan menampilkan sheet seperti gambar-gambar di bawah ini:  
 ![b.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188653721)
+Pada sheet **Monthly Report** , ditampilkan secara _detail_.  
+- Filter waktu laporan  
+1. Nama-nama setiap user  
+2. Tanggal check-in  
+3. Tanggal check-out  
+4. Waktu check-in  
+5. Waktu check out  
+6. Check-in location  
+7. Check-out location  
+8. Present  
+9. First Check-in Mock Locations  
+10. Last Check-Out Mock Locations  
+11. Absent  
+12. Arrived Late  
+13. Left Early  
+14. Tardy (minutes)
 
 ## Error States  <!-- confidence:medium ~ -->
 

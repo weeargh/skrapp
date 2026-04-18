@@ -31,23 +31,23 @@ Anda memerlukan akses peran Admin pada akun Mekari Qontak untuk dapat menyetujui
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Hubungi tim support Mekari Qontak melalui email ke support-qontak@mekari.com untuk mengajukan bantuan.
 
-2. Buka email yang diterima dari tim support berisi pengajuan akses peran Admin. Email ini berlaku selama 24 jam.
-
-3. Telaah pengajuan akses dan pastikan sesuai dengan kebijakan organisasi Anda. Klik tombol "Approve" pada email untuk menyetujui pemberian akses.
-
-4. Setelah klik tombol "Approve", Anda akan diarahkan ke halaman konfirmasi pada akun Mekari Qontak.
-
-5. Tim support internal Mekari akan dapat mengakses akun Anda selama durasi yang telah ditentukan untuk melakukan konfigurasi User Management dan setup laporan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyetujui pengajuan akses, halaman akun Mekari Qontak akan menampilkan konfirmasi bahwa pengajuan akses telah disetujui. Tim support internal Mekari akan dapat mengakses akun Anda dengan peran Admin yang terbatas pada durasi tertentu. Anda akan menerima email tambahan yang menyatakan persetujuan akses telah dikonfirmasi. Tim kami dapat melakukan konfigurasi sistem dan setup laporan untuk mengoptimalkan alur kerja Anda.
-
+Saat ini, Anda dapat secara otomatis mengajukan bantuan kepada tim support Mekari Qontak secara lebih aman dan efisien. Dalam hal ini, tim _support_ internal kami akan membantu Anda selama proses **onboarding** , **aktivasi** , serta **pemecahan masalah** lainnya dan Anda tidak perlu memberikan kredensial kepada tim kami. Hal ini bertujuan agar keamanan, kepatuhan, dan transparansi tetap terjaga. 
+Untuk itu, kami menerapkan sebuah alur dari fitur yang dinamakan ‘Konsultan Mekari’ pada Mekari Qontak guna membantu Anda melakukan penyelesaian masalah yang mungkin terjadi. Simak penerapan alur management consulting tim kami melalui langkah-langkah berikut ini.
+  1. Hubungi
+  2. Kemudian, Anda akan menerima email berikut. Dalam contoh di bawah ini, tim internal kami akan mengajukan akses peran **Admin** milik Anda untuk dapat melakukan sistem konfigurasi pada **User Management** serta**laporan setup** untuk mengoptimalkan alur kerja dan memastikan integrasi yang lancar melalui layanan Mekari Qontak.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39873021310233)
+  3. Apabila pengajuan tersebut sudah sesuai dengan kebijakan yang Anda miliki, maka klik **“Approve”** untuk menyetujui pemberian akses terhadap tim kami.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39873037514777)
+Email tersebut akan mengalami kadaluarsa dalam **24 jam**.
+  4. Lalu Anda akan diarahkan ke halaman berikut pada akun Mekari Qontak yang menandakan bahwa pengajuan akses telah disetujui. Dalam hal ini, tim internal kami dapat mengakses akun Mekari Anda selama durasi yang telah ditentukan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39873021312921)
+Apabila email pengajuan akses mengalami kadaluarsa, maka Anda akan diarahkan ke halaman berikut. Dalam hal ini, Anda dapat menghubungi tim kami kembali melalui email untuk mengirimkan email approval yang baru.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39873037519897)
+  5. Kemudian, Anda akan kembali menerima email yang menyatakan bahwa pengajuan akses telah disetujui.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39873037521305)
+
+Demikian alur penerapan fitur Konsultan Mekari Qontak.
 
 ## Error States  <!-- confidence:high ✓ -->
 

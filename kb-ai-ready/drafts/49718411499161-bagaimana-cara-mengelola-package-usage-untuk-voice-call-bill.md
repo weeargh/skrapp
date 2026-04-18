@@ -42,31 +42,29 @@ Catatan: Fitur WhatsApp Call masih dalam tahap Beta dan hanya akan muncul untuk 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda menggunakan kredensial Admin atau Supervisor. Dashboard utama akan ditampilkan.
 
-2. Di menu utama, pilih menu **Package Usage** kemudian klik tab **Conversation**. Sistem akan menampilkan halaman Package Usage dengan daftar kuota.
-
-3. Pada kolom **Package usage**, Anda akan melihat kuota **Voice Balance** (jika fitur WhatsApp Call sudah diaktifkan). Klik **ikon tanda tanya** di samping Voice Balance untuk melihat detail saldo.
-
-4. Pada halaman detail Voice Balance, Anda akan melihat:
-   - Initial Balance (saldo awal)
-   - Additional Balance (saldo tambahan)
-   - Total Balance (akumulasi kedua saldo)
-
-5. Catat sisa Voice Balance Anda sebelum melakukan panggilan keluar, karena setiap menit panggilan akan mengurangi saldo tersebut.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan langkah-langkah di atas, Anda berhasil melihat dan memahami pengelolaan Package Usage Voice Call Billing. Anda akan:
-
-- Dapat melihat detail Voice Balance Anda (Initial, Additional, dan Total Balance)
-- Mengetahui sisa kuota panggilan suara yang tersedia
-- Memahami bahwa setiap panggilan WhatsApp Call akan mengurangi Voice Balance
-- Mengetahui batas minimum saldo yang diperlukan untuk melakukan panggilan keluar (panggilan masuk dapat dilakukan tanpa saldo)
-
-Informasi ini membantu Anda mengelola penggunaan panggilan suara dengan lebih efektif.
-
+Saat ini, pada Package Usage terdapat pengelolaan Voice Call Billing dimana akan digunakan untuk percakapan yang bersifat **Voice** seperti **WhatsApp Call**. Pada penggunaannya, Anda perlu memperhatikan kuota saldo panggilan suara yang telah dilakukan. Berdasarkan hal tersebut, fitur WhatsApp Call akan mengurangi **Voice Balance** karena WhatsApp Call akan menjadi bagian dari **Panggilan Suara**.Berikut langkah-langkah dalam mengelola Package Usage tersebut.
+**Penting****  
+**- Fitur**WhatsApp Call** masih dalam **Tahap Beta**. Kemunculan saldo WhatsApp Call ini **tidak akan** mempengaruhi semua pengguna.  
+- Fitur ini hanya akan mempengaruhi pengguna yang mengaktifkan fitur **WhatsApp Call**. Apabila Anda ingin mengaktifkan fitur tersebut, harap 
+  1. Login ke akun Qontak Omnichannel Anda.
+  2. Pilih menu **Package Usage** dan klik **Conversation**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49718550832537)
+  3. Lalu Anda akan diarahkan ke halaman berikut. Apabila Anda mengaktifkan fitur **WhatsApp Call** , maka akan muncul kuota **Voice Balance** pada kolom **Package usage**. Klik **“ikon tanda tanya”** berikut untuk melihat _detail_ saldo.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49718550834969)
+  4. Pada detail saldo dari **Voice balance** , Anda akan melihat **Initial balance** atau saldo awal, **Additional balance** atau saldo tambahan**,** dan **Total balance** atau akumulasi dari jumlah **Initial balance** dan **Additional balance**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49718529960217)
+  5. Berikut catatan **Harga & Potongan **dari penggunaan **WhatsApp Call** :
+Potongan akan dihitung berdasarkan **Menit  
+****Contoh kasus** : Panggilan **2 detik** → **Voice balance** Anda akan dipotong **1 menit**.  
+Saat ini, kami hanya akan menjual berdasarkan harga menit. Terdapat 2 jenis panggilan:  
+- Panggilan **Masuk** → Panggilan yang dimulai oleh Pelanggan.  
+- Panggilan **Keluar** → Panggilan yang dimulai oleh Anda.  
+**Harga:  
+** - Panggilan **Masuk** dengan Nomor Indonesia: **Rp 0/menit  
+** - Panggilan **Keluar** dengan Nomor Indonesia: **Rp 345.39/menit/menit**
+  6. Untuk melakukan panggilan keluar, akan ada batas saldo. Jika Anda memiliki jumlah **Voice balance** di bawah batas saldo, maka panggilan tidak dapat dilakukan.
+Klien dapat melakukan panggilan masuk tanpa saldo.
 
 ## Error States  <!-- confidence:high ✓ -->
 

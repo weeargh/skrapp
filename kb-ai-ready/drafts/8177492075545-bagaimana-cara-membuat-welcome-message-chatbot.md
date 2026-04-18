@@ -38,32 +38,28 @@ Sebelum membuat Welcome Message Chatbot, pastikan Anda memiliki:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Pada halaman dashboard Chatbot, klik salah satu nama Conversation yang telah dibuat sebelumnya.
-   Sistem akan menampilkan detail conversation dan menunjukkan Bot response quota di bagian kiri atas.
 
-2. Klik kotak bubble untuk mengisi Welcome Message.
-   Halaman Bot Response Settings - General akan terbuka.
-
-3. Isi kolom Bot Response Type, Bot Response Name, dan Bot Response Content:
-   - Pilih tipe "Text" untuk Welcome Message
-   - Masukkan nama (default: "Welcome message")
-   - Tulis konten pesan pembuka (contoh: "Welcome to Qontak AI-powered chatbot")
-
-4. Opsional: Tambahkan variable dengan klik "Add variable" untuk personalisasi pesan berdasarkan data customer.
-
-5. Opsional: Lampirkan file di bagian Attachment (maksimal 10 file, ukuran max 64 MB per file).
-
-6. Klik tombol Save untuk menyimpan Welcome Message.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah Welcome Message berhasil dibuat dan disimpan:
-
-1. Pesan pembuka akan ditampilkan otomatis saat customer memulai percakapan dengan chatbot
-2. Bot Response Name muncul di daftar Bot Response pada conversation tersebut
-3. Welcome Message siap digunakan dalam alur chatbot yang telah dikonfigurasi
-4. Conversation dapat dilanjutkan dengan menambahkan User Input dan Bot Response tambahan, kemudian dipublish
-
+3. Untuk mengisi Welcome message, Anda dapat klik kotak _bubble_.  
 ![111.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51037705692825)
-![112.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51037705696665)
+Welcome message adalah pesan pembuka otomatis untuk memulai percakapan dengan customer.
+  4. Setelah itu, akan muncul **Bot Response Settings - General** seperti berikut.  
+****![112.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51037705696665)  
+Keterangan:  
+**** **No** |  **Kolom** |  **Penjelasan**  
+---|---|---  
+1 |  Bot Response Type |  Anda dapat memilih salah satu tipe Bot Response berikut:
+     * Text
+     * Button
+     * List
+Untuk Welcome message yang bersifat membuka percakapan, tipe Bot Response yang biasa digunakan adalah **Text.** Untuk penjelasan Bot Response Type yang lebih lengkap, baca guidebook [di sini.](https://help-center.qontak.com/hc/id/articles/12263090746137)  
+2 |  Bot Response Name |  Isikan nama Bot Response di sini, dengan nama default "Welcome message".  
+3 |  Bot Response Content |  Isikan respon bot di sini, dengan kalimat atau ucapan pembuka default seperti "Welcome to Qontak AI-powered chatbot". Tidak ada batasan karakter pada bubble Bot Response Content. Selain itu, Anda juga dapat klik **"Add variable"** yang berfungsi untuk menampilkan kembali data yang sudah ditambahkan (misalnya nama, email, atau jawaban lain) ke dalam balasan Chatbot, sehingga balasan yang dihasilkan menjadi lebih personal dan bersifat otomatis.  
+4 |  Attachment |  Anda dapat melampirkan file di sini. Jumlah maksimal file yang dapat Anda unggah adalah 10 file dan maksimum ukuran file yang dapat diunggah adalah 64 MB. Jenis file yang bisa dapat diunggah adalah Image (.jpeg, .jpg, .png, dan .gif), Video (.mkv, .mov, and .mp4), dan Document (.pdf, .xlsx, .docx, .pptx , .xls, .csv, .s20, dan .cdr). Jika user melampirkan lebih dari 5 file, maka hanya 5 file pertama yang akan ditampilkan. Gunakan tombol X di samping file untuk menghapusnya.  
+5 |  Conversations tags |  Anda dapat memasukkan tag pada percakapan bot yang muncul. Tag ini berguna untuk mengelompokkan percakapan berdasarkan tag yang Anda pilih. Klik [di sini](https://help-center.qontak.com/hc/id/articles/5662312564889) untuk mengetahui cara menambahkan tag.  
+6 |  Additional Setting |  Gunakan pengaturan tambahan ini, untuk mengatur respon bot.  Untuk penjelasan Additional Setting yang lebih lengkap, baca guidebook [di sini.](https://help-center.qontak.com/hc/id/articles/12128813400857)  
+7 |  Send purchase event |  _Toggle_**Send purchase event** adalah opsi untuk menandai respons bot sebagai peristiwa pembelian. Jika diaktifkan, sistem akan mengirimkan data bahwa transaksi telah terjadi, sehingga dapat digunakan untuk keperluan pencatatan, analitik, maupun integrasi dengan aplikasi lain.
+
+Demikian cara membuat welcome message chatbot pada Mekari Qontak Omnichannel.
 
 ## Error States  <!-- confidence:low ? -->
 

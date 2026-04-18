@@ -37,22 +37,23 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda. Dashboard utama akan ditampilkan.
-2. Klik menu **Inbox**. Sistem akan menampilkan daftar pesan dan room chat yang tersedia.
-3. Klik ikon **Filter** yang terletak di area filter. Panel pengaturan filter akan muncul.
-4. Pilih kriteria filter sesuai kebutuhan:
-   - **Sessions**: Pilih Open, Expiring, atau Expired
-   - **Agents**: Pilih agent dari dropdown
-   - **Channels**: Pilih satu atau lebih channel dari dropdown
-   - **Tags**: Pilih tag dari dropdown
-   - **Whatsapp Campaign**: Centang untuk menampilkan pesan broadcast WhatsApp
-   - **Unresponded Chat**: Centang untuk menampilkan pesan yang belum dibalas agent
-5. Klik tombol **Apply** atau **Terapkan**. Sistem akan memfilter pesan berdasarkan kriteria yang dipilih dan menampilkan hasilnya di daftar inbox.## Expected Result  <!-- confidence:high ✓ -->
 
-Daftar pesan di menu Inbox berhasil difilter sesuai kriteria yang Anda tentukan. Hanya pesan yang memenuhi semua filter aktif yang ditampilkan. Anda dapat melihat jumlah pesan yang sesuai filter dan mengklik salah satu untuk membuka detail percakapan. Filter tetap aktif hingga Anda mengubah atau menghapus kriteria filter.
-
-![153.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53768259171609)
+**Omnichannel** memiliki fitur filter yang dapat memudahkan Anda dalam mencari beberapa pesan dengan spesifikasi tertentu yang dapat diatur sesuai dengan keinginan anda.
+Ikuti langka berikut untuk menggunakan fitur filter pada akun **Omnichannel** Anda.
+  1. Login ke akun Qontak Omnichannel Anda. 
+  2. Untuk membuka pesan **Omnichannel** atau melihat detail pesan Anda dapat mengklik **Menu Inbox.** Anda akan dialihkan ke halaman inbox dengan detail yang lebih lengkap.
+  3. Pengaturan menu filter dapat dibuka dengan menekan ikon**"Filter".**  
+**![153.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53768259171609)**
+  4. Kemudian pengaturan filter akan muncul.  
 ![154.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53768302430745)
+  5. Anda dapat mengisi field filter yang sesuai dengan kebutuhan. Di mana **Sessions** terbagi menjadi 3 yaitu **Open** , **Expiring** dan **Expired**. Anda juga bisa memfilter via **Agent** dan **Tags** pada _dropdown_ yang sudah disediakan. Penjelasan filter terdapat di bagian bawah.
+Penjelasan filter:
+     * **Whatsapp Campaign** : Untuk memfilter pesan-pesan broadcast yang dikirimkan secara massal melalui Whatsapp API.
+     * **Unresponded Chat** : Untuk memfilter pesan dari pelanggan yang telah dibaca dan ditugaskan kepada Agen, namun belum dibalas oleh Agen.
+     * **Sessions** : Memfilter pesan berdasarkan sesi dari pesan-pesan yang masuk.
+     * **Agents** : Memfilter pesan yang masuk berdasarkan  _agents_ yang ditugaskan.
+     * **Channels** : Merupakan channel-channel yang terhubung dengan Omnichannel. Anda bisa memilih satu atau beberapa dari channel yang terhubung untuk difilter pesannya.
+     * **Tags** : Untuk memfilter pesan sesuai dengan tags yang ditambahkan dalam pesan.
 
 ## Error States  <!-- confidence:low ? -->
 

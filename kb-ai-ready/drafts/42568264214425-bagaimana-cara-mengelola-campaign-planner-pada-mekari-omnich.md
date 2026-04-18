@@ -33,22 +33,39 @@ Anda memerlukan akses Admin ke akun Mekari Omnichannel untuk mengelola Campaign 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Omnichannel Anda dan pilih menu Campaign.
-2. Klik tab menu WhatsApp. Sistem akan menampilkan daftar campaign.
-3. Klik tombol Create campaign. Anda akan diarahkan ke halaman form pembuatan campaign.
-4. Isi kolom Campaign name, pilih Sender, tentukan Recipient list, dan pilih Template.
-5. Di bagian Sending options, pilih salah satu metode: Send now (kirim langsung), Send later (tentukan tanggal dan waktu pengiriman), atau Send as recurring campaign (tentukan Repeat period: Daily, Weekly, atau Monthly).
-6. Verifikasi pratinjau pesan di bagian Message preview.
-7. Klik tombol Send campaign untuk mengirimkan campaign.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengklik tombol Send campaign, sistem akan memproses pengiriman berdasarkan metode yang dipilih. Untuk Send now, campaign langsung dikirim kepada semua penerima. Untuk Send later, campaign akan dikirim pada tanggal dan waktu yang telah ditentukan. Untuk Send as recurring campaign, pesan akan dikirim berulang sesuai periode yang dipilih (harian, mingguan, atau bulanan) hingga tanggal akhir yang ditentukan. Anda akan melihat status campaign di halaman Campaign list.
-
+Saat ini, terdapat fitur baru yang memungkinkan Anda membuat pesan Campaign berulang dan terjadwal sekaligus. Tujuannya adalah untuk meningkatkan efektivitas dalam membuat Broadcast. Pada tutorial berikut ini, Anda akan mempelajari cara mengelola Campaign Planner pada Mekari Omnichannel. Berikut langkah-langkahnya.
+**Penting**  
+Fitur ini masih dalam tahap BETA dan hanya diaktifkan pada **100 Organisasi** atau **CID** tertentu. Selain organisasi yang tidak termasuk dalam pengujian BETA akan ditampilkan halaman Campaign versi **lama**.
+  1. Masuk ke akun **Omnichannel** Anda, lalu pilih menu **Campaign**.
+  2. Kemudian klik tab menu **“WhatsApp”**.  
 ![0.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568264189209)
+  3. Lalu klik **“Create campaign”**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568256489241)
-![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568256490265)
-![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568436798489)
-![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568422828185)
-![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568436803097)
+  4. Kemudian Anda akan diarahkan ke halaman berikut. Berikut sekilas penjelasan setiap _field_ yang terdapat pada halaman **Create campaign**.  
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568256490265)  
+**Keterangan**
+
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+**1** | **Campaign name** | Nama **Campaign**.  
+**2** | **Sender** | Pengirim pesan **Campaign**.  
+**3** | **Recipient list** | Mengedit daftar penerima pesan **Campaign**.  
+**4** | **Template** | Template pesan **Campaign**.  
+**5** | **Content Message** | Tentukan **Template Campaign** terlebih dahulu untuk mengisi kolom **Content Message**.  
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568436798489)  
+**6** | **Campaign assignment** | Centang _toggle_ berikut untuk menentukan divisi mana yang akan menerima **Campaign** yang di-_assign_.  
+![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568422828185)  
+**7** | **Sending options** | Metode pengiriman **Campaign**. Terdapat **3 metode** pengiriman **Campaign** yaitu:  
+- **Send now** : Kirim _campaign_ sekarang.  
+- **Send later** : Kirim _campaign_ nanti.  
+- **Send as recurring campaign** : Kirim sebagai _campaign_ berulang.  
+![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42568436803097)  
+**8** | **WhatsApp balance** | Saldo WhatsApp balance. Pelajari [di sini](https://help-center.qontak.com/hc/id/articles/5922540799641) tekait saldo minimum WhatsApp untuk mengirimkan **Campaign**.  
+**9** | **Message preview** | Pratinjau pesan campaign.  
+**10** | **Send campaign** | Setelah pembuatan campaign selesai, klik tombol tersebut untuk mengirimkan campaign.
+
+Demikian penjelasan mengenai cara mengelola Campaign Planner pada Mekari Qontak Omnichannel.
 
 ## Error States  <!-- confidence:medium ~ -->
 

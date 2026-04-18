@@ -38,40 +38,54 @@ Pastikan Anda sudah memiliki akses ke menu Campaign sebelum memulai membuat temp
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Anda, lalu pilih menu **Campaign**. Sistem akan menampilkan halaman Campaign dengan beberapa tab pilihan.
 
-2. Klik tab **Templates**. Halaman akan menampilkan daftar template yang tersedia.
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | Drag component here | Isi dari template yang akan dibuat.  
+2 | Component |  Komponen template. Di sini, Anda dapat membuat tipe template yang terdiri dari **teks** , **gambar** , **CTA button** , dan **Divider** dengan cara memindahkan salah satu template tersebut ke halaman **‘Drag component here’**.
 
-3. Klik tab **Email**. Sistem akan menampilkan daftar template email atau pesan kosong jika belum ada template.
+2. **Image (Gambar)** Apabila Anda memilih jenis komponen template berupa **Image** , maka Anda dapat mengatur jenis gambar, deskripsi, ukuran, link attachment (opsional), dan alignment (posisi) gambar.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448659225)   
+3. **CTA button (Tombol Call to Action)** Apabila Anda memilih jenis komponen template berupa **Call to Action** , maka Anda dapat mengatur mulai dari teks pada tombol, link to, warna teks pada tombol, warna tombol, warna border, radius border pada tombol, lebar tombol, hingga alignment pada tombol.  ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448660377)   
+4. **Divider** Apabila Anda memilih jenis komponen template berupa **Divider** , maka Anda dapat mengatur ketebalan, lebar, tipe, dan warna garis.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448660505)  
+3 | Drag button | Tombol untuk menarik komponen template ke halaman **‘Drag the component here’**.   
+4 | Drag component here | Platform untuk menempatkan komponen template.  
+5 | Preview | Pratinjau untuk melihat gambaran hasil pembuatan template.  
+6 | Contents button | Tombol untuk mengakses pengaturan **‘Content’**.  
+  1. Kemudian klik “**ikon Style”** untuk mengatur desain _template_. Berikut penjelasan setiap fitur yang terdapat pada halaman tersebut.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426401213465)  
+**Keterangan:**
 
-4. Klik tombol **Create template**. Halaman formulir pembuatan template akan terbuka.
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | Background color | Warna latar belakang template.  
+2 | Body color | Warna **Body template**.  
+3 | Body width | Lebar **Body template**.  
+4 | Spacing | Jarak **Body template**.
 
-5. Masukkan nama template pada kolom **Template name**, lalu klik tombol **Continue**. Sistem akan membuka halaman editor template dengan opsi konten dan desain.
-
-6. Pada bagian **Content**, pilih komponen yang ingin ditambahkan ke template (teks, gambar, tombol, dll).
-
-7. Klik **ikon Style** untuk mengatur desain: warna latar belakang, warna body, lebar body, dan jarak spacing.
-
-8. Klik tombol **Create**. Template akan tersimpan dan muncul di daftar template email.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil membuat template email campaign:
-
-1. Template baru akan muncul di halaman daftar template email dengan nama yang Anda masukkan
-2. Template siap digunakan untuk membuat email campaign
-3. Anda dapat melihat template dalam daftar dan melakukan tindakan seperti edit atau hapus melalui menu **Actions**
-
-Template yang telah dibuat dapat langsung digunakan ketika Anda membuat email campaign baru melalui menu Campaign > Email.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448659225)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448660377)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426448660505)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47426401213465)
+### A. Mengubah Konten Template[](https://help-center.qontak.com/hc/id/articles/47426448666521-Bagaimana-Cara-Membuat-Template-untuk-Email-Campaign#h_01K9NVN6KA3HHTEDQDFJHH10SH)
+Jika Anda perlu memperbarui detail konten email yang telah Anda buat, Anda tidak perlu membuat _template_ baru dan dapat mengubah template yang telah ada. Berikut langkahnya.
+  1. Klik **“Actions”** lalu pilih **“Edit”** pada salah satu _template_ yang ingin Anda ubah.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52297143254041)
+  2. Kemudian lakukan edit _template_ sesuai keinginan Anda. Pastikan keseluruhan data telah benar, lalu klik **“Save changes”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52297127580569)
+Konten _template_ yang diubah hanya akan mempengaruhi pengiriman _campaign_ berikutnya, termasuk _preview_ konten _template_ pada _campaign_ yang telah dikirimkan sebelumnya.
+
+### B. Menghapus Template[](https://help-center.qontak.com/hc/id/articles/47426448666521-Bagaimana-Cara-Membuat-Template-untuk-Email-Campaign#h_01K9MQG2HD1SRP8NVM0V72P4G7)
+Anda dapat menghapus template jika _template_ tidak relevan lagi untuk digunakan. Berikut langkahnya.
+  1. Klik **“Actions”** lalu pilih **“Delete”** pada salah satu **Template** yang ingin Anda hapus.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285382444953)
+  2. Klik **“Delete”** untuk mengkonfirmasi penghapusan _template_.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285390934297)
+  3. Anda juga dapat melakukan penghapusan data melalui halaman _detail template_. Klik nama _template_ yang ingin dihapus.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285382447001)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285390935449)
+  4. Lalu klik **“Delete template”**.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285390935449)**
+  5. Klik **“Delete”** untuk mengkonfirmasi penghapusan _template_.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285390934297)
+Anda masih dapat melakukan _preview_ atas konten _template_ yang telah dihapus pada halaman _detail campaign_.
+  6. Maka _template_ berhasil dihapus.
 ![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F52285516655001)
 
 ## Error States  <!-- confidence:medium ~ -->

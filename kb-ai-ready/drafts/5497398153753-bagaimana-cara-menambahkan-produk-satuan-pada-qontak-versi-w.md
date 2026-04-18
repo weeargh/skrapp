@@ -38,21 +38,12 @@ Untuk menambahkan produk satuan pada Qontak versi Web, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Setelah login berhasil, cari menu **Produk** di bagian menu sebelah kiri. Klik menu **Produk**, kemudian klik tombol **+Tambah Produk** dan pilih **Produk**. Sistem akan menampilkan formulir tambah produk.
 
-2. Isi semua field yang diperlukan pada formulir. Perhatikan tanda bintang (*) berwarna merah yang menandakan field wajib diisi. Field yang dapat Anda isi meliputi: nama produk, harga, deskripsi, dan informasi lainnya. Jika Subcategory sudah diaktifkan, kolom tambahan untuk kategori akan tersedia.
-
-3. Setelah semua data terisi dengan lengkap, klik tombol **Save** untuk menyimpan produk baru. Sistem akan memproses dan menyimpan data produk Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Produk satuan berhasil ditambahkan dan tersimpan dalam Qontak CRM. Sistem menampilkan pesan konfirmasi penyimpanan dan Anda akan dikembalikan ke daftar produk. Produk baru yang baru saja Anda buat akan muncul di dalam list produk dengan semua informasi yang telah Anda masukkan (nama, harga, kategori, dan detail lainnya) tersimpan dan dapat diakses untuk digunakan dalam aktivitas CRM selanjutnya.## Error States  <!-- confidence:medium ~ -->
-
-Jika Anda mengalami kesulitan saat menambahkan produk:
-
-- **Field wajib diisi kosong**: Periksa semua field bertanda bintang (*) berwarna merah. Sistem tidak akan menyimpan data jika ada field wajib yang belum diisi. Isi semua field tersebut sebelum mengklik tombol Save.
-
-- **Subcategory tidak muncul**: Jika kolom Subcategory tidak tersedia, fitur ini belum diaktifkan di menu Properties. Aktifkan Product Category dan Product Subcategory terlebih dahulu sesuai panduan di artikel terkait.
-
+Dalam menu **Produk** , Anda dapat menambahkan jenis produk yang Anda inginkan. Berikut merupakan langkah yang Anda dapat jadikan acuan dalam penambahan **Produk** pada Web.
+  1. Setelah Anda berhasil login, Anda akan menemui menu produk di bagian kiri. Untuk menambahkan suatu produk, Anda dapat mengklik menu **Produk,** lalu klik **+Tambah Produk** dan pilih**Produk.**  
 ![1111.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F14268885839769)
+  2. Pada saat menambahkan **produk** , pastikan _field-field_ kolom yang perlu Anda ketahui sudah ada pada produk _field_ CRM Qontak sehingga saat pengisian informasi-informasi yang akan Anda masukan sudah terisi dengan rapi. Dalam menu produk Anda dapat mengisi informasi-informasi penting dari nama, harga dan lain-lain. 
+    1. **Tampilan tambah produk tanpa Sub category**  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5497302206489)
 
 ## Escalation  <!-- confidence:medium ~ -->

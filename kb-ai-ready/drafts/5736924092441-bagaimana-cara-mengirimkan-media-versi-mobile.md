@@ -38,25 +38,21 @@ Untuk mengirimkan media melalui versi mobile Qontak Omnichannel, Anda memerlukan
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Aplikasi Qontak Chat pada smartphone Anda, lalu masukkan alamat email serta password. Tekan tombol "Login" untuk masuk ke akun Anda. Sistem akan menampilkan halaman Inbox dengan daftar pesan masuk.
 
-2. Pada halaman Inbox, pilih salah satu pesan masuk dari customer yang ingin Anda balas dengan media. Percakapan akan terbuka di layar.
-
-3. Klik ikon "tambah" (ikon plus) di bagian bawah layar percakapan. Menu pop-up akan muncul menampilkan pilihan media.
-
-4. Pilih salah satu jenis media yang ingin dikirim:
-   - **Camera**: Klik untuk membuka kamera dan ambil foto langsung
-   - **Photo**: Klik untuk memilih foto dari galeri smartphone Anda
-   - **Video**: Klik untuk memilih video dari galeri smartphone Anda
-   - **Document**: Klik untuk memilih dokumen dari penyimpanan smartphone Anda
-
-5. Pilih file media yang ingin dikirim, lalu konfirmasi untuk mengirimnya ke customer.## Expected Result  <!-- confidence:medium ~ -->
-
-Setelah mengirimkan media, file berhasil diunggah dan terkirim ke customer di percakapan Inbox. Pesan media akan muncul dalam thread percakapan dengan file attachment terlihat. Customer akan menerima media tersebut di aplikasi Qontak mereka dan dapat mengunduhnya jika diperlukan.
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para customer service akan melayani semua keluhan user berupa pesan masuk.
+Berikut adalah beberapa media yang disediakan dalam mengirimkan pesan pada Inbox.
+  1. Buka Aplikasi Qontak Chat pada _smartphone_ Anda, lalu masukkan alamat email serta _password_ Anda. Tekan **"Login"** untuk masuk.
+  2. Pada tampilan Inbox Anda, pilih salah satu pesan masuk yang ingin Anda kirimkan media.  
 ![19.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50772410249753)
+  3. Selanjutnya, Anda bisa mengklik ikon**"tambah"** seperti pada gambar berikut.  
 ![20.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50772410255513)
-![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50772410260377)
+  4. Maka, sebuah menu _pop up_ akan muncul. Anda dapat memilih salah satu media yang ingin Anda kirimkan ke customer.  
+![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50772410260377)  
+**Keterangan:  
+****- Camera** : Anda bisa mengirimkan pesan gambar dengan mengklik Camera sehingga kamera akan secara otomatis mengajukan permintan untuk mengambil gambar di smartphone Anda.  
+**- Photo:** Anda bisa mengirimkan pesan gambar dengan mengklik Photo. Kemudian, Anda bebas memilih photo mana yang Anda kirim.  
+**- Video** : Anda bisa mengirimkan pesan video dengan mengklik Videos. Kemudian, Anda bebas memilih foto dan vidio mana yang akan Anda kirim.  
+**- Document** : Anda bisa mengirimkan pesan dokumen dengan mengklik Document. Kemudian, Anda bebas memilih dokumen mana yang akan Anda kirim.
 
 ## Error States  <!-- confidence:low ? -->
 

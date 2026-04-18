@@ -37,40 +37,11 @@ Untuk memindahkan deals ke stage berbeda di Qontak CRM versi web, Anda memerluka
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Cara 1: Menggunakan Drag and Drop**
 
-1. Buka menu Deals pada Qontak CRM.
-   → Sistem akan menampilkan daftar deals dalam format kanban board dengan berbagai stage.
-
-2. Temukan deal yang ingin Anda pindahkan.
-   → Deal ditampilkan sebagai kartu dalam kolom stage tertentu.
-
-3. Klik dan tahan deal tersebut, kemudian seret ke kolom stage tujuan.
-   → Deal akan berpindah ke stage yang dituju dan perubahan disimpan otomatis.
-
-**Cara 2: Melalui Detail Deal**
-
-1. Buka menu Deals pada Qontak CRM.
-   → Sistem akan menampilkan daftar deals.
-
-2. Klik deal yang ingin Anda pindahkan stagenya.
-   → Halaman detail deal akan terbuka.
-
-3. Pilih stage tujuan dari dropdown atau field stage yang tersedia.
-   → Opsi stage akan ditampilkan.
-
-4. Klik tombol Save untuk menyimpan perubahan.
-   → Deal akan berpindah ke stage yang baru dipilih.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah memindahkan deal ke stage yang dituju, Anda akan melihat:
-
-1. **Metode Drag and Drop**: Deal hilang dari kolom stage lama dan muncul di kolom stage baru pada kanban board. Perubahan langsung terlihat di layar.
-
-2. **Metode Detail Deal**: Halaman detail deal menampilkan stage yang baru diperbarui. Sistem akan menampilkan notifikasi sukses atau deal secara otomatis tersimpan di stage baru.
-
-3. Di daftar deals, deal akan terlihat berada di pipeline stage yang baru sesuai pengaturan filter atau view Anda.
-
+Pada Qontak versi web, Anda dapat memindahkan **deals** **stage** yang satu ke stage lainnya. Terdapat 2 cara untuk memindahkan **stage** dari **deals**. Berikut langkah-langkahnya: 
+  1. _Drag and drop_ **deals** yang ingin dipindahkan ke **stage** yang dituju.  
 ![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916386713)
+  2. Kemudian, cara yang kedua, Anda dapat masuk ke **deal** yang ingin Anda pindahkan stagenya. Lalu pilih **stage** yang ingin dituju dan klik **"Save"** untuk menyimpan perubahan.   
 ![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892830745)
 
 ## Error States  <!-- confidence:low ? -->

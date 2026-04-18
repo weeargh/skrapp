@@ -39,18 +39,15 @@ Untuk menambahkan task satuan di Mekari Qontak CRM versi Web, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Mekari Qontak CRM Anda dan buka menu **Task**. Sistem akan menampilkan daftar task yang ada.
 
-2. Klik tombol **"Add Task"** dan pilih opsi **"Add Task"**. Form penambahan task baru akan terbuka.
-
-3. Isi semua field yang ada pada form. Perhatikan tanda bintang (*) bewarna merah pada nama field—ini menandakan field wajib diisi. Pastikan informasi yang Anda masukkan sudah terisi dengan rapi dan sesuai dengan kebutuhan.
-
-4. Setelah semua data terisi lengkap, klik tombol **"Create Task"** untuk menyimpan task. Jika Anda tidak ingin menyimpan, klik tombol **"Cancel"**.## Expected Result  <!-- confidence:medium ~ -->
-
-Setelah klik tombol **"Create Task"**, sistem akan memproses data dan task baru akan disimpan. Anda akan diarahkan kembali ke halaman menu Task, dan task yang baru saja dibuat akan muncul di daftar task dengan status aktif. Jika berhasil, Anda akan melihat notifikasi konfirmasi bahwa task telah berhasil ditambahkan.
-
-![26.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956767467033)
+Dalam menu **Task** , Anda dapat menambahkan task yang Anda inginkan. Berikut merupakan langkah yang Anda dapat jadikan acuan dalam penambahan task pada Web.
+  1. Masuk ke menu **Task**.
+  2. Klik**"Add Task"** dan pilih **"Add Task"**  
+**![26.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956767467033)**
+  3. Pada saat menambah task, pastikan _field-field_ kolom yang perlu Anda ketahui sudah ada pada task field CRM Qontak sehingga saat pengisian informasi-informasi yang akan Anda masukan sudah terisi dengan rapi.  
 ![27.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956767467929)
+Saat pengisian, Anda harus memperhatikan tanda bintang(*) bewarna merah yang ada nama field tersebut yang berarti Anda wajib memberikan isian pada kolom tersebut.
+  4. Setelah data terisi, klik button **Create Task** untuk menyimpan data. Selain menyimpan data, Anda juga bisa mengklik buton **Cancel** jika Anda tidak ingin menyimpan data tersebut.  
 ![mceclip3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956756129305)
 
 ## Error States  <!-- confidence:medium ~ -->

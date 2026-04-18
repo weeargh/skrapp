@@ -37,24 +37,25 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM, lalu buka menu **Properties**.
-2. Klik tab **Deals**. Sistem menampilkan daftar pengaturan Deals.
-3. Klik tab **Pipelines**. Sistem menampilkan daftar semua Pipeline yang telah dibuat.
-4. Klik ikon **Edit** pada Pipeline yang ingin diaktifkan Freeze Stage. Form edit Pipeline terbuka.
-5. Centang checkbox **Freeze Stage** di dalam form. Opsi Freeze Stage menjadi aktif.
-6. Klik tombol **Save pipeline**. Sistem menyimpan pengaturan dan kembali ke daftar Pipelines.
-7. Buka menu utama **Deals** dan pilih Pipeline yang telah diaktifkan Freeze Stage. Deals dalam Pipeline ditampilkan dengan status Freeze Stage.
-8. Klik salah satu Deal untuk lihat detailnya. Deal yang dalam status Freeze Stage tidak dapat diedit atau dipindahkan ke stage lain.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengaktifkan Freeze Stage pada Pipeline, Deals yang berada di stage yang dikonfigurasi dengan Freeze Stage akan terkunci dan tidak dapat diedit atau dimodifikasi. Sistem menampilkan status Freeze Stage pada setiap Deal yang terdampak. Hanya Admin yang dapat mengubah pengaturan Freeze Stage kembali. Data integritas Deal terjaga karena tidak ada modifikasi yang tidak diinginkan setelah Deal mencapai stage final (misalnya Done/Won).
-
+Apabila Anda mengaktifkan mode ‘Freeze Stage’ pada pengaturan Deals, maka deals tidak dapat diubah jika dipindahkan ke stage tertentu. Sebagai contoh, jika deal dipindah ke stage **Done/Won** , maka deals tersebut sudah tidak dapat diedit kembali. Dalam hal ini, hanya peran **Admin** yang dapat mengatur ‘Freeze Stage’ pada Deals. Hal ini bertujuan untuk memastikan adanya integritas data dan mencegah modifikasi yang tidak diinginkan. Untuk lebih jelasnya, simak langkah-langkah mengaktifkan mode ‘Freeze Stage’ pada Deals.
+  1. Masuk ke akun **CRM** Anda, lalu pilih menu **Properties**.
+  2. Kemudian klik tab **‘Deals’**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955802316313)
+  3. Kemudian klik tab **"Pipelines"**.  
 ![27.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955802331033)
+  4. Klik ikon **‘Edit’** pada salah satu **Pipeline** yang telah dibuat.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639407498649)
+  5. Lalu centang **‘Freeze Stage’** kemudian klik **“Save pipeline”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639419402265)
+  6. Selanjutnya, masuk ke menu utama **Deals** , lalu pilih **Pipeline** yang telah diaktifkan mode **‘Freeze Stage’**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639419403417)
+  7. Di sini, Anda akan melihat status **Deals** dalam kondisi **‘Freeze Stage’**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639407518233)
+  8. Klik salah satu **Deals** untuk melihat detailnya. Kemudian pada saat Anda mencari salah satu **Deal** , maka akan terlihat Deal lain yang juga mengalami ‘Freeze’. Dalam hal ini, Deal yang mengalami ‘freeze’ tersebut tidak dapat ditambahkan. Hal ini dikarenakan data pada Deal akan ikut mengalami perubahan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45639419413657)
+
+Demikian cara mengaktifkan mode ‘Freeze Stage’ pada Deals. Selanjutnya, pelajari juga [cara membuat Pipeline Deal baru pada Qontak CRM](https://help-center.qontak.com/hc/id/articles/42009600870169-Bagaimana-Cara-Membuat-Pipeline-Deal-Baru-pada-Qontak-CRM).
 
 ## Error States  <!-- confidence:low ? -->
 

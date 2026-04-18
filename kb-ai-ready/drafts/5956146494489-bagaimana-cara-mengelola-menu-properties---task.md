@@ -41,38 +41,38 @@ Prerequisite ini memastikan Anda memiliki izin yang diperlukan untuk membuat, me
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Mekari Qontak CRM Anda dan pilih menu **Properties**. Halaman pengaturan property akan ditampilkan.
 
-2. Klik tab **Task**. Sistem akan menampilkan daftar property yang sudah ada untuk Task.
-
-3. Untuk menambahkan property baru, klik tombol **Create New Property**. Formulir pembuatan property baru akan terbuka.
-
-4. Isi field **Name** (wajib) dengan nama property. Pilih **Field Type** (wajib) sesuai jenis data: Single Line Text, Dropdown Select, Number, Date, Upload, Multiple Select, Percentage, Text Area, Photo, URL, Signature, atau GPS.
-
-5. Centang checkbox **Required** jika property wajib diisi, dan checkbox **Show** jika ingin ditampilkan di detail kontak.
-
-6. Klik tombol **Save**. Sistem akan menyimpan property baru.
-
-7. Untuk mengedit property, klik tombol **Edit**. Ubah informasi yang diperlukan dan klik **Save**.
-
-8. Untuk menghapus property, klik tombol **Destroy**. Pop-up konfirmasi akan muncul.
-
-9. Untuk property default yang tidak dapat dihapus, klik **Edit**, kosongkan checkbox **Show**, lalu klik **Save**.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan langkah-langkah pengelolaan menu Properties Task:
-
-• Property baru berhasil ditambahkan dan muncul dalam daftar tab **Task**
-• Property yang diedit menampilkan perubahan yang telah disimpan
-• Property yang dihapus tidak lagi muncul dalam daftar (atau tersembunyi jika property default)
-• Konfirmasi simpan ditampilkan setelah klik tombol **Save**
-• Field yang ditandai **Required** akan wajib diisi saat user mengisi Task
-• Field yang ditandai **Show** akan tampil di detail Task
-
+Menu **Properties** digunakan untuk mengedit dan menambahkan field/properti yang ada pada Menu tertentu. Untuk mengedit dan menambahkan field/properti pada Menu **Task** , maka Anda perlu melakukan beberapa langkah sebagai berikut:
+  1. Pilih Menu **Properties**.
+  2. Pilih tab **Tasks**. Klik**“Create New Property”** untuk menambahkan field/properti.  
 ![28.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956787734041)
+  3. Kemudian, akan muncul tampilan seperti berikut. Selanjutnya, Anda dapat mengisi keterangan dari properti tersebut. Lalu, klik “**Save** ” untuk menyimpan properti baru.   
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916425497)
+Berikut adalah keterangan field yang dapat Anda isi.  
+**1. Name (wajib diisi)** : Name merupakan nama dari properti baru yang ingin kita buat pada menu **Company.**  
+**2.Field Type (wajib diisi)** : Field type berisi pilihan dari tipe pengisian properti yang Anda inginkan. Apabila Anda mengklik field type, maka akan muncul beberapa pilihan tipe properti yang dapat Anda pilih, antara lain:  
+- **Single Line Text:** Pengisian field dengan teks singkat.  
+- **Dropdown Select:** Memungkinkan user untuk memilih satu dari beberapa opsi yang muncul sebagai isi field tersebut.  
+- **Number:** Field hanya dapat diisi dengan angka.  
+- **Date:** Field hanya dapat diisi dengan tanggal dan user langsung dapat mengisi secara manual dengan format dd/mm/yyyy atau mengklik dari kalendar yang muncul pada saat pengisian.  
+- **Upload:** Pengisian field dilakukan dengan mengunggah file.  
+- **Multiple Select:** Memungkinkan user untuk memilih lebih dari satu opsi yang muncul sebagai isi field tersebut.  
+- **Percentage:** Isi field akan otomatis terkonversi menjadi persentase.  
+- **Text Area:** Pengisian field dengan teks yang panjang.  
+- **Photo:** CRM akan secara otomatis akan membuka kamera untuk pengambilan gambar secara live. User tidak dapat mengunggah gambar dari galeri  
+- **URL:** Pengisian field dengan link.  
+- **Signature:** Field diisi dengan tanda tangan secara langsung.  
+- **GPS:** CRM akan mendeteksi lokasi GPS pada pengisian field dengan tipe GPS dilakukan.  
+**3. Required:** Apabila checkbox required diklik hingga menunjukkan tanda centang, maka properti/field tersebut nantinya wajib diisi oleh user, sehingga kontak tidak dapat disimpan bila properti/field tersebut tidak diisi  
+**4. Show:** Apabila checkbox show diklik hingga menunjukkan tanda centang, maka keterangan properti/field tersebut akan muncul detail kontak pada Menu **Company.**
+  4. Untuk mengedit field/properti, Anda bisa klik “**Edit** ”.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892865817)
+  5. Melalui fitur edit, Anda dapat mengubah label, nama, field type, required, show, hingga menambahkan opsi pada field type dropdown maupun multiple select. Apabila perubahan sudah selesai diatur, Anda dapat klik “**Save** ”.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892867353)
+  6. Untuk menghapus properti/_field_ yang sudah dibuat Anda klik “**Destroy** ”.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916435993)
+Terdapat beberapa default field yang tidak dapat dihapus dan tidak memberikan opsi “**Destroy** ”, maka apabila Anda ingin menghilangkan properti/field tersebut dari detail kontak, Anda harus mengedit properti/field tersebut dan mengosongkan checkbox show. Kemudian mengklik tombol “**Save** ”.
+  7. Kemudian, akan muncul pop up “**Are you sure to removed field** ”, lalu pilih **Remove** untuk menghapus field yang diinginkan.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916438809)
 
 ## Error States  <!-- confidence:low ? -->

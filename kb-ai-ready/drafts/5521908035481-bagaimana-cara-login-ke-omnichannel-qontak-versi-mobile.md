@@ -38,22 +38,36 @@ Untuk melakukan login ke Omnichannel Qontak versi mobile, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak Chat di perangkat mobile Anda.
-   → Aplikasi akan menampilkan layar login.
 
-2. Masukkan email Anda di kolom Email.
-   → Kolom email akan menampilkan teks yang Anda ketik.
-
-3. Masukkan password Anda di kolom Password.
-   → Kolom password akan menampilkan karakter tersembunyi.
-
-4. Klik tombol Sign In.
-   → Sistem akan memproses login Anda dan mengarahkan ke halaman utama Omnichannel jika kredensial benar.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah login berhasil, Anda akan diarahkan ke halaman utama Omnichannel Qontak di aplikasi mobile. Halaman ini menampilkan menu utama termasuk Inbox dengan daftar percakapan pelanggan, dan Anda dapat mulai mengelola chat dengan klien atau pelanggan.
-
+**iPhone, IPad, iPod**  
+- iOS version 9.0 dan ke atas.  
+- Pada aplikasi Qontak di IOS device support dari iPhone 5s ke atas dengan IOS 9 ke atas.  
+- Pada aplikasi Qontak di Android untuk OS minimal 5.0 keatas.  
+Kompatibel untuk perangkat:  
+- iPhone 5S dan ke atas.  
+- iPad Air dan ke atas.  
+- iPod touch (6th generation) dan ke atas.
+  1. Buka aplikasi Qontak chat Anda.
+  2. Masukan **Email** dan **Password** Anda, kemudian klik **"****Sign in"**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49042373502233)
+  3. Anda akan diarahkan ke halaman utama **Omnichannel**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49042352437529)
+
+**Penting  
+** Jika Anda mengalami kendala berikut:  
+**1. Tampilan menu Inbox pada Qontak Chat tidak bisa menampilkan chat.**  
+Maka, pastikan terlebih dahulu bahwa Anda telah download aplikasi Qontak Chat melalui App Store atau Play Store. Jika Anda membuka Qontak Chat pada browser, maka tampilan inbox tidak menampilkan menu inbox secara maksimal dengan keterangan _“Time to start conversations”._ Jika Anda sudah memiliki aplikasi Qontak Chat, tampilan menu inbox akan berfungsi secara maksimal.
+
+**2.****Aplikasi Qontak Chat mengalami loading lama, terjebak pada layar logo Qontak, atau muncul keterangan “Qontak Chat tidak menanggapi”.**  
+Maka, kami sarankan Anda untuk melakukan beberapa hal di bawah ini:  
+**Android**  
+Lakukan clear cache pada Handphone. Anda bisa masuk ke menu pengaturan dan membuka aplikasi Qontak Chat Anda, lalu clear cache.  
+**Bagi pengguna Android/iOS**  
+Anda dapat mencoba untuk update aplikasinya. Jika masih mengalami kendala yang sama, Anda dapat melakukan install ulang aplikasi Qontak Chat.
+
+**3. Muncul keterangan _“Session Expired. Please login again”._**  
+Maka, login kembali dengan input username dan password Omnichannel Anda yang sesuai. Jika Anda masih mengalami kendala yang sama, Anda dapat melakukan install ulang aplikasi Qontak Chat melalui Play Store atau Apps Store.  
+Jika Anda sudah melakukan kedua hal di atas dan masih mengalami kendala yang sama, hubungi WhatsApp Hotline Qontak kami dengan klik
 
 ## Error States  <!-- confidence:high ✓ -->
 

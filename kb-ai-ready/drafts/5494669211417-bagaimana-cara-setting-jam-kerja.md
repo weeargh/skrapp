@@ -38,23 +38,20 @@ Pengaturan jam kerja digunakan untuk tracking kehadiran karyawan melalui fitur T
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Klik profil Anda di dashboard Qontak CRM, lalu pilih **Profile Settings**. Halaman pengaturan profil akan terbuka.
 
-2. Pilih menu **Tracking Time**. Anda akan melihat kolom-kolom untuk konfigurasi jam kerja.
-
-3. Pada kolom **Select Users/Pilih Pengguna**, centang kotak di sebelah kiri nama user untuk memilih satu atau lebih karyawan yang ingin diatur jam kerjanya.
-
-4. Pada kolom **Timezone**, pilih zona waktu yang sesuai dengan lokasi, misalnya Asia – Jakarta untuk wilayah Indonesia bagian barat.
-
-5. Pada kolom **Check-In & Check-Out**, pilih jam masuk dan jam selesai kerja kantor.
-
-6. Klik tombol **Simpan/Save** untuk menyimpan pengaturan jam kerja.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengklik tombol Simpan/Save, sistem akan memproses pengaturan jam kerja. Pengaturan jam kerja untuk user yang dipilih akan tersimpan dan aktif. Fitur Tracking Time akan mulai mencatat kehadiran karyawan berdasarkan zona waktu dan jam kerja yang telah ditetapkan. Tim HRD dapat melihat laporan kehadiran tepat waktu dan tidak tepat waktu melalui dashboard Tracking Time.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475087168921)
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475124752025)
-![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5494555079577)
+CRM juga dapat digunakan untuk keperluan Tim HRD melakukan  _tracking_ terhadap kehadiran karyawan, salah satunya adalah dengan mengetahui kehadiran yang tepat waktu dan tidak tepat waktu para karyawannya pada fitur  _Tracking Time_. Untuk melakukan pengaturan pada jam kerja secara sekaligus untuk lebih dari satu orang, dapat langsung dilakukan di menu **User Permission**. Caranya adalah sebagai berikut.
+  1. Klik profil Anda, lalu pilih **Profile Settings.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475087168921)  
+**
+  2. Pilih **Tracking Time.  
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475124752025)  
+**
+  3. Pada kolom **Select Users/Pilih Pengguna** dapat dipilih user yang akses datanya ingin di-set pengaturannya dengan mencentang kotak di sebelah kiri nama  _user.  
+![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5494555079577)  
+_
+  4. Pada kolom **Timezone** dapat dipilih wilayahnya, misalnya Asia – Jakarta untuk wilayah Indonesia bagian barat.
+  5. Pada kolom **Check-In** & **Check-Out** dapat dipilih jam yang sesuai dengan masuk dan selesai kerja kantor.
+  6. Kemudian, Klik Button "**Simpan/save"** untuk menyimpan data yang anda inginkan.
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -39,27 +39,16 @@ Catatan: Laporan Lost Reasons hanya dapat diakses oleh pengguna dengan akses ke 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka file laporan Lost Reasons yang telah diunduh dalam format spreadsheet (Excel atau Google Sheets).
-   → File akan menampilkan dua sheet: Deals by Lost Reason dan Deals List.
 
-2. Periksa sheet Deals by Lost Reason untuk melihat ringkasan jumlah Lost Deals per User berdasarkan kategori Lost Reason.
-   → Data ditampilkan dengan filter Pipeline, User, dan Waktu sesuai parameter unduhan.
-
-3. Lihat metrik Count, Amount, dan Percentage untuk setiap kategori Lost Reason.
-   → Metrik ini membantu menganalisis distribusi alasan kehilangan deals.
-
-4. Buka sheet Deals List untuk detail lengkap setiap Lost Deal (Deal Name, Lost Reason, Owner, Currency, Amount).
-   → Sheet ini memberikan informasi individual untuk setiap deals yang hilang.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah membuka laporan Lost Reasons, Anda akan melihat:
-
-• Sheet Deals by Lost Reason: Tabel yang menampilkan setiap User dengan jumlah Lost Deals, dikelompokkan berdasarkan kategori Lost Reason dengan metrik Count, Amount, dan Percentage.
-
-• Sheet Deals List: Tabel detail berisi kolom Deal Name, Lost Reason, Owner, Currency, dan Amount untuk setiap Lost Deal.
-
-• Data tersaring sesuai filter Pipeline, User, dan periode waktu yang dipilih saat mengunduh laporan.
-
-![Lost_Reasons_1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089378585)
+Laporan Lost Reasons menampilkan dua sheet, yaitu **Deals by Lost Reason** dan **Deals List.  
+**![Lost_Reasons_1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089378585)
+Pada sheet **Deals by Lost Reason** , ditampilkan _list_ setiap User dengan jumlah Lost Deals pada setiap kategori Lost Reason. Laporan ini dapat ditampilkan berdasarkan filter Pipeline, User, dan Waktu yang diinginkan. Kategori Lost Reason akan ditampilkan berdasarkan Count, Amount (Deal Size), dan Percentage.
+Pada sheet **Deals List** , ditampilkan secara detail:
+  * Deal Name = List dari nama Deals yang Lost.
+  * Lost Reason = List dari kategori alasan masing-masing Lost Deals.
+  * Owner = Kepemilikan dari masing-masing Lost Deals.
+  * Currency = Mata uang dari Lost Deals.
+  * Amount = Jumlah Deal / Deal Size.
 
 ## Error States  <!-- confidence:low ? -->
 

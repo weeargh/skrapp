@@ -38,30 +38,23 @@ Untuk mengatur Auto Resolve pada chat di Qontak Omnichannel, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda dengan kredensial Admin. Dashboard akan ditampilkan.
 
-2. Buka menu **Setting** dan pilih tab **Inbox**. Sistem akan menampilkan opsi pengaturan inbox.
-
-3. Pilih tab **Auto Resolve**. Halaman konfigurasi Auto Resolve akan ditampilkan.
-
-4. Centang **Enable auto-resolve for messages** untuk mengaktifkan auto-resolve pesan, atau **Enable auto-resolve for comments** untuk komentar.
-
-5. Pilih opsi **All channel** (untuk semua channel) atau **Specific channels** (untuk channel tertentu).
-
-6. Jika memilih **All channel**, atur **Inactivity period** (periode tidak aktif percakapan). Jika memilih **Specific channels**, klik **Select channel** dan centang channel yang diinginkan, lalu klik **Done**.
-
-7. Atur **Inactivity period** sesuai kebutuhan Anda.
-
-8. (Opsional) Tambahkan atau cari tag untuk diterapkan ke semua auto-resolved rooms.
-
-9. Klik **Save changes** untuk menyimpan pengaturan Auto Resolve. Sistem akan menyimpan konfigurasi dan menampilkan notifikasi konfirmasi.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil menyimpan pengaturan Auto Resolve, fitur akan aktif dan berfungsi sesuai konfigurasi yang telah ditentukan. Chat dari customer akan secara otomatis ter-resolve setelah periode inaktivitas yang telah Anda atur tercapai. Jika Anda menambahkan tag pada Auto Resolve, tag tersebut akan diterapkan ke semua room yang ter-resolve otomatis. Pengaturan akan berlaku untuk channel yang dipilih dan dapat diedit atau dihapus kapan saja melalui menu **Auto Resolve**.
-
+Anda bisa mengatur **Auto Resolve** pada chat yang masuk dari customer. Fitur ini membuat chat akan secara otomatis ter-resolve dalam jangka waktu tertentu. Berikut cara yang bisa Anda lakukan untuk melakukan **Auto Resolve** pada chat.
+  1. Masuk ke menu **Setting** , dan pilih tab **"Inbox".  
+**
+  2. Setelah itu, pilih tab **"Auto Resolve"**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F26947322330521)
+  3. Anda dapat centang **“Enable auto-resolve for messages”** apabila Anda ingin mengaktifkan **auto-resolve** untuk fitur pesan dan **“Enable auto-resolve for comments”** untuk fitur komentar.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777848118169)
+  4. Setelah diaktifkan, Anda dapat memilih untuk mengatur **Auto-resolve** ke**semua** **channel** atau **channel tertentu**.   
 ![NEW.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777834109209)
+  5. Apabila Anda memilih **All channel** , maka Anda perlu mengatur **Inactivity period** atau periode tidak aktif dari percakapan yang dilakukan.  
 ![NEW.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F26947313528985)
+
+- Apabila Anda menambahkan **tag** pada **Auto-resolve** lalu menghapusnya dari menu **Tag** dan **Auto Resolve** , maka tag tersebut akan terhapus namun tetap berada di **room** yang lama.   
+- **Room** yang lama tidak akan terselesaikan sampai Agent mengirimkan pesan setelah admin mengaktifkan **Auto-resolve** (selama pesan terakhir dari pengguna tidak melebihi rentang waktu yang ditentukan).   
+- **Room** akan terselesaikan apabila Agent mengirim pesan ke dalam **room** tetapi Agent sudah tidak lagi berada di dalam room tersebut (dengan pesan terakhir masih diatribusikan ke Agen).   
+- Apabila Anda menggunakan **“Resolve all expired channel”** , maka **customer** tidak akan menerima survei.  
 ![G.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777834112153)
 
 ## Error States  <!-- confidence:medium ~ -->

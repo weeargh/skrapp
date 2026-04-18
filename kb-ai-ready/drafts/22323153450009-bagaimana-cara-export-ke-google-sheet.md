@@ -35,25 +35,22 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka dashboard Qontak CRM Anda
-2. Klik menu **Properties** di sidebar kiri
-3. Sistem akan menampilkan halaman Properties dengan beberapa pilihan menu
-4. Klik **Ekspor ke GSheet**
-5. Sistem akan menampilkan halaman Ekspor ke Google Sheet dengan opsi sinkronisasi
-6. (Opsional) Klik tombol **Sinkronkan** untuk langsung sinkronisasi data ke Google Sheet sekarang
-7. (Opsional) Aktifkan toggle **Auto Sync** dan tentukan jadwal di kolom **Sync Time** untuk sinkronisasi otomatis berkala
-8. Sistem akan mencatat pengaturan Anda## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengikuti langkah-langkah di atas, halaman Ekspor ke Google Sheet akan menampilkan:
-• URL Google Sheet tempat data Anda akan disimpan di kolom Google Sheet URL
-• Tombol Sinkronkan untuk sinkronisasi manual
-• Toggle Auto Sync untuk mengaktifkan jadwal otomatis
-• Kolom Sync Time untuk menentukan waktu sinkronisasi
-
-Data dari Qontak CRM (Kontak, Task, Perusahaan, Deal, Produk) akan tersinkronisasi ke Google Sheet sesuai pengaturan yang dipilih.
-
+Melalui Qontak CRM, Anda dapat mengexport data Kontak, Task, Perusahaan, Deal, dan Produk ke dalam format Google Sheet. Mulai sinkronisasi data terbaru dan export data tersebut dengan mengikuti langkah - langkah berikut.
+  1. Masuk ke akun Qontak CRM Anda, lalu buka menu **Properties.**
+  2. Pilih **Ekspor ke GSheet.**  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50120717679641)
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50120662386713)
+  3. Maka, dapat melihat tampilan Ekspor ke Google Sheet seperti berikut.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50120662386713)  
+**Keterangan:**
+
+**No.** | **Nama Tombol/Kolom** | **Deskripsi**  
+---|---|---  
+1 | Sinkronkan | Klik untuk secara otomatis melakukan sinkronisasi seluruh data sekarang juga ke Google Sheet.  
+2 | Google Sheet URL  | URL Google Sheet akan tersedia di sini.  
+3 | Auto Sync | Klik toggle button untuk mengaktifkan sinkronisasi secara otomatis sesuai dengan jadwal yang Anda tentukan.  
+4 | Sync Time | Tentukan waktu (jadwal) sinkronisasi di sini.  
+Demikian adalah panduan cara export ke Google Sheet.
 
 ## Error States  <!-- confidence:medium ~ -->
 

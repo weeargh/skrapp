@@ -38,28 +38,16 @@ Untuk melihat subscription di CRM Qontak, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun CRM Qontak Anda menggunakan kredensial Admin atau Supervisor.
 
-2. Buka menu **Subscription** di dashboard utama. Sistem akan menampilkan halaman status subscription Anda.
-
-3. Pada halaman Subscription, Anda akan melihat informasi berikut:
-   - Jumlah maksimal user yang dapat menggunakan CRM (contoh: 5 orang)
-   - Jumlah user yang sedang aktif digunakan (contoh: 4 orang)
-   - Sisa quota user yang masih dapat ditambahkan (contoh: 1 orang)
-
-4. Periksa tanggal masa berlaku subscription Anda. Jika akan habis, lakukan renewal sebelum masa tenggang 7 hari berakhir.
-
-5. Jika masa tenggang sudah berakhir dan Anda belum melakukan renewal, Anda akan diarahkan ke halaman notifikasi renewal saat login.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengakses menu Subscription, Anda akan melihat:
-
-- Dashboard subscription dengan detail jumlah user maksimal dan user aktif saat ini
-- Informasi sisa quota user yang masih dapat ditambahkan
-- Tanggal berakhir masa berlaku subscription
-- Status subscription (aktif, akan berakhir, atau dalam masa tenggang)
-- Jika subscription akan berakhir, notifikasi untuk melakukan renewal sebelum periode tenggang 7 hari berakhir
-
+CRM Qontak kini memiliki sistem billing seperti pada Omnichannel. Fitur ini memungkinkan Anda melihat jumlah user sesuai dengan subscription yang Anda lakukan. Anda bisa melihat status subscription Anda melalui cara berikut.
+  1. Masuk ke menu **Subscription**.
+  2. Maka, status subscription Anda akan terlihat seperti berikut.  
 ![mceclip0.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173433625)
+
+- Maksimal user yang dapat menggunakan CRM adalah 5 orang. Dan saat ini, Anda sudah menggunakan 4 sehingga hanya bisa menambahkan 1 user.  
+- Jika Anda ingin menambahkan user, Anda bisa mempelajarinya [di sini](https://help-center.qontak.com/hc/id/articles/5455737500441-Bagaimana-Cara-Menambahkan-Pengguna-Add-User-).
+  3. Anda juga harus melakukan renewal jika masa berlaku subscription Anda habis. Sebelum subscription Anda benar-benar berakhir, Anda akan memasuki masa tenggang selama 7 hari.
+  4. Jika masa tenggang sudah berakhir dan Anda belum melakukan renewal atau pembaruan, maka setelah melakukan log in ke akun CRM. Anda akan langsung masuk ke halaman berikut.  
 ![mceclip1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173434649)
 
 ## Error States  <!-- confidence:medium ~ -->

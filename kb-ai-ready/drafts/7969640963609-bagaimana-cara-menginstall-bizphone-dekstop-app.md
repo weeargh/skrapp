@@ -44,35 +44,24 @@ Untuk menginstall Bizphone Desktop App, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Untuk Windows:**
-1. Unduh file Bizphone Desktop App untuk Windows.
-2. Ekstrak file .zip—Anda akan menemukan file installer aplikasi.
-3. Klik kanan pada file installer, lalu pilih "Run as Administrator"—jendela Installer akan muncul.
-4. Klik tombol "Next" pada jendela Installer.
-5. (Opsional) Isi kolom User Name dan Organization, atau lewati dengan klik "Next".
-6. Klik tombol "Next" untuk melanjutkan dengan folder instalasi default.
-7. Klik tombol "Install" untuk memulai proses instalasi.
-8. Klik tombol "Finish" untuk menyelesaikan instalasi—aplikasi Bizphone akan terbuka secara otomatis.
 
-**Untuk Mac OS:**
-1. Unduh file Bizphone Desktop App untuk Mac OS.
-2. Ekstrak file .zip—aplikasi Bizphone siap digunakan.
-3. (Opsional) Pindahkan aplikasi Bizphone ke folder Aplikasi.
-4. Buka aplikasi Bizphone dengan klik dua kali file aplikasi.## Expected Result  <!-- confidence:high ✓ -->
+**Bizphone Desktop App** adalah aplikasi berguna untuk melakukan dan menerima panggilan melalui komputer. Aplikasi ini merupakan klien softphone yang dapat digunakan pada desktop Windows atau Mac.
+Untuk mulai menggunakan BizPhone Desktop App, Anda perlu menginstallnya. Aplikasi ini dapat diinstall di Komputer dengan Sistem Operasi Windows atau Mac dengan persyaratan sistem sebagai berikut:
+### 1. Cara Install pada Windows[](https://help-center.qontak.com/hc/id/articles/7969640963609-Bagaimana-Cara-Menginstall-Bizphone-Dekstop-App#h_01KP5S256C5JDZJ9S6VQ2RRYWQ)
+**Persyaratan Sistem:**
+  * Windows 7 SP1 atau versi lebih baru .NET Framework 4.5.2 atau versi lebih baru (jika Anda belum menginstall installer, maka sistem akan mengunduhnya secara otomatis).
+  * Visual Studio 2013 dan 2015 32-bit redistributable libraries (sudah termasuk installer).
 
-Setelah instalasi berhasil diselesaikan:
-
-**Untuk Windows:**
-- Aplikasi Bizphone Desktop telah terinstall di komputer Anda
-- Aplikasi Bizphone terbuka secara otomatis dan siap digunakan
-- Anda dapat mulai melakukan dan menerima panggilan melalui desktop
-
-**Untuk Mac OS:**
-- File Bizphone Desktop App telah diekstrak dan tersedia di folder Downloads (atau lokasi penyimpanan Anda)
-- Aplikasi siap dibuka dan digunakan untuk melakukan dan menerima panggilan
-- Aplikasi dapat dipindahkan ke folder Aplikasi untuk akses yang lebih mudah
-
+Installer akan terunduh dan membuat _library_ yang diperlukan secara otomatis jika belum pernah menginstallnya. Tetapi, jika akses Internet tidak tersedia, Anda dapat mengunduh dan menginstall prasyarat tersebut secara manual sebelum menginstall BizPhone.
+Berikut cara menginstall Bizphone pada Windows Anda:
+  1. Unduh Bizphone Dekstop App. Pelajari caranya [di sini.](https://help-center.qontak.com/hc/id/articles/7966615586073-Cara-Mengunduh-Bizphone-Dekstop-App)
+  2. Setelah file diunduh, ekstrak file .zip untuk menemukan _installer_ aplikasi.  
 ![DQqR-AORLyJPt2W3_ZobX2syWULcjuvGvOj5Wthj2KJjj1Q3Om8afof49t2L-JuyjO8uQWd4OG7K2csPl0lKAk8RHXnPfiXepI7t.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249900697)
+
+### 2. Cara Install pada Mac OS[](https://help-center.qontak.com/hc/id/articles/7969640963609-Bagaimana-Cara-Menginstall-Bizphone-Dekstop-App#h_01KP5S256D55FJYEXZW190VQB8)
+Pada Mac OS, Anda tidak perlu menginstall aplikasi Bizphone. Anda hanya perlu mengunduh file ZIP dan _extract_ Bizphone App. Anda dapat memindahkan aplikasi BizPhone ke dalam folder Aplikasi dan menjalankannya dari sana jika Anda memerlukannya.
+Berikut cara mengunduh dan membuka Bizphone pada Mac OS Anda:
+  1. Unduh dan klik **“Save”** untuk menyimpan Bizphone App pada Mac OS Anda.  
 ![m-21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249908377)
 
 ## Error States  <!-- confidence:medium ~ -->

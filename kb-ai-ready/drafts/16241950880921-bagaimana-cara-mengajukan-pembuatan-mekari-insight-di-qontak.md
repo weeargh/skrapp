@@ -38,40 +38,28 @@ Catatan: Jika perusahaan Anda belum berlangganan Mekari Insight, Anda perlu mela
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Log in ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Sistem akan menampilkan halaman utama CRM.
 
-2. Klik menu **Dashboard** di navigasi utama.
-   → Halaman Dashboard akan terbuka.
+Pada CRM Qontak, terdapat menu Mekari Insight yang bisa Anda gunakan untuk mengakses laporan yang dapat disesuaikan dengan kebutuhan perusahaan Anda. Namun sebelumnya, Anda perlu melakukan request pembuatan Mekari Insight terlebih dahulu kepada tim Qontak.
+**Penting**   
+- Pengguna dapat melihat data Mekari Insight berdasarkan izin yang diberikan kepada mereka. Hal ini memastikan bahwa pengguna hanya melihat data yang relevan dengan tingkat akses mereka dalam organisasi. Dalam CRM, ada tiga peran yang terkait erat dengan izin:
 
-3. Klik tab **Mekari Insight** di halaman Dashboard.
-   → Sistem akan menampilkan status akses Anda terhadap Mekari Insight.
+1. **Admin** : Pengguna yang diberi peran Admin memiliki izin penuh (tidak dapat disesuaikan) untuk mengakses semua data dalam CRM tanpa batasan tim apa pun. Ini berarti mereka dapat melihat dan mengubah data di semua modul, termasuk Transaksi, Kontak, Perusahaan, dan lain-lain tanpa batasan.
 
-4. Jika perusahaan belum berlangganan: Klik tombol **Get access via Marketplace** untuk membeli paket Mekari Insight.
-   → Anda akan dialihkan ke halaman Marketplace.
+2. **Anggota** : Pengguna yang diberi peran Anggota dapat memiliki izin khusus. Admin dapat mengatur tingkat akses ke Semua, Hanya Tim, atau Hanya Dimiliki untuk setiap modul, seperti Transaksi, Kontak, Perusahaan, dll. Hal ini memungkinkan mereka untuk menyesuaikan visibilitas data mereka sesuai dengan kebutuhan dan tanggung jawab spesifik mereka.
 
-5. Jika perusahaan sudah berlangganan namun Anda belum memiliki akses: Hubungi Admin atau Owner perusahaan untuk mengajukan akses, atau klik **Switch account** untuk beralih ke akun yang sudah memiliki izin akses.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengajukan akses Mekari Insight:
-
-• Jika perusahaan belum berlangganan: Halaman Marketplace terbuka untuk proses pembelian paket Mekari Insight.
-
-• Jika perusahaan sudah berlangganan dan Anda memiliki akses: Halaman Mekari Insight menampilkan laporan yang dapat disesuaikan sesuai kebutuhan perusahaan Anda. Anda dapat melihat semua data insight yang relevan dengan peran dan izin akses Anda.
-
-• Jika perusahaan sudah berlangganan namun Anda belum memiliki akses: Halaman menunjukkan pesan bahwa akses belum diberikan, dan Anda dapat meminta izin dari Admin atau beralih akun.## Error States  <!-- confidence:medium ~ -->
-
-Skenario umum yang bukan error:
-
-• **Tidak melihat akses Mekari Insight**: Perusahaan Anda belum berlangganan. Solusi: Klik **Get access via Marketplace** untuk membeli paket.
-
-• **Melihat pesan akses ditolak**: Perusahaan sudah berlangganan tetapi Admin belum memberikan izin kepada Anda. Solusi: Hubungi Admin atau Owner perusahaan untuk meminta akses, atau gunakan tombol **Switch account** jika Anda memiliki akun lain dengan akses yang sudah disetujui.
-
-Tidak ada error teknis yang didokumentasikan untuk proses ini.
-
+- Akses ke Mekari Insight ditentukan oleh status langganan perusahaan. Perusahaan dengan langganan aktif dapat melihat dan berinteraksi dengan laporan Mekari Insight.
+Berikut langkah-langkah mengajukan Mekari Insight di CRM Qontak.
+  1. Log in ke akun Qontak CRM Anda, kemudian masuk ke menu **Dashboard**.
+  2. Kemudian klik tab **‘Mekari Insight’**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43822900289305)
+  3. Apabila perusahaan belum berlangganan Mekari Insight, maka Anda tidak akan memiliki akses ke fitur-fitur tersebut. Dalam hal ini, Anda perlu berlangganan terlebih dahulu. Mulailah dengan klik **“Get access via Marketplace”**.   
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43822891598745)
+  4. Selanjutnya apabila perusahaan Anda telah berlangganan dan Anda memiliki akses, maka halaman Mekari Insight kan terlihat seperti berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43822900290073)
+  5. Apabila perusahaan Anda telah berlangganan, namun Anda **belum** memiliki akses, maka halaman yang terlihat adalah sebagai berikut. Dalam hal ini, Anda perlu mengajukan akses ke **Admin/Owner** dari perusahaan Anda, atau Anda dapat klik **“Switch account”** , untuk berganti ke akun yang telah memiliki akses.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43822900290585)
+
+Demikian penjelasan mengenai cara mengajukan pembuatan Mekari Insight di Qontak CRM
 
 ## Escalation  <!-- confidence:medium ~ -->
 

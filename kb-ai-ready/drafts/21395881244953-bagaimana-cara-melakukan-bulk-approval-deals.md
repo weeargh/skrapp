@@ -36,29 +36,24 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka menu **Deals** pada Qontak CRM. Sistem akan menampilkan daftar semua Deals.
-2. Klik tombol **"Need my approval"**. Sistem akan menampilkan daftar approval Deals yang perlu Anda proses.
-3. (Opsional) Gunakan filter status dengan mengklik kolom filter dan atur ke **"Need approval"** untuk melihat hanya Deals yang memerlukan persetujuan.
-4. Centang checkbox pada setiap Deal yang ingin Anda approve atau reject secara massal.
-5. Klik tombol **"Actions"**. Menu aksi akan muncul.
-6. Pilih **"Approve"** (untuk menerima) atau **"Reject"** (untuk menolak). Pop-up konfirmasi akan muncul menampilkan daftar Deals yang dipilih.
-7. Verifikasi Deals di pop-up konfirmasi sudah sesuai, kemudian klik **"Approve"**. Sistem akan memproses approval.
-8. Tunggu hingga proses selesai. Hasil approval akan ditampilkan dengan indikator: tanda centang hijau (berhasil) atau tanda silang merah (gagal).
-9. Baca keterangan jika ada Deal gagal. Klik **"Retry approval"** untuk mengulang atau **"Ok, got it"** untuk menutup pop-up.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah proses selesai, Anda melihat status approval untuk setiap Deal:
-- **Tanda centang hijau**: Deal berhasil diapprove dan statusnya berubah menjadi "Approved"
-- **Tanda silang merah**: Deal gagal diapprove dengan keterangan alasan kegagalan
-
-Deal yang berhasil diapprove akan hilang dari daftar "Need my approval" dan muncul di daftar Deals dengan status diperbarui.
-
+Pada Qontak CRM, selain melakukan Approval Deals secara satuan, Anda juga dapat melakukannya secara massal (bulk). Berikut adalah langkah - langkah yang dapat Anda lakukan:
+  1. Pada tampilan menu Deals, Anda dapat klik **“Need my approval”** untuk membuka daftar approval yang perlu Anda proses.  
 ![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955103399321)
+  2. Anda dapat memanfaatkan filter berdasarkan status di sini. Untuk memproses Approval menurut status yang perlu Anda proses approvalnya, klik pada kolom seperti gambar di bawah ini dan atur ke **Need approval.**  
 ![24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955164898457)
+  3. Centang seluruh deals yang perlu Anda proses. Kemudian, klik**“Actions”.**  
 ![25.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955164901145)
+  4. Lalu, Anda dapat memilih untuk **Approve** (menerima) atau **Reject** (menolak) Approval tersebut.  
 ![bulkdeals4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773920069273)
+  5. Maka, sebuah pop-up konfirmasi muncul. Pastikan deals yang akan Anda approve atau Reject sudah sesuai sebelum klik **“Approve”** untuk menyetujuinya.  
 ![bulkdeals5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773920074521)
+  6. Maka, approval Anda diproses oleh sistem. Tetap berada pada halaman ini dan tunggu hingga proses selesai.  
 ![bulkdeals6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773920070041)
+  7. Maka, Anda dapat melihat hasil proses approval tersebut. **Tanda centang hijau berarti terdapat deals yang sudah berhasil diapprove**. Sedangkan, jika terdapat **tanda silang merah** , maka**terdapat deals yang gagal diapprove**. Terdapat keterangan di bawahnya menjelaskan kenapa deal tersebut gagal diapprove. Klik **Retry approval** **untuk mengulang proses approval** atau klik **“Ok, got it”** **untuk membiarkannya** , dan menutup pop-up.  
 ![bulkdeals7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36773920076825)
+
+Demikian panduan cara melakukan approval massal pada Qontak CRM.
 
 ## Error States  <!-- confidence:medium ~ -->
 

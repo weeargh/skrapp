@@ -38,22 +38,15 @@ Untuk membalas pesan Omnichannel Qontak versi Web, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Qontak Anda melalui web browser.
-2. Klik Menu Inbox di sisi navigasi.
-3. Pilih tab "Unassigned" untuk melihat pesan yang belum ditugaskan, atau tab "Assigned" untuk pesan yang sudah ditugaskan. Sistem akan menampilkan daftar percakapan.
-4. Klik salah satu pesan dari daftar untuk membuka detail chat. Sistem akan menampilkan riwayat percakapan lengkap.
-5. Ketik balasan Anda di kolom pesan di bagian bawah. Pastikan balasan sesuai dengan pertanyaan atau kebutuhan pelanggan.
-6. Klik tombol Kirim untuk mengirim pesan balasan.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah berhasil membalas pesan:
-
-• Pesan balasan Anda muncul di dalam chat conversation dengan timestamp.
-• Pesan pelanggan dan balasan Anda tercatat dalam riwayat percakapan (conversation history).
-• Chat status dapat berubah menjadi "Assigned" jika sebelumnya "Unassigned".
-• Pelanggan akan menerima notifikasi pesan balasan melalui channel komunikasi yang mereka gunakan (WhatsApp, Instagram, Facebook, atau channel lainnya).
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para customer service akan melayani semua keluhan user berupa chat yang masuk ke dalam Inbox.
+Untuk membalas pesan terhadap chat yang masuk, maka lakukan langkah-langkah berikut.
+  1. Masuk ke akun Omnichannel Anda.
+  2. Untuk membuka pesan **Omnichannel** atau melihat detail pesan Anda dapat mengklik **Menu Inbox** ,  lalu pilih tab **“Unassigned”**.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383522678681)
+  3. Buka salah satu pesan, kemudian balas sesuai dengan apa yang ditanyakan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383522685209)
+Pesan yang bisa dibalas hanya yang memiliki status **Unassigned** dan **Assigned.**
 
 ## Error States  <!-- confidence:medium ~ -->
 

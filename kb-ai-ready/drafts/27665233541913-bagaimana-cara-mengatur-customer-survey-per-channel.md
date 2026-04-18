@@ -39,72 +39,71 @@ Anda tidak perlu mengaktifkan semua jenis survei sekaligus — dapat memilih ses
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel Anda dan arahkan ke menu **Settings**
-   → Halaman Settings akan terbuka dengan berbagai opsi konfigurasi
 
-2. Klik tab **Customer survey**
-   → Sistem akan menampilkan tiga jenis survei: CSAT, CES, dan NPS dengan toggle untuk mengaktifkan masing-masing
-
-3. Centang checkbox untuk mengaktifkan jenis survei yang Anda inginkan (dapat memilih lebih dari satu)
-   → Toggle akan berubah menjadi aktif (berwarna)
-
-4. Klik **ikon segitiga** pada survei yang dipilih untuk mengatur channel
-   → Opsi Select all channels dan Select channel akan muncul
-
-5. Pilih **Select all channels** untuk semua channel, atau **Select channel** untuk channel tertentu
-   → Jika memilih Select channel, daftar channel yang tersedia akan ditampilkan
-
-6. Centang checkbox pada channel yang diinginkan (gunakan kolom pencarian jika perlu), lalu klik **Done**
-   → Channel yang dipilih akan disimpan untuk survei tersebut
-
-7. Isi kolom **Question** dengan pertanyaan survei (minimum 20 karakter)
-   → Pertanyaan akan disimpan sebagai konten utama survei
-
-8. Pilih jenis jawaban berdasarkan emoji yang tersedia sesuai tipe survei (CSAT menggunakan emoji smiley, CES menggunakan skala, NPS menggunakan angka)
-   → Format jawaban akan ditampilkan dalam pratinjau
-
-9. (Opsional) Aktifkan toggle untuk menambahkan pertanyaan lanjutan setelah customer memberikan penilaian
-   → Opsi untuk pertanyaan lanjutan global atau per penilaian akan muncul
-
-10. Periksa tampilan survei dalam pratinjau di sebelah kanan halaman
-    → Pratinjau akan menunjukkan bagaimana customer akan melihat survei
-
-11. Klik **Simpan** atau tombol konfirmasi untuk menyimpan konfigurasi survei
-    → Sistem akan menampilkan notifikasi sukses dan survei siap dikirim ke channel yang dipilih## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil mengatur Customer Survey per Channel, Anda akan melihat:
-
-• Tab Customer survey menampilkan survei yang telah diaktifkan dengan status toggle aktif
-• Channel yang dipilih tercermin dalam pengaturan masing-masing survei (All channels atau daftar channel spesifik)
-• Pertanyaan dan format jawaban tersimpan dengan benar sesuai tipe survei
-• Pratinjau menunjukkan tampilan akhir survei yang akan diterima customer
-• Survei siap didistribusikan ke pelanggan melalui channel yang telah dikonfigurasi
-• Data respons dapat dilihat nanti di menu Reports (CSAT, CES, atau NPS sesuai jenis survei)
-
+Mekari Qontak **omnichannel** menyediakan fitur **Customer survey** yang dapat memudahkan Anda dalam mengirimkan berbagai survei untuk setiap **channel** yang tersedia kepada _customer_. Dalam hal ini, survei tersebut dapat disesuaikan dengan kebutuhan divisi pada perusahaan Anda yang bertujuan untuk memenuhi _feedback_ dari para _customer_ serta memenuhi kebutuhan layanan/produk. Berikut langkah-langkahnya.
+  1. Masuk ke menu **Setting** , dan pilih tab **“Customer survey”**.
+  2. Kemudian aktifkan tipe survei yang Anda inginkan. Tipe survei ini terdiri dari **CSAT** , **CES** , dan **NPS**. Berikut penjelasan _detail_ -nya.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190077337)
+Anda dapat mencentang lebih dari 1 survei yang tersedia.
+
+###  A. CSAT (Customer Satisfaction)[](https://help-center.qontak.com/hc/id/articles/27665233541913-Bagaimana-Cara-Mengatur-Customer-Survey-per-Channel#h_01HM8SWRDY4RNJ4MDMFHDD111Z)
+  1. CSAT Adalah Survei Skor Kepuasan Pelanggan (CSAT) yang idealnya dikirim saat Anda ingin melihat seberapa senang klien dengan tindakan yang diambil bisnis Anda, atau aspek tertentu dari produk/layanan Anda. Apabila Anda mengaktifkan CSAT, Anda dapat memilih semua _channel_ dengan klik **“All channel”** atau channel tertentu dengan klik **“ikon segitiga”** berikut.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190093209)
+  2. Apabila Anda menginginkan **channel** tertentu maka pilih **“Select channel”**.  
 ![2.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164868377)
+Apabila Anda mencentang checkbox **Select all channels** maka tampilannya akan terlihat seperti berikut.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190084889)
+  3. Selanjutnya pilih **channel** yang Anda inginkan dengan mencentang _checkbox_ pada salah satu nama **channel**. Anda juga dapat mencari **channel** tersebut pada kolom pencarian. Jika sudah selesai, klik **“Done”**.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190091673)
+  4. Kemudian Anda dapat membuat survei berupa pertanyaan dan jawaban dengan mengisikan kolom **Question**.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670174179865)
+  5. Lalu tentukan jenis pilihan jawaban dari pertanyaan yang telah Anda ajukan berdasarkan emoji yang telah tersedia.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164934809)
+Jumlah minimal karakter penulisan adalah **20**.
+  6. Selanjutnya, Anda juga dapat menentukan pertanyaan lanjutan setelah _customer_ Anda memberikan penilaian. Apabila Anda tidak memerlukannya, aktifkan _toggle_ berikut.  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163237017)
-![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164942361)
+- Aktifkan _toggle_ ini apabila ingin memberikan satu pertanyaan lanjutan untuk keseluruhan penilaian.  
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164942361)  
+- Selain itu, Anda juga dapat aktifkan _toggle_ ini apabila Anda ingin membuat pertanyaan lanjutan untuk setiap penilaian.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27670164948377)
+  7. Periksa tampilan yang akan dilihat oleh _customer_ Anda dalam pratinjau yang ada di sebelah kanan halaman **Customer survey** berikut.  
 ![CSAT PREV.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737768857)
+
+###  B. CES (Customer Effort Score)[](https://help-center.qontak.com/hc/id/articles/27665233541913-Bagaimana-Cara-Mengatur-Customer-Survey-per-Channel#01HMT8SPMJWZXGD1BV5764K6NK)
+  1. **CES** Adalah Skor Upaya Pelanggan. **CES** menunjukkan metrik layanan yang mengukur seberapa banyak upaya yang dilakukan pelanggan untuk berinteraksi dengan bisnis Anda. Apabila Anda memilih **CES** , Anda dapat klik “**ikon segitiga”** berikut, lalu pilih semua **channel** dengan centang **“Select all channels”** atau channel tertentu dengan pilih “**Select channel”**.  
 ![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190110617)
+  2. Setelah proses pengaturan **channel** selesai, Anda dapat membuat survei berupa pertanyaan dan jawaban pada kolom **Question**. Lalu, tentukan skala minimum dan maksimum dari pertanyaan yang sebelumnya Anda telah buat.  
 ![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737811865)
+  3. Selanjutnya, Anda juga dapat menentukan pertanyaan lanjutan setelah _customer_ Anda memberikan penilaian. Apabila Anda tidak memerlukannya, aktifkan _toggle_ berikut.  
 ![18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190100633)
-![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737819801)
+- Aktifkan _toggle_ ini apabila ingin memberikan satu pertanyaan lanjutan untuk keseluruhan penilaian.  
+![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737819801)  
+- Selain itu, Anda juga dapat aktifkan _toggle_ ini apabila Anda ingin membuat pertanyaan lanjutan untuk setiap penilaian.  
 ![15.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745627929)
+  4. Periksa tampilan yang akan dilihat oleh _customer_ Anda dalam pratinjau yang ada di sebelah kanan halaman **Customer survey** berikut.  
 ![CES PREV.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745631129)
+
+###  C. NPS (Net Promoter Score)[](https://help-center.qontak.com/hc/id/articles/27665233541913-Bagaimana-Cara-Mengatur-Customer-Survey-per-Channel#h_01HM8VDZG8J42RAHTXGPS6D3C7)
+  1. **NPS** dalah Net Promoter Score (NPS) digunakan sebagai proxy untuk mengukur kepuasan pelanggan secara keseluruhan dengan produk atau layanan perusahaan dan loyalitas pelanggan terhadap merek. Apabila Anda memilih **NPS** , Anda dapat klik “**ikon segitiga”** berikut, lalu pilih semua **channel** dengan centang **“Select all channels”** atau channel tertentu dengan pilih “**Select channel”**.   
 ![16.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163247513)
+  2. Setelah proses pengaturan **channel** selesai, Anda dapat membuat survei berupa pertanyaan dan jawaban pada kolom **Question**. Lalu, tentukan skala minimum dan maksimum dari pertanyaan yang sebelumnya Anda telah buat.  
 ![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745714201)
-![19.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737902617)
+  3. Selanjutnya, Anda juga dapat menentukan pertanyaan lanjutan setelah _customer_ Anda memberikan penilaian. Apabila Anda tidak memerlukannya, aktifkan _toggle_ berikut.  
+![18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190100633)
+- Aktifkan _toggle_ ini apabila ingin memberikan satu pertanyaan lanjutan untuk keseluruhan penilaian.  
+![19.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737902617)  
+- Kemudian Aktifkan _toggle_ ini apabila Anda ingin membuat pertanyaan lanjutan untuk setiap penilaian. Kategori pertanyaan ini dimunculkan berdasarkan _customer_ yang merespon **kurang suka** , **pasif** , dan **mendukung produk Anda**.  
 ![20.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671737905561)
+  4. Periksa tampilan yang akan dilihat oleh _customer_ Anda dalam pratinjau yang ada di sebelah kanan halaman **Customer survey** berikut.  
 ![NPS PREV.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745731993)
+
+*****
+  1. Setelah mengatur tipe survei untuk _customer_ , Anda dapat membuat **Survey greetings** untuk mengarahkan _customer_ dalam pengisian survei. Anda dapat membuat kalimat penutup, judul survei, dan pesan terima kasih.  
 ![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745740953)
+  2. Periksa tampilan yang akan dilihat oleh _customer_ Anda dalam pratinjau yang ada di sebelah kanan halaman **Customer survey** berikut. Pada kolom **Page** , klik **“Thank you page”** untuk melihat _preview_ dari **Survey greetings**.   
 ![22.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F27671745766553)
+
+3. Setelah itu pilih metode pengiriman survei yang Anda inginkan. Metode ini terdiri dari **Automatic** yang berarti survei akan terkirim secara otomatis saat pesan terselesaikan, dan **Manual** yang berarti survei akan menjadi opsional saat pesan terselesaikan.   
 ![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163279897)
 
 ## Error States  <!-- confidence:medium ~ -->

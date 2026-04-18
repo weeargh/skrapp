@@ -38,34 +38,39 @@ Untuk membuat pipeline deal baru pada Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka akun Qontak CRM Anda dan navigasikan ke menu **Properties**. Sistem akan menampilkan halaman pengaturan properties.
 
-2. Pilih menu **Deals** di bawah Properties. Halaman Deals akan terbuka menampilkan daftar pipeline yang ada.
+### Panduan pengguna Mekari Qontak
+[  Artikel panduan mengenai Mekari Qontak ](https://help-center.qontak.com/hc/id/articles/42009600870169-Bagaimana-Cara-Membuat-Pipeline-Deal-Baru-pada-Qontak-CRM)
+[  Video tutorial dan overview produk Mekari Qontak ](https://help-center.qontak.com/hc/id/categories/6178802974233-Video)
+# Temukan artikel panduan sesuai kebutuhan Anda
+#  Bagaimana Cara Membuat Pipeline Deal Baru pada Qontak CRM 
 
-3. Klik tombol **"Create new pipeline"**. Form pembuatan pipeline baru akan muncul.
+[ Learning Center Mekari ](https://help-center.qontak.com/hc/id/profiles/903423882666-Learning-Center-Mekari)
+  * 1 tahun yang lalu
 
-4. Isi kolom-kolom berikut:
-   - **Pipeline Name**: Masukkan nama pipeline
-   - **Stage Name**: Masukkan nama stage pertama
-   - **Persentase Deal**: Tentukan persentase deal
-   - **Freeze Stage**: Centang jika deals tidak boleh diubah saat mencapai stage tertentu
-   - **Start to rotting in day/time**: Aktifkan pengingat untuk deals yang tidak diubah
-   - **Pipeline Team**: Pilih tim yang akan mengelola pipeline
-
-5. Klik **"Add Deal Stage"** untuk menambah stage tambahan jika diperlukan.
-
-6. Klik tombol **"Create Pipeline"** untuk menyimpan. Pipeline baru akan muncul di halaman Deals.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil membuat pipeline deal baru, Anda akan:
-
-1. Diarahkan kembali ke halaman **Deals**
-2. Melihat pipeline yang baru dibuat muncul dalam daftar pipeline yang tersedia
-3. Pipeline siap digunakan untuk mengkategorikan dan mengelola deals sesuai stage yang telah dikonfigurasi
-4. Sistem akan mulai memberikan pengingat otomatis untuk deals yang tidak tersentuh sesuai pengaturan rotting day/time yang dipilih
-
+Pembuatan pipeline baru bertujuan untuk memudahkan Anda dalam mengkategorikan list Deal yang harus diselesaikan. Berikut langkah-langkahnya.
+  1. Masuk ke akun **CRM** Anda, lalu pilih menu **Properties**.
+  2. Kemudian pilih menu **Deals**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42009600857241)
+  3. Lalu klik **“Create new pipeline”**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42009590880537)
-![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42009590881817)
+  4. Selanjutnya isikan kolom-kolom berikut. Untuk lebih jelasnya, di bawah ini merupakan penjelasan setiap kolom yang terdapat pada New Pipeline.  
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42009590881817)  
+**Keterangan:******  
+**** **No** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | **Pipeline Name** | Nama pipeline.  
+2 | **Stage Name** | Nama stage.  
+3 | **Persentase Deal** | Persentase deal yang sedang berjalan.  
+4 | **Freeze Stage** | Centang toggle berikut apabila deals tidak bisa lagi diubah jika mencapai atau dipindahkan ke stage tertentu.
+
+Sebagai contoh:  
+Jika deal dipindah ke stage **Done/Won** , maka deals tersebut sudah tidak dapat diedit kembali.  
+5 | **Start to rotting in day** | Setelah toggle tersebut diaktifkan, Pipeline Anda akan memberi pengingat kepada Anda terkait deals yang tidak tersentuh selama periode hari yang ditentukan.  
+6 | **Start to rotting in time** | Setelah toggle tersebut diaktifkan, Pipeline Anda akan memberi pengingat kepada Anda terkait deals yang tidak tersentuh selama periode durasi waktu yang ditentukan..  
+7 | **Add Deal Stage** | Menambahkan stage baru pada deal.  
+8 | **Pipeline Team** | Tim yang tergabung dalam 1 pipeline.  
+9 | **Create Pipeline** | Konfirmasi pembuatan pipeline baru.
 
 ## Error States  <!-- confidence:low ? -->
 

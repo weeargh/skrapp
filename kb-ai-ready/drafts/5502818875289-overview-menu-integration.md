@@ -29,11 +29,14 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Integration adalah fitur dalam Qontak Omnichannel yang memungkinkan pengguna menghubungkan berbagai platform komunikasi eksternal ke dalam satu chat panel terpusat. Fitur ini memungkinkan Anda mengintegrasikan saluran komunikasi seperti WhatsApp, Instagram, Facebook Messenger, Email, Telegram, Google My Business, Web Chat, Mobile Chat, E-commerce, X (Twitter), Line Messenger, Call, dan Qontak CRM. Setelah integrasi, semua pesan dari platform tersebut akan masuk ke chat panel Qontak Omnichannel untuk pengelolaan terpusat.## Why It Matters  <!-- confidence:medium ~ -->
 
-Mengintegrasikan berbagai platform komunikasi melalui Menu Integration membantu tim Anda mengelola semua percakapan pelanggan dari satu tempat. Ini meningkatkan efisiensi respons, mengurangi waktu yang terbuang untuk beralih antar aplikasi, dan memastikan tidak ada pesan yang terlewatkan. Dengan chat panel terpusat, tim support dapat memberikan layanan pelanggan yang lebih cepat dan konsisten di semua saluran komunikasi.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54622522001049)
+**Integrations** merupakan sebuah fitur Omnichannel Qontak di mana para customer bisa menghubungkan berbagai platform dengan chat panel seperti Email hingga Instagram. 
+**Penting**  
+Hanya pengguna dengan**role Admin yang dapat melakukan integrasi**. Apabila Anda tidak memiliki akun dengan role Admin, Anda dapat menghubungi tim support kami di [support-qontak@mekari.com](https://help-center.qontak.com/hc/id/articles/support-qontak@mekari.com)
+Untuk melihat tampilan menu integrasi pada Web, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda.
+  2. Berikut merupakan tampilan web yang muncul setelah anda mengklik menu **Integration** dengan fitur-fitur yang disediakan. Anda dapat mengintegrasikan Omnichannel Qontak dengan **Google My Business, Mobile chat, Web chat, WhatsApp, Facebook Messenger, Instagram, E-commerce, Email, Telegram, X (Twitter), Line Messenger, Call** , dan**Qontak CRM.**  
+**![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54622522001049)**
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

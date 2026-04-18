@@ -41,31 +41,38 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel dengan kredensial Admin Anda.
-2. Buka menu **Channel Integrations**, kemudian pilih **Facebook Messenger**.
-3. Klik tombol **Add Facebook Messenger**. Sistem akan menampilkan form integrasi Facebook Messenger.
-4. Klik **Connect with Facebook**. Sistem akan membuka tab baru dengan halaman login Facebook.
-5. Masukkan username dan password Facebook Anda, kemudian klik **Log In**.
-6. Ikuti instruksi popup Facebook dan pastikan Anda adalah admin pada Halaman Facebook yang akan diintegrasikan.
-7. Pilih **Halaman Facebook** yang ingin diintegrasikan.
-8. Klik **Simpan Perubahan**. Sistem akan menyelesaikan integrasi.
-9. Facebook Messenger sekarang terhubung — mulai berkomunikasi dengan pelanggan di halaman **Inbox**.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah integrasi berhasil:
-
-1. Facebook Messenger muncul di daftar channel yang terintegrasi pada menu **Channel Integrations**
-2. Pesan dari pelanggan Facebook Messenger akan masuk ke panel **Inbox**
-3. **Admin, Supervisor, dan Agen** dapat melihat dan merespons pesan Facebook Messenger di Inbox
-4. Anda dapat mengirim dan menerima pesan langsung dari Facebook Messenger tanpa meninggalkan Qontak Omnichannel
-5. Status channel akan menunjukkan **Connected**
-
+**Integrations** merupakan sebuah fitur Omnichannel Qontak di mana para customer bisa menghubungkan berbagai platform dengan chat panel seperti email, Facebook, atau Instagram.
+**Penting**  
+Hanya pengguna dengan**role Admin yang dapat melakukan integrasi**. Apabila Anda tidak memiliki akun dengan role Admin, Anda dapat menghubungi tim support kami di [support-qontak@mekari.com](https://help-center.qontak.com/hc/id/articles/support-qontak@mekari.com).
+Untuk mengintegrasikan chat panel dengan Facebook Messenger pada Web, Anda perlu mengikuti langkah-langkah berikut.
+  1. Masuk ke akun Omnichannel Anda.
+  2. Masuk ke menu **Channel Integrations,** lalu pilih**Facebook Messenger**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45007020658329)
+  3. Kemudian pada halaman berikut, klik **"Add Facebook Messenger"**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F45007020659225)
+  4. Klik **“Connect with Facebook”** untuk menyambungkan akun Facebook yang akan diintegrasikan.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089409177)
+Pada bagian kanan form integrasi Facebook messenger terdapat tata cara mengintegrasikan Facebook dan siapa saja yang bisa menggunakan fitur tersebut.
+Yang bisa menggunakan fitur integrasi Facebook messenger adalah, sebagai berikut:
+    1. Hanya **Admin** yang dapat mengintegrasikan Facebook Messenger.
+    2. **Admin, Supervisor,** dan**Agen** dapat menggunakannya di Inbox.
+  5. Secara otomatis sistem akan membuka tab baru sehingga Anda bisa login pada pop up halaman Facebook dengan mengisi username dan password kemudian klik “**Log In** ”.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089405721)
+Untuk mengintegrasikan Facebook messenger adalah sebagai berikut:
+    1. Klik Tambahkan Akun Facebook.
+    2. Terhubung dengan Facebook.
+    3. Masuk ke akun Facebook, pastikan akun Anda adalah admin pada Halaman Facebook.
+    4. Ikuti instruksi popup facebook. Lanjutkan ke langkah berikutnya.
+    5. Setelah popup Facebook hilang, pilih Halaman Facebook.
+    6. Simpan Perubahan dan mulai komunikasi dengan pelanggan Anda melalui Facebook Messenger di halaman Inbox.
+  6. Pada Chat Panel, Anda bisa terkoneksi dengan orang lain dengan klik gambar seperti berikut.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766086032153)
+  7. Kemudian, login dengan username dan password untuk bisa terkoneksi dengan orang lain.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766086034201)
+  8. Anda bisa berhenti terintegrasi dengan Facebook messenger dengan cara klik ikon “**Disconnect** ” seperti gambar berikut.  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089419801)
+  9. Pop up notification “**Are you sure?****Disconnecting this channel will also delete this channel** ” akan secara otomatis muncul jika Anda mengklik “**Disconnect** ”, kemudian pilih “**Disconnect** ” jika Anda yakin untuk disconnect akun Facebook messenger dan jika tidak maka klik “**Cancel** ”.  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089418137)
 
 ## Error States  <!-- confidence:medium ~ -->

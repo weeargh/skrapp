@@ -39,38 +39,29 @@ Jika Anda tidak memiliki role Admin, hubungi tim support Qontak di support-qonta
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Anda dengan kredensial Admin.
 
-2. Buka menu **Channel Integrations** dan pilih **Web chat**. Sistem menampilkan daftar widget yang tersedia.
-
-3. Klik tombol **Actions** pada widget yang ingin dikustomisasi, lalu pilih **Set up widget**. Halaman pengaturan widget terbuka.
-
-4. Pada bagian **Widget Appearance**, atur warna **widget header** sesuai preferensi Anda.
-
-5. Pada bagian **Widget Content**, pilih salah satu kondisi: **Online**, **Offline**, **Pre Chat Form**, atau **Greeting**.
-
-6. Untuk kondisi **Online**: Klik bagian **Online** dan isikan pesan yang menginformasikan bahwa agen sedang online dan siap menanggapi.
-
-7. Untuk kondisi **Offline**: Klik bagian **Offline** dan isikan pesan yang menginformasikan bahwa agen sedang offline.
-
-8. Untuk kondisi **Pre Chat Form**: Isikan title dan subtitle yang akan ditampilkan saat halaman webchat pertama kali dibuka.
-
-9. Setelah selesai, sistem menyimpan perubahan secara otomatis.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan kustomisasi Webchat header:
-
-- Warna **widget header** berubah sesuai pilihan Anda
-- Pesan untuk setiap kondisi (Online, Offline, Pre Chat Form, Greeting) tersimpan dan akan ditampilkan kepada pengunjung sesuai status agen
-- Widget Webchat menampilkan header dengan informasi dan warna yang telah dikustomisasi
-- Pengunjung website melihat pesan yang relevan dengan kondisi ketersediaan agen saat ini
-
+Pada Qontak, Anda dapat melakukan kustomisasi pada Webchat header yang akan muncul. Fitur ini, dapat mengatur warna serta informasi yang ingin dimunculkan pada Webchat header.
+**Penting**  
+Hanya pengguna dengan**role Admin yang dapat melakukan kustomisasi webchat header**. Apabila Anda tidak memiliki akun dengan role Admin, Anda dapat menghubungi tim support kami di [support-qontak@mekari.com](https://help-center.qontak.com/hc/id/articles/support-qontak@mekari.com).
+Berikut langkah-langkahnya untuk melakukan kustomisasi header:
+  1. Masuk ke akun Omnichannel Anda.
+  2. Pilih Menu **Channel Integrations** dan pilih **Web chat**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066685060505)
+  3. Setelah Anda sudah membuat Widget, Anda dapat klik **"Actions"** lalu pilih **“Set up widget”** untuk mengubah tampilan webchat header.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066685063961)
+  4. Kemudian pada bagian**Widget Appearance** , Anda dapat mengatur warna dari **widget header**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651597593)
+  5. Lalu, pada bagian Widget Content, Anda dapat melakukan pengaturan informasi yang ingin dimunculkan pada Webchat header. Terdapat 4 kondisi informasi yang dapat Anda atur, yaitu ketika **Online, Offline** , **Pre Chat Form,** dan **Greeting**.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651599257)
+  6. Apabila Anda ingin melakukan pengaturan Webchat header saat kondisi **"****Online"** , klik bagian **"****Online"**. Kemudian, isikan pesan yang ingin ditampilkan di sini, yang menginformasikan bahwa terdapat agen yang sedang online dan akan segera menanggapi pesan dari user.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651610393)
+Isi pesan dapat disesuaikan dengan keinginan user.
+  7. Apabila Anda ingin melakukan pengaturan Webchat header saat kondisi **Offline** , klik bagian **"****Offline"**. Lalu isikan pesan yang ingin ditampilkan disini, yang menginformasikan bahwa agent sedang offline dan membutuhkan waktu yang sedikit lebih lama untuk menanggapi pesan dari user.  
 ![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066685080089)
+Isi pesan dapat disesuaikan dengan keinginan user.
+  8. Pada bagian **Pre Chat Form** , Anda dapat mengisikan informasi yang ingin dimunculkan pada webchat header, ketika halaman webchat pertama kali dibuka oleh user. Di mana pada bagian ini, Anda dapat mengisikan informasi mengenai title dan subtitle yang ingin dimunculkan pada header webchat.  
 ![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651616281)
+  9. Pada bagian **Greeting** , Anda dapat mencentang _toggle_**'Custom widget greeting'** untuk melakukan kustomisasi pada **widget**. Tentukan juga bagian **Text Position** dan isikan **Greeting message** yang ingin dimunculkan ketika halaman webchat pertama kali dibuka oleh user.  
 ![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49066651617945)
 
 ## Error States  <!-- confidence:low ? -->

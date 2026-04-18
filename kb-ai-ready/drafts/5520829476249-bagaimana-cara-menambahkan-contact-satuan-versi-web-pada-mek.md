@@ -39,26 +39,30 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak CRM, kemudian buka menu **Contacts** dari navigasi utama. Halaman daftar kontak akan ditampilkan.
 
-2. Klik tombol **Add contact**, lalu pilih opsi **Single Contact** dari menu dropdown. Form pembuatan kontak satuan akan terbuka.
-
-3. Isi kolom informasi kontak seperti nama, jabatan, email, nomor telepon, dan alamat. Kolom bertanda bintang (*) wajib diisi. Sistem memvalidasi setiap input.
-
-4. (Opsional) Di kolom **Tickets**, ketikkan nama tiket yang ingin Anda hubungkan dengan kontak ini, lalu klik **Update Contact**. Tiket akan tautkan secara otomatis ke kontak.
-
-5. (Opsional) Pada kolom **Perusahaan**, pilih Primary Company kontak (maksimal 1 perusahaan) atau klik **atau buat perusahaan** untuk menambah perusahaan baru. Untuk menambah perusahaan tambahan, klik **Additional Companies** (maksimal 5 perusahaan).
-
-6. (Opsional) Pada panel kanan, gunakan kolom **Notes**, **Task**, **Panggilan**, **Email**, **Dokumen**, dan **Rapat** untuk menambah catatan atau informasi lainnya.
-
-7. Klik **Buat Kontak** untuk menyimpan. Atau klik **Buat dan lanjutkan menambahkan** untuk menyimpan dan menambah kontak lainnya sekaligus.## Expected Result  <!-- confidence:high ✓ -->
-
-Kontak satuan berhasil dibuat dan tersimpan. Sistem akan menampilkan pesan konfirmasi, dan kontak baru muncul dalam daftar kontak di menu **Contacts** dengan semua informasi yang dimasukkan (nama, email, nomor telepon, perusahaan, tiket, dan catatan) terlihat dan dapat dicari. Jika pengguna berlangganan Qontak Omnichannel, kontak juga secara otomatis tersinkronisasi ke Omnichannel tanpa perlu membuat ulang.
-
+Menu **Kontak** merupakan sebuah menu yang dipersiapkan untuk membuat kontak dan menyimpan data customer suatu perusahaan. Pada menu ini anda dapat menyimpan semua kontak baik _customer_ , _partner_ , _lead prospected_ maupun kompetitor Anda. Untuk menambahkan suatu kontak, Anda bisa menambahkan satu per satu maupun secara _massive_. Pada _step_ kali ini, kami akan menginfokan cara menambah kontak dengan menggunakan Qontak CRM melalui _website_ /komputer.
+Sudah menggunakan [Qontak One](https://help-center.qontak.com/hc/id/articles/53169095720729-Sekilas-tentang-Qontak-One)? Jelajahi pengalaman[ Customer yang baru](https://help-center.qontak.com/hc/id/articles/53183780046105-Sekilas-tentang-Customer-Data-Platform) di Qontak One untuk langkah-langkah dan panduan antarmuka yang telah diperbarui.
+Berikut langkah-langkahnya.
+**Penting!**  
+- Apabila pada **Q2 2024** Anda **sudah berlangganan** **Qontak CRM** , namun **belum berlangganan Qontak Omnichannel** , maka apabila nantinya Anda berlangganan **Qontak Omnichannel** , Anda **tidak perlu** membuat kontak lagi pada **Qontak Omnichannel** tersebut.  
+- Apabila pada **Q2 2024** Anda **sudah berlangganan Qontak Omnichannel** dan **Qontak CRM** , maka kontak yang telah dibuat pada **CRM** akan secara otomatis terbuat di **Omnichannel**.   
+- Hal ini berlaku pada pembuatan **Single Contact** dan **Bulk Contact**.
+  1. Masuk ke menu **Contacts**.
+  2. Klik**“Add contact”** lalu pilih **Single Contact**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49586043440025)
+
+3. Pada saat menambah kontak, pastikan _field-field_ yang perlu Anda ketahui sudah ada pada kontak field CRM Qontak sehingga saat pengisian informasi-informasi yang akan Anda masukan sudah terisi dengan rapi. Di sini, Anda Anda dapat mengisi informasi-informasi penting dari **customer** seperti nama, jabatan, alamat email, nomor telepon, alamat, dan lain-lain.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23735374085657)
+
+Kolom bertanda bintang**(*)** wajib diisi.
+  4. Lalu pada kolom **Tickets** , isikan nama tiket yang telah dibuat dan ingin Anda hubungkan dengan kontak.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39653244319257)
+  5. Lalu klik **“Update Contact”** untuk memastikan tiket sekarang ditautkan ke kontak. Setelahnya, kontak akan secara otomatis dikaitkan dalam Tiket.
+
+- Anda juga dapat klik**“atau buat perusahaan”** untuk menambahkan perusahaan baru.  
+- Setelah memilih **Primary company** , Anda juga dapat klik **“Additional Companies”** untuk menambahkan perusahaan lainnya dengan maksimal 5 perusahaan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23735105423129)
+  7. Pada bagian kanan, terdapat kolom yang bisa Anda gunakan untuk menambahkan catatan atau informasi lain terkait kontak yang Anda buat (opsional) seperti **Notes** , **Task** , **Panggilan** , **Email** , **Dokumen** dan **Rapat.**  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F23735375580569)
 
 ## Error States  <!-- confidence:medium ~ -->

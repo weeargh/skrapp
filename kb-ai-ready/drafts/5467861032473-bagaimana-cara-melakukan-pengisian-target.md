@@ -38,38 +38,33 @@ Untuk melakukan pengisian target di Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Metode 1: Pengisian Target Untuk Beberapa User Melalui User Performance**
 
-1. Klik username CRM di pojok kanan atas → Sistem menampilkan menu dropdown.
-2. Pilih **Profile Settings** → Halaman Profile Settings terbuka.
-3. Pilih **User Performance** → Halaman User Performance ditampilkan dengan daftar user dan pilihan filter.
-4. Pada kolom **Select Users**, centang kotak di sebelah kiri nama user yang targetnya ingin di-set → User terpilih ditandai.
-5. Pada kolom **Select Year**, pilih tahun target → Tahun terpilih ditampilkan.
-6. Pada kolom **Select Pipeline**, pilih pipeline → Pipeline terpilih ditampilkan.
-7. Untuk setiap bulan, isi nominal target pada kolom **Value** dan pilih **Currency** sesuai mata uang pembayaran. Opsional: set target berdasarkan jumlah deal di kolom yang tersedia.
-8. Klik tombol **Save** di bagian bawah halaman → Sistem menyimpan target dan menampilkan pesan konfirmasi.
-
-**Metode 2: Pengisian Target Per User Melalui Menu Users**
-
-1. Klik pada Name (Username) user yang targetnya ingin di-set → Halaman detail user terbuka.
-2. Pada menu User Performance, di kolom **Select Year**, pilih tahun target → Tahun terpilih ditampilkan.
-3. Pada kolom **Select Pipeline**, pilih pipeline → Pipeline terpilih ditampilkan.
-4. Untuk setiap bulan, isi nominal target pada kolom **Value** dan pilih **Currency** sesuai mata uang pembayaran. Opsional: set target berdasarkan jumlah deal di kolom yang tersedia.
-5. Klik tombol **Update User** di bagian bawah halaman → Sistem menyimpan target dan menampilkan pesan konfirmasi.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil melakukan pengisian target:
-
-1. **Pesan konfirmasi** ditampilkan menyatakan target telah berhasil disimpan.
-2. **Daftar target user** di menu User Performance atau halaman detail user menampilkan target terbaru untuk tahun, pipeline, dan bulan yang telah diatur.
-3. **Supervisor/Manager dapat memantau pencapaian sales** melalui menu User Performance dengan membandingkan target yang telah ditetapkan dengan pencapaian aktual sales.
-4. Target tersimpan dapat diedit kembali kapan saja dengan mengikuti langkah-langkah yang sama.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50341046417689)
-![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50341046425753)
+Salah satu manfaat penggunaan CRM adalah untuk mengukur pencapaian para Sales. Supervisor/Manager dapat memantau pencapaian para sales dari waktu ke waktu dengan harapan dapat melakukan evaluasi secara berkala untuk meningkatkan pencapaian mereka di kemudian hari. Supervisor/Manager dapat melakukan pengisian target untuk para user Sales pada CRM untuk mengukur pencapaian mereka. Untuk mengisi target sekaligus untuk lebih dari satu orang, dapat langsung dilakukan di menu **User Performance**. Caranya adalah sebagai berikut.
+### Cara 1: Melalui Menu User Performance[](https://help-center.qontak.com/hc/id/articles/5467861032473-Bagaimana-Cara-Melakukan-Pengisian-Target#h_01K450PERG04HGJ2SCCP78P5TK)
+  1. Klik username CRM di pojok kanan atas.
+  2. Pilih **Profile Settings.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50341046417689)  
+**
+  3. Pilih **User Performance.  
+![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50341046425753)  
+**
+  4. Pada kolom **Select Users** dapat dipilih user yang targetnya ingin di-set dengan mencentang kotak di sebelah kiri nama user.  
 ![2.5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21575456258713)
+  5. Pada kolom **Select Year** dapat dipilih tahun yang targetnya ingin di-set.
+  6. Pada kolom **Select Pipeline** dapat dipilih pipeline yang targetnya ingin di-set.
+  7. Di setiap bulan dapat di-set target yang berbeda-beda dengan mengisi nominal taget pada kolom **Value** dan pilih **Currency** sesuai dengan mata uang yang dipakai untuk pembayaran. Jika dibutuhkan, dapat di-set pula target berdasarkan jumlah deal (penjualan) yang dibuat.
+  8. Klik "**Save"** di bagian bawah halaman.  
 ![2.8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21575456259993)
+
+### Cara 2: Melalui Menu Users[](https://help-center.qontak.com/hc/id/articles/5467861032473-Bagaimana-Cara-Melakukan-Pengisian-Target#h_01K450PERH71JJJPMJD3ETN4KS)
+Cara lain untuk mengisi target user adalah dengan cara mengisi target untuk setiap usernya secara satu-persatu pada menu **Users**. Caranya adalah sebagai berikut.
+  1. Klik di bagian Name (Username) pada user yang targetnya ingin di-set.
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50341046432665)
+  2. Pada menu User Performance, pada kolom **Select Year/Pilih Tahun** dapat dipilih tahun yang targetnya ingin di-set  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21575494209305)
+  3. Pada kolom **Select Pipeline/Pilih Pipeline** dapat dipilih pipeline yang targetnya ingin di-_set_.
+  4. Di setiap bulan dapat di-set target yang berbeda-beda dengan mengisi nominal taget pada kolom **Value** dan pilih **Currency** sesuai dengan mata uang yang dipakai untuk pembayaran. Jika dibutuhkan, dapat di-set pula target berdasarkan jumlah deal (penjualan) yang dibuat.
+  5. Klik **"Update User"** di bagian bawah halaman.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21575494213785)
 
 ## Error States  <!-- confidence:low ? -->

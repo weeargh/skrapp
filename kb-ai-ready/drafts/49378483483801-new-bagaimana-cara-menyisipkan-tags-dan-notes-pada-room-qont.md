@@ -34,18 +34,18 @@ Anda harus memiliki akses ke menu Inbox Omnichannel Qontak. Fitur Tags dan Notes
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Omnichannel Qontak Anda.
-2. Buka menu Inbox dan klik tab Assigned untuk melihat daftar pesan.
-3. Pilih salah satu pesan percakapan dari daftar. Panel Room Info akan terbuka di sebelah kanan.
-4. Untuk menambahkan catatan: klik tombol Add Notes, ketik catatan minimal 16 karakter, lalu klik Save. Catatan akan tersimpan di Room Info.
-5. Untuk mengubah catatan: klik ikon Edit pada catatan yang ada, ubah teks, lalu klik Save.
-6. Untuk menambahkan tag: klik panah pada kolom Tags, pilih tag yang sudah ada atau ketik nama tag baru sesuai kategori yang diinginkan, lalu tekan Enter.
-7. Tag yang ditambahkan akan muncul di bawah daftar pesan masuk percakapan tersebut.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah menyelesaikan langkah-langkah, catatan akan tersimpan di Room Info dengan status tersimpan ditandai oleh tombol Save yang tidak aktif. Tag yang ditambahkan akan tampil sebagai label berwarna di bawah daftar pesan percakapan. Baik catatan maupun tag dapat digunakan untuk memfilter dan mengorganisir Inbox sesuai kebutuhan customer service Anda.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383365704473)
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para customer service akan melayani semua keluhan user berupa pesan masuk.
+Pada panduan ini, akan diuraikan tentang cara menyisipkan tag dan notes pada room di Omnichannel Qontak Website.
+  1. Masuk ke akun Omnichannel Anda.
+  2. Fitur ‘Tag’ dan ‘Notes’ dapat diakses pada Room Info di tiap Room percakapan. Anda dapat membuka Room Info dengan memilih **Inbox**. Klik tab menu **“Assigned”** dan pilih salah satu pesan _.__  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383365704473)  
+_
+  3. Pada Room Info, Anda akan melihat tampilan seperti berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383380472345)
+  4. Untuk menulis catatan, klik **Add Notes,** lalu ketik catatan yang ingin disisipkan. Klik **"Save"** untuk menyimpan catatan yang telah dibuat.
+
+Demikian adalah cara menyisipkan Tag dan Notes pada Room Qontak Website.
 
 ## Error States  <!-- confidence:medium ~ -->
 

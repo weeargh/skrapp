@@ -39,39 +39,26 @@ Catatan: Laporan Top Company hanya menampilkan data penjualan yang telah tercata
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman Dashboard Qontak CRM akan terbuka.
 
-2. Buka menu **Report** dari navigasi utama.
-   → Daftar laporan yang tersedia akan ditampilkan.
-
-3. Cari dan klik **Laporan Top Company**.
-   → Halaman laporan Top Company akan terbuka dengan filter pipeline, filter by user, dan filter waktu laporan.
-
-4. Klik tombol **Download** untuk mengunduh laporan.
-   → File spreadsheet akan terunduh ke perangkat Anda.
-
-5. Buka file yang sudah diunduh menggunakan aplikasi spreadsheet.
-   → Sheet laporan akan menampilkan 12 kolom data penjualan detail.## Expected Result  <!-- confidence:high ✓ -->
-
-File Laporan Top Company berhasil dibuka dan menampilkan spreadsheet dengan 12 kolom berikut:
-
-1. Parent Company Name – Nama induk perusahaan
-2. Company Name – Nama perusahaan pembeli
-3. Deal Name – Nama transaksi/deal
-4. Deal Size – Ukuran nilai deal
-5. Deal Owner – Pemilik/penanggungjawab deal
-6. Product Purchased – Produk yang dibeli
-7. Quantity – Jumlah produk
-8. Price – Harga satuan
-9. % Discount – Persentase diskon
-10. Total – Total harga setelah diskon
-11. Sales Volume – Volume penjualan
-12. % of Sales – Persentase kontribusi terhadap total penjualan
-
-Anda dapat menganalisis perusahaan mana yang paling besar penjualannya dan kontribusinya terhadap total revenue.
-
+Laporan ini berfungsi untuk melihat kepada perusahaan mana saja produk atau jasa Anda lebih banyak terjual. Anda dapat melihat seberapa besar penjualan pada tiap perusahaan dan berapa persen penjualan tersebut berkontribusi pada keseluruhan total penjualan.
+Hasil download **Laporan Top Company** ketika sudah di download akan menampilkan sheet seperti gambar di bawah ini:  
 ![tc.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780193851033)
+Pada sheet ini, ditampilkan secara detail mengenai:  
+- Filter pipeline  
+- Filter by user  
+- Filter waktu laporan  
+1. Parent Company Name  
+2. Company Name  
+3. Deal Name  
+4. Deal Size  
+5. Deal Owner  
+6. Product Purchased  
+7. Quantity  
+8. Price  
+9. % Discount  
+10. Total  
+11. Sales Volume  
+12. % of Sales
 
 ## Error States  <!-- confidence:low ? -->
 

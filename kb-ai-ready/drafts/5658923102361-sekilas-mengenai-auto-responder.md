@@ -27,12 +27,16 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Auto Responder adalah fitur dalam Qontak Omnichannel yang memungkinkan Anda mengatur pesan balasan otomatis kepada pelanggan berdasarkan jam operasional bisnis Anda. Fitur ini tersedia di menu Settings > Inbox dan memiliki dua tipe template: template untuk jam kantor dan template untuk luar jam kantor. Setiap template dapat diaktifkan atau dinonaktifkan sesuai kebutuhan bisnis Anda.## Why It Matters  <!-- confidence:medium ~ -->
 
-Auto Responder meningkatkan efisiensi layanan pelanggan dengan memberikan respons instan kepada pelanggan tanpa intervensi manual agent. Fitur ini memastikan pelanggan selalu mendapat konfirmasi bahwa pesan mereka diterima, bahkan di luar jam operasional. Dengan mengotomatisasi respons, tim Anda dapat fokus pada chat yang memerlukan penanganan lebih lanjut, meningkatkan kepuasan pelanggan dan produktivitas tim.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475790897945)
+**Settings** merupakan sebuah fitur di mana para customer dapat mengontrol atau melakukan pengaturan Omnichannel Qontak.
+Untuk membuat HSM Template Setting pada Web, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda.
+  2. Pilih menu **Settings** , kemudian klik **Inbox.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475790897945)  
+**
+  3. Klik “**Auto Responder** ” untuk menampilkan template Autoresponder dan klik **"Save"** untuk menyimpan.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49475826169113)
+Ada 2 tipe responder yaitu Template penjawab otomatis selama jam kantor dan Template penjawab otomatis di luar jam kantor, kedua tipe ini memiliki _toggle_ yang dapat diaktifkan dan dinonaktifkan. Ketika **diaktifkan** , maka _responder_ akan otomatis bekerja dan jika **dinonaktifkan** , maka _auto responder_ tidak akan bekerja.
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

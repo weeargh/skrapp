@@ -38,38 +38,40 @@ Untuk mengintegrasikan Mobile Chat di Omnichannel Qontak, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Instalasi Widget:**
 
-1. Buka menu **Integrations** di Qontak Omnichannel.
-2. Pilih tab **Mobile chat**, lalu klik tombol **Create chat widget**. Sistem akan menampilkan formulir pembuatan widget.
-3. Masukkan **App name** sesuai nama aplikasi Anda. Sistem akan menerima input nama tersebut.
-4. Pilih sistem operasi (Android dan/atau iOS). Anda dapat menambah OS lain dengan klik **Add operating system**.
-5. Masukkan **Package name** (Android) dan **Bundle ID** (iOS), lalu klik **Create**. Sistem akan menyimpan widget dan menampilkan detail teknis: App ID, Client ID, Secret Key.
-6. Bagikan ketiga detail tersebut kepada tim developer untuk diintegrasikan ke aplikasi Anda.
-
-**Mengubah Tampilan Widget:**
-
-1. Pada daftar app yang telah dibuat, klik **Action** → **Edit**.
-2. Klik **Widget content & appearance**. Sistem akan menampilkan form pengaturan tampilan.
-3. Ubah **Display name**, **Description**, **Greetings**, dan **Appearance** (warna). Klik simpan untuk menerapkan perubahan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah langkah instalasi selesai:
-
-- Widget berhasil dibuat dengan status aktif di daftar Mobile chat
-- Detail teknis (App ID, Client ID, Secret Key) tersedia untuk diberikan kepada tim developer
-- Setelah tim developer mengintegrasikan detail tersebut ke kode aplikasi, fitur Mobile Chat akan tersedia di aplikasi mobile Anda
-- Pelanggan dapat membuka chat dari aplikasi tanpa membuka WhatsApp terpisah
-- Tampilan chat akan sesuai dengan konfigurasi Display name, warna, dan greeting yang telah Anda atur
-
+Anda dapat menghubungi tim developer Anda untuk mendapatkan **Package name** dan **Bundle ID**.
+  6. Maka widget installation sudah berhasil dilakukan. Selanjutnya, Anda perlu meminta tim developer Anda untuk memasukkan semua detail tersebut (App ID, Client ID, Secret Key) ke sistem Anda.  
 ![pasted image 0 \(43\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184476825)
+
+### B. Cara Mengubah Tampilan[](https://help-center.qontak.com/hc/id/articles/22614405832473-Bagaimana-Cara-Mengintegrasikan-Mobile-Chat-di-Omnichannel-Qontak#h_01H9HMR8DMSZH6W1ERRPPJJ999)
+Setelah widget sudah berhasil terbuat, selanjutnya Anda dapat mengubah tampilan dari mobile chat. Berikut langkah-langkahnya.
+  1. Pada daftar App name yang telah Anda buat, klik**“Action”** lalu pilih **Edit**.  
 ![pasted image 0 \(44\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184478873)
+  2. Untuk mengubah tampilan klik **“Widget content & appearance”**.  
 ![pasted image 0 \(45\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184470169)
+  3. Selanjutnya, Anda dapat mengubah tampilan yang ada seperti berikut.  
 ![pasted image 0 \(46\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184477465)
+
+**No** | **Kolom** | **Penjelasan**  
+---|---|---  
+1 | Display name | Masukkan nama tampilan yang Anda inginkan.  
+2 | Description | Deskripsi yang telah Anda buat muncul di tampilan chat pelanggan Anda pada header chat.  
+3 | Greetings | Greetings yang Anda buat akan muncul saat pertama kali pelanggan mengirimkan pesan. Greetings ini tidak terhitung sebagai bot sehingga tidak akan memengaruhi auto responder.  
+4 | Appearance | Anda dapat menyesuaikan warna (room chat), warna pesan agen (bubble chat dari agen), warna pesan pelanggan (customer bubble chat).  
+  4. Anda dapat melihat preview dari tampilan yang Anda ubah pada bagian kanan. Dan jika semua pengaturan sudah sesuai, klik **“Save changes”**.  
 ![pasted image 0 \(47\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142879257)
+
+### C. Cara Menambahkan Push Notification[](https://help-center.qontak.com/hc/id/articles/22614405832473-Bagaimana-Cara-Mengintegrasikan-Mobile-Chat-di-Omnichannel-Qontak#h_01H9HMR8DMFYC3R0SBAM783Z23)
+Setelah membuat widget, Anda juga dapat menambahkan push notification pada pelanggan. Jadi jika Anda membalas pesan dari pelanggan, maka pelanggan tersebut akan mendapatkan notifikasi. Berikut langkah-langkahnya.
+  1. Pada daftar App name yang telah Anda buat, klik**“Action”** lalu pilih **Edit**.  
 ![pasted image 0 \(48\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184470681)
+  2. Untuk menambahkan notifikasi klik **“Push notification”**.  
 ![pasted image 0 \(49\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142881049)
+  3. Tambahkan **FCM survey key** yang dapat Anda dapatkan dari tim developer Anda kemudian klik **“Add key”**.  
 ![pasted image 0 \(50\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184479513)
+  4. Masukkan FCM server key yang Anda peroleh dan klik**“Add”** untuk menambahkannya.  
 ![pasted image 0 \(51\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184471833)
+  5. Maka push notification sudah berhasil ditambahkan. Anda juga dapat mengubahnya dengan klik **“Edit”**.  
 ![pasted image 0 \(52\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184474649)
 
 ## Error States  <!-- confidence:low ? -->

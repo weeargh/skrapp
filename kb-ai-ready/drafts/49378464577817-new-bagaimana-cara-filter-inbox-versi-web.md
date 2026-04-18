@@ -36,26 +36,20 @@ Untuk menggunakan fitur Filter Inbox pada Qontak Omnichannel versi web, Anda mem
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda melalui dashboard web.
-2. Klik menu **Inbox** untuk melihat daftar pesan masuk. Halaman Inbox akan menampilkan detail pesan lengkap.
-3. Klik ikon **Filter** untuk membuka panel pengaturan filter. Panel filter akan muncul dengan berbagai opsi penyaringan.
-4. Isi field filter sesuai kebutuhan:
-   - **Unresponded Chat**: Pilih untuk menampilkan pesan yang sudah dibaca dan ditugaskan namun belum dibalas Agen
-   - **Sessions**: Pilih dari opsi Open, Expiring, atau Expired
-   - **Channel**: Pilih satu atau lebih channel yang terhubung
-   - **Agents**: Pilih Agen tertentu dari dropdown
-   - **Tags**: Pilih tag yang sudah ditambahkan pada pesan
-5. Sistem akan menampilkan pesan yang sesuai dengan filter yang Anda terapkan.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah menerapkan filter, daftar pesan di Inbox akan diperbarui menampilkan hanya pesan yang sesuai dengan kriteria filter yang dipilih. Anda dapat melihat:
-• Pesan dari Session yang dipilih (Open, Expiring, atau Expired)
-• Pesan dari Channel tertentu
-• Pesan yang ditugaskan ke Agen spesifik
-• Pesan dengan Tags tertentu
-• Chat yang belum dibalas (jika filter Unresponded Chat diaktifkan)
-Panel filter tetap terbuka sehingga Anda dapat menyesuaikan filter kapan saja.
-
+**Omnichannel** memiliki fitur filter yang dapat memudahkan Anda dalam mencari beberapa pesan dengan spesifikasi tertentu yang dapat diatur sesuai dengan keinginan anda.
+Ikuti langka berikut untuk menggunakan fitur filter pada akun **Omnichannel** Anda.
+  1. Login ke akun Qontak Omnichannel Anda. 
+  2. Untuk membuka pesan **Omnichannel** atau melihat detail pesan Anda dapat klik **Menu Inbox.** Anda akan dialihkan ke halaman Inbox dengan detail yang lebih lengkap.
+  3. Pengaturan menu filter dapat dibuka dengan menekan ikon**"Filter"** , maka kemudian pengaturan filter akan muncul.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49381136455705)
+  4. Anda dapat mengisi _field_ filter yang sesuai dengan kebutuhan. Di mana **Sessions** terbagi menjadi 3 yaitu **Open** , **Expiring** dan **Expired**. Anda juga bisa memfilter via **Agent** dan **Tags** pada _dropdown_ yang sudah disediakan. Penjelasan filter terdapat di bagian bawah.
+Penjelasan filter:
+     *        * **Unresponded Chat** : Untuk memfilter pesan dari pelanggan yang telah dibaca dan ditugaskan kepada Agen, namun belum dibalas oleh Agen.
+       * **Sessions** : Memfilter pesan berdasarkan sesi dari pesan-pesan yang masuk.
+       * **Channel** : Merupakan channel-channel yang terhubung dengan Omnichannel. Anda bisa memilih satu atau beberapa dari channel yang terhubung untuk difilter pesannya.
+       * **Agents** : Memfilter pesan yang masuk berdasarkan _agents_ yang ditugaskan.
+       * **Tags :** Untuk memfilter pesan sesuai dengan tags yang ditambahkan dalam pesan.
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -37,46 +37,58 @@ Sebelum menerapkan Ask Airene pada Mekari Qontak Omnichannel, pastikan Anda meme
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Langkah-langkah menambahkan Conversation History sebagai pengetahuan Ask Airene:**
 
-1. Masuk ke akun Omnichannel Anda, kemudian pilih menu **AI Resources**.
-   - Sistem akan menampilkan halaman manajemen sumber pengetahuan AI.
-
-2. Klik tombol **"Add source"**.
-   - Sistem akan menampilkan dialog untuk memilih tipe sumber pengetahuan.
-
-3. Pilih tab **"Conversation history"**.
-   - Sistem akan menampilkan opsi untuk memilih Agent.
-
-4. Pilih satu atau lebih Agent yang riwayat percakapannya akan dijadikan sumber pengetahuan AI.
-   - AI akan mempelajari percakapan dari 3 bulan terakhir.
-   - Anda dapat memilih lebih dari satu Agent tanpa validasi.
-
-5. Klik tombol **"Save"**.
-   - Sistem akan menampilkan notifikasi status "Processing" dan mulai memproses riwayat percakapan (biasanya 1-1,5 jam).## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat:
-
-1. Notifikasi status **"Processing"** muncul di halaman AI Resources, menunjukkan bahwa riwayat percakapan Agent sedang diproses oleh sistem.
-
-2. Setelah proses selesai, status akan berubah menjadi "Active" atau "Ready".
-
-3. Ask Airene sekarang memiliki pengetahuan dari percakapan Agent yang dipilih dan siap untuk memberikan rekomendasi otomatis ketika Anda merespons klien di menu **Inbox** Omnichannel.
-
-4. Semakin akurat percakapan yang dilakukan oleh Agent, semakin akurat informasi yang dipelajari oleh AI.
-
+**Penting  
+** Fitur ini masih dalam tahap **BETA** dan hanya diaktifkan ke beberapa Organisasi atau CID tertentu.**  
+**
+Kini Mekari Qontak Omnichannel menghadirkan fitur bernama **Ask Airene** yang akan membantu Anda sebagai Agent untuk memberikan respon secara otomatis pada klien. Dengan **Ask Airene** , Anda akan mendapatkan pengalaman langsung menggunakan AI dan beralih dari merespon secara manual menjadi otomatis dengan mendapatkan bantuan secara parsial oleh AI. 
+Pada tutorial berikut, Anda akan mempelajari mulai dari cara menambahkan **Conversation history** sebagai **pengetahuan AI** hingga proses interaksi dengan **Ask Airene** dalam **room conversation** di menu **Inbox** Omnichannel. Simak lebih lanjut alur penerapannya di bawah ini.
+### A. Menambahkan Conversation History sebagai Sumber Pengetahuan Airene[](https://help-center.qontak.com/hc/id/articles/40980025881497-Bagaimana-Penerapan-Ask-Airene-pada-Mekari-Qontak-Omnichannel#h_01JEQ552QYPM1SEJC4FD54GQ0Z)
+Penerapan Ask Airene dapat dimulai dengan menambahkan **Conversation History**. Hal ini bertujuan untuk mendapatkan lebih banyak informasi melalui riwayat percakapan sehingga Airene dapat mempelajarinya lebih lanjut. Berikut langkah-langkahnya.
+  1. Masuk ke akun **Omnichannel** Anda, lalu pilih menu **Ai Resources**.
+  2. Kemudian, klik **“Add source”**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025806873)
+  3. Lalu pilih tab **“Conversation history”**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025809945)
+  4. Selanjutnya pilih **Agent** yang akan dipilih riwayat percakapannya sebagai sumber pengetahuan untuk AI pelajari.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025811353)
+
+- Riwayat percakapan akan dipelajari oleh AI mulai dari **3 bulan terakhir** sejak riwayat percakapan muncul.  
+- Semakin akurat percakapan yang dilakukan oleh Agent, maka akan semakin akurat informasi yang dipelajari dan didapat oleh AI.  
+- Anda dapat memilih **lebih dari satu** Agent untuk menambah pengetahuan pada AI (tanpa validasi).
+  5. Kemudian klik **“Save”**.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025814041)
+  6. Lalu akan muncul notifikasi berikut yang menyatakan bahwa riwayat percakapan sedang diproses untuk dipelajari oleh AI. Anda diminta untuk menunggu beberapa saat selama status dalam tahap **‘Processing’**.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025815961)
-![3.2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025819545)
+
+- Proses pembuatan pengetahuan untuk AI biasanya memakan banyak waktu karena bergantung pada ruang percakapan yang ditangani Agent sebelumnya. (biasanya dapat mencapai hingga**1 setengah jam**).  
+- Anda **hanya dapat** membuat **satu sumber** dari Riwayat Percakapan. Apabila Anda ingin memperbarui pengetahuan (dalam hal ini memilih Agent yang berbeda), untuk saat ini, pengguna harus menghapus pengetahuan riwayat percakapan terlebih dahulu, lalu mengirimkan ulang/menambahkan kembali pengetahuan dengan Agent yang telah diperbarui.![3.2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025819545)
+  7. Selanjutnya setelah status berubah menjadi **‘Active’** maka AI sudah berhasil menyerap informasi yang terdapat pada riwayat percakapan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025821849)
+
+### B. Interaksi dengan Ask Airene pada Room Conversation di Menu Inbox[](https://help-center.qontak.com/hc/id/articles/40980025881497-Bagaimana-Penerapan-Ask-Airene-pada-Mekari-Qontak-Omnichannel#h_01JEQ552QYMFCSV32AW6ERCD9K)
+Setelah menambahkan **Conversation history** sebagai pengetahuan untuk AI, maka Anda secara otomatis dapat merasakan pengalaman berinteraksi dengan Ask Airene pada**Room Conversation** yang terdapat di menu **Inbox** Omnichannel. Simak penjelasan selengkapnya berikut ini.
+**Penting  
+** Berikut hal-hal yang dapat dilakukan Airene dalam percakapan:  
+1. Menampilkan jawaban saran berdasarkan pertanyaan pelanggan.  
+2. Menanggapi pertanyaan sesuai dengan pengetahuan yang telah dilatih dengan kondisi sebagai berikut:  
+- Hanya pertanyaan terkait dengan percakapan yang dapat dijawab.  
+- Airene akan melihat jawaban dari data yang telah dilatih (**PDF** , **URL** , atau **Conversation history**).  
+- Jika Airene tidak dapat menjawab pertanyaan, maka akan ditampilkan pesan konten yang menyatakan bahwa Airene tidak dapat menemukan jawabannya (kondisi ini berbeda dengan Chatbot AI).
+  1. Masuk ke menu **Inbox** pada Qontak Omnichannel.
+  2. Kemudian di sebelah kanan (tepatnya di dekat sisi detail kontak), klik **ikon Ask Airene** untuk membuka panel.  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980010636441)
+  3. Selain itu Anda juga dapat mengakses **Ask Airene** melalui tombol yang terletak di bagian bawah obrolan pelanggan. Hal ini akan memicu **Pertanyaan yang disarankan** di mana Airene akan mendeteksi pesan pelanggan untuk membuat pertanyaan. Setelah itu Anda dapat mulai berinteraksi dengan **Ask Airene** hingga ruang tersebut terselesaikan.  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980010638873)
+  4. Untuk dapat menggunakan saran pertanyaan yang telah dibuat, klik tombol **panah** pada pertanyaan yang disarankan.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980025834009)
+  5. Saat menjawab pertanyaan, Airene juga dapat membagikan sumber jawabannya.  
 ![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980010650905)
+  6. Anda juga dapat menggunakan jawaban Airene untuk menjawab pertanyaan pelanggan dengan klik **“Use Response”** sehingga jawaban akan ditampilkan di kotak percakapan.  
 ![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F40980010678681)
+  7. Anda juga dapat mengajukan pertanyaan lanjutan secara berkala kepada Airene. Panel di sisi samping Airene hanya akan aktif hingga ruangan tersebut terselesaikan.
+
+Demikian penerapan Ask Airene pada Mekari Qontak Omnichannel.
 
 ## Error States  <!-- confidence:medium ~ -->
 

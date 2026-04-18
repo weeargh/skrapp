@@ -38,33 +38,24 @@ Untuk melihat Service Quality Score Report di Qontak, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Anda dan pilih menu **Report**. Sistem akan menampilkan halaman Report dengan berbagai pilihan laporan.
 
-2. Pilih **Agent performance**. Tab-tab laporan agent akan ditampilkan.
+Pada Qontak, Anda bisa melihat SQS atau _Service Quality Score_ melalui menu **Report**. Fitur ini memudahkan Anda untuk melihat laporan keseluruhan penilaian kualitas layanan Agent dari suatu perusahaan pada satu halaman saja. Untuk lebih jelasnya, simak langkah-langkah dan penjelasan berikut ini.
+  1. Masuk akun Qontak Anda, lalu pilih menu **Report**.
+  2. Lalu pilih **Agent performance** , dan klik tab **“Quality scoring”**.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861321241)**
+  3. Kemudian Anda akan diarahkan ke halaman berikut.![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861324313)
 
-3. Klik tab **Quality scoring**. Sistem akan mengarahkan Anda ke halaman laporan Service Quality Score yang berisi grafik dan data performa.
-
-4. Lihat grafik **Service Quality Score per Parameter** berdasarkan jumlah Room yang pass dan tidak pass.
-
-5. Lihat grafik **Service Quality Score per Parameter** berdasarkan persentase Room yang pass dan tidak pass.
-
-6. Lihat laporan **Service Quality Score per Agent** dalam bentuk grafik yang menampilkan nilai performa setiap agent.
-
-7. Lihat laporan **Service Quality Score per Agent and Parameter** yang menampilkan rincian nama parameter dan persentase room berdasarkan masing-masing parameter.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengikuti langkah-langkah di atas, Anda akan melihat halaman Service Quality Score Report yang menampilkan:
-
-• Grafik Service Quality Score per Parameter (berdasarkan jumlah dan persentase room yang pass/tidak pass)
-• Laporan performa masing-masing Agent dalam bentuk visual
-• Rincian detail Parameter Name dan persentase room yang pass dan tidak pass
-
-Semua data dapat dilihat dalam satu halaman untuk analisis keseluruhan kualitas layanan tim Agent perusahaan Anda.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861321241)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861324313)
+No | Nama Fitur | Penjelasan  
+---|---|---  
+1 | Date range | Untuk memfilter laporan berdasarkan rentang waktu tertentu.  
+2 | Service Quality Score | Menampilkan nilai yang diperoleh Agent.  
+3 | Grafik Service Quality Score Daily | Rincian grafik nilai Service Quality yang diperoleh Agent per harinya.  
+  1. Selain itu terdapat grafik **Service Quality Score** **per Parameter** berdasarkan jumlah **Room** yang _pass_ dan tidak _pass_.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861327513)
+  2. Di sini juga terdapat grafik **Service Quality Score** **per Parameter** berdasarkan persentase **Room** yang _pass_ dan tidak _pass_.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861329945)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861331609)
+  3. Kemudian terdapat laporan **Service Quality Score per Agent** yang menampilkan rincian informasi nilai yang diperoleh Agent dalam bentuk grafik.![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861331609)
+  4. Selanjutnya terdapat laporan **Service Quality Score per Agent and Parameter** yang menampilkan rincian data **Parameter Name** dan persentase **Room** yang _pass_ dan tidak _pass_ berdasarkan parameter tersebut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48431861334937)
 
 ## Error States  <!-- confidence:low ? -->

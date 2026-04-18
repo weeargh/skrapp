@@ -41,33 +41,23 @@ Pastikan timezone perusahaan Anda sudah dikonfigurasi di halaman settings Proper
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Qontak CRM Mobile App di smartphone Anda.
-   → Aplikasi akan menampilkan dashboard utama.
 
-2. Klik tab **'More'** di bagian bawah layar, kemudian pilih **'Live Location Reminder'**.
-   → Layar akan menampilkan halaman pengaturan notifikasi Live Location.
-
-3. Aktifkan toggle button **'Check-in'** jika Anda ingin menerima notifikasi pengingat saat absen masuk. Klik pada waktu yang ditampilkan untuk mengatur jam notifikasi, lalu klik tombol **'Confirm'**.
-   → Waktu Check-in akan tersimpan.
-
-4. Aktifkan toggle button **'Check-out'** jika Anda ingin menerima notifikasi pengingat saat absen keluar. Klik pada waktu yang ditampilkan untuk mengatur jam notifikasi, lalu klik tombol **'Confirm'**.
-   → Waktu Check-out akan tersimpan.
-
-5. Pilih hari-hari dalam seminggu untuk menerapkan notifikasi pengingat Check-in dan Check-out.
-   → Sistem akan menampilkan opsi pemilihan hari.
-
-6. Klik tombol **'Save'** untuk menyimpan semua pengaturan Live Location Reminder.
-   → Notifikasi reminder akan aktif sesuai konfigurasi yang telah ditentukan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengklik tombol **'Save'**, pengaturan notifikasi Live Location Reminder akan berhasil disimpan. Sistem akan menampilkan konfirmasi bahwa pengaturan telah diterapkan.
-
-Karyawan akan menerima notifikasi pengingat pada waktu yang telah ditentukan untuk Check-in dan Check-out pada hari-hari yang dipilih. Notifikasi ini membantu karyawan terhindar dari lupa melakukan check-in atau check-out, sehingga data absensi kehadiran menjadi akurat dan tercatat dengan baik.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190262681)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163387033)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163369113)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163371033)
+**No.** | **Nama Kolom/Tombol** | **Deskripsi**  
+---|---|---  
+1 | Timezone | Menginfokan timezone yang aktif pada suatu company. Setting timezone dapat dilakukan di properties -> click 'settings' page.  
+2 | Check-in | Aktifkan toggle button Check-in apabila Anda mengaktifkan live location reminder saat absen masuk.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190262681)  
+Anda dapat klik pada waktu tersebut untuk mengatur waktunya seperti berikut. Klik **“Confirm”** jika waktu sudah sesuai.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163387033)  
+3 | Check-out | Aktifkan toggle button Check-out apabila Anda mengaktifkan live location reminder saat absen keluar.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163369113)  
+Anda dapat klik pada waktu tersebut untuk mengatur waktunya seperti berikut. Klik **“Confirm”** jika waktu sudah sesuai.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163371033)  
+  1. Kemudian, atur pada hari apa saja notifikasi pengingat absensi masuk dan keluar ini diberlakukan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163388441)
+  2. Klik **“Save”** untuk menerapkan pengaturan live location reminder notification.
+
+Demikian panduan cara mengatur live location notification pada Qontak CRM Mobile.
 
 ## Error States  <!-- confidence:low ? -->
 

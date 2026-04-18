@@ -37,39 +37,28 @@ Untuk membuat Product Category dan Subcategory di Qontak CRM, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Membuat Product Category:**
 
-1. Buka menu Properties, pilih Products, lalu klik Kategori dan Tambah kategori
-2. Sistem menampilkan pop-up form kategori
-3. Isi ID Kategori dengan kode unik
-4. Isi Nama kategori dengan nama produk
-5. (Opsional) Isi Deskripsi kategori
-6. Klik Save
+Product Category adalah fitur yang membantu Anda mengelola item produk. Dengan Product Category, Anda dapat mengelola hingga 3 (tiga) layer kelompok category, yaitu Product Category, Product Sub-category, dan Product. Sehingga, Anda dapat pengelolaan products lebih terinci.
 
-**Menambahkan Subcategory:**
-
-1. Pada form yang sama, klik tombol Tambah Subkategori
-2. Sistem menampilkan slider subcategory
-3. Isi ID Subkategori, Nama subkategori, dan (opsional) Deskripsi
-4. Klik Save untuk menyimpan semua pengaturan## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengklik Save:
-
-- Product Category berhasil dibuat dan tersimpan di Properties
-- Subcategory (jika ditambahkan) muncul sebagai bagian dari kategori induk
-- Kategori baru langsung tersedia untuk digunakan saat membuat atau mengedit produk
-- Daftar kategori dan subcategory muncul di menu Kategori pada Properties## Error States  <!-- confidence:medium ~ -->
-
-Kesalahan umum yang mungkin terjadi:
-
-- **ID Kategori atau Subkategori sudah digunakan:** Gunakan kode unik yang berbeda
-- **Field wajib kosong:** Pastikan ID Kategori dan Nama kategori sudah diisi sebelum Save
-- **Product Category tidak muncul:** Verifikasi bahwa Product Category sudah diaktifkan di Properties terlebih dahulu
-- **Subcategory tidak bisa ditambahkan:** Pastikan form Category sudah lengkap sebelum menambah subkategori
-
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112625578521)
-![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112578560025)
+**Penting  
+** Untuk mulai menggunakan Product Category, Anda perlu mengaktifkannya terlebih dahulu. Klik [di sini](https://help-center.qontak.com/hc/id/articles/14266063175321) untuk mengetahui cara mengaktifkan Product Category pada CRM Qontak.
+Berikut adalah cara membuat Product Category dan Subcategory.
+  1. Pada menu **Properties** , pilih **"****Products"**. Lalu, klik **"****Kategori"** dan**“Tambah kategori”.  
+**![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112625578521)
+  2. Maka, pop-up seperti berikut muncul pada layar Anda.  
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112578560025) **No.** |  **Nama Kolom/Tombol** |  **Deskripsi**  
+---|---|---  
+1 |  ID Kategori |  Tambahkan kode unik kategori produk Anda di sini.  
+2 |  Nama kategori |  Beri nama produk Anda di sini.  
+3 |  Deskripsi (opsional) |  Anda dapat memilih untuk mengisi atau mengosongkan deskripsi kategori produk di sini.  
+4 |  Tambah Subkategori |  Klik tombol inti untuk menambahkan subcategory. Maka, muncul slider berikut.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112578561561)
+     * **ID Subkategori:** Tambahkan kode unik subkategori produk Anda di sini.
+     * **Nama subkategori:** Beri nama produk Anda di sini.
+     * **Deskripsi:** Anda dapat memilih untuk mengisi atau mengosongkan deskripsi subcategory di sini.  
+  3. Baik itu Category atau Subcategory, Anda dapat pilih**“Save”** jika sudah selesai mengelola pengaturan Category dan Subcategory Anda pada Properties.
+
+Demikian adalah panduan cara membuat product category dan subcategory.
 
 ## Escalation  <!-- confidence:medium ~ -->
 

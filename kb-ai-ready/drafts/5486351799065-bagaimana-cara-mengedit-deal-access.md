@@ -35,27 +35,22 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Klik username CRM di pojok kanan atas dashboard. Sistem akan menampilkan menu dropdown.
-2. Pilih "Profile Settings" dari menu dropdown. Halaman Profile Settings akan terbuka.
-3. Klik "User Permissions" di halaman Profile Settings. Sistem akan menampilkan daftar pengguna.
-4. Di kolom "Search Users", cari dan pilih user yang ingin diatur akses datanya dengan mencentang kotak di sebelah kiri nama user. User terpilih akan ditandai dengan centang.
-5. Klik submenu "Deal Access" untuk user yang sudah dipilih. Sistem akan menampilkan opsi pengaturan akses.
-6. Atur setiap kategori akses:
-   - **View**: Pilih Everything, Team Only, atau Owned Only untuk melihat data
-   - **Edit**: Pilih Everything, Team Only, atau Owned Only untuk mengubah data
-   - **Search Association**: Pilih Everything, Team Only, atau Owned Only untuk pencarian
-   - **Delete/Hapus**: Aktifkan atau nonaktifkan toggle untuk izin menghapus
-   - **Upload/Unggah**: Aktifkan atau nonaktifkan toggle untuk izin mengunggah
-   - **Download/Unduh**: Aktifkan atau nonaktifkan toggle untuk izin mengunduh
-7. Klik tombol "Save/Simpan" di bagian bawah halaman. Sistem akan menyimpan pengaturan Deal Access untuk user tersebut.## Expected Result  <!-- confidence:high ✓ -->
 
-Pengaturan Deal Access untuk user berhasil disimpan. Sistem akan menampilkan konfirmasi bahwa perubahan telah tersimpan. User yang telah diatur akan memiliki akses sesuai dengan konfigurasi yang Anda tentukan (View, Edit, Search Association, Delete, Upload, Download). Perubahan berlaku segera untuk semua aktivitas user di Qontak CRM.## Error States  <!-- confidence:medium ~ -->
-
-No common errors documented.
-
+Di Qontak, Anda bisa mengatur Deal Access pada setiap pengguna. Hal ini menjadi salah satu yang penting dilakukan guna menjaga transparansi data yang krusial.  Untuk melakukannya, ikuti langkah-langkah berikut.
+  1. Klik username CRM di pojok kanan atas.
+  2. Pilih “**Profile Settings”**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49880016386457)
+
+4. Pada kolom “**Search Users”** dapat dipilih user yang akses datanya ingin diatur pengaturannya dengan mencentang kotak di sebelah kiri nama user.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21576364828697)
-![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21576390742425)
+  5. Selanjutnya, Anda dapat mengatur Deal Access pada pengguna terpilih dengan memilih submenu **Deal Access**. Kemudian terdapat beberapa submenu yang dapat Anda gunakan untuk mengatur user permission menjadi semua data (Everything), data dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only). Submenu tersebut yaitu:  
+![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21576390742425)  
+**Keterangan:  
+** - Pada bagian **View** , Anda dapat mengatur apakah user tersebut dapat melihat semua data (Everything), data milik orang-orang yang berada di dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only).  
+- Pada bagian **Edit** , Anda dapat mengatur apakah user tersebut dapat mengubah semua data (Everything), data milik orang-orang yang berada di dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only).  
+- Pada bagian **Search Association** , Anda dapat mengatur apakah user tersebut dapat menggunakan semua data (Everything), data milik orang-orang yang berada di dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only).  
+- Selain itu, Anda juga dapat melakukan pengaturan akses kepada _user_ Anda untuk dapat menghapus (**Delete/Hapus**), mengunggah (**Upload/Unggah**), dan mengunduh (**Download/Unduh**) dengan mengaktifkan/menonaktifkan _toggle_ di sebelah kanan.
+  6. Klik **"Save/Simpan"** di bagian bawah halaman.
 
 ## Escalation  <!-- confidence:medium ~ -->
 

@@ -39,32 +39,43 @@ Untuk membuat tiket baru di Qontak CRM, pastikan Anda memenuhi persyaratan berik
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Qontak CRM dan navigasikan ke menu Tickets. Sistem akan menampilkan daftar tiket yang sudah ada.
 
-2. Klik tombol "Create Ticket" di halaman Tickets. Popup Create Ticket form akan muncul.
+Melalui CRM Qontak, Anda dengan industri customer service dapat melakukan manajemen tiket melalui beberapa tahapan _(stages)_ dan Anda juga dapat mengatur skala prioritas tiket tersebut untuk urgensi kendala tertentu. Semua dapat dilakukan di dalam satu menu saja, yaitu Tickets. Pelajari sekilas tentang menu ini, [di sini.](https://help-center.qontak.com/hc/id/articles/22325123122201)
+Untuk membuat tiket baru, pastikan Anda mengikuti langkah - langkah berikut.
+  1. Pada Qontak CRM Anda, masuk ke menu**Tickets.**
+  2. Lalu, pilih **“Create Ticket”.**  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811066453529)**
+  3. Maka, _pop-up_ Create Ticket form muncul. Selanjutnya, Anda dapat melengkapi kolom - kolom yang kosong.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811070518681)  
+Keterangan:
+**No.** | **Nama Kolom/Tombol** | **Deskripsi**  
+---|---|---  
+1 | Ticket Stage | Status atau tahapan dari sebuah tiket. Pilih pada _stage_ apa tiket ini berada. Sebagai contoh, tersedia beberapa status yang dapat dipilih, seperti _New_ , _Assigned_ , _In Progress_ , atau _Done_.  
+2 | Ticket name | Isikan nama tiket yang ingin ditelusuri dan awasi prosesnya.  
+3 | Description | Tambahkan deskripsi bila perlu.  
+4 | Assignee | Pilih pengguna atau tim yang Anda tunjuk untuk menyelesaikan kendala pada tiket.
 
-3. Isi kolom-kolom berikut sesuai kebutuhan:
-   - Ticket Stage: pilih tahapan tiket (New, Assigned, In Progress, atau Done)
-   - Ticket name: masukkan nama tiket
-   - Description: tambahkan deskripsi kendala (opsional)
-   - Assignee: pilih pengguna atau tim yang akan menyelesaikan tiket
-   - Ticket Priority: pilih tingkat urgensi (low, medium, high, atau critical)
-   - Source: pilih sumber kendala (Call, Email, Chat, Other, atau Multichannel Whatsapp)
-   - Due date: tentukan tenggat waktu penyelesaian
-   - Contacts: pilih nama kontak client
-   - Company: pilih perusahaan client
-   - Products: pilih produk terkait (opsional)
-   - Task: pilih task terkait (opsional)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811070519577)  
+Keterangan:
+5 | Ticket Priority | Pilih skala prioritas atau urgensi kendala pada tiket ini, yaitu l _ow, medium, high,_ atau _critical._  
+---|---|---  
+6 | Source | Pilih dari mana kendala pada tiket ini berasal, yaitu dari Call, Email, Chat, Other, atau Multichannel Whatsapp.  
+7 | Due date | Tentukan kapan tiket ini harus diselesaikan.  
+8 | Branch |  Anda dapat menambahkan _field_ secara custom yang diperlukan pada _ticket_ di sini, untuk melakukannya pergi ke menu [Properties - Tickets](https://help-center.qontak.com/hc/id/articles/22324045918233). Contoh: Branch.  
+9 | Tanggal beli |  Anda dapat menambahkan _field_ secara custom yang diperlukan pada _ticket_ di sini, untuk melakukannya pergi ke menu [Properties - Tickets](https://help-center.qontak.com/hc/id/articles/22324045918233). Contoh: Isi Tanggal beli.  
+10 | Harga |  Anda dapat menambahkan _field_ yang diperlukan pada _ticket_ di sini, untuk melakukannya pergi ke menu[ Properties - Tickets](https://help-center.qontak.com/hc/id/articles/22324045918233). Contoh: Harga.
 
-4. Klik tombol "Create" untuk menyimpan tiket baru. Sistem akan memproses dan menampilkan konfirmasi bahwa tiket berhasil dibuat.## Expected Result  <!-- confidence:high ✓ -->
-
-Tiket baru berhasil dibuat dan Anda akan melihat pesan konfirmasi. Tiket akan muncul dalam daftar Tickets dengan status sesuai Ticket Stage yang dipilih. Tiket dapat langsung diakses untuk ditambahkan aktivitas, catatan, atau perubahan detail lainnya. Data tiket yang Anda isi akan tersimpan dan dapat dilihat oleh assignee atau pengguna lain yang memiliki akses.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811066453529)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811070518681)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811070519577)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811066466969)
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56811066466969)  
+Keterangan
+11 | Contacts | Pilih nama kontak _client_ yang memiliki kendala pada tiket ini.  
+---|---|---  
+12 | Company | Pilih perusahaan _client_ yang memiliki kendala pada tiket ini.  
+13 | Products  | Pilih pada produk yang terkait Ticket ini.  
+14 | Task  | Pilih _task_ apakah yang terkait Ticket ini.  
+  4. Jika semua kolom pada _form_ Create ticket sudah terisi dan sesuai, klik **“Create”**.  
 ![72.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50827719487257)
+
+Demikian adalah panduan cara membuat ticket pada Qontak CRM.
 
 ## Error States  <!-- confidence:medium ~ -->
 

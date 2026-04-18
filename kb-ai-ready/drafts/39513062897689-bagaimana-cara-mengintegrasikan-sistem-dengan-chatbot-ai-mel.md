@@ -38,29 +38,41 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka menu **Chatbot**, pilih submenu **Chatbot settings**, lalu klik tab **"API integration"**. Sistem menampilkan daftar API Connection yang sudah ada.
-2. Pada Connection name yang ingin dikonfigurasi, klik **"Action"**, kemudian pilih **"View details"**. Halaman detail API Connection terbuka.
-3. Klik **"Add function"**. Form penambahan fungsi baru muncul di layar.
-4. Isi semua kolom: Function name, Description, API_path, API_method, API_headers, dan API_body sesuai kebutuhan API Anda.
-5. Klik **"Add parameter"** untuk menambahkan parameter (gunakan maksimal satu parameter untuk menghindari halusinasi AI pada tahap Beta).
-6. Isi Parameter name, Description, dan Type, lalu centang toggle **"Set as required"**.
-7. Klik **"Add"** untuk menyimpan fungsi. Sistem menampilkan konfirmasi bahwa fungsi berhasil ditambahkan.## Expected Result  <!-- confidence:high ✓ -->
 
-Fungsi API berhasil ditambahkan ke API Connection. Halaman detail API Connection menampilkan fungsi baru dalam daftar dengan status aktif. AI Chatbot sekarang dapat mengenali user input yang sesuai dengan deskripsi fungsi dan memanggil API untuk mengambil informasi yang diperlukan, memberikan respons yang lebih manusiawi berdasarkan data dari sistem eksternal.## Error States  <!-- confidence:medium ~ -->
-
-• Halusinasi AI (kesalahan AI dalam memahami Function): Terjadi karena penggunaan parameter lebih dari satu. Solusi: Gunakan hanya satu parameter terlebih dahulu.
-• Fungsi tidak dipanggil oleh AI: Kemungkinan deskripsi Function atau Parameter tidak jelas. Solusi: Pastikan Description di Function dan Parameter ditulis secara detail dan spesifik agar AI memahami tujuannya.
-• API error response: Periksa kembali API_path, API_method, API_headers, dan API_body sudah benar sesuai dokumentasi API eksternal.
-
+Fitur Chatbot telah berhasil melakukan koneksi ke sistem lain melalui **API Integration**. Untuk meningkatkan kualitas dari koneksi Chatbot agar dapat melakukan respon dengan lebih manusiawi, kami telah mengaktifkan **Konfigurasi API** untuk **Chatbot AI** dengan memanfaatkan fitur di **OpenAI** yang disebut **Function Calling**.
+Dengan fitur ini, AI dapat memperoleh informasi tentang beberapa hal yang telah dibagikan oleh pelanggan (seperti: nomer resi, dsb.), serta dapat menggunakan informasi tersebut untuk menjawab pertanyaan pelanggan dengan respon yang lebih manusiawi. Berikut ini merupakan tahapan dalam mengintegrasikan sistem dengan Chatbot.
+  1. Hal pertama yang perlu Anda lakukan adalah melakukan koneksi terlebih dahulu dengan masuk ke menu **Chatbot** , lalu pilih submenu **Chatbot settings** , dan klik tab **"API integration"**. Kemudian klik **“Add API connection”** untuk melakukan koneksi. Pelajari selengkapnya [di sini](https://help-center.qontak.com/hc/id/articles/27509223794073-Bagaimana-Cara-Melakukan-Pengaturan-Chatbot#h_01HKXVVB1Z602HH452K9K40Y11).  
 ![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149538347033)
+  2. Setelah menyiapkan koneksi, kita perlu menentukan parameter fungsi sehingga AI dapat mengambil informasi. Pada salah satu **Connection name** , klik **"Action"** , lalu pilih **"View details"**. Kemudian, klik **“Add function”** pada halaman _detail_ **API Connection**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513122309913)
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513062844185)
-![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513297951001)
+  3. Kemudian isikan kolom-kolom berikut.  
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513062844185)  
+**Keterangan:**
+**No** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | **Function name** | Isikan nama pada **Function** yang akan digunakan.  
+2 | **Description** | Deskripsikan fungsi. Dalam hal ini, Anda **wajib** mengisikan deskripsi agar AI dapat memahami tujuan dari **Function**. Deskripsi tersebut akan membantu AI dalam mengenali user input yang dimasukkan atau ditanyakan.  
+3 | **API_path** | Isikan alamat yang memungkinkan Anda mengakses API dan berbagai fiturnya  
+4 | **API_method** | Isikan API_method untuk melakukan _release_ pada permintaan metode dan respons metode  
+5 | **API_headers** | Isikan bagian API_headers.  
+6 | **API_body** | Isikan bagian API_body.  
+7 | **Add parameter** |  Tambahkan fungsi parameter dengan klik tombol tersebut.   
+Apabila Anda menambahkan parameter, maka akan muncul kolom berikut yang terdiri dari **Parameter name** , **Description** , dan **Type**. Kemudian centang toggle **“Set as required”** agar sistem AI dapat bekerja.  
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513297951001) Pada kolom **Description** , Anda perlu mengisikan deskripsi secara jelas agar AI dapat memahami tujuan dari **Function**. Deskripsi tersebut akan membantu AI dalam mengenali user input yang dimasukkan atau ditanyakan.  
+Untuk saat ini, harap gunakan hanya **satu parameter** terlebih dahulu untuk menghindari halusinasi (kesalahan AI dalam memahami **Function**) dikarenakan pemanggilan **Function** masih dalam **Tahap Beta**.
+  4. Setelah keseluruhan data terisi, klik **“Add”**.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513710420633)
+  5. Setelah semua koneksi diatur, masuk ke halaman **Conversations** pada menu Chatbot, lalu pilih salah satu **Conversation name**.  
 ![114.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F51038253023641)
+  6. Pada salah satu **Conversation name** tersebut, Anda dapat mengatur respons bot mana yang akan terhubung ke API. Pada bagian **AI response** , klik **“knowledge sources”** seperti pada tampilan berikut.   
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513694247705)
+
+API Integration ini hanya akan ditampilkan di **AI Bot Response**. Jadi, Anda perlu membuat **AI Bot Response** terlebih dahulu.
+  7. Lalu akan muncul kotak informasi **Bot response - Welcome message** berikut, setelah itu pilih tab **API Integration**. Centang kotak **Use API Learning Source**.  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513694249497)
+  8. Kemudian, Anda **wajib** memilih **API Connection** yang telah dibuat sebelumnya dan memilih **Parameter**.  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39513710438809)
+  9. Jika semua langkah sudah dilakukan, **Chatbot AI** dapat terhubung ke **API** untuk mendapatkan informasi.
 
 ## Escalation  <!-- confidence:medium ~ -->
 

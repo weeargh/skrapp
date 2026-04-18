@@ -28,11 +28,15 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Kuota integrasi e-commerce adalah batas jumlah toko e-commerce yang dapat Anda integrasikan dengan Qontak Omnichannel. Setiap akun Qontak secara default mendapatkan 2 kuota integrasi e-commerce. Kuota ini memungkinkan Anda untuk menghubungkan berbagai platform e-commerce (seperti Tokopedia, Shopee, atau toko online lainnya) ke dalam satu dashboard Omnichannel untuk mengelola pesanan dan komunikasi pelanggan secara terpusat.## Why It Matters  <!-- confidence:high ✓ -->
 
-Mengelola kuota integrasi e-commerce membantu Anda memaksimalkan jumlah toko yang dapat terhubung dengan Qontak Omnichannel. Dengan memahami penggunaan dan sisa kuota, Anda dapat merencanakan integrasi toko baru dan menghindari gangguan layanan. Jika kuota habis atau masa berlaku berakhir, integrasi akan terputus secara otomatis, sehingga penting untuk memantau status kuota dan melakukan perpanjangan tepat waktu.
-
+- Secara default, Anda akan mendapatkan 2 kuota integrasi.  
+- Kuota berkurang jika Anda sudah melakukan integrasi baik integrasi tersebut berhasil/gagal.  
+- Kuota akan dikembalikan (refund) jika Anda memutuskan integrasi.
+  4. Kuota tersebut menunjukkan berapa banyak toko yang bisa Anda integrasikan dengan Omnichannel Qontak.
+  5. Jika kuota Anda sudah habis, maka saat Anda melakukan integrasi, Anda akan melihat _pop up_ berikut. Dan klik **“Consult now”** untuk menghubungi tim support kami.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780203489561)
+  6. Kuota integrasi e-commerce juga memiliki masa berlaku/expired yang mengikuti masa berlaku [main package](https://help-center.qontak.com/hc/id/articles/10265853268121-Bagaimana-Cara-Mengelola-Package-Usage-Conversation) yang Anda miliki. Jika masa berlaku habis, maka integrasi akan otomatis terputus.
+  7. Namun, Anda akan mendapatkan informasi melalui email 7 hari sebelum masa berlaku paket Anda habis.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780194711577)
 
 ## Key Attributes  <!-- confidence:high ✓ -->

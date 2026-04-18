@@ -38,33 +38,16 @@ Untuk menambahkan Company satuan di Qontak CRM versi web, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda melalui versi web.
-   → Sistem menampilkan dashboard utama Qontak CRM.
 
-2. Klik menu **Companies** di navigasi utama.
-   → Halaman Companies terbuka dengan daftar semua company yang sudah ada.
-
-3. Klik tombol **Add Company**, lalu pilih **Single Company**.
-   → Form penambahan company satuan terbuka.
-
-4. Isi semua data yang diperlukan: Nama, email, nomor telepon, alamat, dan informasi lainnya. Kolom bertanda bintang (*) adalah wajib diisi.
-   → Form menampilkan semua field yang perlu dilengkapi.
-
-5. Gunakan fitur tambahan seperti Notes, Task, Panggilan, atau Dokumen jika diperlukan.
-   → Fitur-fitur tersebut tersedia di dalam form company.
-
-6. Klik tombol **Create Company** untuk menyimpan data.
-   → Sistem menyimpan company baru dan menampilkan halaman detail company.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil menambahkan company satuan, Anda akan melihat:
-
-• Halaman detail company baru menampilkan semua informasi yang telah diisi
-• Company baru muncul di daftar Companies dengan status tersimpan
-• Pesan konfirmasi bahwa company telah berhasil dibuat
-• Company dapat diedit, dilihat, atau dihubungkan dengan customer dan deal lainnya melalui menu Companies
-
+Menu **Companies** adalah sebuah menu yang digunakan untuk membuat database company baik yang berstatus sebagai customer, partner, atau yang lainnya. Untuk menambahkan data company, Anda dapat menambahkan satu per satu maupun secara massal. 
+Berikut langkah-langkahnya:
+  1. Login ke akun Qontak CRM Anda, lalu pilih Menu**Companies**.
+  2. Untuk menambahkan suatu Perusahaan, Anda dapat klik **"Add Company"** , lalu pilih **Single Company**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763547801)
+  3. Lengkapi setiap data yang diperlukan, seperti Nama, Jabatan, alamat email, nomor telepon, alamat, dan lain-lain.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763546009)
+
+Demikian cara menambahkan Company secara satuan pada Qontak versi Web. Selanjutnya pelajari juga terkait cara menambahkan Company secara satuan versi Mobile [di sini](https://help-center.qontak.com/hc/id/articles/5642105125273).
 
 ## Error States  <!-- confidence:medium ~ -->
 

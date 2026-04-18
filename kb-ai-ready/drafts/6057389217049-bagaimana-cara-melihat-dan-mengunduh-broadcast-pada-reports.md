@@ -37,27 +37,42 @@ Untuk melihat dan mengunduh laporan Broadcast pada Reports, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Qontak Omnichannel dan login dengan akun Anda → Dashboard utama ditampilkan
-2. Klik menu **Reports** di navigasi utama → Halaman Reports terbuka
-3. Klik **"Broadcast"** → Menu broadcast ditampilkan
-4. Pilih tab **Summary** untuk melihat ringkasan laporan broadcast → Laporan Summary dan filter tampil
-5. Gunakan filter (timezone, channel, jangka waktu) untuk menyesuaikan data yang ingin dilihat → Laporan ter-update sesuai filter
-6. Scroll ke bagian **List of sent campaign** untuk melihat daftar semua broadcast yang telah dikirim → Tabel campaign ditampilkan
-7. Klik ikon **"Unduh"** pada laporan yang ingin diunduh → File CSV diunduh ke perangkat Anda## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengikuti langkah-langkah di atas, Anda akan:
-• Melihat laporan Summary Broadcast yang berisi Total Broadcast Messages, Total Send, Total Read, Total Pending, Total Reply, Total Delivered, Total Failed, dan Broadcast Logs
-• Melihat grafik statistik Broadcast dengan representasi warna berbeda untuk Sent, Delivered, Pending, Read, dan Failed
-• Melihat daftar lengkap semua campaign broadcast yang telah dikirimkan
-• Berhasil mengunduh laporan dalam format CSV file yang kompatibel dengan Excel
-
-![Untitled \(2\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773597849)
+Menu [Reports](https://help-center.qontak.com/hc/id/articles/5739374381081) pada Omnichannel Qontak dapat Anda gunakan untuk melihat laporan dari percakapan yang telah dilakukan. Terdapat beberapa pilihan Reports yang dibagi menjadi dua yaitu Summary dan Activity. Berikut langkah-langkahnya.
+### A. Summary[](https://help-center.qontak.com/hc/id/articles/6057389217049-Bagaimana-Cara-Melihat-dan-Mengunduh-Broadcast-pada-Reports#h_01HBWCP4QY1P8V1GP1E8E0KBDN)
+Pada laporan Summary Broadcast, Anda dapat melihat ringkasan laporan broadcast berdasarkan periode tertentu.
+  1. Masuk ke akun Omnichannel Anda dan pilih menu **Reports**.
+  2. Kemudian klik **"Broadcast"** lalu pilih **Summary.  
+![Untitled \(2\).png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773597849)**
+  3. Gunakan filter yang tersedia untuk menyesuaikan zona, channel, serta jangka waktu laporan yang Anda ingin lihat.  
 ![pasted image 0 - 2023-10-04T104720.746.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773599001)
-![pasted image 0 - 2023-10-04T104729.827.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773594777)
+  4. Kemudian, akan ditampilkan laporan mengenai **Total Broadcast Messages, Total Send, Total Read (Read Rate), Total Pending, Total Reply (Reply Rate), Total Delivered, Total Failed** dan**Broadcast Logs** beserta rinciannya.  
+![pasted image 0 - 2023-10-04T104729.827.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773594777)  
+**Keterangan:**  
+**No.** | **Nama Laporan** | **Keterangan**  
+---|---|---  
+1. | **Total Broadcast Messages** | Menampilkan jumlah semua siaran yang telah dikirim.  
+2. | **Total Send** | Menampilkan jumlah siaran yang telah dikirim.  
+3. | **Total Read (Read Rate)** | Menampilkan jumlah siaran yang telah dibaca oleh pelanggan.  
+4. | **Total Pending** | Menampilkan jumlah siaran yang masih dalam antrian untuk dikirim atau sedang dikirim.  
+5. | **Total Reply (Reply Rate)** | Menampilkan jumlah siaran yang telah dibalas oleh pelanggan.  
+6. | **Total Delivered** | Menampilkan jumlah siaran yang telah disampaikan.  
+7. | **Total Failed** | Menampilkan jumlah siaran yang gagal terkirim ke pelanggan.  
+8. | **Broadcast Logs** | Menunjukkan statistik Broadcast sesuai dengan jangka waktu yang telah dipilih pada filter. Anda dapat melihat grafik **Sent, Delivered, Pending, Read,** dan**Failed** dengan representasi warna yang berbeda - beda.  
+  5. Di bawah **Status count per day** terdapat rincian **List of sent campaign** yang menampilkan semua siaran _(Broadcast)_ yang telah dikirimkan.  
 ![pasted image 0 - 2023-10-04T104906.561.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763642649)
+  6. Anda dapat mengunduh _(download)_ setiap laporan dengan cara klik pada ikon **"Unduh"** ke dalam bentuk**CSV file** yang kompatibel dengan Excel.  
 ![pasted image 0 - 2023-10-04T104923.615.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773595545)
-![pasted image 0 - 2023-10-04T105104.343.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773607193)
+
+### B. Activity[](https://help-center.qontak.com/hc/id/articles/6057389217049-Bagaimana-Cara-Melihat-dan-Mengunduh-Broadcast-pada-Reports#h_01HBWCYP9JP3JJ11JQQW4YCD88)
+Laporan Activity Broadcast menampilkan aktivitas dari broadcast yang dilakukan pada Omnichannel berdasarkan periode terpilih.
+  1. Masuk ke menu **Reports**.
+  2. Kemudian klik **"Broadcast"** lalu pilih **Activity.****  
+**![pasted image 0 - 2023-10-04T105104.343.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775773607193)
+  3. Gunakan filter yang tersedia untuk menyesuaikan kategori, jangka waktu laporan. Anda juga dapat menggunakan kolom pencarian untuk mencari campaign yang Anda ingin lihat.  
 ![pasted image 0 - 2023-10-04T105108.662.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763643801)
+
+Demikian cara melihat dan mengunduh laporan pada tab Broadcast.
 
 ## Error States  <!-- confidence:low ? -->
 

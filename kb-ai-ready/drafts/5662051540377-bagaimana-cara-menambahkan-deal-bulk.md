@@ -39,46 +39,28 @@ Untuk menambahkan Deal secara massal (bulk) di Qontak CRM, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda.
-   → Dashboard utama Qontak CRM akan ditampilkan.
 
-2. Buka menu **Deals**.
-   → Halaman daftar Deal akan ditampilkan.
-
-3. Klik tombol **"Add Tickets"** kemudian pilih **"Bulk add deals"**.
-   → Halaman penambahan Deal massal akan terbuka dengan opsi template.
-
-4. Unduh template **CSV** atau **Excel**.
-   → File template akan terunduh ke perangkat Anda.
-
-5. Isi semua kolom pada file Excel sesuai data Deal Anda, pastikan tidak ada duplikasi data dan kolom bertanda (*) harus diisi. Untuk kolom custom (Status, Job Title, dll), data harus sesuai persis dengan opsi di database CRM termasuk ejaan, besar-kecil huruf, dan spasi.
-
-6. Ubah format file Excel menjadi **"Text"**.
-   → Format file berhasil diubah.
-
-7. Klik tombol **"Browse a file"** untuk mengunggah file Excel Deal yang sudah lengkap.
-   → Dialog pemilihan file akan terbuka, pilih file Excel Anda.
-
-8. Tunggu notifikasi keberhasilan unggahan.
-   → Pesan konfirmasi akan muncul bahwa data Deal berhasil terunggah.
-
-9. Periksa progres pengunggahan di menu **Properties** → tab **Upload/Download**.
-   → Status proses unggahan akan ditampilkan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil menambahkan Deal secara massal, Anda akan melihat:
-
-1. Notifikasi konfirmasi bahwa data Deal berhasil terunggah ke sistem
-2. Daftar Deal baru akan tersedia di menu **Deals** dengan status sesuai data yang diinput
-3. Progress pengunggahan dapat dipantau di menu **Properties** → tab **Upload/Download**
-4. Semua Deal yang diinput dapat dilihat, diedit, dan dikelola melalui menu **Deals** seperti Deal yang ditambahkan secara manual
-
+Menu **Deal** pada situs sosial CRM digunakan untuk menginput database tiket dari pelanggan Anda. Untuk melakukan penambahan data pada Menu **Deal** CRM dapat dilakukan secara manual dan secara massal. Berikut langkah-langkah untuk menambahkan Deals secara massal pada Qontak versi web: 
+  1. Login ke akun Qontak CRM Anda.
+  2. Pilih Menu **Deals**.
+  3. Klik **"Add Tickets"** dan pilih **Bulk add deals**.  
 ![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760535961)
+  4. Unduh template **CSV** atau **Excel** yang sudah tersedia.  
 ![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760541593)
+  5. Pada saat pengisian data menggunakan form excel ini, pastikan bahwa data yang diinput tidak ter-double. Kemudian, isilah kolom – kolom yang tersedia pada excel sesuai database yang Anda miliki.  
 ![Deals_Bulk_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121226649)
+
+Apabila terdapat kolom yang bertanda (*), artnya kolom tersebut wajib diisi. Sedangkan pada kolom yang terkustomisasi seperti: Status, Job Title, dll. pengisian data pada file excel harus sesuai dengan opsi yang terdapat pada database CRM. Mulai dari ejaan, besar kecil huruf, sampai penempatan spasi perlu diperhatikan harus sama persis, karena jika terdapat typo atau tidak sesuai akan menyebabkan error pada data yang diunggah.
+  6. Jika data “**Deal”** pada file Excel sudah terisi semua, Anda dapat merubah format pada file Excel menjadi **“Text”**.  
 ![Deals_Bulk_4.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774147981209)
+  7. Klik **“Browse a file”** untuk mengunggah kembali file excel “**Deal”** yang sudah terisi.  
 ![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760546329)
+  8. Apabila muncul notifikasi sebagai berikut artinya data Deal anda sudah berhasil terunggah.  
 ![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760548505)
+  9. Untuk melihat progres pengunggahan data, Anda bisa cek secara berkala pada menu **Properties** dan pilih tab **Upload/Download.**  
 ![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49893760550169)
+
+Jika terdapat data yang gagal terunggah, sistem akan secara otomatis mengirimkan notifikasi ke alamat email Anda yang terdaftar akun CRM Qontak. Apabila sudah menerima email notifikasi tersebut Anda dapat melihat detail penjelasan data - data apa saja yang gagal terunggah, Silahkan periksa kembali file Anda dan perbaiki data yang salah.
 
 ## Error States  <!-- confidence:high ✓ -->
 

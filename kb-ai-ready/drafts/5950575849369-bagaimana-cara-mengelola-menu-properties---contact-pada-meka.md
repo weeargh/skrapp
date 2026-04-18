@@ -38,28 +38,32 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak CRM, kemudian pilih menu **Properties** di navigasi utama.
 
-2. Klik tab **Kontak**. Sistem akan menampilkan daftar properti yang sudah ada pada menu Contacts.
-
-3. Klik tombol **Create Property**. Formulir pembuatan properti baru akan muncul di layar.
-
-4. Isi **Nama field** (wajib) dengan nama properti yang ingin ditambahkan.
-
-5. Pilih **Field Type** (wajib) sesuai jenis data: Single Line Text, Dropdown Select, Number, Date, Upload, Multiple Select, Percentage, Text Area, Photo, URL, Signature, atau GPS.
-
-6. Centang **Atur untuk wajib isi** jika field harus diisi pengguna sebelum menyimpan kontak.
-
-7. Centang **Halaman penambahan kontak** agar field muncul saat menambah kontak baru.
-
-8. Centang **Halaman pengubahan kontak** agar field muncul saat mengubah data kontak.
-
-9. Klik tombol **Simpan** untuk menyimpan properti baru atau **Tutup** untuk membatalkan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah klik Simpan, sistem akan menutup formulir pembuatan properti dan properti baru akan ditambahkan ke daftar properti pada tab Kontak. Field baru ini akan tersedia untuk diisi pada halaman penambahan dan/atau pengubahan kontak sesuai pengaturan yang Anda pilih. Properti dapat langsung digunakan untuk menginput data kontak tambahan.
-
-![3up.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F19761224455449)
+**No.** | **Nama Kolom/Tombol** | **Deskripsi**  
+---|---|---  
+1 | Nama field (wajib diisi) | merupakan nama dari properti baru yang ingin kita buat pada menu Contacts.  
+2 | Field Type (wajib diisi) | Field type berisi pilihan dari tipe pengisian properti yang Anda inginkan. Apabila Anda klik field type, maka akan muncul beberapa pilihan tipe properti yang dapat Anda pilih, antara lain:  
+![3up.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F19761224455449)  
+Berikut adalah keterangan field yang dapat Anda isi:  
+**- Single Line Text:** pengisian field dengan teks singkat.  
+- **Dropdown Select:** memungkinkan user untuk memilih satu dari beberapa opsi yang muncul sebagai isi field tersebut.  
+- **Number:** field hanya dapat diisi dengan angka.  
+- **Date:** field hanya dapat diisi dengan tanggal dan user langsung dapat mengisi secara manual dengan format dd/mm/yyyy atau mengklik dari kalendar yang muncul pada saat pengisian.  
+- **Upload:** pengisian field dilakukan dengan mengunggah file.  
+- **Multiple Select:** memungkinkan user untuk memilih lebih dari satu opsi yang muncul sebagai isi field tersebut.  
+- **Percentage:** isi field akan otomatis terkonversi menjadi persentase.  
+- **Text Area:** pengisian field dengan teks yang panjang.  
+- **Photo:** CRM akan secara otomatis akan membuka kamera untuk pengambilan gambar secara live. User tidak dapat mengunggah gambar dari galeri.  
+- **URL:** pengisian field dengan link.  
+- **Siganture:** field diisi dengan tanda tangan secara langsung.  
+- **GPS:** CRM akan mendeteksi lokasi GPS pada pengisian field dengan tipe GPS dilakukan.  
+3 | Atur untuk wajib isi | Apabila checkbox required diklik hingga menunjukkan tanda centang, maka properti/field tersebut nantinya wajib diisi oleh user, sehingga kontak tidak dapat disimpan bila properti/field tersebut tidak diisi.   
+4 | Halaman penambahan kontak | Apabila checkbox di klik, maka keterangan properti/field akan muncul detail kontak pada [halaman penambahan kontak.](https://help-center.qontak.com/hc/id/articles/5520829476249)  
+5 | Halaman pengubahan kontak | Apabila checkbox di klik, maka keterangan properti/field akan muncul detail kontak pada halaman pengubahan kontak.  
+6 | Tutup/Simpan | Klik **“Tutup”** jika ingin membatalkan atau klik **“Simpan”** jika ingin menyimpan pembuatan properti ini.  
+    1. Untuk mengedit field/properti, Anda bisa klik “**Edit** ”.  
 ![145.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53404801762841)
+    2. Melalui fitur edit, Anda dapat mengubah nama dan tipe field (pada properti custom saja), Atur untuk wajib diisi, Halaman penambahan kontak, atau Halaman pengubahan kontak. Apabila perubahan sudah selesai diatur, Anda dapat klik “**Simpan perubahan** ”.  
 ![25up.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53404803444633)
 
 ## Error States  <!-- confidence:low ? -->

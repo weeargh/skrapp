@@ -38,22 +38,19 @@ Untuk assign campaign ke Division atau Agent, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel atau Qontak Chat Anda.
-2. Buka menu Campaign pada halaman WhatsApp.
-3. Klik tombol **Create campaign**. Sistem akan menampilkan formulir pembuatan campaign.
-4. Isi kolom Campaign name, Sender, Recipient list, dan Template sesuai kebutuhan.
-5. Pada bagian Campaign assignment, pilih opsi **Division** dari dropdown menu.
-6. Pilih Division tujuan dari daftar yang tersedia. Hanya Agent di Division terpilih yang dapat mengelola campaign ini.
-7. Verifikasi semua informasi sudah benar.
-8. Klik tombol **Send campaign**. Sistem akan mengirimkan campaign ke Division yang ditunjuk.## Expected Result  <!-- confidence:medium ~ -->
 
-Setelah Anda mengklik tombol Send campaign, sistem akan memproses pengiriman campaign ke Division yang telah dipilih. Campaign akan muncul di dashboard campaign dengan status pengiriman. Hanya Agent dan Supervisor dalam Division terpilih yang dapat melihat, mengelola, dan memantau hasil dari campaign tersebut. Anda akan menerima konfirmasi bahwa campaign telah berhasil di-assign ke Division.
-
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013886617)
+2. Isikan informasi Campaign name, Sender, Recipient list, dan Template.![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013886617)
+  3. Maka akan terdapat **'Campaign assignment'** yang mana terdapat pilihan “**Division** ” yang artinya diassignkan ke division tertentu yang mana dan hanya agent yang ada di division terpilih yang dapat mengelola.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013888025)
+  4. Lalu klik **"Send campaign"**.
+  5. Jika Anda belum mempunyai division, maka pertama kali yang harus dilakukan adalah Anda harus membuat Division terlebih dahulu di halaman **Settings - > Agent Menagement -> Division**. Default division adalah General (untuk semua user/supervisor/agent).  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013888665)
+  6. Untuk membuat division, klik tombol **“Create Division”.**  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43824013889177)
+  7. Pada halaman Create Division, masukan Nama division, Pilih Supervisor, dan pilih Agent siapa aja yang akan dimasukan ke divisi tersebut.  
 ![6a.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774533912089)
+  8. Klik tombol **“Create”** untuk membuat divisinya.
+Division dapat di edit dan juga dihapus. Tetapi, untuk division General **tidak bisa** diedit dan dihapus. Anda bisa menyimpan perubahan yang Anda sudah lakukan dengan mengklik **"Create".**
 
 ## Error States  <!-- confidence:medium ~ -->
 

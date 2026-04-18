@@ -39,30 +39,34 @@ Untuk menambahkan artikel dalam jumlah banyak pada Knowledge Base, Anda memerluk
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Anda.
-2. Klik ikon menu dan pilih **Knowledge Base**.
-3. Navigasi ke menu **Articles**, lalu klik **"Import articles"**.
-4. Klik **"Download template"** untuk mengunduh template dokumen XLS.
-5. Buka template yang telah terunduh dan isi kolom-kolom sesuai format artikel menggunakan Markdown (heading dengan #, bold dengan **, italic dengan *, daftar berurutan dengan angka diikuti titik).
-6. Setelah semua kolom terisi, klik **"Choose from computer"** untuk memilih file atau tarik dokumen ke kotak upload.
-7. Klik **"Import"** untuk mengunggah file.
-8. Sistem akan menampilkan halaman Import log dengan status artikel menunjukkan **Processing**.## Expected Result  <!-- confidence:medium ~ -->
 
-Setelah proses impor selesai:
-
-• Halaman Import log menampilkan daftar artikel yang telah diunggah dengan status pemrosesan
-• Artikel dapat diakses melalui tab **Import** pada halaman Logs
-• Status artikel berubah dari **Processing** menjadi **Published** setelah validasi selesai
-• Artikel tersedia di Knowledge Base dengan URL publik sesuai pengaturan visibilitas yang dipilih
-
+Kini, Mekari Qontak menghadirkan sebuah fitur bernama **Knowledge base** dimana Anda dapat membuat, mengedit, dan mengunggah artikel panduan dalam dasbor. 
+Selain itu pada **Knowledge base** , Anda juga dapat menambahkan artikel panduan yang sudah dibuat dalam jumlah banyak melalui unggahan XLS secara lebih mudah, memastikan orientasi klien dengan lebih efisien dan memaksimalkan pemanfaatan konten yang ada dalam platform kami. Berikut merupakan langkah-langkahnya.
+  1. Masuk ke akun Qontak Anda.
+  2. Kemudian klik icon berikut dan pilih **Knowledge base**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011276838553)
+  3. Lalu pada menu **Articles** , klik **“Import articles”**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011263745817)
+  4. Selanjutnya klik **“Download template”** untuk mengunduh template dokumen.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011263750041)
+
+5. Template yang telah terunduh akan terlihat seperti berikut. Di bawah ini merupakan _template_ yang telah diisi dengan contoh artikel berjudul **‘Overview Menu Tickets’**.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011339386265)
-![3.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805147417)
-![A.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805149977)
-![E.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011809108505)
-![F.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805164185)
+  6. Contoh artikel di atas dibuat berdasarkan format penulisan artikel pada **XLS.file** yang dapat Anda pelajari berikut ini.  
+**![3.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805147417)**
+Dalam hal ini, **Markdown** adalah bahasa markup ringan yang memudahkan pemformatan teks
+**No.** | **Format Text** | **Contoh Format Text pada XLS.** | **Tampilan yang terlihat pada Knowledge Base**  
+---|---|---|---  
+|  **Heading**   
+Anda dapat membuat heading dengan menggunakan **simbol #**. Dalam hal ini, jumlah **simbol #** menunjukkan tingkat heading. | #Cara membuat ticket | ![A.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805149977)  
+|  **Order List**   
+Gunakan angka diikuti titik untuk membuat daftar berurutan. |  1. Pada Qontak CRM Anda, masuk ke menu **Tickets.** 2. Lalu, pilih **“Create Ticket”.**
+
+![E.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011809108505)  
+|  **Highlight**   
+Untuk menyorot teks, Anda dapat menggunakan **= x =** untuk membuat sorotan. | ==This text is strikethrough== | ![F.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37011805164185)  
+|  **Strikethrough (Coret)**   
+Gunakan **~~** untuk membuat teks dicoret. |  ~~This text is strikethrough~~
 
 ## Error States  <!-- confidence:low ? -->
 

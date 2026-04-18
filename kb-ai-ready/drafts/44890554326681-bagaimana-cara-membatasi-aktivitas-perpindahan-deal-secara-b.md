@@ -40,27 +40,39 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak CRM Anda dan buka menu **Properties**.
-2. Pilih tab **Deals**. Sistem menampilkan daftar Pipeline.
-3. Klik tab **Pipelines**. Anda melihat tabel Pipeline list lengkap.
-4. Pilih salah satu Pipeline dan klik tombol **Edit**. Halaman edit Pipeline terbuka.
-5. Centang toggle **Deal stage cannot move backwards**. Toggle berubah status aktif (hijau).
-6. Klik tombol **Save Pipeline**. Pop-up konfirmasi muncul.
-7. Klik tombol **Restrict** pada pop-up untuk mengonfirmasi. Sistem menyimpan pengaturan.
-8. Navigasi ke menu **Deals**. Pada Pipeline yang dibatasi, agent tidak dapat memindahkan Deal ke tahap sebelumnya.## Expected Result  <!-- confidence:high ✓ -->
 
-Pembatasan perpindahan Deal secara backward berhasil diterapkan. Pop-up informasi menampilkan pesan bahwa pembatasan pergerakan tahap pada Deals akan berlaku untuk semua Deal (yang sudah ada dan baru) pada Pipeline yang diaktifkan. Di menu Deals, agent melihat bahwa Deal hanya dapat dipindahkan ke tahap dengan urutan yang lebih tinggi (forward), dan fitur Rotten time kembali berfungsi efektif tanpa dapat direset melalui manipulasi tahap.
+Dalam sistem yang ada, fitur **‘Rotten time’** tersedia untuk mengidentifikasi transaksi yang terhambat pada tahap tertentu setelah batas waktu yang ditentukan. Namun nyatanya, agent telah menemukan solusi untuk melewati fungsi ini yaitu dengan ‘sengaja’ memindahkan transaksi ke tahap sebelumnya dan kemudian segera kembali ke tahap berikutnya, kemudian mereka menyetel ulang penghitung **‘Rotten time’**. Manipulasi ini membuat fitur **Rotten time** menjadi tidak efektif.
 
+Untuk mengatasi hal tersebut, kami menghadirkan fitur **Restrict moving forward Deal stage** berupa toggle yang apabila Anda aktifkan akan mencegah **Deal** dipindahkan ke tahap dengan urutan tahap yang lebih rendah. Pada penjelasan di bawah ini, Anda akan mempelajari mulai dari cara mengaktifkan hingga mengimplementasikan pembatasan aktivitas perpindahan Deals secara _backward_. Berikut langkah-langkahnya.
+**Penting**   
+Fitur ini hanya dapat diakses oleh**Admin/Owner**.
+  1. Pada akun Qontak CRM Anda, masuk ke menu **Properties**.
+  2. Kemudian pilih tab **“Deals”**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955575707289)
+  3. Kemudian klik tab **"Pipelines"**.  
 ![27.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955568259737)
+  4. Lalu pada salah satu **“Pipeline”** klik **“Edit”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890554311961)
+  5. Selanjutnya Anda akan diarahkan ke halaman berikut. Centang toggle **“Deal stage cannot move backwards”** apabila Anda ingin menerapkannya.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890563352857)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890563354905)
+
+**Stage order** tersebut berasal dari edit order pada menu **Properties** di bagian tab **Deals**. Berikut langkah-langkahnya:  
+1. Masuk ke menu **Properties** , lalu pilih tab **Deals**.  
+2. Kemudian pada tabel **Pipeline list** , klik ikon **‘Change Stage Order’**.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890563354905)  
+3. Kemudian Anda dapat kelola urutan _stage_ tersebut dengan klik **ikon titik enam** , lalu pindahkan urutan **Pipeline** sesuai dengan yang Anda inginkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890554315545)
+  6. Kemudian klik **“Save Pipeline”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890563357081)
+  7. Lalu akan muncul _pop up_ informasi berikut yang menyatakan bahwa pembatasan pemindahan _stage_ pada Deals akan berlaku untuk seluruh Deal baik yang sudah ada, maupun Deal baru pada pipeline yang telah Anda aktifkan pembatasan Dealsnya. Klik **“Restrict”** untuk melanjutkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890554319513)
+  8. Kemudian, apabila Anda beralih ke menu **Deals** , pada **pipeline** yang telah dibatasi perpindahannya, akan muncul notifikasi berikut. Dalam hal ini, peran lain **tidak dapat** memindahkan Deals ke _stage_ yang lebih rendah.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890554321433)
+  9. Selain itu, apabila Anda klik salah satu **Deal** , akan muncul informasi berikut yang juga menandakan bahwa peran lain **tidak dapat** memindahkan Deals ke stage yang lebih rendah.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F44890563367065)
+  10. Pembatasan ini juga akan berlaku pada Deals di Mobile Apps.
+
+Demikian penjelasan terkait fitur Deals cannot Move Backwards. Selanjutnya, pelajari juga terkait cara membuat Conditional Formatting pada Deals [di sini](https://help-center.qontak.com/hc/id/articles/32845659060377).
 
 ## Error States  <!-- confidence:low ? -->
 

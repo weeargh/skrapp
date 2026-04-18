@@ -42,28 +42,19 @@ Catatan: Jika Anda menggunakan Qontak One, lihat dokumentasi Customer Data Platf
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak CRM pada perangkat mobile Anda. Masukkan email dan password Qontak Anda, lalu klik tombol **Sign in**. Sistem akan menampilkan dashboard CRM.
 
-2. Pada dashboard, pilih ikon **Tambah Kontak** (tombol tambah atau plus icon). Sistem akan membuka formulir kontak kosong.
-
-3. Isi formulir kontak dengan data yang diperlukan (nama, email, telepon, alamat, dan informasi lainnya). Kolom yang bertanda (*) wajib diisi.
-
-4. Setelah mengisi semua data kontak, klik tombol **Save changes** untuk menyimpan kontak baru. Sistem akan memproses penyimpanan dan menampilkan pesan konfirmasi.
-
-5. Kontak baru akan muncul dalam daftar kontak di aplikasi mobile Qontak CRM.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyimpan kontak baru:
-
-- Sistem menampilkan pesan konfirmasi bahwa kontak berhasil dibuat
-- Halaman kembali ke daftar kontak (Contact list)
-- Kontak baru Anda muncul dalam list kontak dengan semua data yang telah diisi
-- Kontak dapat langsung digunakan untuk komunikasi dan manajemen hubungan pelanggan
-
-Catatan khusus: Jika Anda sudah berlangganan Qontak CRM dan Qontak Omnichannel secara bersamaan (sejak Q2 2024), kontak yang dibuat pada CRM akan otomatis tersinkronisasi ke Omnichannel.
-
+Untuk menambahkan database **“Contact”** pada dashboard CRM dapat dilakukan juga melalui aplikasi mobile. Berikut adalah langkah-langkah untuk menambahkan **contact** pada akun CRM Anda melalu aplikasi _mobile_.
+**Penting!****  
+**- Apabila pada**Q2 2024** Anda **sudah berlangganan** **Qontak CRM** , namun **belum berlangganan Qontak Omnichannel** , maka apabila nantinya Anda berlangganan **Qontak Omnichannel** , Anda **tidak perlu** membuat kontak lagi pada **Qontak Omnichannel** tersebut.  
+- Apabila pada **Q2 2024** Anda **sudah berlangganan Qontak Omnichannel** dan **Qontak CRM** , maka kontak yang telah dibuat pada **CRM** akan secara otomatis terbuat di **Omnichannel**.
+1. Buka Aplikasi “**Qontak CRM”** pada aplikasi mobile Anda. Masukkan email dan _password_ Qontak Anda lalu klik **“Sign in”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462789072025)
+2. Pilih ikon “**Tambah Kontak** ”.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462803286809)
+3. Isi _Form_ Kontak dengan data yang Anda inginkan. Jika anda sudah mengisi _form_ kontak maka klik tanda “**Save changes** ” untuk menyimpan data tersebut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462789073561)
+Kolom yang bertanda (*****) artinya berisifat wajib untuk diisi.
+4. Maka, kontak baru akan muncul dalam list.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462803295129)
 
 ## Error States  <!-- confidence:medium ~ -->

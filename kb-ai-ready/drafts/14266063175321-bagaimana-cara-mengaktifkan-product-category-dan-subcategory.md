@@ -37,36 +37,53 @@ Untuk mengaktifkan Product Category dan Subcategory di Mekari Qontak, Anda membu
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Mengaktifkan Product Category:**
 
-1. Buka menu Properties dan pilih Products
-2. Klik tombol Edit pada baris Product Category
-3. Pop-up Edit Product Category akan muncul
-4. Centang checkbox Show untuk mengaktifkan Product Category
-5. (Opsional) Centang checkbox Required untuk mewajibkan field ini
-6. (Opsional) Centang checkbox Show In List untuk menampilkan di list
-7. Pilih Styling (Short Column atau Long Column)
-8. Klik tombol Save untuk menyimpan perubahan
+Product Category adalah fitur yang membantu Anda mengelola item produk. Dengan Product Category, Anda dapat mengelola hingga 3 (tiga) layer kelompok category, yaitu Product Category, Product Sub-category, dan Product. Anda dapat mengaktifkan Product Category dan Subcategory sesuai dengan kebutuhan Anda. Sehingga, Anda dapat pengelolaan produk lebih terinci. 
+Untuk mulai menggunakan Product Category, Anda perlu mengaktifkannya terlebih dahulu, berikut adalah panduannya.
+###  A. Cara Mengaktifkan Product Category[](https://help-center.qontak.com/hc/id/articles/14266063175321-Bagaimana-Cara-Mengaktifkan-Product-Category-dan-Subcategory#h_01K1DTY6HR2HZ3WVSZWMA1ME0E)
+  1. Pada menu**Properties** , pilih **Products**. Lalu, klik **“Edit”** pada**Product Category.  
+**![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49352706034329)
+  2. Maka, _pop - up_**Edit Product Category** seperti berikut muncul.  
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772392343833)  
+**No.** |  **Nama Kolom/Tombol** |  **Deskripsi**  
+---|---|---  
+1 |  Label |  Keterangan label Product Category. (Tidak dapat diubah)  
+2 |  Name |  Nama Product Category. (Tidak dapat diubah)  
+3 |  Field Type |  Jenis kolom Dropdown select akan muncul pada Product Category. (Tidak dapat diubah)  
+4 |  Required |  Klik checkbox untuk mewajibkan Product Category.  
+5 |  Show |  Klik checkbox untuk mengaktifkan Product Category.  
+6 |  Show In List |  Klik checkbox untuk menampilkan Product Category di dalam List.  
+7 |  Styling |  Pada styling, Anda dapat memilih:  
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772399946265)  
+- Short Column  
+- Long Column
 
-**Mengaktifkan Product Subcategory:**
+8 |  Close |  Tombol untuk menutup layar pop-up tanpa menyimpan perubahan.  
+9 |  Save |  Tombol untuk menyimpan perubahan.  
+  3. Jika Anda sudah menyimpan pengaturan aktivasi Product Category, maka Anda dapat membuat Product Category. Klik [di sini](https://help-center.qontak.com/hc/id/articles/14266918382617) untuk membaca panduannya.
 
-1. Buka menu Properties dan pilih Products
-2. Klik tombol Edit pada baris Product Subcategory
-3. Pop-up Edit Subproduct Category akan muncul
-4. Centang checkbox Show untuk mengaktifkan Product Subcategory
-5. (Opsional) Centang checkbox Required untuk mewajibkan field ini
-6. (Opsional) Centang checkbox Show In List untuk menampilkan di list
-7. Pilih Styling (Short Column atau Long Column)
-8. Klik tombol Save untuk menyimpan perubahan## Expected Result  <!-- confidence:high ✓ -->
+###  B. Cara Mengaktifkan Product Subcategory[](https://help-center.qontak.com/hc/id/articles/14266063175321-Bagaimana-Cara-Mengaktifkan-Product-Category-dan-Subcategory#h_01K1DTY6HVADZQNF3HX2QVPK8E)
+  1. Pada menu**Properties** , pilih **Produk**. Lalu, klik **“Edit”** pada**Product Subcategory.  
+**![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50103312755481)
+  2. Maka, pop - up**Edit Subproduct Category** seperti berikut muncul.  
+**No.** |  **Nama Kolom/Tombol** |  **Deskripsi**  
+---|---|---  
+1 |  Label |  Keterangan label Subproduct Category. (Tidak dapat diubah)  
+2 |  Name |  Nama Product Subcategory. (Tidak dapat diubah)  
+3 |  Field Type |  Jenis kolom Dropdown select akan muncul pada Product Subcategory. (Tidak dapat diubah)  
+4 |  Required |  Klik checkbox untuk mewajibkan Product Subcategory.  
+5 |  Show |  Klik checkbox untuk mengaktifkan Product Subcategory.  
+6 |  Show In List |  Klik checkbox untuk menampilkan Product Subcategory di dalam List.  
+7 |  Styling |  Pada styling, Anda dapat memilih:  
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772399946265)  
+- Short Column  
+- Long Column
 
-Setelah Anda mengklik tombol Save, sistem akan menyimpan pengaturan aktivasi Product Category dan/atau Product Subcategory. Fitur-fitur ini kini menjadi aktif dan tersedia untuk digunakan.
+8 |  Close |  Tombol untuk menutup layar pop-up tanpa menyimpan perubahan.  
+9 |  Save |  Tombol untuk menyimpan perubahan.  
+  3. Jika Anda sudah menyimpan pengaturan aktivasi Product Subcategory, maka Anda dapat membuat Product Category. Klik[ di sini](https://help-center.qontak.com/hc/id/articles/14266918382617) untuk membaca panduannya.
 
-Anda dapat langsung membuat Product Category dan Subcategory baru melalui menu Properties → Products → Kategori. Field Product Category dan Product Subcategory akan muncul di form pembuatan produk dan dapat digunakan untuk mengelola item produk secara terstruktur dalam hingga 3 layer kelompok.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49352706034329)
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772392343833)
-![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772399946265)
-![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50103312755481)
+Demikian panduan cara mengaktifkan Product Category dan Subcategory.
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -36,14 +36,13 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak Chat di smartphone Anda. Masukkan Username dan Password, lalu klik tombol Login. Dashboard Qontak akan ditampilkan.
-2. Navigasikan ke menu Inbox. Sistem akan menampilkan daftar chat yang masuk.
-3. Lihat tampilan profile setiap pesan yang dilengkapi dengan ikon Clock. Ikon ini menunjukkan durasi sesi chat untuk setiap pesan.
-4. Periksa warna ikon Clock untuk mengetahui status waktu chat: Biru (0-16 jam), Kuning (16-24 jam), atau Merah (lebih dari 24 jam).## Expected Result  <!-- confidence:high ✓ -->
 
-Anda berhasil melihat informasi jam open chat session untuk setiap pesan di Inbox versi mobile. Setiap pesan menampilkan ikon Clock dengan warna yang berbeda sesuai durasi sesi: Biru untuk sesi baru (0-16 jam), Kuning untuk sesi menengah (16-24 jam), dan Merah untuk sesi lama (lebih dari 24 jam). Informasi ini membantu Anda memprioritaskan respons terhadap chat customer.
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para customer service akan melayani semua keluhan user berupa chat yang masuk ke dalam Inbox.
+Untuk melihat jam open chat session via mobile, Anda perlu mengikuti langkah-langkah berikut.
+  1. Buka aplikasi Qontak Chat Anda dari smartphone. Masukkan **Username** dan **Password** Anda. Klik tombol **“Login”** untuk memulai.
+  2. Masuk ke halaman **Inbox** dan Anda bisa melihat tampilan profile yang dilengkapi dengan gambar (**Clock**) yang menandakan sesi pada pesan tersebut. Ada 3 sesi yang harus diketahui.  
 ![161.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53771200372889)
+(**Biru** = masih di dalam waktu 0-16 jam), (**Kuning** = kurang dari 16-24 jam) dan (**Merah** = lebih dari 24 jam).
 
 ## Error States  <!-- confidence:low ? -->
 

@@ -40,28 +40,37 @@ Perhatian: Pesan yang masuk dalam channel Telegram di Omnichannel hanya pesan ya
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel dengan role Admin.
-2. Buka menu **Integrations**. Halaman menampilkan daftar channel yang tersedia untuk diintegrasikan.
-3. Klik tombol **Add Telegram Channel** untuk memulai proses integrasi.
-4. Pada formulir integrasi Telegram yang muncul, masukkan **token Telegram** Anda di kolom yang tersedia.
-5. Klik tombol **Install**. Sistem akan memverifikasi token Anda.
-6. Jika verifikasi berhasil, pop-up notifikasi "success" akan muncul secara otomatis dan Telegram channel ditambahkan ke daftar integrations.
-7. Untuk melihat detail informasi channel Telegram, klik ikon **Settings** pada nama Telegram yang telah terintegrasi.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah integrasi berhasil:
-
-- Channel Telegram muncul di daftar **Integrations** dengan status aktif
-- **Admin, Supervisor, dan Agen** dapat menggunakan channel Telegram di menu **Inbox** untuk menerima dan mengirim pesan
-- Halaman **Settings** menampilkan informasi detail channel Telegram Anda (semua field dalam kondisi non-editable)
-- Pesan masuk dari Telegram link akan mulai tampil di chat panel Omnichannel
-
+**Integrations** merupakan sebuah fitur Omnichannel Qontak di mana para customer bisa menghubungkan berbagai platform dengan _chat panel_ seperti email atau Telegram.
+**Penting**  
+Hanya pengguna dengan**role Admin yang dapat melakukan integrasi**. Apabila Anda tidak memiliki akun dengan _role_ Admin, Anda dapat menghubungi tim support kami di 
+Perlu diketahui bahwa pesan yang masuk dalam telegram _channel_ pada Omnichannel hanya pesan yang masuk melalui _link_ bukan melalui _phone number_. Untuk mengintegrasikan _chat panel_ dengan Telegram pada Web, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda.
+  2. Berikut merupakan tampilan web yang muncul setelah anda mengklik menu**Integrations**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50699258760985)
+  3. Klik **“Add Telegram Channel”** untuk menyambungkan akun Telegram yang akan diintegrasikan.  
 ![telegram.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916307737)
+Pada bagian kanan _form_ integrasi Telegram terdapat tata cara mengintegrasikan Telegram dan siapa saja yang bisa menggunakan fitur tersebut.
+Yang bisa menggunakan fitur integrasi Telegram adalah:
+    1. Hanya **Admin** yang dapat mengintegrasikan Telegram.
+    2. **Admin, Supervisor** dan **Agen** dapat menggunakannya di Inbox.
+Sedangkan cara mengintegrasikan Telegram adalah sebagai berikut:
+    1. Untuk membuat akses token dan memulai integrasi, Anda perlu membuka Telegram.
+    2. Temukan pengguna dengan nama @botfather dan mulailah mengobrol dengannya.
+    3. Pilih perintah /**newbot** untuk membuat bot baru untuk mengobrol dengan @botfather dan ikuti instruksi untuk membuat bot baru.
+    4. Setelah selesai, Anda akan menerima kunci API HTTP. Salin dan masukkan pada _field_ Token Akses Telegram.
+Anda harus memiliki token akses untuk menghubungkan bot Telegram. Sedangkan untuk membuat bot baru Anda bisa lihat pada halaman “
+  4. Pada Chat Panel, Masukkan token Telegram Anda, kemudian klik “**Install** ” untuk mengintegrasikan Telegram.  
 ![telegram2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892739225)
+  5. Jika token ditemukan maka otomatis _pop up_ akan menampilkan _success_ dan jika tidak maka _pop up_ akan menampilkan _error_ sebagai berikut.  
 ![telegram3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892739865)
+  6. Klik “**Settings** ” pada nama Telegram untuk melihat detail informasi Telegram Anda.  
 ![telegram4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916312985)
+  7. Anda bisa melihat detail info Telegram, tapi tidak bisa melakukan perubahan karena semua _field_ dalam kondisi **disable**.  
 ![telegram5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916315033)
+  8. Anda bisa berhenti terintegrasi dengan Telegram dengan cara klik ikon **“Disconnect”** seperti gambar berikut.  
 ![telegram6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892745369)
+  9. Pop up notification “**Are you sure?****Disconnecting this channel will also delete this channel** ” akan secara otomatis muncul jika Anda mengklik button “**Disconnect** ”, kemudian pilih “**Disconnect** ” jika Anda yakin untuk disconnect akun Telegram dan jika tidak maka klik tombol “**Cancel** ”.  
 ![telegram7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774892747545)
 
 ## Error States  <!-- confidence:medium ~ -->

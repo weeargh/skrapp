@@ -35,40 +35,43 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Untuk pengaturan saat penambahan pengguna baru:**
 
-1. Klik tanda panah di sebelah kanan username Anda (kanan atas dashboard)
-2. Pilih "Profile Settings" — Sistem akan menampilkan halaman pengaturan profil
-3. Klik "Add User" pada tab Account Settings — Form penambahan pengguna akan terbuka
-4. Lengkapi informasi pengguna (nama, email, tim, dan role)
-5. Scroll ke bagian bawah formulir ke bagian "Request Access"
-6. Pilih salah satu dari 3 opsi akses Report: Everything (semua laporan), Team Only (laporan tim saja), atau Owned Only (laporan pengguna saja)
-7. Aktifkan tombol "ON" untuk memberikan akses unduh report (opsional)
-8. Klik "Create User" — Pengguna baru berhasil ditambahkan dengan pengaturan akses yang ditentukan
-
-**Untuk mengubah pengaturan pada pengguna yang sudah ada:**
-
-1. Klik tanda panah di sebelah kanan username Anda (kanan atas dashboard)
-2. Pilih "Profile Settings" — Halaman pengaturan profil akan ditampilkan
-3. Pilih tab "User Permissions" dan pilih nama pengguna dari daftar
-4. Pilih tab "Report Access" — Opsi pengaturan Report Access akan muncul
-5. Pilih salah satu dari 3 opsi akses: Everything, Team Only, atau Owned Only
-6. Aktifkan atau nonaktifkan tombol akses unduh report sesuai kebutuhan
-7. Klik "Update User" atau tombol simpan — Pengaturan Report Access berhasil diperbarui## Expected Result  <!-- confidence:high ✓ -->
-
-Pengaturan Report Access berhasil tersimpan di sistem. Pengguna yang ditambahkan atau diperbarui akan memiliki akses ke laporan sesuai dengan opsi yang dipilih (Everything, Team Only, atau Owned Only). Penampilan data report pada menu Dashboard akan disesuaikan secara otomatis sesuai dengan pengaturan akses yang ditentukan. Jika akses unduh report diaktifkan, pengguna dapat mengunduh laporan sesuai dengan level akses mereka.
-
-![Screenshot 2023-08-08 at 10.55.18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089340313)
+### 2. Melakukan Perubahan Pengaturan Report Access secara Satuan[](https://help-center.qontak.com/hc/id/articles/5464011585945-Bagaimana-Cara-Melakukan-Pengaturan-Report-Access#b-melakukan-perubahan-pengaturan-report-access-secara-satuan)
+  1. Apabila Anda ingin mengubah pengaturan report access pada user yang ada, Anda dapat masuk ke Menu “**Profile Settings”**  
+**![Screenshot 2023-08-08 at 10.55.18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089340313)**
+  2. Pilih tab **User Permissions** dan pilih nama user.  
 ![Screenshot 2023-08-08 at 11.31.53.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F21569876972057)
+  3. Pilih tab **User Permissions** dan pilih **Report Access**.  
 ![b3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089286297)
+  4. Kemudian, Anda dapat langsung melakukan pengaturan **Report Access** pada bagian ini.  
 ![b4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766085921433)
+Terdapat 3 pilihan akses, yaitu:  
+- **Everything** : Report yang ditampilkan adalah dari semua pihak.  
+- **Team Only** : Hanya dapat melihat report dari hasil aktivitas teamnya saja.  
+- **Owned Only** : Hanya dapat melihat report dari aktivitas user tersebut.
+  5. Anda juga dapat memberikan akses untuk mengunduh report, dengan memastikan tombol berada pada bagian **ON**.  
 ![b5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766085926425)
+  6. Klik **“Update User”** untuk menyimpan perubahan.  
 ![b6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463903993113)
+
+### 3. Melakukan Perubahan Pengaturan Report Access secara Satuan[](https://help-center.qontak.com/hc/id/articles/5464011585945-Bagaimana-Cara-Melakukan-Pengaturan-Report-Access#c-melakukan-perubahan-pengaturan-report-access-secara-satuan)
+  1. Apabila Anda ingin melakukan update pengaturan report access secara massal, Anda dapat masuk ke Menu “**Profile Settings”**  
+**![Screenshot 2023-08-08 at 10.55.18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089340313)**
+  2. Pilih tab **User Permissions**.  
 ![c2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463876976793)
+  3. Pilih tab **Report Access**.  
 ![c3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766085938713)
+  4. Kemudian, lakukan pengaturan **Report Access** pada bagian ini.  
 ![c4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463896625433)
+Terdapat 3 pilihan akses, yaitu:  
+- **Everything** : Report yang ditampilkan adalah dari semua pihak.  
+- **Team Only** : Hanya dapat melihat report dari hasil aktivitas teamnya saja.  
+- **Owned Only** : Hanya dapat melihat report dari aktivitas user tersebut.
+  5. Anda juga dapat memberikan akses untuk mengunduh report, dengan memastikan tombol berada pada bagian **ON**.  
 ![c5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463882906393)
+  6. Lalu, pilih nama user yang tertera disini.  
 ![c6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089329945)
+  7. Klik **“Simpan”** untuk menyimpan perubahan.  
 ![c7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5463911520025)
 
 ## Error States  <!-- confidence:medium ~ -->

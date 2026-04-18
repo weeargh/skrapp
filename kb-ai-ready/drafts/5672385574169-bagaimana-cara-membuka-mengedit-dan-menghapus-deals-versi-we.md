@@ -36,40 +36,14 @@ Untuk membuka, mengedit, dan menghapus Deals di Qontak CRM versi web, Anda memer
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda.
-   → Dashboard utama akan ditampilkan.
 
-2. Buka menu Deals.
-   → Halaman daftar semua Deals akan ditampilkan dalam bentuk tabel atau kartu.
-
-3. Untuk membuka atau melihat detail Deal, klik nama Deal yang ingin Anda lihat.
-   → Halaman detail Deal akan terbuka dengan informasi lengkap tentang Deal tersebut.
-
-4. Pada halaman detail Deal, edit informasi yang diperlukan (nama, nilai, tahap, dll).
-   → Setiap perubahan akan tercatat di formulir.
-
-5. Klik tombol "Save" untuk menyimpan perubahan tanpa meninggalkan halaman detail, atau klik tombol "Update Deal" untuk menyimpan perubahan dan kembali ke menu Deals.
-   → Sistem akan menyimpan perubahan dan menampilkan konfirmasi.
-
-6. Untuk menghapus Deal: kembali ke menu Deals, centang checkbox pada Deal yang ingin dihapus.
-   → Deal yang dipilih akan ditandai.
-
-7. Klik tombol "Delete".
-   → Dialog konfirmasi penghapusan akan muncul.
-
-8. Klik tombol "Delete" pada dialog konfirmasi untuk menyetujui penghapusan.
-   → Deal akan dihapus dari sistem dan daftar Deal akan diperbarui.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil:
-
-**Membuka/Melihat Detail Deal:** Halaman detail Deal akan menampilkan semua informasi Deal seperti nama, nilai, tahap pipeline, kontak terkait, dan riwayat aktivitas.
-
-**Mengedit Deal:** Sistem menampilkan pesan konfirmasi bahwa Deal telah diperbarui, dan Anda akan dikembalikan ke daftar Deals dengan data terbaru yang sudah tersimpan.
-
-**Menghapus Deal:** Deal akan hilang dari daftar Deals dan tidak dapat dipulihkan. Menu Deals akan menampilkan ulang dengan Deal yang telah dihapus sudah tidak ada di daftar.
-
-![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136545945)
+Dalam menu **Deal** , Anda dapat membuka, mengedit dan menghapus deal yang telah dibuat. Ikuti langkah-langkah ini untuk membuka, mengedit dan menghapus deal pada Qontak versi web:
+  1. Login ke akun Qontak CRM Anda.
+  2. Masuk ke Menu **Deals**.
+  3. Untuk membuka atau melihat detail Deal secara detail, Anda dapat klik nama dari deals.![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136545945)
+  4. Kemudian, Anda akan diarahkan ke halaman detail dari deals. Pada halaman ini, Anda dapat melakukan pengeditan informasi dari deals. Lalu klik "**Save"** untuk menyimpan data atau klik **"****Update Deal"** untuk menyimpan perubahan dan kembali ke menu utama menu Deal.  
 ![14.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089608857)
+  5. Apabila Anda imgin menghapus Deals, Anda dapat centang Deals yang ingin dihapus dan klik **"Delete"**.  
 ![17.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49894261468057)
 
 ## Error States  <!-- confidence:medium ~ -->

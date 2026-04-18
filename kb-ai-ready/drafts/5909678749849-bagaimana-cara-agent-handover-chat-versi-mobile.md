@@ -31,21 +31,20 @@ Anda perlu memiliki akses ke aplikasi Qontak Chat di smartphone dengan role Agen
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak Chat dan login menggunakan email serta password yang terdaftar.
-2. Pastikan status diatur ke Online. Di Inbox, pilih room percakapan yang akan di-handover.
-3. Klik tombol Profil di bagian atas room percakapan.
-4. Di kolom Agents, klik ikon Edit untuk memulai penugasan.
-5. Pilih satu Agent dari daftar (gunakan kolom Search untuk mencari jika diperlukan).
-6. Klik tombol Assign pada pop-up konfirmasi yang muncul.
-7. Konfirmasi notifikasi sukses ditampilkan di layar Anda.
-8. Di Contact Info, ketuk ikon Silang di sebelah nama Agent lama Anda, lalu pilih Remove untuk menghentikan penugasan Anda.## Expected Result  <!-- confidence:high ✓ -->
 
-Room percakapan berhasil di-handover ke Agent baru. Notifikasi konfirmasi muncul di layar yang menunjukkan penugasan Agent berhasil dilakukan. Agent baru akan segera tampil dalam Contact Info room percakapan. Status Anda sebagai Agent lama di room tersebut akan dihapus setelah Anda memilih Remove.
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak dimana para customer service akan melayani semua keluhan user berupa chat yang masuk ke dalam Inbox.
+Dalam membalas pesan yang masuk melalui Omnichannel Qontak Mobile, **Agent** bisa melakukan Handover Chat dengan cara berikut ini.
+  1. Buka Aplikasi Qontak Chat pada Smartphone Anda. Masukkan alamat email serta password Anda yang sudah terdaftar di Qontak, lalu klik **"Login"**. Setelah login berhasil, Anda dapat menyalakan notifikasi dan set status Online untuk mendapat pesan baru.
+  2. Pada**Inbox** , pilih room percakapan yang akan Anda handover ke Agent lain.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49415736272921)
+  3. Kemudian, klik **"Profil"** pada **Room Percapakan**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49415736275609)
+  4. Klik ikon **"Edit"** yang terletak di kolom Agents untuk Assign Agents.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49415738958873)
+  5. Pilih salah satu Agent yang ada dalam daftar Agents. Anda dapat gunakan kolom Search untuk mencari Agent.  
 ![5.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776243591833)
+
+Demikian cara Agent Handover Chat pada Qontak Mobile.
 
 ## Error States  <!-- confidence:medium ~ -->
 

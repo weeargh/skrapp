@@ -35,18 +35,17 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka menu **Contacts** di navigasi utama dashboard Qontak CRM. Sistem akan menampilkan daftar semua kontak yang tersimpan.
 
-2. Untuk mengunduh kontak tertentu: centang nama kontak yang ingin diunduh. Untuk mengunduh semua kontak: lewati langkah ini.
-
-3. Klik tombol **Download selected** (untuk kontak terpilih), **Download selected with details** (kontak terpilih + rincian lengkap), **Download All** (semua kontak), atau **Download all with details** (semua kontak + rincian lengkap).
-
-4. Sistem akan memproses pengunduhan. Jika muncul notifikasi status, klik **Upload/Download Properties** untuk memantau progress download hingga selesai.## Expected Result  <!-- confidence:high ✓ -->
-
-File data kontak berhasil diunduh ke perangkat Anda dalam format yang dapat dibuka (CSV/Excel). Notifikasi download selesai muncul atau file langsung tersimpan di folder Downloads perangkat. Data kontak dapat segera dibuka dan digunakan untuk referensi atau proses lanjutan seperti bulk update.
-
+Untuk mengunduh data **Kontak** pada dashboard CRM dapat dilakukan dengan dua cara, yaitu **“Download yang dipilih”** dan **“Download Semua”.** Untuk melakukan pengunduhan data **Kontak** , Anda dapat mengikuti langkah – langkah berikut ini:
+Sudah menggunakan [Qontak One](https://help-center.qontak.com/hc/id/articles/53169095720729-Sekilas-tentang-Qontak-One)? Jelajahi pengalaman[ Customer yang baru](https://help-center.qontak.com/hc/id/articles/53183780046105-Sekilas-tentang-Customer-Data-Platform) di Qontak One untuk langkah-langkah dan panduan antarmuka yang telah diperbarui.
+  1. Masuk ke menu**Contacts.**
+  2. Maka, Anda akan diarahkan ke halaman berikut. Apabila Anda ingin mengunduh data kontak yang Anda**tertentu saja** , centang nama kontak yang ingin Anda unduh, lalu pilih **“Download selected”** atau **"Download selected with details"** untuk kontak tertentu bersama dengan rincian lengkapnya.  
+Sedangkan, untuk mengunduh seluruh kontak, klik **"Download All"** atau **"Download all with details"** untuk seluruh kontak bersama dengan rincian lengkapnya.  
 ![142.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53404130345241)
+  3. Jika muncul notifikasi sebagai berikut, artinya pengunduhan data sedang diproses. Klik tulisan **"Upload/Download Properties"** untuk melihat status download.  
 ![CRMCONTACT2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089505561)
+
+Demikian panduan cara mendownload data _contact_.
 
 ## Error States  <!-- confidence:low ? -->
 

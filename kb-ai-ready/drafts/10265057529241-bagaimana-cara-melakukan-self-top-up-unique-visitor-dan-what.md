@@ -40,36 +40,48 @@ Untuk melakukan Self Top Up Unique Visitor dan WhatsApp Conversation di Qontak O
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda menggunakan kredensial Admin atau Supervisor. Halaman dashboard akan ditampilkan.
 
-2. Buka menu **Package Usage** dan klik tombol **Top up balance**. Halaman Top up balance akan ditampilkan.
-
-3. Masukkan jumlah Unique Visitor dan/atau WhatsApp Conversation yang ingin di-top up:
-   - Untuk Unique Visitor: minimum Rp 300.000 (500 Unique Visitor), kelipatan berlaku
-   - Untuk WhatsApp Conversation: minimum Rp 1.000.000
-
-4. Verifikasi detail order termasuk perhitungan PPN (12% x 11/12) yang ditampilkan sistem.
-
-5. Klik tombol **Continue to payment**. Halaman konfirmasi pemesanan akan ditampilkan.
-
-6. Verifikasi detail pesanan pada halaman konfirmasi, lakukan perubahan jika diperlukan.
-
-7. Klik tombol **Confirm** untuk menyelesaikan pemesanan. Sistem akan memproses pembayaran sesuai nominal sales order.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah Self Top Up berhasil dilakukan, Anda akan melihat:
-
-- Halaman konfirmasi pemesanan menampilkan rangkuman lengkap termasuk nominal, PPN, dan total pembayaran
-- Status top up balance berubah menjadi **Paid** setelah pembayaran berhasil sesuai nominal sales order
-- Saldo Unique Visitor dan/atau WhatsApp Conversation Anda bertambah sesuai jumlah yang di-top up
-- Jika ada saldo terhutang sebelumnya, sistem otomatis melunasi terlebih dahulu, kemudian sisa diisi sebagai saldo tambahan
-- Notifikasi atau email konfirmasi transaksi dikirim ke akun terdaftar Anda
-
+Pada Qontak, Anda sudah dapat melakukan **Self Top up Unique Visitor** dan **Whatsapp conversation** , dimana Anda dapat melakukan pengisian saldo Whatsapp conversation Anda secara mandiri, tanpa harus menghubungi tim support Qontak. Berikut langkah-langkahnya:
+  1. Apabila saldo unique visitor atau whatsapp conversation Anda **sudah dibawah 40%** , maka Anda akan mendapatkan pemberitahuan untuk melakukan top up sebagai berikut.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F22230057431961)
+  2. Untuk melakukan Top up Unique Visitor atau Whatsapp conversation, Anda dapat ke Menu **Package Usage** , dan klik **“Top up balance”**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961804441)
+
+Top up balance ini akan berstatus **"Paid"** , apabila pembayaran dilakukan sesuai dengan nominal pada sales order, serta apabila perusahaan Anda menerapkan pemotongan PPH, maka Anda dapat melakukan top up melalui tim support Qontak.
+  3. Kemudian, Anda akan diarahkan ke halaman **Top up balance** sebagai berikut.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42383462434841)
+- Saat melakukan Top up, pada order details akan terdapat beberapa perubahan pada **PPN** , yaitu:   
+a. Dari **“PPN 11%”** menjadi **PPN (12% x 11/12)**.   
+b. **11/12** dilakukan dikarenakan adanya **“DPP Nilai Lain”**.   
+c. **DPP Nilai Lain** adalah **Dasar Pengenaan Pajak Nilai** Lain.   
+d. **DPP Nilai Lain** berasal dari perhitungan tagihan baru setelah diskon yang dikalikan dengan pengali: **11/12** berdasarkan **PMK-13/2024** terkait **PPN 2025**.   
+e. **PPN** berubah menjadi **12%**.   
+Perubahan cara perhitungan pajak :   
+**Sebelumnya** :   
+- PPN 11% = Subtotal x 11%.   
+- Total Payment = Subtotal + PPN 11%.   
+**Setelahnya** :   
+- PPN (12% x 11/12) atau 12% dari DPP Nilai Lain = Subtotal x 11/12 x PPN 12%.   
+- Total Payment = Subtotal + PPN (12% x 11/12).
+  4. Masukkan **Quantity** unique visitor atau saldo Whatsapp conversation atau keduanya (apabila Anda ingin melakukan top up untuk jumlah unique visitor atau saldo whatsapp conversation).  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42383462438553)
+
+- **Minimum top up jumlah uniques visitor** adalah Rp 300.000/500 unique visitor, berlaku kelipatan. Khusus untuk top up Monthly Unique Visitor (MUV), split top-up tidak berlaku untuk sistem Self Top-Up, sehingga jumlah yang Anda tulis akan otomatis tertop-Up pada sistem Qontak. Apabila Anda ingin melakukan split Top Up MUV, silahkan menghubungi tim Support Qontak.  
+- **Minimum top up saldo Whatsapp conversation** adalah Rp 1.000.000. Sehingga, jika Anda menginput di bawah Rp 1.000.000, maka akan disesuaikan otomatis oleh sistem menjadi Rp 1.000.000.  
+- Jika Anda memiliki saldo terhutang/outstanding balance maka saat Anda melakukan top up, sistem akan melunasi saldo terhutang terlebih dahulu.  
+- Sisa saldo akan diatur sebagai saldo top up tambahan. Sebagai contoh: Jika Anda memiliki sisa saldo Rp 5.000 dan melakukan top up saldo sebesar Rp 1.000.000 maka :  
+* Rp 5.000 → akan digunakan untuk melunasi jumlah terutang.  
+* Rp 995.000 → akan diisi ulang sebagai saldo tambahan.
+
+Info penagihan akan dikirimkan juga ke alamat email yang tertera pada halaman konfirmasi pemesanan.
+  7. Kemudian, Anda akan diarahkan ke halaman sales invoice dari pemesanan Anda dan pilih metode pembayaran yang ingin Anda gunakan. Terdapat tiga metode pembayaran yang dapat Anda pilih yaitu melalui **Virtual Account** , **Kartu Kredit** , atau **OVO**.  
 ![1 \(2\).jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961822617)
+
+- Sales Invoice hanya berlaku hingga H+1 (**keesokan harinya pada pukul 23.59**). Apabila sudah lebih dari **H+1 pukul 23.59** , kami sarankan untuk membuat sales order baru.  
+- Penting untuk diperhatikan bahwa pembayaran yang dilakukan melalui **kartu kredit** akan dikenakan biaya transaksi tambahan sebesar 3,5% berdasarkan jumlah total yang ditagih untuk membuat sales order baru.
+  8. Setelah pembayaran berhasil dilakukan, maka status pembayaran Anda pada bagian **Subscription** yang berada pada Menu **Setting** akan berubah dari **Awaiting payment** menjadi **Paid**.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961814937)
+  9. Anda dapat klik **“Download invoice”** untuk mengunduh proforma invoice. Berikut tampilan dari proforma invoice yang terunduh.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F42383501353497)
 
 ## Error States  <!-- confidence:high ✓ -->

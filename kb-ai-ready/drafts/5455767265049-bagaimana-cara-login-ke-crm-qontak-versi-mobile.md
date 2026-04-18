@@ -39,28 +39,34 @@ Untuk melakukan login ke Qontak CRM versi mobile, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka App Store (untuk iOS) atau Google Play Store (untuk Android) di perangkat mobile Anda.
-   → Layar akan menampilkan toko aplikasi.
 
-2. Cari aplikasi "Qontak CRM" dan unduh aplikasi tersebut.
-   → Aplikasi Qontak CRM akan terunduh dan terpasang di perangkat Anda.
-
-3. Buka aplikasi Qontak CRM yang sudah terpasang.
-   → Layar login akan ditampilkan.
-
-4. Masukkan username atau email Anda pada kolom yang tersedia.
-   → Kolom username/email akan terisi.
-
-5. Masukkan kata sandi Anda pada kolom kata sandi.
-   → Kolom kata sandi akan terisi.
-
-6. Klik tombol "Login".
-   → Sistem akan memproses kredensial Anda dan menampilkan Dashboard CRM.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah login berhasil, aplikasi Qontak CRM Mobile akan menampilkan Dashboard CRM versi aplikasi. Anda akan dapat mengakses berbagai fitur dalam akun CRM Anda, termasuk Inbox, Campaign, Contacts, Chatbot, Report, dan pengaturan lainnya. Dashboard akan menampilkan ringkasan aktivitas dan data akun CRM Anda dalam format yang dioptimalkan untuk tampilan mobile.
-
+**Penting****  
+**Pastikan perangkat Anda memiliki kriteria berikut untuk mengoperasikan Qontak CRM:  
+**Android  
+** - OS Android version 5.0 ke atas  
+- Minimal RAM 3 GB  
+- Ruang penyimpanan/free storage tersisa di atas 1 GB (Memory).  
+- Perangkat Android yang tidak mendukung layanan Google play (seperti Huawei) mungkin tidak berfungsi.  
+**iPhone, IPad, iPod  
+** iOS version 9.0 and up  
+Kompatibel untuk device:   
+- iPhone 5S and up  
+- iPad Air and up  
+- iPod touch (6th generation) and up  
+Pada aplikasi Qontak di IOS device support dari iPhone 5s keatas dengan IOS 9 keatas.  
+Pada aplikasi Qontak di Android untuk OS minimal 5.0 keatas.
+Selain dapat digunakan melalui website, Anda juga dapat menggunakan Qontak CRM Mobile dengan download aplikasi Qontak CRM di iOS atau Android, di mobile phone atau di tablet Anda. Berikut langkah-langkah yang dapat Anda ikuti untuk melakukan login pada Qontak CRM Mobile. 
+  1. Langkah pertama, Anda harus mendowload aplikasi Qontak CRM terlebih dahulu. Setelah download aplikasi Qontak CRM, lalu Anda bisa mulai Login.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46151577840793)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46151586232729)
+
+- Klik **Qontak CRM Mobile** versi **IOS**.  
+- Klik **Qontak CRM Mobile** versi **Android**.
+  2. Selanjutnya, masukan **username atau email**.
+  3. Masukan kata sandi.
+  4. Jika sudah, kemudian klik tombol **“Login”.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46151586232729)**  
+**
+  5. Setelah login berhasil, maka Anda akan mendapatkan tampilan Dashboboard CRM Anda versi aplikasi. Selanjutnya Anda bisa mengakses berbagai fitur di dalam akun CRM Anda.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXdWTl66c_0ykJ-QlIrmqwkiX16d7JM8cPrcODVvHKWh6_bE4VXYxnkYo_ss_SNSdw2C_w4WtTXnxQ4d6NXpg-eMBnYF5Fv2krSgMvVdvKB37KGdKRPVxad-kSUWS4tHj0R03974eQ%3Fkey%3DJYTyBa7b7VGn7J2HMNHF33kc)
 
 ## Error States  <!-- confidence:medium ~ -->

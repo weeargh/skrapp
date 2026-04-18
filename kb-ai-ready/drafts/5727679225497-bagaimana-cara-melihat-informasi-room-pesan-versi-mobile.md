@@ -39,22 +39,28 @@ Untuk melihat informasi room pesan di Qontak Omnichannel versi mobile, Anda meme
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Aplikasi Qontak Chat pada smartphone Anda — Masukkan alamat email dan password yang terdaftar, lalu tekan tombol Login
-2. Setelah login berhasil, aktifkan notifikasi dan atur status menjadi Online — Aplikasi siap menerima pesan baru
-3. Pilih salah satu pesan masuk dari daftar pesan — Room pesan terbuka dengan daftar percakapan
-4. Ketuk bagian atas room yang menampilkan nama pengirim pesan — Panel informasi room terbuka menampilkan detail customer dan fitur-fitur room
-5. Lihat informasi Data Customer (nama, platform asal, email, nomor telepon), About Room (waktu interaksi dan session), Notes, Agents, Tags, dan Room History
-6. Setelah percakapan selesai, ketuk tombol Resolve — Room pesan ditandai sebagai selesai dan menampilkan banner konfirmasi## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengikuti langkah-langkah, Anda berhasil melihat informasi lengkap room pesan pada mobile:
+**Inbox** merupakan sebuah fitur Omnichannel Qontak dimana para customer service akan melayani semua keluhan user berupa chat yang masuk kedalam Inbox.
+Untuk melihat informasi room pesan pada mobile, Anda perlu mengikuti langkah-langkah berikut:
+  1. Buka Aplikasi Qontak Chat pada Smartphone Anda. Masukkan alamat email serta password Anda yang sudah terdaftar di Qontak, lalu tekan **Login**. Setelah login berhasil, Anda dapat menyalakan notifikasi dan set status Online untuk mendapat pesan baru.
 
-- Panel informasi room menampilkan semua detail customer dan riwayat interaksi
-- Data Customer, About Room, Notes, Agents, Tags, dan Room History dapat diakses
-- Untuk room yang sudah di-Resolve, banner konfirmasi ditampilkan dan room tidak dapat dibuka kembali sampai customer mengirimkan pesan baru atau Anda mengirimkan broadcast terlebih dahulu
-
-![3.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136571033)
+4. Di sini, Anda dapat mengakses nama customer, asal platform, email dan nomor telepon, keterangan room, notes, tags, dan Agents yang ditugaskan.  
+![3.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136571033)  
+**No.** | **Rincian Informasi** | **Keterangan**  
+---|---|---  
+1. | Data Customer | Berisi rincian nama customer, asal platform, dan/atau email dan/atau nomor telepon.  
+2. | About Room | Berisi rincian tentang kapan interaksi pertama terbuat dan interaksi terakhir. Session menunjukkan sesi percakapan yang sedang berlangsung. Dari waktu dimulai hingga selesai dan keterangan waktu dibukanya sesi percakapan selama 24 jam.  
+3. | Notes |  Anda dapat menuliskan catatan khusus pada fitur Notes terkait percakapan dengan customer.   
+4. | Agents |  Berisi daftar Agents yang ditugaskan pada sebuah room pesan dapat Anda. Untuk menugaskan Agent baru, Anda dapat menambahkan Agent dengan menekan ikon **"Edit"** dan menghapus Agent dengan menekan ikon **"Silang".**  
+5. | Tags |  Fitur Tags memudahkan Anda untuk mengklasifikasikan kategori pesan yang masuk.  
+6. | Room History (Supervisor & Agent)  |  Berisi tentang sesi - sesi yang pernah dilakukan sebelumnya dengan customer tersebut.  
+Fitur tersedia pada pengguna Supervisor & Agent.  
+  5. Apabila percakapan sudah selesai, Anda dapat menyelesaikannya dengan mengetuk **Resolve**.  
 ![5.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136579993)
+  6. Room pesan yang sudah diselesaikan akan menampilkan banner seperti berikut. Sebagai informasi, pesan yang sudah di resolve, tidak dapat dibuka kembali sampai pelanggan mengirimkan chat kembali kepada Anda. Atau Anda dapat [mengirimkan broadcast](https://help-center.qontak.com/hc/id/articles/5499189914521) terlebih dahulu dan menunggu customer membalas broadcast tersebut.  
 ![6.PNG](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136588313)
+
+Demikian penjelasan mengenai informasi Room pesan dalam OmniChannel Qontak web dan mobile.
 
 ## Error States  <!-- confidence:low ? -->
 

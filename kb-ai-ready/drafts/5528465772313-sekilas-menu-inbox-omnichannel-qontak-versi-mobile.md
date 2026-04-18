@@ -27,11 +27,13 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Inbox Omnichannel Qontak versi Mobile adalah fitur pada aplikasi Qontak Chat yang memungkinkan customer service melayani semua keluhan dan pertanyaan dari user melalui chat dalam satu antarmuka terpadu. Fitur ini mengorganisir semua percakapan masuk ke dalam Inbox dengan berbagai status pesan, memudahkan agent mengelola komunikasi omnichannel langsung dari smartphone.## Why It Matters  <!-- confidence:medium ~ -->
 
-Inbox Mobile Qontak memungkinkan customer service merespons keluhan customer secara cepat dari mana saja, meningkatkan kepuasan pelanggan dan produktivitas tim. Dengan akses mobile, agent tidak perlu terbatas pada desktop untuk menangani percakapan masuk, memastikan kontinuitas layanan dan response time yang lebih baik dalam mengelola omnichannel communication.
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para**customer service** akan melayani semua keluhan **user** berupa _chat_ yang masuk ke dalam **Inbox**.
+Untuk melihat tampilan Inbox pada Web, Anda perlu mengikuti langkah-langkah berikut.
+  1. Buka aplikasi**Qontak Chat** di _smartphone_ Anda.
+  2. Masukkan **Username** dan **Password** Anda. Klik tombol **“Login”** untuk memulai.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49474596622873)
+  3. Lalu Anda akan otomatis masuk ke dalam Inbox Omnichannel Qontak dengan tampilan sebagai berikut.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49474565665689)
 
 ## Key Attributes  <!-- confidence:high ✓ -->

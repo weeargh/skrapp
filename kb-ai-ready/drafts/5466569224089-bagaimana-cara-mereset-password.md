@@ -36,41 +36,33 @@ Untuk mereset password akun Qontak CRM Anda, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Opsi A: Dari Halaman Login**
-1. Buka halaman login Qontak CRM.
-2. Klik tombol "Forgot Password" pada halaman login.
-3. Masukkan username akun Anda, kemudian klik "Send me reset password instructions".
-4. Sistem akan mengirimkan link reset password ke alamat email terdaftar Anda.
-5. Buka email dan klik link reset password untuk mengatur kata sandi baru.
-6. Login kembali dengan password baru Anda.
 
-**Opsi B: Dari Menu Profile Settings**
-1. Login ke akun Qontak CRM Anda.
-2. Klik panah di sebelah kanan username Anda (kanan atas dashboard).
-3. Pilih "Profile Settings".
-4. Klik tab "Profile Settings" di sisi kiri halaman.
-5. Isi kolom "Existing Password", "New Password", dan "Confirm New Password".
-6. Klik tombol "Update". Sistem akan menampilkan konfirmasi perubahan password berhasil.
+3. Sistem kami akan mengirimkan**link reset password** pada alamat email Anda (sesuai dengan email yang digunakan pada CRM) untuk mengatur ulang kata sandi terbaru.
+  4. Setelah pengaturan kata sandi baru selesai dilakukan, Anda dapat mencoba melakukan login Kembali.
 
-**Opsi C: Reset Password Pengguna Lain (Admin Only)**
-1. Login sebagai Admin.
-2. Klik panah di sebelah kanan username Anda (kanan atas dashboard).
-3. Pilih "Profile Settings".
-4. Sistem akan menampilkan daftar semua user terdaftar di organisasi CRM.
-5. Temukan user yang ingin di-reset passwordnya.
-6. Klik tombol "Reset Password" di sebelah kanan nama user tersebut.
-7. Sistem akan mengirimkan link reset password ke email user tersebut.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil mereset password:
-• Halaman login menampilkan pesan konfirmasi reset password berhasil
-• Anda dapat login menggunakan password baru Anda
-• Akun Anda tetap aktif dengan semua data dan pengaturan sebelumnya terjaga
-• Untuk reset password pengguna lain: user tersebut menerima email dengan link reset password dan dapat mengatur password baru mereka sendiri
-
+### B. Menu Profile Settings[](https://help-center.qontak.com/hc/id/articles/5466569224089-Bagaimana-Cara-Mereset-Password#h_01HHXZDVBACPQZW2NCW3Q4RS2J)
+Anda juga dapat melakukan perubahan kata sandi di dalam Pengaturan Akun, dengan cara berikut.
+  1. Klik tanda panah yang terletak di sebelah kanan username Anda (di sebelah kanan atas dasbor CRM)
+  2. Pilih “**Profile Settings”**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49417793964441)
-![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121118617)
+  3. Pilih **Profile Settings** yang terletak di sebelah kiri halaman pengaturan.
+  4. Isi **Existing Password** , **New Password** , serta **Confirm New Password**. Kemudian, pilih **update.  
+**![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121118617)
+
+###  C. Reset Password untuk Pengguna Lain[](https://help-center.qontak.com/hc/id/articles/5466569224089-Bagaimana-Cara-Mereset-Password#h_01HHXZGWTHAZ9WTNQ9BV8QC3X6)
+Akun Admin juga dapat membantu melakukan Reset Password pada akun para pengguna, dengan mengikuti langkah berikut ini.
+  1. Klik tanda panah yang terletak di sebelah kanan username Anda (di sebelah kanan atas dasbor CRM)
+  2. Pilih “**Profile Settings”**.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49417793964441)
+  3. Anda akan melihat list dari nama-nama user yang terdaftar pada CRM perusahaan Anda.
+  4. Pilih tombol **Reset Password** yang tersedia di sebelah kanan pada masing-masing akun pengguna.  
 ![4_3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5465479421721)
+  5. Sistem kami akan mengirimkan link reset password pada alamat e-mail Anda (sesuai dengan e-mail yang digunakan pada CRM) untuk mengatur ulang kata sandi terbaru.  
 ![5_3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774147731225)
+  6. Setelah pengaturan kata sandi baru selesai dilakukan, Anda dapat mencoba melakukan _login_ kembali.
+
+- Perubahan password melalui Pengaturan ataupun Reset Password hanya bisa dilakukan pada aplikasi Qontak versi Web.  
+- Pada beberapa kasus, penggunaan fitur **Forgot Password/ Reset Password** jika tidak berhasil dikarenakan adanya kendala pada e-mail yang didaftarkan. Jika hal ini terjadi pada akun CRM Anda, hubungi konsultan atau tim Support kami untuk membantu kendala tersebut.
 
 ## Error States  <!-- confidence:high ✓ -->
 

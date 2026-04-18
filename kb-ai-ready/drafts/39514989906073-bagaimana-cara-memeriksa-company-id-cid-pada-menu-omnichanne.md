@@ -34,19 +34,15 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel Anda.
-   Sistem akan menampilkan dashboard Omnichannel dengan menu di sisi sebelah kiri.
 
-2. Pada sisi menu sebelah kiri di bagian bawah, klik ikon panah **'Expand'**.
-   Sistem akan memperluas menu dan menampilkan Company ID Anda secara otomatis.
-
-3. Lihat **Company ID** yang ditampilkan di bagian bawah menu setelah tombol Expand diklik.
-   Nomor Company ID akan terlihat dengan format unik untuk akun Omnichannel Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Company ID Anda berhasil ditampilkan di sisi menu sebelah kiri bagian bawah setelah mengklik tombol Expand. Anda dapat melihat nomor Company ID yang unik dan spesifik untuk akun Omnichannel Anda. Company ID ini dapat disalin dan digunakan untuk keperluan integrasi atau referensi akun.
-
-![1.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39514989895193)
+Saat ini, Anda dapat memeriksa **CID** atau **Company ID** dengan mudah melalui sisi menu sebelah kiri pada Mekari Qontak Omnichannel. Pelajari selengkapnya pada langkah-langkah di bawah ini.
+  1. Masuk ke akun Omnichannel Anda. 
+  2. Lalu pada sisi menu sebelah kiri di bagian bawah, klik ikon panah **‘Expand’** untuk melihat **CID**.  
+![1.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39514989895193).
+  3. Kemudian secara otomatis **Company ID** Anda akan terlihat seperti berikut.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39514993090585)
+
+Demikian cara melihat **Company ID** pada menu Mekari Omnichannel. Pelajari juga cara melihat **Company ID** Mekari CRM [di sini](https://help-center.qontak.com/hc/id/articles/39515170108185-Bagaimana-Cara-Memeriksa-Company-ID-CID-pada-Menu-CRM).
 
 ## Error States  <!-- confidence:high ✓ -->
 

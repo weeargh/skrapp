@@ -37,18 +37,17 @@ Untuk mengelola Menu Properties - Automated Actions di Mekari Qontak CRM, Anda m
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Dashboard Mekari Qontak CRM dan klik menu **Properties**. Halaman Properties akan terbuka.
-2. Pilih tab **Automated Action**. Sistem akan menampilkan daftar automated action yang sudah ada.
-3. Klik tombol **Add New** untuk membuat automated action baru. Form pengaturan action akan terbuka.
-4. Isi judul dari action pada kolom yang tersedia. Pilih modul yang akan menjadi entity action (misalnya Deal). Tentukan trigger yang akan memicu action (misalnya ketika deal baru dibuat di stage tertentu).
-5. Isi detail tugas otomatis: nama tugas, kategori, prioritas, tanggal jatuh tempo, dan tentukan apakah owner tugas mengikuti pemilik entity atau akun tertentu.
-6. Klik tombol **Save Automated Action**. Sistem akan menampilkan pesan konfirmasi berhasil dan automated action akan aktif sesuai trigger yang ditentukan.
-7. Untuk mengedit, klik icon **Pensil** pada action yang ingin diubah. Untuk menghapus, klik icon **Tempat Sampah**.## Expected Result  <!-- confidence:high ✓ -->
 
-Automated action berhasil dibuat dan tersimpan. Sistem akan menampilkan pesan konfirmasi. Ketika trigger terpenuhi (misalnya deal baru dibuat di stage yang ditentukan), sistem secara otomatis akan membuat tugas dengan detail yang telah dikonfigurasi dan memberikan notifikasi kepada pemilik entity. Automated action akan muncul di daftar tab Automated Action dengan status aktif.
+Automated Action adalah cara untuk menambahkan fungsionalitas ke Qontak CRM tanpa melakukan pemrograman apa pun. Fitur ini dapat digunakan untuk memicu tindakan atau aksi tertentu secara otomatis.
+Berikut langkah-langkah untuk mengelola Menu Properties - Automated Actions:
+  1. Pilih menu **P****roperties.**
 
+Misalnya, Anda membuat suatu _automated action_ membuat tugas baru ketika ada deal baru dibuat di suatu _pipeline_ dan _stage_ tertentu. Jadi, ketika sebuah deal di buat di suatu _stage_ , _system_ akan membuat tugas baru dengan judul dan _detail_ yang sudah dibuat di _default**automated action**_ dan memberikan notifikasi ke pembuat deal tersebut. Saat Anda sudah menentukan _entity_ dan _trigger_ dalam suatu deal, Anda dapat membuat tugas yang akan diberikan secara otomatis dengan _trigger_ tersebut.
+  4. Isikann nama tugas, kategori, prioritas, detail tugas maupun kolom lainnya seperti due date setiap tugas yg dibuat, dan tentukan apakah dari setiap tugas yang dibuat akan memiliki _owner_ yang sama dengan pemilik entitas atau hanya 1 akun menjadi _owner_ setiap tugas tersebut.  
 ![mceclip6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F10416230369305)
+  5. Klik **“Save Automated Action”** untuk menyimpan _action_.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434962329)
+  6. Maka _automated action_ akan otomatis berjalan sesuai dengan _trigger_ yang telah dibuat.
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -39,46 +39,28 @@ Untuk menambahkan produk secara bulk (unggah file) di Qontak CRM, Anda membutuhk
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun CRM Anda melalui www.qontak.com
-   → Sistem menampilkan dashboard CRM
 
-2. Klik menu **Products** di panel navigasi
-   → Sistem membuka halaman daftar produk
-
-3. Klik tombol **+ Tambah Product** dan pilih **Unggah File**
-   → Pop-up unduh template muncul
-
-4. Unduh template Excel yang tersedia
-   → File template Excel terunduh ke perangkat Anda
-
-5. Buka file Excel dan isi kolom-kolom:
-   - Kolom bertanda (*) wajib diisi
-   - Pastikan data tidak duplikat
-   - Untuk kolom kustomisasi (Status, dll), isi sesuai opsi di database CRM
-   - Perhatikan ejaan, kapitalisasi, dan spasi harus persis sama
-   → Data terisi lengkap di file Excel
-
-6. Ubah format file Excel menjadi **Text**
-   → Format file berubah ke teks
-
-7. Klik **Browse a file** untuk memilih file Excel yang sudah diisi
-   → Dialog pemilihan file terbuka
-
-8. Pilih file Excel Product dan konfirmasi unggahan
-   → Sistem memproses file dan menampilkan notifikasi sukses
-
-9. Pantau progres pengunggahan di menu **Properties** → **Upload/Download**
-   → Status pengunggahan ditampilkan secara real-time## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah unggahan selesai, Anda akan menerima notifikasi bahwa data produk berhasil terunggah. Semua produk dari file Excel akan tersimpan dalam database Products Qontak CRM dan dapat langsung digunakan untuk transaksi atau referensi. Data produk akan muncul dalam daftar Products dengan semua informasi (nama, harga, kategori) tersimpan dan dapat diakses.
-
+Menu **Product** pada situs CRM digunakan untuk menginput database product dari pelanggan Anda. Pada tutorial kali ini kami akan menginfokan cara melakukan penambahan data **Product** secara (Unggah Product) melalui website pada situs sosial CRM Qontak. Silahkan mengikuti langkah – langkah berikut ini:
+  1. Pastikan Anda sudah login kedalam akun CRM Anda melalui website [www.qontak.com.](http://www.qontak.com/)
+  2. Masuk ke menu **Products**.
+  3. Kemudian, klik **"+ Tambah Product”** dan pilih **“Unggah File”**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5498042250265)
+  4. Unduh template Excel yang sudah tersedia dalam dashboard CRM.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112216742297)
+  5. Pada saat pengisian data mengguankan form Excel ini, pastikan bahwa data yang diinput tidak _double_. Kemudian, isi kolom-kolom yang tersedia pada Excel sesuai database yang Anda miliki.
+  6. Apabila terdapat kolom yang bertanda **(*),** artinya kolom tersebut wajib diisi. Sedangkan, pada kolom yang terkustomisasi seperti; Status, Job Title, dll. pengisian data pada file Excel harus sesuai dengan opsi yang terdapat pada database CRM. Mulai dari ejaan, besar kecil huruf, sampai penempatan spasi perlu diperhatikan harus sama persis, karena jika terdapat typo atau tidak sesuai akan menyebabkan error pada data yang diunggah.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222759449)
+  7. Jika data “**Product”** pada file Excel sudah terisi semua, Anda dapat merubah format pada file Excel menjadi **“Text”**.  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249495449)
+  8. Klik **“Browse a file”** untuk mengunggah kembali file Excel “**Product”** yang sudah terisi.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49112185432473)
+  9. Apabila muncul notifikasi sebagai berikut artinya data product anda sudah berhasil terunggah  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222766873)
-![11.2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222768793)
+  10. Untuk melihat progres pengunggahan data, Anda bisa cek secara berkala pada menu **Properties - Upload/Download.  
+![11.2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222768793)  
+**
+Jika terdapat data yang gagal terunggah, sistem akan secara otomatis mengirimkan notifikasi ke alamat email Anda yang terdaftar akun CRM Qontak.  
+Apabila sudah menerima email notifikasi tersebut Anda dapat melihat detail penjelasan data-data apa saja yang gagal terunggah, silahkan periksa kembali file Anda dan perbaiki data yang salah.
 
 ## Error States  <!-- confidence:high ✓ -->
 

@@ -40,31 +40,12 @@ Catatan: Laporan dapat diunduh dalam format PDF atau Excel sesuai kebutuhan Anda
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Mengunduh Laporan dari Dashboard:**
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman Dashboard akan terbuka.
-
-2. Pada halaman Dashboard, pilih sub laporan yang ingin Anda unduh.
-   → Sub laporan akan ditampilkan dengan berbagai informasi.
-
-3. Klik tombol garis tiga (menu icon) yang berada di sebelah kanan sub laporan.
-   → Menu opsi untuk laporan akan muncul.
-
-4. Pilih opsi unduh dengan format PDF atau Excel sesuai kebutuhan Anda.
-   → File laporan akan diunduh ke komputer atau laptop Anda.
-
-**Mengunduh Laporan dari Menu Report:**
-Anda juga dapat mengakses menu Report dari navigasi utama untuk menemukan dan mengunduh laporan dengan cara yang sama.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengikuti langkah-langkah di atas, laporan yang Anda pilih akan berhasil diunduh ke komputer atau laptop Anda dalam format:
-
-• PDF — untuk laporan dengan formatting yang terjaga
-• Excel — untuk laporan yang dapat diedit lebih lanjut
-
-File akan tersimpan di folder Downloads perangkat Anda dengan nama file yang sesuai dengan jenis laporan. Anda dapat membuka, mencetak, atau membagikan laporan sesuai kebutuhan bisnis Anda.
-
+Seluruh laporan yang ada di CRM Qontak juga dapat di unduh di komputer ataupun di laptop Anda. Mengunduh laporan di CRM Qontak bisa dengan dua cara; yaitu Anda bisa mengunduh laporan di fitur Dashboard atau di fitur Report.
+Berikut langkah-langkah yang Anda lakukan ketika ingin mengunduh laporan di **Dashboard.**
+  1. Masuk ke menu **Dashboard** kemudian pilih sub laporan yang ingin Anda unduh laporan nya, lalu klik tombol garis tiga yang ada di bagian sebelah kanan sub laporan. Anda dapat unduh laporan pada komputer atau laptop Anda, versi PDF ataupun versi Excel.  
 ![41.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50804967376025)
+  2. Laporan yang anda unduh sebagai berikut:  
 ![Mengunduh_Laporan_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287485081)
 
 ## Error States  <!-- confidence:low ? -->

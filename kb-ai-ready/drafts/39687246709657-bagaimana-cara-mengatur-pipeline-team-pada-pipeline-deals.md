@@ -36,21 +36,23 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun CRM Anda dan pilih menu **Properties**.
-2. Klik tab **"Deals"** pada halaman Properties.
-3. Pada halaman **Deal Properties**, pilih pipeline yang ingin diatur aksesnya atau klik **"Create New Pipeline"** untuk membuat pipeline baru.
-4. Untuk pipeline yang sudah ada, klik ikon **Edit** pada pipeline tersebut.
-5. Gulir halaman ke bawah hingga menemukan kolom **Team**.
-6. Pada kolom **Team**, isikan nama tim yang akan memiliki akses ke pipeline ini. Anda dapat menambahkan satu atau lebih tim.
-7. Klik tombol **"Save Pipeline"** untuk menyimpan pengaturan.
-8. Sistem akan menampilkan konfirmasi bahwa pengaturan pipeline team berhasil disimpan.## Expected Result  <!-- confidence:high ✓ -->
 
-Pengaturan Pipeline Team berhasil diterapkan. Tim yang Anda tentukan di kolom **Team** sekarang hanya dapat melihat pipeline tersebut pada indeks **Pipeline Deals**. Pengguna yang tidak termasuk dalam tim yang ditentukan tidak akan melihat pipeline ini di daftar pipeline. Perubahan langsung berlaku untuk semua pengguna, termasuk **Admin** dan **Owner** sesuai dengan role dan tim mereka.
-
+Kini, Anda dapat mengatur akses untuk **pipeline** berdasarkan tim. Hal ini bertujuan untuk memastikan agar hanya tim berwenang yang dapat membuka pipeline deals tertentu. Berikut langkah-langkah dalam mengatur Pipeline Team pada Pipeline Deals.
+**Penting**   
+1. Fitur ini **hanya berlaku untuk pengguna yang menjadi bagian dari 'TIM'**. Apabila mereka tidak ditugaskan ke tim mana pun, maka mereka dapat melihat semua **pipeline**.   
+2. Fitur ini hanya membatasi akses pada indeks **Pipeline Deals**. Pengguna masih dapat melihat **deals** dari **pipeline** lain saat mengaksesnya langsung melalui URL sesuai dengan pengaturan pada menu **User Permissions**.   
+3. Pembatasan ini juga akan berlaku untuk semua peran, termasuk **'Admin'** dan **‘Owner’**. Dalam hal ini, peran **Admin** dan **Owner** hanya akan memiliki akses ke **pipeline** yang ditentukan dalam pengaturan **Pipeline team**.
+  1. Masuk ke akun CRM Anda dan pilih menu **Properties**.
+  2. Kemudian klik tab **“Deals”**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39687246680601)
+  3. Lalu pada halaman **Ticket Properties** , pilih tab **“Deal Properties”**. Terdapat **2 metode** dalam menambahkan **Pipeline team** yaitu melalui salah satu **Pipeline** yang telah dibuat dan melalui **Create New Pipeline**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39687566391833)
+  4. Selanjutnya, apabila Anda ingin memilih **Pipeline team** melalui **Pipeline** yang **telah dibuat** , Anda dapat klik ikon **Edit** seperti pada tampilan berikut.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39687566394009)
+  5. Gulir halaman ke bawah lalu pada kolom **Team** , isikan nama tim yang akan memiliki akses tampilan ke **p****ipeline** tersebut.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39687566396057)
+
+Demikian cara mengatur Pipeline Team pada Pipeline Deals.
 
 ## Error States  <!-- confidence:medium ~ -->
 

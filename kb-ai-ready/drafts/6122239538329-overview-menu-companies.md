@@ -27,14 +27,17 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Companies adalah fitur dalam Qontak CRM yang berfungsi sebagai pusat manajemen database perusahaan. Menu ini memungkinkan Anda mengelola seluruh informasi dan aktivitas yang terkait dengan perusahaan atau bisnis pelanggan Anda. Melalui Menu Companies, Anda dapat melihat daftar lengkap perusahaan yang terdaftar, termasuk detail nama, asosiasi perusahaan, tipe perusahaan, tanggal pembuatan dan pembaruan, serta informasi pengguna CRM yang membuat perusahaan tersebut.## Why It Matters  <!-- confidence:medium ~ -->
 
-Menu Companies membantu Anda mengorganisir dan melacak semua informasi klien bisnis secara terpusat. Dengan fitur ini, Anda dapat dengan mudah mengakses customer journey lengkap setiap perusahaan, mengelola hubungan pelanggan secara efisien, dan membuat keputusan bisnis berdasarkan data yang terstruktur. Fitur manajemen massal seperti penambahan, pengubahan, dan penghapusan perusahaan menghemat waktu dan meningkatkan produktivitas tim CRM Anda.
-
-![company_1_.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089826073)
+Menu**Companies** adalah menu untuk melakukan manajemen database. Menu dapat Anda gunakan untuk mengelola seluruh informasi dan aktivitas yang terkait dengan perusahaan atau bisnis pelanggan.
+  1. Berikut adalah tampilan dari menu**Perusahaan.** Pada bagian ini Anda dapat melihat seluruh daftar perusahaan yang terdaftar pada CRM Qontak. Di sini, Anda juga dapat melihat informasi mengenai**nama, asosiasi perusahaan, tipe perusahaan, tanggal perusahaan terbuat dan terupdate** serta**user CRM yang membuat peruahaan tersebut.  
+**![company_1_.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089826073)
+  2. Pada Menu Perusahaan, Anda **menambahkan, mengunduh, mengubah** dan **menghapus** perusahaan secara massal.  
 ![download_companies.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089841305)
+  3. Sedangkan, untuk mengedit dan menghapus perusahaan secara satuan dapat mengklik ikon**"Edit"** dan **"Delete"** pada bagian kanan.   
 ![edited.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136809753)
+  4. Jika ingin menemukan perusahaan tertentu Anda dapat mencarinya dengan menggunakan**Filter** atau dengan menggunakan kolom pencarian.  
 ![search.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136800409)
+  5. Kemudian, Anda dapat melihat profil perusahaan Anda dengan klik**Nama Perusahaan.** Di sini Anda dapat melihat seluruh _customer journey_ dari perusahaan Anda.   
 ![name.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136814489)
 
 ## Key Attributes  <!-- confidence:high ✓ -->

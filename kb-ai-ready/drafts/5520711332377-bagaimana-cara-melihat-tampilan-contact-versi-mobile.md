@@ -37,28 +37,21 @@ faithfulness_threshold: 0.3
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak CRM di perangkat iOS atau Android Anda.
-   → Layar login akan tampil.
 
-2. Masukkan email dan password akun Qontak CRM Anda.
-   → Kolom input email dan password siap diisi.
-
-3. Klik tombol "Sign in" untuk masuk ke aplikasi.
-   → Anda akan diarahkan ke halaman Contact list.
-
-4. Halaman Contacts akan menampilkan dua tab utama:
-   - Tab **Contact list**: menampilkan daftar kontak individual
-   - Tab **Company list**: menampilkan daftar perusahaan
-   → Anda dapat beralih antar tab sesuai kebutuhan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil masuk, halaman Contacts pada versi mobile akan menampilkan:
-- Daftar kontak yang sudah tersimpan di akun Qontak CRM Anda
-- Dua tab navigasi: Contact list dan Company list
-- Interface yang responsif dan dioptimalkan untuk ukuran layar mobile
-- Akses penuh ke fitur pengelolaan kontak pada perangkat iOS atau Android
-
+Tidak hanya tersedia pada Qontak CRM web-based, menu kontak juga dapat ditemukan pada Qontak CRM di iOS maupun Android anda. Untuk mengetahui tampilan dan menggunakan fitur kontak pada **Mobile Phone** , anda harus mengikuti Langkah-langkah berikut.
+1. Buka aplikasi Qontak CRM di _mobile phone_ anda.
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462616022297)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462616023449)
+Masukkan **Email** dan **Password** anda. Klik tombol **“Sign in”** untuk memulai.
+2. Maka, Anda akan diarahkan ke halaman Contacts. Terdapat halaman **Contact list** dan **Company list**.
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462616023449)  
+**Keterangan:**
+**No.** | **Tombol** | **Fungsi**  
+---|---|---  
+1. | **Search contact / search company** | Anda dapat langsung mencari Contact/Company yang diinginkan dengan menuliskan Nama atau detail lain.  
+2. | **Filter** | Anda dapat filter Contact/Company berdasarkan Owner, Team, Association, Contact information, Creation date, Modified date, Date of Birth yang ada pada menu **Contacts**.  
+3. | **View contact detail** | Anda dapat melihat rincian Contact/Company dengan klik tombol ini.  
+4. | **Action (Three dots)** | Anda dapat melakukan perubahan atau menghapus Deal dengan tombol ini.  
+5. | **Add contact** | Anda dapat menambahkan Contact/Company baru dari tombol ini.
 
 ## Error States  <!-- confidence:low ? -->
 

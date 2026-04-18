@@ -40,33 +40,14 @@ Tidak ada persyaratan plan tier khusus yang tercantum dalam dokumentasi.
 
 ## Steps  <!-- confidence:high ✓ -->
 
-Ikuti langkah-langkah berikut untuk melihat dan mengunduh laporan GPS Check In:
 
-1. Buka dashboard Qontak CRM dan pastikan widget **GPS Check In** sudah ditampilkan (tambahkan jika belum ada)
-   → Widget akan menampilkan data check-in semua pipeline.
-
-2. Pilih agent yang datanya ingin Anda lihat
-   → Sistem akan menampilkan data check-in untuk agent tersebut.
-
-3. Klik ikon **garis tiga** (menu) di sebelah nama agent
-   → Menu dropdown akan muncul dengan opsi download.
-
-4. Pilih **"Download XLS"** untuk mengunduh data agent terpilih ATAU **"Download all XLS"** untuk mengunduh data semua agent
-   → File Excel akan terunduh ke perangkat Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengunduh laporan GPS Check In, file Excel akan berisi kolom-kolom berikut:
-
-• Nama user/agent
-• Tanggal check-in
-• Note (catatan check-in)
-• Location (nama lokasi)
-• Latitude (Garis lintang)
-• Longitude (Garis bujur)
-
-File dapat dibuka di aplikasi spreadsheet seperti Microsoft Excel atau Google Sheets untuk analisis lebih lanjut. Data mencakup semua pipeline check-in untuk agent yang dipilih atau semua agent (jika memilih Download all XLS).
-
+Pada CRM Qontak, Anda bisa melihat serta mengunduh laporan**GPS Check In** dari user. Untuk melihatnya, Anda harus menambahkan report GPS Check In pada dashboard. Lokasi check in yang akan ditampilkan dalam excel adalah untuk semua pipeline.
+Untuk mendownload datanya, Anda bisa pilih agent yang ingin Anda lihat datanya kemudian klik **garis tiga** mendatar lalu pilih **"Download XLS"**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766136765337)
+Berikut tampilan jika Anda mengklik download XLS.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089795225)
+Dari data di atas, Anda bisa melihat detail dari **nama** **user** , **tanggal check in** , **note** , **location** ,**latitude (Garis lintang)** dan **longitude (Garis bujur)**.
+Anda juga bisa melihat semua data agent dengan mengklik **"Download all XLS"** , maka akan muncul tampilan data seperti berikut.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766089806745)
 
 ## Error States  <!-- confidence:low ? -->

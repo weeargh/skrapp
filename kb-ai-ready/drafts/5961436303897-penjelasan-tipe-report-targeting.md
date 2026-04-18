@@ -27,15 +27,31 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Report dengan tipe Targeting adalah laporan di Qontak CRM yang menampilkan perbandingan antara target kinerja sales yang telah ditetapkan oleh Admin atau User dengan role Admin terhadap realisasi Deal yang telah dicapai. Report ini menghitung Deal berdasarkan waktu Deal dipindahkan ke stage Won, bukan waktu Deal dibuat. Laporan Targeting tersedia dalam tiga varian: Targets by Month, Targets by Month by Value, dan Targets by Month by Count.## Why It Matters  <!-- confidence:medium ~ -->
 
-Report Targeting membantu supervisor dan Admin memantau performa sales team terhadap target yang telah ditetapkan. Dengan visualisasi grafik stacked bar, Anda dapat dengan mudah membandingkan realisasi Deal (baik berdasarkan Value maupun Count) dengan target bulanan. Informasi ini memungkinkan identifikasi pencapaian target, analisis performa per sales agent, dan pengambilan keputusan strategis untuk optimalisasi penjualan.
-
+**Report** dengan tipe targeting ini umumnya berisi gambaran dari hasil kinerja sales atau User CRM terhadap target yang sudah ditentukan oleh supervisor atau User CRM dengan role **Admin.**
+###  **1. Targets by Month**[](https://help-center.qontak.com/hc/id/articles/5961436303897-Penjelasan-Tipe-Report-Targeting#h_01K5E2SVAW564QNBBJPFDBDK18)
 ![44.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807385513241)
+Laporan Targets by Month menampilkan grafik berbentuk stacked bar dengan 2 jenis laporan yang berbeda.
+**Stacked bar atas** ditandai dengan **warna biru tua & orange** menampilkan perbandingan antara Target **besaran Deal (Value)** yang telah ditentukan dengan total **besaran Deal (Value)** yang berada di Stage Won
+**Stacked bar bawah** ditandai dengan **warna biru muda & turquoise** menampilkan perbandingan antara Target **jumlah Deal (Count)** yang telah ditentukan dengan total **jumlah Deal (Count)** yang berada di Stage Won
+Periode grafik ini tidak mengikuti filter waktu pada filter bar, namun memiliki periode khusus yaitu bulan-bulan pada tahun ini. Total **besaran Deal (Value)** menggunakan mata uang default yang dipilih User.
+Deal yang terhitung mengacu pada waktu di mana Deal tersebut dipindah ke stage Won. Contoh: Deal 1 dibuat pada tanggal 9 Mei 2018 lalu diubah ke stage Won pada tanggal 14 Juli 2018, maka Deal tersebut akan masuk ke total besaran deal untuk periode Juli 2018.
+###  **2. Targets by Month by Value**[](https://help-center.qontak.com/hc/id/articles/5961436303897-Penjelasan-Tipe-Report-Targeting#h_01K5E2SVAW08MVR1R6CE2DGGSP)
 ![45.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807385514393)
+Laporan Targets by Month by Value merupakan grafik berbentuk stacked bar yang menampilkan perbandingan antara **total besaran Deal (Value)** dalam Stage Won dengan **target besaran Deal (Value)** yang telah ditentukan pada bulan terpilih dan dikelompokkan berdasarkan User pembuat Deal. Periode grafik ini tidak mengikuti filter waktu pada filter bar, namun memiliki periode khusus yaitu bulan-bulan pada tahun ini. Total besaran Deal menggunakan mata uang default yang dipilih User.
+Deal yang terhitung mengacu pada waktu di mana Deal tersebut dipindah ke stage Won. Contoh: Deal 1 dibuat pada tanggal 9 Mei 2018 lalu diubah ke stage Won pada tanggal 14 Juli 2018, maka Deal tersebut akan masuk ke total besaran deal untuk periode Juli 2018.
+###  **3. Targets by Month by Count**[](https://help-center.qontak.com/hc/id/articles/5961436303897-Penjelasan-Tipe-Report-Targeting#h_01K5E2SVAWMQXDRQX8J38H73ZB)
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5961588270873)
-![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5961573820569)
-![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5961602333593)
+Laporan Targets by Month by Count merupakan grafik berbentuk stacked bar yang menampilkan perbandingan antara **total jumlah Deal (Count)** dalam Stage Won dengan **target jumlah Deal (Count)** yang telah ditentukan pada bulan terpilih dan dikelompokkan berdasarkan User pembuat Deal. Periode grafik ini tidak mengikuti filter waktu pada filter bar, namun memiliki periode khusus yaitu bulan-bulan pada tahun ini.
+Deal yang terhitung mengacu pada waktu di mana Deal tersebut dipindah ke stage Won. Contoh: Deal 1 dibuat pada tanggal 9 Mei 2018 lalu diubah ke stage Won pada tanggal 14 Juli 2018, maka Deal tersebut akan masuk ke total besaran deal untuk periode Juli 2018.
+###  **4. Targets by Month by Value by Team**[](https://help-center.qontak.com/hc/id/articles/5961436303897-Penjelasan-Tipe-Report-Targeting#h_01K5E2SVAW6XSPZ9KHDT8W1KYA)
+**![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5961573820569)**
+Laporan Targets by Month by Value by Team merupakan grafik berbentuk stacked bar yang menampilkan perbandingan antara **total besaran Deal (Value)** dalam Stage Won dengan **target besaran Deal (Value)** yang telah ditentukan pada bulan terpilih dan dikelompokkan berdasarkan Team pembuat Deal. Periode grafik ini tidak mengikuti filter waktu pada filter bar, namun memiliki periode khusus yaitu bulan-bulan pada tahun ini. Total besaran Deal menggunakan mata uang default yang dipilih User.
+Deal yang terhitung mengacu pada waktu di mana Deal tersebut dipindah ke stage Won. Contoh: Deal 1 dibuat pada tanggal 9 Mei 2018 lalu diubah ke stage Won pada tanggal 14 Juli 2018, maka Deal tersebut akan masuk ke total besaran deal untuk periode Juli 2018.
+###  **5. Targets by Month by Count by Team**[](https://help-center.qontak.com/hc/id/articles/5961436303897-Penjelasan-Tipe-Report-Targeting#h_01K5E2SVAX24P0G2SD3H2PGHT3)
+**![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5961602333593)**
+Laporan Targets by Month by Count by Team merupakan grafik berbentuk stacked bar yang menampilkan perbandingan antara **total jumlah Deal (Count)** dalam Stage Won dengan **target jumlah Deal (Count)** yang telah ditentukan pada bulan terpilih dan dikelompokkan berdasarkan Team pembuat Deal. Periode grafik ini tidak mengikuti filter waktu pada filter bar, namun memiliki periode khusus yaitu bulan-bulan pada tahun ini.
+Deal yang terhitung mengacu pada waktu di mana Deal tersebut dipindah ke stage Won. Contoh: Deal 1 dibuat pada tanggal 9 Mei 2018 lalu diubah ke stage Won pada tanggal 14 Juli 2018, maka Deal tersebut akan masuk ke total besaran deal untuk periode Juli 2018.
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

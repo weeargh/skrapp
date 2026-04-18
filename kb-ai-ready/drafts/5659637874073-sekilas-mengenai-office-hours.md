@@ -27,11 +27,14 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Office Hours adalah fitur dalam Qontak Omnichannel yang memungkinkan Anda mengatur jam operasional layanan pelanggan dan menentukan zona waktu negara sesuai lokasi bisnis Anda. Fitur ini membedakan antara jam kerja (Office Hour) dan jam di luar kerja (Non Office Hour), sehingga sistem dapat menerapkan pengaturan berbeda seperti Auto Responder berdasarkan status operasional Anda.## Why It Matters  <!-- confidence:medium ~ -->
 
-Office Hours memastikan tim Anda dapat mengelola ekspektasi pelanggan dengan jelas — pelanggan tahu kapan mereka akan menerima respons langsung versus respons otomatis. Dengan mengatur jam operasional yang tepat, Anda meningkatkan efisiensi layanan, mengurangi beban tim di luar jam kerja, dan memberikan pengalaman pelanggan yang konsisten dan terukur.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49483227936793)
+**Settings** merupakan sebuah fitur Omnichannel Qontak di mana para customer bisa mengontrol atau melakukan pengaturan pada proses atau upaya untuk mencapai tujuan.
+Untuk mengatur jam kerja _(Office Hour & Non Office Hour)_ pada web, Anda perlu mengikuti langkah-langkah berikut.
+  1. Masuk ke akun Omnichannel Anda.
+  2. Pilih menu **Settings,** kemudian klik **Inbox.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49483227936793)  
+**
+  3. Lalu, pilih “**Office Hours** ” untuk menampilkan pengaturan jam. Jika jam operasional layanan Anda sudah diatur atau diubah, klik "**Save"** untuk menyimpan perubahan tersebut.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49483227942297)
 
 ## Key Attributes  <!-- confidence:high ✓ -->

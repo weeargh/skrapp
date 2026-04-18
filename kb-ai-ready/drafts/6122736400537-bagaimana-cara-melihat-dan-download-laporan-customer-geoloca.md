@@ -40,36 +40,28 @@ Catatan: Penambahan report ke Dashboard hanya berlaku untuk pengguna individual 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman Dashboard utama akan terbuka.
 
-2. Pastikan report Customer Geolocation Map sudah ditampilkan di Dashboard Anda.
-   → Jika belum ada, buka menu Report Template, cari Customer Geolocation Map, lalu klik "Add to Dashboard".
-
-3. Pada laporan Customer Geolocation Map di Dashboard, tentukan filter yang ingin Anda lihat (opsional).
-   → Data akan tersaring sesuai filter pilihan Anda.
-
-4. Klik ikon garis tiga (⋯) yang berada di sudut laporan.
-   → Menu dropdown akan muncul menampilkan opsi unduhan.
-
-5. Pilih "Download XLS" dari menu dropdown.
-   → File Excel akan diunduh ke perangkat Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengunduh laporan Customer Geolocation Map, file Excel akan berisi data semua customer di semua pipeline dengan kolom berikut:
-
-• Type, Nama user, Title, Email, Website
-• Place name (lokasi), Nomor telepon
-• Latitude (Garis lintang), Longitude (Garis bujur)
-• Jumlah min deal size, Jumlah max deal size, Jumlah rata-rata deal size
-• Owner, Created at
-
-File dapat langsung dibuka dan dianalisis menggunakan aplikasi spreadsheet seperti Microsoft Excel atau Google Sheets.## Error States  <!-- confidence:medium ~ -->
-
-No common errors documented.
-
+Pada CRM Qontak, Anda bisa melihat serta mengunduh laporan**Customer Geolocation Map** dari User. Untuk melihatnya, Anda harus menambahkan report **Customer Geolocation Map** pada Dashboard. Lokasi yang akan ditampilkan dalam Excel adalah untuk semua pipeline.
+Untuk mendownload datanya, Anda bisa pilih filter yang ingin Anda lihat datanya, kemudian klik **garis tiga** mendatar lalu pilih **"Download XLS"**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148101657)
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148100121)
+Berikut hasil downloadnya.  
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148100121)  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774148106009)
+Dari data di atas, Anda bisa melihat detail dari:
+  1. Type
+  2. Nama user
+  3. Tittle
+  4. Email
+  5. Website
+  6. Place name (lokasi)
+  7. Nomor telepon
+  8. Latitude (Garis lintang)
+  9. Longitude (Garis bujur)
+  10. Jumlah min deal size
+  11. Jumlah max deal size
+  12. Jumlah rata-rata deal size
+  13. Owner
+  14. Created at
 
 ## Escalation  <!-- confidence:medium ~ -->
 

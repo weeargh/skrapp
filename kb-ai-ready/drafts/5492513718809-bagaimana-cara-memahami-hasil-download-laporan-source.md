@@ -39,28 +39,10 @@ Catatan: Laporan ini menampilkan data berdasarkan Source yang ada di sistem Qont
 
 ## Steps  <!-- confidence:medium ~ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman Dashboard akan terbuka.
 
-2. Pada Dashboard, cari laporan berjudul "New Contacts, Companies, and Deals Created by Source".
-   → Laporan akan ditampilkan dengan data per modul berdasarkan filter yang aktif.
-
-3. Tentukan filter user dan filter waktu yang ingin Anda lihat.
-   → Data laporan akan disesuaikan dengan periode waktu dan user yang dipilih.
-
-4. Klik tombol Download untuk mengunduh laporan dalam format file.
-   → File laporan akan tersimpan di perangkat Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil mengunduh dan membuka laporan "New Contacts, Companies, and Deals Created by Source", Anda akan melihat:
-
-• Data terorganisir per modul (Contacts, Companies, Deals)
-• Jumlah item yang dibuat untuk setiap Source dalam periode waktu tertentu
-• Informasi ditampilkan dalam format Count (jumlah absolut) dan Percentage (persentase)
-• Detail breakdown per user menunjukkan kontribusi masing-masing user untuk setiap Source
-
-Laporan ini membantu Anda menganalisis sumber data dan performa penciptaan kontak, perusahaan, dan deal.
-
+Laporan yang didapatkan dari Dashboard **New Contacts, Companies, and Deals Created by Source** menampilkan laporan per modul, berdasarkan dengan filter user dan filter waktu yang diinginkan.  
 ![Laporan_Source_1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774121124249)
+Pada setiap user, ditampilkan jumlah Contacts, Companies, dan Deals yang dibuat pada periode waktu tertentu untuk setiap Source yang ada, dan ditampilkan berdasarkan Count dan Percentage.
 
 ## Error States  <!-- confidence:low ? -->
 

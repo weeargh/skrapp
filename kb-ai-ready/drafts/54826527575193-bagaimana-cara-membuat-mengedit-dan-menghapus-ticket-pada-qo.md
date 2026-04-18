@@ -39,45 +39,41 @@ Untuk membuat, mengedit, dan menghapus ticket melalui Qontak Mobile, Anda memerl
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Membuat Ticket:**
-1. Buka aplikasi Qontak Mobile dan masuk ke akun Anda
-2. Pilih menu "Other" pada navigasi utama
-3. Tap submenu "Ticket"
-4. Tap ikon '+' (tambah) untuk membuat ticket baru
-5. Isi semua field informasi ticket (nama, deskripsi, prioritas, dan field lainnya sesuai template)
-6. Tap tombol "Save"
 
-**Mengedit Ticket:**
-1. Di daftar ticket, tap ikon '⋯' (titik tiga) pada ticket yang ingin diubah
-2. Pilih "Edit ticket"
-3. Perbarui informasi ticket yang diperlukan
-4. Tap tombol "Save"
-
-**Menduplikasi Ticket:**
-1. Tap ikon '⋯' (titik tiga) pada ticket yang ingin diduplikasi
-2. Pilih "Duplicate ticket"
-3. Pop-up konfirmasi akan muncul; tap "Duplicate" untuk melanjutkan
-
-**Menghapus Ticket:**
-1. Tap ikon '⋯' (titik tiga) pada ticket yang ingin dihapus
-2. Pilih "Delete ticket"
-3. Pop-up konfirmasi akan muncul; tap "Delete" untuk menyelesaikan penghapusan## Expected Result  <!-- confidence:high ✓ -->
-
-**Setelah membuat ticket:** Ticket baru akan muncul dalam daftar ticket dengan informasi yang telah Anda masukkan.
-
-**Setelah mengedit ticket:** Perubahan akan tersimpan dan ticket akan menampilkan informasi yang telah diperbarui.
-
-**Setelah menduplikasi ticket:** Ticket duplikat akan muncul dalam daftar dengan penambahan label 'copy' di samping nama ticket asli.
-
-**Setelah menghapus ticket:** Ticket akan dihapus dari daftar dan tidak lagi terlihat di aplikasi Qontak Mobile.
-
+**No** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+**1** | **Ticket Name** | Kolom pengisian nama tiket.  
+**2** | **Description** | Kolom deskripsi tiket.  
+**3** | **Ticket Stage** | Pilih pada stage apa tiket ini berada, yaitu New, Assigned, In progress, atau Done.  
+**4** | **Assignee** | Pilih siapakah Agent yang Anda tunjuk untuk menyelesaikan kendala pada tiket ini.  
+**5** | **Ticket Priority** | Pilih skala prioritas atau urgensi kendala pada tiket ini, yaitu **low** , **medium** , **high** , atau **critical**.  
+**6** | **Source** | Pilih dari mana kendala pada tiket ini berasal, yaitu dari Call, Email, Chat, Other, atau Multichannel Whatsapp.  
+**7** | **Due Date** | Tentukan kapan tiket ini harus diselesaikan.  
+**8** | **SomeDate [Custom Field]** |  _Field_ khusus dapat ditambahkan pada tiket melalui menu [Properties - Tickets](https://help-center.qontak.com/hc/id/articles/22324045918233). Sebagai ilustrasi, pada gambar di atas ditampilkan contoh penambahan field bernama _SomeDate_.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495371417)
+**No** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+**1** | **Contact Association** | Pilih nama kontak klien yang memiliki kendala pada tiket ini.  
+**2** | **Company Association** | Pilih perusahaan klien yang memiliki kendala pada tiket ini.  
+**3** | **Product Association** | Pilih pada produk apakah klien tersebut memiliki kendala pada tiket ini.  
+**4** | **Task Association** | Pilih terkait Task apakah klien tersebut memiliki kendala pada tiket ini.  
+  1. Apabila keseluruhan data telah terisi, klik **“Save”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495374105)
+  2. Maka tiket yang telah dibuat akan muncul pada tampilan berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495375001)
+
+### B. Cara Mengedit Ticket[](https://help-center.qontak.com/hc/id/articles/54826527575193-Bagaimana-Cara-Membuat-Mengedit-dan-Menghapus-Ticket-pada-Qontak-Mobile#h_01KGGT76WWRXXNH2G6BMAVK7Q7)
+  1. Klik ikon**‘titik tiga’** salah satu tiket yang telah dibuat. Lalu klik **“Edit ticket”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826527553561)
+  2. Silakan edit kembali informasi tiket yang telah Anda buat. Pastikan keseluruhan data telah benar, lalu klik **“Save”**.   
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495376793)
+
+### C. Cara Melakukan Duplikat pada Ticket[](https://help-center.qontak.com/hc/id/articles/54826527575193-Bagaimana-Cara-Membuat-Mengedit-dan-Menghapus-Ticket-pada-Qontak-Mobile#h_01KGGT76X0QZ95NEP9V6HEKXMX)
+  1. Klik ikon**‘titik tiga’** salah satu tiket yang telah dibuat. Lalu klik **“Duplicate ticket”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495378073)
+  2. Lalu akan muncul _pop up_ informasi berikut. Klik **“Duplicate”** untuk melanjutkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495379225)
+  3. Selanjutnya, tiket yang telah diduplikasi akan ditampilkan dengan tambahan keterangan ‘copy’ di samping nama tiket.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F54826495382681)
 
 ## Error States  <!-- confidence:low ? -->

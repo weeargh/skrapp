@@ -38,24 +38,23 @@ Untuk melihat tampilan Company versi mobile, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak pada perangkat mobile Anda → Masukkan username dan password → Ketuk tombol Login.
 
-2. Setelah berhasil login, ketuk menu **Customers** di bagian bawah layar mobile.
-
-3. Sistem akan menampilkan halaman Customers. Ketuk tab **"Company list"** untuk mengakses daftar perusahaan.
-
-4. Halaman Company list akan ditampilkan dengan berbagai fitur termasuk search bar, filter, dan daftar perusahaan yang telah terdaftar.## Expected Result  <!-- confidence:high ✓ -->
-
-Halaman Company list pada versi mobile berhasil ditampilkan dengan konten berikut:
-
-• Tab **Company list** aktif di bagian atas
-• **Search bar** untuk mencari perusahaan berdasarkan nama atau detail lain
-• **Tombol Filter** untuk menyaring perusahaan berdasarkan Owner, Team, asosiasi deals, tanggal, dan property lainnya
-• **Daftar perusahaan** yang telah terdaftar dengan tag deals dan customers
-• **Ikon titik tiga** pada setiap perusahaan untuk opsi edit/hapus
-• **Ikon tambah (+)** di sudut kanan bawah untuk menambah perusahaan baru
-
-![24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46134077629977)
+Menu **Company/Perusahaan** pada CRM Qontak juga dapat Anda temukan di aplikasi Qontak untuk Android maupun IOS. Untuk mengakses menu company/perusahaan, pastikan Anda mengikuti langkah-langkah berikut ini:
+  1. Login ke akun CRM Anda melalui aplikasi “**Qontak** ” pada mobile yang Anda gunakan.
+  2. Berikut merupakan tampilan mobile phone yang muncul setelah Anda klik menu **Customers** lalu klik tab **"Company list"** dengan fitur-fitur yang disediakan.  
+****![24.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46134077629977)  
+**Keterangan:**  
+****
+**No** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | Company list | Tab untuk mengakses halaman Company.  
+2 | Search bar | Anda dapat langsung mencari perusahaan yang diinginkan dengan menuliskan Nama atau detail lain.  
+3 | Filter |  Anda dapat filter perusahaan berdasarkan Owner, Team, Asosiasi perusahaan dan deals, Created date, Modified date, dan seluruh property yang ada pada menu **Perusahaan**.  
+4 | List perusahaan | Deretan perusahaan yang telah terdaftar.  
+5 | Ikon titik tiga | Tombol untuk dapat mengedit atau menghapus perusahaan yang telah dibuat.  
+6 | Tap tag deals | Berisikan deals yang terasosiasi dengan Company terkait. Dalam hal ini, Anda dapat secara langsung mengakses Deal dengan klik tag tersebut.  
+7 | Tap tag customers | Berisikan jumlah customer yang terasosiasi dengan Company terkait. Dalam hal ini, Anda dapat secara langsung mengakses Deal dengan klik tag tersebut.  
+8 | Ikon tambah perusahaan | Anda dapat menambahkan perusahaan baru dari tombol ini, dengan memilih Satu Perusahaan atau Upload File. Satu Perusahaan digunakan untuk input perusahaan manual satu persatu, Upload File digunakan untuk upload perusahaan secara bulk.
 
 ## Error States  <!-- confidence:low ? -->
 

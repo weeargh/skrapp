@@ -40,25 +40,27 @@ Tidak ada persyaratan role khusus untuk melihat tampilan Tasks pada versi mobile
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak di smartphone Anda. Masukkan Username dan Password Anda, kemudian klik tombol **"Login"**. Sistem akan menampilkan dashboard utama Qontak.
 
-2. Klik menu **"Task"** yang terletak di menu utama aplikasi. Sistem akan menampilkan halaman Task dengan berbagai fitur dan opsi penyaringan.
-
-3. Lihat tampilan Tasks yang mencakup kategori, search bar, filter, status task, list task, dan tag task untuk mengelola kegiatan Anda seperti visit, follow-up, dan aktivitas lainnya.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah Anda berhasil masuk dan mengklik menu **"Task"**, sistem akan menampilkan halaman Tasks dengan komponen berikut:
-
-• Dropdown kategori Task untuk mengubah kategori
-• Search bar untuk mencari task berdasarkan nama atau detail
-• Filter berdasarkan Owner, Team, asosiasi perusahaan, tanggal, dan property
-• Status Task yang menunjukkan stage task saat ini
-• Daftar Task yang perlu diselesaikan
-• Tag Task untuk mengakses list perusahaan dan asosiasi
-• Tombol **"Add Task"** untuk menambah task baru atau upload file
-
+**Task** merupakan sebuah fitur CRM Qontak dimana para user bisa mencantumkan dan melaporkan kegiatan yang mereka lakukan. Kegiatan tersebut bisa berupa rencana kunjungan atau _visit_ ,_follow-up_ , dan lain-lain.
+Untuk melihat tampilan Tasks pada _mobile_ , Anda perlu mengikuti langkah-langkah berikut:
+  1. Buka aplikasi Qontak di _smartphone_ Anda. Masukkan **Username** dan **Password** Anda. Klik tombol**“Login”** untuk memulai. 
+  2. Selanjutnya klik menu **“Task”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149464429977)
+  3. Berikut merupakan tampilan _mobile phone_ yang muncul setelah anda menekan menu **Task** , dengan fitur-fitur yang disediakan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149464433945)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149479785753)
+**No** | **Menu** | **Information**  
+---|---|---  
+1 |  **All categories**  
+|  Keseluruhan kategori Task. Klik **“ikon dropdown””** berikut untuk dapat mengubah kategori.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149479785753)  
+2 | **Search bar** | Anda dapat langsung mencari task yang diinginkan dengan menuliskan Nama atau detail lain.  
+3 | **Filter** | Anda dapat filter task berdasarkan Owner, Team, Asosiasi perusahaan, Created date, Modified date, dan seluruh _property_ yang ada pada menu task.  
+4 | **Status Task** | Menyatakan status **Task** pada stage tertentu.  
+5 | **Task List** | Deretan Task yang perlu diselesaikan.  
+6 | **Task Tag** | Klik tag-tag tersebut untuk dapat mengakses list **perusahaan** dan **Association**.  
+7 | **Add task** | Anda dapat menambahkan task baru dari tombol ini, dengan memilih Tambah task atau Upload File.
+
+Demikian penjelasan terkait cara melihat tampilan Task versi _mobile_. Pelajari [di sini](https://help-center.qontak.com/hc/id/articles/5696625316633) untuk melihat tampilan Task versi web.
 
 ## Error States  <!-- confidence:high ✓ -->
 

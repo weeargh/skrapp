@@ -36,27 +36,13 @@ Untuk melakukan generate API Token pada Qontak Omnichannel, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda dengan kredensial Admin atau Supervisor.
 
-2. Pada menu utama, klik **Settings** lalu pilih **API token**. Sistem akan menampilkan halaman API token management.
-
-3. Pilih tab **Omnichannel**. Anda akan melihat daftar token yang tersedia dan status masing-masing.
-
-4. Klik tombol **Generate** untuk membuat API token baru. Sistem akan menghasilkan token baru dan menampilkannya dalam status tersembunyi.
-
-5. Klik **Show token** untuk memunculkan nilai token yang baru dibuat.
-
-6. Klik tombol **Copy** untuk menyalin token ke clipboard dan gunakan untuk keperluan integrasi Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil melakukan generate API Token, Anda akan melihat:
-
-- Token baru muncul dalam daftar API token di tab Omnichannel
-- Nilai token dapat ditampilkan dan disalin ke clipboard
-- Status token menunjukkan tanggal pembuatan dan masa kadaluarsa (1 tahun dari waktu generate)
-- Token siap digunakan untuk integrasi dengan sistem pihak ketiga
-- Maksimal 2 (dua) token aktif dapat dibuat per akun Qontak Omnichannel
-
+Pada Qontak Omnichannel, Anda sebagai Admin/Supervisor dapat melakukan generate API token. Kemudian, Anda dapat menggunakan API token tersebut untuk keperluan integrasi. Berikut adalah langkah - langkahnya.
+  1. Pada Qontak Omnichannel Anda, masuk ke menu **Settings** lalu klik **API token**.
+  2. Kemudian pilih tab **"Omnichannel"**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49491403552281)
+
+Demikian adalah pandauan untuk generate API Token pada Qontak Omnichannel.
 
 ## Error States  <!-- confidence:medium ~ -->
 

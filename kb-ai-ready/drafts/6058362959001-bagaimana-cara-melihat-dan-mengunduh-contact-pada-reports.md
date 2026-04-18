@@ -38,27 +38,23 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Qontak Anda dengan memasukkan Username dan Password, lalu klik tombol "Login". Sistem akan menampilkan dashboard Omnichannel.
 
-2. Klik menu **Reports** di menu utama. Halaman Reports akan terbuka menampilkan berbagai pilihan tipe laporan.
-
-3. Klik opsi **Contact** dari daftar laporan yang tersedia. Halaman laporan Contact akan ditampilkan.
-
-4. Gunakan filter yang tersedia untuk menyesuaikan zona, channel, dan jangka waktu laporan sesuai kebutuhan Anda. Laporan akan diperbarui otomatis sesuai filter yang dipilih.
-
-5. Lihat laporan Contact yang menampilkan Total Contacts, Daily Trend, Weekly Trend, Monthly Trend, dan Quarterly Trend. Grafik New Contact Overtime dan metrics aktif customers juga tersedia sesuai jangka waktu filter.
-
-6. Untuk mengunduh laporan, klik ikon **Unduh** pada laporan Contact yang ingin diunduh. Jendela pilihan format akan muncul.
-
-7. Pilih **Download CSV** untuk mengunduh laporan dalam format CSV. File akan mulai diunduh ke perangkat Anda dalam format yang kompatibel dengan Microsoft Excel.## Expected Result  <!-- confidence:high ✓ -->
-
-Laporan Contact berhasil ditampilkan dengan data Total Contacts, Daily Trend, Weekly Trend, Monthly Trend, Quarterly Trend, grafik New Contact Overtime, dan metrics aktif customers sesuai filter yang dipilih. File CSV berhasil diunduh ke perangkat dengan nama file laporan Contact dan dapat dibuka di Microsoft Excel atau aplikasi spreadsheet lainnya untuk analisis lebih lanjut.## Error States  <!-- confidence:medium ~ -->
-
-No common errors documented.
-
+3. Gunakan filter yang tersedia untuk menyesuaikan zona, channel, serta jangka waktu laporan yang Anda ingin lihat.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50121670117657)
-![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50121670120217)
-![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50121699354009)
+  4. Kemudian, klik **"Contact"** untuk melihat laporan _(reports)_ **Total Contacts, Daily, Weekly, Monthly,** dan **Quarterly.**  
+**![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50121670120217)**  
+**Keterangan:**
+**No.** | **Nama Laporan** | **Keterangan**  
+---|---|---  
+1. | **Total Contact** | Jumlah total kontak pada akun Anda.  
+2. | **Daily Trend** | Menunjukkan angka trend pada kontak baru berdasarkan harian.  
+3. | **Weekly Trend** | Menunjukkan angka trend pada kontak baru berdasarkan mingguan.  
+4. | **Monthly Trend** | Menunjukkan angka trend pada kontak baru dalam jangka satu bulan.  
+5. | **Quarterly Trend** | Menunjukkan angka trend pada kontak baru dalam jangka satu quarter.  
+  5. Selain itu, pada laporan **Contact,** Anda juga dapat melihat grafik **New Contact Overtime** yang menampilkan jumlah kontak baru sesuai jangka waktu yang telah dipilih pada **filter**.  
+**![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50121699354009)**
+
+Demikian adalah cara melihat dan mengunduh (download) laporan Contact.
 
 ## Escalation  <!-- confidence:medium ~ -->
 

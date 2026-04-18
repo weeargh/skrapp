@@ -38,44 +38,27 @@ Untuk mengelola menu Properties pada Tickets, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Qontak CRM atau Qontak Chat dan pilih menu **Properties** dari navigasi utama. Sistem akan menampilkan halaman Properties dengan berbagai tab menu.
 
-2. Klik tab **Tickets** untuk menampilkan property yang terkait dengan Tickets.
-
-3. Klik tombol **"Create property"** untuk membuat property baru. Pop-up form akan muncul.
-
-4. Isi kolom **Field name** dengan nama property yang ingin Anda buat.
-
-5. Pilih **Field type** sesuai kebutuhan (Single Line Text, Dropdown Select, Number, Date, Upload, Multiple Select, Percentage, Text Area, Photo, URL, Signature, atau GPS). Sistem akan menampilkan pilihan tipe field.
-
-6. Centang opsi **"Required"** jika property tersebut wajib diisi pada Tickets.
-
-7. Klik tombol **"Save"** untuk menyimpan property baru. Sistem akan menampilkan konfirmasi dan menambahkan property ke dalam daftar.
-
-8. Untuk mengubah property, klik tombol **"Edit"** pada property yang ingin diubah. Pop-up editing akan muncul.
-
-9. Ubah detail property sesuai kebutuhan atau klik **"Delete property"** untuk menghapus (hanya property tambahan yang dapat dihapus).
-
-10. Klik **"Save"** untuk menyimpan perubahan. Sistem akan memperbarui daftar property.## Expected Result  <!-- confidence:high ✓ -->
-
-Property berhasil dibuat, diubah, atau dihapus:
-
-• Property baru muncul dalam daftar tab **Tickets** dengan field name dan field type yang sesuai
-• Property tambahan yang dibuat ditandai dan dapat diedit kapan saja
-• Default field (dibuat oleh Qontak) tetap ada dan tidak dapat dihapus
-• Jika property diset sebagai "Required", kolom tersebut akan wajib diisi saat membuat atau mengedit Tickets
-• Perubahan atau penghapusan property segera berlaku pada semua Tickets di workspace## Error States  <!-- confidence:medium ~ -->
-
-• **Tidak dapat menghapus default field**: Jika mencoba menghapus property yang dibuat oleh Qontak (bukan property tambahan), sistem akan menolak aksi tersebut. Solusi: Hanya property yang Anda buat sendiri yang dapat dihapus; default field tidak dapat dihapus untuk menjaga integritas data Tickets.
-
-• **Field name kosong**: Jika tombol "Save" tidak responsif, pastikan kolom **Field name** telah diisi dengan nama property yang valid.
-
-• **Perubahan tidak tersimpan**: Jika perubahan tidak muncul setelah klik "Save", refresh halaman atau periksa koneksi internet Anda.
-
+Menu **Properties** digunakan untuk mengedit dan menambahkan _field_ /properti yang ada pada Menu tertentu. Untuk mengedit dan menambahkan _field_ /properti pada Menu **Tickets,** maka Anda perlu melakukan beberapa langkah sebagai berikut:
+  1. Pilih menu **Properties.**
+  2. Kemudian, pilih tab **Tickets**.  
 ![74.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50911549787929)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184449177)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184450073)
+  3. Lalu Anda dapat klik tombol **“Create property”.****  
+****![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184449177)**
+  4. Maka, akan muncul pop-up berikut.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781184450073)  
+Keterangan:  
+**No** | **Kolom** | **Penjelasan**  
+---|---|---  
+1 | Field name | Isikan nama ticket.  
+2 | Field type |  Pilih salah satu field type yang tersedia: - **Field Type (wajib diisi)** : Field type berisi pilihan dari tipe pengisian properti yang Anda inginkan. Apabila Anda mengklik field type, maka akan muncul beberapa pilihan tipe properti yang dapat Anda pilih, antara lain: - **Single Line Text** : Pengisian field dengan teks singkat. - **Dropdown Select** : Memungkinkan user untuk memilih satu dari beberapa opsi yang muncul sebagai isi field tersebut. - **Number** : Field hanya dapat diisi dengan angka. - **Date** : Field hanya dapat diisi dengan tanggal dan user langsung dapat mengisi secara manual dengan format dd/mm/yyyy atau mengklik dari kalendar yang muncul pada saat pengisian. - **Upload** : Pengisian field dilakukan dengan mengunggah file. - **Multiple Select** : Memungkinkan user untuk memilih lebih dari satu opsi yang muncul sebagai isi field tersebut. - **Percentage** : Isi field akan otomatis terkonversi menjadi persentase. - **Text Area** : Pengisian field dengan teks yang panjang. - **Photo** : CRM akan secara otomatis akan membuka kamera untuk pengambilan gambar secara live. User tidak dapat mengunggah gambar dari galeri - **URL** : Pengisian field dengan link. - Signature: Field diisi dengan tanda tangan secara langsung. - **GPS** : CRM akan mendeteksi lokasi GPS pada pengisian field dengan tipe GPS dilakukan.  
+3 | Add pipeline | Untuk menambahkan pipeline pada tiket.
+
+Reorder fields digunakan untuk mengatur urutan _field_ pada halaman Create & Edit ticket.
+  9. Gunakan**“titik enam”** untuk memindahkan fields sesuai urutan yang Anda inginkan atau klik **“titik tiga”** untuk memindahkan fields ke atas atau ke bawah. Dan klik **“Apply”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781142824089)
+
+Demikian adalah panduan cara mengelola menu properties tickets.
 
 ## Escalation  <!-- confidence:medium ~ -->
 

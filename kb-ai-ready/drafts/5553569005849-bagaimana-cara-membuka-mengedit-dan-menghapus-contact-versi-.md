@@ -41,25 +41,20 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi mobile Qontak CRM dan navigasikan ke menu **Contacts**. Sistem akan menampilkan daftar kontak yang tersimpan.
 
-2. Pada kontak yang ingin Anda kelola, klik ikon **"Three dots"** (titik tiga) untuk membuka menu opsi. Menu dropdown akan muncul dengan pilihan aksi.
-
-3. Pilih **Edit contact** untuk mengubah data kontak, atau pilih **Delete contact** untuk menghapus kontak.
-
-4. Jika memilih **Edit contact**: Klik field yang ingin diubah, lakukan perubahan data, kemudian klik tombol **"Save changes"** untuk menyimpan perubahan. Sistem akan menampilkan notifikasi penyimpanan berhasil.
-
-5. Jika memilih **Delete contact**: Konfirmasi penghapusan dengan klik **"Delete"** pada pop-up yang muncul. Kontak akan dihapus dari sistem.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan pengeditan, sistem menampilkan notifikasi "Perubahan berhasil disimpan" dan Anda kembali ke daftar kontak menu **Contacts** dengan data yang telah diperbarui.
-
-Jika menghapus kontak, sistem menampilkan pop-up konfirmasi. Setelah klik **"Delete"**, kontak hilang dari daftar dan sistem menampilkan pesan "Kontak berhasil dihapus".
-
-Catatan: Jika Anda berlangganan kedua produk (Qontak CRM dan Qontak Omnichannel), penghapusan kontak di CRM otomatis menghapus kontak dan riwayat percakapan di Omnichannel.
-
+Dalam menu **Contacts,** anda dapat membuka, mengedit dan menghapus kontak yang telah dibuat.
+**Penting!****  
+**- Apabila pada**Q2 2024** , Anda **sudah berlangganan** **Qontak CRM** , namun **belum berlangganan Qontak Omnichannel** , maka saat Anda mulai berlangganan **Qontak CRM** , **Anda tidak perlu** menghapus data kontak di **Omnichannel**.  
+- Apabila pada **Q2 2024** Anda **sudah berlangganan Qontak Omnichannel** dan **Qontak CRM** , maka setiap penghapusan data kontak yang dilakukan di **CRM** akan otomatis terhapus di **Omnichannel**. Dalam hal ini, seluruh seluruh riwayat percakapan, Anda akan terhapus. 
+  1. Pergi ke menu**Contacts**. Kemudian, klik ikon**“Three dots”** untuk melakukan pengeditan seperti pada gambar di bawah ini.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462945389209)
+
+Saat nama kontak di klik Anda akan dialihkan ke halaman kontak dengan detail yang lebih lengkap.
+  2. Anda dapat memilih **Edit contact** atau **Delete contact**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462945390745)
+  3. Apabila Anda memilih **Edit contact** , maka Anda akan diarahkan ke halaman seperti pada gambar di bawah, kemudian klik _field_ yang ingin Anda ganti/edit. Saat sudah melakukan pengeditan dalam suatu kontak, klik **“Save changes”** untuk menyimpan data yang sudah diubah.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462945391897)
+  4. Jika Anda memilih **Delete contact** untuk menghapus kontak yang Anda miliki, Anda bisa menghapus dengan klik **“Delete”** pada _pop-up_ yang muncul seperti pada gambar dibawah ini.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46462945393689)
 
 ## Error States  <!-- confidence:high ✓ -->

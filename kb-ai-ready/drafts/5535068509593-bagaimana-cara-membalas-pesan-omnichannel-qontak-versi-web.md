@@ -34,15 +34,14 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel Anda — sistem menampilkan dashboard utama.
-2. Klik menu **Inbox** — sistem menampilkan daftar semua room chat yang masuk.
-3. Buka salah satu pesan dengan status Unassigned atau Assigned — sistem menampilkan detail percakapan dan riwayat pesan.
-4. Ketikkan balasan Anda di kolom input pesan sesuai dengan pertanyaan atau keluhan customer.
-5. Klik tombol **Kirim** — pesan balasan Anda terkirim ke customer.## Expected Result  <!-- confidence:medium ~ -->
 
-Pesan balasan Anda berhasil dikirim dan muncul di dalam room chat dengan timestamp. Status pesan akan menunjukkan bahwa pesan telah terkirim. Customer akan menerima notifikasi balasan Anda melalui channel yang mereka gunakan (WhatsApp, Instagram, atau channel lainnya yang terintegrasi dengan Qontak Omnichannel).
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para customer service akan melayani semua keluhan user berupa chat yang masuk ke dalam Inbox.
+Untuk membalas pesan terhadap chat yang masuk, maka lakukan langkah-langkah berikut.
+  1. Masuk ke akun Omnichannel Anda.
+  2. Untuk membuka pesan **Omnichannel** atau melihat detail pesan Anda dapat mengklik **Menu Inbox.**
+  3. Buka salah satu pesan, kemudian balas sesuai dengan apa yang ditanyakan.  
 ![170.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53788099058841)
+Pesan yang bisa dibalas hanya yang memiliki status **Unassigned** dan **Assigned.**
 
 ## Error States  <!-- confidence:medium ~ -->
 

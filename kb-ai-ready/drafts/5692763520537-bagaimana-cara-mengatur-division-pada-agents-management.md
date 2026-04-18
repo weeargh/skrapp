@@ -37,36 +37,29 @@ Untuk mengatur Division pada Agents Management, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Anda dengan Username dan Password, kemudian klik tombol Login.
 
-2. Klik menu Settings, lalu pilih Agents Management.
-
-3. Pilih tab Division, kemudian klik tombol Create Division. Sistem akan membuka form division baru.
-
-4. Isi field Name, Supervisor, dan Agents pada form yang tersedia. Pilih apakah division akan diassign ke semua channel atau channel spesifik tertentu.
-
-5. Klik tombol Create untuk menyimpan data division. Sistem akan menampilkan popup konfirmasi jika data berhasil disimpan.
-
-6. Untuk mengubah division yang sudah ada, klik tombol Edit pada list Division, lakukan perubahan pada form yang terbuka, kemudian klik tombol Save.
-
-7. Untuk menghapus division, klik tombol Delete pada list Division, lalu konfirmasi dengan klik tombol Delete pada popup notifikasi.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah Division berhasil dibuat:
-
-• Popup konfirmasi akan muncul menampilkan bahwa data telah tersimpan
-• Division baru akan muncul pada list Division di halaman Agents Management
-• Division dapat dicari menggunakan fitur Search pada list Division
-• Division dapat diedit atau dihapus kapan saja melalui tombol Edit dan Delete
-• Jika division diassign ke channel spesifik, hanya channel tersebut yang akan menerima alokasi agen dari division ini
-
-![85.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50938157911193)
+**Agents Management - Division** merupakan sebuah fitur Omnichannel Qontak yang terdiri dari **Division** , **Agent Allocation, Broadcast** dan **Workload** dimana hanya Admin yang bisa menambahkan atau melakukan perubahan pada fitur yang ada pada agent management.
+Untuk menambahkan atau melakukan perubahan pada agent management - division, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda. Kemudian, masukkan **Username** dan **Password** anda. Klik tombol **“Login”** untuk memulai.
+  2. Pilih menu **Settings,** kemudian klik **Agents Management.  
+![85.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50938157911193)  
+**
+  3. Pilih **Division,** lalu klik “**Create Division** ” untuk membuka form division baru.  
 ![91.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50938157913625)
+  4. Isi _field-field_ yang sudah disediakan seperti name, Supervisor dan Agents dan pilih apakah **division** tersebut akan di-_assign_ ke semua **channel** atau hanya spesifik beberapa **channel** , kemudian klik “**Create** ” untuk menyimpan data yang sudah dibuat.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249600537)
+_Field-field_ **mandatory** yang belum terisi akan menampilkan _error_ “**field is required** ” jika Anda klik tombol “**Create** ”. Pada _field_ Agents dilengkapi tombol **“Delete”** dan Anda bisa langsung menghapus Agent dalam daftar **division**.
+  5. Untuk _assign_ spesifik **channel** , Anda bisa lihat pada gambar berikut, dimana Anda bisa memilih **channel** yang Anda inginkan.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222860953)
+  6. Data yang anda masukkan dan sesuai dengan format akan menampilkan _pop up_ seperti gambar berikut ketika anda mengklik “**Create** ”.  
 ![division3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249592217)
+  7. Division yang Anda buat akan muncul pada list Division seperti gambar berikut yang dilengkapi dengan fitur “**Search** ” untuk memudahkan Anda mencari divisi yang Anda inginkan, kemudian ada tombol “**Edit** ” yang bisa Anda gunakan untuk melakukan perubahan pada data divisi dengan cara klik “**Edit** ” untuk membuka form divisi.  
 ![92.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50938151459097)
+  8. Klik “**Save** ” untuk menyimpan perubahan yang sudah dilakukan.  
 ![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222862361)
+  9. Untuk menghapus division, Anda bisa mengklik “**Delete** ” seperti gambar berikut.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774249605785)
+  10. Popup delete akan otomatis muncul sebagai notifikasi “Are you sure want to delete this data?” jika anda yakin untuk menghapus divisi maka klik “**Delete** ” jika tidak maka klik “**Cancel** ”.  
 ![division7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222854809)
 
 ## Error States  <!-- confidence:medium ~ -->

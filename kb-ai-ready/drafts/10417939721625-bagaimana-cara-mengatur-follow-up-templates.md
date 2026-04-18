@@ -38,22 +38,30 @@ Anda perlu mengatur Follow-up Templates pada Qontak Omnichannel untuk membuat te
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda.
-2. Buka menu **Campaign** → pilih **Templates**.
-3. Klik tombol **"Create template"** → pilih **Follow-up template**.
-4. Isi kolom-kolom berikut:
-   - **Template name**: Gunakan huruf kecil tanpa spasi
-   - **Languages**: Pilih bahasa template
-   - **Enter the text for your message**: Ketik pesan Follow-up Anda
-5. Format teks jika diperlukan menggunakan Bold, Italics, atau Strikethrough.
-6. Klik tombol **"Next"** untuk melanjutkan.
-7. Verifikasi semua data sudah benar.
-8. Klik tombol **"Submit"** untuk menyimpan template.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah Anda klik tombol **"Submit"**, sistem akan menampilkan pop-up notifikasi yang mengonfirmasi bahwa Follow-up template berhasil dibuat. Template kemudian akan tersimpan dan siap digunakan dalam campaign broadcast Anda. Template akan muncul di daftar **Templates** di menu Campaign (Broadcast) untuk digunakan kembali di kampanye berikutnya.
-
+Pada Omnichannel Qontak terdapat fitur Templates yang berada di bagian menu Campaign (Broadcast). Fitur ini memungkinkan Anda untuk mengedit dan membuat template balasan pesan yang akan diterima oleh pelanggan atau penerima pesan. Berikut langkah-langkah untuk menggunakan fitur ini.
+  1. Masuk ke Menu **Campaign (Broadcast)** dan pilih **Templates**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43749571660697)
+  2. Lalu klik **"Create template"** dan pilih **Follow-up template**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47383909565593)
+
+**No.** | **Nama Tombol/Kolom** | **Deskripsi**  
+---|---|---  
+1 | Languages | Bahasa yang telah Anda pilih akan muncul di sini dan Anda dapat menggantinya di sini.  
+2 | Enter the text for your message | Isikan pesan Follow-up template di sini.  
+3 | Bold | Klik pada awal dan akhir kalimat untuk menjadikan tulisan tebal, atau Anda dapat memberikan tanda bintang (*) pada awal dan akhir kalimat untuk menjadikannya tulisan tebal.  
+4 | Italics | Klik pada awal dan akhir kalimat untuk menjadikan tulisan miring.  
+5 | Strikethrough | Klik pada awal dan akhir kalimat untuk menjadikan tulisan dicoret.  
+6 | Whatsapp Message Template Guideline | Klik pada teks berwarna biru untuk membuka guideline resmi dari WhatsApp mengenai Message Template.  
+  5. _Pop up_ notifikasi akan muncul jika data yang Anda _submit_ sudah benar.
+
+**Penting**  
+Jika pada room chat muncul keterangan _“The conversations has been expired”_ dan tidak menampilkan Follow-up Template. Anda dapat melakukan hal - hal berikut:  
+- Anda dapat melakukan update aplikasi Qontak Chat Anda. Silahkan menuju Play Store atau App Store dan klik **“Update”**.  
+- Jika Anda masih mengalami kendala yang sama, Anda dapat melakukan install ulang aplikasi Qontak Chat melalui Play Store atau App Store.  
+- Jika Anda sudah melakukan kedua hal di atas dan masih mengalami kendala yang sama, silakkan menghubungi  dan melampirkan data seperti spesifikasi perangkat yang digunakan dan screenshot kendala yang Anda alami.
+
+Demikian adalah panduan cara mengatur Templates pada Qontak Omnichannel. Selanjutnya, Anda dapat mempelajari Kategori Pesan WhatsApp Blast pada Menu Broadcast [di sini.](https://help-center.qontak.com/hc/id/articles/5923575558425)
 
 ## Error States  <!-- confidence:high ✓ -->
 

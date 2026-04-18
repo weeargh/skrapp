@@ -38,21 +38,28 @@ Untuk melihat tampilan Tasks versi web di Mekari Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka akun Mekari Qontak CRM Anda dan masuk ke Menu Task. Sistem akan menampilkan halaman Tasks dengan berbagai fitur dan tampilan.
 
-2. Pada halaman Tasks, Anda dapat melihat pilihan tampilan:
-   - Klik tombol **List View** untuk menampilkan tasks dalam bentuk daftar
-   - Klik tombol **Calendar View** untuk menampilkan tasks dalam bentuk kalender
-   - Klik tombol **Board View** untuk menampilkan tasks dalam bentuk papan
-
-3. Gunakan fitur tambahan sesuai kebutuhan:
-   - **Filter** untuk melihat task dengan pengaturan tertentu
-   - **Search** untuk mencari task berdasarkan nama
-   - **Show** untuk mengatur jumlah task yang ditampilkan per halaman## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengakses menu Task, Anda akan melihat halaman Tasks dengan tampilan default (List View) yang menampilkan daftar tasks dengan kolom informasi. Anda dapat beralih ke Calendar View atau Board View sesuai preferensi. Semua fitur seperti Add Task, Download, Bulk Change, Delete, Filter, Search, dan Show tersedia dan siap digunakan untuk mengelola tasks.
-
+**Task** merupakan sebuah fitur CRM Qontak dimana para user bisa mencantumkan dan melaporkan kegiatan yang mereka lakukan. Kegiatan tersebut bisa berupa rencana kunjungan atau _visit_ ,_follow-up_ , dan lain-lain.
+Untuk melihat tampilan Tasks pada Web, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke Menu **Task**.
+  2. Berikut merupakan tampilan web yang muncul setelah Anda klik menu Task dengan fitur-fitur yang disediakan.  
 ![mceclip0.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961451545)
+**No** | **Menu** | **Information**  
+---|---|---  
+1 | **Add a Task** | Untuk menambahkan task secara satu persatu maupun bulk upload.  
+2 | **Download** | Untuk mengunduh task dalam format excel.  
+3 | **Bulk Change** | Untuk mengubah owner task dalam jumlah banyak sekaligus.  
+4 | **Delete** | Untuk menghapus beberapa task yang dipilih sekaligus.  
+5 | **List View** | Untuk mengubah tampilan Taks dalam bentuk list (seperti pada gambar).  
+6 | **Calendar View** | Untuk mengubah tampilan Tasks dalam bentuk kalender.  
+7 | **Board View** | Untuk mengubah tampilan Tasks dalam bentuk papan.  
+8 | **Filter** | Untuk melihat task dengan pengaturan tertentu.  
+9 | **Search** | Untuk mencari task berdasarkan nama.  
+10 | **Show** | Untuk mengatur berapa banyak task yang ditampilkan di satu layar.  
+11 | **Quick Add** | Untuk membuat task baru secara cepat.  
+12 | **Edit** | Untuk mengubah atau meng-update suatu task/tugas.  
+13 | **Delete** | Untuk menghapus suatu task/tugas.  
+14 | **Page** | Menunjukkan halaman ke berapa Tasks tersebut di tampilkan dari keseluruhan halaman Tasks.
 
 ## Error States  <!-- confidence:high ✓ -->
 

@@ -39,31 +39,37 @@ Untuk mengelola Package Usage AI Chatbot di Qontak Omnichannel, Anda membutuhkan
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda menggunakan kredensial Admin atau Supervisor.
 
-2. Di menu utama, pilih **Package Usage**, kemudian klik tab **Chatbot AI**. Sistem akan menampilkan halaman rincian keterangan pemakaian paket Chatbot AI.
-
-3. Lihat bagian **Initial AI dialogs** untuk melihat kuota AI awal yang didapat dan sisanya. Bagian **Extra AI dialogs** menampilkan kuota tambahan (pascabayar atau prabayar) dan sisanya.
-
-4. Pada tabel **Chatbot AI usage**, lihat informasi lengkap pemakaian per dialog: Room ID, Channel, Account ID, Response Date, Dialog Deduction, dan AI Dialog Usage.
-
-5. Klik **Periode Filter** untuk menyaring rentang waktu yang ditampilkan pada tabel.
-
-6. Klik tombol **Download** untuk mengunduh tabel dalam format CSV (maksimal rentang 90 hari).## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengikuti langkah-langkah, Anda akan melihat:
-
-- Halaman Package Usage AI Chatbot dengan ringkasan kuota awal dan kuota tambahan
-- Status sisa kuota AI Dialog yang tersedia
-- Tabel Chatbot AI usage yang menampilkan detail lengkap setiap penggunaan dialog
-- Kemampuan untuk memfilter data berdasarkan periode waktu
-- File CSV siap diunduh berisi riwayat pemakaian kuota hingga 90 hari terakhir
-
-Data ini membantu Anda memantau penggunaan dan merencanakan top up kuota jika diperlukan.
-
+Package Usage merupakan sebuah halaman yang menampilkan pemakaian paket tertentu pada Qontak Omnichannel. Anda dapat melihat pemakaian dan sisa kuota [Conversation](https://help-center.qontak.com/hc/id/articles/10265853268121) maupun AI Chatbot.
+**Penting****  
+****Apa sajakah yang dapat mengurangi AI Dialog?  
+** AI Dialog digunakan pada 2 fitur berikut:  
+1. **Intent Classification  
+** a. Setiap input dari pengguna yang diarahkan ke **_bot response_** dengan **_keyword_** yang sudah dilatih akan memotong**1 AI Dialog**.  
+b. Pemotongan terjadi ketika **_bot response_** tersebut muncul dalam percakapan.  
+2. **Chatbot AI  
+** a. Setiap 1 pertanyaan dari **customer (1**** _bubble message_****dari customer)** dan 1 jawaban dari Chatbot AI**(1**** _bubble message_****dari bot)** akan mengurangi**1 AI Dialog.  
+** b. Hal ini berarti semua **_bubble messages_** dari**Chatbot AI** , termasuk pesan untuk **_assign_** maupun pesan otomatis saat customer **_idle_** ,**tetap dihitung** dan **mengurangi kuota AI Dialog.**
+Pada panduan ini, Anda dapat mempelajari cara membaca dan mengelola package usage AI Chatbot.
+  1. Pada Qontak Omnichannel, pilih menu **Package Usage** , lalu klik **Chatbot AI.**  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780962579993)
+  2. Maka, Anda akan diarahkan ke halaman rincian keterangan pemakaian paket Chatbot AI.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50764839968921)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780962581401)
+
+**No.** | **Nama Bagian** | **Deskripsi**  
+---|---|---  
+1 | Initial AI dialogs | Jumlah kuota AI yang didapatkan beserta sisanya.   
+2 | Extra AI dialogs |  Jumlah kuota tambahan AI yang didapatkan beserta sisanya. Kuota tersebut termasuk dialog tambahan pascabayar atau prabayar. - Apabila **pascabayar** mencapai limit, maka limit akan direset setiap bulannya.  
+- Apabila **prabayar** , maka sisa kuota bulan lalu akan diteruskan ke bulan selanjutnya.  
+- Apabila sisa kuota dari bulan lalu minus (negatif) maka, Initial dialog tidak akan direset kecuali di saat sudah lunas.  
+  3. Pada bagian selanjutnya, terdapat tabel **Chatbot AI usage.** Pada daftar ini, terdapat informasi lengkap tentang pemakaian kuota setiap dialog, seperti**Room ID, Channel, Account ID, Response Date, Dialog Deduction,** dan **AI Dialog Usage.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780962581401)
+
+- Anda dapat memfilter rentang waktu yang ditampilkan pada tabel dengan klik pada **Periode Filter.**  
+- Anda dapat mengunduh tabel ini dalam format spreadsheet CSV dengan rentang periode **maksimal 90 hari** dengan klik **“Download”**.
+**Penting**  
+1 pengurangan Dialog AI = 1x pertanyaan dari pelanggan ke klien dan respons dari klien ke pelanggan yang menggunakan AI.  
+Ini berarti di dalam 1 chat room bisa terdapat beberapa pengurangan Dialog AI.
 
 ## Error States  <!-- confidence:high ✓ -->
 

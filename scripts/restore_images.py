@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 """
-Restore images from the original crawled Zendesk articles into kb-ai-ready/drafts/.
+Restore original instructional content (with inline images) into kb-ai-ready/drafts/.
 
-Images are injected as standard markdown  ![alt](url)  inline at the end of the
-Steps section (or first section if no Steps). marked.js renders them as <img>
-tags; postprocessHtml() then routes the src through /mekarirag/proxy/image.
+For each draft that has a matching original article in the downloads directory:
+  - Extracts the real instructional body (between author line and social-share footer)
+  - Converts all image URLs to /mekarirag/proxy/image?url=...
+  - Demotes any ## sub-headings to ### so they don't break section parsing
+  - Replaces the Steps section body with this original content
 
 Usage:
     python scripts/restore_images.py [--drafts DIR] [--source DIR] [--dry-run]
@@ -21,26 +23,35 @@ SOURCE_DIR = "downloads/job_21c31a25087856a4a2616024005d1994_unique_cleaned_md"
 
 IMG_MARKDOWN_RE = re.compile(r'!\[([^\]]*)\]\((https?://[^\)]+)\)')
 
-# Skip tracking pixels / tiny icons / theme assets
 SKIP_URL_RE = re.compile(
-    r'theming_assets|bat\.bing|1x1|pixel|tracking|mekari\.com/system/photos',
+    r'theming_assets|bat\.bing|1x1|pixel|tracking|mekari\.com/system/photos'
+    r'|help-center\.mekari\.com/system',
     re.IGNORECASE,
 )
 
 SECTION_RE = re.compile(r'^## (.+?)(?:\s+<!--[^>]*-->)?\s*$', re.MULTILINE)
 
-# Previously injected formats to strip before re-injecting
+# Markers for where real content starts/ends in original articles
+CONTENT_START_RE = re.compile(
+    r'\*\s*Diperbarui.+?\n|^\s*Diperbarui .+?\n',
+    re.MULTILINE,
+)
+CONTENT_END_RE = re.compile(
+    r'Bagikan artikel ini|^## Sumber informasi|^#{1,3} Punya saran',
+    re.MULTILINE,
+)
+
+# Previously injected image lines to strip before re-injecting
+OLD_IMG_LINE_RE = re.compile(
+    r'!\[[^\]]*\]\(/mekarirag/proxy/image\?url=[^\)]+\)\n?',
+)
 OLD_BLOCK_RE = re.compile(
     r'\n\n(?:> Screenshot: [^\n]*\n> Image: https?://[^\n]+\n*)+',
     re.MULTILINE,
 )
-OLD_IMG_RE = re.compile(
-    r'\n!\[[^\]]*\]\(https?://help-center\.qontak\.com/hc/article_attachments/[^\)]+\)',
-)
 
 
 def _build_source_lookup(source_dir: str) -> dict[str, str]:
-    """Map article_id -> filepath from the original downloads directory."""
     lookup: dict[str, str] = {}
     id_re = re.compile(r'^\d+_(\d+)[-_]')
     for fname in os.listdir(source_dir):
@@ -56,66 +67,82 @@ def _proxy_url(url: str) -> str:
     return f"/mekarirag/proxy/image?url={urllib.parse.quote(url, safe='')}"
 
 
-def _extract_images(source_path: str) -> list[dict]:
+def _extract_original_body(source_path: str) -> str | None:
+    """Return cleaned instructional body from the original downloaded article."""
     with open(source_path, encoding="utf-8") as fh:
-        content = fh.read()
+        raw = fh.read()
 
-    seen_urls: set[str] = set()
-    images: list[dict] = []
+    # Find content start
+    m_start = CONTENT_START_RE.search(raw)
+    start = m_start.end() if m_start else 0
 
-    for m in IMG_MARKDOWN_RE.finditer(content):
+    # Find content end
+    m_end = CONTENT_END_RE.search(raw, start)
+    end = m_end.start() if m_end else len(raw)
+
+    body = raw[start:end].strip()
+    if not body:
+        return None
+
+    # Check there's at least one image — otherwise nothing to restore
+    has_image = bool(IMG_MARKDOWN_RE.search(body)) and any(
+        not SKIP_URL_RE.search(m.group(2)) for m in IMG_MARKDOWN_RE.finditer(body)
+    )
+    if not has_image:
+        return None
+
+    # Demote ## sub-headings to ### so they don't create new top-level sections
+    body = re.sub(r'^## ', '### ', body, flags=re.MULTILINE)
+
+    # Proxy images; remove noise images entirely
+    def proxy_img(m: re.Match) -> str:
         url = m.group(2).strip()
-        if url in seen_urls or SKIP_URL_RE.search(url):
-            continue
-        seen_urls.add(url)
-        alt = m.group(1).strip() or "Screenshot"
-        images.append({"alt": alt, "url": url})
+        if SKIP_URL_RE.search(url):
+            return ''
+        alt = m.group(1).strip() or 'Screenshot'
+        return f'![{alt}]({_proxy_url(url)})'
 
-    return images
+    body = IMG_MARKDOWN_RE.sub(proxy_img, body)
+
+    # Collapse excessive blank lines
+    body = re.sub(r'\n{3,}', '\n\n', body)
+
+    return body.strip()
 
 
-def _inject_images(draft_path: str, images: list[dict]) -> bool:
-    """Inject images inline at end of Steps section. Returns True if modified."""
+def _replace_steps_body(draft_path: str, new_body: str) -> bool:
+    """Replace the Steps section body with new_body. Returns True if modified."""
     with open(draft_path, encoding="utf-8") as fh:
         content = fh.read()
 
-    # Strip any previously injected image blocks
+    # Strip any previously injected image blocks/lines
+    content = OLD_IMG_LINE_RE.sub('', content)
     content = OLD_BLOCK_RE.sub('', content)
-    content = OLD_IMG_RE.sub('', content)
 
-    # Skip if images already present
-    if "help-center.qontak.com/hc/article_attachments" in content:
-        return False
-
-    # Build inline image markdown (standard ![alt](proxy_url))
-    img_lines = "\n".join(
-        f"![{img['alt']}]({_proxy_url(img['url'])})"
-        for img in images
-    )
-
-    # Find Steps section; fall back to first section
     matches = list(SECTION_RE.finditer(content))
     target_idx = None
     for i, m in enumerate(matches):
         name = m.group(1).strip()
-        if "Step" in name or "Langkah" in name:
+        if 'Step' in name or 'Langkah' in name:
             target_idx = i
             break
     if target_idx is None and matches:
         target_idx = 0
-
     if target_idx is None:
-        new_content = content.rstrip() + "\n\n" + img_lines + "\n"
-    else:
-        sec_end = (
-            matches[target_idx + 1].start()
-            if target_idx + 1 < len(matches)
-            else len(content)
-        )
-        section_text = content[:sec_end].rstrip()
-        new_content = section_text + "\n\n" + img_lines + "\n\n" + content[sec_end:].lstrip("\n")
+        return False
 
-    with open(draft_path, "w", encoding="utf-8") as fh:
+    sec_header_end = matches[target_idx].end()
+    sec_end = (
+        matches[target_idx + 1].start()
+        if target_idx + 1 < len(matches)
+        else len(content)
+    )
+
+    before = content[:sec_header_end]
+    after = content[sec_end:].lstrip('\n')
+    new_content = before + '\n\n' + new_body + '\n\n' + after
+
+    with open(draft_path, 'w', encoding='utf-8') as fh:
         fh.write(new_content)
     return True
 
@@ -140,24 +167,28 @@ def main() -> None:
             no_source += 1
             continue
 
-        images = _extract_images(lookup[article_id])
-        if not images:
+        body = _extract_original_body(lookup[article_id])
+        if not body:
             no_images += 1
             continue
 
         if args.dry_run:
-            print(f"[DRY] {fname}: {len(images)} images")
+            img_count = sum(1 for m in IMG_MARKDOWN_RE.finditer(body)
+                            if not SKIP_URL_RE.search(m.group(2)))
+            print(f"[DRY] {fname}: {img_count} images")
             updated += 1
             continue
 
-        if _inject_images(draft_path, images):
-            print(f"  ✓ {fname}: {len(images)} images injected")
+        if _replace_steps_body(draft_path, body):
+            img_count = sum(1 for m in IMG_MARKDOWN_RE.finditer(body)
+                            if not SKIP_URL_RE.search(m.group(2)))
+            print(f"  ✓ {fname}: {img_count} inline images")
             updated += 1
         else:
             skipped += 1
 
-    print(f"\nDone — updated: {updated}, already had images: {skipped}, "
-          f"no images in source: {no_images}, no source file: {no_source}")
+    print(f"\nDone — updated: {updated}, no inline images: {no_images}, "
+          f"no source: {no_source}, skipped: {skipped}")
 
 
 if __name__ == "__main__":

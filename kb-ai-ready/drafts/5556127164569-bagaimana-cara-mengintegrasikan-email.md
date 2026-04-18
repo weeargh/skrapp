@@ -39,19 +39,33 @@ Untuk mengintegrasikan email dengan Qontak Omnichannel, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel dengan Username dan Password, lalu klik tombol "Sign in".
-2. Buka menu **Integrations** dan pilih **Email**.
-3. Klik tombol "Add Email" untuk menambahkan akun email baru. Sistem menampilkan form integrasi email.
-4. Pada bagian **Select provider**, pilih provider email yang ingin diintegrasikan (Outlook, Gmail, atau lainnya).
-5. Pada bagian **Email authentication**, masukkan alamat email dan password provider email Anda.
-6. Isi semua field pada bagian **Email configuration** sesuai dengan provider email yang dipilih.
-7. Klik tombol "Submit" untuk menyelesaikan integrasi email.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah klik tombol "Submit", email berhasil diintegrasikan dengan Qontak Omnichannel. Sistem akan menampilkan detail integrasi email termasuk **Penerus Email** (email forwarder). Salin Penerus Email ini, kemudian masuk ke pengaturan email provider Anda dan atur email forwarding otomatis ke alamat Penerus Email yang disediakan. Setelah setup selesai, Admin, Supervisor, dan Agen dapat mengakses email di **Inbox** dalam chat panel Qontak.
-
+**Integrations** merupakan sebuah fitur Omnichannel Qontak dimana para customer bisa menghubungkan berbagai platform dengan chat panel seperti email atau Instagram.
+**Penting**  
+Hanya pengguna dengan**role Admin yang dapat melakukan integrasi**. Apabila Anda tidak memiliki akun dengan _role_ Admin, Anda dapat menghubungi tim support kami di 
+Untuk mengintegrasikan **chat panel** dengan **Email** pada Web, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda. Kemudian, masukkan **Username** dan **Password** Anda. Klik tombol **“Sign in”** untuk memulai.  
 ![Screenshot_2023-03-31_at_15.21.09.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780202487065)
-![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771056144409)
+  2. Masuk ke menu**Integrations** , kemudian pilih **Email.  
+![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771056144409)  
+**
+  3. Klik **“Add Email”** untuk menambahkan akun email yang akan diintegrasikan.  
 ![email.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780193787929)
+Pada bagian kanan form integrasi email terdapat tata cara mengintegrasikan email dan siapa saja yang bisa menggunakan fitur tersebut.
+
+Yang bisa menggunakan fitur integrasi email adalah:  
+- Hanya **Admin** yang dapat mengintegrasikan email.  
+- **Admin, Supervisor** dan **Agen** dapat menggunakannya di Inbox  
+Pastikan penyedia email memiliki fitur email forwarder yang memungkinkan pesan yang masuk dapat diteruskan ke email lain (akan disediakan oleh Qontak).
+
+Cara mengintegrasikan email adalah sebagai berikut:  
+1. Buat integrasi email baru pada Chat Panel.  
+2.Ikuti langkah-langkahnya dan isi formulirnya.  
+3. Integrasi dibuat, Anda akan mendapatkan penerusan email dengan mengakses detail integrasi  
+4. Salin Penerus Email.  
+5. Pada penyedia email, temukan pengaturan yang memungkinkan Anda untuk meneruskan secara manual setiap email yang masuk ke Anda.  
+6. Isi Penerus Email yang disalin dari Chat Panel ke daftar forward otomatis dan simpan pengaturannya.
+  4. Kemudian pilih provider email yang Anda inginkan pada bagian **Select provider**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780202490393)
 
 ## Error States  <!-- confidence:medium ~ -->

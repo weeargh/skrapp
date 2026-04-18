@@ -37,45 +37,23 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Bagian A: Mengaktifkan AI Assist V2 di Percakapan**
 
-1. Buka menu Chatbot, klik tab "Conversations"
-2. Pilih percakapan yang sudah ada atau buat percakapan baru
-3. Klik ikon "settings" pada bagian Default fallback
-4. Geser toggle "AI response" untuk mengaktifkan AI response
-5. Sistem akan menampilkan AI response sudah ditambahkan pada percakapan
-
-**Bagian B: Mengatur AI Assist**
-
-1. Klik "AI training" pada percakapan yang sudah ditambahkan AI
-2. Klik "Select Source" untuk memilih pengetahuan yang akan digunakan
-3. Centang checkbox source yang diinginkan
-4. (Opsional) Klik nama source untuk melihat preview di bagian kanan
-5. Klik "Select" untuk menyimpan
-6. Sistem akan menampilkan informasi "Training completed" di bagian atas
-
-**Bagian C: Mengatur AI Response**
-
-1. Klik kolom "bot response" pada percakapan
-2. Pada Bot response type, pilih "AI response"
-3. Masukkan Bot response name yang diinginkan
-4. Klik "Select specific sources" untuk memilih learning source
-5. Centang learning name yang diinginkan, klik "Select" untuk menyimpan
-6. Klik "Save" untuk menyimpan AI response
-7. Untuk menambah AI response lainnya, klik ikon tambah (+), pilih "AI response", masukkan nama, tambahkan learning source, lalu klik "Save"## Expected Result  <!-- confidence:high ✓ -->
-
-AI Assist V2 berhasil diaktifkan dan dikonfigurasi. Anda akan melihat:
-
-1. Toggle "AI response" pada Default fallback dalam status aktif
-2. Informasi "Training completed" ditampilkan setelah memilih source
-3. AI Response muncul di daftar Bot Response dengan nama yang telah ditetapkan
-4. Sistem siap menggunakan pengetahuan yang dipilih untuk merespon pelanggan dalam percakapan
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37616417564569)
+### B. Mengatur AI Assist[](https://help-center.qontak.com/hc/id/articles/37616408708121-Bagaimana-Cara-Menggunakan-AI-Assist-V2-di-Chatbot#h_01J7JDWFA8ZS8XD528DF6480WF)
+Selanjutnya, Anda akan mengatur pengetahuan yang akan digunakan AI dalam percakapan.
+  1. Setelah AI pada percakapan ditambahkan, selanjutnya, Anda dapat mengatur AI Assist dengan klik **“AI training”**.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37616417564569)**
+  2. Anda akan masuk ke halaman AI training, di sini Anda dapat memilih pengetahuan yang akan digunakan ke dalam percakapan dengan klik **“Select Source”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37616417565721)
+  3. Pilih _source_ yang ingin Anda gunakan pada percakapan dengan mencentang _checkbox_.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37616408667929)
+  4. Anda juga dapat melihat _preview_ dari _source_ tersebut dengan klik **“nama source”**. Maka _preview_ akan terlihat di bagian kanan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37616408669977)
+
+### C. Mengatur AI Response[](https://help-center.qontak.com/hc/id/articles/37616408708121-Bagaimana-Cara-Menggunakan-AI-Assist-V2-di-Chatbot#h_01J7JDWFA8W1YC5YBKTB4R9ZRC)
+Setelah memilih pengetahuan untuk percakapan, selanjutnya Anda dapat membuat Bot response baru yang akan menggunakan AI dalam percakapan. Dengan bot respons ini, Anda dapat menggunakan AI misalnya mengucapkan kalimat pembuka (_greetings_). 
+  1. Pada percakapan yang sudah diterapkan AI, klik kolom **“bot response”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37616408671769)
+  2. Pada **Bot response type** , pilih **AI response**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F37616417578137)
 
 ## Error States  <!-- confidence:medium ~ -->

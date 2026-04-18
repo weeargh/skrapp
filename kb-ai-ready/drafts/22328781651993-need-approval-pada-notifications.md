@@ -36,21 +36,23 @@ Untuk mengakses dan mengelola Need Approval pada Notifications di Qontak CRM, An
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Mengakses Need Approval Notifications:**
 
-1. Klik ikon lonceng yang terletak pada tampilan atas Qontak CRM. Sistem akan menampilkan daftar notifikasi.
-2. Klik tab Need Approval. Sistem akan menampilkan daftar approval yang menunggu keputusan Anda.
-3. (Opsional) Gunakan tombol Filter untuk menyaring approval berdasarkan kategori: All requests, Expenses, atau Deals.
-4. (Opsional) Klik Mark all as read untuk menandai semua notifikasi sebagai sudah dibaca.
-5. Pada notifikasi yang ingin diproses, klik tombol View details. Sistem akan membuka halaman rincian approval.
-6. Pada halaman rincian, tinjau informasi di bagian About expense dan riwayat approval di bagian Approval log.
-7. Klik tombol Approve untuk menyetujui atau Reject untuk menolak approval request.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah Anda mengklik tombol Approve atau Reject, sistem akan memproses keputusan Anda dan notifikasi akan dihapus dari daftar Need Approval. Status approval akan diperbarui pada riwayat Approval log. Notifikasi yang telah ditandai sebagai dibaca akan tidak lagi menampilkan indikator unread pada tab Need Approval.
-
+Fitur **notification** pada Qontak CRM berfungsi untuk memberikan informasi aktivitas - aktivitas yang dilakukan dalam akun tersebut. Selain itu, muncul tab **Need Approval** apabila Anda merupakan pemegang _role_ **Approver** yang telah diatur pada pengaturan.
+Berikut adalah langkah - langkahnya.
+  1. Klik ikon**“lonceng”** yang terletak pada tampilan atas Qontak CRM, lalu klik **"****Need Approval"**.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50565250339481)
-![G2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776278922521)
+  2. Pada notifikasi **Need Approval** , Anda dapat melakukan beberapa hal.  
+![G2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776278922521)  
+Keterangan:  
+**No.** | **Nama Tombol/Kolom** | **Deskripsi**  
+---|---|---  
+1 | Filter | Klik untuk memfiter approval berdasarkan **All requests, Expenses, atau Deals.**  
+2 | Mark all as read | Klik untuk menandai semua notifikasi Need approval sebagai sudah dibaca.  
+3 | View details | Pada setiap daftar notifikasi, terdapat tombol**“View details”** yang dapat Anda buka.  
+  3. Jika Anda klik **“View details”,** maka Anda akan diarahkan ke halaman berikut. Anda dapat melihat rincian pengajuan approval pada bagian **About expense** dan riwayat approval pada bagian**Approval log.** Jika informasi sesuai, Anda dapat klik **“Approve”.** Namun, jika belum sesuai, Anda dapat klik **“Reject”.**  
 ![G3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776278925081)
+
+Demikian adalah panduan mengelola approval pada Need Approval Notifications Qontak CRM.
 
 ## Error States  <!-- confidence:medium ~ -->
 

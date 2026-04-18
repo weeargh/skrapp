@@ -39,38 +39,18 @@ Perhatikan bahwa mengaktifkan fitur Agent can broadcast akan secara otomatis men
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Qontak Anda.
-   Sistem akan menampilkan dashboard utama.
 
-2. Klik menu Settings di navigasi utama.
-   Halaman pengaturan akan terbuka.
-
-3. Pilih Agent Management dari submenu.
-   Daftar fitur Agent Management akan ditampilkan.
-
-4. Klik tab Broadcast.
-   Halaman pengaturan Broadcast akan muncul.
-
-5. Klik toggle ON/OFF pada opsi Agent can broadcast untuk mengaktifkan atau menonaktifkan fitur.
-   Status toggle akan berubah.
-
-6. Klik tombol Save untuk menyimpan perubahan.
-   Sistem akan menampilkan konfirmasi penyimpanan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mengaktifkan fitur Broadcast dengan status ON:
-
-• Menu Broadcast akan muncul pada halaman Agent untuk semua pengguna dengan peran Agent.
-• Agen dapat melakukan broadcast layaknya Supervisor dan Admin.
-• Multi-Factor Authentication (MFA) akan secara otomatis aktif untuk semua pengguna dengan peran Agent.
-• Setiap kali agen login, mereka akan diminta memasukkan OTP yang dikirim ke email terdaftar.
-
-Jika status Broadcast dalam kondisi OFF:
-
-• Menu Broadcast tidak akan muncul pada halaman Agent.
-• Agen tidak dapat melakukan broadcast.
-
-![1.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38953072708249)
+**Agent Management - Broadcast** merupakan sebuah fitur Omnichannel Qontak yang terdiri dari **Division** , **Agent Allocation, Broadcast** dan **Workload** dimana hanya Admin yang bisa menambahkan atau melakukan perubahan pada fitur yang ada pada agents management.
+Untuk menampilkan menu broadcast pada halaman Agent, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda. 
+  2. Pilih menu **Settings** , kemudian klik **Agent Management.  
+![1.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38953072708249)  
+**
+  3. Pilih “**Broadcast** ” dan klik _toggle_ “**ON/OFF** ” pada pilihan **Agent can broadcast**. Klik “**Save** ” untuk menyimpan perubahan yang dilakukan.
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38953027384729)
+- Apabila Anda mengaktifkan fitur **Agent can broadcast** , maka fitur **MFA** akan secara otomatis aktif kepada semua user dengan peran Agent.  
+- Saat ini terdapat pengaktifan **Multi-Factor Authentication (MFA)** dapat membantu Anda dalam menjaga keamanan data yang Anda miliki di Qontak. Jika Anda dengan role tertentu telah mengaktifkan MFA, maka setiap melakukan login, Anda akan diminta untuk memasukkan OTP yang dikirim ke email.  
+- Apabila broadcast dalam status “**ON** ” maka menu tersebut akan muncul pada halaman agent sehingga agent bisa melakukan broadcast layaknya Supervisor dan Admin, namun jika broadcast dalam status “**OFF** ” maka agent tersebut tidak bisa melakukan broadcast karena menu broadcast tidak akan muncul pada halaman Agent.
 
 ## Error States  <!-- confidence:low ? -->
 

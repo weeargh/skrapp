@@ -35,24 +35,16 @@ Untuk mengekspor Report List of Conversations, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Qontak Omnichannel dan login dengan akun Anda → Sistem menampilkan dashboard utama
-2. Klik menu **Report** di navigasi utama → Halaman Reports terbuka
-3. Pilih tab **General** → Sistem menampilkan laporan umum dengan berbagai tabel
-4. Scroll ke bagian bawah halaman hingga menemukan tabel **List of Conversations** → Tabel menampilkan daftar percakapan
-5. Klik ikon **Download** pada tabel **List of Conversations** → Halaman ekspor terbuka
-6. Klik tombol **Export** → Kartu List of Conversation ditampilkan
-7. Pada kartu **List of Conversation**, klik tombol **Export** → Halaman filter ekspor muncul
-8. Pilih **Periode** dan **Channel** sesuai kebutuhan, lalu klik **Export** → Proses ekspor dimulai
-9. Tunggu hingga halaman menampilkan status ekspor dengan informasi **File Name**, **Exporter**, **Export Date**, dan **Status** → Ekspor sedang diproses atau telah selesai## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah ekspor berhasil:
-• Halaman menampilkan status **Completed** dengan detail file (nama file, pengekspor, tanggal ekspor)
-• Email notifikasi dikirim ke alamat email terdaftar akun Anda berisi link download file laporan
-• File laporan dapat diunduh dan dibuka dalam format CSV untuk analisis lebih lanjut
-• Data List of Conversations mencakup semua percakapan sesuai periode dan channel yang dipilih
-
+Pada Qontak Omnichannel, Anda dapat mengunduh laporan dari daftar percakapan yang masih berlangsung dan telah terjadi. Berikut langkah-langkah ekspor report list of conversations pada Qontak Omnichannel.
+  1. Log in ke Qontak Omnichannel Anda.
+  2. Masuk ke menu**Report**.
+  3. Kemudian pilih menu **General**.  
 ![62.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50809474876185)
+  4. Pada bagian bawah halaman Anda akan melihat tabel List of Conversations.
+  5. Untuk mengunduh laporan, klik ikon **“Download”**.  
 ![63.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50809446007449)
+  6. Kemudian Anda akan diarahkan pada halaman berikut. Klik **“Export”** untuk melanjutkan.
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -39,26 +39,15 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak Chat di smartphone Anda.
-   Aplikasi akan menampilkan halaman utama dengan daftar percakapan Inbox.
 
-2. Klik ikon "Profile" yang terletak di bagian kiri atas layar.
-   Sistem akan membuka menu profil pengguna.
-
-3. Pada menu Profile, temukan toggle switch status Online/Offline.
-   Geser toggle switch ke posisi ON untuk mengaktifkan status Online, atau OFF untuk mengaktifkan status Offline.
-   Sistem akan langsung mengubah status dan menampilkan perubahan di antarmuka.
-
-Catatan: Ketika Anda log out dari aplikasi mobile, status Online tetap aktif. Ubah status menjadi Offline terlebih dahulu sebelum log out jika ingin benar-benar offline.## Expected Result  <!-- confidence:high ✓ -->
-
-• Indikator status berubah menjadi Online (hijau) atau Offline (abu-abu) di menu Profile
-• Ketika status Online: Anda dapat menerima pesan chat masuk ke dalam Inbox
-• Ketika status Offline: Anda tidak akan menerima pesan chat baru
-• Perubahan status diterapkan secara langsung tanpa perlu reload aplikasi
-• Pesan konfirmasi status ditampilkan di layar
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para customer service akan melayani semua keluhan user berupa chat yang masuk ke dalam Inbox.
+Untuk menerima pesan, status **Omnichannel** Anda harus dalam status Online. Berikut cara mengaktifkan status pada **Omnichannel**.
+  1. Masuk ke aplikasi Qontak Chat di smartphone Anda.
+  2. Lalu klik ikon **"Profile"** pada bagian kiri atas.  
 ![mceclip0.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434823705)
+  3. Untuk mengaktifkan status menjadi Online/Offline geser _toogle_ ON/OFF.  
 ![mceclip1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434826649)
+Ketika _log out_ dari aplikasi mobile, bukan berarti Anda telah menonaktifkan status **Online** , sehingga apabila Anda ingin **Offline** , silahkan ubah status menjadi **Offline** terlebih dahulu sebelum _log out_.
 
 ## Error States  <!-- confidence:high ✓ -->
 

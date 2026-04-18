@@ -39,23 +39,46 @@ Prasyarat untuk melakukan tugas ini:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Klik username CRM di pojok kanan atas dashboard. Sistem akan menampilkan menu dropdown.
-2. Pilih "Profile Settings" dari menu dropdown. Halaman pengaturan profil akan terbuka.
-3. Klik "User Permission" di halaman Profile Settings. Daftar pengguna dan pengaturan permission akan ditampilkan.
-4. Pada kolom "Search Users", centang kotak di sebelah kiri nama pengguna yang ingin diubah akses datanya.
-5. Di bagian Contacts Access, atur opsi Add, View, dan Edit sesuai kebutuhan (Owned Only, Team Only, atau Everything).
-6. Klik tombol Save atau Confirm untuk menyimpan perubahan permission.## Expected Result  <!-- confidence:high ✓ -->
 
-Sistem akan menyimpan perubahan Contact Access dan Companies Access untuk pengguna yang dipilih. Pengaturan akses baru akan langsung berlaku pada akun pengguna tersebut. Pengguna akan dapat menambah, melihat, atau mengubah data kontak sesuai dengan permission yang telah ditetapkan oleh Admin. Jika toggle Add diaktifkan, pengguna dapat membuat kontak baru. Opsi View dan Edit menentukan jangkauan data yang dapat diakses (milik sendiri, tim, atau semua orang).
-
+Manajemen transparansi data menjadi hal yang krusial untuk diperhatikan. Anda dapat melakukan tiga macam pengaturan pada akses data (User Permission) untuk setiap user Anda, yaitu **Owned Only** (user hanya diberi akses untuk melihat dan/atau mengubah data miliknya sendiri), **Team Only** (user hanya diberi akses untuk melihat dan/atau mengubah data milik orang-orang yang ada di dalam satu tim yang sama dengannya), dan **Everything** (user diberi akses untuk melihat dan/atau mengubah data milik semua orang yang ada di dalam CRM tersebut).
+Untuk melakukan pengaturan pada akses data sekaligus untuk lebih dari satu orang, dapat langsung dilakukan di menu **User Permission**. Caranya adalah sebagai berikut.
+  1. Klik username CRM di pojok kanan atas.
+  2. Pilih “**Profile Settings”**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49619549906841)
+  3. Klik **“User Permission”**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49619519287321)
+  4. Pada kolom “**Search Users”** dapat dipilih user yang akses datanya ingin di-set pengaturannya dengan mencentang kotak di sebelah kiri nama user.  
 ![1.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961395225)
+  5. Pada submenu Contacts Access (Akses Kontak) dapat dipilih pengaturan akses data untuk setiap jenis aktivitas seperti berikut.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961396121)
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39900853026073)
+
+* 1. Pada bagian **Add** , Anda dapat memastikan bahwa hanya pengguna yang memiliki akses yang dapat membuat data Contact baru, sehingga menghasilkan format data yang lebih terstruktur. Apabila Anda mengaktifkan toggle tersebut maka user tersebut dapat menambahkan kontak baru. Namun apabila Anda menonaktifkan toggle tersebut, maka user tersebut tidak dapat menambahkan kontak.  
+2. Pada bagian **View** , Anda dapat mengatur apakah user tersebut dapat melihat semua data (Everything), data milik orang-orang yang berada di dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only).  
+3. Pada bagian **Edit** , Anda dapat mengatur apakah user tersebut dapat mengubah semua data (Everything), data milik orang-orang yang berada di dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only).  
+**Sebagai Catatan:  
+** a. Fitur ini memungkinkan peran **Admin** untuk menonaktifkan izin edit bagi pengguna tertentu. Hal ini dapat membantu melindungi informasi penting dari perubahan yang tidak diinginkan.  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39900853026073)  
+b. Apabila toggle tersebut diaktifkan, maka jenis **permission** tersebut hanya dapat diubah oleh pengguna dengan peran **‘Admin’** (seperti yang sudah ada saat ini).  
+c. Dalam hal ini, hanya peran **Admin** dan **Owner** yang memiliki kemampuan untuk mengubah **permission** role **‘Member’** atau **‘Agent’**.  
+4. Pada bagian **Search Association** , Anda dapat mengatur apakah user tersebut dapat menggunakan semua data (Everything), data milik orang-orang yang berada di dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only).  
+5. Selain itu, Anda juga dapat melakukan pengaturan akses kepada user Anda untuk dapat menghapus (**Delete/Hapus**), mengunggah (**Upload/Unggah**), dan mengunduh (**Download/Unduh**) dengan mengaktifkan/menonaktifkan _toggle_ di sebelah kanan.  
+6. Klik **"Save/Simpan"** di bagian bawah halaman.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F26936289701913)
+  6. Pada submenu **Companies Access (Akses Perusahaan)** dapat dipilih pengaturan akses data untuk setiap jenis aktivitas seperti berikut.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919255321)
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39901361091609)
+
+1. Pada bagian **Add** , Anda dapat memastikan bahwa hanya pengguna yang memiliki akses yang dapat membuat data Company baru, sehingga menghasilkan format data yang lebih terstruktur. Apabila Anda mengaktifkan toggle tersebut maka user tersebut dapat menambahkan kontak baru. Namun apabila Anda menonaktifkan toggle tersebut, maka user tersebut tidak dapat menambahkan perusahaan.  
+2. Pada bagian **View** , Anda dapat mengatur apakah user tersebut dapat melihat semua data (Everything), data milik orang-orang yang berada di dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only).  
+3. Pada bagian **Edit** , Anda dapat mengatur apakah user tersebut dapat mengubah semua data (Everything), data milik orang-orang yang berada di dalam tim yang sama dengannya (Team Only), atau data miliknya sendiri saja (Owned Only).  
+**Sebagai Catatan:  
+** a. Fitur ini memungkinkan peran **Admin** untuk menonaktifkan izin edit bagi pengguna tertentu. Hal ini dapat membantu melindungi informasi penting dari perubahan yang tidak diinginkan.  
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39901361091609)  
+b. Apabila toggle tersebut diaktifkan, maka jenis **permission** tersebut hanya dapat diubah oleh pengguna dengan peran **‘Admin’** (seperti yang sudah ada saat ini).  
+c. Dalam hal ini, hanya peran **Admin** dan **Owner** yang memiliki kemampuan untuk mengubah **permission** role **‘Member’** atau **‘Agent’**.  
+4. Pada bagian **Search Association** , Anda dapat mengatur apakah user tersebut dapat menggunakan semua data **(Everything)** , data milik orang-orang yang berada di dalam tim yang sama dengannya **(Team Only)** , atau data miliknya sendiri saja **(Owned Only)**.  
+5. Selain itu, Anda juga dapat melakukan pengaturan akses kepada user Anda untuk dapat menghapus **(Delete/Hapus)** , mengunggah **(Upload/Unggah)** , dan mengunduh **(Download/Unduh)** dengan mengaktifkan/menonaktifkan _toggle_ di sebelah kanan.  
+6. Klik **"Save/Simpan"** di bagian bawah halaman.  
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F26936289701913)
 
 ## Error States  <!-- confidence:medium ~ -->
 

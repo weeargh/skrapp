@@ -37,28 +37,30 @@ Untuk melihat tampilan Deals versi web di Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan email dan password.
-   → Dashboard utama Qontak CRM akan ditampilkan.
 
-2. Klik menu Deals pada navigasi sidebar.
-   → Halaman Deals akan terbuka, menampilkan daftar semua deals dengan fitur-fitur tersedia (Tambah Deal, Download, Need approval, Bulk Change, Hapus, Board view, List view, Filter, Search, Dropdown list pipeline, dan Show).
-
-3. Pilih tampilan yang Anda inginkan:
-   - Klik Board view untuk melihat Deals dikelompokkan berdasarkan tahapan
-   - Klik List view untuk melihat Deals dalam format daftar yang dapat digulir vertikal
-
-4. (Opsional) Klik nama Deals untuk melihat detail transaksi lebih lengkap dan stage deals yang merupakan spesifikasi alur kerja.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil mengakses menu Deals, Anda akan melihat:
-
-1. Halaman Deals menampilkan semua deals dalam sistem Anda
-2. Toolbar atas dengan fitur: Tambah Deal, Download, Need approval, Bulk Change, Hapus
-3. Opsi tampilan Board view atau List view sesuai pilihan Anda
-4. Filter, Search, Dropdown pipeline, dan Show untuk memudahkan navigasi
-5. Daftar deals dengan informasi stage dan detail transaksi yang dapat diklik untuk melihat detail lengkap
-
+**Deals** merupakan fitur CRM yang disediakan Qontak, dimana dapat menunjukan dan mencatat seluruh transaksi alur kerja secara real-time pada perusahaan Anda. Untuk mengetahui tampilan dan menggunakan fitur **Deals** pada web, ikuti langkah-langkah berikut:
+  1. Login ke akun Qontak CRM Anda. 
+  2. Masuk ke Menu **Deals**.
+  3. Berikut merupakan tampilan web yang muncul setelah Anda menekan menu **Deal** , dengan fitur-fitur yang disediakan.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43681155076377)
+**Keterangan:**
+
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | **Tambah Deal** | berfungsi untuk menambahkan transaksi deal Anda.  
+2 | **Download** | berfungsi untuk mengunduh deal dalam bentuk excel.  
+3 | **Need approval** | berfungsi untuk melakukan persetujuan dalam mengakses tindakan persetujuan massal.  
+4 | **Bulk Change** | berfungsi untuk melakukan perubahan owner dan pemberian akses deals secara massal.  
+5 | **Hapus** | berfungsi untuk menghapus Deals secara massal.  
+6 | **Board view** | Tampilan yang menunjukkan Deals dan dikelompokkan berdasarkan tahapan dalam tampilan indeks.  
+7 | **List view** | Tampilan yang menunjukkan Deals dalam daftar yang dapat digulir vertikal.  
+8 | **Filter** | berfungsi untuk menemukan deals sesuai dengan kriteria yang Anda filter.  
+9 | **Search** | untuk mempermudah Anda dalam mencari deals yang Anda cari.  
+10 | **Dropdownlist pipeline** | untuk memudahkan Anda dalam mencari flow yang Anda ingin pantau dan/atau yang akan Anda gunakan.  
+11 | **Show** | berfungsi untuk menyesuaikan jumlah deals yang muncul pada tampilan Anda.  
+  4. Pada Menu Deals, Anda juga dapat menemukan stage deal yang merupakan spesifikasi alur kerja.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777848056345)
+Deal/transaksi pada stage deals tertentu dapat Anda lihat lebih detail, dengan cara klik nama Deals.
 
 ## Error States  <!-- confidence:low ? -->
 

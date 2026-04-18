@@ -42,23 +42,21 @@ Catatan: Jika Anda menggunakan Qontak One, gunakan panduan Customer Data Platfor
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Mekari Qontak Omnichannel dan buka menu **Contacts**. Sistem akan menampilkan daftar semua contact yang tersimpan.
 
-2. Temukan contact yang ingin dilihat atau diedit, lalu klik tombol **Actions** di baris contact tersebut. Menu dropdown akan muncul.
-
-3. Pilih opsi **View detail** dari menu dropdown. Halaman detail contact akan terbuka, menampilkan informasi lengkap contact dan riwayat percakapan.
-
-4. Untuk mengedit detail contact, ubah data di kolom yang tersedia: **Full Name**, **Division**, **Company ID**, dan **Segment**. Kolom bertanda (*) wajib diisi.
-
-5. Untuk menambahkan nomor atau channel kontak lain, klik tombol **Merge Contact**. Pilih **Channel** yang diinginkan (contoh: WhatsApp), kemudian klik **Select Contact**.
-
-6. Setelah semua perubahan selesai, klik tombol **Update Contact**. Sistem akan menyimpan perubahan dan menampilkan notifikasi konfirmasi.## Expected Result  <!-- confidence:high ✓ -->
-
-Anda berhasil melihat detail lengkap contact termasuk informasi personal (nama, divisi, perusahaan, segment) dan riwayat percakapan. Jika melakukan pengeditan, notifikasi konfirmasi akan muncul dan data contact terbaru akan tersimpan di sistem. Jika Anda sudah berlangganan Qontak CRM sejak Q2 2024, perubahan data contact di Omnichannel akan otomatis diperbarui di CRM tanpa perlu input ulang. Jika Anda baru berlangganan Qontak CRM, tambahkan data contact secara manual di CRM.
-
+Dalam Qontak, Anda bisa melihat **contact** dari setiap **customer** yang melakukan percakapan dalam menu **Inbox**. Data tersebut akan tersimpan secara otomatis dan nama yang tersimpan akan mengikuti dari nama **customer** yang berada di **Inbox**. Anda bisa melihat serta mengedit data kontak tersebut melalui cara berikut.
+Sudah menggunakan [Qontak One](https://help-center.qontak.com/hc/id/articles/53169095720729-Sekilas-tentang-Qontak-One)? Jelajahi pengalaman[ Customer yang baru](https://help-center.qontak.com/hc/id/articles/53183780046105-Sekilas-tentang-Customer-Data-Platform) di Qontak One untuk langkah-langkah dan panduan antarmuka yang telah diperbarui.
+**Penting!**  
+- Apabila pada **Q2 2024** , Anda **sudah berlangganan** **Qontak Omnichannel** , namun **belum berlangganan Qontak CRM** , maka saat Anda mulai berlangganan **Qontak CRM** , **Anda perlu** menambahkan data kontak secara manual di **CRM**.  
+- Apabila pada **Q2 2024** Anda **sudah berlangganan Qontak Omnichannel** dan **Qontak CRM** , maka setiap perubahan data kontak yang dilakukan di **Omnichannel** akan otomatis diperbarui di **CRM** , sehingga Anda tidak perlu input ulang data.
+  1. Klik menu **Contacts**.
+  2. Lalu, klik **"Actions"** dan pilih **View detail**.  
 ![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38433073175961)
+  3. Di sini Anda bisa melihat detail kontak dari pelanggan beserta percakapan yang telah dilakukan.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38464943278489)
+  4. Anda juga bisa mengedit detail kontak mulai dari **Full Name, Division, Company ID,** dan **Segment**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38433331262873)
+Bagian yang bertanda **( * )** wajib diisi.
+  5. Anda juga bisa menambahkan nomor atau _detail_ kontak pelanggan dengan klik **"Merge Contact"**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38433331264153)
 
 ## Error States  <!-- confidence:high ✓ -->

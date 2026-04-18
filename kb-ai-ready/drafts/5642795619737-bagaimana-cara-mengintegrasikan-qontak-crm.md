@@ -41,27 +41,20 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 
 ## Steps  <!-- confidence:high ✓ -->
 
-Untuk mengintegrasikan chat panel Omnichannel dengan Qontak CRM Messenger:
 
-1. Masuk ke akun Qontak Omnichannel Anda dengan kredensial Admin.
-2. Buka menu **Integrations**, kemudian pilih **Qontak CRM**. Sistem menampilkan halaman integrasi CRM.
-3. Klik tombol **Connect** untuk menyambungkan akun Qontak CRM yang akan diintegrasikan.
-4. Klik tombol **Authorize** untuk memberikan otorisasi Omnichannel ke CRM. Sistem akan memeriksa subscription CRM Anda.
-5. Jika subscription aktif, proses integrasi berhasil. Sistem menampilkan halaman integrasi CRM dengan status terhubung.
-
-Catatan: Percakapan akan masuk ke CRM sebagai tiket dan tidak akan ditampilkan di inbox Omnichannel.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah integrasi berhasil, Anda akan:
-
-- Melihat halaman integrasi CRM dengan status **Connected** (terhubung)
-- Dapat menerima pesan pada Qontak Omnichannel yang secara otomatis membuat tiket di Qontak CRM
-- Melihat tombol **Disconnect** tersedia jika ingin memutuskan integrasi di masa mendatang
-
-Integrasi memungkinkan alur kerja terpadu antara Omnichannel dan CRM tanpa duplikasi pesan di inbox.
-
+**Integrations** merupakan sebuah fitur Omnichannel Qontak di mana para customer bisa menghubungkan berbagai platform dengan chat panel seperti email atau Instagram.
+**Penting**  
+Hanya pengguna dengan**role Admin yang dapat melakukan integrasi**. Apabila Anda tidak memiliki akun dengan role Admin, Anda dapat menghubungi tim _support_ kami di [support-qontak@mekari.com](https://help-center.qontak.com/hc/id/articles/support-qontak@mekari.com)
+Untuk mengintegrasikan chat panel dengan Qontak CRM Messenger pada Web, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda.
+  2. Pilih **Integrations** , lalu klik **Qontak CRM**.  
 ![11.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771314201497)
+  3. Klik **“Connect”** untuk menyambungkan akun qontak CRM yang akan diintegrasikan.  
 ![12.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771303044505)
+Untuk tampilan integrasi pada CRM tidak akan muncul pada inbox karena yang masuk pada inbox hanya untuk pembuatan tiket ke CRM.
+  4. Klik **“Authorize”** untuk mengintegrasikan Omnichannel dengan CRM.  
 ![13.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771303046297)
+  5. Selanjutnya, sistem akan memeriksa _subscription_ CRM. jika terdapat _subscription_ maka, proses integrasi berhasil dan Anda akan melihat tampilan halaman integrasi CRM.  
 ![14.1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50771413989657)
 
 ## Error States  <!-- confidence:medium ~ -->

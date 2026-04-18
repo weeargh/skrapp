@@ -41,25 +41,78 @@ Subdomain harus eksklusif untuk pengiriman campaign melalui Qontak dan tidak bol
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka halaman pendaftaran subdomain dan email pengirim di akun Qontak Anda.
 
-2. Pada kolom "Company Sub-domain", masukkan nama subdomain (contoh: mail.mekari.com). Pada kolom "Email", masukkan alamat email pengirim (contoh: noreply@mail.mekari.com). Pastikan bagian subdomain pada kedua kolom identik.
+Prosedur pengajuan pendaftaran subdomain dan pembuatan email pengirim **di bawah ini** dapat Anda ikuti hingga fitur **self-integration** tersedia. Qontak akan merilis fitur **self-integration** secara bertahap dari **awal November 2025**.
+Untuk menggunakan fitur [Email Campaign](https://help-center.qontak.com/hc/id/articles/47425969961625-Bagaimana-Cara-Membuat-Email-Campaign), Anda perlu melakukan langkah berikut:
+  1. Pastikan Anda memiliki **subdomain** yang belum digunakan pada _mail service_ lain, dan akses ke **Domain Manager**.
+Subdomain yang digunakan pada fitur **Email Campaign** dihimbau untuk tidak digabungkan dengan kebutuhan lain. Oleh karena itu, Anda disarankan menggunakan subdomain yang eksklusif untuk kepentingan pengiriman _campaign_ melalui Qontak saja.
+  2. Pada kolom **Company Sub-domain** , isi nama **subdomain** yang ingin digunakan. Lalu pada kolom **Email** , isi **email pengirim** yang ingin dibuat untuk melakukan pengiriman _campaign_.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344321699481)  
+**Contoh:**  
+**Company subdomain** : mail.mekari.com  
+**Email:** noreply@mail.mekari.com  
+*Pastikan informasi yang Anda isi pada kolom ‘**Company Sub-domain** ’ dan **‘Email’** memiliki nama subdomain yang sama. Jika berbeda, kami akan mendaftarkan subdomain sesuai pada kolom '**Company Sub-domain'**.
 
-3. Centang persetujuan yang tersedia, lalu klik tombol "Daftarkan sekarang" untuk mengirimkan permintaan.
-
-4. Tunggu email dari tim Qontak berisi informasi DNS Records (dikirim dalam 1x24 jam, hari kerja).
-
-5. Login ke Domain Manager Anda dan masukkan DNS Records yang diterima untuk menyelesaikan pendaftaran subdomain.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan semua langkah, Anda akan menerima email dari tim Qontak yang berisi informasi DNS Records lengkap (record tipe MX, TXT, dan lainnya). Sistem akan menampilkan subdomain dan email pengirim yang berhasil terdaftar di akun Qontak Anda. Subdomain dan email pengirim kemudian siap digunakan untuk membuat Email Campaign melalui fitur Campaign di Qontak Omnichannel.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344321699481)
+**Penting**  
+- Email pengirim (atau email sender) yang didaftarkan merupakan jenis email yang diperuntukkan untuk outbound messaging, dan tidak dapat menerima balasan email (incoming email).  
+- **Tips** : Anda dapat menggunakan **noreply** (contoh: **noreply@mail.mekari.com**) sebagai _username_ email, atau menambahkan informasi pada konten _campaign_ Anda agar customer Anda dapat membalas pesan ke alamat email yang tepat.
+  3. Centang _**consent**_ di bawah dan klik **Daftarkan sekarang** untuk mengirimkan _request_. _Consent_ ini bersifat **wajib** untuk melakukan pendaftaran. Dengan mencentang, nama alamat email Anda akan kami simpan, untuk kebutuhan pengiriman informasi DNS records kepada Anda, yang selanjutnya dapat Anda daftarkan ke **Domain Manager** Anda.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344540069401)
+Informasi DNS Records akan diberikan tim Qontak via **email** dalam **1x24 jam (hari kerja)** , setelah Anda mengisi informasi**Company Sub-domain** dan **Email** pada _form_ di atas. Silakan cek email yang Anda pakai untuk login ketika melakukan pendaftaran.
+
+###  **A.****Tentang Subdomain** [](https://help-center.qontak.com/hc/id/articles/48958258449433-Bagaimana-Cara-Mengatur-DNS-Record#h_01K0BP5TAHBDEJAZR0KTBD97BS)
+Subdomain merupakan bagian dari domain yang muncul sebelum domain utama dan ekstensi domain. Contohnya mail.mekari.com, **mail** pada alamat “**mail**.mekari.com” adalah subdomain. 
+Untuk mendaftarkan **subdomain** , Anda perlu memiliki domain terlebih dahulu. Lalu, pada halaman DNS Editor, Anda dapat mengisi **Host/Name** yang berisi nama subdomain pada kolom **Name** ketika mengisi value DNS Records, baik untuk tipe MX record, TXT, dan lainnya. Value DNS Records ini akan diberikan oleh tim Qontak setelah Anda mengisi _form_ pendaftaran di atas.
+###  **B. Mengapa kita perlu mengatur DNS Record?**[](https://help-center.qontak.com/hc/id/articles/48958258449433-Bagaimana-Cara-Mengatur-DNS-Record#h_01K45A9PJ0KY9VNFMTBE897VD1)
+Sebelum **mendaftarkan alamat pengirim email (**_**email sender**_**)** , pemilik domain perlu mendaftarkan **DNS Record** yang bertujuan untuk menentukan tujuan pengiriman email, memverifikasi identitas pengirim, dan memastikan pengiriman email yang aman. Tanpa **DNS Record** yang tepat, email mungkin tidak terkirim dengan benar atau dapat ditandai sebagai spam.
+###  **C. Cara Menambahkan DNS Record**[](https://help-center.qontak.com/hc/id/articles/48958258449433-Bagaimana-Cara-Mengatur-DNS-Record#h_01K0BP5TAHX5K5RARZ700YP0KY)
+Selain menjual domain, beberapa penyedia domain seperti **GoDaddy** , **Hostinger (NiagaHoster)** ,**NameCheap** , dan lainnya memiliki akses **Domain Manager**. Melalui domain manager, Anda dapat:
+  * Mendaftarkan **subdomain**.
+  * Mengelola **DNS Record** melalui **DNS Editor**.
+
+Jika penyedia **domain** Anda tidak memiliki **Domain Manager** , Anda dapat menggunakan _domain hosting_ lain yang memberikan akses untuk mengelola **DNS Record**. Di bawah ini merupakan beberapa contoh tampilan **DNS Editor** dari beberapa penyedia domain.
+**A. cPanel**
+  1. Masuk ke akun **cPanel** Anda.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344540070169)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344540075289)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344553181209)
+  2. Pilih menu **Zone Editor**.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344540075289)**
+  3. Pilih nama **domain** Anda, lalu klik **“Manage”**.  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344553181209)**
+  4. Klik **“+Add Record”** , lalu isi kolom sesuai dengan _**records**_ yang Qontak berikan.  
+Konfigurasi DNS record untuk**subdomain** ditandai dari kolom **‘Name’** dimana Anda dapat langsung mengisi **Host/Name** yang berisi nama subdomain Anda.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344553182617)
+Anda akan menerima **Value** dari **DNS Record** yang dikirimkan oleh tim kami melalui **email**. Dalam hal ini, Anda **wajib** mendaftarkan **5 (lima) value** di bawah ini ke **Domain Manager**. Contoh **Host/Name** di bawah telah mengandung nama **subdomain** yaitu **‘bd’.**  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50344553184281)
+  5. Ulangi langkah di atas hingga semua _records_ telah ditambahkan. 
+  6. Klik **Save Record** untuk menyimpan _record_ per baris, atau Anda dapat klik **Save All Records** untuk menyimpan semua sekaligus.
+
+###  **D. Verifikasi Subdomain dan Membuat Email Sender**[](https://help-center.qontak.com/hc/id/articles/48958258449433-Bagaimana-Cara-Mengatur-DNS-Record#h_01K0BPSJZTZ6W0C6116ZMWDX34)
+Setelah pengaturan **DNS Record** selesai, mohon informasikan kepada tim Mekari Qontak dengan cara membalas email yang sebelumnya telah dikirimkan agar **subdomain Anda dapat diverifikasi oleh tim kami.**
+Proses ini dapat memakan waktu hingga maksimal **2x24 jam** , tergantung status dari proses _propagate_**DNS Record** pada masing-masing **domain provide** r.
+Setelah proses verifikasi berhasil, **email pengirim (**_**sender email**_**)** yang Anda _submit_ akan dibuat oleh sistem, dan Anda dapat menggunakan email tersebut untuk mengirimkan **email campaign** melalui Mekari Qontak.
+Selanjutnya, Anda dapat mempelajari cara membuat [ Email Campaign](https://help-center.qontak.com/hc/id/articles/47425969961625-Bagaimana-Cara-Membuat-Email-Campaign), [Recipient List](http://help-center.qontak.com/hc/id/articles/47426266423065-Bagaimana-Cara-Membuat-Recipient-List-untuk-Email-Campaign), dan [Template untuk Email Campaign](https://help-center.qontak.com/hc/id/articles/47426448666521-Bagaimana-Cara-Membuat-Template-untuk-Email-Campaign) pada Mekari Qontak.
+
+###  **E. Frequently Asked Questions (FAQs)**[](https://help-center.qontak.com/hc/id/articles/48958258449433-Bagaimana-Cara-Mengatur-DNS-Record#h_01K45AFS25QNZS92CB9TVQXDRW)
+  1. **Mengapa saya disarankan menggunakan subdomain eksklusif (bukan domain utama) untuk mengirim email campaign di Qontak?**  
+Pengaturan DNS untuk **email campaign** membutuhkan **MX Record**. Walaupun **email campaign** hanya digunakan untuk mengirim email (tidak dapat menerima balasan), **MX Record** tetap wajib sesuai ketentuan penyedia layanan email kami.  
+Jika domain utama digunakan untuk lebih dari satu layanan email, hal ini dapat mengganggu kelancaran penerimaan email masuk. Karena itu, kami menyarankan penggunaan **subdomain khusus** **yang tidak digabung dengan layanan email lain** , agar proses pengiriman dan penerimaan email tetap stabil.
+
+1. **Apakah saya harus mengikuti aturan TTL (Time to Live) yang diberikan oleh Qontak?**  
+Jika domain editor Anda memiliki _default_ nilai TTL, Anda dapat mengikuti konfigurasi yang telah ada. Namun, jika**domain editor** Anda tidak memiliki nilai tersebut, Anda dapat mengikuti nilai yang kami berikan, yaitu **3600**.
+
+1. **Mengapa proses verifikasi gagal meskipun saya telah melakukan penambahan dan/atau perubahan DNS Record sesuai value yang diberikan oleh Qontak?**  
+Jika Anda yakin **value** yang di-_setup_ telah sesuai dengan yang **value** yang diberikan, Anda dapat menunggu maksimal**2x24 jam** untuk melakukan verifikasi ulang. Kondisi ini dapat terjadi karena proses _propagate_ **DNS Record** dari _domain provider_ belum selesai.
+
+1. **Mengapa proses verifikasi gagal meskipun saya sudah menambahkan atau mengubah DNS Record sesuai value dari Qontak?**  
+Berikut beberapa kemungkinan **penyebab proses verifikasi gagal** :  
+- **Value DNS belum sesuai** – pastikan **value** yang Anda masukkan sama persis dengan yang diberikan Qontak (tanpa tambahan spasi, titik, atau karakter lain).  
+- **Propagasi DNS belum selesai** – meskipun **value** sudah benar, perubahan DNS biasanya membutuhkan waktu hingga**2x24 jam** untuk sepenuhnya aktif di semua _server_.  
+- **Cache domain provider** – beberapa penyedia domain bisa menyimpan _cache_ sehingga perubahan tidak langsung terbaca.  
+Jika **value** yang Anda isi sudah benar, silakan tunggu maksimal **2x24 jam** lalu lakukan verifikasi ulang.
+
+1. **Mengapa value Host/Name yang saya isi di DNS Editor bisa duplikat?**  
+Beberapa penyedia domain secara otomatis menambahkan nama **domain/subdomain** saat Anda mengisi **Host/Name**. Jika hal ini terjadi, Anda perlu menyesuaikan agar tidak tercatat sebagai duplikat.  
+**Contoh:** Pada **Amazon Route 53** atau **cPanel** , nama subdomain akan terisi otomatis. Jadi, jika Qontak memberikan Host/Name seperti **aliyundm.bd** , **dmtrace.bd** , atau **dmarc.bd** , maka Anda hanya perlu mengisi **aliyundm** , **dmtrace** , atau **dmarc** saja, karena _value_**.bd** akan otomatis ditambahkan oleh **domain manager**.
 
 ## Error States  <!-- confidence:medium ~ -->
 

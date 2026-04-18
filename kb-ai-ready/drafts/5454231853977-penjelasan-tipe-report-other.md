@@ -27,14 +27,22 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Report Other adalah salah satu tipe report yang tersedia di Qontak CRM yang memungkinkan Anda menambahkan berbagai jenis laporan analitik ke dalam dashboard. Tipe report ini mencakup tiga laporan utama: Achievement by User by Time (menampilkan perbandingan deal yang dimenangkan dengan target per bulan), Task Completed by Project (menampilkan jumlah task yang diselesaikan per proyek), dan Activities by User by Time (menampilkan aktivitas seperti catatan, panggilan, email, dan pertemuan berdasarkan periode waktu). Setiap report dirancang untuk memberikan insights berbeda tentang kinerja tim dan progress bisnis Anda di Qontak CRM.## Why It Matters  <!-- confidence:medium ~ -->
 
-Report Other membantu Anda memantau kinerja tim secara komprehensif melalui beberapa dimensi penting. Dengan Achievement by User by Time, Anda dapat membandingkan pencapaian deal aktual dengan target yang telah ditetapkan. Task Completed by Project memudahkan tracking penyelesaian proyek dan produktivitas tim. Activities by User by Time memberikan visibilitas tentang engagement pelanggan melalui berbagai saluran komunikasi. Dengan menambahkan report-report ini ke dashboard, Anda memperoleh overview real-time yang membantu pengambilan keputusan strategis dan manajemen performa tim.
-
+Di dalam Qontak, Anda bisa menambahkan beberapa tipe report salah satunya adalah tipe Report Other. Dalam tipe Report ini ada berbagai pilihan report yang bisa Anda tambahkan ke dalam dashboard. Untuk menambahkannya, Anda bisa klik menu **Report** dan pilih **Other**.
+### 1. Achievement by User by Time[](https://help-center.qontak.com/hc/id/articles/5454231853977-Penjelasan-Tipe-Report-Other#h_01HHXWB1M67717HZB88QYV3AEW)
 ![56.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807994570265)
+Grafik  _Achievements by User by Time_ menampilkan data ** _Deals_** yang dikelompokkan berdasarkan bulan pada tahun ini, ditambah prakiraan 6 bulan pada tahun berikutnya. Grafik yang ditampilkan berbentuk bar. Grafik ini membandingkan besaran ** _deal_** yang berada di stage ** _Won_** dengan ** _Targets_**.
+Besaran Deal yang terhitung mengacu pada waktu di mana deal tersebut dipindah ke stage Won. Contohnya, sebuah deal dibuat pada tanggal 9 September 2018, lalu diubah ke stage Won pada tanggal 14 November 2018. Maka, deal tersebut akan masuk ke total besaran deal untuk periode November 2018.
+Pada bagian ** _forecast_** , data deal yang ditampilkan pada grafik adalah deal yang memiliki tanggal ** _Close Date_** (Tanggal Berakhir) di tahun berikutnya.
+Jika salah satu kelompok dari bar sebelah kiri di-_hover_, muncul informasi persentase perbandingan besaran deal dengan target. Jika bar pada bagian forecast di-_hover_, akan muncul informasi besaran deal yang terkelompokkan berdasarkan stage.
+### 2. Task Completed by Project[](https://help-center.qontak.com/hc/id/articles/5454231853977-Penjelasan-Tipe-Report-Other#h_01HHXWB1M6X5QM8WFNQ13W6MWZ)
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5454172502297)
+Task Completed by Project menampilkan data  _task_ yang sudah diselesaikan per projek. Data ini bisa Anda download dalam bentuk Excel dengan tampilan sebagai berikut.  
 ![3a.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5454158328217)
+### 3. Activities by User by Time[](https://help-center.qontak.com/hc/id/articles/5454231853977-Penjelasan-Tipe-Report-Other#h_01HHXWB1M65GSZCYS6823Q688Y)
 ![57.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50807994571673)
+Grafik  _Activities by User by Time_ menampilkan data ** _Note, Call, Email,_** dan **_Meetig_** yang dikelompokkan berdasarkan periode yang terpilih. Periode pada grafik ini tidak mengikuti filter bar, namun memiliki pilihan periode sendiri, yaitu 12 bulan terakhir (_last 12 months_) dan 12 minggu terakhir (_last 12 weeks_).
+Jika salah satu kelompok dari bar di-_hover_, maka akan tampil informasi periode dan komponen _item_ yang terasosiasi dengan bar tersebut. Salah satu jenis  _item_ dapat dimunculkan dan disembunyikan dengan klik nama _item_ di bagian bawah grafik.
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

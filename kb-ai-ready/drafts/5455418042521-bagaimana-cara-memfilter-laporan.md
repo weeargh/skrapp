@@ -39,24 +39,14 @@ Catatan: Fitur filter laporan hanya tersedia di versi website Qontak CRM, bukan 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda dan buka menu Dashboard dari navigasi utama.
-   → Halaman Dashboard akan terbuka dan menampilkan laporan default.
 
-2. Klik dropdown "Sales Pipeline" untuk memfilter laporan berdasarkan pipeline yang sudah Anda buat.
-   → Daftar pipeline akan ditampilkan untuk dipilih.
-
-3. Klik dropdown "Select Team" dan "Select Users" untuk memfilter laporan berdasarkan tim atau user tertentu.
-   → Sistem akan menampilkan opsi tim dan user yang tersedia.
-
-4. Pilih rentang waktu dengan mengklik dropdown tanggal untuk memfilter laporan (bulan ini, bulan lalu, minggu lalu, atau range kustom).
-   → Opsi periode waktu akan ditampilkan.
-
-5. Klik tombol "Submit" setelah semua filter sesuai kebutuhan Anda.
-   → Laporan akan diperbarui dan menampilkan data yang sudah difilter.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah Anda klik tombol "Submit", Dashboard akan menampilkan laporan yang sudah disesuaikan dengan filter yang Anda pilih. Data yang ditampilkan akan berkurang dan hanya menunjukkan informasi sesuai dengan Sales Pipeline, Tim, User, dan periode waktu yang Anda tentukan. Laporan menjadi lebih fokus dan mudah dibaca untuk analisis kebutuhan bisnis Anda.
-
+Memfilter laporan di Dashboard ini, bertujuan untuk mempermudah dalam membaca laporan Anda sesuai kebutuhan, supaya data yang ditampilkan tidak terlalu banyak dan hanya data yang diperlukan saja.
+Berikut cara memfilter laporan di Dashboard:
+  1. Kustomisasi filter laporan dapat Anda lakukan pada **“CRM Qontak versi website”**. Langkah pertama untuk melakukan filter laporan pada Dashboard, Anda dapat masuk ke menu **Dashboard**.
+  2. Selanjutnya, Anda bisa mulai memfilter laporan Anda, berdasarkan Pipeline yang sudah Anda buat dengan klik dropdown “**Sales Pipeline** ”.  
 ![37.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50804828942489)
+
+Jika setiap elemen filter Anda sudah sesuai. Anda bisa klik **“Submit”** untuk melihat hasil filter laporan yang sudah Anda sesuaikan dengan kebutuhan Anda. Semua laporan yang terdapat di Dashboard Anda, dapat disesuaikan dengan kebutuhan dengan mencustomnya melalui menu **Reports.**
 
 ## Error States  <!-- confidence:low ? -->
 

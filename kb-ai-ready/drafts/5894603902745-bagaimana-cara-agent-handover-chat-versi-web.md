@@ -37,24 +37,16 @@ Anda ingin melakukan Handover Chat kepada agent lain melalui versi web Qontak Om
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel Anda melalui web browser.
-2. Navigasikan ke menu Inbox, kemudian klik submenu "All chats".
-3. Pilih Room Percakapan yang ingin Anda handover ke agent lain. Sistem akan membuka detail percakapan.
-4. Pada pesan atau room percakapan tersebut, klik tombol "Assign".
-5. Pilih nama Agent dari daftar yang tersedia untuk menerima handover chat.
-6. Klik tombol konfirmasi untuk menyelesaikan proses Handover Chat.
-Agent yang ditunjuk akan menerima notifikasi tentang percakapan yang telah di-assign kepada mereka.## Expected Result  <!-- confidence:medium ~ -->
 
-Setelah berhasil melakukan Handover Chat:
-
-• Room Percakapan akan dialihkan dari Agent sebelumnya ke Agent baru yang ditunjuk
-• Status assignment pada percakapan akan menunjukkan nama Agent penerima
-• Agent penerima akan melihat percakapan muncul di daftar chat mereka di menu Inbox
-• Riwayat handover akan tercatat dalam history percakapan untuk audit trail
-• Pelanggan tidak melihat perubahan ini namun percakapan akan dilanjutkan oleh Agent baru
-
-![83.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937458997401)
+**Inbox** merupakan sebuah fitur Omnichannel Qontak dimana para customer service akan melayani semua keluhan user berupa chat yang masuk kedalam Inbox.
+Dalam membalas pesan yang masuk, **Agent** bisa melakukan Handover Chat dengan cara berikut ini.
+  1. Masuk ke akun Qontak Omnichannel Anda.
+  2. Pilih menu**Inbox** , lalu klik submenu **"All chats"**. Kemudian pilih Room Percakapan yang akan Anda _handover.  
+![83.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937458997401)  
+_
+  3. Agent dapat melakukan Handover Chat dengan cara memilih pesan yang masuk, kemudian klik **"Assign"** untuk menambahkan Agent yang akan _handover chat_.  
 ![84.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50937459001369)
+Pesan yang bisa di-_handover_ oleh agent hanya pesan yang memiliki status.
 
 ## Error States  <!-- confidence:medium ~ -->
 

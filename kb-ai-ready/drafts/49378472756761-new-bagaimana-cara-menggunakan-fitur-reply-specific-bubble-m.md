@@ -41,21 +41,18 @@ Untuk menggunakan fitur Reply Specific Bubble Message di WhatsApp melalui Omnich
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka akun Omnichannel Qontak Anda dan navigasikan ke menu **Inbox**. Klik tab **All chats** untuk melihat daftar percakapan WhatsApp.
 
-2. Pilih room chat WhatsApp yang ingin Anda balas. Sistem akan menampilkan detail percakapan dan riwayat pesan.
-
-3. Pada bubble message yang ingin Anda balas, klik ikon panah yang muncul di pesan tersebut. Kolom input pesan akan aktif dan terhubung ke pesan yang Anda pilih.
-
-4. Ketik pesan balasan Anda di kolom input. Anda dapat mengirim balasan dalam bentuk teks, file, video, audio, gambar, atau maps.
-
-5. Klik tombol kirim. Pesan balasan akan terkirim dan ditampilkan sebagai reply langsung ke pesan asli pelanggan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah Anda mengirim balasan, pesan balasan akan muncul di percakapan dengan indikasi visual bahwa pesan tersebut merupakan reply ke bubble message spesifik. Pelanggan akan melihat bahwa pesan Anda adalah balasan langsung ke pesan mereka yang sebelumnya, bukan pesan umum. Sistem akan menampilkan struktur percakapan yang lebih terorganisir dengan penanda reply yang jelas, membantu pelanggan memahami konteks balasan Anda dengan lebih baik.
-
+WhatsApp memiliki fitur khusus yang berguna untuk semua pengguna yaitu “Reply Specific Bubble Message”. Anda dapat membalas pesan secara spesifik dan berguna untuk mengurangi pesan terlewat saat membalas pesan dari pelanggan. Berikut langkah-langkah menggunakan fitur reply spesifik bubble message di WhatsApp melalui Omnichannel Qontak.
+  1. Log In ke akun Omnichannel Qontak Anda. Setelah itu, masuk ke menu**“Inbox”** , lalu klik tab **“All chats”**.
+  2. Pilih salah satu _room chat_ WhatsApp yang ingin Anda balas pesannya.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383621596825)
+  3. Kemudian, klik ikon ‘panah’ pada _bubble message_ yang ingin Anda balas dan tuliskan pesan balasan Anda.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383621597721)
+  4. Maka, pesan balasan yang Anda kirimkan akan terlihat seperti ini.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49383621601433)
+
+Anda juga dapat membalas pesan dalam bentuk tulisan, file, video, audio, gambar dan maps.  
+Berikut contoh penerapan fitur reply spesific bubble message dari sisi User.
 
 ## Error States  <!-- confidence:low ? -->
 

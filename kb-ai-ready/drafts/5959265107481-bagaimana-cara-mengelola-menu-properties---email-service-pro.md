@@ -37,33 +37,17 @@ Untuk mengelola menu Properties dan Email Service Provider pada Qontak CRM, Anda
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke dashboard Qontak CRM Anda.
-   → Dashboard utama CRM akan ditampilkan.
 
-2. Klik menu **Properties**.
-   → Halaman Properties akan terbuka.
-
-3. Pilih tab **Email Service Provider**.
-   → Daftar tipe email yang tersedia akan ditampilkan.
-
-4. Pilih tipe email yang ingin Anda hubungkan (contoh: "Connect with Exchange").
-   → Form koneksi email akan muncul.
-
-5. Masukkan email dan kata sandi Anda pada form yang tersedia.
-   → Sistem akan memproses koneksi email Anda.
-
-6. Tunggu notifikasi dari sistem.
-   → Notifikasi akan mengonfirmasi keberhasilan koneksi email.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil menghubungkan email pada Email Service Provider:
-• Notifikasi sukses akan muncul di dashboard
-• Email Anda akan tersimpan sebagai sender ID untuk pengiriman email melalui dashboard CRM
-• Tampilan akun Anda akan memperbarui email yang terhubung
-• Email yang dihubungkan dapat digunakan sebagai pengirim untuk semua komunikasi email yang dilakukan melalui Qontak CRM
-• Hanya akun Anda yang terpengaruh; akun pengguna lain tidak berubah
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49039982381465)
+Fitur **Email Service Provider** pada dashboard CRM Qontak digunakan untuk mengatur alamat email yang akan digunakan sebagai sender ID pada email yang dikirimkan melalui dashboard CRM. Akun dengan akses **Member** atau **Admin** dapat mengubah email masing - masing akun.
+Perubahan yang dilakukan hanya akan mengubah tampilan akun tersebut. Untuk menghubungkan email pada **Email Service Provider** CRM dapat dilakukan dengan cara berikut ini:
+  1. Klik Menu **Properties**.**  
+**
+  2. Pilih tab **Email Service Provider**. Lalu, sambungkan email Anda dengan memilih salah satu tipe email yang tersedia.**  
+![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49039982381465)  
+**
+  3. Jika Anda klik **“Connect with Exchange”** maka akan muncul tampilan sebagai berikut, silahkan masukan email dan kata sandi Anda.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398786457)
+Apabila muncul notifikasi, artinya email Anda sudah berhasil terhubung.
 
 ## Error States  <!-- confidence:medium ~ -->
 

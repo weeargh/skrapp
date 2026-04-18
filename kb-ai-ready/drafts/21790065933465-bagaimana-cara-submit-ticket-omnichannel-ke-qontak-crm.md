@@ -39,47 +39,35 @@ Untuk mensubmit ticket Omnichannel ke Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Qontak Omnichannel dan navigasi ke menu **Inbox**, kemudian klik submenu **All chats**. Sistem akan menampilkan daftar pesan.
 
-2. Pilih salah satu pesan yang ingin Anda buatkan tiket. Sistem akan membuka detail percakapan.
-
-3. Pada **Room detail**, klik tombol **"Submit ticket"** yang berada pada bagian **Ticket**. Pop-up form akan muncul.
-
-4. Pilih **Pipeline** yang Anda inginkan dari dropdown. Sistem akan menampilkan daftar pipeline yang tersedia.
-
-5. Pilih **Stage** tempat ticket akan dimasukkan. Sistem akan menampilkan kolom-kolom tambahan.
-
-6. Isi kolom-kolom berikut:
-   - **Ticket name**: nama tiket
-   - **Description**: deskripsi tiket
-   - **Assignee**: pengguna yang bertanggung jawab
-   - **Ticket priority**: tingkat prioritas
-   - **Ticket Category**: kategori tiket
-   - **Due date**: tenggat waktu
-   - **Note**: catatan tambahan
-   - **Contact Association**: kontak terkait
-   - **Company Association**: perusahaan terkait
-   - **Product Association**: produk terkait
-   - **Task Association**: task terkait
-
-7. Klik tombol **"Submit"**. Sistem akan memproses dan membuat ticket di Qontak CRM.
-
-8. Notifikasi sukses akan muncul. Klik nomor ticket untuk membuka tiket di Qontak CRM.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah mensubmit ticket dengan sukses:
-
-• Sistem menampilkan notifikasi konfirmasi bahwa ticket berhasil dibuat
-• Nomor ticket unik akan ditampilkan
-• Ticket muncul di menu Tickets di Qontak CRM dengan status sesuai Stage yang dipilih
-• Semua informasi yang diisi (nama, deskripsi, assignee, priority, kategori, due date, catatan, dan asosiasi kontak/perusahaan/produk/task) tersimpan di Qontak CRM
-• User dapat membuka dan mengelola ticket di Qontak CRM melalui link yang disediakan
-• Ticket dapat diakses oleh assignee untuk penanganan lebih lanjut
-
+Setelah membuat template ticket pada menu [Integrasi](https://help-center.qontak.com/hc/id/articles/5642795619737), selanjutnya Anda dapat mensubmit ticket tersebut. Fitur pada Omnichannel ini memanfaatkan fitur Tiket di CRM yang membuat pengguna di chatpanel dapat membuat tiket di CRM. Namun fitur ini perlu diaktifkan pada kedua produk. Berikut langkah-langkahnya.
+  1. Pada menu **Inbox** , lalu klik submenu **All chats**. Kemudian pilih salah satu pesan yang ingin Anda buatkan tiketnya.  
 ![75.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50911798216729)
+  2. Pada **Room detail** , klik **“Submit ticket”** yang berada pada bagian **Ticket**.  
 ![76.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50911841781401)
+  3. Selanjutnya, Anda akan melihat _pop up_ berikut dan pilih **Pipeline** yang Anda inginkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXeZ-Pza-pQDLuJf66Q7Es5xXOvDehGeauk4tRpGH-exBifL46yIZPuM3aBkxnIVKSNgPuME8f6xv3uXmaYYZT63T7ZGH8dx7TlN0kmY8nUEcb297XCixZ7ky-V8rnq_W4Mz6Y9odHbcO5mY7iS1Zya6nW8%3Fkey%3DJqkn8dhQ_InX_HZYbdhKWg)
+  4. Pilih di **Stage** mana ticket tersebut akan Anda masukkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh7-rt.googleusercontent.com%2Fdocsz%2FAD_4nXfl0kQGBVkCqt_sTKFqMm15S-wy61_sXhkmMFwTg-LYHRpb2ejuJnMqDtgUWzQMznaR5RJOTSPAbbTKyA81QMx3LSEm4jk8Q_EIILPVxfJg-r9MEvSFjaPOqr6Z_KCZwxS-ReE7_GYUwu8jOHvODBad0Wg%3Fkey%3DJqkn8dhQ_InX_HZYbdhKWg)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F35834581904537)
+  5. Maka akan muncul kolom lainnya seperti berikut.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F35834581904537)  
+****Keterangan:  
+**** **No** | **Kolom** | **Penjelasan**  
+---|---|---  
+1 | Ticket name | Masukkan nama tiket yang Anda inginkan.  
+2 | Description | Masukkan deskripsi informasi dari tiket tersebut.  
+3 | Assignee | Pilih kepada siapa tiket akan di assign.  
+4 | Ticket priority | Pilih prioritas tiket tersebut.  
+5 | Ticket Category | Pilih kategori atas tiket tersebut.  
+6 | Due date | Tentukan tenggat waktu atas tiket tersebut.  
+7 | Note | Masukkan note atau catatan (jika dibutuhkan).  
+8 | Contact Association | Pilih kepada kontak mana tiket tersebut akan diasosiasikan.  
+9 | Company Association | Pilih kepada perusahaan mana tiket tersebut akan diasosiasikan.  
+10 | Product Association | Pilih kepada produk mana tiket tersebut akan diasosiasikan.  
+11 | Task Association | Pilih kepada task mana tiket tersebut akan diasosiasikan.  
+  6. Jika sudah, klik ****“** Submit**”****.**  
+**
+  7. Maka tiket sudah berhasil terbuat, Anda dapat klik **“nomor tiket”** untuk membuka tiket pada Qontak CRM.  
 ![77.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50912106053913)
 
 ## Error States  <!-- confidence:medium ~ -->

@@ -40,30 +40,24 @@ Pastikan Anda sudah login ke akun Qontak Omnichannel sebelum mengakses fitur ini
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda.
 
-2. Navigasikan ke Menu Campaign (Broadcast). Sistem akan menampilkan halaman kampanye.
-
-3. Klik tombol "Templates". Daftar template akan ditampilkan.
-
-4. Klik tombol "Create template" untuk membuat template baru.
-
-5. Pilih "Campaign template" dari opsi yang tersedia. Sistem akan menampilkan halaman pemilihan kategori template.
-
-6. Pilih salah satu dari tiga kategori pesan: Marketing (untuk promosi dan pengumuman produk), Utility (untuk informasi penting seperti pengiriman dan pesanan), atau Authentication (untuk kode verifikasi akun). Kategori yang dipilih akan diterapkan pada template Anda.
-
-7. Lanjutkan dengan mengisi detail template sesuai kategori yang dipilih.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah memilih salah satu kategori pesan (Marketing, Utility, atau Authentication), sistem akan menampilkan form template yang sesuai dengan kategori yang dipilih. Anda akan dapat melihat:
-
-• Nama kategori yang dipilih pada template
-• Field untuk mengisi konten pesan sesuai guideline kategori tersebut
-• Opsi untuk melanjutkan ke tahap pembuatan template berikutnya
-
-Template dengan kategori yang tepat akan memastikan pesan Blast Anda sesuai dengan kebijakan WhatsApp Business dan meningkatkan delivery rate.
-
+Pada Menu**Campaign (Broadcast)** , terdapat beberapa tipe kategori pesan yang dapat Anda pilih untuk mengajukan template pesan Campaign/WhatsApp Blast. Di dalam panduan ini terdapat penjelasan serta contoh dari kategori - kategori tersebut.
+Berikut adalah penjelasan lebih lanjutnya.
+  1. Login ke Akun Omnichannel Anda dan masuk ke Menu**Campaign (Broadcast)**.
+  2. Klik **"Templates"** , lalu klik **“Create template”** dan pilih **Campaign template**.   
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43691108065945)
+  3. Maka, akan ditampilkan beberapa Kategori _(Category)_ yang dapat Anda pilih.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh6.googleusercontent.com%2FSr0Bj6c12DAZvZ1Z67jm3Cmhw48n2hlaokSgtNreiPoVLVhl0pmxmPDMJxU8KpZlk6qwwcZyuhEZA4aceBQz_AV0kJq0eWlg-NA0T3gXGyeJWUjqR5QEI2lVgSqqoFr3Vx09ubtE39bYO4XF3NLsuVE)
+
+###  **Kategori - Kategori pada Menu Broadcast - Templates**[](https://help-center.qontak.com/hc/id/articles/5923575558425-Kategori-Pesan-WhatsApp-Blast-pada-Menu-Campaign-Broadcast#h_01JMFGMDCBPNNHNTX9C6W2KMTA)
+  1. **Marketing**  
+Marketing adalah kategori template pada menu Broadcast yang diperuntukkan guna mengirim tawaran promo, pengumuman produk, peningkatan kesadaran dan ketertarikan pelanggan akan produk atau brand.
+  2. **Utility**  
+Utility adalah kategori template pada menu Broadcast untuk mengirimkan rincian informasi penting, seperti kabar terbaru pengiriman, pemesanan, akun, dan peringatan tertentu.
+  3. **Authentication**  
+Authentication adalah template pada Broadcast yang Anda pilih saat hendak mengirimkan kode verifikasi kepada pelanggan Anda untuk akses akun atau akses tertentu lainnya yang membutuhkan verifikasi.
+
+Demikian penjelasan mengenai tipe kategori pesan dalam pengajuan template chat Broadcast pada Qontak Omnichannel.
 
 ## Error States  <!-- confidence:high ✓ -->
 

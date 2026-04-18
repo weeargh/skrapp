@@ -36,23 +36,28 @@ Untuk membuat expense di Mekari Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka Dashboard Mekari Qontak CRM dan klik menu **Expense**. Sistem akan menampilkan halaman daftar expense.
-2. Klik tombol **Add Expense**. Halaman form pembuatan expense akan terbuka.
-3. Isi semua informasi expense:
-   - **Expense date**: Masukkan tanggal pembuatan expense
-   - **Expenses amount**: Masukkan jumlah dan pilih mata uang
-   - **Associated contact**: (Opsional) Pilih kontak jika expense terkait dengan kontak tertentu
-   - **Associated company**: (Opsional) Pilih perusahaan kontak
-   - **Associated deal**: (Opsional) Pilih deal jika expense terkait dengan deal tertentu
-   - **Category**: Pilih kategori expense yang sesuai
-   - **Description**: (Opsional) Tambahkan deskripsi expense
-   - **Upload photos/images**: (Opsional) Unggah bukti pembayaran
-4. Klik tombol **Submit**. Data expense akan tersimpan dan sistem akan menampilkan konfirmasi penyimpanan.## Expected Result  <!-- confidence:high ✓ -->
 
-Expense berhasil dibuat dan tersimpan. Sistem menampilkan pesan konfirmasi sukses. Data expense kini muncul di daftar menu Expense dengan informasi lengkap (tanggal, jumlah, kategori, kontak/deal terkait jika ada). Expense dapat dievaluasi dan dilacak oleh perusahaan sesuai kebutuhan bisnis.
-
+Melalui Mekari Qontak CRM Dashboard, Anda dapat mencatat pengeluaran yang dapat dikaitkan ke proses deal tertentu. Dengan begitu, pengeluaran dapat dievaluasi oleh perusahaan.
+Berikut adalah langkah - langkahnya menggunakan fitur expense.
+  1. Pilih Menu **“Expense”.**
+  2. Lalu, klik **“Add Expense”**.  
 ![52.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149356184985)
-![53.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149356187545)
+  3. Masukan informasi data Expense Anda.  
+![53.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53149356187545)  
+Keterangan:
+**No.** | **Nama Tombol/Kolom** | **Deskripsi**  
+---|---|---  
+1 | Expense date | Isikan kapan expense tersebut dibuat.  
+2 | Expenses amount | Isikan jumlah expense tersebut dengan mengisikan mata uangnya terlebih dahulu.  
+3 | Associated contact | Apabila expense ini dilakukan dengan salah satu kontak pada CRM, Anda dapat mencantumkannya di sini.  
+4 | Associated company | Isikan perusahaan kontak tersebut.  
+5 | Associated deal | Apabila expense ini terkait dalam suatu deal, Anda dapat mencantumkannya di sini.  
+6 | Category |  Anda dapat memilih salah satu kategori expense ini.  Pilihan kategori dapat dikelola pada menu Properties yang dapat Anda pelajari pada tahap selanjutnya.  
+7 | Description | Anda dapat menambahkan deskripsi expense ini.  
+8 | Upload photos/images | Tambahkan gambar bukti pembayaran jika perlu.  
+  4. Lalu, klik**"Submit"** untuk menyimpan data.
+
+Demikian adalah panduan cara membuat expense di Mekari Qontak CRM.
 
 ## Error States  <!-- confidence:medium ~ -->
 

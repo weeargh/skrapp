@@ -37,37 +37,30 @@ Untuk melakukan update deal secara massal di Qontak CRM versi web, Anda membutuh
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda.
-   → Sistem akan menampilkan dashboard utama.
 
-2. Buka menu Deals.
-   → Halaman daftar Deal akan ditampilkan.
-
-3. Klik tombol "Add Tickets" kemudian pilih "Bulk update deals".
-   → Sistem akan membuka halaman Bulk update deals dengan opsi template.
-
-4. Klik tombol "CSV template" atau "Excel template" untuk mengunduh template spreadsheet.
-   → File template akan terunduh ke perangkat Anda.
-
-5. Isi template spreadsheet dengan data yang ingin diupdate (pastikan Pipeline, Stage, dan Slug ID sesuai dengan data existing).
-
-6. Kembali ke halaman Bulk update deals dan klik tombol "Choose file" untuk mengunggah template yang sudah diisi.
-   → Dialog pemilihan file akan muncul.
-
-7. Pilih file template dan klik tombol "Upload".
-   → Sistem akan memproses dan menyimpan semua perubahan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah upload berhasil:
-
-1. Semua deal yang diupdate akan ditampilkan di daftar Deal dengan status dan pipeline/stage yang baru.
-2. Sistem akan menampilkan notifikasi konfirmasi bahwa update massal berhasil disimpan.
-3. Data di spreadsheet yang Anda upload akan tersinkronisasi dengan sistem Qontak CRM.
-4. Deal-deal yang diupdate dapat langsung dilihat pada menu Deals dengan perubahan yang sesuai dengan template yang diunggah.
-
+Melalui Qontak CRM, setelah Anda [menambahkan deal](https://help-center.qontak.com/hc/id/articles/5659326461337), Anda dapat meng _update_ deal yang Anda lakukan baik satuan maupun secara bersamaan _(bulk)_. Kemudian, Anda dapat menempatkan satuan Deal tersebut dengan pipeline dan stage yang sesuai. 
+Berikut langkah-langkah untuk meg _update_ Deal secara massal pada Web. 
+  1. Login ke Akun Qontak CRM Anda.
+  2. Masuk ke Menu **Deals.**
+  3. Klik **“Add Tickets”** lalu pilih **Bulk update deals.**  
 ![26.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49955362961433)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163158425)
+  4. Maka, Anda akan diarahkan ke halaman berikut.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163158425)  
+**No.** | **Nama Tombol** | **Deskripsi**  
+---|---|---  
+1 | CSV template | Klik untuk mengunduh template spreadsheet update massal deal dalam format CSV.  
+2 | Excel template | Klik untuk mengunduh template spreadsheet update massal deal dalam format XLS atau XLSX.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163166361)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163160601)
+
+**Penting  
+** Terdapat beberapa hal yang harus Anda ketahui sebelum mengunggah, yaitu:  
+- Deals Anda tidak dapat diperbarui jika pipeline, stage, dan ID slug tidak cocok. Anda dapat menemukan ID Slug baik dalam data deals yang diunduh atau melalui URL [rincian profil deals.](https://help-center.qontak.com/hc/id/articles/6081264912025)![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163160601)  
+- Deals Anda tidak dapat diperbarui jika pipeline dan stage tidak ditemukan.  
+- Untuk memperbarui deals, pastikan Anda menggunakan template di atas.  
+- Untuk memperbarui deals, pastikan ID slug cocok dengan data sebelumnya.  
+- Jumlah baris mempengaruhi durasi upload. Maksimal jumlah update adalah 3000 baris.
+
+Demikian adalah panduan meng _update_ deal secara massal melalui Qontak CRM. Selain itu, Anda dapat juga dapat menambah dan mengupdate deals massal secara bersamaan, pelajari caranya [di sini.](https://help-center.qontak.com/hc/id/articles/26437621611801)
 
 ## Error States  <!-- confidence:medium ~ -->
 

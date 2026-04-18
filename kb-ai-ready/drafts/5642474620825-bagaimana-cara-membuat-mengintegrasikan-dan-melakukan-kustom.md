@@ -44,39 +44,70 @@ Jika Anda tidak memiliki role Admin, hubungi tim support kami di support-qontak@
 
 ## Steps  <!-- confidence:high ✓ -->
 
-**Membuat Widget Web Chat Baru:**
 
-1. Buka menu **Channel Integration** dan pilih **Web Chat**.
-2. Klik tombol **Add widget**.
-3. Isi kolom **Widget name** (nama widget) dan **Domain** (domain website Anda).
-4. Klik tombol **Connect**. Sistem akan memproses data Anda.
-5. Jika berhasil, pop-up **Widget Created** akan muncul sebagai konfirmasi. Klik **OK** untuk menutupnya.
+**Integrations** merupakan sebuah fitur Omnichannel Qontak di mana para customer bisa menghubungkan berbagai platform dengan chat panel seperti email atau Instagram.
+**Penting**  
+Hanya pengguna dengan**role Admin yang dapat melakukan integrasi**. Apabila Anda tidak memiliki akun dengan role Admin, Anda dapat menghubungi tim support kami di 
+Untuk mengelola integrasi Qontak Omnichannel dengan WebChat pada Web, Anda perlu mengikuti langkah-langkah berikut:
+###  A. Cara Integrasi WebChat dengan Widget Baru[](https://help-center.qontak.com/hc/id/articles/5642474620825-Bagaimana-cara-Membuat-Mengintegrasikan-dan-Melakukan-Kustomisasi-Qontak-Web-Chat#h_01HHY1KRFPT5R0VQ61CFAEPQCQ)
+  1. Pada menu**Channel Integration,** pilih **Web Chat.  
+**![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49062472998425)
+  2. Pilih **“Add widget”.  
+![Connect_webchat.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398702233)**
 
-**Mengelola Isi dan Tampilan Widget:**
+###  B. Cara Mengelola Isi dan Tampilan Widget pada WebChat[](https://help-center.qontak.com/hc/id/articles/5642474620825-Bagaimana-cara-Membuat-Mengintegrasikan-dan-Melakukan-Kustomisasi-Qontak-Web-Chat#h_01HHY1KRFPTET5PSQYWHW1KSG4)
+  1. Pada menu**Integration,** pilih **Web Chat.  
+**![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49062472998425)
+  2. Pilih **“Action”** pada daftar widget yang ingin Anda kelola, kemudian klik **Set up widget.  
+![Stage.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398727193)**
 
-6. Pada daftar widget, klik **Action** pada widget yang ingin dikelola.
-7. Pilih **Set up widget**.
-8. Di halaman Widget setup, Anda dapat melihat Widget status, Widget ID, Widget name, Domain, dan Embed code. Gunakan tombol **Copy** untuk menyalin Widget ID atau Embed code.
-9. Pada bagian **Widget appearance**, unggah logo dan tentukan warna-warna widget sesuai preferensi Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil menyelesaikan langkah-langkah di atas, Anda akan mendapatkan:
-
-- **Widget Created**: Pop-up konfirmasi menunjukkan widget telah berhasil dibuat
-- **Widget ID**: Nomor identifikasi unik yang dapat disalin untuk referensi
-- **Embed code**: Kode siap pakai yang dapat ditambahkan ke website Anda
-- **Widget setup page**: Halaman manajemen lengkap dengan kontrol status koneksi (toggle on/off), informasi widget, dan pengaturan tampilan
-- **Kustomisasi aktif**: Logo dan warna widget sudah diterapkan sesuai desain yang Anda tentukan
-
-Widget Web Chat Anda siap dipasang dan digunakan di website.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49062472998425)
-![Connect_webchat.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398702233)
-![Stage.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398727193)
-![Widget_setup.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398732697)
-![Widget_appearance.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391182617)
-![Widget_content.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391181337)
+3. Pada halaman Widget setup, Anda dapat mengatur tampilan widget pada website Anda.  
+![Widget_setup.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398732697)**Keterangan:******  
+**** **No.** |  **Nama Kolom** |  **Deskripsi**  
+---|---|---  
+1 |  Widget status |  Anda dapat menyambungkan dan memutus sambungan integrasi terhadap WebChat dengan menekan tombol togglenya.  
+2 |  Widget ID |  Kolom ini berisi nomor identifikasi khusus untuk Widget. Anda dapat menyalinnya dengan klik**“Copy”.**  
+3 |  Widget name |  Kolom ini berisi nama yang widget yang telah Anda isikan sejak awal pembuatannya.  
+4 |  Domain |  Kolom ini berisi doman widget yang telah Anda isikan sejak awal pembuatannya.  
+5 |  Embed code |  Kolom ini berisi Embed code widget. Anda bisa menyalinnya dengan klik**“Copy”.**  
+  4. Kemudian, pada Widget apperance, Anda dapat mengunggah logo Anda beserta warna - warna widgetnya.  
+![Widget_appearance.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391182617)  
+Keterangan:  
+**No.** |  **Nama Kolom** |  **Deskripsi**  
+---|---|---  
+1 |  Widget logo |  Anda dapat mengunggah logo untuk widget WebChat Anda di sini. Pastikan gambar yang Anda unggah sesuai syarat tertulis.  
+2 |  Main color |  Pilih warna utama di sini.  
+3 |  Main text color |  Pilih warna teks Anda di sini.  
+4 |  Agent bubble color |  Pilih warna bubble pesan milik Agent di sini.  
+5 |  Agent text color |  Pilih warna teks pesan milik Agent di sini.  
+6 |  Visitor bubble color |  Pilih warna bubble pesan milik Visitor di sini.  
+7 |  Visitor text color |  Pilih warna teks pesan milik Visitor di sini.  
+  5. Pada Widget content, Anda dapat mengatur isi pesan dari situasi - situasi yang tersedia.  
+![Widget_content.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391181337)  
+Keterangan:  
+**No.** |  **Nama Kolom / Tombol** |  **Deskripsi**  
+---|---|---  
+1 |  Widget content conditions |  Anda dapat memilih conditions untuk isi pesan WebChat yang tersedia, yaitu:
+     * **When online:** Berisi pengaturan isi pesan widget saat Agent online.
+     * **When offline:** Berisi pengaturan isi pesan widget saat Agent offline.
+     * **Pre-chat form:** Berisi pengaturan isi pesan widget untuk pembuka saat sebelum chat dimulai. 
+     * **Greeting:** Berisi pengaturan isi pesan widget untuk memulai percakapan dengan ucapan sambutan yang dapat Anda sesuaikan.  
+2 |  Custom checkbox |  Pada condition apapun, Anda dapat mencentang kolom ini untuk dapat mengganti isi pesan _default_ dengan pesan buatan Anda sendiri.  
+3 |  Text position |  Pilihan ini hanya terdapat pada Greeting saja. Maka, jika Anda mencentang custom checkbox pada Greetings, Anda dapat mengatur posisi teks berikut.
+     * **Top:** Posisi teks akan berada di bagian atas message panel.
+     * **Left:** Posisi teks akan berada di bagian kiri message panel.  
+4 |  Message (Content) |  Isikan pesan custom Anda di sini.  
+5 |  Save/Cancel |  Simpan pesan Anda dengan klik**“Save changes”** atau batalkan pengaturan Anda dengan klik **“Cancel”.**  
+  6. Anda dapat melihat preview widget yang telah Anda atur pada bagian kanan halaman seperti berikut.  
 ![Widget_preview.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772398731673)
-![Delete1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391165849)
+
+###  C. Cara Menghapus Widget pada WebChat[](https://help-center.qontak.com/hc/id/articles/5642474620825-Bagaimana-cara-Membuat-Mengintegrasikan-dan-Melakukan-Kustomisasi-Qontak-Web-Chat#h_01HHY1KRFQQT02YA63C2G3AGGN)
+  1. Pada menu**Integration,** pilih **Web Chat.  
+**![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49062472998425)
+  2. Pilih **“Action”** pada daftar widget yang akan Anda hapus, lalu klik **Remove.  
+![Delete1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772391165849)**
+
+Demikian panduan cara mengelola integrasi WebChat pada Mekari Qontak Omnichannel.
 
 ## Error States  <!-- confidence:high ✓ -->
 

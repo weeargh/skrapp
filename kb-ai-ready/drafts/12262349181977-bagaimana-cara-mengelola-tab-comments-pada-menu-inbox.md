@@ -36,21 +36,35 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka menu **Inbox** di Qontak Omnichannel Anda, lalu pilih tab **Comments** — sistem akan menampilkan daftar room comments yang masuk.
-2. Klik salah satu room comments yang ingin Anda lihat — sistem akan menampilkan detail komentar, termasuk agent yang di-assign dan opsi sorting by latest comments.
-3. Di sisi kanan, periksa postingan mana yang mendapat komentar dengan klik tombol **See Post** atau nama profil Instagram Anda untuk verifikasi.
-4. (Opsional) Klik tombol **Assign Agent** untuk menambahkan agent ke room comments tersebut.
-5. Klik tombol **Resolve** untuk menutup room comments — sistem akan berhenti menerima komentar baru pada postingan tersebut.
-6. (Jika diperlukan) Klik tombol **Reopen** untuk membuka kembali room comments yang sudah di-resolve.## Expected Result  <!-- confidence:high ✓ -->
 
-Tab Comments menampilkan daftar room comments dari Instagram Anda. Setiap room comments menunjukkan: postingan yang mendapat komentar, jumlah komentar, agent yang di-assign, dan status (aktif atau resolved). Setelah klik Resolve, room comments berubah status menjadi tertutup dan tidak akan menerima komentar baru. Setelah klik Reopen, room comments kembali ke status aktif dan siap menerima komentar.
-
+Pada Qontak terdapat fitur comments, dimana fitur ini merupakan add-ons sehingga diperlukan biaya tambahan untuk mengaktifkan fitur ini. Hubungi tim support kami di untuk mengaktifkan fitur ini. 
+Fitur Comments ini dapat Anda Setelah fitur **Comments** ini aktif pada akun Qontak Omnichannel Anda, Anda dapat mengintegrasikan fitur comment ini dengan akun instagram Anda, klik [di sini](https://help-center.qontak.com/hc/id/articles/12263352540313) untuk melihat proses integrasinya. Fitur **Comment** ini berfungsi untuk mengelola mengintegrasikan komentar-komentar yang ada pada postingan instagram Anda. 
+Berikut langkah-langkahnya:
+  1. Setelah fitur Comments ini aktif pada akun Qontak Omnichannel Anda. Anda dapat masuk ke Menu **Inbox** dan pilih tab **Comments**.  
 ![28.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173109785)
+
+Satu _room comment_ berlaku untuk satu post.
+  2. Maka akan ditampilkan room comments sebagai berikut. Anda dapat melihat room comments ini **di-**_**assign**_**kepada agents siapa** dan Anda juga dapat melakukan filter **Sort by latest comments**.  
 ![30.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173114137)
+
+Apabila postingan foto dihapus, pada room comment akan terlihat notifikasi bahwa postingan telah dihapus dan history comment yang telah masuk pada room comment tidak akan hilang.
+  3. Pada bagian sebelah kanan, Anda dapat melihat/mengecek postingan mana yang telah mendapatkan komentar dari customer, Anda dapat klik **“see post”** untuk mengecek postingan atau klik **nama dari profil instagram Anda** untuk melihat profil intagram yang telah di integrasikan.  
 ![40.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149576089)
+
+1. Jika Admin ikut membalas komentar post di dalam room comment, lalu room comment di resolve dan di reopen kembali, maka Admin akan keluar dari dari room comment secara otomatis.  
+2. Jika Agent/SPV ikut membalas komentar post di dalam room comment, atau Agent/SPV di assign ke dalam room comment, lalu ketika room comment di-_resolve_ dan di _re-open_ kembali, maka sistem akan memeriksa eligibilitas dari Agent/SPV tersebut :  
+- Jika Agent/SPV **tidak sedang login maka status agent tersebut off** , dan ketika terjadi reopen, maka Agent/SPV tersebut akan keluar dari dari room comment secara otomatis.  
+- Jika Agent/SPV **sedang login namun tidak menyalakan status menjadi on** , dan ketika ada proses reopen, maka Agent/SPV akan keluar dari dari room comment secara otomatis.  
+- Jika Agent/SPV **sedang login dan menyalakan status menjadi on** , dan ketika ada proses reopen, maka Agent/SPV akan tetap ada pada pada room comment.  
+- Jika Agent/SPV yang ada di room comment tersebut **di hapus dari list Agent** , dan ketika ada proses reopen, maka Agent/SPV tersebut akan keluar dari dari room comment secara otomatis.
+  7. Untuk memberikan komentar pada postingan, Anda dapat mengetikkannya pada kolom komentar di sini, dan klik **“Post”**.  
 ![34.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173121945)
+Sebagai informasi, apabila Agent ingin memberikan komentar sebagai parent comment, dan kemudian Agent membuka lalu men-scroll room comment sampai bawah, maka room comment akan diaggap sudah terbaca (mark as read). Sedangkan apabila customer membalas komentar yang ada (child comment), Agent harus memberikan balasan komentar pada room comment, sehingga room comment dapat dianggap sudah terbaca (mark as read). 
+  8. Serta untuk menjawab komentar postingan yang ada, Anda dapat klik **“Reply”** , lalu tuliskan balasan pesan yang ingin di berikan dan klik**“Post”**.  
 ![35.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149566361)
+  9. Anda dapat melihat profil dari instagram customer secara lebih detail, dengan cara klik username instragram customer yang telah memberikan komentar.  
 ![41.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774149574809)
+  10. Lalu klik username customer, untuk mengunjungi profil instagram dari customer.  
 ![42.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774173152281)
 
 ## Error States  <!-- confidence:high ✓ -->

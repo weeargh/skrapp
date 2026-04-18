@@ -40,28 +40,25 @@ Catatan: File yang diunduh akan berformat spreadsheet dengan beberapa sheet yang
 
 ## Steps  <!-- confidence:medium ~ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman Dashboard Qontak CRM akan terbuka.
 
-2. Buka menu Report atau navigasi ke bagian Laporan Target.
-   → Daftar laporan yang tersedia akan ditampilkan.
-
-3. Cari dan klik Laporan Target By Months By Value.
-   → Halaman detail laporan akan dibuka.
-
-4. Klik tombol Download untuk mengunduh laporan.
-   → File spreadsheet akan diunduh ke perangkat Anda.
-
-5. Buka file yang telah diunduh menggunakan aplikasi spreadsheet.
-   → Sheet laporan akan menampilkan data target dan pencapaian per bulan dan per user.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil membuka Laporan Target By Months By Value, spreadsheet akan menampilkan:
-
-• Sheet dengan filter target per bulan, filter waktu laporan, dan filter by user
-• Kolom detail untuk setiap user berisi: Target Value, Achieved Value, Achieved Value %, Remaining Value, Remaining Value %, Target Count, Achieved Count, Achieved Count %, Remaining Count, dan Remaining Count %
-• Data terorganisir memudahkan Anda memonitor dan membagikan pencapaian target per user kepada tim.
-
+Apabila Anda ingin memonitor dan membagikan pencapaian target per user, Anda dapat men-_download_ Laporan Target By Months By Value.
+Hasil download **Laporan Target By Months By Value** ketika sudah di download akan menampilkan sheet seperti gambar di bawah ini:  
 ![by_value.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774916528025)
+Pada sheet ini, ditampilkan secara detail mengenai:  
+- Filter target per bulan nya  
+- Filter waktu laporan  
+- Filter by user  
+1. User  
+2. Target Value  
+3. Achieved Value  
+4. Achieved Value %  
+5. Remaining Value  
+6. Remaining Value %  
+7. Target Count  
+8. Achieved Count  
+9. Achieved Count %  
+10. Remaining Count  
+11. Remaining Count %
 
 ## Error States  <!-- confidence:low ? -->
 

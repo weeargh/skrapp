@@ -37,24 +37,16 @@ Untuk mengubah display name WhatsApp di Qontak, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Anda dengan Email dan Password.
 
-2. Buka menu **Channel Integration**, kemudian pilih **WhatsApp**. Sistem menampilkan daftar akun WhatsApp yang terhubung.
-
-3. Klik pada **Whatsapp name** dari akun yang ingin diubah. Anda akan masuk ke halaman pengaturan akun WhatsApp.
-
-4. Klik tombol **Change display name**. Sistem akan memverifikasi koneksi dengan Facebook Business Manager dan mengarahkan Anda ke halaman perubahan nama.
-
-5. Masukkan display name yang baru di kolom input yang tersedia.
-
-6. Klik tombol **Next**. Sistem menampilkan konfirmasi perubahan.
-
-7. Tunggu persetujuan dari Meta selama maksimal 24 jam.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan langkah-langkah, display name WhatsApp Anda akan berubah sesuai input yang diberikan. Sistem menampilkan pesan konfirmasi bahwa perubahan telah dikirim ke Meta untuk persetujuan. Dalam waktu maksimal 24 jam, display name baru akan aktif di profil WhatsApp Business Anda dan terlihat oleh kontak yang menghubungi Anda melalui WhatsApp.
-
+4. Untuk mengubah display name Whatsapp, klik**“Change display name”**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49068196877977)
+Pastikan akun Anda telah terhubung dengan akun Facebook Business Manager.  
+- Jika akun Anda sudah terhubung, maka Anda akan diarahkan ke Facebook Manager.  
+- Jika akun Anda belum terhubung, maka Anda harus log in ke akun Anda terlebih dahulu.
+  5. Masukkan display name yang baru. Lalu klik**“Next”**.  
 ![download__1_.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776189714457)
+
+Demikian penjelasan mengenai cara mengubah display name Whatsapp pada menu Channel Integration
 
 ## Error States  <!-- confidence:medium ~ -->
 

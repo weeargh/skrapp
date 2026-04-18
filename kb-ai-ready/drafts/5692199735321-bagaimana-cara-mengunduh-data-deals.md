@@ -38,35 +38,17 @@ Untuk mengunduh data Deals di Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda.
-   → Dashboard utama akan ditampilkan.
 
-2. Klik menu **Deals** di navigasi utama.
-   → Halaman daftar Deals akan muncul.
-
-3. Klik tombol **"List View"** di sebelah kanan halaman Deals.
-   → Mode tampilan list akan aktif.
-
-4. Centang checkbox pada Deal yang ingin Anda unduh. Untuk mengunduh semua data Deals, centang **"Select all filtered results"**.
-   → Deals yang dipilih akan ditandai.
-
-5. Klik tombol **"Download"**.
-   → Pop-up pemilihan field akan muncul.
-
-6. Pilih field yang ingin Anda unduh dengan mencentang checkbox. Gunakan pencarian untuk menemukan field dengan cepat. Hapus centang pada field yang tidak diperlukan. Pastikan minimal 2 field tercentang.
-   → Data field terpilih akan ditampilkan.
-
-7. Klik tombol **"Download"** pada pop-up.
-   → Notifikasi pengunduhan sedang diproses akan muncul.
-
-8. Untuk mengecek progress pengunduhan, buka menu **Properties** lalu pilih tab **Upload/Download**.
-   → Status dan progress pengunduhan akan ditampilkan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah proses pengunduhan selesai, file data Deals akan tersimpan di folder download perangkat Anda dalam format spreadsheet (CSV atau Excel). File berisi kolom-kolom field yang Anda pilih sebelumnya. Anda dapat membuka file menggunakan aplikasi spreadsheet seperti Microsoft Excel atau Google Sheets untuk melihat dan menganalisis data Deals Anda.
-
+Pada Qontak, Anda dapat mengunduh data Deals. Anda dapat memilih apakah Deals yang Anda ingin unduh itu secara keseluruhan atau hanya tertentu saja. Berikut langkah-langkahnya:
+  1. Masuk ke Menu akun Qontak CRM Anda dan pilih Menu **Deals**.
+  2. Klik **“List View”** yang terdapat di sebelah kanan halaman **Deals**.  
 ![20.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49954902886041)
+  3. Kemudian centang jenis unduhan dokumen yang ingin Anda unduh. Apabila Anda ingin mengunduh semua data **Deals** , maka centang **“Select all filtered results”**.  
 ![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49954927454745)
+  4. Jika data sudah dipilih maka klik **"Download"**.  
 ![22.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49954902905497)
+
+5. Setelah itu akan muncul _pop up_ seperti berikut. Pilih **field** yang ingin Anda unduh. Apabila Anda ingin memilih **field** tertentu, gunakan pencarian berdasarkan kata kunci untuk menemukan dengan cepat dan hapus centang pada kotak **field** tersebut. Pastikan keseluruhan data telah benar lalu klik **“Download”**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36775763610649)
 
 ## Error States  <!-- confidence:medium ~ -->

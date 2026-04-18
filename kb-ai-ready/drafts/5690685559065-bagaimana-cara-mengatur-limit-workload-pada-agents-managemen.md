@@ -28,13 +28,20 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Limit Workload pada Agents Management adalah fitur pengaturan kapasitas maksimal percakapan (chat) yang dapat ditangani oleh setiap agent secara bersamaan dalam Omnichannel Qontak. Fitur ini memungkinkan Admin untuk menetapkan batas jumlah chat aktif per agent, sehingga ketika agent mencapai limit tersebut, pesan masuk baru akan secara otomatis dialihkan ke agent lain yang masih memiliki kapasitas dan status online.## Why It Matters  <!-- confidence:medium ~ -->
 
-Pengaturan limit workload memastikan distribusi beban kerja yang seimbang di antara tim customer service Anda. Dengan membatasi jumlah chat per agent, Anda dapat mencegah agent menjadi overload, meningkatkan kualitas layanan pelanggan, mempercepat waktu respons, dan memaksimalkan efisiensi tim. Fitur ini juga mendukung skalabilitas operasional omnichannel Anda dengan manajemen sumber daya yang lebih terukur.
-
-![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36778709551641)
+**Agents Management** merupakan sebuah fitur Omnichannel Qontak yang terdiri dari **Division** , **Agent Allocation, Broadcast** dan **Workload** dimana hanya Admin yang bisa menambahkan atau melakukan perubahan pada fitur yang ada pada agent management.
+Untuk menampilkan menu **workload** pada halaman **Agent** , Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda. 
+  2. Pilih menu **Settings,** kemudian klik **Agent Management.  
+**![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36778709551641)
+  3. Selanjutnya, klik “**Workload** ” dan centang “**Enable conversation limits”**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36778741338905)
+  4. Lalu, pilih “**Specific agents”** apabila Anda ingin mengatur **workload** untuk **agents** tertentu.   
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36778741342361)
+
+- Apabila Anda memasukkan limit sebanyak **15** , maka Agent hanya dapat menangani **15 chat** dan jika **agent** sudah memenuhi limit tersebut, maka pesan baru yang masuk akan diarahkan ke **A****gent** yang masih memiliki limit pesan dengan **status online**.  
+- Apabila limit **A****gents** sudah memenuhi kapasitas, maka chat akan ditugaskan kembali ketika limit **A****gents** tidak dalam kondisi penuh.
+  9. Jika semua proses sudah selesai, klik “**Save changes”**.  
 ![10.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36778709564185)
 
 ## Key Attributes  <!-- confidence:high ✓ -->

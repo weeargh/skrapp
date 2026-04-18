@@ -36,24 +36,23 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel, pilih menu Chatbot
-2. Pilih tab Conversation
-3. Pilih salah satu Conversation name yang ada
-4. Klik ikon tambah pada bagian Greetings — sistem akan menampilkan pilihan Bot response type
-5. Pilih WhatsApp Flow template yang telah dibuat di WhatsApp Business Manager — preview form akan ditampilkan
-6. Klik Next untuk melanjutkan
-7. Isikan Bot response name, Header text, Message content, Button text, dan Next action
-8. Klik Save — form akan disimpan dan muncul pada halaman conversation
-9. Klik Preview conversation untuk melihat tampilan form di percakapan## Expected Result  <!-- confidence:high ✓ -->
 
-Form Bot Response berhasil dibuat dan tersimpan. Form akan muncul pada halaman Tree Diagram di bagian Greetings. Saat preview conversation, pengguna dapat melihat form dengan Header text, Message content, dan Button text yang telah dikonfigurasi. Bot siap mengirimkan form kepada pengguna sebagai greeting awal conversation.
-
+### B. Cara Membuat Respons Form dalam Diagram Pohon (tidak dalam salam[](https://help-center.qontak.com/hc/id/articles/46099456527129-Bagaimana-Cara-Menggunakan-Flow-Bot-Response-Form-pada-Tree-Diagram#h_01JSGWPR6CBFV0N2YAW5C8ACCE)
+  1. Pada diagram pohon berikut, klik **ikon tambah** , lalu pilih **Form**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46099456518937)
+  2. Lalu tentukan **WhatsApp flow template** yang sebelumnya telah dibuat pada halaman WhatsApp Business Manager. Di sini Anda akan melihat pratinjau terkait _form_ yang telah dibuat. Klik **“Next”** untuk melanjutkan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46099456508057)
+  3. Pada tahap selanjutnya, isikan **Bot response name** , **Header text** , **Message content** , **Button text** , dan **Next action**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46099495618585)
+  4. Selanjutnya klik **“Save”** untuk menyimpan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46099456509977)
+  5. Maka Form yang telah dibuat akan muncul pada halaman berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46099495628313)
+
+### C. Cara Mengkonfigurasi Bot Respon Berikutnya[](https://help-center.qontak.com/hc/id/articles/46099456527129-Bagaimana-Cara-Menggunakan-Flow-Bot-Response-Form-pada-Tree-Diagram#h_01JSGWPR6CPX9VFPHYP847RTWB)
+  1. Klik bagian **Response** berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46099456519961)
+  2. Lalu pada tab **General** , tentukan **Bot response name** , **Message content** , **Add variable (opsional)** , Attachment (opsional), Conversation tags (opsional), dan Additional settings (opsional). Anda juga dapat centang _toggle_ tersebut untuk mengirimkan _event_ pembelian bila ada. Apabila keseluruhan data telah terisi, klik **“Save”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46099456521241)
 
 ## Error States  <!-- confidence:medium ~ -->

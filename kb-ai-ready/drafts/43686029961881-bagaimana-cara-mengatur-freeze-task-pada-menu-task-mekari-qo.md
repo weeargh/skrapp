@@ -39,34 +39,40 @@ Untuk mengatur Freeze Task pada menu Task Mekari Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Mekari Qontak CRM Anda, lalu buka menu **Properties**.
-2. Pilih tab **Task** — sistem akan menampilkan daftar pengaturan Task.
-3. Klik **"Frozen task settings"** — Anda akan diarahkan ke halaman pengaturan Freeze Task.
-4. Aktifkan toggle **Frozen task**, kemudian pilih jenis Trigger (contoh: **Task status**).
-5. Tentukan kondisi spesifik sesuai Trigger yang dipilih — sistem akan menampilkan opsi yang relevan.
-6. Klik **"Save changes"** — popup konfirmasi akan muncul.
-7. Klik **"Enable"** untuk mengaktifkan Freeze Task — pengaturan akan diterapkan ke seluruh Task dalam 15 menit.
 
-**Untuk menonaktifkan:**
-8. Kembali ke **Frozen task settings**, lalu nonaktifkan toggle **Frozen task**.
-9. Klik **"Disable"** pada popup konfirmasi — pengaturan akan dinonaktifkan dalam 15 menit.## Expected Result  <!-- confidence:high ✓ -->
-
-• Pengaturan Freeze Task berhasil disimpan dengan pesan konfirmasi popup
-• Toggle **Frozen task** menampilkan status aktif atau nonaktif sesuai pilihan Anda
-• Sistem menerapkan pengaturan ke semua Task (baru dan yang sudah ada) dalam kurun waktu 15 menit
-• Ketika aktif, task updates akan dibatasi sampai Task di-unfreeze
-• Ketika nonaktif, task updates akan diizinkan kembali
-• Admin/Owner dapat kembali ke **Frozen task settings** kapan saja untuk melakukan edit ulang
-
+Kini terdapat fitur **Freeze Task** pada menu **Task** yang dapat membentuk aturan _workflow_ dengan cara membekukan **Task** yang sebelumnya telah ditetapkan. Hal ini bertujuan untuk mendukung tim dalam mematuhi alur kerja dan standar yang berlaku. Sebelum dapat mengatur **Freeze Task** , Anda perlu mengaktifkannya terlebih dahulu pada **Task Settings** yang dapat diakses melalui menu **Properties**. Untuk itu pada penjelasan di bawah ini, Anda akan mempelajari mulai dari mengaktifkan hingga mengelola **Freeze Task** pada **Task**. Simak langkah-langkah berikut ini. 
+### A. Cara Mengaktifkan Freeze Task[](https://help-center.qontak.com/hc/id/articles/43686029961881-Bagaimana-Cara-Mengatur-Freeze-Task-pada-Menu-Task-Mekari-Qontak-CRM#h_01JMEYSB065VH0ZWGSZNFBF3ZJ)
+  1. Masuk ke akun Mekari Qontak CRM Anda, lalu pilih menu **Properties**.
+  2. Kemudian pilih tab **Task**.  
 ![29.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081079833)
+  3. Selanjutnya klik **“Frozen task settings”**.  
 ![35.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081082265)
+  4. Lalu Anda akan diarahkan ke tampilan berikut. Aktifkan toggle **Frozen task** , lalu pilih jenis **Trigger** pada saat melakukan **Freeze Task**. Sebagai contoh, pada tampilan ini **Trigger options** yang dipilih adalah **Task status**. Maka tentukan jenis status pada Task.  
 ![36.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081083417)
+Hanya **Admin/Owner** yang dapat mengaktifkan pengaturan **Freeze Task** (baik dengan melampaui tanggal jatuh tempo mulai atau status).
+  5. Jika semua data telah terisi, klik **“Save changes”**.  
 ![37.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150053419929)
+  6. Lalu akan muncul _pop up_ informasi berikut yang menyatakan apabila Anda mengaktifkan **Freeze Task** , maka pengaturan sistem akan membatasi **task updates** sampai **unfrozen** dan akan diaplikasikan ke seluruh **Task** , baik **Task** baru maupun yang sudah ada dalam kurun waktu **15 menit**. Klik **“Enable”** untuk melanjutkan.  
 ![38.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150053421593)
+  7. Apabila Anda ingin menonaktifkannya, Anda dapat kembali ke tampilan **‘Freeze Task Settings’** , lalu non aktifkan toggle **‘Enable frozen task’**.  
 ![39.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081086617)
+Hanya **Admin/Owner** yang dapat menonaktifkan pengaturan **Freeze Task**.
+  8. Lalu akan muncul _pop up_ informasi berikut yang menyatakan apabila Anda menonaktifkan **Freeze Task** , maka **task updates** akan diperbolehkan dan akan diaplikasikan ke seluruh **Task** , baik **Task** baru maupun yang sudah ada dalam kurun waktu **15 menit**. Klik **“Disable”** untuk melanjutkan.  
 ![40.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53150081087513)
+  9. Selain itu, Anda sebagai peran **Admin/Owner** juga dapat melakukan edit kembali pada **Freeze Task Settings** dengan kembali pada tampilan tersebut dan melakukan edit.
+
+### B. Implementasi Freeze Task pada Menu Task[](https://help-center.qontak.com/hc/id/articles/43686029961881-Bagaimana-Cara-Mengatur-Freeze-Task-pada-Menu-Task-Mekari-Qontak-CRM#h_01JMEYSB064WYPRA19HWV2Z0ZS)
+Setelah Anda mengaktifkan Freeze Task, maka tampilan yang akan muncul adalah seperti berikut.
+
+**B. Tampilan pada halaman ‘Edit Task’**  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43686029955353)
+- Pada tampilan berikut, Task telah mengalami **Freeze** dikarenakan sudah mencapai kriteria tenggat waktunya. Dalam hal ini, apabila Anda merupakan peran **member** , maka Anda **tidak dapat** mengedit data apapun yang terdapat di dalamnya.  
+- Hal ini juga berlaku pada tampilan **Task** versi**Mobile CRM**.
+Apabila Anda merupakan peran **Admin/Owner** , maka tampilan yang terlihat adalah seperti berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43686029955993)
+- Pada tampilan berikut, Task telah mengalami **Freeze** dikarenakan sudah mencapai tenggat waktunya. Dalam hal ini, apabila Anda merupakan peran **Admin/owner** , maka Anda **dapat** mengedit data apapun yang terdapat di dalamnya, kecuali data **Reporter**.  
+- Hal ini juga berlaku pada tampilan **Task** versi**Mobile CRM**.
+Demikian penjelasan mengenai Freeze Task pada Qontak CRM.
 
 ## Error States  <!-- confidence:high ✓ -->
 

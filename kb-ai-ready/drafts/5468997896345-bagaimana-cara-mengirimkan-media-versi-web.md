@@ -38,21 +38,17 @@ Untuk mengirimkan media versi web di Qontak Omnichannel, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Anda melalui portal web.
-2. Navigasikan ke halaman Inbox.
-3. Pilih pesan customer yang akan Anda balas.
-4. Klik ikon "Attachment" pada kolom pesan. Sistem akan menampilkan 4 opsi media.
-5. Pilih jenis media yang ingin dikirim:
-   - **Images and videos**: Klik untuk mengunggah foto atau video dari perangkat Anda
-   - **Documents**: Klik untuk mengunggah file dokumen
-   - **Audio**: Klik untuk mengunggah file audio
-   - **Take a photo**: Klik untuk mengambil foto langsung melalui kamera
-6. Pilih file yang ingin dikirim dan konfirmasi.
-7. Sistem akan mengirimkan media ke customer.## Expected Result  <!-- confidence:medium ~ -->
 
-Setelah mengirimkan media, file berhasil terupload dan tampil dalam percakapan dengan customer. Media akan terlihat dalam thread chat dengan preview sesuai jenisnya (thumbnail foto/video, ikon dokumen, atau pemutar audio). Customer akan menerima notifikasi bahwa Anda telah mengirimkan media.
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak dimana para customer service akan melayani semua keluhan user berupa chat yang masuk kedalam Inbox.
+Berikut adalah beberapa media yang disediakan dalam mengirimkan pesan pada Inbox.
+  1. Masuk ke akun Omnichannel Anda.
+  2. Pada halaman **Inbox** , Anda bisa mengklik ikon **"Attachment"** seperti gambar berikut, sehingga secara otomatis 4 jenis media akan muncul untuk mendukung Anda dalam membalas pesan yang masuk.  
 ![18.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50772035942425)
+**Keterangan:**  
+**-** **Images and videos** : Anda bisa mengirimkan pesan via foto dan video dengan mengklik ikon "foto dan video". Kemudian Anda bebas memilih foto dan video mana yang akan Anda kirim.  
+- **Documents** : Anda bisa mengirimkan pesan via dokumen dengan mengklik ikon **"dokumen"**. Kemudian Anda bebas memilih dokumen mana yang akan Anda kirim.   
+**- Audio** : Anda bisa mengirimkan pesan via suara dengan dengan mengklik ikon **"audio"**. Kemudian Anda bebas memilih audio mana yang akan Anda kirim.
+**- Take a photo** : Anda bisa mengirimkan pesan via gambar dengan mengklik ikon **"Capture"** sehingga kamera akan secara otomatis mengajukan permintan untuk mengambil gambar Anda.
 
 ## Error States  <!-- confidence:low ? -->
 

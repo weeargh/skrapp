@@ -39,35 +39,25 @@ Untuk menambahkan Tasks secara massal (bulk upload) di Mekari Qontak CRM, Anda m
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun CRM Anda di www.qontak.com dan buka menu **Tasks**. Sistem akan menampilkan daftar tasks yang ada.
 
-2. Klik tombol **Add Task**, kemudian pilih opsi **Upload File**. Halaman upload file akan terbuka.
+Pada Menu **Tasks** , Anda bisa menambahkan Task dalam jumlah banyak sekaligus, atau yang biasa disebut dengan bulk upload task. Anda dapat lakukan dengan mengunduh template Excel yang telah disediakan dan melengkapi data tasks Anda, dan mengunggahnya melalui Menu **Properties**.
+Untuk melakukan bulk upload tasks, ikuti langkah-langkah berikut ini:
+  1. Pastikan Anda sudah login kedalam akun CRM Anda melalui website [www.qontak.com](http://www.qontak.com/) dan masuk ke menu **Task**.
 
-3. Klik tombol **Browse a file** untuk mengunduh template Excel yang sudah tersedia. File template akan terunduh ke perangkat Anda.
-
-4. Buka file Excel dan isi kolom-kolom yang tersedia sesuai data tasks Anda. Kolom bertanda (*) wajib diisi. Untuk kolom kustomisasi (Status, Job Title, dll), gunakan data yang persis sama dengan opsi di database CRM Anda — perhatikan ejaan, besar-kecil huruf, dan spasi.
-
-5. Pastikan tidak ada data yang double. Ubah format file Excel menjadi "Text" sebelum mengunggah.
-
-6. Klik tombol **Browse a file** kembali untuk mengunggah file Excel yang sudah terisi lengkap. Sistem akan memproses file Anda.
-
-7. Tunggu notifikasi konfirmasi bahwa data tasks telah berhasil terunggah. Sistem akan menampilkan pesan sukses di dashboard.
-
-8. Untuk memantau proses pengunggahan, buka menu **Properties**, kemudian klik tab **Upload/Download**. Anda dapat melihat status upload secara berkala.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah bulk upload tasks berhasil:
-
-• Notifikasi konfirmasi muncul di dashboard bahwa data tasks telah terunggah
-• Semua tasks baru tampil di menu **Tasks** dengan data yang sesuai file Excel Anda
-• Status upload dapat dilihat di menu **Properties**, tab **Upload/Download**
-• Activity log menampilkan catatan upload tasks massal
-• Setiap task dapat diedit atau dihapus melalui menu Tasks seperti task individual
-
+3. Unduh template Excel yang sudah tersedia dalam dashboard CRM.  
 ![31.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956754426777)
+  4. Pada saat pengisian data mengguankan form Excel ini, **pastikan bahwa data yang diinput tidak double**. Kemudian isilah kolom yang tersedia pada Excel sesuai database yang Anda miliki.  
 ![bulkontak4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776161701529)
+Apabila terdapat kolom yang bertanda **(*),** artinya kolom tersebut wajib diisi. Sedangkan pada kolom yang terkustomisasi seperti; Status, Job Title, dll. pengisian data pada file Excel harus sesuai dengan opsi yang terdapat pada database CRM. Mulai dari ejaan, besar kecil huruf, sampai penempatan spasi perlu diperhatikan harus sama persis, karena jika terdapat typo atau tidak sesuai akan menyebabkan error pada data yang diunggah.
+  5. Jika data “**Task”** pada file Excel sudah terisi semua, Anda dapat merubah format pada file Excel menjadi **“Text”**.  
 ![bulkontak6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188543513)
+  6. Klik **“Browse a file”** untuk mengunggah Kembali file Excel “**Task”** yang sudah terisi.
+  7. Apabila muncul notifikasi sebagai berikut artinya data Task anda sudah berhasil terunggah.  
 ![34.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956754427417)
-![33.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956754428185)
+  8. Untuk melihat proses pengunggahan data, Anda dapat cek secara berkala pada menu **Properties,** tab **Upload/Download”.**  
+**![33.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56956754428185)**
+
+Jika terdapat data yang gagal terunggah, sistem akan secara otomatis mengirimkan notifikasi ke alamat email Anda yang terdaftar akun CRM Qontak. Apabila sudah menerima email notifikasi tersebut Anda dapat melihat detail penjelasan data-data apa saja yang gagal terunggah, Silahkan periksa kembali file Anda dan perbaiki data yang salah.
 
 ## Error States  <!-- confidence:high ✓ -->
 

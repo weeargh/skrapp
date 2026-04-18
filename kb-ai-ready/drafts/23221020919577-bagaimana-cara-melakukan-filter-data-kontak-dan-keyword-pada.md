@@ -39,24 +39,21 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel Anda.
-2. Navigasikan ke menu **Inbox**.
-3. Klik ikon **Search** pada kolom pencarian. Sistem akan menampilkan form pencarian dengan opsi filter.
-4. Klik kolom **Select date** untuk menentukan rentang tanggal pencarian (maksimal 2 tahun ke belakang). Sistem akan menampilkan hanya data kontak dalam rentang tanggal yang dipilih.
-5. Masukkan **Kontak** atau **Keyword** yang ingin Anda cari pada kolom pencarian. Sistem akan menampilkan hasil yang sesuai filter tanggal.
-6. Untuk menampilkan hasil lainnya, klik tombol **Load older result**. Sistem akan memuat data tambahan secara bertahap.
-7. Jika data yang Anda cari lebih lama dari 2 tahun, klik **Request older data** untuk mengajukan permohonan ke Qontak Support. Isi form yang muncul dan kirim email ke support@qontak.com dengan detail permintaan Anda.## Expected Result  <!-- confidence:high ✓ -->
 
-Pencarian berhasil dilakukan dan sistem menampilkan:
-- Daftar kontak atau pesan yang sesuai dengan keyword dan rentang tanggal yang dipilih
-- Data diurut berdasarkan relevansi filter tanggal
-- Tombol **Load older result** tersedia untuk memuat data tambahan
-- Jika permintaan data lama diajukan, Qontak Support akan memproses dan mengirimkan file data ke email Anda dalam waktu yang telah ditentukan
-
+Untuk menghasilkan data yang lebih akurat pada saat Anda melakukan pencarian **Kontak** atau **Keyword** , Anda dapat gunakan **filter** pada kolom pencarian di kotak masuk.
+Berikut langkah-langkahnya.
+  1. Masuk ke menu **Inbox**.
+  2. Klik pada ikon **“Search”**.  
 ![156.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53769405917465)
+  3. Kemudian Anda akan diarahkan pada tampilan berikut. Klik kolom filter **Select date** untuk menentukan data kontak berdasarkan tanggal.  
 ![157.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53769405930521)
+- Anda hanya dapat mencari menggunakan filter berdasarkan tanggal hingga rentang waktu **2 tahun**.   
+- Jika Anda menggunakan filter berdasarkan tanggal, hanya akan ditampilkan data dalam rentang tanggal tersebut.
+  4. Selain itu saat melakukan pencarian data pada kolom search, Anda dapat klik tombol **“Load older result”** untuk menampilkan data lainnya secara **default** sehingga akan ditampilkan keseluruhan hasil data.  
 ![158.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53769405935257)
+  5. Apabila Anda tidak dapat melihat datanya **(karena data sudah lebih dari rentang waktu 2 tahun)** , ajukan permohonan ke Support Qontak untuk mengunduh data dengan klik **“Request older data”**.  
 ![159.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53769405941017)
+  6. Setelah itu kolom pengisian data akan ditampilkan. Isikan kolom pengisian data tersebut, lalu kirim email ke Qontak Support terkait permintaan data.  
 ![160.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53769405947801)
 
 ## Error States  <!-- confidence:high ✓ -->

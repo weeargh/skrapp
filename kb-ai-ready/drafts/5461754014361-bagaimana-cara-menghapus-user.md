@@ -35,19 +35,21 @@ faithfulness_threshold: 0.6
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Klik tanda panah di sebelah kanan username Anda (kanan atas dashboard CRM). Dropdown menu akan muncul.
-2. Pilih "Profile Settings" dari menu dropdown. Halaman Profile Settings akan terbuka.
-3. Klik tab "Users". Daftar semua user yang terdaftar pada CRM perusahaan Anda akan ditampilkan.
-4. Tentukan akun user yang ingin Anda hapus dari daftar tersebut.
-5. Klik ikon "Trash bin" (tempat sampah) di sebelah kanan akun user yang dipilih. Pop-up window akan muncul.
-6. Pada pop-up, pilih akun pengguna lain yang akan menampung database dari user yang dihapus. Sesuaikan dengan kebutuhan Anda.
-7. Klik tombol "Save". Sistem akan memproses pemindahan database dan penghapusan akun.## Expected Result  <!-- confidence:high ✓ -->
 
-Akun user berhasil dihapus dari sistem CRM. Database yang terkait dengan user tersebut dipindahkan ke akun pengguna yang Anda pilih. User tidak lagi muncul dalam daftar Users di tab "Users" pada Profile Settings. Proses penghapusan dapat memerlukan beberapa saat tergantung volume data yang diproses.
-
+Fitur **Hapus User** hanya bisa dilakukan oleh  _user_ dengan level **Admin.** Pastikan Anda adalah **Admin** di dalam CRM perusahaan untuk bisa menghapus  _user_ baru.
+Sudah menggunakan [Qontak One](https://help-center.qontak.com/hc/id/articles/53169095720729)? Jelajahi pengalaman [User Management yang baru](https://help-center.qontak.com/hc/id/articles/53217650199449) di Qontak One untuk langkah-langkah dan panduan _interface_ yang telah diperbarui.
+Untuk dapat menghapus user, Anda dapat mengikuti langkah-langkah berikut ini:
+  1. Klik tanda panah yang terletak di sebelah kanan _username_ Anda (di sebelah kanan atas dasbor CRM).
+  2. Pilih “**Profile Settings”**  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49060564170521)
+  3. Pada tab **Users** , Anda akan melihat _list_ dari nama-nama  _user_ yang terdaftar pada CRM perusahaan Anda. Tentukan akun yang akan Anda hapus.
+  4. Setelah menentukan, pilih ikon _**"Trash bin"**_ (tempat sampah) yang tersedia di sebelah kanan pada masing-masing akun pengguna.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49060614508057)
+  5. Akan muncul _pop-up window_ yang meminta Anda memilih akun, yang nantinya akan digunakan untuk menampung  _database_ dari pengguna yang akan dihapus. Pilih akun pengguna sesuai dengan kebutuhan Anda.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49060718276377)
+  6. Kemudian, klik **Save.**
+  7. Sistem kami akan memproses pemindahan _database_ serta memproses penghapusan akun yang Anda kehendaki.
+Pada beberapa kasus, penggunaan fitur **Hapus Akun** tidak berhasil dikarenakan database yang dimiliki cukup banyak dan membuat data-data yang bersifat **wajib dan belun diisi oleh pengguna sebelumnya** , atau karena _error_ lainnya. Jika hal ini terjadi pada akun CRM Anda, hubungi konsultan atau [tim support kami](https://help-center.qontak.com/hc/id/articles/support-qontak@mekari.com) untuk membantu kendala tersebut.
 
 ## Error States  <!-- confidence:high ✓ -->
 

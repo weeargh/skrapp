@@ -38,20 +38,38 @@ Untuk menambahkan produk satuan pada Qontak versi mobile, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka aplikasi Qontak CRM pada smartphone Anda → Aplikasi akan menampilkan halaman login
-2. Masukkan Email/Username dan Kata Sandi Anda → Sistem akan mengotentikasi kredensial dan membuka dashboard aplikasi
-3. Pilih menu Other → Sistem menampilkan submenu berbagai fitur
-4. Pilih tombol Product → Menu daftar produk akan muncul
-5. Klik tombol (+) untuk menambah produk baru → Form Product kosong akan terbuka
-6. Isi semua field dalam Form Product sesuai data yang Anda inginkan (geser halaman ke bawah untuk akses semua field). Perhatikan field bertanda bintang (*) karena wajib diisi
-7. Klik tombol Save → Produk akan tersimpan dan tampil dalam daftar produk## Expected Result  <!-- confidence:medium ~ -->
 
-Produk satuan berhasil ditambahkan pada Qontak versi mobile. Produk baru muncul dalam daftar produk dengan semua informasi yang Anda masukkan (nama produk, harga, kategori, deskripsi, kode produk, satuan, dan data lainnya) tersimpan. Produk dapat digunakan untuk transaksi berikutnya dan tersinkronisasi dengan Qontak versi Web.
-
+Pada aplikasi CRM Qontak mobile, Anda hanya dapat menambahkan **Product** secara satuan. Untuk menambahkan product secara satuan atau satu per satu, Anda dapat mengikuti langkah-langkah di bawah ini:
+  1. Buka aplikasi “**Qontak CRM”** pada smartphone Anda.
+  2. Masukan **Email/Username** dan **Kata Sandi**.
+  3. Pilih menu “**Other** ”.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149980911513)
+  4. Kemudian pilih tombol **“Product”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149967759897)
+  5. Setelah itu, menu product akan muncul, Anda bisa melakukan penambahan product dengan cara klik tombol **(+)** seperti pada gambar berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149967760409)
+  6. Isi Form **Product** dengan data yang Anda inginkan dengan cara scroll halaman sampai ke bawah untuk mengisi semua _field_ **Product**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149967761689)
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | **Attachment** | Sisipkan gambar produk dengan klik **“Add image”** pada bagian **Attachment**.  
+2 | **Product name** | Nama produk  
+3 | **Price** | Pilihan mata uang  
+4 | **Input price** | Masukkan harga nominal  
+5 | **Discount** | Potongan harga  
+6 | **Input discount** | Masukkan diskon.  
+7 | **Quantity** | Kuantitas produk.  
+8 | **Total price** | Total harga produk.  
+9 | **Product description** | Deskripsi produk.  
+10 | **Tag** | Tag produk.  
+11 | **Product category** | Kategori produk.  
+12 | **Subproduct category** | Subkategori dari produk.  
+13 | **Product code** | Kode produk.  
+14 | **Unit** | Satuan produk.  
+15 | **Manufacturer** | Industri yang membuat produk tersebut.  
+- Kolom yang bertanda **Bintang (*)** artinya bersifat wajib untuk diisi.  
+- Anda juga dapat menambahkan **Custom field** atau menghilangkan field yang tidak diperlukan melalui menu **Properties** tepatnya di bagian **Product** pada **Mekari Qontak CRM versi Web**. Pelajari selengkapnya [di sini](https://help-center.qontak.com/hc/id/articles/6067574738073-Bagaimana-Cara-Mengelola-Menu-Properties-Products).
+  7. Jika Anda sudah mengisi form product dengan data yang Anda inginkan maka klik **“Save”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46149967930905)
 
 ## Error States  <!-- confidence:medium ~ -->

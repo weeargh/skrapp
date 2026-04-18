@@ -38,25 +38,17 @@ Untuk generate Chatbot API Token pada Qontak Omnichannel, Anda membutuhkan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda menggunakan kredensial Admin atau Supervisor.
 
-2. Di halaman dashboard, klik menu **Settings**. Sistem akan menampilkan halaman pengaturan akun.
-
-3. Pada halaman Settings, cari dan klik opsi **Chatbot** di bagian **API Token**. Sistem akan menampilkan halaman Chatbot API Token dengan token yang telah dibuat.
-
-4. Klik ikon **Copy** untuk menyalin token API tersebut ke clipboard Anda.
-
-5. Kirimkan token yang sudah dicopy kepada tim activation Qontak melalui saluran komunikasi yang telah ditentukan untuk proses aktivasi chatbot.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil generate Chatbot API Token:
-
-- Token API ditampilkan pada halaman Settings > Chatbot di bagian API Token
-- Token berhasil dicopy ke clipboard (sistem biasanya menampilkan notifikasi konfirmasi)
-- Tim activation Qontak menerima token dan memproses aktivasi chatbot Anda
-- Chatbot siap digunakan setelah proses aktivasi selesai oleh tim kami
-
+Kini, Anda dapat melakukan aktivasi chatbot dengan mudah menggunakan API token. Nantinya token yang sudah Anda copy harus dikirimkan ke tim kami untuk proses aktivasi. Berikut langkah-langkahnya.
+  1. Masuk ke menu **Settings**.
+  2. Lalu klik **“Chatbot”** pada bagian **API Token**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49513832679705)
+  3. Kemudian, copy token tersebut dengan klik ikon **“Copy”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777849492761)
+  4. Selanjutnya, Anda dapat mengirimkan token yang sudah di copy kepada tim activation kami.
+
+**Penting**  
+Harap diperhatikan bahwa token API hanya dibuat satu kali, Anda dapat menanyakan kepada tim kami jika terdapat kebutuhan untuk mengubah token API yang sudah dibuat.
 
 ## Error States  <!-- confidence:medium ~ -->
 

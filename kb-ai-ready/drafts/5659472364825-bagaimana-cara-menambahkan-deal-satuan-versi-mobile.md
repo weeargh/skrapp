@@ -38,43 +38,13 @@ Untuk menambahkan deal satuan melalui aplikasi mobile Qontak CRM, Anda memerluka
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda melalui aplikasi mobile.
-   → Dashboard aplikasi Qontak CRM akan ditampilkan.
 
-2. Buka menu **Deal**.
-   → Daftar Deal dan pilihan Pipeline akan tampil.
-
-3. Klik **ikon dropdown** untuk memilih salah satu Pipeline yang tersedia.
-   → Pipeline terpilih akan menjadi konteks untuk Deal baru.
-
-4. Klik **ikon "+"** untuk membuat Deal baru.
-   → Formulir Deal Information akan terbuka.
-
-5. Isi setiap kolom pada **Deal Information** sesuai kebutuhan Anda. Kolom bertanda (*) wajib diisi. Pastikan memilih **Stage** yang sesuai.
-   → Data Deal akan terekam di setiap field.
-
-6. Pada bagian **Association**, tentukan asosiasi Company, Customers (baru atau existing), dan Produk.
-   → Asosiasi akan tersimpan dalam Deal.
-
-7. Verifikasi semua data sudah benar, lalu klik **"Save"**.
-   → Deal baru akan tersimpan dan muncul di daftar Deal.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil menambahkan Deal satuan melalui aplikasi mobile, Anda akan melihat:
-
-1. Pesan konfirmasi atau notifikasi sukses di layar aplikasi
-2. Deal baru muncul di daftar Deal dengan status stage yang Anda pilih
-3. Semua informasi yang diisi (nama Deal, nilai, kontak terkait, produk) tersimpan dengan benar
-4. Deal dapat langsung dilihat dan dikelola melalui aplikasi mobile atau versi web Qontak CRM## Error States  <!-- confidence:medium ~ -->
-
-Kesalahan umum saat menambahkan Deal satuan di mobile:
-
-1. **Kolom wajib kosong**: Jika ada kolom bertanda (*) yang belum diisi, sistem akan menampilkan pesan error dan mencegah penyimpanan. Solusi: Isi semua kolom wajib sebelum klik Save.
-
-2. **Pipeline tidak terpilih**: Deal tidak dapat dibuat tanpa memilih Pipeline terlebih dahulu. Solusi: Pastikan memilih Pipeline melalui ikon dropdown sebelum klik ikon "+".
-
-3. **Koneksi internet terputus**: Data tidak tersimpan jika koneksi hilang saat proses penyimpanan. Solusi: Periksa koneksi internet dan coba simpan kembali.
-
+- Kolom yang terdapat tanda **(*)** artinya wajib diisi.  
+- Isilah field deal sesuai dengan kebutuhan Anda dan perusahaan (field disesuaikan dengan customization perusahaan).  
+- Pastikan bahwa Anda telah memilih stage yang sesuai dengan deal.
+  6. Kemudian pada bagian **Association** , Anda dapat menentukan asosiasi company (perusahaan), customers (kontak perorangan) new ataupun existing, serta produk.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46148169678105)
+  7. Pastikan keseluruhan data telah benar terisi, lalu klik **“Save”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F46148169679385)
 
 ## Escalation  <!-- confidence:medium ~ -->

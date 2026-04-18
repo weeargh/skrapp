@@ -28,13 +28,29 @@ faithfulness_threshold: 0.9
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Contacts pada Qontak Omnichannel adalah pusat manajemen data pelanggan Anda. Di menu ini, Anda dapat melihat daftar lengkap semua kontak yang tersimpan dalam sistem, menambahkan kontak baru secara satuan atau massal, serta mengedit data kontak existing. Menu Contacts menyediakan tampilan terorganisir dengan filter berdasarkan channel komunikasi dan waktu, sehingga memudahkan Anda menemukan dan mengelola informasi kontak pelanggan.## Why It Matters  <!-- confidence:high ✓ -->
 
-Menu Contacts memastikan Anda memiliki database pelanggan yang terorganisir dan mudah diakses dalam satu tempat. Dengan fitur filter dan pencarian yang tersedia, Anda dapat dengan cepat menemukan kontak berdasarkan nama atau channel komunikasi. Fitur bulk edit memungkinkan efisiensi waktu saat mengelola banyak kontak sekaligus. Data kontak yang terintegrasi antara Qontak Omnichannel dan Qontak CRM memastikan konsistensi informasi pelanggan di seluruh sistem.
-
+Di Menu**Contacts** pada Qontak Omnichannel, Anda dapat melihat seluruh daftar _Contact_ yang tersimpan. Di sini, Anda juga dapat menambahkan _Contact_ baru atau bahkan mengedit _Contact_ secara satuan. 
+Sudah menggunakan [Qontak One](https://help-center.qontak.com/hc/id/articles/53169095720729-Sekilas-tentang-Qontak-One)? Jelajahi pengalaman[ Customer yang baru](https://help-center.qontak.com/hc/id/articles/53183780046105-Sekilas-tentang-Customer-Data-Platform) di Qontak One untuk langkah-langkah dan panduan antarmuka yang telah diperbarui.
+  1. Masuk ke menu **Contacts.**
+  2. Berikut tampilan menu Contacts.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432219406745)
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432193033369)
-![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432193035801)
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | **Filter Channels** | Filter pesan berdasarkan Channels yang tersedia pada Contacts.  
+2 | **Filter Time** | Filter pesan berdasarkan kapan waktu _chat_ dibuat.  
+3 | **Actions** | Tombol untuk melakukan pengunduhan data Contact dan melakukan edit data Contact dalam jumlah banyak.  
+![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432193033369)  
+4 | **Create contact** | Membuat data Contact secara satuan (Single contact) dan dalam jumlah banyak (Multiple contacts).   
+![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38432193035801)  
+5 | **Search Contact Name** | Untuk mencari kontak berdasarkan nama.  
+6 | **Name** | Menampilkan nama **customer**.  
+7 | **Channel** | Menampilkan _chat_ dari _channel_ tertentu.  
+8 | **Last Updated (GMT+7)** | Tanggal dan waktu aktivitas terakhir dari **customer** tersebut.  
+9 | **Actions** |  Tombol untuk melihat data Contact secara details serta menghapus data Contact.
+
+**Penting!**  
+- Apabila pada **Q2 2024** , Anda **sudah berlangganan** **Qontak Omnichannel** , namun **belum berlangganan Qontak CRM** , maka saat Anda mulai berlangganan **Qontak CRM** , **Anda tidak perlu** menghapus data kontak di **CRM**.  
+- Apabila pada **Q2 2024** Anda **sudah berlangganan Qontak Omnichannel** dan **Qontak CRM** , maka setiap penghapusan data kontak yang dilakukan di **Omnichannel** akan otomatis terhapus di **CRM**. Dalam hal ini, seluruh seluruh riwayat percakapan, Anda akan terhapus.
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

@@ -38,25 +38,37 @@ Untuk melakukan Request Integration Tokopedia Chat di Qontak Omnichannel, Anda m
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel dengan kredensial Admin Anda.
 
-2. Buka menu Channel Integration dan pilih Tokopedia. Sistem akan menampilkan halaman integrasi Tokopedia.
+Terdapat beberapa syarat integrasi, yaitu:  
+- Pastikan untuk toko Anda sudah berstatus **Power Merchant** atau **Official Store.  
+** - Toko Anda tidak sedang diintegrasikan terhubung dengan aplikasi omnichannel lainnya karena 1 (satu) toko hanya dapat terhubung dengan 1 (satu) dashboard omnichannel.
 
-3. Klik tombol "Book consultation" untuk dihubungi oleh tim support Qontak — tim akan membantu mengatur integrasi melalui Developer Console Tokopedia.
-
-4. Setelah submenu Tokopedia aktif, klik tombol "Add store" kemudian pilih "Request integration". Sistem akan menampilkan halaman formulir request integrasi.
-
-5. Klik tombol "Connect" pada halaman tersebut. Sistem akan menampilkan pop-up formulir yang berisi kolom Phone number, Store name in Tokopedia, dan Store domain.
-
-6. Isi ketiga kolom tersebut dengan data toko Anda, kemudian submit. Sistem akan memproses request integrasi Anda dan melakukan approval process.## Expected Result  <!-- confidence:medium ~ -->
-
-Setelah submit request integration, sistem akan menampilkan konfirmasi bahwa request Anda telah diterima. Tim support Qontak akan menghubungi Anda melalui nomor telepon yang Anda daftarkan untuk melanjutkan proses setup integrasi di Developer Console Tokopedia. Selama proses approval, status request Anda dapat dipantau di halaman Channel Integration. Ketika approval selesai, Tokopedia Chat akan aktif dan terhubung dengan dashboard Qontak Omnichannel Anda.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh3.googleusercontent.com%2FQWq_hKxGbQ1fGkaQrAswg_lNipGO3Tr40nlISyvV6mK_6BwoTiWT9F-B9m-JlEVb6diu41TvONsTQhx-H5H6wuMzinzZaSOp0CFhSy1CtIHNriln3TAKaGsSbpt5rejTGLL-eFlFcmXTna4b47NAmlU)
+1. Klik **“Connect”.**
+  2. Lalu, akan muncul pop-up seperti berikut.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh3.googleusercontent.com%2FQWq_hKxGbQ1fGkaQrAswg_lNipGO3Tr40nlISyvV6mK_6BwoTiWT9F-B9m-JlEVb6diu41TvONsTQhx-H5H6wuMzinzZaSOp0CFhSy1CtIHNriln3TAKaGsSbpt5rejTGLL-eFlFcmXTna4b47NAmlU)  
+****Keterangan:  
+**** **No.** | **Nama kolom** | **Deskripsi**  
+---|---|---  
+1 | Phone number | Isikan nomor telepon yang digunakan Toko Anda.  
+2 | Store name in Tokopedia | Isikan nama Toko Anda di Tokopedia.  
+3 | Store domain |  Isikan link toko Anda.  
+Contoh: _nama toko Anda_ Domain toko dapat diambil dengan login ke akun Tokopedia Anda > Klik **“Toko saya”** di ujung kanan atas profile Anda > Anda akan diarahkan ke toko Anda dan domain tersebut merupakan link domain toko Anda.  
+4 | Store type | Pilih tipe yang sesuai pada toko Anda di Tokopedia.  
+  3. Setelah itu, klik **“Submit”.**
+  4. Maka, Anda akan diarahkan ke halaman berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh4.googleusercontent.com%2FElq-4x3_4uvqJuIUv3Q9Udoo7dVkaL51JQnlUqzTzRVM2I6VwrMSx8RVPgaoseijNhYEjTNFiGZJDG-pcNOErWDVANu13JJeAeoRoSAcMGnTeABYXI40ZSw1Aq8HuRLsm5pLltnBvlScvjZOIp7fm10)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fr2kp1QnXePsYRtmFSb9_OizMR1zblSaUEtlLHSWZi_ZLOOerbPJ67RCOIew6frmvVcoQWY7dxMYcKE4YvaQgbQzzgmrOZNJOPS65glKGqA6FTaJQ5GQoeFiUb-3lPbNa4xfrVfsZ0g_wHp8TV41d2NE)
+  5. Tunggu hingga Anda menerima email verification.
+
+Email verification hanya akan berlaku selama 1x24 jam.
+  6. Setelah email diverifikasi, Anda dapat menunggu selama 2x24 jam untuk proses integrasi yang akan di bantu oleh tim Qontak. Halaman Tokopedia integration akan berubah menjadi seperti berikut dengan status**In progress.****  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fr2kp1QnXePsYRtmFSb9_OizMR1zblSaUEtlLHSWZi_ZLOOerbPJ67RCOIew6frmvVcoQWY7dxMYcKE4YvaQgbQzzgmrOZNJOPS65glKGqA6FTaJQ5GQoeFiUb-3lPbNa4xfrVfsZ0g_wHp8TV41d2NE)
+  7. Jika proses integrasi berhasil, tampilan pada Tokopedia integration akan berubah menjadi seperti berikut. Tertera, statusnya menjadi **Connected.**  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fsc3308YAF48C63FWy3mtQw6PCzccWRjle-rUV654NaAomKJfEiUq7C2qJ_Nfll2AYGNAKAMoDx5nsVyDhgnuuTqHIjfKa-GFP60QeBmLgn3LzEb-8yS3q_bJmJNBadoiC77bG39QnyXXbIoaiknqCOU)
+  8. Namun, jika integrasi tidak diapprove oleh Tokopedia, maka status berubah menjadi **Rejected** dan Anda dapat melihat alasannya seperti berikut.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Flh3.googleusercontent.com%2FKpZBvjFy7iQaD6SDUebKEuUxurAgeVR3gEavt1sdMGMqLmk1XWh8IVkuhkIyhk33nd3VZ-zycsoyA3PB3380duGEUzkCaNzvhOLKv6k5jeKoo8Xy_uN0V0XesvuLH3ZyIDVDVMspr2HcqeLrJFOFU6Y)
+
+Setelah proses integrasi selesai, User harus mengaktifkan "Layanan Pihak Ketiga" melalui link berikut 
+Demikian adalah cara request integration Tokopedia chat Qontak Omnichannel. Selanjutnya, Anda dapat mempelajari cara mengelola integrasi WebChat[ di sini.](https://help-center.qontak.com/hc/id/articles/5642474620825)
 
 ## Error States  <!-- confidence:medium ~ -->
 

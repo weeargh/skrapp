@@ -38,24 +38,21 @@ Untuk melihat informasi room pesan di Qontak Omnichannel versi web, Anda memerlu
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Qontak melalui web browser
-2. Klik menu **Inbox** di navigasi utama — Halaman Inbox akan ditampilkan dengan daftar room pesan (Room List)
-3. Amati informasi pada setiap room: Nama customer, Foto Profile, Last Aktif, Channel Customer, Level Status Room, dan jumlah pesan
-4. Untuk memfilter room, klik tombol **Filter** dan masukkan format nomor 6289127xxxx
-5. Untuk mencari room, klik tombol **Search** dan ketikkan nama atau kata kunci
-6. Untuk melihat pesan sebelumnya, klik tombol **Load older conversations** — Sistem akan memuat riwayat pesan lebih lama
-7. Perhatikan 4 status pesan: All, Unassigned, Assigned, dan Resolved
-8. Untuk menyelesaikan obrolan kadaluarsa, klik **Resolve all expired chat room**## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah mengikuti langkah-langkah di atas, Anda akan berhasil melihat informasi room pesan dengan hasil berikut:
-
-- Halaman Inbox menampilkan daftar lengkap room pesan dari semua customer
-- Setiap room menunjukkan nama, foto profil, status aktif terakhir, channel, level status, dan jumlah pesan
-- Fitur Filter, Search, dan Resolve all expired chat room tersedia dan siap digunakan
-- Riwayat pesan lama dapat dimuat dengan klik tombol **Load older conversations**
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak dimana para customer service akan melayani semua keluhan user berupa chat yang masuk kedalam Inbox.
+Untuk melihat informasi room pesan, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda.
+  2. Berikut merupakan tampilan web yang muncul setelah anda mengklik menu **Inbox** dengan fitur-fitur yang disediakan.  
 ![21.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56527490168601)
+  3. Pada halaman Inbox, terdapat **Room List** atau bisa dikatakan _activity_ dari _customers_ yang memiliki informasi (Nama, Foto Profile, Last Aktif, Channel Customer, Level Status Room dan jumlah pesan).  
 ![22.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56527571471001)
+
+- Sebagai informasi, pesan yang sudah di resolve, tidak dapat dibuka kembali sampai pelanggan mengirimkan chat kembali kepada Anda. Atau Anda dapat [mengirimkan broadcast](https://help-center.qontak.com/hc/id/articles/5499189914521) terlebih dahulu dan menunggu customer membalas broadcast tersebut.  
+- Tombol **“Filter”** untuk melihat Inbox dengan pengaturan tertentu. Untuk melakukan filter contact, gunakan format 6289127xxxx.  
+- Tombol **“Search”** untuk mencari Inbox berdasarkan nama atau sesuai kata kunci yang dimasukkan.  
+- Tombol **“Resolve all expired chat room”** untuk menyelesaikan semua obrolan yang sudah kadaluarsa.  
+- Terdapat 4 status pesan pada Inbox **(All, Unassigned, Assigned dan Resolved)**.
+  4. Anda juga dapat melihat pesan-pesan sebelumnya dari pelanggan dengan klik tombol **“Load older conversations”**.  
 ![23.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56527490175385)
 
 ## Error States  <!-- confidence:high ✓ -->

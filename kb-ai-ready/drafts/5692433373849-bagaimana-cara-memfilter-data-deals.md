@@ -37,25 +37,13 @@ Untuk memfilter data Deals di Qontak CRM, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka menu **Deals** pada Qontak CRM.
-   → Sistem akan menampilkan daftar semua Deals.
 
-2. Klik tombol **filter** yang terletak di bagian kanan atas samping menu pencarian.
-   → Panel filter akan terbuka menampilkan opsi-opsi filter tersedia.
-
-3. Pilih kriteria filter berdasarkan kebutuhan Anda: pemilik/pembuat Deal, asosiasi dengan Company, atau field Deal seperti nama Deal, tanggal dibuat, dan alamat.
-   → Opsi filter yang dipilih akan ditandai.
-
-4. Klik tombol **Apply** untuk menerapkan filter.
-   → Tampilan daftar Deals akan menyesuaikan sesuai kriteria filter yang Anda tentukan.
-
-5. Untuk menghapus filter dan kembali ke tampilan default, klik tombol **Reset**.
-   → Daftar Deals akan kembali menampilkan semua data tanpa filter.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah Anda mengklik tombol **Apply**, daftar Deals pada halaman akan berubah dan hanya menampilkan Deals yang sesuai dengan kriteria filter yang Anda pilih. Anda dapat melihat jumlah Deals yang difilter, mengunduhnya, atau menghapusnya sesuai kebutuhan. Ketika Anda klik **Reset**, daftar Deals akan kembali ke tampilan awal menampilkan semua Deals tanpa filter.
-
+Ketika ingin memilih beberapa **deal** untuk Anda unduh, hapus, atau sekedar melihat jumlah **deal** yang ada, Anda dapat menggunakan fitur _filter_ dalam suatu **deal**. Berikut beberapa tahap untuk **memfilter** data **deal**.
+  1. Pilih menu **Deal** dan klik filter pada bagian kanan atas di samping menu pencarian.  
 ![19.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49954364846617)
+  2. Anda dapat memfilter deal berdasarkan pemilik/pembuat data **deal** , asosiasi dengan **company** atau yang lain dan _filter_ berdasarkan _field-field_ deal sendiri seperti nama **deal** , tanggal dibuat, alamat, dll.  
 ![Filter_Data_Deals_2.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5692471984921)
+  3. Ketika Anda sudah memilih _field_ _filter_ yang Anda ingin sortir, jangan lupa untuk klik “**Apply** ” untuk memulai proses _filter_. Setelah Anda mengklik “**Apply** ”, tampilan **deal** Anda akan menyesuaikan dengan _filter_ tersebut. Apabila Anda sudah selesai mem-_filter_ , jangan lupa untuk klik “**Reset** ” untuk mengembalikan tampilan deal pada _default_ sebelumnya.  
 ![Filter_Data_Deals_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776188603801)
 
 ## Error States  <!-- confidence:low ? -->

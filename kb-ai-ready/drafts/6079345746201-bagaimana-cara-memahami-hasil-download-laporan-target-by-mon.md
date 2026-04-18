@@ -40,34 +40,25 @@ Catatan: Laporan ini menampilkan perbandingan antara target dan pencapaian count
 
 ## Steps  <!-- confidence:medium ~ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman Dashboard utama akan terbuka.
 
-2. Buka menu Report atau navigasi ke bagian Laporan Target.
-   → Daftar laporan yang tersedia akan ditampilkan.
-
-3. Pilih Laporan Target By Months By Count dari daftar laporan.
-   → Halaman konfigurasi laporan akan terbuka.
-
-4. Tentukan filter: pilih bulan target, waktu laporan, dan user yang ingin dilihat.
-   → Sistem akan menyesuaikan data berdasarkan filter pilihan Anda.
-
-5. Klik tombol Download untuk mengunduh laporan.
-   → File Excel dengan sheet detail akan diunduh ke perangkat Anda.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah download selesai, file Excel akan menampilkan satu sheet dengan detail:
-
-• User: Nama pembuat deals
-• Target Value & Achieved Value: Perbandingan target dan nilai deals won
-• Achieved Value %: Persentase pencapaian nilai
-• Remaining Value & %: Sisa target yang belum tercapai
-• Target Count & Achieved Count: Perbandingan target dan jumlah deals won
-• Achieved Count %: Persentase pencapaian jumlah deals
-• Remaining Count & %: Sisa target jumlah deals yang belum tercapai
-
-Data tersegmentasi per user pembuat deals untuk periode bulanan yang dipilih.
-
+Laporan ini dapat Anda gunakan untuk melihat perbandingan berdasarkan user pembuat deals, antara jumlah Count dalam **stage won** dengan target jumlah Count pada bulan yang anda pilih.
+Hasil download **Laporan Target By Months By Count** ketika sudah di download akan menampilkan sheet seperti gambar di bawah ini:  
 ![count.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774222910745)
+Pada sheet ini, ditampilkan secara detail mengenai:  
+- Filter target per bulan nya  
+- Filter waktu laporan  
+- Filter by user  
+1. User  
+2. Target Value  
+3. Achieved Value  
+4. Achieved Value %  
+5. Remaining Value  
+6. Remaining Value %  
+7. Target Count  
+8. Achieved Count  
+9. Achieved Count %  
+10. Remaining Count  
+11. Remaining Count %
 
 ## Error States  <!-- confidence:low ? -->
 

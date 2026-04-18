@@ -38,27 +38,11 @@ Untuk melihat dan mengunduh laporan CES pada Reports di Mekari Qontak Omnichanne
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel Anda dengan Username dan Password, kemudian klik tombol "Login"
-   → Halaman dashboard Omnichannel akan terbuka
 
-2. Pilih menu **Reports**, kemudian klik **CES**
-   → Halaman laporan CES akan ditampilkan dengan data survei
+4. Pada tampilan **CES,** Anda dapat melihat **CES Breakdown** yang menunjukkan data dari  _respondents._ Dengan metrik **CES Breakdown** , Anda dapat melihat **grafik** **tingkat kemudahan customers** _**(Easy, Neutral, Difficult)**_ yang ditunjukkan dalam **presentase tingkat kemudahan** dan **presentase rata - rata** _**(Average)**_**.**  
+**![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287618841)**
 
-3. (Opsional) Gunakan fitur **Filter** untuk menyesuaikan laporan: Timezone, Channels, jangka waktu, dan Role
-   → Laporan akan diperbarui sesuai filter yang dipilih
-
-4. Lihat bagian **CES Breakdown** yang menampilkan grafik tingkat kemudahan (Easy, Neutral, Difficult) dalam persentase dan rata-rata
-
-5. Lihat tabel **CES Responses** yang menampilkan nama responden, tanggal, channel, agent yang ditugaskan, komentar, dan skor
-
-6. Klik ikon **Unduh** untuk mengekspor data dalam format CSV yang kompatibel dengan Microsoft Excel## Expected Result  <!-- confidence:high ✓ -->
-
-• Halaman CES Reports terbuka menampilkan ringkasan metrik Customer Effort Score
-• Grafik CES Breakdown menunjukkan distribusi responden dalam kategori Easy (Mudah), Neutral (Netral), dan Difficult (Sulit) dengan persentase dan skor rata-rata
-• Tabel CES Responses menampilkan daftar lengkap responden beserta detail percakapan mereka
-• File CSV berhasil diunduh ke komputer Anda dan dapat dibuka di Microsoft Excel untuk analisis lebih lanjut
-
-![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776287618841)
+Demikian adalah cara melihat dan mengunduh laporan CES pada Reports.
 
 ## Error States  <!-- confidence:low ? -->
 

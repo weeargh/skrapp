@@ -28,13 +28,34 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Inbox Omnichannel Qontak adalah pusat layanan pelanggan di mana customer service mengelola semua chat masuk dari berbagai channel (WhatsApp, Instagram, Facebook Messenger, dan lainnya). Fitur ini menyediakan tampilan terpusat dengan tools lengkap untuk mencari percakapan, menyaring chat berdasarkan status, mengurutkan room chat, serta mengakses detail pelanggan dan riwayat interaksi dalam satu interface terpadu.## Why It Matters  <!-- confidence:medium ~ -->
 
-Menu Inbox memungkinkan customer service mengelola volume chat tinggi secara efisien dengan fitur pencarian, filter, dan sortir yang presisi. Akses cepat ke detail pelanggan, riwayat percakapan, dan informasi SLA Target membantu agent memberikan respons lebih cepat dan personal. Fitur seperti Agent Scorecard dan Knowledge base mendukung peningkatan kualitas layanan serta pembelajaran berkelanjutan tim customer service.
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak di mana para **customer service** akan melayani semua keluhan _user_ berupa **chat** yang masuk.
+Untuk melihat tampilan Inbox pada Web, Anda perlu mengikuti langkah-langkah berikut.
+  1. Masuk ke akun Omnichannel Anda.
+  2. Berikut merupakan tampilan web yang muncul setelah Anda klik menu **Inbox** dengan fitur-fitur yang disediakan.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49378845471129)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49378828893849)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49378828895641)
+
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | Tombol ‘Search’ | Tombol untuk mencari kontak atau percakapan.  
+2 | Sub menu Inbox |  Sub menu yang berisikan akses ke semua _chat_ yang masuk (**All chats**), _chat_ yang hanya masuk ke Agent yang telah ditugaskan (**My Chats)** , _chat_ yang belum di-_assign_ (**Unassigned**), _chat_ yang telah di-_assign_ (**Assigned**), dan _chat_ yang telah diselesaikan (**Resolved**).
+
+Pelajari selengkapnya terkait ‘Sort Room’ [di sini](https://help-center.qontak.com/hc/id/articles/49378248197529--NEW-Sekilas-Tampilan-Sort-Room-pada-akun-Admin-Supervisor-dan-Agent).  
+4 | Tombol Resolved |  Klik tombol ini untuk menyelesaikan semua obrolan yang sudah kedaluwarsa.   
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49378828893849)  
+Keterangan:  
+- **Whatsapp Cloud** : Jika ingin menghapus pesan dari WhatsApp.  
+- **Instagram** : Jika ingin menghapus pesan dari Instagram.  
+- **Facebook Messenger** : Jika ingin menghapus pesan dari Facebook Messenger.  
+- **Including unassigned room** : Jika ingin menghapus pesan dari room yang belum di assign ke agent.  
+5 | Tombol Filter |  Untuk melihat Inbox dengan pengaturan yang terdiri dari **Unresponded chat** , **Session** , **Channel** , **Agents** , **Tags** , dan **Untagged**.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49378828895641)  
+6 | Room List | Menampilkan daftar ruang percakapan yang masuk.  
+7 | Room chat | Menampilkan detail ruang percakapan.  
+8 | Nama klien | Menampilkan nama kontak klien yang mengirim pesan.  
+9 | Room detail |  Menampilkan informasi _detail_ dari **SLA Target** , **Associated contacts** , **Customer profile** , **Conversation details** , **Notes** , **Tags** , **Assignees** , **Conversation history** , **Campaign history** , **Deals** , hingga **Tickets** yang terhubung dengan _chat_.  
+10 | Knowledge base | Tombol untuk mendapatkan sumber pengetahuan.   
+11 | Agent Scorecard | Tombol untuk melakukan penilaian terhadap Agent.
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

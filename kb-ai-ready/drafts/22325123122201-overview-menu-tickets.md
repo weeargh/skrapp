@@ -27,15 +27,58 @@ faithfulness_threshold: 0.9
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Menu Tickets dalam Qontak CRM adalah fitur untuk mengelola tiket dukungan pelanggan melalui berbagai tahapan (*stages*) dan tingkat prioritas. Fitur ini menyediakan interface terpadu untuk melacak, mengorganisir, dan menyelesaikan kendala pelanggan dengan sistem pipeline yang terstruktur, memungkinkan tim customer service untuk mengelola alur pekerjaan secara efisien dari permintaan awal hingga penyelesaian.## Why It Matters  <!-- confidence:high ✓ -->
 
-Menu Tickets membantu tim customer service meningkatkan efisiensi penanganan kendala dengan memberikan visibilitas penuh terhadap status setiap tiket. Dengan fitur prioritas, assignment, dan SLA target, organisasi dapat memastikan respons tepat waktu, menjaga kepuasan pelanggan, dan mencegah tiket terlewatkan. Integrasi dengan Omnichannel memungkinkan konversi percakapan menjadi tiket, sehingga semua interaksi pelanggan tercatat dan terlacak dalam satu sistem.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56810371935769)
+Melalui CRM Qontak, Anda dapat melakukan manajemen tiket melalui beberapa tahapan _(stages)_. Anda juga dapat mengatur skala prioritas tiket tersebut untuk urgensi kendala tertentu. Fitur ini membantu tracking proses pada alur customer service. Berikut adalah sekilas tentang menu Tickets.
+  1. Pada Qontak CRM Anda, masuk ke menu**Tickets.**
+  2. Maka, akan ditampilkan halaman seperti berikut.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56810371935769)  
+Keterangan:
+No. | Nama Fitur | Penjelasan  
+---|---|---  
+1 | Tab Filter Ticket | Mengelompokkan tiket berdasarkan kategori tertentu. Pelajari [di sini](https://help-center.qontak.com/hc/id/articles/56814411307161-Sekilas-Tampilan-Filter-pada-Menu-Tickets-Mekari-Qontak) lebih lanjut filter _ticket_.  
+2 | Download |  Klik tombol ini untuk mengunduh tiket.
+     * Anda dapat mengunduh tiket dalam mode Table View atau Board View.
+     * Berikut tampilan mengunduh tiket dalam mode Table View:  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56810353642009)
+     * Anda dapat mengunduh tiket secara satuan maupun massal dengan mencentang _checkbox_ yang muncul.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56810353643801)
+     * Berikut tampilan mengunduh tiket dalam mode Board View:  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56810353644825)
+
+3 | Create ticket | Klik tombol ini untuk membuat tiket baru. Anda dapat mempelajari cara membuat tiket baru di sini.  
+4 | Ticket pipeline | Kolom ini mendeskripsikan tiket apa yang ditampilkan.  
+5 | Filter |  Anda dapat memfilter tiket-tiket secara lebih rinci berdasarkan:
+     * Stage
+     * Priority
+     * Reporter
+     * Assignee
+     * Created date
+     * Last activity date
+     * Test Ticket Field
+     * Test
+     * Category
+     * SLA Target
+Dan Associated with:
+     * Contact
+     * Company
+     * Product
+     * Task  
+6 | Board view/Table view | Klik tombol-tombol ini untuk mengubah tampilan daftar tiket seperti kotak-kotak kolom (board) atau list (table).  
+7 | Search bar | Manfaatkan kolom ini untuk mencari tiket tertentu.  
+8 | Ticket list |  Menunjukkan informasi daftar tiket yang sudah dibuat seperti:
+
+- Nama tiket  
+- Ticket ID   
+- Stage di mana tiket tersebut berada  
+- Prioritas tiket  
+- SLA target tiket tersebut Anda dapat mengarahkan kursor untuk melihat detail SLA target yang ditetapkan.  
+- Due date  
+- Assignee yang menunjukkan kepada siapa tiket tersebut ditujukan.  
+- Aktivitas terakhir terkait tiket tersebut.  
+9 | Actions |  Berisikan tombol tindakan untuk mengubah (Edit), menduplikasi (Duplicate) dan menghapus (Delete) tiket.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F56810353646489)
+
+Demikian adalah sekilas tentang Ticket pada Qontak CRM.
 
 ## Key Attributes  <!-- confidence:high ✓ -->
 

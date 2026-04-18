@@ -33,23 +33,45 @@ Anda memerlukan akun Qontak Omnichannel aktif dengan role Admin atau user yang m
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Qontak Omnichannel Anda. Sistem akan menampilkan dashboard utama.
-2. Buka menu Campaign (Broadcast), kemudian klik tab Templates. Daftar template yang ada akan muncul.
-3. Klik tombol Create template, lalu pilih Campaign template. Form pembuatan template akan ditampilkan.
-4. Isi kolom Template name dengan huruf kecil tanpa spasi dan pastikan tidak sama dengan template yang sudah ada—jika duplikat, sistem akan menolak. Pilih bahasa di kolom Template languages.
-5. Di kolom Enter the text for your message, tulis pesan dengan maksimal 1024 karakter. Anda dapat menggunakan format bold, italics, strikethrough, atau menambahkan variabel dengan tombol + Add Variable untuk personalisasi (nama pelanggan, produk, URL, dll).
-6. Opsional: Tambahkan media (Image, Video, Document) di Sample Media Content sebagai banner pesan.
-7. Opsional: Tambahkan Interactive Message berupa Quick Reply atau Call To Action (Phone).
-8. Verifikasi preview pesan di panel kanan.
-9. Klik tombol Submit. Sistem akan memproses dan menyimpan template.## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah klik tombol Submit, template message campaign berhasil dibuat. Sistem akan menampilkan pesan konfirmasi dan template baru akan muncul dalam daftar Templates di menu Campaign (Broadcast). Anda dapat langsung menggunakan template ini untuk membuat broadcast campaign ke banyak konsumen sekaligus. Template akan tersimpan dengan nama yang Anda tentukan dan siap digunakan untuk pengiriman pesan siaran.
-
+**Penting**  
+Per tanggal **12 Oktober 2023** , WhatsApp telah mengimplementasikan Template Pacing yang dapat berdampak terhadap campaign broadcast Anda, pelajari lebih lengkap [di sini](https://help-center.qontak.com/hc/id/articles/23381251489689).
+Menu **Campaign (Broadcast)** adalah salah satu fitur pada Chat Panel yang memungkinkan penggunanya untuk bisa mengirimkan pesan ke banyak konsumen di Qontak sekaligus. Fitur tersebut juga biasa dikenal dengan pesan siaran. Melalui campaign kita tidak perlu membuka kolom chat tiap-tiap konsumen di contacts untuk mengirimkan mereka pesan yang sama. Tidak hanya itu, waktu yang dibutuhkan untuk mengirim pesan ke banyak kontak menjadi lebih singkat dan lebih mudah.
+Sebelumnya Anda dapat mempelajari tentang:  
+[**[Blog] Cara Kirim Broadcast WhatsApp Tanpa Simpan Kontak ke Ribuan Nomor**](https://qontak.com/blog/cara-broadcast-whatsapp/?utm_source=ecosystem&utm_medium=qontak+%28help+center%29)  
+[**[Blog] Contoh Template Broadcast WhatsApp Sukses Datangkan Banyak Pelanggan**](https://qontak.com/blog/contoh-template-broadcast-whatsapp/?utm_source=ecosystem&utm_medium=qontak+%28help+center%29)
+Berikut merupakan cara membuat template pesan untuk mengirim Broadcast:
+  1. Masuk ke Akun Qontak Omnichannel Anda.
+  2. Pilik menu **Campaigns (Broadcast),** lalu klik **"Templates"**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43749067796249)
+  3. Selanjutnya, klik **"Create template"** dan pilih **Campaign template**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F47383910442777)
+  4. Untuk membuat template baru, Anda harus mengisi kolom yang sudah disediakan. Jika sudah, maka klik **"Continue"** untuk ke proses selanjutnya.  
 ![CategoryQontak2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780961419289)
-![CategoryQontak3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919275033)
+- Isikan Template name **tanpa spasi dan dengan huruf kecil semua**. Serta pastikan judul yang di imput tidak sama dengan judul yang sudah ada sebelumnya, karena apabila Anda membuat judul yang sama dengan judul yang sudah ada maka, pembuatan template akan gagal.   
+- Untuk mempelajari tentang kategori template pada**Choose Category,** klik [panduan ini.](https://help-center.qontak.com/hc/id/articles/5923575558425)
+  5. Kemudian, klik **"Submit"** jika data yang Anda masukkan sudah sesuai.  
+![CategoryQontak3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919275033)  
+**Keterangan:**
+     * **Message preview:** Anda dapat melihat template preview yang anda buat di samping kanan tampilan.
+     * **Template languages:** Pilih bahasa yang akan dipakai untuk template. Silahkan gunakan 1 bahasa dan apabila konten mengandung 2 bahasa, maka Anda dapat membuat 2 konten template yang berbeda.
+     * **Sample Media Content (Optional):** Pilih media (Image, Video, Document) yang akan dipakai sebagai banner pesan.
+     * **Enter the text for your message:** Anda dapat menulis template di sini dengan maksimal karakter sejumlah 1024.
+       * Terdapat format **bold, italics** , dan **strikethrough.**
+       * **+ Add Variable** adalah sebuah parameter variabel untuk mengganti variabel tersebut dengan nama pelanggan, nama produk, URL, jasa pengiriman, dll. Untuk lebih jelasnya, klik **See Example.**
+     * **Interactive Message (Optional):** Anda dapat menambahkan tombol untuk membuat percakapan kontekstual dengan format interactive seperti berikut:  
+- Quick Reply.  
+- Call To Action (Phone Number).  
+- Call To Action (URL).
+     * **Syarat dan ketentuan dalam pembuatan template:**  
+- Link dijadikan variable  
+- Tidak ada spasi di sebelum tanda titik dua, contoh: Tanggal.  
+- Tidak ada konten hard selling seperti kata Gratis, Voucher, Hadiah, Doorprize, nominal uang  
+- Menggunakan titik di akhir kalimat tanpa ada spasi setelah titik  
+- Menggunakan bahasa yang baik dan benar & tidak mengandung 2 atau lebih bahasa
+  6. Pop Up Notifikasi akan muncul jika data yang Anda submit sudah benar.   
 ![5__2_.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919273241)
+Jika data yang Anda masukkan salah atau belum terisi maka secara otomatis sistem akan menampilkan notification pada kolom seperti “field is required”.
 
 ## Error States  <!-- confidence:medium ~ -->
 

@@ -37,38 +37,42 @@ Untuk melihat Bot Performance pada Reports, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka menu **Report** di dashboard Qontak Chat. Sistem akan menampilkan halaman Report.
 
-2. Klik **Bot Performance**. Sistem akan menampilkan dashboard performa bot dengan berbagai metrik.
-
-3. Gunakan **Date filter** untuk memfilter laporan berdasarkan rentang waktu yang Anda inginkan.
-
-4. Periksa metrik utama: Conversation Handled by Bot, Conversation Resolved by bots, Conversation Assigned to Agent, dan Avg. Resolution Time.
-
-5. Lihat grafik **Performance trend** untuk melihat perbandingan percakapan yang di-resolve oleh bot versus yang di-assign ke Agent.
-
-6. Lihat laporan **Top Bot performance** untuk melihat bot response mana yang paling sering ditampilkan ke pelanggan.
-
-7. Periksa **Fallback rate details** untuk melihat jumlah fallback yang di-trigger dan Confusion Rate.
-
-8. Lihat grafik **Customer and Bot Interactions** untuk analisis interaksi detail.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menyelesaikan langkah-langkah di atas, Anda akan melihat dashboard Bot Performance yang berisi:
-
-- Metrik performa bot (handled, resolved, assigned, resolution time)
-- Grafik trend performa dari waktu ke waktu
-- Daftar top bot responses dengan statistik penggunaan
-- Detail fallback dengan confusion rate untuk setiap bot response
-- Visualisasi interaksi pelanggan dan respons bot
-
-Semua data dapat difilter berdasarkan rentang tanggal yang dipilih.
-
+Pada Qontak, Anda bisa melihat bot performance melalui menu **Report**. Fitur ini memungkinkan Anda melihat bagaimana kinerja bot dalam menangani pelanggan seperti melihat berapa banyak chat room yang sudah di-_resolve_ oleh chatbot. Berikut langkah-langkahnya.
+  1. Masuk ke menu **Report**.
+  2. Lalu pilih **Bot Performance**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48427363329177)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48427388783129)
+  3. Maka akan ditampilkan laporan bot performance sebagai berikut.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48427388783129)  
+**No.** |  **Nama Laporan/ Tombol** |  **Keterangan**  
+---|---|---  
+1 |  Date filter |  Untuk memfilter laporan berdasarkan rentang waktu tertentu.  
+2 |  Conversation Handled by Bot |  Menunjukkan total chat yang sudah di-_handle_ oleh bot _._  
+3 |  Conversation Resolved by bots |  Menunjukkan total chat yang sudah di-_resolved_ oleh bot.  
+4 |  Conversation Assigned to Agent |  Menunjukkan total jumlah percakapan yang di-_assign_ ke Agent.  
+5 |  Avg. Resolution Time |  Rata-rata waktu yang dibutuhkan bot untuk menyelesaikan percakapan tanpa melibatkan Agent.  
+  4. Selain itu, Anda juga dapat melihat grafik Performance trend, yang berisi perbandingan antara percakapan yang di-_resolved_ oleh bot dengan percakapan yang telah di-_assign_ ke Agent oleh bot.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48427388784409)
+  5. Selanjutnya, Anda dapat melihat laporan dari **Top Bot performance** yang menampilkan **bot response** mana yang paling banyak ditampilkan kepada pelanggan. Di sini, Anda dapat melihat nama respon bot dan perhitungan jumlah total respon bot yang ditampilkan.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48495938997657)
+  6. Terdapat **Fallback rate details** , di sini akan menampilkan berapa banyak pesan Fallback yang di-_trigger_ dan menunjukkan Confusion Rate dari Bot Response tersebut.  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48495935249305)
+
+Keterangan setiap kolom:  
+1. Bot Response Name: nama respon bot yang telah dibuat.  
+2. Total Fallback: jumlah fallback yang ditampilkan kepada pelanggan per respon bot.  
+3. Total Answered: jumlah pelanggan yang dapat dijawab oleh bot.  
+4. Confusion Rate: persentase respon fallback dari semua pesan yang dijawab. Hal ini menunjukkan seberapa sering bot gagal memahami pelanggan.
+  7. Terakhir terdapat **Customer and Bot Interactions**. Grafik ini akan menampilkan bagaimana setiap interaksi pelanggan berhubungan dengan respons bot tertentu.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48430152491929)
+
+Keterangan setiap kolom:  
+1. Customer name: nama pelanggan yang berinteraksi dengan bot.  
+2. First bot response: menunjukkan respons bot pertama yang berinteraksi dengan pelanggan.  
+3. Last Bot Response: menunjukkan respons bot terakhir yang berinteraksi dengan pelanggan sebelum di-_resolve_ atau di-_assign_ ke Agent.  
+4. Channel: tempat percakapan terjadi.  
+5. Created at: saat **room/conversation** dibuat.
+  8. Selanjutnya, Anda dapat mengunduh laporan **Bot response performance, Performance****Trend** , **Top Bot Performance** ,**Fallback rate****details** , dan **Customer and Bot Interactions** dengan klik **‘ikon titik tiga’** di pojok kanan dari setiap tabel lalu klik **“Download results”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F48430152499609)
 
 ## Error States  <!-- confidence:low ? -->

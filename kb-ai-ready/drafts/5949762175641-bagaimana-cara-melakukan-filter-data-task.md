@@ -40,22 +40,20 @@ Tidak ada persyaratan role khusus (Admin atau Owner) untuk menggunakan fitur fil
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Mekari Qontak CRM Anda dan buka menu **Task**. Sistem akan menampilkan database Task yang Anda miliki.
 
-2. Klik **ikon filter** di halaman daftar Task. Panel pengaturan filter akan muncul.
-
-3. Isi field filter sesuai kebutuhan Anda. Tersedia filter pada kolom **Reporter** untuk memfilter pengguna yang membuat atau mengunggah Task melalui template.
-
-4. Klik tombol **Apply** untuk menerapkan filter, atau klik **Reset** untuk membatalkan pengaturan filter. Centang opsi **Save as Default** jika ingin menyimpan pengaturan filter secara default.
-
-5. Daftar Task akan diperbarui dan menampilkan hanya Task yang sesuai dengan kriteria filter yang Anda terapkan.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah menerapkan filter, halaman menu Task akan menampilkan daftar Task yang telah disaring sesuai dengan kriteria filter yang Anda terapkan. Hanya Task yang memenuhi spesifikasi filter akan ditampilkan dalam database Task Anda. Jika Anda memilih **Save as Default**, pengaturan filter tersebut akan tersimpan dan otomatis diterapkan saat Anda membuka menu Task berikutnya.
-
+**Task** pada CRM Qontak memiliki fitur filter yang dapat memudahkan Anda dalam mencari beberapa Task dengan spesifikasi tertentu yang dapat diatur sesuai dengan keinginan Anda.
+Ikuti langka berikut untuk menggunakan fitur filter data Task di akun Qontak Anda:
+  1. Masuk ke menu **Task** untuk membuka _database_ Task yang Anda dimiliki.
+  2. Untuk melakukan filter task, klik **'ikon filter'**.  
 ![mceclip1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36777834054809)
+  3. Setelah itu, akan muncul pengaturan filter. Anda dapat mengisi _field_ filter yang ada, sesuai dengan kebutuhan Anda.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39993062448793)
+Kini, terdapat filter pada kolom **Reporter** yang berfungsi untuk memfilter pengguna yang membuat atau mengunggah single task melalui _template_.  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F39993062450841)
+  4. Kemudian, untuk menerapkan filter, klik “**Apply** ” atau klik “**Reset** ” untuk membatalkan pengaturan filter.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F5950013890841)
+Centang **Save as Default** , apabilan Anda ingin menyaring task secara sementara.
+  5. Maka, kriteria Task yang akan ditampilkan, akan sesuai dengan filter yang Anda terapkan.
 
 ## Error States  <!-- confidence:low ? -->
 

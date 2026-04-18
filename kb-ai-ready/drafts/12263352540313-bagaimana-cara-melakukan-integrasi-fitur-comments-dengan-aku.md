@@ -42,21 +42,33 @@ Tanpa Message Control diaktifkan, komentar dari Instagram tidak akan masuk ke ch
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda dengan kredensial Admin.
-2. Buka menu **Channel Integration** dan pilih **Instagram**.
-3. Klik tombol **Add Instagram** dan pilih **Comment**.
-4. Klik tombol **Continue** untuk melanjutkan — sistem akan menampilkan konfirmasi dari Facebook.
-5. Klik tombol **Continue as (nama akun Anda)** pada jendela popup Facebook.
-6. Pilih pengaturan impor komentar yang Anda inginkan:
-   - **Import all comments**: untuk mengimpor semua komentar pada akun Instagram
-   - **Only import comments that are mentioned this instagram account**: untuk mengimpor hanya komentar yang me-mention akun Instagram Anda
-7. Klik tombol **Connect** — sistem akan menampilkan notifikasi "Instagram connected" jika berhasil.## Expected Result  <!-- confidence:high ✓ -->
 
-Integrasi berhasil ketika Anda menerima notifikasi "Instagram connected" di layar Qontak Omnichannel. Setelah itu, komentar dari Instagram akan mulai masuk ke menu **Inbox** Qontak dan dapat dikelola oleh Admin, Supervisor, dan Agent. Anda dapat melihat akun Instagram yang terintegrasi di tab **Comments** dalam menu **Channel Integration**.
+Pada Qontak, Anda sudah dapat mengintegrasikan komentar-komentar yang ada pada post instagram Anda dengan Qontak Omnichannel Anda. Fitur ini merupakan fitur _add-ons_ sehingga diperlukan biaya tambahan untuk mengaktifkan fitur ini. Hubungi tim _support_ kami di untuk mengaktifkan fitur ini. Berikut langkah-langkah untuk mengintegrasikan fitur Comment ini dengan akun Instagram Anda:
+  1. Login ke Akun Qontak Omnichannel Anda.
+  2. Masuk ke Menu **Channel Integration** dan pilih **Instagram.**  
+**![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49069092940697)**
 
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49069092940697)
+Pada bagian integrasi instagram terdapat tata cara mengintegrasikan Instagram dan siapa saja yang bisa menggunakan fitur tersebut.  
+Yang bisa menggunakan fitur integrasi instagram adalah:  
+- Hanya**Admin** yang dapat mengintegrasikan instagram.  
+- **Admin, Supervisor** dan**Agent** dapat menggunakannya di Inbox.  
+Dan salah satu syarat dalam mengintegrasikan instagram adalah memastikan bahwa user sudah **Enable Message Control Connected Tools** pada Instagram Settings -> Privacy -> Messages -> Connected Tools -> Enable Allow Access to Messages, karena jika status belum **Enable** pesan dari instagram tidak akan masuk ke chat panel.
+
+Cara mengintegrasikan Instagram Direct Messenger dan Comments adalah sebagai berikut:  
+1. Klik Tambahkan Akun Instagram.  
+2. Terhubung dengan akun Instagram, pastikan akun Anda adalah Akun Instagram Business.  
+3. Masuk ke akun Instagram, pastikan akun Anda adalah admin di Halaman Instagram.  
+4. Ikuti instruksi di jendela popup Instagram.  
+5. Pilih Halaman Instagram yang terhubung dengan Akun Instagram Business Anda.  
+6. Simpan Perubahan dan mulai komunikasi dengan pelanggan Anda melalui Instagram Direct Messenger di halaman Inbox.
+  5. Kemudian akan muncul konfirmasi dari Facebook dan klik **“Continue as (nama akun Anda)”**.  
 ![36b.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772392279449)
+
+-**Import all comments:** pilih ini, agar semua komentar yang masuk pada akun instagram yang telah Anda hubungkan dapat di import.  
+- **Only import comments that are mentioned this intagram account:** pilih ini, apabila Anda hanya ingin mengimpor komentar-komentar yang me-mention akun instagram Anda.
+  7. Dan apabila berhasil, Anda akan mendapatkan notifikasi**instagram connected**.  
 ![36d.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772392281497)
+  8. Anda bisa berhenti terintegrasi dengan instagram dengan cara klik ikon **“Disconnect”** pada tab **Comments** , seperti berikut.  
 ![37.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36772399890329)
 
 ## Error States  <!-- confidence:medium ~ -->

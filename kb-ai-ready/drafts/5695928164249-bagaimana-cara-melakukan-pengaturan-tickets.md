@@ -38,29 +38,28 @@ Pengaturan ini dilakukan oleh Administrator atau user dengan izin mengelola konf
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Omnichannel Qontak Anda.
 
-2. Klik menu **Settings**, kemudian pilih **Tickets**. Halaman Ticket Settings akan ditampilkan.
-
-3. Pada halaman Ticket Settings, temukan toggle button **Submit ticket**. Aktifkan toggle untuk mengizinkan agent membuat tiket (status ON) atau nonaktifkan untuk melarang pembuatan tiket (status OFF).
-
-4. Lengkapi semua kolom yang tersedia di halaman pengaturan.
-
-5. Klik tombol **Save** untuk menyimpan perubahan pengaturan Tickets.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah pengaturan berhasil disimpan:
-
-• Jika toggle Submit ticket dalam status ON: Agent akan melihat tombol Submit ticket pada setiap percakapan di inbox, dan dapat membuat tiket dari percakapan tersebut.
-
-• Jika toggle Submit ticket dalam status OFF: Agent tidak akan melihat tombol Submit ticket atau field tiket di inbox.
-
-Perubahan pengaturan akan langsung berlaku untuk semua agent yang mengakses Omnichannel.
-
-![80.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936880683161)
+**Settings** merupakan sebuah fitur di mana para customer dapat mengontrol atau melakukan pengaturan Omnichannel Qontak. 
+Untuk mengubah percakapan menjadi tiket, Anda perlu mengikuti langkah-langkah berikut:
+  1. Masuk ke akun Omnichannel Anda.
+  2. Pilih**Settings** , kemudian klik**Tickets.  
+![80.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936880683161)  
+**
+  3. Tampilan**Ticket Settings** akan muncul. Terdapat toggle button Submit ticket yang dapat Anda aktifkan dan nonaktifkan.
+     * Tiket dalam status “**ON** ”: Agent bisa melakukan create tiket pada inbox karena memiliki tombol untuk submit tiket pada setiap percakapan yang masuk.
+     * Tiket dalam status “**OFF** ”: Agent tidak bisa melakukan create tiket karena field tiket pada inbox akan hilang.  
 ![81.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936880686361)
+**Penting  
+** Anda dapat melengkapi kolom - kolom di atas sebelum menyimpannya.
+  4. Klik “**Save** ” untuk menyimpan perubahan yang dilakukan.
+  5. Untuk membuat tiket **pada halaman Inbox** maka klik “**Submit Ticket** ” untuk membuka _form_ tiket. “**Ticketing** ” akan muncul apabila status tickets pada settings adalah “**ON** ” dan akan hilang apabila status tiket adalah “**OFF** ”.  
 ![76.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936875353625)
+  6. Isi field Title dan Note, kemudian klik “**Submit** ” untuk menyimpan data yang sudah dibuat.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776440891929)
+Field yang kosong akan menampilkan error “**field is required** ”.
+  7. Tiket yang berhasil dibuat akan menampilkan _pop up_ **'****s****uccess'** seperti gambar berikut ini, klik “**OK** ” untuk menutup popup.  
 ![Tiketsss.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F50936939791257)
+Tombol**"Submit"** pada Ticketing akan berubah menjadi title tiket seperti pada gambar di atas.
 
 ## Error States  <!-- confidence:high ✓ -->
 

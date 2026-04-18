@@ -39,35 +39,23 @@ Sebelum menambahkan company secara bulk, pastikan Anda memenuhi persyaratan beri
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun CRM Anda melalui website www.qontak.com. Sistem akan menampilkan dashboard CRM.
 
-2. Klik menu **Companies/Perusahaan** di navigasi utama. Halaman Companies akan terbuka.
-
-3. Klik tombol **Add Company**, kemudian pilih opsi **Upload file**. Dialog unggah file akan tampil.
-
-4. Unduh template Excel dari dashboard CRM dengan mengklik tombol download. File template akan tersimpan di komputer Anda.
-
-5. Buka file Excel dan isi kolom sesuai data perusahaan Anda. Perhatikan: kolom dengan tanda (*) wajib diisi, dan data custom (Status, Job Title, dll) harus sesuai ejaan, besar-kecil huruf, dan spasi di database CRM agar tidak terjadi error.
-
-6. Pastikan data email dan phone number (unique field) tidak terduplikasi. Ubah format file Excel menjadi **Text**.
-
-7. Klik **Browse a file** dan pilih file Excel yang sudah terisi. Sistem akan memproses data.
-
-8. Tunggu notifikasi sukses. Untuk melihat progress unggahan, buka menu **Properties** → tab **Upload/Download**.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah proses selesai, Anda akan melihat:
-
-• Notifikasi konfirmasi bahwa data Perusahaan berhasil terunggah
-• Data company baru muncul di menu **Companies/Perusahaan** dengan status updated
-• Semua company yang diunggah dapat dilihat, diubah, atau dihubungkan dengan contact, deal, dan record CRM lainnya
-• Progress pengunggahan dapat dipantau di menu **Properties**, tab **Upload/Download**
-• Company database Anda telah bertambah sesuai jumlah data yang diunggah
-
+Menu **Company/Perusahaan** adalah sebuah menu yang digunakan untuk membuat **database company** baik yang berstatus sebagai **customer** , **partner** , atau yang lainnya. Untuk menambahkan data company, Anda dapat menambahkan satu per satu maupun secara masif. Pada panduan kali ini, kami akan menginfokan cara menambah company secara masif dengan CRM Qontak.
+  1. Pastikan Anda sudah login kedalam akun CRM Anda melalui website [www.qontak.com.](http://www.qontak.com/)
+  2. Masuk ke menu **Perusahaan/Companies,** Kemudian klik**"Add Company****”** dan pilih “**Upload file”**.  
 ![01.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781141978393)
+  3. Unduh template Excel yang sudah tersedia dalam Dashboard CRM.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114476804121)
+  4. Perlu diperhatikan bahwa _unique field_ yang menjadi pembeda antara data “**Perusahaan”** satu dengan yang lainnya adalah pada bagian email dan phone number.
+  5. Pada saat pengisian data mengguankan form Excel ini, pastikan bahwa data yang diinput tidak ter-double. Kemudian, isilah kolom – kolom yang tersedia pada Excel sesuai database yang Anda miliki.
+  6. Apabila terdapat kolom yang bertanda **(*),** artinya kolom tersebut wajib diisi. Sedangkan pada kolom yang terkustomisasi seperti; Status, Job Title, dll. pengisian data pada file Excel harus sesuai dengan opsi yang terdapat pada database CRM. Mulai dari ejaan, besar kecil huruf, sampai penempatan spasi perlu diperhatikan harus sama persis, karena jika terdapat typo atau tidak sesuai akan menyebabkan error pada data yang diunggah.  
 ![Company_Bulk_3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183692185)
+  7. Jika data “**Perusahaan”** pada file Excel sudah terisi semua, Anda dapat merubah format pada file Excel menjadi **“Text”**.  
 ![Company_Bulk_4.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36781183691161)
+  8. Klik **“Browse a file”** untuk mengunggah Kembali file Excel “**Perusahaan”** yang sudah terisi.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49114530713241)
+
+Jika terdapat data yang gagal terunggah, sistem akan secara otomatis mengirimkan notifikasi ke alamat email Anda yang terdaftar akun CRM Qontak. Apabila sudah menerima email notifikasi tersebut Anda dapat melihat detail penjelasan data - data apa saja yang gagal terunggah, Silahkan periksa kembali file Anda dan perbaiki data yang salah.
 
 ## Error States  <!-- confidence:medium ~ -->
 

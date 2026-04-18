@@ -39,28 +39,39 @@ Catatan: Fitur ini tersedia untuk organisasi yang menggunakan modul Sales atau P
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman Dashboard Qontak CRM akan terbuka.
 
-2. Navigasi ke menu Report dan pilih Laporan Top Product.
-   → Daftar laporan Top Product yang tersedia akan ditampilkan.
-
-3. Klik tombol Download pada laporan yang ingin Anda lihat.
-   → File dalam format spreadsheet akan diunduh ke perangkat Anda.
-
-4. Buka file hasil download menggunakan aplikasi spreadsheet.
-   → Sheet pertama akan menampilkan filter (pipeline, tim, user, waktu laporan) dan kolom data produk.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah membuka file Laporan Top Product, Anda akan melihat spreadsheet dengan dua sheet utama:
-
-**Sheet Pertama:** Menampilkan filter yang diterapkan (Filter Pipeline, Filter Tim, Filter by User, Filter Waktu Laporan) dan 11 kolom data: Product Name, Deal Name, Company Name, Parent Company, Owner Username, Owner Name, Sales QTY, Price, % Discount, Total Price, dan % of Sales.
-
-**Sheet Kedua:** Menampilkan 12 kolom tambahan: Unit, Manufacturer, Foto Display (before), Jumlah Rak, Estimasi Order, Promosi Kompetitor, Jumlah Cicilan, Unit Price Sewa, Foto Promo, Domisili, Nominal Donasi, dan Ticketing Point.
-
-Data ini membantu Anda menganalisis produk terlaris, kontribusi penjualan, dan informasi detail transaksi.
-
+Laporan ini berfungsi untuk melihat produk mana saja yang terjual paling banyak. Pada laporan ini Anda dapat melihat jumlah produk yang terjual, total penjualan, dan kontribusi produk tersebut pada keseluruhan total penjualan.
+Hasil download **Laporan Top Product** ketika sudah di download akan menampilkan sheet seperti gambar-gambar di bawah ini:  
 ![tp1.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774527623705)
-![tp3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774534067737)
+Pada sheet ini, ditampilkan secara detail mengenai:  
+- Filter pipeline  
+- Filter tim  
+- Filter by user  
+- Filter waktu laporan  
+1. Product Name  
+2. Deal Name  
+3. Company Name  
+4. Parent Company  
+5. Owner Username  
+6. Owner Name  
+7. Sales QTY  
+8. Price  
+9. % Discount  
+10. Total Price  
+11. % of Sales  
+![tp3.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36774534067737)  
+12. Unit  
+13. Manufacturer  
+14. Foto Display (before)  
+15. Jumlah Rak  
+16. Estimasi Order  
+17. Promosi Kompetitor  
+18. Jumlah Cicilan  
+19. Unit Price Sewa  
+20. Foto Promo  
+21. Domisili  
+22. Nominal Donasi  
+23. Ticketing Point
 
 ## Error States  <!-- confidence:low ? -->
 

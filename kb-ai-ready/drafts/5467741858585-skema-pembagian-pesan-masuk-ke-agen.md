@@ -27,12 +27,14 @@ faithfulness_threshold: 0.6
 
 ## Definition  <!-- confidence:high ✓ -->
 
-Skema Pembagian Pesan Masuk ke Agen adalah mekanisme dalam Qontak Omnichannel yang mengatur bagaimana pesan dari pelanggan didistribusikan kepada agen customer service. Skema ini memungkinkan pembagian pesan melalui tiga cara: alokasi manual oleh supervisor, alokasi mandiri oleh agen, dan distribusi otomatis berdasarkan menu yang dipilih atau ketersediaan agen. Fitur ini memastikan setiap pesan masuk ditangani oleh agen yang tepat melalui Inbox Omnichannel.## Why It Matters  <!-- confidence:medium ~ -->
 
-Skema pembagian pesan yang efisien meningkatkan kecepatan respons dan kualitas layanan customer service. Dengan opsi alokasi manual, supervisor dapat mengarahkan pesan ke agen yang paling sesuai dengan keahlian atau ketersediaan mereka. Distribusi otomatis mengurangi waktu tunggu dan mencegah agen kelebihan beban. Sistem ini memastikan tidak ada pesan yang terlewat dan beban kerja terdistribusi merata di antara tim customer service.
-
+**Inbox** merupakan sebuah fitur Omnichannel Qontak dimana para customer service akan melayani semua keluhan user berupa chat yang masuk kedalam Inbox.
+Dalam menerima pesan ada beberapa skema pembagian yang dilakukan oleh Agen. Berikut adalah skema pembagian pesan yang masuk ke Agen.
+  1. Masuk ke akun Omnichannel Anda.  
 ![Screenshot_2023-03-31_at_15.41.49.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434818201)
+  2. Pada halaman **Inbox** , supervisor dapat mengalokasikan pelanggan kepada agen yang tersedia. Tetapi, agen juga bisa mengalokasikan pelanggan secara mandiri tanpa bantuan supervisor.  
 ![2022-10-21_17_08_03.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434813209)
+  3. Tidak hanya itu, Sistem juga akan secara otomatis mendistribusikan pelanggan berdasarkan menu yang dipilih. Sistem juga bisa secara otomatis mendistribusikan pelanggan kepada agen yang tersedia.  
 ![2022-10-21_17_10_35.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776434815129)
 
 ## Key Attributes  <!-- confidence:high ✓ -->

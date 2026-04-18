@@ -32,31 +32,48 @@ Anda memerlukan akses peran **Admin** untuk membuat dan mengunggah artikel pada 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Anda.
-2. Klik icon menu dan pilih **Knowledge base** — Sistem akan membuka halaman Knowledge Base.
-3. Pilih tab **Articles** — Anda akan melihat daftar artikel yang telah dibuat.
-4. Klik tombol **"Create article"** — Halaman editor artikel akan terbuka.
-5. Isi kolom **Title** dengan judul artikel Anda.
-6. Ketik konten artikel pada kolom **"Enter title content"** dan gunakan menu **Format penulisan** untuk menyesuaikan format teks (Judul, Subjudul, dll).
-7. Pilih **Category** untuk menentukan kategori penempatan artikel.
-8. Tambahkan **Tags** sebagai kata kunci pencarian artikel.
-9. Jika berlangganan Enterprise/Ultimate, atur **Visibility** (Private atau Publish).
-10. Klik tombol **Publish** — Artikel akan diunggah dan statusnya berubah menjadi "Published".## Expected Result  <!-- confidence:high ✓ -->
 
-Setelah Anda mengklik tombol **Publish**, artikel akan berhasil diunggah ke Knowledge Base. Status artikel akan berubah dari "Draft" menjadi "Published". Artikel akan memiliki URL unik yang dapat diakses oleh pihak internal (jika Private) atau eksternal (jika Public). Artikel akan muncul dalam daftar **Articles** dan dapat ditemukan melalui kategori atau tag yang telah ditetapkan. Informasi penulis (Author) dan waktu publikasi akan tercatat otomatis di sistem.
-
+Knowledge Base merupakan sebuah platform untuk membuat, mengedit, dan mengunggah artikel pada dasbor. Artikel yang telah dibuat dapat dikelompokkan dalam kategori, dan juga ditambahkan _tag_ untuk memudahkan pencarian artikel. Setiap artikel yang dibuat akan memiliki URL yang bisa dibuka oleh pihak internal maupun eksternal. Simak selengkapnya terkait langkah-langkah dalam mengunggah artikel pada Knowledge base.
+**Penting**  
+Knowledge base hanya dapat diakses oleh peran **Admin** saja. Dalam hal ini, hanya peran **Admin** yang dapat membuat dan mengunggah artikel pada halaman Knowledge base.
+  1. Masuk ke akun qontak Anda.
+  2. Kemudian klik icon berikut dan pilih **Knowledge base**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766140032665)
+  3. Lalu pilih tab **Articles**.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766140035097)
+  4. Selanjutnya pada halaman berikut, klik **“Create article”**.  
 ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093096473)
+  5. Lalu Anda dapat membuat draft artikel pada halaman ini. Berikut merupakan rincian penjelasannya.  
 ![1.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299885081)
-![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299897497)
-![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413276234777)
-![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299915033)
-![911844a7-8702-4636-a7fb-736f7a49240d](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413276257049)
+
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+1 | **Undo & Redo** |  Gunakan tombol **Undo** untuk mengembalikan tulisan pada keadaan sebelumnya. ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299897497) Gunakan tombol **Redo** untuk mengubah tulisan pada keadaan setelah ada perubahan. ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413276234777)  
+2 | **Title** | Kolom untuk menuliskan judul artikel.  
+3 | **Format penulisan** | Menu bar untuk melakukan penyesuaian formatpada tulisan.  
+4 | **Enter title content** | Tuliskan draft artikel pada kolom tersebut.  
+5 | **Discard** | Tombol untuk membatalkan penulisan artikel.  
+6 | **Publish** | Tombol untuk mengunggah artikel.  
+7 |  **Status**  
+| Status artikel saat ini. Status ini biasanya terdiri dari **Draft** atau **Published**.  
+8 | **Author** | Informasi terkait penulis artikel.  
+9. | **Visibility** |  Dalam kategori apa artikel akan disebarluaskan. Berdasarkan hal tersebut, terdapat dua kategori yang dapat Anda pilih yaitu:  
+1. **Private**(terbatas hanya pada user yang berada di dalam **satu organisasi yang sama** dengan peran yang membuat dan mengunggah artikel).  
+2. **Publish**(tidak terbatas dan seluruh pengunjung artikel dapat mengakses artikel tersebut). ![2.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299915033) Pengaturan**Visibility** hanya berlaku untuk klien yang berlangganan paket **Enterprise** dan **Ultimate**. Selain itu, semua artikel yang terdapat di **Knowledge Base** akan bersifat **Public** , dan tidak akan dapat diubah menjadi **Private**. Untuk dapat melakukan _upgrade_ paket, silahkan menghubungi tim Sales kami dengan klik “Contact sales”, atau Anda dapat klik **“See packages”** untuk melihat rincian paket yang tersedia.  
+![911844a7-8702-4636-a7fb-736f7a49240d](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413276257049)  
+10 | **Category** | Kategori penempatan artikel.  
+11 | **Tags** | Keyword (kata kunci) untuk memudahkan pencarian artikel.   
+12 | **Article outline** | Gunakan gaya teks Judul atau Subjudul untuk menguraikan artikel.  
+  6. Selanjutnya, apabila penulisan artikel telah selesai, klik **“Publish”** untuk mengunggahnya.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093092121)
-![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093095065)
+- Apabila Anda ingin menunda pengunggahan artikel, Anda dapat klik ikon berikut lalu pilih **Save as draft**.  
+![7.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093095065)  
+- Maka artikel akan tersimpan pada halaman berikut dengan status **Draft**.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F38413299962393)
+  7. Maka selanjutnya artikel yang telah dibuat akan berhasil terunggah dengan status **Published** seperti berikut.  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36766093096217)
+
+Demikian cara mengunggah artikel pada Knowledge base. Pelajari juga terkait cara menambahkan artikel dalam jumlah banyak pada Knowledge base [di sini](https://help-center.qontak.com/hc/id/articles/35367180830745).
 
 ## Error States  <!-- confidence:low ? -->
 

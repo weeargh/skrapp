@@ -40,35 +40,30 @@ Catatan: Fitur Conditional format (Format bersyarat) hanya berlaku untuk Deals d
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Buka akun CRM Anda, lalu pilih menu **Properties**. Sistem akan menampilkan daftar properties yang tersedia.
 
-2. Klik tab **Deals**. Halaman akan menampilkan semua properties yang terkait dengan Deals.
-
-3. Klik ikon segitiga ke bawah, lalu pilih **Add conditional property**. Form pembuatan properti bersyarat akan terbuka.
-
-4. Pilih **Parent property** (properti induk). Dropdown akan menampilkan daftar properti yang dapat dijadikan induk.
-
-5. Pilih **Child property** (properti cabang) untuk Parent property yang telah dipilih. Anda dapat memilih kategori dengan opsi **All options** (semua kategori) atau **Selected options only** (kategori tertentu). Sistem akan memvalidasi bahwa setiap opsi Parent property telah dipetakan ke Child property.
-
-6. Klik **Save**. Conditional format akan disimpan dan ditampilkan di bagian Conditional properties.
-
-7. Conditional format yang telah dibuat siap digunakan saat pembuatan Deals.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah berhasil membuat Conditional format:
-
-1. Conditional format akan terlihat di bagian **Conditional properties** dengan struktur Parent property dan Child property yang telah Anda konfigurasi.
-
-2. Format bersyarat ini akan tersedia untuk diterapkan saat Anda membuat Deal baru di menu Deals.
-
-3. Sistem akan memastikan bahwa setiap kategori yang ditetapkan sebagai properti induk atau cabang tidak dapat digunakan kembali untuk role yang sama dalam conditional formatting yang sama.
-
+Mekari Qontak menghadirkan sebuah fitur yang akan memudahkan Anda dalam menyiapkan **Deals Properties** dengan **format bersyarat**. Fitur **Conditional format (Format bersyarat)** ini akan membantu Anda dalam mengurangi kesalahan yang mungkin terjadi pada saat mengatur format properti berdasarkan kebutuhan bisnis Anda. Simak penjelasannya pada langkah-langkah berikut.
+**Penting**  
+**Conditional format** (Format bersyarat) hanya berlaku untuk **Deals** dan **Website**.
+  1. Masuk ke akun **CRM** Anda, lalu pilih menu **Properties**.
+  2. Kemudian pilih tab **“Deals”**.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49889924033689)
+  3. Selanjutnya klik **'ikon segitiga ke bawah'** ,**“Add conditional property”** untuk membuat properti bersyarat baru pada **Deals**.  
 ![8.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49889924034713)
+  4. Kemudian pada halaman berikut, pilih **Parent property (properti induk)** terlebih dahulu.  
 ![3.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190278425)
+  5. Pilih juga **Child property (properti cabang)** untuk**Parent property (properti induk)** yang tersedia. Anda dapat memilih kategori untuk setiap pilihan **Child property**. Pilih **All options** untuk semua kategori atau pilih **Selected options only** untuk pilihan kategori tertentu.  
 ![4.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776163410073)
+- Setelah suatu kategori ditetapkan sebagai **induk** , kategori tersebut tidak dapat ditetapkan sebagai **induk** atau **cabang** lagi.   
+- Apabila suatu kategori telah ditetapkan sebagai **properti cabang** , maka kategori tersebut tidak dapat ditetapkan sebagai **properti cabang** lagi. Namun, kategori tersebut masih dapat ditetapkan sebagai **properti induk** untuk **Conditional formatting** yang akan datang.   
+- Jika ada opsi properti induk yang belum dipetakan ke properti cabang, maka status **‘error’** akan muncul setelah pengguna klik **“Simpan”**.
+  6. Lalu klik **“Save”**.  
 ![5.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190282137)
+  7. Kemudian **Conditional format** akan terlihat pada bagian **Conditional properties** seperti pada tampilan berikut.  
 ![9.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F49889987003801)
+  8. **Conditional format (Format bersyarat)** yang telah dibuat tersebut dapat diterapkan pada saat pembuatan **Deals**.  
 ![6.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776190286873)
+
+Demikian cara membuat **Conditional format (Format bersyarat)** untuk pembuatan **Deals**. Pelajari juga terkait[ overview menu deals](https://help-center.qontak.com/hc/id/articles/6081264912025-Overview-Menu-Deals) dan [cara menambahkan Deal satuan versi web](https://help-center.qontak.com/hc/id/articles/5659326461337-Bagaimana-Cara-Menambahkan-Deal-Satuan-Versi-Web).
 
 ## Error States  <!-- confidence:high ✓ -->
 

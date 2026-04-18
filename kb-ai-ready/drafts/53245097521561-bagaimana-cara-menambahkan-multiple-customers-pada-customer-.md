@@ -40,34 +40,16 @@ Proses ini memungkinkan Anda mengimpor data pelanggan dalam jumlah besar sekalig
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Masuk ke akun Mekari Qontak One, lalu buka menu Customers.
 
-2. Pada halaman Customers, pilih tab "Customers" dan klik "All customers".
-
-3. Klik tombol "Add customer", kemudian pilih "Multiple customers". Sistem akan menampilkan halaman Bulk add customer.
-
-4. Klik tombol "Download template" untuk mengunduh template pengisian data customer.
-
-5. Pada panel Download Template, tentukan File format (XLSX) dan Layout (Default by Qontak), lalu pilih Default fields dan Custom fields sesuai kebutuhan Anda.
-
-6. Klik tombol "Download" untuk mengunduh template dengan kolom yang telah dipilih.
-
-7. Isi data kontak pada template yang telah diunduh, pastikan nama lengkap dan data channel terisi, serta ikuti petunjuk dalam file.
-
-8. Klik tombol "Choose file" untuk memilih file template yang telah diisi.
-
-9. Setelah file berhasil dipilih, klik tombol "Upload". Sistem akan menampilkan notifikasi proses unggah.
-
-10. Tunggu hingga proses selesai. Sistem akan menampilkan notifikasi konfirmasi bahwa data telah berhasil diunggah dan data akan muncul di halaman All customers.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah proses unggah selesai, Anda akan melihat:
-
-• Notifikasi konfirmasi dari sistem yang menyatakan data pelanggan berhasil diunggah
-• Daftar pelanggan baru muncul pada halaman All customers di Customer Data Platform
-• Semua data yang diunggah dapat diakses dan dikelola melalui Customers menu
-• Field wajib (Full Name, Owner, Assignee, Username, Phone Number, Email) terisi sesuai data yang diunggah
-
+9. Setelah pengguna memilih field dan format file yang diinginkan, Anda dapat klik **“Download”**. Selanjutnya, sistem kemudian akan menghasilkan file dan menampilkan _prompt_ unduhan dengan kolom yang sesuai dengan _field_ yang telah dipilih.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F53245072601369)
+  10. Selanjutnya isikan data kontak pada _template_ yang telah diunduh. Untuk menghindari kegagalan saat proses unggah, ikuti petunjuk yang tertera di dalam file serta ketentuan berikut:
+
+* Nama lengkap dan data channel wajib diisi.
+  * ID pelanggan yang sudah ada tidak boleh diubah.
+  * Jangan mengedit baris pertama (_header_).
+  * Jangan mengubah nilai apa pun pada kolom A–D.
+  * Untuk menghindari kegagalan saat proses unggah, pastikan juga mengikuti petunjuk yang terdapat di dalam file.
 
 ## Error States  <!-- confidence:high ✓ -->
 

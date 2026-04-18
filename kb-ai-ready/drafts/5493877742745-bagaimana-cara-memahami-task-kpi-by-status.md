@@ -39,27 +39,26 @@ Catatan: Laporan ini hanya menampilkan data Task yang sudah dibuat dan memiliki 
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak CRM Anda menggunakan kredensial Anda.
-   → Halaman utama CRM akan ditampilkan.
 
-2. Buka menu Report atau Dashboard dari navigasi utama.
-   → Daftar laporan tersedia akan ditampilkan.
-
-3. Cari dan buka laporan "Task KPI by Status".
-   → Dua sheet akan ditampilkan: Tasks KPI by Status dan Task Change Log.
-
-4. (Opsional) Pada sheet Tasks KPI by Status, gunakan filter untuk menyaring data berdasarkan User, Waktu, atau Task Category sesuai kebutuhan Anda.
-   → Laporan akan diperbarui sesuai filter yang dipilih.## Expected Result  <!-- confidence:high ✓ -->
-
-Pada sheet Tasks KPI by Status, Anda akan melihat:
-• Daftar user dengan jumlah Task per Status-nya
-• Total keseluruhan Task yang dimiliki setiap user
-
-Pada sheet Task Change Log, Anda akan melihat detail perubahan setiap Task, termasuk: Task Name, Category, Associated Record, Owner, Due Date, Previous Status, Next Status, Plan, Result, Latitude Longitude, GPS Check in Date, Created At, Updated Date, dan Moved Date.
-
-Semua informasi ini membantu Anda melacak performa dan alur perubahan status Task secara detail.
-
+Laporan Task KPI by Status memiliki dua sheet, yaitu**Tasks KPI by Status** dan **Task Change Log**.  
 ![Task_KPI_by_Status.jpg](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36780919261081)
+Pada sheet Tasks KPI by Status, laporan yang ditampilkan dapat sebelumnya difilter berdasarkan User, Waktu, dan Task Category.
+Laporan ini akan menampilkan list user dan masing-masing jumlah Task yang mereka miliki per Status-nya. Dan juga menampilkan total keseluruhan jumlah Task yang dimiliki setiap user.
+Pada sheet Task Change Log, ditampilkan secara detail perubahan yang dilakukan pada setiap Task. Adapun detail yang dapat dilihat
+  * Task = Nama Task
+  * Category = Kategori Task
+  * Associated Record = Asosiasi Task (Contact, Company, dan Deal)
+  * Owner = Kepemilikan Task
+  * Due Date = Tanggal jatuh tempo Task
+  * Previous Status = Status Task sebelumnya
+  * Next Status = Status Task setelah diubah
+  * Plan = Detail Plan pada field Details / Plan
+  * Result = Details Plan pada field Result / Next Step
+  * Langitude Longitude = Garis lintang, Garis Bujur
+  * GPS Check in Date = Tanggal Check in Task
+  * Created At = Tanggal terbuatnya Task
+  * Updated Date = Tanggal terakhir kali Task diupdate / diubah
+  * Moved Date = Tanggal perpindahan Task dari Previous Status ke Next Status
 
 ## Error States  <!-- confidence:low ? -->
 

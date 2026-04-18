@@ -41,28 +41,43 @@ Untuk mengirimkan pesan Blast WhatsApp, Anda memerlukan:
 
 ## Steps  <!-- confidence:high ✓ -->
 
-1. Login ke akun Qontak Omnichannel Anda. Halaman dashboard akan ditampilkan.
 
-2. Buka menu Campaigns, lalu pilih "WhatsApp". Daftar campaign WhatsApp akan muncul.
+**Penting**  
+Per tanggal **12 Oktober 2023** , WhatsApp telah mengimplementasikan Template Pacing yang dapat berdampak terhadap campaign broadcast Anda, pelajari lebih lengkap [di sini](https://help-center.qontak.com/hc/id/articles/23381251489689).
+Menu **Campaign (Broadcast)** adalah salah satu fitur pada Chat Panel yang memungkinkan penggunanya untuk bisa mengirimkan pesan ke banyak orang sekaligus. Fitur tersebut juga biasa dikenal dengan pesan siaran. Melalui campaign kita tidak perlu membuka kolom chat tiap-tiap orang di kontak untuk mengirimkan mereka pesan yang sama. Tidak hanya itu, waktu yang dibutuhkan untuk mengirim pesan ke banyak kontak menjadi lebih singkat dan lebih mudah.
+Sebelumnya Anda dapat mempelajari tentang:  
+[**[Blog] Apa itu WhatsApp (WA) Blast?**](https://qontak.com/blog/cara-blast-whatsapp/)  
+[**[Blog] Cara Kirim Broadcast WhatsApp Tanpa Simpan Kontak ke Ribuan Nomor**](https://qontak.com/blog/cara-broadcast-whatsapp/)
+Berikut merupakan cara untuk Mengirimkan Pesan Blast WhatsApp:
+  1. Login ke akun Qontak Omnichannel Anda.
+  2. Masuk ke Menu**Campaigns** , lalu klik **"WhatsApp".**  
+**![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703581240729)**
 
-3. Klik tombol "New campaign Message". Form pembuatan campaign baru akan terbuka.
-
-4. Isi semua kolom yang tersedia: nama campaign (Campaign name), pengirim (Sender), daftar penerima (Recipient list), dan pilih template pesan. Sistem akan menampilkan sisa saldo WhatsApp balance di sisi kanan.
-
-5. Tambahkan isi pesan (Content message) termasuk media header jika diperlukan, dan lakukan variable mapping untuk personalisasi konten.
-
-6. Centang "Select division" untuk menentukan divisi yang akan mengirim campaign.
-
-7. Pilih jadwal pengiriman: "Send now" untuk langsung atau "Send later" untuk dijadwalkan. Klik tombol "Send campaign". Notifikasi pop-up akan muncul untuk konfirmasi pengiriman.## Expected Result  <!-- confidence:high ✓ -->
-
-Setelah campaign berhasil dikirim, notifikasi pop-up konfirmasi akan muncul menampilkan bahwa campaign telah berhasil diproses. Campaign akan muncul di daftar Campaigns dengan status pengiriman (Send now atau terjadwal di waktu yang ditentukan). Anda dapat memantau status pengiriman melalui Campaign Logs di halaman detail campaign. Pesan akan dikirimkan ke semua kontak dalam Recipient list yang telah ditentukan sesuai Template Pacing WhatsApp yang berlaku sejak 12 Oktober 2023.
-
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703581240729)
+3. Berikut merupakan tampilan web yang muncul setelah Anda mengklik menu Campaigns. Untuk mengirimkan pesan blast WhatsApp maka Anda perlu mengklik “**New campaign Message** ”.  
 ![tes1234.png](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F36776243511577)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703628949273)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703628955033)
+  4. Isikan informasi pada kolom-kolom yang tersedia serta pastikan bahwa saldo Anda mencukupi. Pada bagian kanan akan terlihat sisa saldo Anda dan apabila Anda memiliki saldo yang kurang dari jumlah kontak yang akan Anda broadcast, maka Anda akan menerima pop up notifikasi dengan tombol**“Top Up”.**  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703628949273)  
+Anda dapat melakukan broadcast, apabila saldo Anda cukup.   
+**Keterangan**
+**No.** | **Nama Fitur** | **Penjelasan**  
+---|---|---  
+**1** | **Campaign name** | Nama campaign.  
+**2** | **Sender** | Pengirim campaign.  
+**3** | **Recipient list** | List penerima campaign.  
+**4** | **Template** |  Template pesan campaign. Di sini juga terdapat penilaian terhadap template. Sistem akan menilai apakah template yang Anda pilih memiliki **Status Connected** , **Rating quality High** , dan **Template quality High**.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703628955033)  
+**5** | **Content message** |  Isi pesan campaign.   
+Berisikan:  
+- **Media header (apabila Anda menyisipkan media)**  
+- **Message (Isi pesan)**  
+- **Variable Mapping (pemetaan isi pesan campaign)**.  
+**6** | **WhatsApp balance** | Saldo WhatsApp balance.  
+**7** | **Preview message** | Pratinjau template pesan campaign yang akan muncul.   
+  5. Lalu centang **‘Select division’** untuk menentukan kepada siapa campaign tersebut akan ditugaskan untuk dikirim. Kemudian tentukan sistem pengiriman campaign tersebut apakah akan dikirim sekarang **(Send now)** atau nanti **(Send later)**. Jika semua data telah terisi, klik **“Send campaign”**.  
 ![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703628958489)
-![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703581255833)
+  6. _Pop Up_ notifikasi akan muncul jika data yang Anda _submit_ sudah benar.  
+![Screenshot](/mekarirag/proxy/image?url=https%3A%2F%2Fhelp-center.qontak.com%2Fhc%2Farticle_attachments%2F43703581255833)  
+Jika data yang Anda masukkan salah atau belum terisi maka secara otomatis sistem akan menampilkan notification pada field seperti ini “**field is required** ”. Serta dalam satu kali broadcast, Anda akan diberikan jeda **5 menit** untuk melakukan broadcast berikutnya.
 
 ## Error States  <!-- confidence:high ✓ -->
 
