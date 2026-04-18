@@ -124,6 +124,19 @@ hr.divider { border: none; border-top: 1px solid var(--border); }
   font-size: 13px; font-family: 'SF Mono', Consolas, monospace; line-height: 1.55;
   min-height: 100px; background: #fff; outline: none; resize: vertical; }
 
+/* ── Article header ── */
+.article-header { margin-bottom: 28px; padding-bottom: 20px; border-bottom: 2px solid var(--border); }
+.article-header h1 { font-size: 20px; font-weight: 700; line-height: 1.35; margin-bottom: 10px; }
+.article-header .header-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 14px; }
+.header-group { margin-bottom: 10px; }
+.header-group label { font-size: 10px; font-weight: 700; text-transform: uppercase;
+  letter-spacing: .06em; color: var(--muted); display: block; margin-bottom: 5px; }
+.header-group .tags-row { display: flex; flex-wrap: wrap; gap: 4px; }
+.query-list { list-style: none; padding: 0; }
+.query-list li { font-size: 13px; color: var(--muted); padding: 2px 0;
+                  display: flex; gap: 6px; align-items: baseline; }
+.query-list li::before { content: '•'; color: #adb5bd; flex-shrink: 0; }
+
 .empty-state { padding: 40px; text-align: center; color: var(--muted); font-size: 14px; }
 .loading-state { padding: 40px; text-align: center; color: var(--muted); }
 </style>
@@ -288,25 +301,46 @@ function renderSidebar(d) {
 function renderContent(d) {
   const sections = d.sections || {};
   const type = d.article_type || 'concept';
+  const conf  = d.faithfulness_threshold;
+  const confL = conf == null ? 'unknown' : conf >= 0.85 ? 'high' : conf >= 0.55 ? 'medium' : 'low';
   const order = SECTIONS_BY_TYPE[type] || Object.keys(sections);
   const extra = Object.keys(sections).filter(k => !order.includes(k));
   const allSecs = [...order, ...extra].filter(k => sections[k]);
 
+  // Article header: title, badges, intent tags, query examples
+  const tags  = (d.intent_tags || []).map(t => `<span class="tag">${esc(t)}</span>`).join('');
+  const queries = (d.query_examples || []).map(q =>
+    `<li>${esc(q)}</li>`).join('');
+  const header = `
+    <div class="article-header">
+      <h1>${esc(d.title || d.slug)}</h1>
+      <div class="header-badges">
+        <span class="badge badge-${type === 'troubleshooting' ? 'trouble' : type}">${esc(type)}</span>
+        <span class="badge badge-${confL}">${esc(confL)}${conf != null ? ' (' + conf + ')' : ''}</span>
+        ${(d.products||[]).map(p => `<span class="tag">${esc(p)}</span>`).join('')}
+        <span class="tag">${esc(d.product_surface||'')}</span>
+      </div>
+      ${tags ? `<div class="header-group">
+        <label>Intent tags</label>
+        <div class="tags-row">${tags}</div>
+      </div>` : ''}
+      ${queries ? `<div class="header-group">
+        <label>Query examples</label>
+        <ul class="query-list">${queries}</ul>
+      </div>` : ''}
+    </div>`;
+
   if (!allSecs.length) {
     document.getElementById('contentInner').innerHTML =
-      '<div class="empty-state">No sections found in this article.</div>';
+      header + '<div class="empty-state">No sections found in this article.</div>';
     return;
   }
 
-  const html = allSecs.map(name => {
-    const sec = sections[name];
+  const sectionsHtml = allSecs.map(name => {
+    const sec  = sections[name];
     const conf = sec.confidence || 'medium';
-    const raw = sec.content || '';
-
-    // Custom pre-processing for Qontak-specific patterns
-    const processed = preprocessMarkdown(raw);
-    const rendered = marked.parse(processed);
-
+    // Parse markdown first, then post-process HTML for images + callouts
+    const rendered = postprocessHtml(marked.parse(sec.content || ''));
     return `<div class="section-block" id="sec-${esc(name.replace(/\s+/g,'-'))}">
       <div class="section-header">
         <h2>${esc(name)}</h2>
@@ -316,21 +350,29 @@ function renderContent(d) {
     </div>`;
   }).join('');
 
-  document.getElementById('contentInner').innerHTML = html;
+  document.getElementById('contentInner').innerHTML = header + sectionsHtml;
 }
 
-function preprocessMarkdown(raw) {
-  // Pair up > Screenshot: ... / > Image: url into a rendered block
-  return raw.replace(
-    /> Screenshot: ([^\n]+)\n> Image: ([^\n]+)/g,
-    (_, alt, url) => `<div class="screenshot-block">📷 <strong>${esc(alt)}</strong><br><img src="${esc(url.trim())}" alt="${esc(alt)}" loading="lazy"></div>`
-  ).replace(
-    /> ⚠️ \*\*Penting\*\*\n> (.+)/g,
-    (_, txt) => `<div class="warn-block">⚠️ <strong>Penting:</strong> ${esc(txt)}</div>`
-  ).replace(
-    /> ℹ️ \*\*Catatan\*\*\n> (.+)/g,
-    (_, txt) => `<div class="note-block">ℹ️ <strong>Catatan:</strong> ${esc(txt)}</div>`
+function postprocessHtml(html) {
+  // Screenshot + Image blockquotes → rendered image block
+  // marked renders consecutive `> ` lines as one blockquote paragraph with <br> between lines
+  html = html.replace(
+    /<blockquote>\s*<p>Screenshot:\s*([\s\S]*?)<br[^>]*>\s*Image:\s*(https?:\/\/[^\s<"]+)[\s\S]*?<\/p>\s*<\/blockquote>/gi,
+    (_, alt, url) => {
+      const cleanAlt = alt.trim().replace(/<[^>]+>/g, '');
+      return `<div class="screenshot-block">📷 <strong>${esc(cleanAlt)}</strong><img src="${url.trim()}" alt="${esc(cleanAlt)}" loading="lazy"></div>`;
+    }
   );
+  // Warn callouts: ⚠️ **Penting** / ℹ️ **Catatan**
+  html = html.replace(
+    /<blockquote>\s*<p>⚠️\s*<strong>Penting<\/strong><br[^>]*>([\s\S]*?)<\/p>\s*<\/blockquote>/gi,
+    (_, txt) => `<div class="warn-block">⚠️ <strong>Penting:</strong> ${txt.trim()}</div>`
+  );
+  html = html.replace(
+    /<blockquote>\s*<p>ℹ️\s*<strong>Catatan<\/strong><br[^>]*>([\s\S]*?)<\/p>\s*<\/blockquote>/gi,
+    (_, txt) => `<div class="note-block">ℹ️ <strong>Catatan:</strong> ${txt.trim()}</div>`
+  );
+  return html;
 }
 
 // ── Edit mode ────────────────────────────────────────────────────────────────
