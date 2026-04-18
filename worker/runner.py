@@ -1,12 +1,13 @@
 """Page-centric job runner helpers for discovery and extraction."""
 from __future__ import annotations
 
+import json
 import logging
 import os
 from urllib.parse import urlparse, urlunparse
 
 from config import settings
-from config.constants import JobState, PageState
+from config.constants import JobMode, JobState, PageState
 from crawler.crawl4ai_session import Crawl4AIPageSession
 from crawler.openapi_extractor import convert_spec_to_markdown, detect_openapi_spec_url, fetch_openapi_spec
 from crawler.sitemap import discover_sitemap_urls
@@ -57,11 +58,14 @@ def start_next_queued_job() -> dict | None:
         return None
 
 
-def process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4AIPageSession):
+def process_page(job: dict, page: dict, worker_id: str, crawler_session: Crawl4AIPageSession | None):
     """Process one leased page."""
     queries.touch_job_heartbeat(job["id"])
     queries.renew_page_lease(page["id"], worker_id, settings.PAGE_LEASE_SECONDS)
-    _process_page(job, page, worker_id, crawler_session)
+    if job.get("mode") == JobMode.ZENDESK_RAG:
+        _process_zendesk_page(job, page, worker_id)
+    else:
+        _process_page(job, page, worker_id, crawler_session)
     queries.touch_job_heartbeat(job["id"])
 
 
@@ -87,6 +91,9 @@ def finalize_ready_job() -> bool:
 
 def _prepare_job(job: dict) -> dict:
     """Ensure the job has a root page and resolved path prefix."""
+    if job.get("mode") == JobMode.ZENDESK_RAG:
+        return _prepare_zendesk_job(job)
+
     allowed_path_prefix = job.get("allowed_path_prefix") or _derive_allowed_path_prefix(job["start_url"])
     if allowed_path_prefix != job.get("allowed_path_prefix"):
         job = queries.update_crawl_job(job["id"], allowed_path_prefix=allowed_path_prefix)
@@ -494,3 +501,157 @@ def _normalized_path(path: str | None) -> str:
     if not path or path == "/":
         return "/"
     return path.rstrip("/")
+
+
+# ============================================================================
+# MekariRAG / Zendesk mode
+# ============================================================================
+
+def _prepare_zendesk_job(job: dict) -> dict:
+    """Seed article pages from the Zendesk Help Center API."""
+    from crawler.zendesk_fetcher import make_zendesk_fetcher
+
+    job_id = job["id"]
+    locale = job.get("zendesk_locale") or "id"
+    fetcher = make_zendesk_fetcher(job["start_url"], locale=locale, request_delay=1.5)
+
+    # Fetch taxonomy once; store in job output dir for use during page processing.
+    sections = fetcher.fetch_sections()
+    categories = fetcher.fetch_categories()
+    taxonomy = {
+        "sections": {
+            str(k): {"name": v.name, "category_id": v.category_id}
+            for k, v in sections.items()
+        },
+        "categories": {
+            str(k): {"name": v.name}
+            for k, v in categories.items()
+        },
+    }
+    taxonomy_path = os.path.join(settings.JOBS_OUTPUT_DIR, job_id, "zendesk_taxonomy.json")
+    with open(taxonomy_path, "w", encoding="utf-8") as fh:
+        json.dump(taxonomy, fh, ensure_ascii=False, indent=2)
+
+    # Enumerate all published articles and create a page record for each.
+    articles = fetcher.fetch_articles()
+    max_pages = job.get("max_pages") or settings.DEFAULT_MAX_PAGES
+    created_count = 0
+
+    for order, article in enumerate(articles):
+        if created_count >= max_pages:
+            break
+        page = queries.create_page(
+            job_id=job_id,
+            url=article.html_url,
+            canonical_url=article.html_url,
+            parent_page_id=None,
+            depth=0,
+            discovery_order=order,
+            status=PageState.QUEUED,
+            title=article.title,
+            meta_json={
+                "article_id": article.id,
+                "section_id": article.section_id,
+                "locale": article.locale,
+                "created_at": article.created_at,
+                "updated_at": article.updated_at,
+                "zendesk_mode": True,
+            },
+            max_pages=max_pages,
+        )
+        if page:
+            created_count += 1
+
+    queries.insert_job_event(job_id, "info", "zendesk_articles_seeded", {
+        "articles_found": len(articles),
+        "pages_created": created_count,
+    })
+    return queries.get_crawl_job(job_id)
+
+
+def _process_zendesk_page(job: dict, page: dict, worker_id: str) -> None:
+    """Fetch a Zendesk article by ID and convert it to MekariRAG-ready markdown."""
+    from crawler.zendesk_fetcher import make_zendesk_fetcher
+    from crawler.zendesk_transformer import transform_article, ZendeskSection, ZendeskCategory
+
+    job_id = job["id"]
+    page_id = page["id"]
+    meta = page.get("meta_json") or {}
+    article_id: int | None = meta.get("article_id")
+    locale: str = meta.get("locale") or job.get("zendesk_locale") or "id"
+
+    queries.insert_job_event(job_id, "info", "page_discovering", {
+        "page_id": page_id,
+        "url": page["url"],
+        "article_id": article_id,
+        "worker_id": worker_id,
+    })
+
+    try:
+        # Load taxonomy from the file written during _prepare_zendesk_job.
+        taxonomy_path = os.path.join(settings.JOBS_OUTPUT_DIR, job_id, "zendesk_taxonomy.json")
+        sections: dict[int, ZendeskSection] = {}
+        categories: dict[int, ZendeskCategory] = {}
+        if os.path.exists(taxonomy_path):
+            with open(taxonomy_path, encoding="utf-8") as fh:
+                taxonomy = json.load(fh)
+            for k, v in taxonomy.get("sections", {}).items():
+                sections[int(k)] = ZendeskSection(id=int(k), name=v["name"], category_id=v["category_id"])
+            for k, v in taxonomy.get("categories", {}).items():
+                categories[int(k)] = ZendeskCategory(id=int(k), name=v["name"])
+
+        if not article_id:
+            raise ValueError(f"Page {page_id} has no article_id in meta_json")
+
+        fetcher = make_zendesk_fetcher(job["start_url"], locale=locale, request_delay=1.5)
+        article = fetcher.fetch_article(article_id)
+        if not article:
+            raise RuntimeError(f"Zendesk API returned no content for article {article_id}")
+
+        markdown = transform_article(article, sections, categories)
+        plain_text = markdown_to_text(markdown)
+
+        queries.update_page_status(
+            page_id,
+            PageState.DONE,
+            title=article.title,
+            raw_markdown=markdown,
+            raw_text=plain_text,
+            clean_markdown=markdown,
+            plain_text=plain_text,
+            page_type="article",
+            cleanup_confidence=1.0,
+            cleanup_score=1.0,
+            meta_json={
+                **meta,
+                "extractor": "zendesk_api",
+                "worker_id": worker_id,
+                "article_id": article.id,
+                "updated_at": article.updated_at,
+            },
+            claimed_by=None,
+            claimed_at=None,
+            lease_expires_at=None,
+        )
+        queries.insert_job_event(job_id, "info", "page_done", {
+            "page_id": page_id,
+            "url": page["url"],
+            "article_id": article_id,
+            "worker_id": worker_id,
+        })
+    except Exception as exc:
+        queries.update_page_status(
+            page_id,
+            PageState.FAILED,
+            error_message=str(exc),
+            claimed_by=None,
+            claimed_at=None,
+            lease_expires_at=None,
+        )
+        queries.insert_job_event(job_id, "error", "page_failed", {
+            "page_id": page_id,
+            "url": page["url"],
+            "article_id": article_id,
+            "message": str(exc),
+            "worker_id": worker_id,
+        })

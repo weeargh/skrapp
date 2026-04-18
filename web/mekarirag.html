@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MekariRAG Review</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #f8f9fa; --surface: #fff; --border: #e2e6ea;
+  --text: #212529; --muted: #6c757d;
+  --task: #0d6efd; --concept: #198754; --trouble: #dc3545;
+  --high: #198754; --medium: #fd7e14; --low: #dc3545;
+  --panel-w: 560px;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: var(--bg); color: var(--text); font-size: 14px; height: 100vh;
+       display: flex; flex-direction: column; overflow: hidden; }
+
+/* ── Header ── */
+.header { background: var(--surface); border-bottom: 1px solid var(--border);
+          padding: 12px 20px; display: flex; align-items: center; gap: 16px; flex-shrink: 0; }
+.header h1 { font-size: 16px; font-weight: 600; white-space: nowrap; }
+.header .stats { display: flex; gap: 10px; font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+.stat-pill { background: var(--bg); border: 1px solid var(--border); border-radius: 20px;
+             padding: 2px 10px; white-space: nowrap; }
+.stat-pill.low  { border-color: var(--low);    color: var(--low); }
+.stat-pill.med  { border-color: var(--medium); color: var(--medium); }
+.stat-pill.high { border-color: var(--high);   color: var(--high); }
+
+/* ── Filters ── */
+.filters { background: var(--surface); border-bottom: 1px solid var(--border);
+           padding: 10px 20px; display: flex; gap: 10px; flex-wrap: wrap; flex-shrink: 0; }
+.filters input, .filters select {
+  border: 1px solid var(--border); border-radius: 6px; padding: 5px 10px;
+  font-size: 13px; background: var(--bg); color: var(--text); outline: none; }
+.filters input { min-width: 240px; }
+.filters input:focus, .filters select:focus { border-color: #adb5bd; }
+.filters label { font-size: 12px; color: var(--muted); align-self: center; }
+
+/* ── Main layout ── */
+.main { display: flex; flex: 1; overflow: hidden; }
+
+/* ── Table ── */
+.table-wrap { flex: 1; overflow: auto; }
+table { width: 100%; border-collapse: collapse; }
+thead th { position: sticky; top: 0; background: var(--surface);
+           border-bottom: 2px solid var(--border); padding: 8px 12px;
+           text-align: left; font-size: 12px; color: var(--muted);
+           font-weight: 600; text-transform: uppercase; letter-spacing: .04em;
+           cursor: pointer; user-select: none; white-space: nowrap; }
+thead th:hover { background: var(--bg); }
+thead th.sort-asc::after  { content: ' ↑'; }
+thead th.sort-desc::after { content: ' ↓'; }
+tbody tr { border-bottom: 1px solid var(--border); cursor: pointer; transition: background .1s; }
+tbody tr:hover  { background: #f1f3f5; }
+tbody tr.active { background: #e7f1ff; }
+td { padding: 8px 12px; vertical-align: middle; }
+.col-title { max-width: 320px; }
+.col-title .title-text { font-weight: 500; white-space: nowrap; overflow: hidden;
+                          text-overflow: ellipsis; max-width: 300px; display: block; }
+.col-title .slug-text { font-size: 11px; color: var(--muted); white-space: nowrap;
+                         overflow: hidden; text-overflow: ellipsis; max-width: 300px; display: block; }
+
+/* ── Badges ── */
+.badge { display: inline-block; padding: 2px 8px; border-radius: 20px;
+         font-size: 11px; font-weight: 600; white-space: nowrap; }
+.badge-task       { background: #dbeafe; color: var(--task); }
+.badge-concept    { background: #dcfce7; color: var(--concept); }
+.badge-trouble    { background: #fee2e2; color: var(--trouble); }
+.badge-high       { background: #dcfce7; color: var(--high); }
+.badge-medium     { background: #ffedd5; color: var(--medium); }
+.badge-low        { background: #fee2e2; color: var(--low); }
+.badge-unknown    { background: #f1f3f5; color: var(--muted); }
+
+.tag  { display: inline-block; background: #f1f3f5; border-radius: 4px;
+        padding: 1px 6px; font-size: 11px; color: var(--muted); margin: 1px; }
+.compliance-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; }
+.dot-yes { background: var(--trouble); }
+.dot-no  { background: #ced4da; }
+
+.sections-grid { display: flex; gap: 3px; flex-wrap: wrap; }
+.sec-dot { width: 8px; height: 8px; border-radius: 2px; display: inline-block; }
+.sec-dot.present { background: var(--high); }
+.sec-dot.missing { background: #ced4da; }
+
+/* ── Edit Panel ── */
+.panel { width: var(--panel-w); border-left: 1px solid var(--border);
+         background: var(--surface); display: flex; flex-direction: column;
+         overflow: hidden; flex-shrink: 0; transition: width .2s; }
+.panel.hidden { width: 0; border: none; }
+.panel-header { padding: 14px 16px; border-bottom: 1px solid var(--border);
+                display: flex; align-items: center; gap: 10px; flex-shrink: 0; }
+.panel-header h2 { font-size: 14px; font-weight: 600; flex: 1;
+                   white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.panel-body { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
+.panel-footer { padding: 12px 16px; border-top: 1px solid var(--border);
+                display: flex; gap: 8px; flex-shrink: 0; }
+
+/* ── Form ── */
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field label { font-size: 11px; font-weight: 600; color: var(--muted);
+               text-transform: uppercase; letter-spacing: .05em; }
+.field input, .field select, .field textarea {
+  border: 1px solid var(--border); border-radius: 6px; padding: 6px 10px;
+  font-size: 13px; font-family: inherit; color: var(--text);
+  background: var(--bg); outline: none; resize: vertical; }
+.field input:focus, .field select:focus, .field textarea:focus { border-color: #86b7fe; background: #fff; }
+.field .tag-input { min-height: 36px; display: flex; flex-wrap: wrap; gap: 4px;
+                    align-items: center; border: 1px solid var(--border); border-radius: 6px;
+                    padding: 4px 8px; background: var(--bg); cursor: text; }
+
+.section-card { border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.section-card-header { padding: 8px 12px; background: var(--bg);
+                        display: flex; align-items: center; gap: 8px;
+                        border-bottom: 1px solid var(--border); }
+.section-card-header span { font-weight: 600; font-size: 13px; flex: 1; }
+.section-card textarea { width: 100%; border: none; padding: 10px 12px;
+                          font-size: 13px; font-family: 'SF Mono', 'Consolas', monospace;
+                          line-height: 1.5; min-height: 90px; background: #fff;
+                          outline: none; resize: vertical; }
+
+/* ── Buttons ── */
+.btn { padding: 7px 14px; border-radius: 6px; border: none; font-size: 13px;
+       font-weight: 500; cursor: pointer; transition: opacity .15s; }
+.btn:hover { opacity: .85; }
+.btn-primary { background: #0d6efd; color: #fff; }
+.btn-secondary { background: var(--bg); border: 1px solid var(--border); color: var(--text); }
+.btn-close { background: none; border: none; font-size: 18px; cursor: pointer;
+             color: var(--muted); padding: 2px 6px; border-radius: 4px; }
+.btn-close:hover { background: var(--bg); }
+
+.save-status { font-size: 12px; color: var(--muted); align-self: center; }
+.save-status.ok  { color: var(--high); }
+.save-status.err { color: var(--trouble); }
+
+.empty { padding: 60px 20px; text-align: center; color: var(--muted); }
+.loading { padding: 40px 20px; text-align: center; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>MekariRAG Review</h1>
+  <div class="stats" id="stats">Loading…</div>
+</div>
+
+<div class="filters">
+  <input type="search" id="q" placeholder="Search title or slug…">
+  <select id="fType">
+    <option value="">All types</option>
+    <option value="task">Task</option>
+    <option value="concept">Concept</option>
+    <option value="troubleshooting">Troubleshooting</option>
+  </select>
+  <select id="fConf">
+    <option value="">All confidence</option>
+    <option value="low">Low</option>
+    <option value="medium">Medium</option>
+    <option value="high">High</option>
+  </select>
+  <select id="fProduct">
+    <option value="">All products</option>
+    <option value="Qontak CRM">CRM</option>
+    <option value="Qontak Omnichannel">Omnichannel</option>
+    <option value="Qontak Chat">Chat</option>
+    <option value="Bizphone">Bizphone</option>
+  </select>
+  <select id="fSurface">
+    <option value="">All surfaces</option>
+    <option value="web">Web</option>
+    <option value="mobile">Mobile</option>
+    <option value="api">API</option>
+    <option value="all">All</option>
+  </select>
+  <select id="fCompliance">
+    <option value="">All</option>
+    <option value="true">Compliance sensitive</option>
+    <option value="false">Not sensitive</option>
+  </select>
+</div>
+
+<div class="main">
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-col="title">Title</th>
+          <th data-col="article_type">Type</th>
+          <th data-col="products">Products</th>
+          <th data-col="product_surface">Surface</th>
+          <th data-col="confidence_label">Confidence</th>
+          <th data-col="section_count">Sections</th>
+          <th>Compliance</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr><td colspan="7" class="loading">Loading articles…</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="panel hidden" id="panel">
+    <div class="panel-header">
+      <h2 id="panelTitle">—</h2>
+      <button class="btn-close" onclick="closePanel()">×</button>
+    </div>
+    <div class="panel-body" id="panelBody">
+      <div class="loading">Loading…</div>
+    </div>
+    <div class="panel-footer">
+      <button class="btn btn-primary" onclick="saveArticle()">Save</button>
+      <button class="btn btn-secondary" onclick="closePanel()">Close</button>
+      <span class="save-status" id="saveStatus"></span>
+    </div>
+  </div>
+</div>
+
+<script>
+const SECTIONS_BY_TYPE = {
+  task:           ['Prerequisites','Steps','Expected Result','Error States','Escalation'],
+  concept:        ['Definition','Why It Matters','Key Attributes','Related Tasks'],
+  troubleshooting:['Symptom','Root Cause','Solution','Escalation'],
+};
+
+let allArticles = [];
+let currentSlug = null;
+let currentData = null;
+let sortCol = 'confidence_label';
+let sortDir = 1;
+
+// ── Load articles ───────────────────────────────────────────────────────────
+async function loadArticles() {
+  const res = await fetch('/mekarirag/api/articles');
+  allArticles = await res.json();
+  renderStats();
+  renderTable();
+}
+
+function renderStats() {
+  const total = allArticles.length;
+  const low  = allArticles.filter(a => a.confidence_label === 'low').length;
+  const med  = allArticles.filter(a => a.confidence_label === 'medium').length;
+  const high = allArticles.filter(a => a.confidence_label === 'high').length;
+  document.getElementById('stats').innerHTML = `
+    <span class="stat-pill">${total} articles</span>
+    <span class="stat-pill low">${low} low</span>
+    <span class="stat-pill med">${med} medium</span>
+    <span class="stat-pill high">${high} high</span>
+  `;
+}
+
+// ── Filters + sort ──────────────────────────────────────────────────────────
+function filtered() {
+  const q    = document.getElementById('q').value.toLowerCase();
+  const type = document.getElementById('fType').value;
+  const conf = document.getElementById('fConf').value;
+  const prod = document.getElementById('fProduct').value;
+  const surf = document.getElementById('fSurface').value;
+  const comp = document.getElementById('fCompliance').value;
+
+  return allArticles.filter(a => {
+    if (q    && !a.title.toLowerCase().includes(q) && !a.slug.toLowerCase().includes(q)) return false;
+    if (type && a.article_type !== type) return false;
+    if (conf && a.confidence_label !== conf) return false;
+    if (prod && !(a.products||[]).includes(prod)) return false;
+    if (surf && a.product_surface !== surf) return false;
+    if (comp && String(a.compliance_sensitive) !== comp) return false;
+    return true;
+  }).sort((a, b) => {
+    let va = a[sortCol], vb = b[sortCol];
+    if (Array.isArray(va)) va = va.join(',');
+    if (Array.isArray(vb)) vb = vb.join(',');
+    va = String(va || '').toLowerCase();
+    vb = String(vb || '').toLowerCase();
+    return va < vb ? -sortDir : va > vb ? sortDir : 0;
+  });
+}
+
+function renderTable() {
+  const rows = filtered();
+  const tbody = document.getElementById('tbody');
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="7" class="empty">No articles match the current filters.</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(a => {
+    const type = a.article_type || '';
+    const conf = a.confidence_label || 'unknown';
+    const confScore = a.faithfulness_threshold != null
+      ? ` (${a.faithfulness_threshold})` : '';
+    const products = (a.products||[]).map(p => `<span class="tag">${esc(p)}</span>`).join('');
+    const sections = (a.section_names||[]).map(s =>
+      `<span class="sec-dot present" title="${esc(s)}"></span>`).join('');
+    const typeBadge = `<span class="badge badge-${type === 'troubleshooting' ? 'trouble' : type}">${esc(type)}</span>`;
+    const confBadge = `<span class="badge badge-${conf}">${conf}${esc(confScore)}</span>`;
+    const dot = a.compliance_sensitive
+      ? '<span class="compliance-dot dot-yes" title="Compliance sensitive"></span>'
+      : '<span class="compliance-dot dot-no" title="Not sensitive"></span>';
+    return `<tr data-slug="${esc(a.slug)}" class="${currentSlug === a.slug ? 'active' : ''}" onclick="openPanel('${esc(a.slug)}')">
+      <td class="col-title">
+        <span class="title-text" title="${esc(a.title)}">${esc(a.title)}</span>
+        <span class="slug-text">${esc(a.slug)}</span>
+      </td>
+      <td>${typeBadge}</td>
+      <td>${products}</td>
+      <td><span class="tag">${esc(a.product_surface||'')}</span></td>
+      <td>${confBadge}</td>
+      <td><div class="sections-grid">${sections}</div><span style="font-size:11px;color:var(--muted)">${a.section_count}</span></td>
+      <td style="text-align:center">${dot}</td>
+    </tr>`;
+  }).join('');
+}
+
+// ── Sort ────────────────────────────────────────────────────────────────────
+document.querySelectorAll('thead th[data-col]').forEach(th => {
+  th.addEventListener('click', () => {
+    const col = th.dataset.col;
+    if (sortCol === col) sortDir *= -1;
+    else { sortCol = col; sortDir = 1; }
+    document.querySelectorAll('thead th').forEach(t => t.classList.remove('sort-asc','sort-desc'));
+    th.classList.add(sortDir === 1 ? 'sort-asc' : 'sort-desc');
+    renderTable();
+  });
+});
+
+// ── Edit panel ──────────────────────────────────────────────────────────────
+async function openPanel(slug) {
+  currentSlug = slug;
+  document.querySelectorAll('tbody tr').forEach(r =>
+    r.classList.toggle('active', r.dataset.slug === slug));
+  document.getElementById('panel').classList.remove('hidden');
+  document.getElementById('panelTitle').textContent = '…';
+  document.getElementById('panelBody').innerHTML = '<div class="loading">Loading…</div>';
+  document.getElementById('saveStatus').textContent = '';
+
+  const res = await fetch(`/mekarirag/api/article/${slug}`);
+  currentData = await res.json();
+  document.getElementById('panelTitle').textContent = currentData.title || slug;
+  renderPanel(currentData);
+}
+
+function closePanel() {
+  currentSlug = null;
+  currentData = null;
+  document.getElementById('panel').classList.add('hidden');
+  document.querySelectorAll('tbody tr').forEach(r => r.classList.remove('active'));
+}
+
+function renderPanel(d) {
+  const typeOpts = ['task','concept','troubleshooting'].map(t =>
+    `<option value="${t}"${d.article_type===t?' selected':''}>${t}</option>`).join('');
+  const solveOpts = ['content','tool','hybrid'].map(t =>
+    `<option value="${t}"${d.solvability_type===t?' selected':''}>${t}</option>`).join('');
+  const surfOpts = ['web','mobile','api','all'].map(t =>
+    `<option value="${t}"${d.product_surface===t?' selected':''}>${t}</option>`).join('');
+
+  const sections = d.sections || {};
+  const order = SECTIONS_BY_TYPE[d.article_type] || Object.keys(sections);
+  const extra = Object.keys(sections).filter(k => !order.includes(k));
+
+  const sectionCards = [...order, ...extra].map(name => {
+    const sec = sections[name] || {content:'', confidence:'low'};
+    const conf = sec.confidence || 'low';
+    return `
+    <div class="section-card">
+      <div class="section-card-header">
+        <span>${esc(name)}</span>
+        <select class="section-conf" data-section="${esc(name)}" style="font-size:11px;padding:2px 6px;border:1px solid var(--border);border-radius:4px;background:var(--bg)">
+          <option value="high"${conf==='high'?' selected':''}>✓ high</option>
+          <option value="medium"${conf==='medium'?' selected':''}>~ medium</option>
+          <option value="low"${conf==='low'?' selected':''}>? low</option>
+        </select>
+      </div>
+      <textarea data-section="${esc(name)}" rows="5">${esc(sec.content)}</textarea>
+    </div>`;
+  }).join('');
+
+  document.getElementById('panelBody').innerHTML = `
+    <div class="field">
+      <label>Title</label>
+      <input id="f-title" value="${esc(d.title||'')}">
+    </div>
+    <div style="display:flex;gap:10px">
+      <div class="field" style="flex:1">
+        <label>Type</label>
+        <select id="f-type" onchange="onTypeChange()">${typeOpts}</select>
+      </div>
+      <div class="field" style="flex:1">
+        <label>Solvability</label>
+        <select id="f-solvability">${solveOpts}</select>
+      </div>
+      <div class="field" style="flex:1">
+        <label>Surface</label>
+        <select id="f-surface">${surfOpts}</select>
+      </div>
+    </div>
+    <div class="field">
+      <label>Products (comma-separated)</label>
+      <input id="f-products" value="${esc((d.products||[]).join(', '))}">
+    </div>
+    <div class="field">
+      <label>Intent tags (comma-separated)</label>
+      <input id="f-tags" value="${esc((d.intent_tags||[]).join(', '))}">
+    </div>
+    <div style="display:flex;gap:10px;align-items:center">
+      <div class="field" style="flex:1">
+        <label>Confidence score</label>
+        <select id="f-conf">
+          <option value="0.9"${d.faithfulness_threshold>=0.85?' selected':''}>0.9 — high</option>
+          <option value="0.6"${d.faithfulness_threshold>=0.55&&d.faithfulness_threshold<0.85?' selected':''}>0.6 — medium</option>
+          <option value="0.3"${(d.faithfulness_threshold||0)<0.55?' selected':''}>0.3 — low</option>
+        </select>
+      </div>
+      <div class="field" style="flex:1">
+        <label>Compliance</label>
+        <select id="f-compliance">
+          <option value="false"${!d.compliance_sensitive?' selected':''}>Not sensitive</option>
+          <option value="true"${d.compliance_sensitive?' selected':''}>Sensitive</option>
+        </select>
+      </div>
+    </div>
+    <hr style="border:none;border-top:1px solid var(--border)">
+    <div style="font-size:12px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:.05em">Sections</div>
+    ${sectionCards}
+    ${d.canonical_url ? `<div style="font-size:11px;color:var(--muted)">
+      <a href="${esc(d.canonical_url)}" target="_blank" style="color:var(--muted)">${esc(d.canonical_url)}</a>
+    </div>` : ''}
+  `;
+}
+
+function onTypeChange() {
+  // Refresh section order hint when type changes
+  const t = document.getElementById('f-type').value;
+  // Don't re-render full panel - just a hint for next save
+}
+
+// ── Save ────────────────────────────────────────────────────────────────────
+async function saveArticle() {
+  if (!currentSlug || !currentData) return;
+  const status = document.getElementById('saveStatus');
+  status.textContent = 'Saving…';
+  status.className = 'save-status';
+
+  // Collect sections
+  const sections = {};
+  document.querySelectorAll('[data-section]').forEach(el => {
+    const name = el.dataset.section;
+    if (!sections[name]) sections[name] = {content:'', confidence:'medium'};
+    if (el.tagName === 'TEXTAREA') sections[name].content = el.value;
+    if (el.tagName === 'SELECT' && el.classList.contains('section-conf'))
+      sections[name].confidence = el.value;
+  });
+
+  const payload = {
+    title:        document.getElementById('f-title').value,
+    article_type: document.getElementById('f-type').value,
+    solvability_type: document.getElementById('f-solvability').value,
+    product_surface: document.getElementById('f-surface').value,
+    products:     document.getElementById('f-products').value.split(',').map(s=>s.trim()).filter(Boolean),
+    intent_tags:  document.getElementById('f-tags').value.split(',').map(s=>s.trim()).filter(Boolean),
+    faithfulness_threshold: parseFloat(document.getElementById('f-conf').value),
+    compliance_sensitive: document.getElementById('f-compliance').value === 'true',
+    sections,
+  };
+
+  try {
+    const res = await fetch(`/mekarirag/api/article/${currentSlug}`, {
+      method: 'PUT', headers: {'Content-Type':'application/json'},
+      body: JSON.stringify(payload),
+    });
+    if (res.ok) {
+      status.textContent = '✓ Saved';
+      status.className = 'save-status ok';
+      // Update local list
+      const idx = allArticles.findIndex(a => a.slug === currentSlug);
+      if (idx !== -1) {
+        Object.assign(allArticles[idx], payload);
+        allArticles[idx].confidence_label = payload.faithfulness_threshold >= 0.85 ? 'high'
+          : payload.faithfulness_threshold >= 0.55 ? 'medium' : 'low';
+        allArticles[idx].section_names = Object.keys(sections);
+        allArticles[idx].section_count = Object.keys(sections).length;
+      }
+      renderStats();
+      renderTable();
+      document.getElementById('panelTitle').textContent = payload.title;
+      setTimeout(() => { status.textContent = ''; }, 3000);
+    } else {
+      status.textContent = '✗ Error saving';
+      status.className = 'save-status err';
+    }
+  } catch(e) {
+    status.textContent = '✗ ' + e.message;
+    status.className = 'save-status err';
+  }
+}
+
+// ── Keyboard shortcuts ──────────────────────────────────────────────────────
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closePanel();
+  if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); saveArticle(); }
+});
+
+// ── Wire up filters ─────────────────────────────────────────────────────────
+['q','fType','fConf','fProduct','fSurface','fCompliance'].forEach(id => {
+  document.getElementById(id).addEventListener('input', renderTable);
+});
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+    .replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+}
+
+loadArticles();
+</script>
+</body>
+</html>

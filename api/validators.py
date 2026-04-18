@@ -97,6 +97,14 @@ def validate_path_prefix(prefix: str | None) -> str | None:
     return prefix
 
 
+def validate_job_mode(mode: str | None) -> str:
+    """Return a valid job mode string, defaulting to 'crawl'."""
+    from config.constants import JobMode
+    if mode and isinstance(mode, str) and mode in JobMode.ALL:
+        return mode
+    return JobMode.CRAWL
+
+
 def _validate_clamped_int(value: int | None, default: int, min_val: int, max_val: int) -> int:
     """Shared int clamp helper."""
     if value is None:

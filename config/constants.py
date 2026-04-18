@@ -67,6 +67,13 @@ class BlockingSignal:
     DUPLICATE_CONTENT = "duplicate_content_high"
 
 
+class JobMode:
+    """Job acquisition mode constants."""
+    CRAWL = "crawl"
+    ZENDESK_RAG = "zendesk_rag"
+    ALL = {CRAWL, ZENDESK_RAG}
+
+
 class ExtractionMode:
     """Text extraction mode constants."""
     TRAFILATURA = "trafilatura"

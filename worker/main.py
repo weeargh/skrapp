@@ -8,7 +8,7 @@ import time
 from contextlib import contextmanager
 
 from config import settings
-from config.constants import JobState, PageState
+from config.constants import JobMode, JobState, PageState
 from crawler.crawl4ai_session import Crawl4AIPageSession
 from db import database, queries
 from worker.runner import finalize_ready_job, process_page, start_next_queued_job
@@ -127,8 +127,15 @@ class PageWorkerThread(threading.Thread):
             database.close_connection()
             logger.info("%s stopped", self.worker_id)
 
-    def _get_session(self, job: dict) -> Crawl4AIPageSession:
-        """Reuse a browser session while the worker stays on the same scope."""
+    def _get_session(self, job: dict) -> Crawl4AIPageSession | None:
+        """Reuse a browser session while the worker stays on the same scope.
+
+        Returns None for modes that do not require a browser (e.g. zendesk_rag).
+        """
+        if job.get("mode") == JobMode.ZENDESK_RAG:
+            self._close_session()
+            return None
+
         session_key = (
             job["allowed_host"],
             job.get("allowed_path_prefix"),

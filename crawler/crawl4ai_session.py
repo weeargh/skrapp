@@ -4,7 +4,8 @@ from __future__ import annotations
 import asyncio
 from dataclasses import dataclass
 import logging
-from urllib.parse import urljoin
+import re
+from urllib.parse import unquote, urljoin, urlparse
 
 from bs4 import BeautifulSoup
 from crawl4ai import AsyncWebCrawler, BrowserConfig, CacheMode, CrawlerRunConfig
@@ -17,6 +18,15 @@ from crawler.url_utils import canonicalize_url, is_url_in_scope
 
 
 logger = logging.getLogger(__name__)
+
+
+GENERIC_TITLE_PATTERNS = (
+    re.compile(r"\b(help center|online help center|pusat bantuan|layanan bantuan)\b", re.IGNORECASE),
+)
+
+GENERIC_HEADING_PATTERNS = (
+    re.compile(r"\b(temukan artikel|panduan pengguna|search|pencarian|related articles|panduan terkait)\b", re.IGNORECASE),
+)
 
 
 @dataclass
@@ -124,6 +134,12 @@ class Crawl4AIPageSession:
         if not accepted_links:
             accepted_links = self._extract_links(result.links or {})
         metadata = dict(result.metadata or {})
+        resolved_title = resolve_page_title(
+            metadata.get("title") or "",
+            result.html or "",
+            raw_markdown,
+            final_url,
+        )
         metadata.update({
             "response_headers": dict(result.response_headers or {}),
             "content_filter": "pruning",
@@ -135,7 +151,7 @@ class Crawl4AIPageSession:
             final_url=final_url,
             canonical_url=canonicalize_url(final_url),
             status_code=result.status_code or 0,
-            title=metadata.get("title") or "",
+            title=resolved_title,
             html=result.html or "",
             cleaned_html=result.cleaned_html or "",
             raw_markdown=raw_markdown,
@@ -206,3 +222,108 @@ class Crawl4AIPageSession:
             accepted.append(absolute_href)
 
         return accepted
+
+
+def resolve_page_title(metadata_title: str, html: str, raw_markdown: str, url: str) -> str:
+    """Prefer an article heading when the document title is site-wide boilerplate."""
+    normalized_metadata_title = _normalize_title(metadata_title)
+    heading_title = _extract_heading_title(html, raw_markdown, url)
+
+    if not heading_title:
+        return normalized_metadata_title
+    if not normalized_metadata_title:
+        return heading_title
+    if _looks_generic_title(normalized_metadata_title):
+        return heading_title
+    if _title_token_overlap(normalized_metadata_title, heading_title) == 0:
+        return heading_title
+    return normalized_metadata_title
+
+
+def _extract_heading_title(html: str, raw_markdown: str, url: str) -> str:
+    candidates: list[tuple[float, str]] = []
+    seen: set[str] = set()
+
+    if html:
+        try:
+            soup = BeautifulSoup(html, "lxml")
+            for index, heading in enumerate(soup.find_all(["h1", "h2"], limit=8)):
+                text = _normalize_title(heading.get_text(" ", strip=True))
+                if not text or text in seen:
+                    continue
+                seen.add(text)
+                candidates.append((_heading_score(text, url, heading.name, index), text))
+        except Exception as e:
+            logger.debug("Failed to extract heading title from %s: %s", url, e)
+
+    for index, line in enumerate((raw_markdown or "").splitlines()[:40]):
+        stripped = line.strip()
+        if not stripped.startswith("# "):
+            continue
+        text = _normalize_title(stripped[2:])
+        if not text or text in seen:
+            continue
+        seen.add(text)
+        candidates.append((_heading_score(text, url, "h1", index), text))
+
+    if not candidates:
+        return ""
+    candidates.sort(key=lambda item: item[0], reverse=True)
+    return candidates[0][1]
+
+
+def _heading_score(text: str, url: str, tag_name: str, index: int) -> float:
+    tokens = _significant_tokens(text)
+    slug_tokens = _url_slug_tokens(url)
+    score = float(len(tokens & slug_tokens) * 4)
+
+    if tag_name == "h1":
+        score += 3.0
+    elif tag_name == "h2":
+        score += 1.0
+
+    word_count = len(text.split())
+    if 3 <= word_count <= 18:
+        score += 1.0
+
+    if _looks_generic_heading(text):
+        score -= 4.0
+    else:
+        score += 1.5
+
+    score -= index * 0.1
+    return score
+
+
+def _url_slug_tokens(url: str) -> set[str]:
+    path = urlparse(url or "").path
+    last_segment = unquote(path.rstrip("/").split("/")[-1]) if path else ""
+    last_segment = re.sub(r"^\d+-", "", last_segment)
+    return _significant_tokens(last_segment.replace("-", " "))
+
+
+def _normalize_title(value: str) -> str:
+    text = re.sub(r"\s+", " ", value or "").strip()
+    return text.strip(" -|")
+
+
+def _looks_generic_title(value: str) -> bool:
+    text = value or ""
+    return any(pattern.search(text) for pattern in GENERIC_TITLE_PATTERNS)
+
+
+def _looks_generic_heading(value: str) -> bool:
+    text = value or ""
+    return any(pattern.search(text) for pattern in GENERIC_HEADING_PATTERNS)
+
+
+def _title_token_overlap(left: str, right: str) -> int:
+    return len(_significant_tokens(left) & _significant_tokens(right))
+
+
+def _significant_tokens(value: str) -> set[str]:
+    return {
+        token
+        for token in re.findall(r"[a-zA-Z0-9]{4,}", (value or "").lower())
+        if token not in {"help", "center", "online", "panduan", "pengguna", "search", "mekari"}
+    }

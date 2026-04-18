@@ -44,3 +44,8 @@ out/
 # OS
 .DS_Store
 Thumbs.db
+
+# MekariRAG review outputs (local only)
+for-review/
+for-review */
+for-review-drafts.zip

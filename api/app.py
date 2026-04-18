@@ -10,6 +10,7 @@ from db import database
 from api.middleware.error_handler import register_error_handlers
 from api.routes.jobs import jobs_bp
 from api.routes.health import health_bp
+from api.routes.mekarirag import mekarirag_bp
 
 
 def create_app() -> Flask:
@@ -29,6 +30,7 @@ def create_app() -> Flask:
 
     app.register_blueprint(jobs_bp)
     app.register_blueprint(health_bp)
+    app.register_blueprint(mekarirag_bp)
 
     def _asset_version() -> str:
         latest_mtime = 0

@@ -10,6 +10,7 @@ from api.preview_capture import ensure_page_screenshot
 from api.validators import (
     generate_job_id,
     validate_ignore_prefixes,
+    validate_job_mode,
     validate_max_depth,
     validate_max_pages,
     validate_path_prefix,
@@ -56,7 +57,8 @@ def create_job():
     )
     ignore_prefixes = validate_ignore_prefixes(data.get("ignore_path_prefixes"))
     allowed_path_prefix = validate_path_prefix(data.get("allowed_path_prefix"))
-    if not allowed_path_prefix:
+    mode = validate_job_mode(data.get("mode"))
+    if not allowed_path_prefix and mode == "crawl":
         allowed_path_prefix = _derive_allowed_path_prefix(start_url)
 
     job_id = generate_job_id()
@@ -72,6 +74,7 @@ def create_job():
         max_pages=max_pages,
         ignore_path_prefixes=ignore_prefixes,
         timeout_seconds=timeout_seconds,
+        mode=mode,
     )
     return jsonify(_serialize_job(job)), 201
 
@@ -332,6 +335,7 @@ def _serialize_job(job: dict) -> dict:
     response = {
         "job_id": job["id"],
         "status": job["status"],
+        "mode": job.get("mode", "crawl"),
         "start_url": job["start_url"],
         "allowed_host": job["allowed_host"],
         "allowed_path_prefix": job.get("allowed_path_prefix"),

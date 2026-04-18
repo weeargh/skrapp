@@ -318,6 +318,7 @@ def create_crawl_job(
     max_pages: int,
     ignore_path_prefixes: list[str] | None = None,
     timeout_seconds: int = 1800,
+    mode: str = "crawl",
 ) -> dict:
     """Create an MVP crawl job without auth concerns."""
     now = _now_iso()
@@ -329,9 +330,9 @@ def create_crawl_job(
         INSERT INTO jobs (
             id, token_hash, start_url, allowed_host, allowed_path_prefix,
             max_pages, max_depth, timeout_seconds, ignore_path_prefixes,
-            state, cleanup_status, created_at, updated_at,
+            state, cleanup_status, mode, created_at, updated_at,
             requester_ip_hash, expires_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """,
         (
             job_id,
@@ -345,6 +346,7 @@ def create_crawl_job(
             json.dumps(ignore_prefixes),
             JobState.QUEUED,
             'pending',
+            mode,
             now,
             now,
             '',

@@ -13,14 +13,18 @@ from crawler.text_utils import markdown_to_text
 GENERIC_NOISE_PATTERNS = [
     re.compile(r"\b(all rights reserved|copyright)\b", re.IGNORECASE),
     re.compile(r"\b(privacy policy|cookie policy|terms(?: of service| and conditions)?|legal)\b", re.IGNORECASE),
-    re.compile(r"\b(share (?:this|article|page)|follow us|newsletter|subscribe)\b", re.IGNORECASE),
-    re.compile(r"\b(related articles|recommended articles|similar articles)\b", re.IGNORECASE),
-    re.compile(r"\b(was this article helpful|submit a request|contact support|contact us)\b", re.IGNORECASE),
+    re.compile(r"\b(share (?:this|article|page)|bagikan artikel ini|follow us|newsletter|subscribe)\b", re.IGNORECASE),
+    re.compile(r"\b(related articles|recommended articles|similar articles|artikel terkait|panduan terkait|sumber informasi lainnya)\b", re.IGNORECASE),
+    re.compile(
+        r"\b(was this article helpful|submit a request|contact support|contact us|punya saran dan komentar|bantu kami meningkatkan kualitas|tidak menemukan informasi yang anda cari|hubungi tim kami)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 FOOTER_HEADING_PATTERNS = [
     re.compile(r"^#{1,6}\s*(related|recommended|resources|references|support|legal|privacy|terms)\b", re.IGNORECASE),
     re.compile(r"^#{1,6}\s*(follow us|share|newsletter|contact)\b", re.IGNORECASE),
+    re.compile(r"^#{1,6}\s*(artikel terkait|panduan terkait|sumber informasi lainnya|tidak menemukan informasi)\b", re.IGNORECASE),
 ]
 
 INLINE_DROP_PATTERNS = [
@@ -263,6 +267,11 @@ def strip_block_inline_noise(block: str) -> str:
     return "\n".join(cleaned_lines).strip()
 
 
+def _count_markdown_links(block: str) -> int:
+    """Count text links without treating inline images as navigational links."""
+    return len(re.findall(r"(?<!!)\[(.*?)\]\((.*?)\)", block or ""))
+
+
 def crop_to_main_heading(blocks: list[str], *, title: str | None = None) -> list[str]:
     """Crop obvious promo/navigation preambles before the main title block."""
     if len(blocks) <= 1:
@@ -409,7 +418,7 @@ def _extract_block_features(
     char_count = len(text)
     words = re.findall(r"\b[\w@.+-]{2,}\b", text)
     word_count = len(words)
-    link_count = len(re.findall(r"\[(.*?)\]\((.*?)\)", block))
+    link_count = _count_markdown_links(block)
     image_count = len(re.findall(r"!\[.*?\]\(.*?\)", block))
     heading_match = re.match(r"^(#{1,6})\s+", block.lstrip())
     heading_level = len(heading_match.group(1)) if heading_match else 0
@@ -484,6 +493,10 @@ def _score_block(features: BlockFeatures) -> tuple[float, list[str], bool]:
     if features.is_long_form_text:
         score += 1.15
         reasons.append("long_form_text")
+
+    if features.list_item_count >= 3 and features.word_count >= 60 and features.link_count <= max(2, features.list_item_count // 2):
+        score += 0.65
+        reasons.append("substantive_step_list")
 
     if features.page_type == "location" and (features.phone_count or "get directions" in features.text.lower()):
         score += 0.9
