@@ -11,8 +11,10 @@ from __future__ import annotations
 import os
 import re
 
+import urllib.request
+
 import yaml
-from flask import Blueprint, jsonify, request, send_file
+from flask import Blueprint, Response, jsonify, request, send_file
 
 mekarirag_bp = Blueprint("mekarirag", __name__)
 
@@ -106,6 +108,23 @@ def _all_slugs() -> list[str]:
     if not os.path.isdir(DRAFTS_DIR):
         return []
     return sorted(_slug(f) for f in os.listdir(DRAFTS_DIR) if f.endswith(".md"))
+
+
+@mekarirag_bp.route("/mekarirag/proxy/image")
+def proxy_image():
+    """Server-side image proxy — bypasses Zendesk CDN CORS/auth restrictions."""
+    url = request.args.get("url", "")
+    if not url or not url.startswith("https://"):
+        return Response("bad url", status=400)
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            content_type = resp.headers.get("Content-Type", "image/jpeg")
+            data = resp.read()
+        return Response(data, content_type=content_type,
+                        headers={"Cache-Control": "public, max-age=86400"})
+    except Exception:
+        return Response("", status=502)
 
 
 @mekarirag_bp.route("/mekarirag/review")

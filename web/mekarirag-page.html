@@ -8,14 +8,15 @@
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
-  --bg: #f8f9fa; --surface: #fff; --border: #e2e6ea;
-  --text: #212529; --muted: #6c757d;
+  --bg: #fff; --surface: #fff; --border: #e2e6ea;
+  --sidebar-bg: #f8f9fa;
+  --text: #1a1a2e; --muted: #6c757d;
   --task: #0d6efd; --concept: #198754; --trouble: #dc3545;
   --high: #198754; --medium: #fd7e14; --low: #dc3545;
-  --sidebar-w: 240px;
+  --sidebar-w: 230px;
 }
 body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-       background: var(--bg); color: var(--text); font-size: 14px;
+       background: var(--bg); color: var(--text); font-size: 15px;
        height: 100vh; display: flex; flex-direction: column; overflow: hidden; }
 
 /* ── Topbar ── */
@@ -49,7 +50,7 @@ body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 .body-wrap { display: flex; flex: 1; overflow: hidden; }
 
 /* ── Sidebar ── */
-.sidebar { width: var(--sidebar-w); background: var(--surface);
+.sidebar { width: var(--sidebar-w); background: var(--sidebar-bg);
            border-right: 1px solid var(--border); overflow-y: auto;
            padding: 16px 14px; display: flex; flex-direction: column; gap: 14px;
            flex-shrink: 0; }
@@ -84,17 +85,17 @@ hr.divider { border: none; border-top: 1px solid var(--border); }
 
 /* ── Article content ── */
 .content-wrap { flex: 1; overflow-y: auto; }
-.content-inner { max-width: 780px; margin: 0 auto; padding: 24px 32px 60px; }
+.content-inner { max-width: 800px; margin: 0 auto; padding: 32px 40px 80px; }
 
 /* Read mode: rendered HTML */
 .section-block { margin-bottom: 28px; }
 .section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px;
                   padding-bottom: 8px; border-bottom: 2px solid var(--border); }
 .section-header h2 { font-size: 16px; font-weight: 700; flex: 1; }
-.section-body { font-size: 14px; line-height: 1.7; color: #343a40; }
-.section-body p  { margin-bottom: .7em; }
-.section-body ul, .section-body ol { padding-left: 20px; margin-bottom: .7em; }
-.section-body li { margin-bottom: .3em; }
+.section-body { font-size: 15px; line-height: 1.8; color: #2c2c3e; }
+.section-body p  { margin-bottom: .85em; }
+.section-body ul, .section-body ol { padding-left: 22px; margin-bottom: .85em; }
+.section-body li { margin-bottom: .45em; }
 .section-body strong { font-weight: 600; }
 .section-body code { background: #f1f3f5; padding: 1px 5px; border-radius: 3px;
                      font-size: 12px; font-family: 'SF Mono', Consolas, monospace; }
@@ -279,21 +280,10 @@ function renderSidebar(d) {
         </div>
       </div>
     </div>
-    <hr class="divider">
-    <div>
-      <h3>Intent tags</h3>
-      <div class="tags-wrap read-only">${(d.intent_tags||[]).map(t=>`<span class="tag">${esc(t)}</span>`).join('')||'<span style="color:var(--muted)">none</span>'}</div>
-      <input class="edit-only" id="m-tags" style="display:none;margin-top:4px" value="${esc((d.intent_tags||[]).join(', '))}">
-    </div>
-    <hr class="divider">
-    <div>
-      <h3>Query examples</h3>
-      <div class="read-only" style="font-size:12px;color:var(--muted);line-height:1.6">${(d.query_examples||[]).map(q=>`• ${esc(q)}`).join('<br>')||'—'}</div>
-    </div>
     ${d.canonical_url ? `<hr class="divider">
-    <div class="canon-link"><a href="${esc(d.canonical_url)}" target="_blank">↗ Zendesk source</a></div>` : ''}
+    <div class="canon-link"><a href="${esc(d.canonical_url)}" target="_blank">↗ Source article</a></div>` : ''}
     ${d.verified_by ? `<hr class="divider">
-    <div style="font-size:11px;color:var(--muted)">Verified by: ${esc(d.verified_by)}</div>` : ''}
+    <div style="font-size:11px;color:var(--muted)">Verified: ${esc(d.verified_by)}</div>` : ''}
   `;
 }
 
@@ -360,7 +350,7 @@ function postprocessHtml(html) {
     /<blockquote>\s*<p>Screenshot:\s*([\s\S]*?)<br[^>]*>\s*Image:\s*(https?:\/\/[^\s<"]+)[\s\S]*?<\/p>\s*<\/blockquote>/gi,
     (_, alt, url) => {
       const cleanAlt = alt.trim().replace(/<[^>]+>/g, '');
-      return `<div class="screenshot-block">📷 <strong>${esc(cleanAlt)}</strong><img src="${url.trim()}" alt="${esc(cleanAlt)}" loading="lazy"></div>`;
+      return `<div class="screenshot-block">📷 <strong>${esc(cleanAlt)}</strong><img src="/mekarirag/proxy/image?url=${encodeURIComponent(url.trim())}" alt="${esc(cleanAlt)}" loading="lazy"></div>`;
     }
   );
   // Warn callouts: ⚠️ **Penting** / ℹ️ **Catatan**
