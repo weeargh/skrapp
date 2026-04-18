@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MekariRAG Field Reference</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #fff; --border: #e2e6ea; --muted: #6c757d; --text: #1a1a2e;
+  --task: #0d6efd; --concept: #198754; --trouble: #dc3545;
+  --high: #198754; --medium: #fd7e14; --low: #dc3545;
+  --surface: #f8f9fa;
+}
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+       background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.7; }
+
+/* ── Topbar ── */
+.topbar { background: var(--bg); border-bottom: 1px solid var(--border);
+          padding: 0 24px; height: 48px; display: flex; align-items: center;
+          gap: 12px; position: sticky; top: 0; z-index: 10; }
+.topbar a { color: var(--muted); text-decoration: none; font-size: 13px; }
+.topbar a:hover { color: var(--text); }
+.topbar .title { font-size: 14px; font-weight: 600; flex: 1; }
+
+/* ── Layout ── */
+.page-wrap { display: flex; max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; gap: 40px; }
+.toc { width: 200px; flex-shrink: 0; }
+.toc-inner { position: sticky; top: 64px; }
+.toc h3 { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .07em;
+           color: var(--muted); margin-bottom: 10px; }
+.toc ul { list-style: none; }
+.toc li { margin: 2px 0; }
+.toc a { font-size: 13px; color: var(--muted); text-decoration: none; display: block;
+          padding: 3px 8px; border-radius: 4px; }
+.toc a:hover { background: var(--surface); color: var(--text); }
+.content { flex: 1; min-width: 0; }
+
+/* ── Sections ── */
+.section { margin-bottom: 48px; }
+.section h2 { font-size: 18px; font-weight: 700; border-bottom: 2px solid var(--border);
+              padding-bottom: 10px; margin-bottom: 20px; color: var(--text); }
+.intro { color: var(--muted); font-size: 14px; margin-bottom: 20px; }
+
+/* ── Term cards ── */
+.term { border: 1px solid var(--border); border-radius: 10px; margin-bottom: 16px; overflow: hidden; }
+.term-header { padding: 12px 16px; background: var(--surface); display: flex;
+               align-items: baseline; gap: 12px; border-bottom: 1px solid var(--border); }
+.term-name { font-size: 14px; font-weight: 700; font-family: 'SF Mono', Consolas, monospace; color: var(--text); }
+.term-label { font-size: 12px; color: var(--muted); }
+.term-body { padding: 14px 16px; }
+.term-body p { font-size: 14px; margin-bottom: 10px; }
+.term-body p:last-child { margin-bottom: 0; }
+
+/* ── Values grid ── */
+.values { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.val { padding: 4px 12px; border-radius: 20px; font-size: 12px; font-weight: 500;
+       border: 1px solid; display: flex; flex-direction: column; gap: 2px; }
+.val-name { font-weight: 700; font-size: 12px; }
+.val-desc { font-size: 11px; font-weight: 400; color: inherit; opacity: .8; }
+
+/* type colours */
+.v-task    { background: #e7f0ff; border-color: #c3d7ff; color: #0d4db5; }
+.v-concept { background: #e6f4ea; border-color: #b7dfbf; color: #155724; }
+.v-trouble { background: #fde8e8; border-color: #f5c2c2; color: #842029; }
+.v-tool    { background: #e7f0ff; border-color: #c3d7ff; color: #0d4db5; }
+.v-content { background: #e6f4ea; border-color: #b7dfbf; color: #155724; }
+.v-hybrid  { background: #fff3e0; border-color: #ffd580; color: #7a4f00; }
+.v-web     { background: #f1f3f5; border-color: #dee2e6; color: #495057; }
+.v-mobile  { background: #f0f8ff; border-color: #bde0ff; color: #005699; }
+.v-api     { background: #f3e8ff; border-color: #d8b5ff; color: #5c1ea8; }
+.v-all     { background: #f1f3f5; border-color: #dee2e6; color: #495057; }
+.v-high    { background: #e6f4ea; border-color: #b7dfbf; color: #155724; }
+.v-medium  { background: #fff3e0; border-color: #ffd580; color: #7a4f00; }
+.v-low     { background: #fde8e8; border-color: #f5c2c2; color: #842029; }
+.v-bool    { background: #f1f3f5; border-color: #dee2e6; color: #495057; }
+
+/* ── Section structure tables ── */
+.struct-table { width: 100%; border-collapse: collapse; font-size: 13px; margin-top: 12px; }
+.struct-table th { text-align: left; padding: 6px 10px; background: var(--surface);
+                   font-size: 11px; font-weight: 700; text-transform: uppercase;
+                   letter-spacing: .06em; color: var(--muted); border-bottom: 1px solid var(--border); }
+.struct-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.struct-table tr:last-child td { border-bottom: none; }
+.struct-table .sec-name { font-weight: 600; font-family: 'SF Mono', Consolas, monospace; font-size: 12px; }
+.struct-table .sec-ask  { color: var(--muted); font-size: 12px; }
+code { background: #f1f3f5; padding: 1px 6px; border-radius: 3px;
+       font-size: 12px; font-family: 'SF Mono', Consolas, monospace; }
+
+/* ── Note boxes ── */
+.note { background: #fff8e1; border-left: 3px solid #ffc107; padding: 10px 14px;
+        border-radius: 0 6px 6px 0; font-size: 13px; color: #5a4a00; margin-top: 12px; }
+.tip  { background: #e7f0ff; border-left: 3px solid #0d6efd; padding: 10px 14px;
+        border-radius: 0 6px 6px 0; font-size: 13px; color: #0d4db5; margin-top: 12px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <a href="/mekarirag/review">← Review list</a>
+  <span style="color:var(--border)">|</span>
+  <span class="title">MekariRAG Field Reference</span>
+</div>
+
+<div class="page-wrap">
+
+  <!-- TOC -->
+  <nav class="toc">
+    <div class="toc-inner">
+      <h3>On this page</h3>
+      <ul>
+        <li><a href="#article-type">Article Type</a></li>
+        <li><a href="#solvability">Solvability Type</a></li>
+        <li><a href="#product-surface">Product Surface</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#confidence">Confidence Level</a></li>
+        <li><a href="#sections">Section Structure</a></li>
+        <li><a href="#intent-tags">Intent Tags</a></li>
+        <li><a href="#query-examples">Query Examples</a></li>
+        <li><a href="#compliance">Compliance Sensitive</a></li>
+        <li><a href="#plan-scope">Plan Scope</a></li>
+        <li><a href="#chunks">Chunk Groups &amp; Related Chunks</a></li>
+        <li><a href="#verified">Verified By / Last Verified</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <main class="content">
+
+    <p style="color:var(--muted);font-size:14px;margin-bottom:36px;">
+      Reference for every field in a MekariRAG knowledge base article.
+      Use this page to understand what value to put in each field when reviewing or editing.
+    </p>
+
+    <!-- ── Article Type ── -->
+    <div class="section" id="article-type">
+      <h2>Article Type</h2>
+      <p class="intro">Determines the article's purpose and which sections are required.
+        MekariRAG's retriever uses this to set expectations about what the chunk will contain.</p>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">task</span>
+          <span class="term-label">278 articles</span>
+        </div>
+        <div class="term-body">
+          <p>A step-by-step guide for completing a specific action in the product.
+          Use this when the user wants to <em>do</em> something: set up a feature, run a report, configure a setting.</p>
+          <p><strong>Required sections:</strong> Prerequisites → Steps → Expected Result → Error States → Escalation</p>
+          <div class="tip">Most articles are tasks. If the user's question starts with "Bagaimana cara…" it's almost always a task.</div>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">concept</span>
+          <span class="term-label">86 articles</span>
+        </div>
+        <div class="term-body">
+          <p>An explanatory article about a product area, feature, or idea — no hands-on steps required.
+          Use this for overview pages, definition pages, and "what is X" content.</p>
+          <p><strong>Required sections:</strong> Definition → Why It Matters → Key Attributes → Related Tasks</p>
+          <div class="tip">If the article is mostly explanation with no numbered steps, it's a concept.</div>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">troubleshooting</span>
+          <span class="term-label">3 articles</span>
+        </div>
+        <div class="term-body">
+          <p>A guide for diagnosing and fixing a specific problem. Use this only when the article is
+          primarily reactive — the user already has a broken or unexpected state and needs to resolve it.</p>
+          <p><strong>Required sections:</strong> Symptom → Root Cause → Solution → Escalation</p>
+          <div class="note">Rare in this KB. Most "error" content lives in the Error States section of a task article instead.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Solvability Type ── -->
+    <div class="section" id="solvability">
+      <h2>Solvability Type</h2>
+      <p class="intro">Tells MekariRAG how the user can resolve their need — whether by using the product,
+        reading content, or a mix of both. Affects how the AI bot frames its answer.</p>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">tool</span>
+          <span class="term-label">253 articles</span>
+        </div>
+        <div class="term-body">
+          <p>The user can solve their need themselves by taking an action inside the product.
+          There is a button to click, a form to fill, a setting to change.</p>
+          <p><em>Example: "Cara menambahkan team member" — the user goes to Settings and clicks a button.</em></p>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">content</span>
+          <span class="term-label">86 articles</span>
+        </div>
+        <div class="term-body">
+          <p>The user's need is met by reading or understanding the content. No product action required.
+          Typically paired with <code>article_type: concept</code>.</p>
+          <p><em>Example: "Overview dashboard supervisor" — the user just needs to understand what they're looking at.</em></p>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">hybrid</span>
+          <span class="term-label">28 articles</span>
+        </div>
+        <div class="term-body">
+          <p>Part of the answer is in the product (an action to take), and part requires understanding
+          a concept or policy first. Use when the article combines explanation and steps.</p>
+          <p><em>Example: "Cara mengatur approval limit" — first explains what approval limits are, then shows how to configure them.</em></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Product Surface ── -->
+    <div class="section" id="product-surface">
+      <h2>Product Surface</h2>
+      <p class="intro">Where the user performs the action described in the article. Helps the AI bot
+        give context-appropriate answers (e.g., "open the mobile app" vs "go to the web dashboard").</p>
+
+      <div class="values">
+        <div class="val v-web"><span class="val-name">web</span><span class="val-desc">Desktop browser (299 articles)</span></div>
+        <div class="val v-mobile"><span class="val-name">mobile</span><span class="val-desc">iOS / Android app (49 articles)</span></div>
+        <div class="val v-api"><span class="val-name">api</span><span class="val-desc">REST API / developer integration (14 articles)</span></div>
+        <div class="val v-all"><span class="val-name">all</span><span class="val-desc">Applies to all surfaces (5 articles)</span></div>
+      </div>
+
+      <div class="note" style="margin-top:16px;">
+        If an article covers both web and mobile, pick the primary surface and note the other in the content.
+        Only use <code>all</code> when the concept truly applies everywhere (e.g., billing, account overview).
+      </div>
+    </div>
+
+    <!-- ── Products ── -->
+    <div class="section" id="products">
+      <h2>Products</h2>
+      <p class="intro">Which Mekari Qontak products the article applies to.
+        An article can list multiple products if the feature exists on both.</p>
+
+      <div class="values">
+        <div class="val v-concept"><span class="val-name">Qontak Omnichannel</span><span class="val-desc">Chat, inbox, campaigns (184 articles)</span></div>
+        <div class="val v-task"><span class="val-name">Qontak CRM</span><span class="val-desc">Deals, contacts, pipeline (182 articles)</span></div>
+        <div class="val v-hybrid"><span class="val-name">Qontak Chat</span><span class="val-desc">Chat panel (97 articles)</span></div>
+        <div class="val v-web"><span class="val-name">Mekari Qontak</span><span class="val-desc">General / cross-product (19 articles)</span></div>
+        <div class="val v-api"><span class="val-name">Bizphone</span><span class="val-desc">Voice call integration (7 articles)</span></div>
+      </div>
+    </div>
+
+    <!-- ── Confidence Level ── -->
+    <div class="section" id="confidence">
+      <h2>Confidence Level</h2>
+      <p class="intro">How reliable the content in a section (or the whole article) is.
+        Set by the AI during enrichment and adjustable during review.
+        MekariRAG uses the article-level value as <code>faithfulness_threshold</code>
+        to decide how strictly to verify AI answers against this source.</p>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">high ✓</span>
+          <span class="term-label" style="color:var(--high)">faithfulness_threshold: 0.9</span>
+        </div>
+        <div class="term-body">
+          <p>Content was directly extracted from the Zendesk source and is factually grounded.
+          The AI generated it from clear, explicit source material.
+          MekariRAG will require a 90% faithfulness match before using this source in an answer.</p>
+          <p><em>Good for: Prerequisites, Steps with clear UI references, Expected Result when the outcome is obvious.</em></p>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">medium ~</span>
+          <span class="term-label" style="color:var(--medium)">faithfulness_threshold: 0.6</span>
+        </div>
+        <div class="term-body">
+          <p>Content was inferred or reconstructed from partial source material.
+          The AI had to make reasonable assumptions to fill the section.
+          Human review recommended before relying on this in production.</p>
+          <p><em>Common for: Escalation paths, general error guidance not explicitly stated in the source.</em></p>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="term-header">
+          <span class="term-name">low ?</span>
+          <span class="term-label" style="color:var(--low)">faithfulness_threshold: 0.3</span>
+        </div>
+        <div class="term-body">
+          <p>Content is largely invented by the AI — the source article did not contain enough information
+          to fill this section. Treat this as a placeholder.
+          A human must verify or rewrite before the article is production-ready.</p>
+          <p><em>Common for: Error States when no errors were documented, or any section where the source was missing.</em></p>
+          <div class="note">Low-confidence articles are flagged in the review table. Prioritise these for human review.</div>
+        </div>
+      </div>
+
+      <div class="tip" style="margin-top:8px;">
+        The article-level confidence (shown in the sidebar) is the <em>lowest</em> section confidence
+        in that article. If any one section is low, the whole article is low.
+      </div>
+    </div>
+
+    <!-- ── Section Structure ── -->
+    <div class="section" id="sections">
+      <h2>Section Structure</h2>
+      <p class="intro">Each article type has a fixed set of required H2 sections.
+        MekariRAG splits articles on H2 headings — each section becomes a retrievable chunk.
+        Sections must be self-sufficient: the AI bot may retrieve only one section at a time,
+        so each must make sense without reading the others.</p>
+
+      <p style="font-weight:600;font-size:14px;margin:20px 0 8px;">task</p>
+      <table class="struct-table">
+        <tr><th>Section</th><th>What it should answer</th></tr>
+        <tr><td class="sec-name">Prerequisites</td><td class="sec-ask">What does the user need before they start? Role, permissions, active features, required data.</td></tr>
+        <tr><td class="sec-name">Steps</td><td class="sec-ask">Exact numbered actions in the UI. Each step = one action. Include button names, menu paths, field names.</td></tr>
+        <tr><td class="sec-name">Expected Result</td><td class="sec-ask">What does success look like? What changes in the system, what confirmation does the user see?</td></tr>
+        <tr><td class="sec-name">Error States</td><td class="sec-ask">What can go wrong? List specific errors with their solution. If none are known, say so honestly.</td></tr>
+        <tr><td class="sec-name">Escalation</td><td class="sec-ask">When should the user contact support? What information should they include?</td></tr>
+      </table>
+
+      <p style="font-weight:600;font-size:14px;margin:20px 0 8px;">concept</p>
+      <table class="struct-table">
+        <tr><th>Section</th><th>What it should answer</th></tr>
+        <tr><td class="sec-name">Definition</td><td class="sec-ask">What is this feature/term in plain language? One clear sentence, then expand.</td></tr>
+        <tr><td class="sec-name">Why It Matters</td><td class="sec-ask">Why would a user care? What business problem does this solve?</td></tr>
+        <tr><td class="sec-name">Key Attributes</td><td class="sec-ask">Important properties, limits, or behaviours. Good for tables or bullet lists.</td></tr>
+        <tr><td class="sec-name">Related Tasks</td><td class="sec-ask">Links or references to task articles that put this concept into action.</td></tr>
+      </table>
+
+      <p style="font-weight:600;font-size:14px;margin:20px 0 8px;">troubleshooting</p>
+      <table class="struct-table">
+        <tr><th>Section</th><th>What it should answer</th></tr>
+        <tr><td class="sec-name">Symptom</td><td class="sec-ask">Exactly what the user sees or experiences. Specific error message, wrong behaviour, missing feature.</td></tr>
+        <tr><td class="sec-name">Root Cause</td><td class="sec-ask">Why it happens. May be a configuration issue, permission gap, or known limitation.</td></tr>
+        <tr><td class="sec-name">Solution</td><td class="sec-ask">Step-by-step fix. If multiple causes → multiple solutions.</td></tr>
+        <tr><td class="sec-name">Escalation</td><td class="sec-ask">When the fix doesn't work — who to call and what to bring.</td></tr>
+      </table>
+
+      <div class="note" style="margin-top:16px;">
+        <strong>Golden rule:</strong> every section must contain the article title, product name, and context.
+        Do not write "Click the button" — write "Klik tombol <strong>Buat Team</strong> di halaman Team Settings Qontak CRM."
+      </div>
+    </div>
+
+    <!-- ── Intent Tags ── -->
+    <div class="section" id="intent-tags">
+      <h2>Intent Tags</h2>
+      <p class="intro">Short, hyphenated labels that describe <em>what the user wants to do</em>
+        when they would find this article useful. MekariRAG uses these to match ambiguous queries
+        to the right article.</p>
+
+      <div class="term">
+        <div class="term-body">
+          <p><strong>Format:</strong> lowercase, hyphen-separated, action-oriented.
+          Examples: <code>add-team-member</code>, <code>integrate-instagram</code>, <code>reset-password</code></p>
+          <p><strong>How many:</strong> 3–6 tags per article. More is not better — be specific.</p>
+          <p><strong>Avoid:</strong> product names as tags (that's what <code>products</code> is for),
+          article type words like "task" or "guide", vague tags like "settings" alone.</p>
+          <div class="tip">Ask: "What would a support agent type to find this article?" Those keywords become your intent tags.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Query Examples ── -->
+    <div class="section" id="query-examples">
+      <h2>Query Examples</h2>
+      <p class="intro">Sample natural-language questions a user might type into the AI bot
+        that this article should answer. Used to train and test the retriever.</p>
+
+      <div class="term">
+        <div class="term-body">
+          <p><strong>Format:</strong> Full sentences or questions. Mix formal and casual Bahasa Indonesia.
+          Include at least one English variant.</p>
+          <p><strong>Examples:</strong></p>
+          <ul style="padding-left:20px;font-size:14px;margin-top:6px;line-height:2;">
+            <li><em>"Bagaimana cara menambahkan team di Qontak CRM?"</em></li>
+            <li><em>"Cara buat team baru di CRM gimana?"</em></li>
+            <li><em>"How do I add a team in Qontak?"</em></li>
+          </ul>
+          <p><strong>How many:</strong> 3–6 examples. Cover different phrasings of the same intent.</p>
+          <div class="tip">These examples directly influence retrieval quality. Bad examples = the bot can't find the article when it should.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Compliance Sensitive ── -->
+    <div class="section" id="compliance">
+      <h2>Compliance Sensitive</h2>
+      <p class="intro">Flags articles that touch legally or regulatorily sensitive topics
+        (data privacy, financial transactions, user data deletion, export controls, etc.).
+        MekariRAG may apply stricter answer validation for these articles.</p>
+
+      <div class="values" style="margin-top:12px;">
+        <div class="val v-bool"><span class="val-name">false</span><span class="val-desc">Standard article — no special handling</span></div>
+        <div class="val v-trouble"><span class="val-name">true</span><span class="val-desc">Compliance-sensitive — human review required</span></div>
+      </div>
+
+      <div class="note" style="margin-top:16px;">
+        Mark <code>true</code> if the article covers: personal data handling, consent or opt-out flows,
+        billing or payment actions, account deletion, legal agreements, or regulatory deadlines
+        (e.g. WhatsApp policy compliance, PDPA, OJK rules for fintech integrations).
+      </div>
+    </div>
+
+    <!-- ── Plan Scope ── -->
+    <div class="section" id="plan-scope">
+      <h2>Plan Scope</h2>
+      <p class="intro">Restricts which subscription plans this article applies to.
+        If the feature is available on all plans, leave this <code>null</code>.</p>
+
+      <div class="term">
+        <div class="term-body">
+          <p><strong>Format:</strong> A string describing the plan restriction.
+          Examples: <code>"Enterprise only"</code>, <code>"Starter and above"</code>, <code>"Add-on required"</code></p>
+          <p>When set, MekariRAG can prepend a plan-gate notice to the AI answer so users on lower plans
+          aren't sent down a path that doesn't apply to them.</p>
+          <p>Most articles: <code>null</code>.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Chunk Groups & Related Chunks ── -->
+    <div class="section" id="chunks">
+      <h2>Chunk Groups &amp; Related Chunks</h2>
+      <p class="intro">Advanced metadata used to link related articles together in the retriever.
+        Leave empty for now — these are populated after the full KB is indexed.</p>
+
+      <div class="term">
+        <div class="term-header"><span class="term-name">chunk_groups</span></div>
+        <div class="term-body">
+          <p>A list of group labels that cluster articles by topic area.
+          When a query matches one article in a group, MekariRAG can fetch others in the same group
+          to give a more complete answer.</p>
+          <p>Example: <code>["whatsapp-setup", "channel-integration"]</code></p>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="term-header"><span class="term-name">related_chunks</span></div>
+        <div class="term-body">
+          <p>A list of article slugs that are closely related and should be surfaced together.
+          Used for "see also" linking at the retrieval layer.</p>
+          <p>Example: <code>["5536149093273-bagaimana-cara-mengintegrasikan-instagram", "5521732886553-bagaimana-cara-mengintegrasikan-facebook"]</code></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Verified ── -->
+    <div class="section" id="verified">
+      <h2>Verified By / Last Verified</h2>
+      <p class="intro">Tracks who last confirmed the article's accuracy and when.
+        Used to surface stale content for re-review.</p>
+
+      <div class="term">
+        <div class="term-header"><span class="term-name">verified_by</span></div>
+        <div class="term-body">
+          <p>The reviewer's identifier. Current value for AI-enriched articles:
+          <code>AI:claude-haiku-4-5-20251001</code>.</p>
+          <p>When a human reviews and approves, update this to their name or email,
+          e.g. <code>budi@mekari.com</code>.</p>
+        </div>
+      </div>
+
+      <div class="term">
+        <div class="term-header"><span class="term-name">last_verified</span></div>
+        <div class="term-body">
+          <p>ISO date of last verification. Format: <code>YYYY-MM-DD</code>.
+          Example: <code>2026-04-18</code>.</p>
+          <p>Articles not verified within 6 months should be flagged for re-review,
+          especially for features that update frequently (e.g. WhatsApp API, chatbot builder).</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+</body>
+</html>

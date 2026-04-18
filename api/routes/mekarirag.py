@@ -133,6 +133,12 @@ def review_page():
     return send_file(os.path.abspath(html_path))
 
 
+@mekarirag_bp.route("/mekarirag/definition")
+def definitions_page():
+    html_path = os.path.join(os.path.dirname(__file__), "../../web/mekarirag-definitions.html")
+    return send_file(os.path.abspath(html_path))
+
+
 @mekarirag_bp.route("/mekarirag/pages/<path:slug>")
 def article_page(slug: str):
     html_path = os.path.join(os.path.dirname(__file__), "../../web/mekarirag-page.html")
